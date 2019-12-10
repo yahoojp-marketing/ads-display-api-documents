@@ -9,7 +9,7 @@ AdGroupAdServiceCampaignGoalFilterType:
   title: AdGroupAdServiceCampaignGoalFilterType
   description: |
     <div lang="ja">AdGroupAdServiceCampaignGoalFilterTypeは、キャンペーン目的の有無でキャンペーンをフィルタリングするための設定です。</div>
-    <div lang="en">AdGroupAdServiceCampaignGoalFilterType is a setting for filtering campaigns \"with campaignGoal\" or \"with no campaignGoal\".</div>
+    <div lang="en">AdGroupAdServiceCampaignGoalFilterType is a setting for filtering campaigns "with campaignGoal" or "with no campaignGoal".</div>
     <hr>
     <p>* <code>NON_GOAL</code> - <span lang="ja">目的なしキャンペーンのみ取得</span><span lang="en">Only campaigns with no campaignGoal</span></p>
     <p>* <code>GOAL</code> - <span lang="ja">目的ありキャンペーンのみ取得</span><span lang="en">Only campaigns with campaignGoal</span></p>

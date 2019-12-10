@@ -11,7 +11,7 @@ AccountServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">指定しない場合は紐づくアカウントをすべて取得します。</div><div lang="en">If nothing is selected, all accounts are retrieved.<br>* &#34;accountIds&#34;can also be omitted for regular authentication. Required for proxy authentication.</div>
+        <div lang="ja">指定しない場合は紐づくアカウントをすべて取得します。</div><div lang="en">If nothing is selected, all accounts are retrieved.</div>
     accountStatuses:
       type: array
       nullable: true

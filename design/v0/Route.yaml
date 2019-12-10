@@ -47,92 +47,88 @@ tags:
     <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。</div>
     <div lang="en">Use this service to get, add, update, or delete campaigns.</div>
     <div lang="ja"><b>キャンペーン目的について</b><br>
-    ・キャンペーン目的の詳細は<a href=\"https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=38807\">ヘルプ</a>をご参照ください。<br>
+    ・キャンペーン目的の詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">ヘルプ</a>をご参照ください。<br>
     ・Campaign.campaignGoalがNONEの場合は「目的なし」、NONE以外の場合は「目的あり」と定義します。<br>
-    ・V201911以前に作られたキャンペーンはすべて「目的なし」となります。<br>
     ・「目的あり」と「目的なし」のキャンペーンでそれぞれ必須、あるいは更新可能なフィールドが異なるため、以下の表に目的のあり／なし、add／setの場合の必須、更新可能フィールドをまとめます。<br>
     ※ -- は、「設定不可」を表します。
     </div>
     <div lang="en"><b>About campaignGoal</b><br>
     - It defined "with no campaignGoal" if Campaign.campaignGoal is set NONE, otherwise defined "with campaignGoal".<br>
-    - All of the campaign that making before V201911 is defined "with no campaignGoal".<br>
     - The fields that are required or updateable for "with campaignGoal" and "with no campaignGoal" campaigns are different. The following table summarizes the required or updatable fields for "with / with no campaignGoal" and add / set.<br>
     * "--" mean "cannot be set".
     </div>
-    <details><summary>Requirement</summary>
-      <table border='1'>
-        <tr>
-          <th><div lang="ja">フィールド名</div><div lang="en">field name</div></th>
-          <th><div lang="ja">目的なし<br>add</div><div lang="en">with no campaignGoal/<br>add</div></th>
-          <th><div lang="ja">目的なし<br>set</div><div lang="en">with no campaignGoal/<br>set</div></th>
-          <th><div lang="ja">目的あり<br>add</div><div lang="en">with campaignGoal/<br>add</div></th>
-          <th><div lang="ja">目的あり<br>set</div><div lang="en">with campaignGoal/<br>set</div></th>
-        </tr>
-        <tr>
-          <td>adProductType</td>
-          <td>Required</td>
-          <td>--</td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>budget.amount</td>
-          <td>Optional</td>
-          <td>Updatable</td>
-          <td>Required</td>
-          <td>Updatable</td>
-        </tr>
-        <tr>
-          <td>budget.budgetDeliveryMethod</td>
-          <td>Optional</td>
-          <td>Updatable</td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>campaignBiddingStrategy</td>
-          <td>--</td>
-          <td>--</td>
-          <td>Required</td>
-          <td>Updatable</td>
-        </tr>
-        <tr>
-          <td>campaignGoal</td>
-          <td>--</td>
-          <td>--</td>
-          <td>Required</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>conversionOptimizer</td>
-          <td>--</td>
-          <td>Updatable</td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>frequencyCap</td>
-          <td>Optional</td>
-          <td>Updatable</td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>type</td>
-          <td>Optional</td>
-          <td>--</td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td>viewableFrequencyCap</td>
-          <td>--</td>
-          <td>--</td>
-          <td>Optional</td>
-          <td>Updatable</td>
-        </tr>
-      </table>
-    </details>
+    <table border='1'>
+      <tr>
+        <th><div lang="ja">フィールド名</div><div lang="en">field name</div></th>
+        <th><div lang="ja">目的なし<br>add</div><div lang="en">with no campaignGoal/<br>add</div></th>
+        <th><div lang="ja">目的なし<br>set</div><div lang="en">with no campaignGoal/<br>set</div></th>
+        <th><div lang="ja">目的あり<br>add</div><div lang="en">with campaignGoal/<br>add</div></th>
+        <th><div lang="ja">目的あり<br>set</div><div lang="en">with campaignGoal/<br>set</div></th>
+      </tr>
+      <tr>
+        <td>adProductType</td>
+        <td>Required</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>budget.amount</td>
+        <td>Optional</td>
+        <td>Updatable</td>
+        <td>Required</td>
+        <td>Updatable</td>
+      </tr>
+      <tr>
+        <td>budget.budgetDeliveryMethod</td>
+        <td>Optional</td>
+        <td>Updatable</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>campaignBiddingStrategy</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Required</td>
+        <td>Updatable</td>
+      </tr>
+      <tr>
+        <td>campaignGoal</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Required</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>conversionOptimizer</td>
+        <td>--</td>
+        <td>Updatable</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>frequencyCap</td>
+        <td>Optional</td>
+        <td>Updatable</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>Optional</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>viewableFrequencyCap</td>
+        <td>--</td>
+        <td>--</td>
+        <td>Optional</td>
+        <td>Updatable</td>
+      </tr>
+    </table>
 - name: PlacementUrlListService
   description: |
     <label class="campaign"></label>
@@ -361,7 +357,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -564,7 +560,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -660,7 +656,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -864,7 +860,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -1025,7 +1021,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -1246,7 +1242,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -1561,7 +1557,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -2483,7 +2479,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
@@ -2874,7 +2870,7 @@ paths:
         200:
           description: |
             <details>
-            <summary>エラーコード</summary>
+            <summary>Error Codes</summary>
             <table border="1">
             <tr><th>コード</th><th>メッセージ</th><th>説明</th></tr>
             <tr><td>0001</td><td>Invalid Request.</td><td>さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。<br>This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</td></tr>
