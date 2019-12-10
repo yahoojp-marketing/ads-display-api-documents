@@ -9,4 +9,4 @@ AdGroupServiceReturnValue:
         $ref: 'AdGroupServiceValue.yaml#/AdGroupServiceValue'
   title: AdGroupServiceReturnValue
   description: |
-    <div lang="ja">AdGroupServiceReturnValueオブジェクトは、広告グループの情報を格納するコンテナです。</div><div lang="en">The AdGroupServiceReturnValue object is a container for storing ad group information.</div><hr><details><summary>Requirement</summary>
+    <div lang="ja">AdGroupServiceReturnValueオブジェクトは、広告グループの情報を格納するコンテナです。</div><div lang="en">The AdGroupServiceReturnValue object is a container for storing ad group information.</div>

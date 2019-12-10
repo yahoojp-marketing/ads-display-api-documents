@@ -15,4 +15,4 @@ AdGroupServicePage:
         $ref: 'AdGroupServiceValue.yaml#/AdGroupServiceValue'
   title: AdGroupServicePage
   description: |
-    <div lang="ja">AdGroupServicePageオブジェクトは、取得される広告グループに関するエントリーを表します。</div><div lang="en">The AdGroupServicePage object is a container for storing ad group information entry.</div><hr><details><summary>Requirement</summary>
+    <div lang="ja">AdGroupServicePageオブジェクトは、取得される広告グループに関するエントリーを表します。</div><div lang="en">The AdGroupServicePage object is a container for storing ad group information entry.</div>

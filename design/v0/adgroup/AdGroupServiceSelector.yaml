@@ -33,12 +33,12 @@ AdGroupServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">検索条件：キャンペーンID</div><br><div lang="en">Search Condition: Campaign ID.</div>
+        <div lang="ja">検索条件：キャンペーンID</div><div lang="en">Search Condition: Campaign ID.</div>
     containsLabelIdFlg:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">ラベルID取得フラグ</div><br><div lang="en">Flag of contains label ID.</div>
+        <div lang="ja">ラベルID取得フラグ</div><div lang="en">Flag of contains label ID.</div>
     feedSetIds:
       type: array
       nullable: true

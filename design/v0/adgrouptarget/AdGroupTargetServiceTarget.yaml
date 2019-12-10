@@ -86,8 +86,28 @@ AdGroupTargetServiceTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットIDです。<br><br>※1<br>targetIdはVer.6.0以前における以下の項目を示します。<br>‐SiteRetargeting：targetListId<br>‐PlacementAdGroupTargetServiceTarget：placementUrlListId<br>‐SearchAdGroupTargetServiceTarget：searchKeywordListId<br>‐GeoAdGroupTargetServiceTarget：IM地域コード(geo)<br>‐InterestCategory: カテゴリーコード(category)<br>‐SiteCategory: カテゴリーコード(category)<br>‐OsVersionAdGroupTargetServiceTarget:osVersion<br></div>
-        <div lang="en">AdGroupTargetServiceTarget ID<br><br>∗1<br>AdGroupTargetServiceTargetId indicates the following items in Ver.6.0 and earlier.<br>‐SiteRetargeting: targetListId<br>‐PlacementAdGroupTargetServiceTarget: placementUrlListId<br>‐SearchAdGroupTargetServiceTarget: searchKeywordListId<br>‐GeoAdGroupTargetServiceTarget: IM area code(geo)<br>‐InterestCategory: category code(category)<br>‐SiteCategory: category code(category)<br>‐OsVersionAdGroupTargetServiceTarget: osVersion<br></div>
+        <div lang="ja">ターゲットIDです。<br>
+        <br>
+        ‐SITE_RETARGETING: targetListId<br>
+        ‐PLACEMENT_TARGET: placementUrlListId<br>
+        ‐SEARCH_TARGET: searchKeywordListId<br>
+        ‐GEO_TARGET: IM地域コード(geo)<br>
+        ‐INTEREST_CATEGORY: カテゴリーコード(category)<br>
+        ‐SITE_CATEGORY: カテゴリーコード(category)<br>
+        ‐OS_VERSION_TARGET: osVersion<br>
+        ‐AUDIENCE_CATEGORY_TARGET: オーディエンスカテゴリーコード(audience category)
+        </div>
+        <div lang="en">Target ID<br>
+        <br>
+        ‐SITE_RETARGETING: targetListId<br>
+        ‐PLACEMENT_TARGET: placementUrlListId<br>
+        ‐SEARCH_TARGET: searchKeywordListId<br>
+        ‐GEO_TARGET: IM area code(geo)<br>
+        ‐INTEREST_CATEGORY: category code(category)<br>
+        ‐SITE_CATEGORY: category code(category)<br>
+        ‐OS_VERSION_TARGET: osVersion<br>
+        ‐AUDIENCE_CATEGORY_TARGET: audience category code(audience category)
+        </div>
     targetType:
       $ref: 'AdGroupTargetServiceTargetType.yaml#/AdGroupTargetServiceTargetType'
       description: |
