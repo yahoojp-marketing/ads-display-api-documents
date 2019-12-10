@@ -1,0 +1,15 @@
+CampaignServiceType:
+  type: string
+  nullable: true
+  enum:
+  - STANDARD
+  - APP
+  - UNKNOWN
+  title: CampaignServiceType
+  description: |
+    <div lang="ja">CampaignServiceTypeは、キャンペーンタイプを表します。</div>
+    <div lang="en">CampaignServiceType serves type of campaign.</div>
+    <hr>
+    <p>* <code>STANDARD</code> - <span lang="ja">標準キャンペーン</span><span lang="en">Standard campaign</span></p>
+    <p>* <code>APP</code> - <span lang="ja">アプリインストール広告キャンペーン</span><span lang="en">App Install Ads campaign</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

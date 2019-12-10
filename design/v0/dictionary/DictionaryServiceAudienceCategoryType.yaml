@@ -1,0 +1,15 @@
+DictionaryServiceAudienceCategoryType:
+  type: string
+  nullable: true
+  enum:
+  - AFFINITY
+  - IN_MARKET
+  - UNKNOWN
+  title: DictionaryServiceAudienceCategoryType
+  description: |
+    <div lang="ja">DictionaryServiceAudienceCategoryTypeは、提供されるカテゴリの種別を表します。</div>
+    <div lang="en">AudienceCategoryPage object contains audience category information.</div>
+    <hr>
+    <p>* <code>AFFINITY</code> - <span lang="ja">興味関心です。</span><span lang="en">Interest and concern</span></p>
+    <p>* <code>IN_MARKET</code> - <span lang="ja">購買意向です。</span><span lang="en">Purchase intention</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

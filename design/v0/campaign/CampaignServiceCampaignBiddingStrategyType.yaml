@@ -1,0 +1,23 @@
+CampaignServiceCampaignBiddingStrategyType:
+  type: string
+  nullable: true
+  enum:
+  - AUTO
+  - MAX_VCPM
+  - MAX_CPC
+  - MAX_CPV
+  - TARGET_CPA
+  - NONE
+  - UNKNOWN
+  title: CampaignServiceCampaignBiddingStrategyType
+  description: |
+    <div lang="ja">キャンペーン入札戦略タイプ</div>
+    <div lang="en">CampaignServiceCampaignBiddingStrategyType describes setting of campaign bid strategy type.</div>
+    <p>* <code>AUTO</code> - <span lang="ja">自動入札</span><span lang="en">Auto bidding</span></p>
+    <hr>
+    <p>* <code>MAX_VCPM</code> - <span lang="ja">最大入札価格指定（vCPM）</span><span lang="en">Max. bid value (vCPM)</span></p>
+    <p>* <code>MAX_CPC</code> - <span lang="ja">最大入札価格指定（CPC）</span><span lang="en">Max. bid value (CPC)</span></p>
+    <p>* <code>MAX_CPV</code> - <span lang="ja">最大入札価格指定（CPV）</span><span lang="en">Max. bid value(CPV)</span></p>
+    <p>* <code>TARGET_CPA</code> - <span lang="ja">目標単価指定（CPA）</span><span lang="en">Target cost specification (CPA)</span></p>
+    <p>* <code>NONE</code> - <span lang="ja">入札戦略指定なし</span><span lang="en">No Setting of bid strategy</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

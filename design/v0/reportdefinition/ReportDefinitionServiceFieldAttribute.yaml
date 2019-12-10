@@ -1,0 +1,29 @@
+ReportDefinitionServiceFieldAttribute:
+  type: object
+  nullable: true
+  properties:
+    displayFieldNameEN:
+      type: string
+      nullable: true
+    displayFieldNameJA:
+      type: string
+      nullable: true
+    fieldName:
+      type: string
+      nullable: true
+    fieldType:
+      type: string
+      nullable: true
+    filterable:
+      type: boolean
+      nullable: true
+    impossibleCombinationFields:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+    xmlAttributeName:
+      type: string
+      nullable: true
+  title: ReportDefinitionServiceFieldAttribute

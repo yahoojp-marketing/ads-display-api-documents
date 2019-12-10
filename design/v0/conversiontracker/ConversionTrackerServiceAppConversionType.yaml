@@ -1,0 +1,11 @@
+ConversionTrackerServiceAppConversionType:
+  type: string
+  nullable: true
+  enum:
+  - FIRST_OPEN
+  - UNKNOWN
+  title: ConversionTrackerServiceAppConversionType
+  description: |
+    <div lang="ja">ConversionTrackerServiceAppConversionTypeは、アプリコンバージョンの計測タイプを表します。</div><div lang="en">ConversionTrackerServiceAppConversionType displays type of counting conversions for app.</div><hr>
+    <p>* <code>FIRST_OPEN</code> - <span lang="ja">アプリインストールのコンバージョン<br>※アプリキャンペーンではアプリの初回起動をアプリのインストールとして測定します。</span><span lang="en">Conversion of app install<br>∗&#39;FIRST_OPEN&#39; will be counted as one conversion of app install for mobile app campaign, when the app first opened.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

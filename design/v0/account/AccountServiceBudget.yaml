@@ -1,0 +1,47 @@
+AccountServiceBudget:
+  type: object
+  nullable: true
+  properties:
+    amount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントの広告予算金額です。</div><div lang="en">Amount of budget.</div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">掲載終了日です。</div><div lang="en">Start date of ad serving.</div>
+    limitChargeType:
+      $ref: 'AccountServiceLimitChargeType.yaml#/AccountServiceLimitChargeType'
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">掲載開始日です。</div><div lang="en">Start date of ad serving.</div>
+  title: AccountServiceBudget
+  description: |
+    <div lang="ja">AccountServiceBudgetは、アカウント予算情報を保持するオブジェクトです。</div><div lang="en">The AccountServiceBudget object is a container for storing the account budget.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>SET</th>
+      </tr>
+      <tr>
+        <td>amount</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>endDate</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>limitChargeType</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>startDate</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

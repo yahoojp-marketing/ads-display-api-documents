@@ -1,0 +1,31 @@
+RetargetingListServiceTargetListSize:
+  type: string
+  nullable: true
+  enum:
+  - RATE_1
+  - RATE_2
+  - RATE_3
+  - RATE_4
+  - RATE_5
+  - RATE_6
+  - RATE_7
+  - RATE_8
+  - RATE_9
+  - RATE_10
+  - UNKNOWN
+  title: RetargetingListServiceTargetListSize
+  description: |
+    <div lang="ja">RetargetingListServiceTargetListSizeは、類似ターゲットリストのサイズを表します。</div>
+    <div lang="en">RetargetingListServiceTargetListSize serves target list size of similarity target list.</div>
+    <hr>
+    <p>* <code>RATE_1</code> - <span lang="ja">類似度：閾値0.1</span><span lang="en">Similarity: Threshold 0.1</span></p>
+    <p>* <code>RATE_2</code> - <span lang="ja">類似度：閾値0.2</span><span lang="en">Similarity: Threshold 0.2</span></p>
+    <p>* <code>RATE_3</code> - <span lang="ja">類似度：閾値0.3</span><span lang="en">Similarity: Threshold 0.3</span></p>
+    <p>* <code>RATE_4</code> - <span lang="ja">類似度：閾値0.4</span><span lang="en">Similarity: Threshold 0.4</span></p>
+    <p>* <code>RATE_5</code> - <span lang="ja">類似度：閾値0.5</span><span lang="en">Similarity: Threshold 0.5</span></p>
+    <p>* <code>RATE_6</code> - <span lang="ja">類似度：閾値0.6</span><span lang="en">Similarity: Threshold 0.6</span></p>
+    <p>* <code>RATE_7</code> - <span lang="ja">類似度：閾値0.7</span><span lang="en">Similarity: Threshold 0.7</span></p>
+    <p>* <code>RATE_8</code> - <span lang="ja">類似度：閾値0.8</span><span lang="en">Similarity: Threshold 0.8</span></p>
+    <p>* <code>RATE_9</code> - <span lang="ja">類似度：閾値0.9</span><span lang="en">Similarity: Threshold 0.9</span></p>
+    <p>* <code>RATE_10</code> - <span lang="ja">類似度：閾値1.0</span><span lang="en">Similarity: Threshold 1.0</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

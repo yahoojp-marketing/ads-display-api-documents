@@ -1,0 +1,149 @@
+AdGroupAdServiceAd:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+    bannerImageAd:
+      $ref: 'AdGroupAdServiceBannerImageAd.yaml#/AdGroupAdServiceBannerImageAd'
+    bannerVideoAd:
+      $ref: 'AdGroupAdServiceBannerVideoAd.yaml#/AdGroupAdServiceBannerVideoAd'
+    dynamicAd:
+      $ref: 'AdGroupAdServiceDynamicAd.yaml#/AdGroupAdServiceDynamicAd'
+    mobileAd:
+      $ref: 'AdGroupAdServiceMobileAd.yaml#/AdGroupAdServiceMobileAd'
+    posAd:
+      $ref: 'AdGroupAdServicePosAd.yaml#/AdGroupAdServicePosAd'
+    responsiveImageAd:
+      $ref: 'AdGroupAdServiceResponsiveImageAd.yaml#/AdGroupAdServiceResponsiveImageAd'
+    responsiveVideoAd:
+      $ref: 'AdGroupAdServiceResponsiveVideoAd.yaml#/AdGroupAdServiceResponsiveVideoAd'
+    staticFrameAd:
+      $ref: 'AdGroupAdServiceStaticFrameAd.yaml#/AdGroupAdServiceStaticFrameAd'
+    textAd:
+      $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
+  title: AdGroupAdServiceAd
+  description: |
+    <div lang="ja">AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。</div><div lang="en">The AdGroupAdServiceAd object is a container for storing ads.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>adType</td>
+        <td>Requirement</td>
+        <td>Optional<br>NotUpdatable</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>bannerImageAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがBANNER_IMAGE_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is BANNER_IMAGE_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>bannerVideoAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがBANNER_VIDEO_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is BANNER_VIDEO_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>dynamicAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがDYNAMIC_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is DYNAMIC_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>mobileAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがTEXT_SHORT_AD1またはTEXT_SHORT_AD2の場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is either TEXT_SHORT_AD1 or TEXT_SHORT_AD2, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>posAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがPOS_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is POS_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>responsiveImageAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがRESPONSIVE_IMAGE_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is RESPONSIVE_IMAGE_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>responsiveVideoAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがRESPONSIVE_VIDEO_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is RESPONSIVE_VIDEO_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>staticFrameAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがSTATIC_FRAME_ADの場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is STATIC_FRAME_AD, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>textAd</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※adTypeがTEXT_LONG_AD1またはTEXT_SHORT_AD2の場合:Requirement。
+          </div>
+          <div lang="en">∗ If adType is either TEXT_LONG_AD1 or TEXT_LONG_AD2, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

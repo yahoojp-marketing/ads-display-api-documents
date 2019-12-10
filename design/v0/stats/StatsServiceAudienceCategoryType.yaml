@@ -1,0 +1,15 @@
+StatsServiceAudienceCategoryType:
+  type: string
+  nullable: true
+  enum:
+  - AFFINITY
+  - IN_MARKET
+  - UNKNOWN
+  title: StatsServiceAudienceCategoryType
+  description: |
+    <div lang="ja">StatsServiceAudienceCategoryTypeは、オーディエンスカテゴリーの種類を表します。</div>
+    <div lang="en">StatsServiceAudienceCategoryType describes the type of audience category.</div>
+    <hr>
+    <p>* <code>AFFINITY</code> - <span lang="ja">興味・関心</span><span lang="en">Interest/Concern</span></p>
+    <p>* <code>IN_MARKET</code> - <span lang="ja">購買・検討</span><span lang="en">Purchase/Consideration</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

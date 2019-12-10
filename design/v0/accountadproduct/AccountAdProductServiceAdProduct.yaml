@@ -1,0 +1,13 @@
+AccountAdProductServiceAdProduct:
+  type: object
+  nullable: true
+  properties:
+    adProductType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告商品情報です。</div><div lang="en">Information of ad product.</div>
+  title: AccountAdProductServiceAdProduct
+  description: |
+    <div lang="ja">AccountAdProductServiceAdProductオブジェクトは、広告掲載方式に関する情報を表します。</div>
+    <div lang="en">AccountAdProductServiceAdProduct object is a relation of ad display\ method.</div>

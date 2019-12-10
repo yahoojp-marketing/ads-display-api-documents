@@ -1,0 +1,27 @@
+CampaignServiceBiddingStrategy:
+  type: object
+  nullable: true
+  properties:
+    biddingStrategyType:
+      $ref: 'CampaignServiceBiddingStrategyType.yaml#/CampaignServiceBiddingStrategyType'
+      description: |
+        <div lang="ja">現在のキャンペーン入札戦略タイプ<br>設定されているタイプに対応する値のみ配信に適用されます（それ以外の値は配信に適用されていません）<br>また、typeに対応する単価の値以外は更新できません。<br>MAX_VCPM : maxVcpmBidValueを適用中<br>MAX_CPC : maxCpcBidValueを適用中<br>MAX_CPV : maxCpvBidValueを適用中<br>TARGET_CPA : targetCpaBidValueを適用中</div>
+        <div lang="en">Current campaign bidding strategy type.<br>Only the value corresponding to the setting type applies, otherwise it does not apply to delivery.<br>In addition, only the cost value corresponding to type can be updated.<br>MAX_VCPM: Applying maxVcpmBidValue<br>MAX_CPC: Applying maxCpcBidValue<br>MAX_CPV: Applying maxCpvBidValue<br>TARGET_CPA: Applying targetCpaBidValue</div>
+  title: CampaignServiceBiddingStrategy
+  description: |
+    <div lang="ja">CampaignServiceBiddingStrategyオブジェクトは、キャンペーンの入札方法を表します。</div>
+    <div lang="en">The CampaignServiceBiddingStrategy object displays campaign bidding strategy.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+    <tr>
+      <th>PROPERTY</th>
+      <th>ADD</th>
+      <th>SET</th>
+      <th>REMOVE</th>
+    </tr>
+      <tr>
+        <td>biddingStrategyType</td>
+        <td>Requirement</td>
+        <td>Requirement</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

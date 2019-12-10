@@ -1,0 +1,124 @@
+AdGroupAdServiceStaticFrameAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    colorSetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">カラーセットIDです。</div><div lang="en">Color set ID</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文です。</div><div lang="en">Description</div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">表示URLです。</div><div lang="en">Display URL</div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">タイトルです。</div><div lang="en">Title</div>
+    layout:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告レイアウトです。</div><div lang="en">Ad Layout</div>
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ロゴ画像のメディアIDです。</div><div lang="en">Media ID of logo image</div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">主体者表記です。</div><div lang="en">Advertiser Indication</div>
+    size:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告サイズです。</div><div lang="en">Ad Size</div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リンク先URLです。</div><div lang="en">Destination URL</div>
+  title: AdGroupAdServiceStaticFrameAd
+  description: |
+    <div lang="ja">AdGroupAdServiceStaticFrameAdオブジェクトは、広告枠サイズ固定広告の情報を表します。</div><div lang="en">The AdGroupAdServiceStaticFrameAd object describes the Static Frame Ad information.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>buttonText</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>colorSetId</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>displayUrl</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>headline</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>layout</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>logoMediaId</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>principal</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>size</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>url</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

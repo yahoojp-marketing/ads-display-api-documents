@@ -1,0 +1,89 @@
+RetargetingList:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+    deliveryStatus:
+      $ref: 'RetargetingListServiceDeliveryStatus.yaml#/RetargetingListServiceDeliveryStatus'
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットリストの説明です。</div><div lang="en">Description of Target List.</div>
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">リーチ数です。</div><div lang="en">Number of reaches.</div>
+    targetList:
+      $ref: 'RetargetingListServiceTargetList.yaml#/RetargetingListServiceTargetList'
+    targetListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ターゲットリストIDです。</div><div lang="en">Target List ID.</div>
+    targetListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットリスト名です。</div><div lang="en">Target List name.</div>
+  title: RetargetingList
+  description: |
+    <div lang="ja">RetargetingListオブジェクトは、サイトリターゲティング のターゲットリストの情報を表します。</div><div lang="en">RetargetingList object diplays the target list for site retargeting.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>accountId</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>deliveryStatus</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Optional</td>
+        <td>Optional<br>Updatable</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>reach</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>targetList</td>
+        <td>Requirement</td>
+        <td>Requirement</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>targetListId</td>
+        <td>Ignore</td>
+        <td>Requirement<br><div lang="ja">NonUpdatable</div><div lang="en">NonUpdatable</div></td>
+        <td>Requirement<br><div lang="ja">NonUpdatable</div><div lang="en">NonUpdatable</div></td>
+      </tr>
+      <tr>
+        <td>targetListName</td>
+        <td>Requirement</td>
+        <td>Optional<br>Updatable</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

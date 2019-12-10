@@ -1,0 +1,108 @@
+AdGroupAdServiceResponsiveImageAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文です。</div><div lang="en">Description</div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">表示URLです。<br>
+        ・標準キャンペーンの場合<br>
+        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
+        ・アプリキャンペーンの場合<br>
+        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
+        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
+        </div>
+        <div lang="en">
+        Display URL<br>
+        - Standard campaign:<br>
+        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
+        - Mobile app campaign:<br>
+        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
+        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">タイトルです。</div><div lang="en">Title</div>
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ロゴ画像のメディアIDです。</div><div lang="en">Media ID of logo image</div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">主体者表記です。</div><div lang="en">Advertiser Indication</div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リンク先URLです。</div><div lang="en">Destination URL</div>
+  title: AdGroupAdServiceResponsiveImageAd
+  description: |
+    <div lang="ja">AdGroupAdServiceResponsiveImageAdオブジェクトは、レスポンシブ広告の情報を表します。</div><div lang="en">AdGroupAdServiceResponsiveImageAd object describes the Responsive Ad information.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>buttonText</td>
+        <td>Optional</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Requirement</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>displayUrl</td>
+        <td>Optional</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>headline</td>
+        <td>Requirement</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>logoMediaId</td>
+        <td>Optional</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>principal</td>
+        <td>Requirement</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>url</td>
+        <td>Requirement</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

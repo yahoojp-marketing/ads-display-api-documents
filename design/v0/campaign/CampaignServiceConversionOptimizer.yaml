@@ -1,0 +1,37 @@
+CampaignServiceConversionOptimizer:
+  type: object
+  nullable: true
+  properties:
+    autoCampaignConversionOptimizer:
+      $ref: 'CampaignServiceAutoCampaignConversionOptimizer.yaml#/CampaignServiceAutoCampaignConversionOptimizer'
+      description: |
+        <div lang="ja">CampaignServiceAutoCampaignConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。</div>
+        <div lang="en">CampaignServiceAutoCampaignConversionOptimizer retains conversion optimization settings.</div>
+    conversionOptimizerType:
+      $ref: 'CampaignServiceConversionOptimizerType.yaml#/CampaignServiceConversionOptimizerType'
+      description: |
+        <div lang="ja">CampaignServiceConversionOptimizerTypeは、コンバージョン最適化タイプを表します。</div>
+        <div lang="en">CampaignServiceConversionOptimizerType displays the type of Conversion Optimization.</div>
+    manualCampaignConversionOptimizer:
+      $ref: 'CampaignServiceManualCampaignConversionOptimizer.yaml#/CampaignServiceManualCampaignConversionOptimizer'
+      description: |
+        <div lang="ja">CampaignServiceManualCampaignConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。</div>
+        <div lang="en">CampaignServiceManualCampaignConversionOptimizer displays the contents of Conversion Optimization settings.</div>
+  title: CampaignServiceConversionOptimizer
+  description: |
+    <div lang="ja">CampaignServiceConversionOptimizerは、コンバージョン最適化制御を保持するオブジェクトです。</div>
+    <div lang="en">CampaignServiceConversionOptimizer retains conversion optimization control.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>conversionOptimizerType</td>
+        <td>Ignore</td>
+        <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: Cannot set value</div></td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

@@ -1,0 +1,20 @@
+AdGroupServiceValue:
+  type: object
+  nullable: true
+  properties:
+    adGroup:
+      $ref: 'AdGroup.yaml#/AdGroup'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div><div lang="en">A result of operation.</div>
+  title: AdGroupServiceValue
+  description: |
+    <div lang="ja">AdGroupServiceValueオブジェクトは、処理結果を含む広告グループに関する情報を表します。</div><div lang="en">AdGroupServiceValue serves the information of adGroup including operation results.</div>
+

@@ -1,0 +1,52 @@
+AdGroupServiceBid:
+  type: object
+  nullable: true
+  properties:
+    manualCPCBid:
+      $ref: 'AdGroupServiceManualCPCBid.yaml#/AdGroupServiceManualCPCBid'
+    manualCPVBid:
+      $ref: 'AdGroupServiceManualCPVBid.yaml#/AdGroupServiceManualCPVBid'
+    'type':
+      $ref: 'AdGroupServiceType.yaml#/AdGroupServiceType'
+  title: AdGroupServiceBid
+  description: |
+    <div lang="ja">AdGroupServiceBidオブジェクトは、入札最適化方法を格納するコンテナです。</div>
+    <div lang="en">The AdGroupServiceBid object is a container for storing bid optimization method.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>Requirement</td>
+        <td>Optional<br>NotUpdatable</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>manualCPCBid</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※biddingStrategyTypeがMANUAL_CPCの場合:Requirement。
+          </div>
+          <div lang="en">∗ If biddingStrategyType is MANUAL_CPC, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>manualCPVBid</td>
+        <td>Optional
+          <br>
+          <div lang="ja">※biddingStrategyTypeがMANUAL_CPVの場合:Requirement。
+          </div>
+          <div lang="en">∗ If biddingStrategyType is MANUAL_CPV, Requirement
+          </div>
+        </td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

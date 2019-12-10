@@ -1,0 +1,13 @@
+ConversionTrackerServiceWebConversionSnippetType:
+  type: string
+  nullable: true
+  enum:
+  - IMG
+  - JS
+  - UNKNOWN
+  title: ConversionTrackerServiceWebConversionSnippetType
+  description: |
+    <div lang="ja">ConversionTrackerServiceWebConversionSnippetTypeは、トラッキングスクリプトのタイプを表します。</div><div lang="en">ConversionTrackerServiceWebConversionSnippetType displays the type of tracking script.</div><hr>
+    <p>* <code>IMG</code> - <span lang="ja">画像タグです。</span><span lang="en">Image tag</span></p>
+    <p>* <code>JS</code> - <span lang="ja">Javascriptタグです。</span><span lang="en">Javascript tag</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

@@ -1,0 +1,23 @@
+ConversionTrackerServiceCategory:
+  type: string
+  nullable: true
+  enum:
+  - NONE
+  - DEFAULT
+  - PAGE_VIEW
+  - PURCHASE
+  - SIGNUP
+  - LEAD
+  - DOWNLOAD
+  - UNKNOWN
+  title: ConversionTrackerServiceCategory
+  description: |
+    <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリーです。</div><div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.</div><hr>
+    <p>* <code>NONE</code> - <span lang="ja">未設定</span><span lang="en">None</span></p>
+    <p>* <code>DEFAULT</code> - <span lang="ja">その他</span><span lang="en">Other</span></p>
+    <p>* <code>PAGE_VIEW</code> - <span lang="ja">主要なページの閲覧</span><span lang="en">Main page view</span></p>
+    <p>* <code>PURCHASE</code> - <span lang="ja">購入販売</span><span lang="en">Purchase / Sales</span></p>
+    <p>* <code>SIGNUP</code> - <span lang="ja">契約</span><span lang="en">Sign up</span></p>
+    <p>* <code>LEAD</code> - <span lang="ja">販売促進</span><span lang="en">Sales promotion</span></p>
+    <p>* <code>DOWNLOAD</code> - <span lang="ja">ダウンロード</span><span lang="en">Download</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

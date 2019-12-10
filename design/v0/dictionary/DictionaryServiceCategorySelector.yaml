@@ -1,0 +1,11 @@
+DictionaryServiceCategorySelector:
+  type: object
+  nullable: true
+  required:
+  - lang
+  properties:
+    lang:
+      $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
+  title: DictionaryServiceCategorySelector
+  description: |
+    <div lang="ja">DictionaryServiceCategorySelectorオブジェクトは、取得するカテゴリー情報の言語を表します。</div><div lang="en">DictionaryServiceCategorySelector object displays the language of retrieved category information.</div>

@@ -1,0 +1,15 @@
+StatsServiceEstimateFlg:
+  type: string
+  nullable: true
+  enum:
+  - PAUSED
+  - ACTIVE
+  - UNKNOWN
+  title: StatsServiceEstimateFlg
+  description: |
+    <div lang="ja">StatsServiceEstimateFlgは、拡張配信の設定有無を表します。</div>
+    <div lang="en">StatsServiceEstimateFlg stands for extended delivery settings.</div>
+    <hr>
+    <p>* <code>PAUSED</code> - <span lang="ja">指定した性別または年齢のユーザーに配信します。</span><span lang="en">Deliver to users with specified gender or age.</span></p>
+    <p>* <code>ACTIVE</code> - <span lang="ja">指定した性別または年齢と推定されるユーザーに配信します。</span><span lang="en">Deliver to users who can be estimated with specified gender or ages.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

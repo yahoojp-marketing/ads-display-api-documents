@@ -1,0 +1,26 @@
+RetargetingListServiceCombinationTargetList:
+  type: object
+  nullable: true
+  properties:
+    combinations:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceCombination.yaml#/RetargetingListServiceCombination'
+  title: RetargetingListServiceCombinationTargetList
+  description: |
+    <div lang="ja">RetargetingListServiceCombinationTargetListオブジェクトは、ターゲットリストの組み合わせ情報のリストを表します。</div><div lang="en">RetargetingListServiceCombinationTargetList object is a containerfor storing list of combination of target list information.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>combinations</td>
+        <td>Requirement</td>
+        <td>Requirement</td>
+        <td>-</td>
+      </tr>
+    </table></details>

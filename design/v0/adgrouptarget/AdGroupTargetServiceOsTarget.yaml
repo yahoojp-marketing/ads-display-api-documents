@@ -1,0 +1,29 @@
+AdGroupTargetServiceOsTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceOsType:
+      $ref: 'AdGroupTargetServiceDeviceOsType.yaml#/AdGroupTargetServiceDeviceOsType'
+      description: |
+        <div lang="ja">OS種別です。</div><div lang="en">OS type</div>
+  title: AdGroupTargetServiceOsTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceOsTargetオブジェクトは、OSターゲティングの設定情報を保持します。</div>
+    <div lang="en">The AdGroupTargetServiceOsTarget object is a container for storing OS targeting settings.</div>
+    <hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+        <th>REPLACE</th>
+      </tr>
+      <tr>
+        <td>deviceOsType</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

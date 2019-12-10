@@ -1,0 +1,37 @@
+AdGroupAdServicePosAd:
+  type: object
+  nullable: true
+  properties:
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文です。</div><div lang="en">Descriptive text.</div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リンク先URLです。</div><div lang="en">The destination URL.</div>
+  title: AdGroupAdServicePosAd
+  description: |
+    <div lang="ja">AdGroupAdServicePosAdオブジェクトは、掲載位置指定テキストの情報を表します。</div><div lang="en">The AdGroupAdServicePosAd object serves text of positioning ad information.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Requirement</td>
+        <td>Optional<br>Updatable</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>url</td>
+        <td>Requirement</td>
+        <td>Optional<br>Updatable</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

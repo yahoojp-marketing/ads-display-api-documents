@@ -1,0 +1,212 @@
+ConversionTracker:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+    allConversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値（全て）</div><div lang="en">Conv. value (all)</div>
+    allConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数（全て）</div><div lang="en">Conversions (all)</div>
+    appConversion:
+      $ref: 'ConversionTrackerServiceAppConversion.yaml#/ConversionTrackerServiceAppConversion'
+    category:
+      $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+    conversionTrackerId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョントラッカーIDです。</div><div lang="en">Conversion Tracker ID</div>
+    conversionTrackerName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョントラッカー名です。</div><div lang="en">Conversion Tracker Name</div>
+    conversionTrackerType:
+      $ref: 'ConversionTrackerServiceType.yaml#/ConversionTrackerServiceType'
+    conversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値/コンバージョン数</div><div lang="en">Conv. value/conv.</div>
+    conversionValueViaAdClick:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値（クリック経由）</div><div lang="en">Conv. value (via click)</div>
+    conversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数</div><div lang="en">Conversions</div>
+    conversionsViaAdClick:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数（クリック経由）</div><div lang="en">Conversions (via click)</div>
+    countingType:
+      $ref: 'ConversionTrackerServiceCountingType.yaml#/ConversionTrackerServiceCountingType'
+    crossDeviceConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クロスデバイスコンバージョン数</div><div lang="en">Cross-device conv.</div>
+    excludeFromBidding:
+      $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+    measurementPeriod:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">計測期間（単位：日）です。<br>※7～90の範囲内で指定可能</div><div lang="en">Counting period (Unit: Day)<br>∗within the range of 7 to 90 days</div>
+    measurementPeriodView:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">測定期間（動画視聴）<br>※1-30の範囲で指定可能</div><div lang="en">Counting period (Video view)<br>∗within the range of 1 to 30</div>
+    mostRecentConversionDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンが発生した直近の日付です。<br>（YYYYMMDD）</div><div lang="en">The date of the most recent conversion<br>(YYYYMMDD)</div>
+    status:
+      $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+    userRevenueValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョンの収益値です。</div><div lang="en">Revenue value for Conversions</div>
+    webConversion:
+      $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
+  title: ConversionTracker
+  description: |
+    <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョントラッカー情報を表します。</div><div lang="en">ConversionTracker object shows ConversionTracker information such as ConversionTag and performance data by tag.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+      </tr>
+      <tr>
+        <td>accountId</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>allConversionValue</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>allConversions</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>appConversion</td>
+        <td>Optional<br><div lang="ja">※conversionTrackerTypeがAPP_CONVERSIONの場合、Required</div><div lang="en">∗ If conversionTrackerType is APP_CONVERSION, Required</div></td>
+        <td>Ignore</div></td>
+      </tr>
+      <tr>
+        <td>category</td>
+        <td>Required</td>
+        <td>Optional<br>Updatable</td>
+      </tr>
+      <tr>
+        <td>conversionTrackerId</td>
+        <td>Ignore</td>
+        <td>Required</td>
+      </tr>
+      <tr>
+        <td>conversionTrackerName</td>
+        <td>Required</td>
+        <td>Optional<br>Updatable</td>
+      </tr>
+      <tr>
+        <td>conversionTrackerType</td>
+        <td>Required</td>
+        <td>Required</td>
+      </tr>
+      <tr>
+        <td>conversionValue</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>conversionValueViaAdClick</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>conversions</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>conversionsViaAdClick</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>countingType</td>
+        <td>Optional</td>
+        <td>Optional</td>
+      </tr>
+      <tr>
+        <td>crossDeviceConversions</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>excludeFromBidding</td>
+        <td><div lang="ja">Opitonal<br>*Default : FALSE（使用する）</div><div lang="en">Opitonal<br>*Default : FALSE(include)</div></td>
+        <td>Optional</td>
+      </tr>
+      <tr>
+        <td>measurementPeriod</td>
+        <td>Optional<br><div lang="ja">*Default : 30</div><div lang="en">*Default : 30</div></td>
+        <td>Optional</td>
+      </tr>
+      <tr>
+        <td>measurementPeriodView</td>
+        <td>Optional<br><div lang="ja">*Default : 1</div><div lang="en">*Default : 1</div></td>
+        <td>Optional</td>
+      </tr>
+      <tr>
+        <td>mostRecentConversionDate</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td>Required</td>
+        <td>Optional<br>Updatable</td>
+      </tr>
+      <tr>
+        <td>userRevenueValue</td>
+        <td>Optional<br>*Default : 0</td>
+        <td>Optional<br>Updatable</td>
+      </tr>
+      <tr>
+        <td>webConversion</td>
+        <td>Ignore</div></td>
+        <td>Ignore</div></td>
+      </tr>
+    </table></details>

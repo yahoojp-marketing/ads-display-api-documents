@@ -1,0 +1,24 @@
+AdGroupTargetServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'AdGroupTarget.yaml#/AdGroupTarget'
+      minItems: 1
+      maxItems: 3000
+  title: AdGroupTargetServiceOperation
+  description: |
+    <div lang="ja">AdGroupTargetServiceOperationオブジェクトは、replaceメソッドで操作対象のターゲティング設定情報を保持します。</div>
+    <div lang="en">AdGroupTargetServiceOperation object is a container for storing targeting information for replace operation.</div>

@@ -1,0 +1,15 @@
+DictionaryServiceGetSiteCategoryResponse:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+      nullable: true
+    rval:
+      $ref: 'DictionaryServiceCategoryPage.yaml#/DictionaryServiceCategoryPage'
+  title: DictionaryServiceGetSiteCategoryResponse
