@@ -45,7 +45,7 @@ ConversionTrackerServicePage:
         <div lang="ja">クロスデバイスコンバージョン数の合計</div><div lang="en">Total of cross-device conv.</div>
     totalNumEntries:
       type: integer
-      nullable: true
+      nullable: false
       format: int32
       description: |
         <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of items to be retrieved.</div>

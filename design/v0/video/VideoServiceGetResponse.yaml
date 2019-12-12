@@ -9,7 +9,7 @@ VideoServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'VideoServicePage.yaml#/VideoServicePage'
   title: VideoServiceGetResponse

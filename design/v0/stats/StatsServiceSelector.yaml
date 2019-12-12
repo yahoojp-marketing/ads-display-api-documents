@@ -6,7 +6,7 @@ StatsServiceSelector:
   properties:
     accountId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">アカウントID</div><div lang="en">Account ID.</div>
@@ -19,7 +19,7 @@ StatsServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">キャンペーンID<br>statsTypeで「CAMPAIGN」または「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。</div><div lang="en">Campaign ID.<br>Available only when &#34;CAMPAIGN&#34; or &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for statsType.</div>
+        <div lang="ja">キャンペーンID<br>typeで「CAMPAIGN」または「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。</div><div lang="en">Campaign ID.<br>Available only when &#34;CAMPAIGN&#34; or &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for type.</div>
     adGroupIds:
       type: array
       nullable: true
@@ -29,7 +29,7 @@ StatsServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">広告グループID<br>statsTypeで「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。</div><div lang="en">Ad group ID.<br>Available only when &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for statsType.</div>
+        <div lang="ja">広告グループID<br>typeで「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。</div><div lang="en">Ad group ID.<br>Available only when &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for type.</div>
     adIds:
       type: array
       nullable: true
@@ -39,7 +39,7 @@ StatsServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">広告ID<br>statsTypeで「AD」を指定した場合のみ有効です。</div><div lang="en">Ad ID.<br>Available only when &#34;AD&#34; is specified for statsType.</div>
+        <div lang="ja">広告ID<br>typeで「AD」を指定した場合のみ有効です。</div><div lang="en">Ad ID.<br>Available only when &#34;AD&#34; is specified for type.</div>
     mediaIds:
       type: array
       nullable: true
@@ -49,7 +49,7 @@ StatsServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">画像ID<br>statsTypeで「MEDIA」を指定した場合のみ有効です。</div><div lang="en">Media ID.<br>Available only when &#34;MEDIA&#34; is specified for statsType.</div>
+        <div lang="ja">画像ID<br>typeで「MEDIA」を指定した場合のみ有効です。</div><div lang="en">Media ID.<br>Available only when &#34;MEDIA&#34; is specified for type.</div>
     statsPeriod:
       $ref: 'StatsServiceStatsPeriod.yaml#/StatsServiceStatsPeriod'
     periodCustomDate:

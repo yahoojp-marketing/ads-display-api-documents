@@ -9,7 +9,7 @@ SearchKeywordIdeaServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'SearchKeywordIdeaServicePage.yaml#/SearchKeywordIdeaServicePage'
   title: SearchKeywordIdeaServiceGetResponse

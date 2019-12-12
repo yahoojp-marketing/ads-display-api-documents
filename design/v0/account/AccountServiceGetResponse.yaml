@@ -9,7 +9,7 @@ AccountServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'AccountServicePage.yaml#/AccountServicePage'
   title: AccountServiceGetResponse

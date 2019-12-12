@@ -6,7 +6,7 @@ AdGroupAdServiceSelector:
   properties:
     accountId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">検索条件 : アカウント情報</div><div lang="en">Search Condition: Account information</div>

@@ -79,7 +79,7 @@ AdGroupAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像ID</div><div lang="en">Media ID (Image ID).</div>
+        <div lang="ja">メディアIDです。</div><div lang="en">Media ID.</div>
     thirdPartyTrackingScriptUrl:
       type: string
       nullable: true

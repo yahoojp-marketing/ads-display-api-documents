@@ -6,10 +6,10 @@ AccountAdProductServiceSelector:
   properties:
     accountIds:
       type: array
-      nullable: true
+      nullable: false
       items:
         type: integer
-        nullable: true
+        nullable: false
         format: int64
       minItems: 1
       maxItems: 500

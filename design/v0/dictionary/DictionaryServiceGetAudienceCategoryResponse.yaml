@@ -9,7 +9,7 @@ DictionaryServiceGetAudienceCategoryResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'DictionaryServiceAudienceCategoryPage.yaml#/DictionaryServiceAudienceCategoryPage'
   title: DictionaryServiceGetAudienceCategoryResponse

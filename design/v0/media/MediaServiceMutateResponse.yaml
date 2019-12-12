@@ -9,7 +9,7 @@ MediaServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'MediaServiceReturnValue.yaml#/MediaServiceReturnValue'
   title: MediaServiceMutateResponse

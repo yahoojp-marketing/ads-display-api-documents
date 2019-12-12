@@ -7,13 +7,13 @@ ReportDefinitionServiceDownloadSelector:
   properties:
     accountId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">アカウントIDです。</div><div lang="en">The account ID.</div>
     reportJobId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">レポートジョブIDです。</div><div lang="en">Report Job Id</div>

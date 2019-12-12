@@ -9,7 +9,7 @@ AdGroupAdServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'AdGroupAdServicePage.yaml#/AdGroupAdServicePage'
   title: AdGroupAdServiceGetResponse

@@ -9,7 +9,7 @@ RetargetingListServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'RetargetingListServiceReturnValue.yaml#/RetargetingListServiceReturnValue'
   title: RetargetingListServiceMutateResponse

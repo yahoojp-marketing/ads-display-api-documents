@@ -9,7 +9,7 @@ CampaignServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'CampaignServiceReturnValue.yaml#/CampaignServiceReturnValue'
   title: CampaignServiceMutateResponse

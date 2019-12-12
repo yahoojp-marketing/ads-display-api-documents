@@ -9,7 +9,7 @@ ConversionTrackerServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'ConversionTrackerServiceReturnValue.yaml#/ConversionTrackerServiceReturnValue'
   title: ConversionTrackerServiceMutateResponse

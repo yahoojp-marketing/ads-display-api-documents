@@ -9,7 +9,7 @@ DictionaryServiceGetFeedItemGoogleProductCategoryResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'DictionaryServiceFeedItemGoogleProductCategoryPage.yaml#/DictionaryServiceFeedItemGoogleProductCategoryPage'
   title: DictionaryServiceGetFeedItemGoogleProductCategoryResponse

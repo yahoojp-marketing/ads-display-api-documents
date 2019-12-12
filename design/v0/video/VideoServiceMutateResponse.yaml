@@ -9,7 +9,7 @@ VideoServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'VideoServiceReturnValue.yaml#/VideoServiceReturnValue'
   title: VideoServiceMutateResponse

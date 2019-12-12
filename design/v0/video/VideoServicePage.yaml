@@ -4,7 +4,7 @@ VideoServicePage:
   properties:
     totalNumEntries:
       type: integer
-      nullable: true
+      nullable: false
       format: int32
     values:
       type: array

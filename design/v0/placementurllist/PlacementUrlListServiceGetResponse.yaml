@@ -9,7 +9,7 @@ PlacementUrlListServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'PlacementUrlListServicePage.yaml#/PlacementUrlListServicePage'
   title: PlacementUrlListServiceGetResponse

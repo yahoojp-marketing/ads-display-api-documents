@@ -9,7 +9,7 @@ RetargetingListServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'RetargetingListServicePage.yaml#/RetargetingListServicePage'
   title: RetargetingListServiceGetResponse

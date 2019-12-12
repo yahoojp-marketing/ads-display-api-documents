@@ -9,7 +9,7 @@ DictionaryServiceGetOsVersionResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'DictionaryServiceOsVersionPage.yaml#/DictionaryServiceOsVersionPage'
   title: DictionaryServiceGetOsVersionResponse

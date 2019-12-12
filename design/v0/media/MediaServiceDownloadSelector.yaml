@@ -7,13 +7,13 @@ MediaServiceDownloadSelector:
   properties:
     accountId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">検索条件：アカウントIDです。</div><div lang="en">Search condition: Account ID.</div>
     mediaId:
       type: integer
-      nullable: true
+      nullable: false
       format: int64
       description: |
         <div lang="ja">検索条件：メディアIDです。</div><div lang="en">Search condition: Media ID.</div>

@@ -9,7 +9,7 @@ CampaignServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'CampaignServicePage.yaml#/CampaignServicePage'
   title: CampaignServiceGetResponse

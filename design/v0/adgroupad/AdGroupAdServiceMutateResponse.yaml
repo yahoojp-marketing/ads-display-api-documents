@@ -9,7 +9,7 @@ AdGroupAdServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'AdGroupAdServiceReturnValue.yaml#/AdGroupAdServiceReturnValue'
   title: AdGroupAdServiceMutateResponse

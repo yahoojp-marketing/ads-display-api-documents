@@ -9,7 +9,7 @@ ReportDefinitionServiceGetResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'ReportDefinitionServicePage.yaml#/ReportDefinitionServicePage'
   title: ReportDefinitionServiceGetResponse

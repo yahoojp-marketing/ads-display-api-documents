@@ -9,7 +9,7 @@ SearchKeywordListServiceMutateResponse:
         $ref: '../../Error.yaml#/Error'
     rid:
       type: string
-      nullable: true
+      nullable: false
     rval:
       $ref: 'SearchKeywordListServiceReturnValue.yaml#/SearchKeywordListServiceReturnValue'
   title: SearchKeywordListServiceMutateResponse
