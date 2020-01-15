@@ -6,7 +6,8 @@ AdGroupServiceLabel:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カラー<br></div><div lang="en">Color<br></div>
+        <div lang="ja">カラー<br>RGB、HEX指定<br>設定例：#FFFFFF</div>
+        <div lang="en">Color<br>Format :RGB or HEX<br>e.g.：#FFFFFF</div>
     description:
       type: string
       nullable: true

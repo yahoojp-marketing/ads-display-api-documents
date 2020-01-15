@@ -1,0 +1,27 @@
+FeedFtpServiceScheduleHourly:
+  type: object
+  nullable: true
+  properties:
+    interval:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">何時間ごとに実行するかの間隔</div><div lang="en">Interval of the execution time</div>
+  title: FeedFtpServiceScheduleHourly
+  description: |
+    <div lang="ja">FeedFtpServiceScheduleHourlyオブジェクトは、定期アップロードを何時間ごとに実行するかを表します。</div>
+    <div lang="en">FeedFtpServiceScheduleHourly object displays hourly interval of execution time for Periodic Upload.</div>
+    <hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+      </tr>
+      <tr>
+        <td>interval</td>
+        <td>Requirement</td>
+        <td>Requirement</td>
+      </tr>
+    </table></details>

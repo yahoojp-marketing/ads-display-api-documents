@@ -1,0 +1,12 @@
+FeedServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedServiceValue.yaml#/FeedServiceValue'
+  title: FeedServiceReturnValue
+  description: |
+    <div lang="ja">FeedServiceReturnValueオブジェクトは、操作結果を含むFeed情報を保持します。</div><div lang="en">FeedServiceReturnValue object contains Feed information including operation result.</div>

@@ -9,5 +9,5 @@ AdGroupTargetReturnValue:
         $ref: 'AdGroupTargetServiceValue.yaml#/AdGroupTargetServiceValue'
   title: AdGroupTargetReturnValue
   description: |
-    <div lang="ja">AdGroupTargetReturnValueオブジェクトは、mutateメソッドの実行結果（全Entityのリスト）を保持します。</div>
-    <div lang="en">The AdGroupTargetReturnValue object contains the results (a list of all entities) for mutate method.</div>
+    <div lang="ja">AdGroupTargetReturnValueオブジェクトは、実行結果（全Entityのリスト）を保持します。</div>
+    <div lang="en">The AdGroupTargetReturnValue object contains the results (a list of all entities).</div>

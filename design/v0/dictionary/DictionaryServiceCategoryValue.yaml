@@ -13,7 +13,8 @@ DictionaryServiceCategoryValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceCategoryValue
   description: |
     <div lang="ja">DictionaryServiceCategoryValueオブジェクトは、カテゴリー情報を取得するコンテナです。</div><div lang="en">DictionaryServiceCategoryValue object is a container that retrieves category information.</div>

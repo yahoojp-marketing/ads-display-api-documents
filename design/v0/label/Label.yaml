@@ -1,0 +1,75 @@
+Label:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+    color:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カラー<br>RGB、HEX指定<br>設定例：#FFFFFF</div>
+        <div lang="en">Color<br>Format :RGB or HEX<br>e.g.：#FFFFFF</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文</div><div lang="en">Description</div>
+    labelId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ラベルID</div><div lang="en">Label ID</div>
+    labelName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ラベル名</div><div lang="en">Label Name</div>
+  title: Label
+  description: |
+    <div lang="ja">Labelオブジェクトは、ラベルの情報を表します。</div>
+    <div lang="en">Label object describes label information.</div>
+    <hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>SET</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>accountId</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>Optional<br><div lang="ja">※default: #FFFFFF</div><div lang="en">Default: #FFFFFF</div></td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>description</td>
+        <td>Optional</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>labelId</td>
+        <td>Ignore</td>
+        <td>Requirement</td>
+        <td>Requirement</td>
+      </tr>
+      <tr>
+        <td>labelName</td>
+        <td>Requirement</td>
+        <td>Optional</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

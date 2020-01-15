@@ -1,0 +1,31 @@
+FeedSetServiceConditionSet:
+  type: object
+  nullable: true
+  properties:
+    conditionType:
+      $ref: 'FeedSetServiceConditionType.yaml#/FeedSetServiceConditionType'
+    orConditions:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedSetServiceCondition.yaml#/FeedSetServiceCondition'
+  title: FeedSetServiceConditionSet
+  description: |
+    <div lang="ja">FeedSetオブジェクトは、商品セット情報の条件を保持します。</div><div lang="en">FeedSetServiceConditionSet object contains conditions of Item Set information.</div><hr><details><summary>Requirement</summary>
+    <table border='1'>
+      <tr>
+        <th>PROPERTY</th>
+        <th>ADD</th>
+        <th>REMOVE</th>
+      </tr>
+      <tr>
+        <td>conditionType</td>
+        <td>Requirement</td>
+        <td>Ignore</td>
+      </tr>
+      <tr>
+        <td>orConditions</td>
+        <td>Requirement</td>
+        <td>Ignore</td>
+      </tr>
+    </table></details>

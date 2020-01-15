@@ -1,0 +1,24 @@
+FeedFtpRequestServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div><div lang="en">account Id</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'FeedFtpRequest.yaml#/FeedFtpRequest'
+      minItems: 1
+      maxItems: 1
+  title: FeedFtpRequestServiceOperation
+  description: |
+    <div lang="ja">FeedFtpRequestServiceOperationオブジェクトは、即時アップロードリクエスト情報を保持します。</div>
+    <div lang="en">FeedFtpRequestServiceOperation object contains Upload (Upload now) request information.</div>
