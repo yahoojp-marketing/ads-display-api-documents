@@ -15,7 +15,9 @@ MediaServiceImageMedia:
       nullable: true
       format: byte
       description: |
-        <div lang="ja">画像ファイルのbase64エンコードです。</div><div lang="en">The image file in base64 encode.</div>
+      description: |
+        <div lang="ja">画像ファイルのbase64エンコードです。ADD時のみ指定可能で、GET時のレスポンスでは値は取得されません。</div>
+        <div lang="en">The image file in base64 encode. It can be specified on ADD, however no value returns on the response of GET.</div>
     fileSize:
       type: integer
       nullable: true
