@@ -1,0 +1,12 @@
+FeedSetServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedSetServiceValue.yaml#/FeedSetServiceValue'
+  title: FeedSetServiceReturnValue
+  description: |
+    <div lang="ja">FeedSetServiceReturnValueオブジェクトは、操作結果を含む商品セット情報を保持します。</div><div lang="en">FeedSetServiceReturnValue object contains Item Set information including operation result.</div>

@@ -1,0 +1,53 @@
+MediaServiceImageMedia:
+  type: object
+  nullable: true
+  properties:
+    mediaType:
+      $ref: 'MediaServiceType.yaml#/MediaServiceType'
+    aspectRatio:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">画像アスペクト比の種類です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>※指定可能な値は、DictionaryServiceのgetMediaAdFormatで取得されるDictionaryServiceMediaAdFormatのaspectRatioフィールドをご確認ください。</div>
+        <div lang="en">The type of aspect ratio.<br>Although this field will be returned in the response, it will be ignored on input. <br>* Available values can be referred to aspectRatio field of DictionaryServiceMediaAdFormat object obtained by getMediaAdFormat operation of DictionaryService.</div>
+    data:
+      type: string
+      nullable: true
+      format: byte
+      description: |
+        <div lang="ja">画像ファイルのbase64エンコードです。ADD時のみ指定可能で、GET時のレスポンスでは値は取得されません。</div>
+        <div lang="en">The image file in base64 encode. It can be specified on ADD, however no value returns on the response of GET.</div>
+    fileSize:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ファイルサイズです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">The file size of image. <br>Although this field will be returned in the response, it will be ignored on input. </div>
+    height:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">縦の長さです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">The height of image. <br>Although this field will be returned in the response, it will be ignored on input. </div>
+    mediaAdFormat:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">画像フォーマットの種類です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>※指定可能な値は、DictionaryServiceのgetMediaAdFormatで取得されるDictionaryServiceMediaAdFormatのadFormatフィールドをご確認ください。</div>
+        <div lang="en">The type of image format.<br>Although this field will be returned in the response, it will be ignored on input. <br>* Available values can be referred to adFormat field of DictionaryServiceMediaAdFormat object obtained by getMediaAdFormat operation of DictionaryService.</div>
+    mediaFileType:
+      $ref: 'MediaServiceFileType.yaml#/MediaServiceFileType'
+    width:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">横幅です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">The width of image.<br>Although this field will be returned in the response, it will be ignored on input. </div>
+  title: MediaServiceImageMedia
+  description: |
+    <div lang="ja">MediaServiceImageMediaオブジェクトは、画像を格納するコンテナです。<br>このフィールドは、SET時に必須となります。</div>
+    <div lang="en">The MediaServiceImageMedia object is a container for storing image. <br>This field is required in SET operation.</div>
+   

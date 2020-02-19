@@ -1,0 +1,96 @@
+Campaign:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>このフィールドは、リクエストの場合は必須です。</div>
+        <div lang="en">Account ID. <br>This field is required in requests.</div>
+    adProductType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信方法です。<br>ADD時、このフィールドは目的なしの場合は必須となり、目的ありの場合は設定不可となります。<br>REMOVE時、このフィールドは無視されます。<br>※指定可能な値は、AccountAdProductServiceのGET操作で取得されるAdProductをご確認ください。</div>
+        <div lang="en">Ad product information.<br> In ADD operation, this field is required for campaigns with no campaign goal, and this field cannot be set for campaigns with campaign goal. <br>In REMOVE operation, this field will be ignored.<br>* Available values can be referred to adProductType field of AdProduct object obtained by GET operation of AccountAdProductService.</div>
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">iOS:アプリIDです。<br>Android:パッケージ名です。<br>このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>※campaignTypeがAPPの場合、ADD時に必須となります。</div>
+        <div lang="en">iOS: APP ID.<br>Android: Package name. <br>This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>*If campaignType is APP, this field is required in ADD operation.</div>
+    appName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アプリの名称です。<br>このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>※campaignTypeがAPPの場合、ADD時に必須となります。</div>
+        <div lang="en">App Name. <br>This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>*If campaignType is APP, this field is required in ADD operation.</div>
+    biddingStrategy:
+      $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'
+    budget:
+      $ref: 'CampaignServiceBudget.yaml#/CampaignServiceBudget'
+    campaignBiddingStrategy:
+      $ref: 'CampaignServiceCampaignBiddingStrategy.yaml#/CampaignServiceCampaignBiddingStrategy'
+    campaignGoal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン目的です。<br>ADD時、このフィールドは目的なしの場合は設定不可となり、目的ありの場合は必須となります。<br>SETおよびREMOVE時、このフィールドは無視されます。<br>※指定可能な値は、AccountServiceのGET操作で得られるAccountのaccountAuthoritiesフィールドをご確認ください。<br></div>
+        <div lang="en">Campaign goal.<br>In ADD operation, this field cannot be set for campaigns with no campaign goal, and will be required for campaigns with campaign goal.<br>In SET and REMOVE operation, this field will be ignored.<br>* Available values can be referred to accountAuthorities field of Account object obtained by GET operation of AccountService.<br></div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンIDです。<br>このフィールドはSETおよびREMOVE時に必須となり、ADD時に無視されます。</div>
+        <div lang="en">Campaign ID.<br>This field is required in SET and REMOVE operation, and will be ignored in ADD operation.</div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン名です。<br>このフィールドは、ADD時は必須、SET時は省略可能となり、REMOVE時は無視されます。</div>
+        <div lang="en">Campaign Name.<br>This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.</div>
+    conversionOptimizer:
+      $ref: 'CampaignServiceConversionOptimizer.yaml#/CampaignServiceConversionOptimizer'
+    deviceOsType:
+      $ref: 'CampaignServiceDeviceOsType.yaml#/CampaignServiceDeviceOsType'
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">終了日です。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        <div lang="en">End date.<br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">フィードIDです。<br>このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時に無視されます。<br>※動的ディスプレイ広告の場合、ADD時に必須となります。</div>
+        <div lang="en">Feed ID.<br>This field is optional in ADD operation, and will be ignored in SET and REMOVE operation. <br> *If adType is Dynamic Ads for Display, this field is required in ADD operation.</div>
+    frequencyCap:
+      $ref: 'CampaignServiceFrequencyCap.yaml#/CampaignServiceFrequencyCap'
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceLabel.yaml#/CampaignServiceLabel'
+    servingStatus:
+      $ref: 'CampaignServiceServingStatus.yaml#/CampaignServiceServingStatus'
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">開始日です。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。</div>
+        <div lang="en">Start date.<br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    'type':
+      $ref: 'CampaignServiceType.yaml#/CampaignServiceType'
+    userStatus:
+      $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+    viewableFrequencyCap:
+      $ref: 'CampaignServiceViewableFrequencyCap.yaml#/CampaignServiceViewableFrequencyCap'
+  title: Campaign
+  description: |
+    <div lang="ja">Campaignオブジェクトは、キャンペーン情報を表します。</div>
+    <div lang="en">Campaign object describes campaign information.</div>

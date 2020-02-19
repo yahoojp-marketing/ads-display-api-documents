@@ -1,0 +1,70 @@
+FeedItem:
+  type: object
+  nullable: true
+  properties:
+    availability:
+      $ref: 'FeedItemServiceAvailability.yaml#/FeedItemServiceAvailability'
+    capacity:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">在庫数です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">Stock quantity.<br>This field is optional in requests.</div>
+    displaySettings:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">配信設定です。<br>このフィールドは、リクエストの場合は省略可能です。<br>※「0:配信しない/1:配信する」を表します。</div><div lang="en">Display settings.<br>This field is optional in requests.<br>* 0: Off, 1: On.</div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">Feedを識別するIDです。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">ID for identifying Feed.<br>This field is required in requests.</div>
+    formattedPrice:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">文字列の価格です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">Text strings price.<br>This field is optional in requests.</div>
+    formattedSalePrice:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">文字列のセール価格です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">Sale price of text strings.<br>This field is optional in requests.</div>
+    inStock:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">在庫情報です。<br>このフィールドは、リクエストの場合は省略可能です。<br>※「0:在庫なし/1:在庫あり」を表します。</div><div lang="en">Inventory information.<br>This field is optional in requests.<br>0: Out of stock, 1: In stock.</div>
+    isRemoveCapacity:
+      $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
+    isRemoveFormattedPrice:
+      $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
+    isRemoveFormattedSalePrice:
+      $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
+    isRemovePrice:
+      $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
+    isRemoveSalePrice:
+      $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
+    itemId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">商品IDです。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Item ID.<br>This field is required in requests.</div>
+    price:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">価格です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">Price.<br>This field is optional in requests.</div>
+    salePrice:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">セール価格です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">Sale price.<br>This field is optional in requests.</div>
+  title: FeedItem
+  description: |
+    <div lang="ja">FeedItemオブジェクトは、商品の情報を格納するコンテナです。</div><div lang="en">FeedItem object contain information about the product.</div>

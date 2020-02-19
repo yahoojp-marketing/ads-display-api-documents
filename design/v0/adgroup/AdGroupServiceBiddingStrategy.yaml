@@ -11,23 +11,23 @@ AdGroupServiceBiddingStrategy:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループ最大入札単価（vCPM）<br>* campaignBiddingStrategyTypeが「MAX_VCPM」の場合のみ指定可能</div><div lang="en">Ad group MAX_VCPM bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_VCPM"</div>
+        <div lang="ja">広告グループ最大入札価格（vCPM）<br>* campaignBiddingStrategyTypeが「MAX_VCPM」の場合のみ指定可能</div><div lang="en">Ad group MAX_VCPM bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_VCPM"</div>
     maxCpvBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループ最大入札単価（CPC）<br>* campaignBiddingStrategyTypeが「MAX_CPC」の場合のみ指定可能</div><div lang="en">Ad group MAX_CPC bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_CPC"</div>
+        <div lang="ja">広告グループ最大入札価格（CPC）<br>* campaignBiddingStrategyTypeが「MAX_CPC」の場合のみ指定可能</div><div lang="en">Ad group MAX_CPC bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_CPC"</div>
     maxVcpmBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループ最大入札単価（CPV）<br>* campaignBiddingStrategyTypeが「MAX_CPV」の場合のみ指定可能</div><div lang="en">Ad group MAX_CPV bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_CPV"</div>
+        <div lang="ja">広告グループ最大入札価格（CPV）<br>* campaignBiddingStrategyTypeが「MAX_CPV」の場合のみ指定可能</div><div lang="en">Ad group MAX_CPV bid value.<br>* This can only be specified when campaignBiddingStrategyType is "MAX_CPV"</div>
     targetCpaBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループ目標単価（CPA）<br>* campaignBiddingStrategyTypeが「TARGET_CPA」の場合のみ指定可能</div><div lang="en">Ad group TARGET_CPA bid value.<br>* This can only be specified when campaignBiddingStrategyType is "TARGET_CPA"</div>
+        <div lang="ja">広告グループ目標単価（tCPA）<br>* campaignBiddingStrategyTypeが「TARGET_CPA」の場合のみ指定可能</div><div lang="en">Ad group TARGET_CPA bid value.<br>* This can only be specified when campaignBiddingStrategyType is "TARGET_CPA"</div>
   title: AdGroupServiceBiddingStrategy

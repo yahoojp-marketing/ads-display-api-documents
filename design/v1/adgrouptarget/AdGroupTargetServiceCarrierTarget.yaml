@@ -1,0 +1,10 @@
+AdGroupTargetServiceCarrierTarget:
+  type: object
+  nullable: true
+  properties:
+    carrierType:
+      $ref: 'AdGroupTargetServiceCarrierType.yaml#/AdGroupTargetServiceCarrierType'
+  title: AdGroupTargetServiceCarrierTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceCarrierTargetオブジェクトは、モバイルキャリアターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがCARRIER_TARGETの場合は必須です。</div>
+    <div lang="en">AdGroupTargetServiceCarrierTarget object is a container for storing mobile carrier targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is CARRIER_TARGET, this field is required.</div>

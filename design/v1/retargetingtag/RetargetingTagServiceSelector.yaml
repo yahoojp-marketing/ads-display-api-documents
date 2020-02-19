@@ -1,0 +1,15 @@
+RetargetingTagServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+  title: RetargetingTagServiceSelector
+  description: |
+    <div lang="ja">RetargetingTagServiceSelectorオブジェクトは、取得するサイトリターゲティングのタグを指定します。</div><div lang="en">RetargetingTagServiceSelector object selects the retrieving tag for site retargeting.</div>

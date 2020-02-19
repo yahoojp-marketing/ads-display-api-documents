@@ -1,0 +1,42 @@
+SearchKeywordIdea:
+  type: object
+  nullable: true
+  properties:
+    desktopSearchVolume:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">PCでのリーチ数です。<br>※1000件未満の場合は<br>0が取得されます。</div><div lang="en">Reach numbers on PC.<br>*If it is less than 1000 times, the value &#34;0&#34; will be responded.</div>
+    releaseDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">KW追加日(yyyy㎜dd)です。</div><div lang="en">Additional date of keyword.<br>(yyyy㎜dd)</div>
+    searchKeyword:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">サーチキーワードです。</div><div lang="en">Search keyword.</div>
+    searchKeywordId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">サーチキーワードIDです。</div><div lang="en">Search keyword ID.</div>
+    smartPhoneSearchVolume:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">スマートフォンでのリーチ数です。<br>※1000件未満の場合は<br>0が取得されます。</div><div lang="en">Reach numbers on Smartphone.<br>*If it is less than 1000 times, the value &#34;0&#34; will be responded.</div>
+    tabletSearchVolume:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">タブレットでのリーチ数です。<br>※1000件未満の場合は<br>0が取得されます。</div><div lang="en">Reach numbers on Tablet.<br>*If it is less than 1000 times, the value &#34;0&#34; will be responded.</div>
+  title: SearchKeywordIdea
+  description: |
+    <div lang="ja">SearchKeywordIdeaオブジェクトは、サーチターゲティング対象キーワードです。</div>
+    <div lang="en">SearchKeywordIdea object is keyword for search targeting.</div>

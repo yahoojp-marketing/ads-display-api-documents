@@ -1,0 +1,26 @@
+StatsServiceVideoStatsValue:
+  type: object
+  nullable: true
+  properties:
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">メディアID</div><div lang="en">Media ID</div>
+    videoName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">実ファイル名</div><div lang="en">File name</div>
+    videoTitle:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ビデオ名</div><div lang="en">Video title</div>
+    stats:
+      $ref: 'Stats.yaml#/Stats'
+  title: StatsServiceVideoStatsValue
+  description: |
+    <div lang="ja">StatsServiceVideoStatsValueオブジェクトは、動画の統計情報を保持します。</div>
+    <div lang="en">StatsServiceVideoStatsValue object contains Video stats information.</div>

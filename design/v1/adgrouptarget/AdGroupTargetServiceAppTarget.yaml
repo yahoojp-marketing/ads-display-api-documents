@@ -1,0 +1,12 @@
+AdGroupTargetServiceAppTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceAppType:
+      $ref: 'AdGroupTargetServiceDeviceAppType.yaml#/AdGroupTargetServiceDeviceAppType'
+      description: |
+        <div lang="ja">アプリケーション種別です。</div><div lang="en">App type</div>
+  title: AdGroupTargetServiceAppTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceAppTargetオブジェクトは、アプリターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがAPP_TARGETの場合は必須です。</div>
+    <div lang="en">AdGroupTargetServiceAppTarget object is a container for storing app targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is APP_TARGET, this field is required.</div>

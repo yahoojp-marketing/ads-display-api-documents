@@ -1,0 +1,12 @@
+CampaignMigrationServicePage:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignMigrationServiceJobValue.yaml#/CampaignMigrationServiceJobValue'
+  title: CampaignMigrationServicePage
+  description: |
+    <div lang="ja">CampaignMigrationServicePageオブジェクトは、マイグレーションジョブの状況を格納するコンテナです。</div><div lang="en">CampaignMigrationServicePage object contains migration job status.</div>

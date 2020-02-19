@@ -1,0 +1,35 @@
+Label:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang="en">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+    color:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カラーです。<br>ADD時およびSET時、このフィールドは省略可能となります。ADD時のデフォルト設定値は#FFFFFFとなります。</div><div lang="en">Color.<br>This field is optional in ADD and SET operation. The default value in ADD operation will be #FFFFFF. </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文です。<br>ADD時およびSET時、このフィールドは省略可能となります。</div><div lang="en">Description.<br>This field is optional in ADD and SET operation. </div>
+    labelId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ラベルIDです。<br>SET時およびREMOVE時、このフィールドは必須です。</div><div lang="en">Label ID.<br>This field is required in SET and REMOVE operation. </div>
+    labelName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ラベル名です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">Label Name.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+  title: Label
+  description: |
+    <div lang="ja">Labelオブジェクトは、ラベルの情報を表します。</div>
+    <div lang="en">Label object describes label information.</div>

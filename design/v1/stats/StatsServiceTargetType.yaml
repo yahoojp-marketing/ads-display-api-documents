@@ -1,0 +1,29 @@
+StatsServiceTargetType:
+  type: string
+  nullable: true
+  enum:
+  - AD_SCHEDULE_TARGET
+  - GEO_TARGET
+  - AGE_TARGET
+  - GENDER_TARGET
+  - INTEREST_CATEGORY
+  - SITE_CATEGORY
+  - DEVICE_TARGET
+  - CARRIER_TARGET
+  - AUDIENCE_CATEGORY
+  - UNKNOWN
+  title: StatsServiceTargetType
+  description: |
+    <div lang="ja">StatsServiceTargetTypeは、ターゲティングの種別を表します。</div>
+    <div lang="en">StatsServiceTargetType stands for types of target.</div>
+    <hr>
+    <p>* <code>AD_SCHEDULE_TARGET</code> - <span lang="ja">時間帯ターゲティング</span><span lang="en">Days of Week/Hour Targeting</span></p>
+    <p>* <code>GEO_TARGET</code> - <span lang="ja">地域ターゲティング</span><span lang="en">Geographic Targeting</span></p>
+    <p>* <code>AGE_TARGET</code> - <span lang="ja">年齢ターゲティング</span><span lang="en">Age Targeting</span></p>
+    <p>* <code>GENDER_TARGET</code> - <span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></p>
+    <p>* <code>INTEREST_CATEGORY</code> - <span lang="ja">インタレストカテゴリターゲティング</span><span lang="en">Interest Category Targeting</span></p>
+    <p>* <code>SITE_CATEGORY</code> - <span lang="ja">サイトカテゴリターゲティング</span><span lang="en">Site Category Targeting</span></p>
+    <p>* <code>DEVICE_TARGET</code> - <span lang="ja">デバイスターゲティング</span><span lang="en">Device Targeting</span></p>
+    <p>* <code>CARRIER_TARGET</code> - <span lang="ja">キャリアターゲティング</span><span lang="en">Carrier Targeting</span></p>
+    <p>* <code>AUDIENCE_CATEGORY</code> - <span lang="ja">オーディエンスカテゴリーターゲティング</span><span lang="en">Audience Category Targeting</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

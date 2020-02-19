@@ -1,0 +1,14 @@
+FeedFtpServiceScheduleDaily:
+  type: object
+  nullable: true
+  properties:
+    time:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">何時に実行するかを表します。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Execution time.<br>This field is required in requests.</div>
+  title: FeedFtpServiceScheduleDaily
+  description: |
+    <div lang="ja">FeedFtpServiceScheduleDailyオブジェクトは、定期アップロードを何時に実行するかを表します。</div>
+    <div lang="en">FeedFtpServiceScheduleDaily object displays the execution time of the day for Periodic Upload.</div>

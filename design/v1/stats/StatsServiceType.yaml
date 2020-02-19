@@ -1,0 +1,23 @@
+StatsServiceType:
+  type: string
+  nullable: true
+  enum:
+  - CAMPAIGN
+  - ADGROUP
+  - AD
+  - IMAGE
+  - VIDEO
+  - TARGET
+  - UNKNOWN
+  title: StatsServiceType
+  description: |
+    <div lang="ja">StatsServiceTypeは、統計情報の種別を表します。</div>
+    <div lang="en">StatsServiceType displays the stats information type.</div>
+    <hr>
+    <p>* <code>CAMPAIGN</code> - <span lang="ja">キャンペーンの統計情報です。</span><span lang="en">Campaign stats information.</span></p>
+    <p>* <code>ADGROUP</code> - <span lang="ja">広告グループの統計情報です。</span><span lang="en">Ad group stats information.</span></p>
+    <p>* <code>AD</code> - <span lang="ja">広告の統計情報です。</span><span lang="en">Ad stats information.</span></p>
+    <p>* <code>IMAGE</code> - <span lang="ja">画像の統計情報です。※Ver.5.4以前は「MEDIA」</span><span lang="en">Image stats information. &#39;MEDIA&#39; on Ver.5.4 or before.</span></p>
+    <p>* <code>VIDEO</code> - <span lang="ja">動画の統計情報です。</span><span lang="en">Video stats information.</span></p>
+    <p>* <code>TARGET</code> - <span lang="ja">ターゲティングの統計情報です。</span><span lang="en">Targeting stats information.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

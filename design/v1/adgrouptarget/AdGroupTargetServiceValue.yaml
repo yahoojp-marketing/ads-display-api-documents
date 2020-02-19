@@ -1,0 +1,23 @@
+AdGroupTargetServiceValue:
+  type: object
+  nullable: true
+  properties:
+    adGroupTargetList:
+      $ref: 'AdGroupTarget.yaml#/AdGroupTarget'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+      description: |
+        <div lang="ja">エラー内容です。</div><div lang="en">Error content.</div>
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: AdGroupTargetServiceValue
+  description: |
+    <div lang="ja">AdGroupTargetServiceValueオブジェクトは、メソッドの実行結果（1エンティティ）を保持します。</div>
+    <div lang="en">The AdGroupTargetServiceValue object contains the result (1 entity) for method.</div>

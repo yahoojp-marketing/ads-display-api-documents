@@ -1,0 +1,55 @@
+AdGroupAdServiceTextAd:
+  type: object
+  nullable: true
+  properties:
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文（1行目）です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Description text (line 1).<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    description2:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明文（2行目）です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
+        <div lang="en">Description text (line 2).<br>This field is optional in ADD and SET operation.</div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">表示URLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ・標準キャンペーンの場合<br>
+        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
+        ・アプリキャンペーンの場合<br>
+        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
+        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
+        </div>
+        <div lang="en">
+        Display URL.<br>This field is optional in ADD and SET operation.<br>
+        - Standard campaign:<br>
+        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
+        - Mobile app campaign:<br>
+        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
+        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">タイトルです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Title.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リンク先URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Destination URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+  title: AdGroupAdServiceTextAd
+  description: |
+    <div lang="ja">AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。<br>このフィールドは、省略可能となります。<br>※ADD時、adTypeがTEXT_LONG_AD1またはTEXT_SHORT_AD2の場合は必須です。</div>
+    <div lang="en">AdGroupAdServiceTextAd object describes the Text Ad information.<br>This field is optional.<br>*If adType is TEXT_LONG_AD1 or TEXT_SHORT_AD2, this field is required in ADD operation.</div>

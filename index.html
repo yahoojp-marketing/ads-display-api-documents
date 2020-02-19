@@ -28,8 +28,8 @@
       <div class="hpHeader__inner">
         <div class="hpHeader__head">
           <div class="hpHeader__wrap">
-            <h1 class="hpHeader__title" lang="ja">APIリファレンス β版</h1>
-            <h1 class="hpHeader__title" lang="en">API Reference β version</h1>
+            <h1 class="hpHeader__title" lang="ja">APIリファレンス</h1>
+            <h1 class="hpHeader__title" lang="en">API Reference</h1>
             <div class="hpHeaderLanguage" lang="ja">
               <a class="hpHeaderLanguage__trigger" href="?lang=en">English</a>
             </div>
@@ -44,12 +44,24 @@
         <div class="nav__inner">
             <ul class="navPrimary">
               <li class="navPrimary__item">
-                <div lang="ja"><a class="navPrimary__trigger" href="//yahoojp-marketing.github.io/ads-search-api-documents/">検索広告APIリファレンス v0</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="//yahoojp-marketing.github.io/ads-search-api-documents/?lang=en">Search Ads API Reference v0</a></div>
+                <div lang="ja"><a class="navPrimary__trigger" href="../ads-search-api-documents/?lang=ja&v=1">検索広告APIリファレンス v1</a></div>
+                <div lang="en"><a class="navPrimary__trigger" href="../ads-search-api-documents/?lang=en&v=1">Search Ads API Reference v1</a></div>
+                <ul class="navSecondary">
+                   <li class="navSecondary__item">
+                     <div lang="ja"><a class="navSecondary__trigger" href="../ads-search-api-documents/?lang=ja&v=0">検索広告APIリファレンス v0</a></div>
+                     <div lang="en"><a class="navSecondary__trigger" href="../ads-search-api-documents/?lang=en&v=0">Search Ads API Reference v0</a></div>
+                   </li>
+                </ul><!-- /.navSecondary -->
               </li>
               <li class="navPrimary__item is-current">
-                <div lang="ja"><a class="navPrimary__trigger" href="?lang=ja">ディスプレイ広告APIリファレンス v0</a></div>
-                <div lang="en"><a class="navPrimary__trigger" href="?lang=en">Display Ads API Reference v0</a></div>
+                <div lang="ja"><a class="navPrimary__trigger" href="?lang=ja&v=1">ディスプレイ広告APIリファレンス v1</a></div>
+                <div lang="en"><a class="navPrimary__trigger" href="?lang=en&v=1">Display Ads API Reference v1</a></div>
+                <ul class="navSecondary">
+                   <li class="navSecondary__item">
+                     <div lang="ja"><a class="navSecondary__trigger" href="?lang=ja&v=0">ディスプレイ広告APIリファレンス v0</a></div>
+                     <div lang="en"><a class="navSecondary__trigger" href="?lang=en&v=0">Display Ads API Reference v0</a></div>
+                   </li>
+                </ul><!-- /.navSecondary -->
               </li>
             </ul>
         </div><!-- /.nav__inner -->
@@ -90,6 +102,8 @@
     <script src="scripts/swagger-ui-standalone-preset.js"> </script>
     <script>
     var lang
+    var version = 1
+
     window.addEventListener('DOMContentLoaded', function () {
       if(location.search.indexOf('lang=en') != -1){
         lang = "en"
@@ -99,11 +113,18 @@
         lang = "ja"
         document.title = 'APIリファレンス - Yahoo!広告';
       }
+      var versionCheck = location.search.match(/[?&]v=([0-9]{1,3})/)
+      if(versionCheck){
+        version = versionCheck[1]
+      }
+
     });
-    window.onload = function() {
+
+   var routeFactory = function() {
+     return function () {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "./design/v0/Route.yaml",
+        url: "./design/v"+version+"/Route.yaml",
         dom_id: '#swagger-ui',
         deepLinking: false,
         docExpansion: 'none',
@@ -187,9 +208,9 @@
         var observer_menu = new MutationObserver(function () {
           observer_swagger.disconnect()
           if(lang == "en"){
-            $('.title').text("Yahoo! Ads Display Ads API Reference β Version")
+            $('.title').text("Yahoo! Ads Display Ads API Reference")
           }else{
-            $('.title').text("Yahoo!広告 ディスプレイ広告 API リファレンス β版")
+            $('.title').text("Yahoo!広告 ディスプレイ広告 API リファレンス")
           }
 
         });
@@ -199,6 +220,8 @@
         });
       })
     }
+   }
+    window.onload = routeFactory();
   </script>
   </main>
 

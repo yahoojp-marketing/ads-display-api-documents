@@ -1,0 +1,14 @@
+AdGroupTargetServiceOsVersionTarget:
+  type: object
+  nullable: true
+  properties:
+    osVersion:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">OSのバージョンです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">OS version.<br>Although this field will be returned in the response, it will be ignored on input. </div>
+  title: AdGroupTargetServiceOsVersionTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceOsVersionTargetオブジェクトは、OSバージョンターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがOS_VERSION_TARGETの場合は必須です。</div>
+    <div lang="en">AdGroupTargetServiceOsVersionTarget object is a container for storing OS version targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is OS_VERSION_TARGET, this field is required.</div>

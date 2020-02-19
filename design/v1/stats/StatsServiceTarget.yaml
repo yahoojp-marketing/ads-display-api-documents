@@ -1,0 +1,47 @@
+StatsServiceTarget:
+  type: object
+  nullable: true
+  properties:
+    adScheduleTarget:
+      $ref: 'StatsServiceAdScheduleTarget.yaml#/StatsServiceAdScheduleTarget'
+    ageTarget:
+      $ref: 'StatsServiceAgeTarget.yaml#/StatsServiceAgeTarget'
+    appTarget:
+      $ref: 'StatsServiceAppTarget.yaml#/StatsServiceAppTarget'
+    audienceCategoryTarget:
+      $ref: 'StatsServiceAudienceCategoryTarget.yaml#/StatsServiceAudienceCategoryTarget'
+    carrierTarget:
+      $ref: 'StatsServiceCarrierTarget.yaml#/StatsServiceCarrierTarget'
+    deviceTarget:
+      $ref: 'StatsServiceDeviceTarget.yaml#/StatsServiceDeviceTarget'
+    genderTarget:
+      $ref: 'StatsServiceGenderTarget.yaml#/StatsServiceGenderTarget'
+    geoTarget:
+      $ref: 'StatsServiceGeoTarget.yaml#/StatsServiceGeoTarget'
+    interestCategoryTarget:
+      $ref: 'StatsServiceInterestCategoryTarget.yaml#/StatsServiceInterestCategoryTarget'
+    osTarget:
+      $ref: 'StatsServiceOsTarget.yaml#/StatsServiceOsTarget'
+    osVersionTarget:
+      $ref: 'StatsServiceOsVersionTarget.yaml#/StatsServiceOsVersionTarget'
+    placementTarget:
+      $ref: 'StatsServicePlacementTarget.yaml#/StatsServicePlacementTarget'
+    searchTarget:
+      $ref: 'StatsServiceSearchTarget.yaml#/StatsServiceSearchTarget'
+    siteCategoryTarget:
+      $ref: 'StatsServiceSiteCategoryTarget.yaml#/StatsServiceSiteCategoryTarget'
+    siteRetargetingTarget:
+      $ref: 'StatsServiceSiteRetargetingTarget.yaml#/StatsServiceSiteRetargetingTarget'
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットID</div><div lang="en">StatsServiceTarget ID</div>
+    targetSetting:
+      $ref: 'StatsServiceTargetSetting.yaml#/StatsServiceTargetSetting'
+    targetType:
+      $ref: 'StatsServiceTargetType.yaml#/StatsServiceTargetType'
+  title: StatsServiceTarget
+  description: |
+    <div lang="ja">StatsServiceTargetオブジェクトは、ターゲット設定情報を保持します。</div>
+    <div lang="en">StatsServiceTarget object holds configuration information of StatsServiceTargeting.</div>

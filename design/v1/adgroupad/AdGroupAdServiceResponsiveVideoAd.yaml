@@ -1,0 +1,148 @@
+AdGroupAdServiceResponsiveVideoAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告の説明文です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Ad description.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">表示URLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ・標準キャンペーンの場合<br>
+        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
+        ・アプリキャンペーンの場合<br>
+        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
+        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
+        </div>
+        <div lang="en">
+        Display URL.<br>This field is optional in ADD and SET operation.<br>
+        - Standard campaign:<br>
+        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
+        - Mobile app campaign:<br>
+        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
+        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告のタイトルです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Ad title.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    isRemoveVideo10SecBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo25PercentBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo3SecBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo50PercentBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo75PercentBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideoCompleteBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveVideoStartBeaconUrls:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ロゴの画像IDです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
+        <div lang="en">Logo image ID.<br>This field is optional in ADD and SET operation.</div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告の主体者表記です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Advertiser Indication of the ad.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">サムネイルIDです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Thumbnail ID.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リンク先URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+        <div lang="en">Destination URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    video10SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">10秒視聴ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Viewing beacon URL (10 seconds).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    video25PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">25％再生視聴ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Playback viewing beacon URL (25%).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    video3SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">3秒視聴ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Viewing beacon URL (3 seconds).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    video50PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">50％再生視聴ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Playback viewing beacon URL (50%).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    video75PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">75％再生視聴ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Playback viewing beacon URL (75%).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    videoCompleteBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">再生完了ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Viewing beacon URL (complete).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+    videoStartBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">再生開始ビーコンURLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>※SET時はすべて上書きされます。<br>※httpsのURLのみ設定可能です。</div>
+        <div lang="en">Viewing beacon URL (start).<br>This field is optional in ADD and SET operation.<br>∗Replace all URLs in SET operation.<br>∗Available URL is only &#34;https&#34;.</div>
+  title: AdGroupAdServiceResponsiveVideoAd
+  description: |
+    <div lang="ja">AdGroupAdServiceResponsiveVideoAdオブジェクトは、動画広告の情報を表します。<br>このフィールドは、省略可能となります。<br>※ADD時、adTypeがRESPONSIVE_VIDEO_ADの場合は必須です。</div>
+    <div lang="en">AdGroupAdServiceResponsiveVideoAd object displays Video Ads information.<br>This field is optional.<br>*If adType is RESPONSIVE_VIDEO_AD, this field is required in ADD operation.</div>
