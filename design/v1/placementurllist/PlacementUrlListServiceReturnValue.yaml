@@ -1,0 +1,12 @@
+PlacementUrlListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PlacementUrlListServiceValue.yaml#/PlacementUrlListServiceValue'
+  title: PlacementUrlListServiceReturnValue
+  description: |
+    <div lang="ja">PlacementUrlListServiceReturnValueオブジェクトは、メソッドの実行結果（全Entityのリスト）を保持するオブジェクトです。</div><div lang="en">The objects to keep execution result of method (All Entity list).</div>

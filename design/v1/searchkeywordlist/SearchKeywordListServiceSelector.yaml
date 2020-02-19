@@ -1,0 +1,42 @@
+SearchKeywordListServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    searchKeywordListIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">サーチキーワードIDです。</div><div lang="en">Search keyword ID.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: SearchKeywordListServiceSelector
+  description: |
+    <div lang="ja">SearchKeywordListServiceSelectorオブジェクトは、選択するサーチキーワードリストを表します。</div><div lang="en">SearchKeywordListServiceSelector object displays the selected search keyword list.</div>

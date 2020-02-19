@@ -1,0 +1,14 @@
+AdGroupServiceBid:
+  type: object
+  nullable: true
+  properties:
+    manualCPCBid:
+      $ref: 'AdGroupServiceManualCPCBid.yaml#/AdGroupServiceManualCPCBid'
+    manualCPVBid:
+      $ref: 'AdGroupServiceManualCPVBid.yaml#/AdGroupServiceManualCPVBid'
+    'type':
+      $ref: 'AdGroupServiceType.yaml#/AdGroupServiceType'
+  title: AdGroupServiceBid
+  description: |
+    <div lang="ja">AdGroupServiceBidオブジェクトは、入札最適化方法を格納するコンテナです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+    <div lang="en">AdGroupServiceBid object is a container for storing bid optimization method.<br>This field is required in ADD operation, and will be optional in SET operation.</div>

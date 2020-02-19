@@ -1,0 +1,24 @@
+StatsServiceAudienceCategoryTarget:
+  type: object
+  nullable: true
+  properties:
+    audienceCategoryType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">提供されるカテゴリの種別を表します。</div>
+        <div lang="en">Audience category information.</div>
+    categoryNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリ名（英語）です。</div><div lang="en">Category name (English)</div>
+    categoryNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリ名（日本語）です。</div><div lang="en">Category name (Japanese)</div>
+  title: StatsServiceAudienceCategoryTarget
+  description: |
+    <div lang="ja">StatsServiceAudienceCategoryTargetオブジェクトは、オーディエンスカテゴリターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceAudienceCategoryTarget object contains configuration information of Audience Category targeting.</div>

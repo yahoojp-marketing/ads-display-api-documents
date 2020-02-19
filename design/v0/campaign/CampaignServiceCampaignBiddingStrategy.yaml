@@ -9,28 +9,28 @@ CampaignServiceCampaignBiddingStrategy:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーン最大入札単価(CPC)</div>
+        <div lang="ja">キャンペーン最大入札価格(CPC)</div>
         <div lang="en">Max bid of campaign (CPC)</div>
     maxCpvBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーン最大入札単価(CPV)</div>
+        <div lang="ja">キャンペーン最大入札価格(CPV)</div>
         <div lang="en">Max bid of campaign (CPV)</div>
     maxVcpmBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーン最大入札単価(vCPM)</div><div lang="en">Max bid of campaign (vCPM)</div>
+        <div lang="ja">キャンペーン最大入札価格(vCPM)</div><div lang="en">Max bid of campaign (vCPM)</div>
     targetCpaBidValue:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーン目標単価(CPA)</div>
-        <div lang="en">Target bid of campaign (CPA)</div>
+        <div lang="ja">キャンペーン目標単価(tCPA)</div>
+        <div lang="en">Target bid of campaign (tCPA)</div>
   title: CampaignServiceCampaignBiddingStrategy
   description: |
     <div lang="ja">キャンペーン入札戦略</div>

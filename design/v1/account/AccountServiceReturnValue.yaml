@@ -1,0 +1,9 @@
+AccountServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      $ref: 'AccountServiceValue.yaml#/AccountServiceValue'
+  title: AccountServiceReturnValue
+  description: |
+    <div lang="ja">AccountServiceReturnValueオブジェクトは、アカウント情報を格納するコンテナです。</div><div lang="en">The AccountServiceReturnValue object is a container for storing account information.</div>

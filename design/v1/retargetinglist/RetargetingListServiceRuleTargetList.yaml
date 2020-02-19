@@ -1,0 +1,31 @@
+RetargetingListServiceRuleTargetList:
+  type: object
+  nullable: true
+  properties:
+    isOpen:
+      $ref: 'RetargetingListServiceIsOpen.yaml#/RetargetingListServiceIsOpen'
+    isPreset:
+      $ref: 'RetargetingListServiceIsPreset.yaml#/RetargetingListServiceIsPreset'
+    reachPeriod:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">リーチの蓄積期間（1日～540日）です。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+        <div lang="en">Cookies validation period. (1 - 540 days) <br>This field is required in ADD operation, and is optional in SET operation.</div>
+    retargetingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">リターゲティングタグIDです。<br>このフィールドは、ADD時に必須となります。</div>
+        <div lang="en">ID of Retargeting Tag. <br>This field is required in ADD operation.</div>
+    rules:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceRule.yaml#/RetargetingListServiceRule'
+  title: RetargetingListServiceRuleTargetList
+  description: |
+    <div lang="ja">RetargetingListServiceRuleTargetListオブジェクトは、ルール設定のリストを表します。<br>このフィールドは、ADDおよびSET時に省略可能となります。<br>※targetListTypeがDEFAULT_LISTまたはRULEの場合は、ADDおよびSET時に必須となります。</div>
+    <div lang="en">RetargetingListServiceRuleTargetList object displays the list of rule settings.<br>This field is optional in ADD and SET operation. <br> *If targetListType is DEFAULT_LIST, this field is required in ADD and SET operation.</div>
+  

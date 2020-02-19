@@ -1,0 +1,23 @@
+RetargetingListServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'RetargetingList.yaml#/RetargetingList'
+      minItems: 1
+      maxItems: 20
+  title: RetargetingListServiceOperation
+  description: |
+    <div lang="ja">RetargetingListServiceOperationオブジェクトは、操作対象となるサイトリターゲティングのターゲットリスト情報を表します。</div><div lang="en">RetargetingListServiceOperation object displays operation of target list for site retargeting.</div>

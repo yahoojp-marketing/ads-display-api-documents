@@ -1,0 +1,12 @@
+ReportDefinitionServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ReportDefinitionServiceValue.yaml#/ReportDefinitionServiceValue'
+  title: ReportDefinitionServiceReturnValue
+  description: |
+    <div lang="ja">ReportDefinitionServiceReturnValueオブジェクトは、操作結果を含むレポート定義のコンテナです。</div><div lang="en">The ReportDefinitionServiceReturnValue object is a container that holds report definitions, including operation results.</div>

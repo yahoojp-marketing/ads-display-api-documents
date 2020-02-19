@@ -1,0 +1,24 @@
+AuditLogServiceValue:
+  type: object
+  nullable: true
+  properties:
+    auditLogJob:
+      $ref: 'AuditLogServiceJob.yaml#/AuditLogServiceJob'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+      description: |
+        <div lang="ja">エラー内容です。</div>
+        <div lang="en">Error content.</div>
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: AuditLogServiceValue
+  description: |
+    <div lang="ja">AuditLogServiceValueオブジェクトは、get/addメソッドの実行結果（1エンティティ）を保持するオブジェクトです。</div>
+    <div lang="en">AuditLogServiceValue object is container storing the result of get/add method (1 entity).</div>

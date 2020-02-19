@@ -1,0 +1,17 @@
+AdGroupAdServiceCampaignGoalFilterType:
+  type: string
+  nullable: true
+  enum:
+  - ALL
+  - NON_GOAL
+  - GOAL
+  - UNKNOWN
+  title: AdGroupAdServiceCampaignGoalFilterType
+  description: |
+    <div lang="ja">AdGroupAdServiceCampaignGoalFilterTypeは、キャンペーン目的の有無でキャンペーンをフィルタリングするための設定です。</div>
+    <div lang="en">AdGroupAdServiceCampaignGoalFilterType is a setting for filtering campaigns "with campaignGoal" or "with no campaignGoal".</div>
+    <hr>
+    <p>* <code>NON_GOAL</code> - <span lang="ja">目的なしキャンペーンのみ取得</span><span lang="en">Only campaigns with no campaignGoal</span></p>
+    <p>* <code>GOAL</code> - <span lang="ja">目的ありキャンペーンのみ取得</span><span lang="en">Only campaigns with campaignGoal</span></p>
+    <p>* <code>ALL</code> - <span lang="ja">全てのキャンペーンを取得（DEFAULT）</span><span lang="en">ALL campaigns（Default）</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

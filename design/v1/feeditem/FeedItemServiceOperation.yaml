@@ -1,0 +1,23 @@
+FeedItemServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'FeedItem.yaml#/FeedItem'
+      minItems: 1
+      maxItems: 1
+  title: FeedItemServiceOperation
+  description: |
+    <div lang="ja">FeedItemServiceOperationオブジェクトは、商品の情報を格納するコンテナです。</div><div lang="en">FeedItemServiceOperation object contains the information about items.</div>

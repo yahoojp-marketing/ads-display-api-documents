@@ -1,0 +1,16 @@
+PlacementUrlListServiceUrlList:
+  type: object
+  nullable: true
+  properties:
+    placementUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">プレイスメントURLです。<br>このフィールドは、ADDおよびSET時に必須となります。</div>
+        <div lang="en">Url.<br>This field is required in ADD and SET operation.</div>
+    urlActiveFlg:
+      $ref: 'PlacementUrlListServiceUrlActiveFlg.yaml#/PlacementUrlListServiceUrlActiveFlg'
+  title: PlacementUrlListServiceUrlList
+  description: |
+    <div lang="ja">PlacementUrlListServiceUrlListオブジェクトは、URLを保持するオブジェクトです。<br>このフィールドは、ADD時に必須となり、SET時に省略可能となります。</div>
+    <div lang="en">The objects to keep url.<br>This field is required in ADD operation, and is optional in SET operation.</div>

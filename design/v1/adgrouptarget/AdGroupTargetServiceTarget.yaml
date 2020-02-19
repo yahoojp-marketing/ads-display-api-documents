@@ -1,0 +1,91 @@
+AdGroupTargetServiceTarget:
+  type: object
+  nullable: true
+  properties:
+    adScheduleTarget:
+      $ref: 'AdGroupTargetServiceAdScheduleTarget.yaml#/AdGroupTargetServiceAdScheduleTarget'
+    ageTarget:
+      $ref: 'AdGroupTargetServiceAgeTarget.yaml#/AdGroupTargetServiceAgeTarget'
+    appTarget:
+      $ref: 'AdGroupTargetServiceAppTarget.yaml#/AdGroupTargetServiceAppTarget'
+    audienceCategoryTarget:
+      $ref: 'AdGroupTargetServiceAudienceCategoryTarget.yaml#/AdGroupTargetServiceAudienceCategoryTarget'
+    carrierTarget:
+      $ref: 'AdGroupTargetServiceCarrierTarget.yaml#/AdGroupTargetServiceCarrierTarget'
+    deviceTarget:
+      $ref: 'AdGroupTargetServiceDeviceTarget.yaml#/AdGroupTargetServiceDeviceTarget'
+    genderTarget:
+      $ref: 'AdGroupTargetServiceGenderTarget.yaml#/AdGroupTargetServiceGenderTarget'
+    geoTarget:
+      $ref: 'AdGroupTargetServiceGeoTarget.yaml#/AdGroupTargetServiceGeoTarget'
+    interestCategoryTarget:
+      $ref: 'AdGroupTargetServiceInterestCategoryTarget.yaml#/AdGroupTargetServiceInterestCategoryTarget'
+    isRemove:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">trueの場合、ターゲティング種別をすべて削除します。<br>このフィールドは、ADD、SETおよびREMOVE時は無視され、REPLACE時は省略可能となります。</div>
+        <div lang="en">If true, delete all targeting types.<br>This field will be ignored in ADD, SET and REMOVE operation, and will be optional in REPLACE operation.</div>
+    osTarget:
+      $ref: 'AdGroupTargetServiceOsTarget.yaml#/AdGroupTargetServiceOsTarget'
+    osVersionTarget:
+      $ref: 'AdGroupTargetServiceOsVersionTarget.yaml#/AdGroupTargetServiceOsVersionTarget'
+    placementTarget:
+      $ref: 'AdGroupTargetServicePlacementTarget.yaml#/AdGroupTargetServicePlacementTarget'
+    searchTarget:
+      $ref: 'AdGroupTargetServiceSearchTarget.yaml#/AdGroupTargetServiceSearchTarget'
+    siteCategoryTarget:
+      $ref: 'AdGroupTargetServiceSiteCategoryTarget.yaml#/AdGroupTargetServiceSiteCategoryTarget'
+    siteRetargetingTarget:
+      $ref: 'AdGroupTargetServiceSiteRetargetingTarget.yaml#/AdGroupTargetServiceSiteRetargetingTarget'
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットIDです。<br>
+        このフィールドは、ADDおよびREPLACE時は省略可能となり、SETおよびREMOVE時は必須となります。<br>
+        ※ADD時、targetTypeが以下のいずれかの場合は必須です。<br>
+        ‐SITE_RETARGETING<br>
+        ‐PLACEMENT_TARGET<br>
+        ‐SEARCH_TARGET<br>
+        ‐GEO_TARGET<br>
+        ‐INTEREST_CATEGORY<br>
+        ‐SITE_CATEGORY<br>
+        ‐AUDIENCE_CATEGORY_TARGET<br>
+        ※REPLACE時、isRemoveがtrueの場合は設定不要です。<br>
+        <br>
+        ‐SITE_RETARGETING: targetListId<br>
+        ‐PLACEMENT_TARGET: placementUrlListId<br>
+        ‐SEARCH_TARGET: searchKeywordListId<br>
+        ‐GEO_TARGET: IM地域コード(geo)<br>
+        ‐INTEREST_CATEGORY: カテゴリーコード(category)<br>
+        ‐SITE_CATEGORY: カテゴリーコード(category)<br>
+        ‐OS_VERSION_TARGET: osVersion<br>
+        ‐AUDIENCE_CATEGORY_TARGET: オーディエンスカテゴリーコード(audience category)
+        </div>
+        <div lang="en">Target ID.<br>This field is optional in ADD and REPLACE operation, and is required in SET and REMOVE operation.<br>
+        *If targetType is any of the following, this field is required in ADD operation.<br>
+        ‐SITE_RETARGETING<br>
+        ‐PLACEMENT_TARGET<br>
+        ‐SEARCH_TARGET<br>
+        ‐GEO_TARGET<br>
+        ‐INTEREST_CATEGORY<br>
+        ‐SITE_CATEGORY<br>
+        ‐AUDIENCE_CATEGORY_TARGET<br>
+        *If isRemove is true, this field does not need to be set in REPLACE operation.<br>
+        <br>
+        ‐SITE_RETARGETING: targetListId<br>
+        ‐PLACEMENT_TARGET: placementUrlListId<br>
+        ‐SEARCH_TARGET: searchKeywordListId<br>
+        ‐GEO_TARGET: IM area code(geo)<br>
+        ‐INTEREST_CATEGORY: category code(category)<br>
+        ‐SITE_CATEGORY: category code(category)<br>
+        ‐OS_VERSION_TARGET: osVersion<br>
+        ‐AUDIENCE_CATEGORY_TARGET: audience category code(audience category)
+        </div>
+    targetType:
+      $ref: 'AdGroupTargetServiceTargetType.yaml#/AdGroupTargetServiceTargetType'
+  title: AdGroupTargetServiceTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceTargetオブジェクトは、ターゲティング設定情報を保持します。<br>このフィールドは、リクエストの場合は必須です。</div>
+    <div lang="en">AdGroupTargetServiceTarget object is a container for storing targeting settings.<br>This field is required in requests.</div>

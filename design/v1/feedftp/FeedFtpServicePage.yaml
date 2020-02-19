@@ -1,0 +1,19 @@
+FeedFtpServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数</div><div lang="en">Total number of entries in the result.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedFtpServiceValue.yaml#/FeedFtpServiceValue'
+  title: FeedFtpServicePage
+  description: |
+    <div lang="ja">FeedFtpServicePageオブジェクトは、取得されるアップロード情報を保持します。</div>
+    <div lang="en">FeedFtpServicePage object retains the Upload information.</div>

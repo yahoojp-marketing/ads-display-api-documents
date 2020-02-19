@@ -1,0 +1,15 @@
+RetargetingTagServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+  title: RetargetingTagServiceOperation
+  description: |
+    <div lang="ja">RetargetingTagServiceOperationオブジェクトは、サイトリターゲティングのタグ処理の内容を表します。</div><div lang="en">RetargetingTagServiceOperation object is a detail of tag process of Site retargeting.</div>

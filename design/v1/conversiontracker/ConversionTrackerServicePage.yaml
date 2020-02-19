@@ -1,0 +1,59 @@
+ConversionTrackerServicePage:
+  type: object
+  nullable: true
+  properties:
+    period:
+      $ref: 'ConversionTrackerServicePeriod.yaml#/ConversionTrackerServicePeriod'
+    totalAllConversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値（全て）の合計です。</div><div lang="en">Total of conv. value (all).</div>
+    totalAllConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数（全て）の合計です。</div><div lang="en">Total of conversions (all).</div>
+    totalConversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値の合計です。</div><div lang="en">Total of conv. value.</div>
+    totalConversionValueViaAdClick:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">コンバージョンの価値の合計（クリック経由）です。</div><div lang="en">Total of conv. value (via click).</div>
+    totalConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数の合計です。</div><div lang="en">Total of conversions.</div>
+    totalConversionsViaAdClick:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">コンバージョン数の合計（クリック経由）です。</div><div lang="en">Total of conversions (via click).</div>
+    totalCrossDeviceConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">クロスデバイスコンバージョン数の合計です。</div><div lang="en">Total of cross-device conv.</div>
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。です。</div><div lang="en">Total number of items to be retrieved.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceValue.yaml#/ConversionTrackerServiceValue'
+  title: ConversionTrackerServicePage
+  description: |
+    <div lang="ja">ConversionTrackerServicePageオブジェクトは、getメソッドの実行結果（全Entityのリスト）を保持します。</div><div lang="en">ConversionTrackerServicePage object contains the results (a list of all entities) for get method.</div>

@@ -1,0 +1,18 @@
+FeedServiceUploadLimit:
+  type: object
+  nullable: true
+  properties:
+    sourceType:
+      $ref: 'FeedServiceSourceType.yaml#/FeedServiceSourceType'
+    controlType:
+      $ref: 'FeedServiceControlType.yaml#/FeedServiceControlType'
+    limitValue:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">上限数です。</div><div lang="en">Number of limit.</div>
+  title: FeedServiceUploadLimit
+  description: |
+    <div lang="ja">FeedServiceUploadLimitオブジェクトは、Feedファイルの制限情報を保持します。</div>
+    <div lang="en">FeedServiceUploadLimit object contains feed file restriction information.</div>

@@ -1,0 +1,18 @@
+DictionaryServiceOsVersionPage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of items to be retrieved.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'DictionaryServiceOsVersionValue.yaml#/DictionaryServiceOsVersionValue'
+  title: DictionaryServiceOsVersionPage
+  description: |
+    <div lang="ja">DictionaryServiceOsVersionPageオブジェクトは、getOsVersionメソッドの実行結果（全Entityのリスト）を保持します。</div><div lang="en">DictionaryServiceOsVersionPage object contains the results (a list of all entities) for getOsVersion method.</div>

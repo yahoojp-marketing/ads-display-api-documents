@@ -1,0 +1,20 @@
+AdGroupTargetServiceInterestCategoryTarget:
+  type: object
+  nullable: true
+  properties:
+    categoryFullNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリー名（英語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Interest category name (English).<br>Although this field will be returned in the response, it will be ignored on input.</div>
+    categoryFullNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリー名（日本語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Interest category name (Japanese).<br>Although this field will be returned in the response, it will be ignored on input.</div>
+  title: AdGroupTargetServiceInterestCategoryTarget
+  description: |
+    <div lang="ja">AdGroupTargetServiceInterestCategoryTargetオブジェクトは、インタレストカテゴリーターゲティング設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがINTEREST_CATEGORYの場合は必須です。</div>
+    <div lang="en">AdGroupTargetServiceInterestCategoryTarget object is a container for storing interest category targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is INTEREST_CATEGORY, this field is required.</div>
