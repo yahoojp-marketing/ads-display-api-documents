@@ -17,5 +17,5 @@ AdGroupServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AdGroupServiceValue
   description: |
-    <div lang="ja">AdGroupServiceValueオブジェクトは、処理結果を含む広告グループに関する情報を表します。</div><div lang="en">AdGroupServiceValue serves the information of adGroup including operation results.</div>
-
+    <div lang="ja">AdGroupServiceValueオブジェクトは、処理結果を含む広告グループに関する情報を表します。</div>
+    <div lang="en">AdGroupServiceValue serves the information of adGroup including operation results.</div>

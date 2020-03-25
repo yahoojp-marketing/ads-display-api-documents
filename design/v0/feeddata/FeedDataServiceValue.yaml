@@ -17,4 +17,5 @@ FeedDataServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: FeedDataServiceValue
   description: |
-    <div lang="ja">FeedDataServiceValueオブジェクトは、商品情報を格納するコンテナです。</div><div lang="en">FeedDataServiceValue object is a container for storing item list information.</div>
+    <div lang="ja">FeedDataServiceValueオブジェクトは、商品情報を格納するコンテナです。</div>
+    <div lang="en">FeedDataServiceValue object is a container for storing item list information.</div>

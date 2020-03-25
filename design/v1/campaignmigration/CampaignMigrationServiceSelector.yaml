@@ -9,7 +9,8 @@ CampaignMigrationServiceSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     migrationJobIds:
       type: array
       nullable: true
@@ -19,7 +20,9 @@ CampaignMigrationServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">マイグレーションジョブID</div><div lang="en">Migration job ID</div>
+        <div lang="ja">マイグレーションジョブID</div>
+        <div lang="en">Migration job ID</div>
   title: CampaignMigrationServiceSelector
   description: |
-    <div lang="ja">CampaignMigrationServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持します。</div><div lang="en">CampaignMigrationServiceSelector object contains search condition of get method (execution parameters).</div>
+    <div lang="ja">CampaignMigrationServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">CampaignMigrationServiceSelector object contains search condition of get method (execution parameters).</div>

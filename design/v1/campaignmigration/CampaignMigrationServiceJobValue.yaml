@@ -17,4 +17,5 @@ CampaignMigrationServiceJobValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: CampaignMigrationServiceJobValue
   description: |
-    <div lang="ja">CampaignMigrationServiceJobValueオブジェクトは、マイグレーションジョブの処理状況を格納するコンテナです。</div><div lang="en">CampaignMigrationServiceJobValue object contains processing status of migration job.</div>
+    <div lang="ja">CampaignMigrationServiceJobValueオブジェクトは、マイグレーションジョブの処理状況を格納するコンテナです。</div>
+    <div lang="en">CampaignMigrationServiceJobValue object contains processing status of migration job.</div>

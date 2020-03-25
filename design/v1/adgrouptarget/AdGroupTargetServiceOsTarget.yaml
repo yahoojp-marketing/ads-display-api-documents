@@ -6,5 +6,13 @@ AdGroupTargetServiceOsTarget:
       $ref: 'AdGroupTargetServiceDeviceOsType.yaml#/AdGroupTargetServiceDeviceOsType'
   title: AdGroupTargetServiceOsTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceOsTargetオブジェクトは、OSターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがOS_TARGETの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceOsTarget object is a container for storing OS targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is OS_TARGET, this field is required.</div>
+    <div lang="ja">
+    AdGroupTargetServiceOsTargetオブジェクトは、OSターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがOS_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceOsTarget object is a container for storing OS targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is OS_TARGET, this field is required.
+    </div>

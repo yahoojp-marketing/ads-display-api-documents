@@ -10,18 +10,22 @@ CampaignServiceManualCampaignConversionOptimizer:
   title: CampaignServiceManualCampaignConversionOptimizer
   description: |
     <div lang="ja">CampaignServiceManualCampaignConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。</div>
-    <div lang="en">CampaignServiceManualCampaignConversionOptimizer displays the contents of Conversion Optimization settings.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>conversionOptimizerEligibilityFlg</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">CampaignServiceManualCampaignConversionOptimizer displays the contents of Conversion Optimization settings.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>conversionOptimizerEligibilityFlg</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

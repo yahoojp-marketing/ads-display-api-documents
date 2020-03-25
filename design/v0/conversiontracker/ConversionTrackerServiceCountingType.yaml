@@ -7,7 +7,9 @@ ConversionTrackerServiceCountingType:
   - UNKNOWN
   title: ConversionTrackerServiceCountingType
   description: |
-    <div lang="ja">ConversionTrackerServiceCountingTypeは、コンバージョンの計測方法を表します。</div><div lang="en">ConversionTrackerServiceCountingType displays conversion measurement method.</div><hr>
+    <div lang="ja">ConversionTrackerServiceCountingTypeは、コンバージョンの計測方法を表します。</div>
+    <div lang="en">ConversionTrackerServiceCountingType displays conversion measurement method.</div>
+    <hr>
     <p>* <code>ONE_PER_CLICK</code> - <span lang="ja">ユニークコンバージョンです。</span><span lang="en">Unique conversion.</span></p>
     <p>* <code>MANY_PER_CLICK</code> - <span lang="ja">総コンバージョンです。</span><span lang="en">Total conversion.</span></p>
     <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

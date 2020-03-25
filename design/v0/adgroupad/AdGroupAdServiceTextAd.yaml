@@ -6,12 +6,14 @@ AdGroupAdServiceTextAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文（1行目）です。</div><div lang="en">Description text (line 1)</div>
+        <div lang="ja">説明文（1行目）です。</div>
+        <div lang="en">Description text (line 1)</div>
     description2:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文（2行目）です。</div><div lang="en">Description text (line 2)</div>
+        <div lang="ja">説明文（2行目）です。</div>
+        <div lang="en">Description text (line 2)</div>
     displayUrl:
       type: string
       nullable: true
@@ -39,50 +41,57 @@ AdGroupAdServiceTextAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">タイトルです。</div><div lang="en">Title</div>
+        <div lang="ja">タイトルです。</div>
+        <div lang="en">Title</div>
     url:
       type: string
       nullable: true
       description: |
-        <div lang="ja">リンク先URLです。</div><div lang="en">Destination URL</div>
+        <div lang="ja">リンク先URLです。</div>
+        <div lang="en">Destination URL</div>
   title: AdGroupAdServiceTextAd
   description: |
-    <div lang="ja">AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。</div><div lang="en">AdGroupAdServiceTextAd object describes the Text Ad information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>description</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>description2</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>displayUrl</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>headline</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>url</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。</div>
+    <div lang="en">AdGroupAdServiceTextAd object describes the Text Ad information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>description</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>description2</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>displayUrl</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>headline</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

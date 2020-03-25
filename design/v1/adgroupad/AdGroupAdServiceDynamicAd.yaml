@@ -6,8 +6,18 @@ AdGroupAdServiceDynamicAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ブランドカラーです。<br>※RGB、HEX指定です。<br>設定例：#FFFFFF<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Brand color.<br>Format :RGB or HEX<br>e.g.：#FFFFFF<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        ブランドカラーです。<br>
+        ※RGB、HEX指定です。<br>
+        設定例：#FFFFFF<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Brand color.<br>
+        Format :RGB or HEX<br>
+        e.g.：#FFFFFF<br>
+        This field is optional in ADD and SET operation.
+        </div>
     buttonText:
       $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
     campaignBannerMediaId:
@@ -15,43 +25,87 @@ AdGroupAdServiceDynamicAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンバナー画像のメディアIDです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Campaign banner media ID.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        キャンペーンバナー画像のメディアIDです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     campaignBannerMediaId2:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンバナー画像のメディアID 2です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Campaign banner media ID 2.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 2です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 2.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     campaignBannerMediaId3:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンバナー画像のメディアID 3です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Campaign banner media ID 3.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 3です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 3.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     campaignBannerMediaId4:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンバナー画像のメディアID 4です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Campaign banner media ID 4.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 4です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 4.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     campaignBannerUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーンバナーURLです。<br>このフィールドは省略可能となります。<br>ADD時、設定する場合は以下のいずれかの指定が必要となります。<br>
-        - campaignBannerMediaId<br>- campaignBannerMediaId2<br>- campaignBannerMediaId3<br>- campaignBannerMediaId4</div>
-        <div lang="en">Campaign banner URL.<br>This field is optional.<br>For setting in ADD operation, one of the following is required:<br>
-        - campaignBannerMediaId<br>- campaignBannerMediaId2<br>- campaignBannerMediaId3<br>- campaignBannerMediaId4</div>
+        <div lang="ja">
+        キャンペーンバナーURLです。<br>
+        このフィールドは省略可能となります。<br>
+        ADD時、設定する場合は以下のいずれかの指定が必要となります。<br>
+        - campaignBannerMediaId<br>
+        - campaignBannerMediaId2<br>
+        - campaignBannerMediaId3<br>
+        - campaignBannerMediaId4
+        </div>
+        <div lang="en">
+        Campaign banner URL.<br>
+        This field is optional.<br>
+        For setting in ADD operation, one of the following is required:<br>
+        - campaignBannerMediaId<br>
+        - campaignBannerMediaId2<br>
+        - campaignBannerMediaId3<br>
+        - campaignBannerMediaId4
+        </div>
     displayUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">表示URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Display URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     isRemoveCampaignBannerMediaId:
       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
     isRemoveCampaignBannerMediaId2:
@@ -67,47 +121,97 @@ AdGroupAdServiceDynamicAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ロゴ画像のメディアIDです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Media ID of logo image.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        ロゴ画像のメディアIDです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     logoMediaId2:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ロゴ画像のメディアID 2です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Media ID of logo image 2.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        ロゴ画像のメディアID 2です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image 2.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     logoMediaId3:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ロゴ画像のメディアID 3です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Media ID of logo image 3.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        ロゴ画像のメディアID 3です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image 3.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     prefix:
       type: string
       nullable: true
       description: |
-        <div lang="ja">プレフィックスです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Prefix.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        プレフィックスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Prefix.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     principal:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告の主体者表記です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Advertiser Indication.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        広告の主体者表記です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Advertiser Indication.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     suffix:
       type: string
       nullable: true
       description: |
-        <div lang="ja">サフィックスです。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Suffix.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        サフィックスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Suffix.<br>
+        This field is optional in ADD and SET operation.
+        </div>
     url:
       type: string
       nullable: true
       description: |
-        <div lang="ja">リンク先URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Destination URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
   title: AdGroupAdServiceDynamicAd
   description: |
-    <div lang="ja">AdGroupAdServiceDynamicAdオブジェクトは、動的ディスプレイ広告の情報を表します。<br>このフィールドは、省略可能となります。<br>※ADD時、adTypeがDYNAMIC_ADの場合は必須です。</div>
-    <div lang="en">AdGroupAdServiceDynamicAd object describes information regarding dynamic ads for display.<br>This field is optional.<br>*If adType is DYNAMIC_AD, this field is required in ADD operation.</div>
+    <div lang="ja">
+    AdGroupAdServiceDynamicAdオブジェクトは、動的ディスプレイ広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがDYNAMIC_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceDynamicAd object describes information regarding dynamic ads for display.<br>
+    This field is optional.<br>
+    *If adType is DYNAMIC_AD, this field is required in ADD operation.
+    </div>

@@ -8,7 +8,8 @@ StatsServiceSiteRetargetingTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットリスト名</div><div lang="en">Target list name</div>
+        <div lang="ja">ターゲットリスト名</div>
+        <div lang="en">Target list name</div>
   title: StatsServiceSiteRetargetingTarget
   description: |
     <div lang="ja">StatsServiceSiteRetargetingTargetオブジェクトは、サイトリターゲティングの設定情報を保持します。</div>

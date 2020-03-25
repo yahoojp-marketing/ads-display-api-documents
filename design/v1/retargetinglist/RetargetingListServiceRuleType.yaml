@@ -12,8 +12,14 @@ RetargetingListServiceRuleType:
   - UNKNOWN
   title: RetargetingListServiceRuleType
   description: |
-    <div lang="ja">RetargetingListServiceRuleTypeは、ルールタイプのリストの種類を表示します。<br>このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
-    <div lang="en">RetargetingListServiceRuleType display the type of the rule. <br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    <div lang="ja">
+    RetargetingListServiceRuleTypeは、ルールタイプのリストの種類を表示します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceRuleType display the type of the rule. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
     <hr>
     <p>* <code>URL</code> - <span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></p>
     <p>* <code>LABEL</code> - <span lang="ja">カスタムラベルを利用したリスト設定</span><span lang="en">List setting using the Custom label.</span></p>

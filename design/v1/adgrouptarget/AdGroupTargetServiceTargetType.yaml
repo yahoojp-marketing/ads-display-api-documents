@@ -20,8 +20,14 @@ AdGroupTargetServiceTargetType:
   - UNKNOWN
   title: AdGroupTargetServiceTargetType
   description: |
-    <div lang="ja">AdGroupTargetServiceTargetTypeは、ターゲティングの種別を表します。<br>このフィールドは、リクエストの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceTargetType serves types of targets.<br>This field is required in requests.</div>
+    <div lang="ja">
+    AdGroupTargetServiceTargetTypeは、ターゲティングの種別を表します。<br>
+    このフィールドは、リクエストの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceTargetType serves types of targets.<br>
+    This field is required in requests.
+    </div>
     <hr>
     <p>* <code>AD_SCHEDULE_TARGET</code> - <span lang="ja">曜日・時間帯ターゲティング</span><span lang="en">Day of Week / Hours Targeting</span></p>
     <p>* <code>GEO_TARGET</code> - <span lang="ja">地域ターゲティング</span><span lang="en">Geographic Targeting</span></p>

@@ -11,8 +11,14 @@ AdGroupServiceSmartDeviceCarrier:
   - UNKNOWN
   title: AdGroupServiceSmartDeviceCarrier
   description: |
-    <div lang="ja">AdGroupServiceSmartDeviceCarrierは、スマートデバイスのモバイルキャリアを表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AdGroupServiceSmartDeviceCarrier serves the carrier type of smart device.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceSmartDeviceCarrierは、スマートデバイスのモバイルキャリアを表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceSmartDeviceCarrier serves the carrier type of smart device.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>DOCOMO</code> - <span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></p>
     <p>* <code>KDDI</code> - <span lang="ja">au KDDIです。</span><span lang="en">au KDDI</span></p>

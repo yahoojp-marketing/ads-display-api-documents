@@ -7,7 +7,8 @@ StatsServiceValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     adGroupStatsValue:
       $ref: 'StatsServiceAdGroupStatsValue.yaml#/StatsServiceAdGroupStatsValue'
     adStatsValue:
@@ -25,7 +26,8 @@ StatsServiceValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
     periodCustomDate:
       $ref: 'StatsServicePeriodCustomDate.yaml#/StatsServicePeriodCustomDate'
     statsPeriod:

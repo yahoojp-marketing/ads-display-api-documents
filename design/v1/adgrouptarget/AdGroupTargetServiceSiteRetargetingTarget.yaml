@@ -8,9 +8,23 @@ AdGroupTargetServiceSiteRetargetingTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットリスト名です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Target List name.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        ターゲットリスト名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Target List name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
   title: AdGroupTargetServiceSiteRetargetingTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceSiteRetargetingTargetオブジェクトは、サイトリターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがSITE_RETARGETINGの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceSiteRetargetingTarget object is a container for storing site retargeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is SITE_RETARGETING, this field is required.</div>
+    <div lang="ja">
+    AdGroupTargetServiceSiteRetargetingTargetオブジェクトは、サイトリターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがSITE_RETARGETINGの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceSiteRetargetingTarget object is a container for storing site retargeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is SITE_RETARGETING, this field is required.
+    </div>

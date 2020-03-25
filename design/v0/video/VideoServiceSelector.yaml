@@ -9,7 +9,8 @@ VideoServiceSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     approvalStatuses:
       type: array
       nullable: true
@@ -25,7 +26,8 @@ VideoServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">メディアIDです。</div><div lang="en">Media ID.</div>
+        <div lang="ja">メディアIDです。</div>
+        <div lang="en">Media ID.</div>
     numberResults:
       type: integer
       nullable: true
@@ -34,7 +36,8 @@ VideoServiceSelector:
       maximum: 500
       default: 500
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     processStatuses:
       type: array
       nullable: true
@@ -48,7 +51,8 @@ VideoServiceSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
     userStatuses:
       type: array
       nullable: true
@@ -57,4 +61,5 @@ VideoServiceSelector:
       maxItems: 2
   title: VideoServiceSelector
   description: |
-    <div lang="ja">VideoServiceSelectorオブジェクトは、入稿済みの動画の情報を取得します。</div><div lang="en">The VideoServiceSelector object is a container for storing added video information and filtering condition.</div>
+    <div lang="ja">VideoServiceSelectorオブジェクトは、入稿済みの動画の情報を取得します。</div>
+    <div lang="en">The VideoServiceSelector object is a container for storing added video information and filtering condition.</div>

@@ -11,7 +11,8 @@ DictionaryServiceThirdPartyTrackingDomainValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
     thirdPartyTrackingDomain:
       type: array
       nullable: true
@@ -19,4 +20,5 @@ DictionaryServiceThirdPartyTrackingDomainValue:
         $ref: 'DictionaryServiceThirdPartyTrackingDomain.yaml#/DictionaryServiceThirdPartyTrackingDomain'
   title: DictionaryServiceThirdPartyTrackingDomainValue
   description: |
-    <div lang="ja">DictionaryServiceThirdPartyTrackingDomainValueオブジェクトは、getThirdPartyTrackingDomainメソッドの実行結果（１Entity）を保持します。</div><div lang="en">DictionaryServiceThirdPartyTrackingDomainValue object contains the result (1 Entity) of getThirdPartyTrackingDomain method.</div>
+    <div lang="ja">DictionaryServiceThirdPartyTrackingDomainValueオブジェクトは、getThirdPartyTrackingDomainメソッドの実行結果（１Entity）を保持します。</div>
+    <div lang="en">DictionaryServiceThirdPartyTrackingDomainValue object contains the result (1 Entity) of getThirdPartyTrackingDomain method.</div>

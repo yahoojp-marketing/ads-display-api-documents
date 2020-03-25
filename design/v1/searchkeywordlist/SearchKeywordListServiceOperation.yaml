@@ -10,7 +10,8 @@ SearchKeywordListServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ SearchKeywordListServiceOperation:
       maxItems: 100
   title: SearchKeywordListServiceOperation
   description: |
-    <div lang="ja">SearchKeywordListServiceOperationオブジェクトは、操作の対象となるサーチキーワードリストと処理の内容を表します。</div><div lang="en">SearchKeywordListServiceOperation object displays the element of search keyword list and process for target of operation.</div>
+    <div lang="ja">SearchKeywordListServiceOperationオブジェクトは、操作の対象となるサーチキーワードリストと処理の内容を表します。</div>
+    <div lang="en">SearchKeywordListServiceOperation object displays the element of search keyword list and process for target of operation.</div>

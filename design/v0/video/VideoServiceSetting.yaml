@@ -7,7 +7,8 @@ VideoServiceSetting:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">動画のファイルサイズです。</div><div lang="en">File size of the video.</div>
+        <div lang="ja">動画のファイルサイズです。</div>
+        <div lang="en">File size of the video.</div>
     fileType:
       $ref: 'VideoServiceFileType.yaml#/VideoServiceFileType'
     height:
@@ -15,18 +16,21 @@ VideoServiceSetting:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">動画の高さ（縦の長さ）です。</div><div lang="en">Height (vertical length) of the video.</div>
+        <div lang="ja">動画の高さ（縦の長さ）です。</div>
+        <div lang="en">Height (vertical length) of the video.</div>
     playbackTime:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">動画再生時間（秒）です。</div><div lang="en">Play time (sec) of the video.</div>
+        <div lang="ja">動画再生時間（秒）です。</div>
+        <div lang="en">Play time (sec) of the video.</div>
     videoAdFormat:
       type: string
       nullable: true
       description: |
-        <div lang="ja">動画広告の種類です。</div><div lang="en">Ad format type of the video ad.</div>
+        <div lang="ja">動画広告の種類です。</div>
+        <div lang="en">Ad format type of the video ad.</div>
     videoAspectRatio:
       type: string
       nullable: true
@@ -38,52 +42,57 @@ VideoServiceSetting:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">動画の横幅です。</div><div lang="en">Width of the video.</div>
+        <div lang="ja">動画の横幅です。</div>
+        <div lang="en">Width of the video.</div>
   title: VideoServiceSetting
   description: |
-    <div lang="ja">VideoServiceSettingオブジェクトは、動画の設定内容を保持します。</div><div lang="en">VideoServiceSetting object stores the setting information of videos.</div><hr>
-    <details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>GET</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>fileSize</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>playbackTime</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>videoAdFormat</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>videoAspectRatio</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <div lang="ja">VideoServiceSettingオブジェクトは、動画の設定内容を保持します。</div>
+    <div lang="en">VideoServiceSetting object stores the setting information of videos.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>fileSize</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>playbackTime</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>videoAdFormat</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>videoAspectRatio</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

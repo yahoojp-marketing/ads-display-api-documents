@@ -13,7 +13,8 @@ SearchKeywordIdeaServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">検索条件：キーワードID<br>※キーワード検索用<br>※キーワード、キーワードIDの同時指定はできません。</div><div lang="en">Search condition : Keyword ID.<br>*Keyword for searching.<br>*Can not specify Keyword and Keyword ID at the same time.</div>
+        <div lang="ja">検索条件：キーワードID<br>※キーワード検索用<br>※キーワード、キーワードIDの同時指定はできません。</div>
+        <div lang="en">Search condition : Keyword ID.<br>*Keyword for searching.<br>*Can not specify Keyword and Keyword ID at the same time.</div>
     keywordRecency:
       $ref: 'SearchKeywordIdeaServiceKeywordRecency.yaml#/SearchKeywordIdeaServiceKeywordRecency'
     keywords:
@@ -24,7 +25,8 @@ SearchKeywordIdeaServiceSelector:
         nullable: true
       maxItems: 200
       description: |
-        <div lang="ja">検索条件：キーワード<br>※キーワード提案用<br>※キーワード、キーワードIDの同時指定はできません。</div><div lang="en">Search condition : Keyword.<br>*Keyword for suggesting.<br>*Can not specify Keyword and Keyword ID at the same time.</div>
+        <div lang="ja">検索条件：キーワード<br>※キーワード提案用<br>※キーワード、キーワードIDの同時指定はできません。</div>
+        <div lang="en">Search condition : Keyword.<br>*Keyword for suggesting.<br>*Can not specify Keyword and Keyword ID at the same time.</div>
     matchType:
       $ref: 'SearchKeywordIdeaServiceMatchType.yaml#/SearchKeywordIdeaServiceMatchType'
     numberResults:
@@ -35,7 +37,8 @@ SearchKeywordIdeaServiceSelector:
       maximum: 1000
       default: 1000
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     sortField:
       $ref: 'SearchKeywordIdeaServiceSortField.yaml#/SearchKeywordIdeaServiceSortField'
     sortType:
@@ -47,7 +50,9 @@ SearchKeywordIdeaServiceSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: SearchKeywordIdeaServiceSelector
   description: |
-    <div lang="ja">SearchKeywordIdeaServiceSelectorオブジェクトは、サーチターゲティング対象キーワードのリストを表します。</div><div lang="en">SearchKeywordIdeaServiceSelector object displays the list of keyword for search targeting.</div>
+    <div lang="ja">SearchKeywordIdeaServiceSelectorオブジェクトは、サーチターゲティング対象キーワードのリストを表します。</div>
+    <div lang="en">SearchKeywordIdeaServiceSelector object displays the list of keyword for search targeting.</div>

@@ -7,8 +7,14 @@ AccountServiceLimitChargeType:
   - UNKNOWN
   title: AccountServiceLimitChargeType
   description: |
-    <div lang="ja">AccountServiceLimitChargeTypeは、アカウントの予算種別を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-    <div lang="en">AccountServiceLimitChargeType serves the account's budget allotment.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+    <div lang="ja">
+    AccountServiceLimitChargeTypeは、アカウントの予算種別を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AccountServiceLimitChargeType serves the account's budget allotment.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
     <hr>
     <p>* <code>SUM</code> - <span lang="ja">総額アカウントです。</span><span lang="en">Total amount</span></p>
     <p>* <code>MONTHLY</code> - <span lang="ja">月額アカウントです。</span><span lang="en">Monthly amount</span></p>

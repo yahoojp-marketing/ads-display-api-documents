@@ -20,18 +20,23 @@ CampaignServiceConversionOptimizer:
   title: CampaignServiceConversionOptimizer
   description: |
     <div lang="ja">CampaignServiceConversionOptimizerは、コンバージョン最適化制御を保持するオブジェクトです。</div>
-    <div lang="en">CampaignServiceConversionOptimizer retains conversion optimization control.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>conversionOptimizerType</td>
-        <td>Ignore</td>
-        <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: Cannot set value</div></td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">CampaignServiceConversionOptimizer retains conversion optimization control.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>conversionOptimizerType</td>
+          <td>Ignore</td>
+          <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: Cannot set value</div></td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

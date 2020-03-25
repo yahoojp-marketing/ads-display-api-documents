@@ -6,90 +6,107 @@ DictionaryServiceMediaAdFormat:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ディスプレイ（画像）広告のフォーマットです。</div><div lang="en">Format of display (image) ads</div>
+        <div lang="ja">ディスプレイ（画像）広告のフォーマットです。</div>
+        <div lang="en">Format of display (image) ads</div>
     aspect:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">アスペクト比対応かどうかを示します。</div><div lang="en">This field indicates whether the aspect ratio is supported.</div>
+        <div lang="ja">アスペクト比対応かどうかを示します。</div>
+        <div lang="en">This field indicates whether the aspect ratio is supported.</div>
     aspectHeight:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像アスペクト比：高さ [ratio]です。</div><div lang="en">Image aspect ratio: height [ratio]</div>
+        <div lang="ja">画像アスペクト比：高さ [ratio]です。</div>
+        <div lang="en">Image aspect ratio: height [ratio]</div>
     aspectRatio:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アスペクト比です。</div><div lang="en">Aspect ratio.</div>
+        <div lang="ja">アスペクト比です。</div>
+        <div lang="en">Aspect ratio.</div>
     aspectWidth:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像アスペクト比：幅 [ratio]です。</div><div lang="en">Image aspect ratio: width [ratio]</div>
+        <div lang="ja">画像アスペクト比：幅 [ratio]です。</div>
+        <div lang="en">Image aspect ratio: width [ratio]</div>
     campaignBanner:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">キャンペーンバナー画像である/キャンペーンバナー画像ではないことを示します。</div><div lang="en">This field indicates whether it is a campaign banner image or not.</div>
+        <div lang="ja">キャンペーンバナー画像である/キャンペーンバナー画像ではないことを示します。</div>
+        <div lang="en">This field indicates whether it is a campaign banner image or not.</div>
     height:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">最小画像サイズ：高さ [pixel]です。</div><div lang="en">Minimum image size: height [pixel]</div>
+        <div lang="ja">最小画像サイズ：高さ [pixel]です。</div>
+        <div lang="en">Minimum image size: height [pixel]</div>
     logo:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">ロゴ画像である/ロゴ画像ではないことを示します。</div><div lang="en">This field indicates whether it is a logo image or not.</div>
+        <div lang="ja">ロゴ画像である/ロゴ画像ではないことを示します。</div>
+        <div lang="en">This field indicates whether it is a logo image or not.</div>
     maxHeight:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">サイズ上限：高さ [pixel]です。</div><div lang="en">Size limit: height [pixel]</div>
+        <div lang="ja">サイズ上限：高さ [pixel]です。</div>
+        <div lang="en">Size limit: height [pixel]</div>
     maxWidth:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">サイズ上限：幅 [pixel]です。</div><div lang="en">Size limit: width [pixel]</div>
+        <div lang="ja">サイズ上限：幅 [pixel]です。</div>
+        <div lang="en">Size limit: width [pixel]</div>
     size:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像の最大容量：[byte]です。</div><div lang="en">Maximum image capacity: [byte]</div>
+        <div lang="ja">画像の最大容量：[byte]です。</div>
+        <div lang="en">Maximum image capacity: [byte]</div>
     sizeTo:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像圧縮後の容量：[byte]です。</div><div lang="en">Image compression capacity: [byte]</div>
+        <div lang="ja">画像圧縮後の容量：[byte]です。</div>
+        <div lang="en">Image compression capacity: [byte]</div>
     staticImage:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">静止画用の画像かどうかを示します。</div><div lang="en">This field indicates whether it is a static image.</div>
+        <div lang="ja">静止画用の画像かどうかを示します。</div>
+        <div lang="en">This field indicates whether it is a static image.</div>
     thumbnail:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">サムネイル画像である/サムネイル画像ではないことを示します。</div><div lang="en">This field indicates whether it is a thumbnail image image or not.</div>
+        <div lang="ja">サムネイル画像である/サムネイル画像ではないことを示します。</div>
+        <div lang="en">This field indicates whether it is a thumbnail image image or not.</div>
     transparent:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">透過画像の許可/不許可を示します。</div><div lang="en">This field indicates whether transparent image is permitted.</div>
+        <div lang="ja">透過画像の許可/不許可を示します。</div>
+        <div lang="en">This field indicates whether transparent image is permitted.</div>
     width:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">最小画像サイズ：幅 [pixel]です。</div><div lang="en">Minimum image size: width [pixel]</div>
+        <div lang="ja">最小画像サイズ：幅 [pixel]です。</div>
+        <div lang="en">Minimum image size: width [pixel]</div>
   title: DictionaryServiceMediaAdFormat
   description: |
-    <div lang="ja">DictionaryServiceMediaAdFormatオブジェクトは、メディアフォーマットの情報を保持します。</div><div lang="en">DictionaryServiceMediaAdFormat object contains the information of media format.</div>
+    <div lang="ja">DictionaryServiceMediaAdFormatオブジェクトは、メディアフォーマットの情報を保持します。</div>
+    <div lang="en">DictionaryServiceMediaAdFormat object contains the information of media format.</div>

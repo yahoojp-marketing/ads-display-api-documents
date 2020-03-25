@@ -9,4 +9,5 @@ CampaignMigrationServicePage:
         $ref: 'CampaignMigrationServiceJobValue.yaml#/CampaignMigrationServiceJobValue'
   title: CampaignMigrationServicePage
   description: |
-    <div lang="ja">CampaignMigrationServicePageオブジェクトは、マイグレーションジョブの状況を格納するコンテナです。</div><div lang="en">CampaignMigrationServicePage object contains migration job status.</div>
+    <div lang="ja">CampaignMigrationServicePageオブジェクトは、マイグレーションジョブの状況を格納するコンテナです。</div>
+    <div lang="en">CampaignMigrationServicePage object contains migration job status.</div>

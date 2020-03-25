@@ -10,7 +10,8 @@ FeedItemServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ FeedItemServiceOperation:
       maxItems: 1
   title: FeedItemServiceOperation
   description: |
-    <div lang="ja">FeedItemServiceOperationオブジェクトは、商品の情報を格納するコンテナです。</div><div lang="en">FeedItemServiceOperation object contains the information about items.</div>
+    <div lang="ja">FeedItemServiceOperationオブジェクトは、商品の情報を格納するコンテナです。</div>
+    <div lang="en">FeedItemServiceOperation object contains the information about items.</div>

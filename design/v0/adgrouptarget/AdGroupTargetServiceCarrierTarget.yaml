@@ -5,25 +5,30 @@ AdGroupTargetServiceCarrierTarget:
     carrierType:
       $ref: 'AdGroupTargetServiceCarrierType.yaml#/AdGroupTargetServiceCarrierType'
       description: |
-        <div lang="ja">モバイルキャリアの種別です。</div><div lang="en">Mobile carrier type</div>
+        <div lang="ja">モバイルキャリアの種別です。</div>
+        <div lang="en">Mobile carrier type</div>
   title: AdGroupTargetServiceCarrierTarget
   description: |
     <div lang="ja">AdGroupTargetServiceCarrierTargetオブジェクトは、モバイルキャリアターゲティングの設定情報を保持します。</div>
     <div lang="en">The AdGroupTargetServiceCarrierTarget object is a container for storing mobile carrier targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>carrierType</td>
-        <td>Ignore</td>
-        <td>Ignore<br><div lang="ja">※入札価格調整率のみ設定可能です。</div><div lang="en">*Can set only bid adjustment.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>carrierType</td>
+          <td>Ignore</td>
+          <td>Ignore<br><div lang="ja">※入札価格調整率のみ設定可能です。</div>
+          <div lang="en">*Can set only bid adjustment.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

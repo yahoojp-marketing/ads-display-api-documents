@@ -7,9 +7,21 @@ SearchKeywordListServiceSearchKeyword:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">サーチキーワードIDです。<br>このフィールドは、ADDおよびSET時に必須となります。</div>
-        <div lang="en">Search keyword ID.<br>This field is required in ADD and SET operation.</div>
+        <div lang="ja">
+        サーチキーワードIDです。<br>
+        このフィールドは、ADDおよびSET時に必須となります。
+        </div>
+        <div lang="en">
+        Search keyword ID.<br>
+        This field is required in ADD and SET operation.
+        </div>
   title: SearchKeywordListServiceSearchKeyword
   description: |
-    <div lang="ja">SearchKeywordListServiceSearchKeywordオブジェクトは、サーチキーワードを表します。<br>このフィールドは、ADDおよびSET時に必須となります。</div>
-    <div lang="en">SearchKeywordListServiceSearchKeyword is an object to display the search keyword.<br>This field is required in ADD and SET operation.</div>
+    <div lang="ja">
+    SearchKeywordListServiceSearchKeywordオブジェクトは、サーチキーワードを表します。<br>
+    このフィールドは、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    SearchKeywordListServiceSearchKeyword is an object to display the search keyword.<br>
+    This field is required in ADD and SET operation.
+    </div>

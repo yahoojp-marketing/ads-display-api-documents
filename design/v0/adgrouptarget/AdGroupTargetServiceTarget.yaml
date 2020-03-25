@@ -51,7 +51,8 @@ AdGroupTargetServiceTarget:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">trueの場合、ターゲティング種別をすべて削除します。</div><div lang="en">If true, delete all targeting types.</div>
+        <div lang="ja">trueの場合、ターゲティング種別をすべて削除します。</div>
+        <div lang="en">If true, delete all targeting types.</div>
     osTarget:
       $ref: 'AdGroupTargetServiceOsTarget.yaml#/AdGroupTargetServiceOsTarget'
       description: |
@@ -111,146 +112,196 @@ AdGroupTargetServiceTarget:
     targetType:
       $ref: 'AdGroupTargetServiceTargetType.yaml#/AdGroupTargetServiceTargetType'
       description: |
-        <div lang="ja">TargetTypeは、ターゲティングの種別を表します。</div><div lang="en">TargetType serves types of targets.</div>
+        <div lang="ja">TargetTypeは、ターゲティングの種別を表します。</div>
+        <div lang="en">TargetType serves types of targets.</div>
   title: AdGroupTargetServiceTarget
   description: |
     <div lang="ja">AdGroupTargetServiceTargetオブジェクトは、ターゲティング設定情報を保持します。</div>
     <div lang="en">The AdGroupTargetServiceTarget object is a container for storing targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>adScheduleTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>ageTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>appTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>audienceCategoryTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>carrierTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>deviceTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>genderTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>geoTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>interestCategoryTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>isRemove</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>osTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>osVersionTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>placementTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>searchTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div><div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>siteCategoryTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div><div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>siteRetargetingTarget</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div><div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div><div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
-        <td>-</td>
-        <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div><div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
-      </tr>
-      <tr>
-        <td>targetId</td>
-        <td>Optional<br>
-        <div lang="ja">※2<br>typeが以下のいずれかの場合、設定必須<br>‐SITE_RETARGETING<br>‐PLACEMENT_TARGET<br>‐SEARCH_TARGET<br>‐GEO_TARGET<br>‐INTEREST_CATEGORY<br>‐SITE_CATEGORY<br>‐AUDIENCE_CATEGORY<br></div>
-        <div lang="en">※2<br>Required if type is one of the following<br>‐SITE_RETARGETING<br>‐PLACEMENT_TARGET<br>‐SEARCH_TARGET<br>‐GEO_TARGET<br>‐INTEREST_CATEGORY<br>‐SITE_CATEGORY<br>‐AUDIENCE_CATEGORY<br></div></td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Optional<br><div lang="ja">※3<br>isRemoveがtrueの場合、設定不要</div><div lang="en">∗3<br>Not required if isRemove is true.</div></td>
-      </tr>
-      <tr>
-        <td>targetType</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>adScheduleTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAD_SCHEDULE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AD_SCHEDULE_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>ageTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAGE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AGE_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>appTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>audienceCategoryTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがAUDIENCE_CATEGORY_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is AUDIENCE_CATEGORY_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>carrierTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>deviceTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>genderTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがGENDER_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GENDER_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>geoTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがGEO_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is GEO_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>interestCategoryTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがINTEREST_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is INTEREST_CATEGORY, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>isRemove</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>osTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>osVersionTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>placementTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがPLACEMENT_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is PLACEMENT_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>searchTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSEARCH_TARGETの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SEARCH_TARGET, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>siteCategoryTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_CATEGORYの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_CATEGORY, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>siteRetargetingTarget</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
+          <td>-</td>
+          <td>Optional<br><div lang="ja">※targetTypeがSITE_RETARGETINGの場合、Requirement</div>
+          <div lang="en">∗ If targetType is SITE_RETARGETING, Requirement</div></td>
+        </tr>
+        <tr>
+          <td>targetId</td>
+          <td>Optional<br>
+          <div lang="ja">※2<br>typeが以下のいずれかの場合、設定必須<br>‐SITE_RETARGETING<br>‐PLACEMENT_TARGET<br>‐SEARCH_TARGET<br>‐GEO_TARGET<br>‐INTEREST_CATEGORY<br>‐SITE_CATEGORY<br>‐AUDIENCE_CATEGORY<br></div>
+          <div lang="en">※2<br>Required if type is one of the following<br>‐SITE_RETARGETING<br>‐PLACEMENT_TARGET<br>‐SEARCH_TARGET<br>‐GEO_TARGET<br>‐INTEREST_CATEGORY<br>‐SITE_CATEGORY<br>‐AUDIENCE_CATEGORY<br></div></td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Optional<br><div lang="ja">※3<br>isRemoveがtrueの場合、設定不要</div>
+          <div lang="en">∗3<br>Not required if isRemove is true.</div></td>
+        </tr>
+        <tr>
+          <td>targetType</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+        </tr>
+      </table>
+    </details>

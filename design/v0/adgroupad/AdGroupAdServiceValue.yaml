@@ -17,4 +17,5 @@ AdGroupAdServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AdGroupAdServiceValue
   description: |
-    <div lang="ja">AdGroupAdServiceValueオブジェクトは、処理結果を含む広告に関する情報を表します。</div><div lang="en">The AdGroupAdServiceValue object is a container for storing ad information includes operation results.</div>
+    <div lang="ja">AdGroupAdServiceValueオブジェクトは、処理結果を含む広告に関する情報を表します。</div>
+    <div lang="en">The AdGroupAdServiceValue object is a container for storing ad information includes operation results.</div>

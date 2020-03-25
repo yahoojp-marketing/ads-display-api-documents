@@ -17,4 +17,5 @@ DictionaryServiceFeedItemGoogleProductCategoryValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceFeedItemGoogleProductCategoryValue
   description: |
-    <div lang="ja">DictionaryServiceFeedItemGoogleProductCategoryValueオブジェクトは、FeedItemGoogleProductCategoryを取得するコンテナです。</div><div lang="en">DictionaryServiceFeedItemGoogleProductCategoryValue object obtains FeedItemGoogleProductCategory.</div>
+    <div lang="ja">DictionaryServiceFeedItemGoogleProductCategoryValueオブジェクトは、FeedItemGoogleProductCategoryを取得するコンテナです。</div>
+    <div lang="en">DictionaryServiceFeedItemGoogleProductCategoryValue object obtains FeedItemGoogleProductCategory.</div>

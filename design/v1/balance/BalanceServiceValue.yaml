@@ -13,7 +13,8 @@ BalanceServiceValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。</div><div lang="en">A result of operation.</div>
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">A result of operation.</div>
   title: BalanceServiceValue
   description: |
     <div lang="ja">BalanceValueオブジェクトは、選択したアカウントの未消化予算を表します。</div>

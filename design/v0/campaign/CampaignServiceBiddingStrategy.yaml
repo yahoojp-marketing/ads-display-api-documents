@@ -10,18 +10,22 @@ CampaignServiceBiddingStrategy:
   title: CampaignServiceBiddingStrategy
   description: |
     <div lang="ja">CampaignServiceBiddingStrategyオブジェクトは、キャンペーンの入札方法を表します。</div>
-    <div lang="en">The CampaignServiceBiddingStrategy object displays campaign bidding strategy.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-    <tr>
-      <th>PROPERTY</th>
-      <th>ADD</th>
-      <th>SET</th>
-      <th>REMOVE</th>
-    </tr>
-      <tr>
-        <td>biddingStrategyType</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">The CampaignServiceBiddingStrategy object displays campaign bidding strategy.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>biddingStrategyType</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

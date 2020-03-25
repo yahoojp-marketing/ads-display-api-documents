@@ -6,12 +6,27 @@ ConversionTrackerServiceStatsPeriodCustomDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">統計情報取得終了日時です。<br>※yyyyMMdd形式です。</div><div lang="en">Acquisition end date of stats information.<br>∗ Format: yyyyMMdd.</div>
+        <div lang="ja">
+        統計情報取得終了日時です。<br>
+        ※yyyyMMdd形式です。
+        </div>
+        <div lang="en">
+        Acquisition end date of stats information.<br>
+        ∗ Format: yyyyMMdd.
+        </div>
     statsStartDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">統計情報取得開始日時です。<br>※yyyyMMdd形式です。</div><div lang="en">Acquisition start date of stats information.<br>∗ Format: yyyyMMdd.</div>
+        <div lang="ja">
+        統計情報取得開始日時です。<br>
+        ※yyyyMMdd形式です。
+        </div>
+        <div lang="en">
+        Acquisition start date of stats information.<br>
+        ∗ Format: yyyyMMdd.
+        </div>
   title: ConversionTrackerServiceStatsPeriodCustomDate
   description: |
-    <div lang="ja">ConversionTrackerServiceStatsPeriodCustomDateは、統計情報の取得日を保持するオブジェクトです。</div><div lang="en">ConversionTrackerServiceStatsPeriodCustomDate object contains date of acquisition of stats information.</div>
+    <div lang="ja">ConversionTrackerServiceStatsPeriodCustomDateは、統計情報の取得日を保持するオブジェクトです。</div>
+    <div lang="en">ConversionTrackerServiceStatsPeriodCustomDate object contains date of acquisition of stats information.</div>

@@ -103,138 +103,155 @@ Campaign:
   description: |
     <div lang="ja">Campaignオブジェクトは、キャンペーン情報を表します。</div>
     <div lang="en">Campaign object describes campaign information.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Requirement</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>adProductType</td>
-        <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 必須<br>* 目的ありの場合 : 設定不可<br></div><div lang="en"><br>* With no campaignGoal: Requirement<br>* With campaignGoal: cannot be set<br></div></td>
-        <td>NotUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>appId</td>
-        <td>Optional<br><div lang="ja">※campaignTypeがAPPの場合 : Requirement</div><div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>appName</td>
-        <td>Optional<br><div lang="ja">※campaignTypeがAPPの場合 : Requirement</div><div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>biddingStrategy</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>budget</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>campaignBiddingStrategy</td>
-        <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div><div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td></td>
-        <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div><div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>campaignGoal</td>
-        <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div><div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>campaignId</td>
-        <td>Ignore</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>campaignName</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>conversionOptimizer</td>
-        <td>Ignore</td>
-        <td>Optional<br>Updatable<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: cannot be set</div></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>deviceOsType</td>
-        <td>Optional<div lang="ja">※campaignTypeがAPPの場合 : Requirement</div><div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>endDate</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>feedId</td>
-        <td>Optional<div lang="ja">※動的ディスプレイ広告の場合 : Requirement</div><div lang="en">* If AdType is Dynamic Ads for Display: Required.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>frequencyCap</td>
-        <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: cannot be set</div></td>
-        <td>Optional<br>Updatable<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: cannot be set</div></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>labels</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>servingStatus</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>startDate</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>type</td>
-        <td>Optional<div lang="ja">* 未指定時 : STANDARD<br>* 目的ありの場合 : 設定不可 ( STANDARD固定 )</div><div lang="en">∗ Not specified: STANDARD<br>* With campaignGoal: cannot be set (only STANDARD)</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>userStatus</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>viewableFrequencyCap</td>
-        <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 任意<br></div><div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Optional<br></div></td>
-        <td>Optional<br>Updatable<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 任意<br></div><div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Optional<br></div></td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Requirement</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>adProductType</td>
+          <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 必須<br>* 目的ありの場合 : 設定不可<br></div>
+          <div lang="en"><br>* With no campaignGoal: Requirement<br>* With campaignGoal: cannot be set<br></div></td>
+          <td>NotUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>appId</td>
+          <td>Optional<br><div lang="ja">※campaignTypeがAPPの場合 : Requirement</div>
+          <div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>appName</td>
+          <td>Optional<br><div lang="ja">※campaignTypeがAPPの場合 : Requirement</div>
+          <div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>biddingStrategy</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>budget</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>campaignBiddingStrategy</td>
+          <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div>
+          <div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td></td>
+          <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div>
+          <div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>campaignGoal</td>
+          <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 必須<br></div>
+          <div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Requirement<br></div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>campaignId</td>
+          <td>Ignore</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>campaignName</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>conversionOptimizer</td>
+          <td>Ignore</td>
+          <td>Optional<br>Updatable<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: cannot be set</div></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>deviceOsType</td>
+          <td>Optional<div lang="ja">※campaignTypeがAPPの場合 : Requirement</div>
+          <div lang="en">∗ If campaignType is set to &#34;APP&#34;: Required.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>endDate</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>feedId</td>
+          <td>Optional<div lang="ja">※動的ディスプレイ広告の場合 : Requirement</div>
+          <div lang="en">* If AdType is Dynamic Ads for Display: Required.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>frequencyCap</td>
+          <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: cannot be set</div></td>
+          <td>Optional<br>Updatable<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: cannot be set</div></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>labels</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>servingStatus</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>startDate</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>Optional<div lang="ja">* 未指定時 : STANDARD<br>* 目的ありの場合 : 設定不可 ( STANDARD固定 )</div>
+          <div lang="en">∗ Not specified: STANDARD<br>* With campaignGoal: cannot be set (only STANDARD)</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>userStatus</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>viewableFrequencyCap</td>
+          <td>Optional<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 任意<br></div>
+          <div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Optional<br></div></td>
+          <td>Optional<br>Updatable<br><div lang="ja"><br>* 目的なしの場合 : 設定不可<br>* 目的ありの場合 : 任意<br></div>
+          <div lang="en"><br>* With no campaignGoal: cannot be set<br>* With campaignGoal: Optional<br></div></td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

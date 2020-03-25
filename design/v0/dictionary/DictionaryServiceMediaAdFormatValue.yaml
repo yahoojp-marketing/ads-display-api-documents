@@ -20,4 +20,5 @@ DictionaryServiceMediaAdFormatValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceMediaAdFormatValue
   description: |
-    <div lang="ja">DictionaryServiceMediaAdFormatValueオブジェクトは、getMediaAdFormatメソッドの実行結果（１Entity）を保持します。</div><div lang="en">DictionaryServiceMediaAdFormatValue object contains the results (1 Entity) for getMediaAdFormat method.</div>
+    <div lang="ja">DictionaryServiceMediaAdFormatValueオブジェクトは、getMediaAdFormatメソッドの実行結果（１Entity）を保持します。</div>
+    <div lang="en">DictionaryServiceMediaAdFormatValue object contains the results (1 Entity) for getMediaAdFormat method.</div>

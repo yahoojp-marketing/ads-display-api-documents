@@ -6,26 +6,32 @@ ConversionTrackerServiceWebConversionSnippet:
       type: string
       nullable: true
       description: |
-        <div lang="ja">従来のコンバージョンタグです。</div><div lang="en">Previous tag of Conversion.</div>
+        <div lang="ja">従来のコンバージョンタグです。</div>
+        <div lang="en">Previous tag of Conversion.</div>
     webConversionSnippetType:
       $ref: 'ConversionTrackerServiceWebConversionSnippetType.yaml#/ConversionTrackerServiceWebConversionSnippetType'
   title: ConversionTrackerServiceWebConversionSnippet
   description: |
-    <div lang="ja">ConversionTrackerServiceWebConversionSnippetオブジェクトは、ウェブコンバージョントラッカーのトラッキングスクリプト情報を表します。</div><div lang="en">ConversionTrackerServiceWebConversionSnippet object displays the tracking script information of Web Conversion Tracker.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>tag</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>webConversionSnippetType</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">ConversionTrackerServiceWebConversionSnippetオブジェクトは、ウェブコンバージョントラッカーのトラッキングスクリプト情報を表します。</div>
+    <div lang="en">ConversionTrackerServiceWebConversionSnippet object displays the tracking script information of Web Conversion Tracker.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>tag</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>webConversionSnippetType</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

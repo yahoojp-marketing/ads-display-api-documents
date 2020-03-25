@@ -8,7 +8,15 @@ FeedItemServiceAvailability:
   - UNKNOWN
   title: FeedItemServiceAvailability
   description: |
-    <div lang="ja">在庫状況です。<br>このフィールドは、リクエストの場合は省略可能です。</div><div lang="en">FeedItemServiceAvailability describes stock status.<br>This field is optional in requests.</div><hr>
+    <div lang="ja">
+    在庫状況です。<br>
+    このフィールドは、リクエストの場合は省略可能です。
+    </div>
+    <div lang="en">
+    FeedItemServiceAvailability describes stock status.<br>
+    This field is optional in requests.
+    </div>
+    <hr>
     <p>* <code>OUT_OF_STOCK</code> - <span lang="ja">在庫なしです。</span><span lang="en">Out of stock</span></p>
     <p>* <code>IN_STOCK</code> - <span lang="ja">在庫ありです。</span><span lang="en">In stock</span></p>
     <p>* <code>PREORDER</code> - <span lang="ja">予約です。</span><span lang="en">Preorder</span></p>

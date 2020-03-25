@@ -17,24 +17,28 @@ CampaignServiceAutoCampaignConversionOptimizer:
   title: CampaignServiceAutoCampaignConversionOptimizer
   description: |
     <div lang="ja">CampaignServiceAutoCampaignConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。</div>
-    <div lang="en">CampaignServiceAutoCampaignConversionOptimizer retains conversion optimization settings.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>conversionOptimizerEligibilityFlg</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>targetCpa</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">CampaignServiceAutoCampaignConversionOptimizer retains conversion optimization settings.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>conversionOptimizerEligibilityFlg</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>targetCpa</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

@@ -10,7 +10,8 @@ AccountAdProductServiceValue:
       items:
         $ref: '../../Error.yaml#/Error'
       description: |
-        <div lang="ja">エラー内容です。</div><div lang="en">Error content.</div>
+        <div lang="ja">エラー内容です。</div>
+        <div lang="en">Error content.</div>
     operationSucceeded:
       type: boolean
       nullable: true
@@ -19,4 +20,5 @@ AccountAdProductServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AccountAdProductServiceValue
   description: |
-    <div lang="ja">AccountAdProductServiceValueオブジェクトは、広告掲載方式を含むコンテナです。</div><div lang="en">AccountAdProductServiceValue object that includes the ad display methods.</div>
+    <div lang="ja">AccountAdProductServiceValueオブジェクトは、広告掲載方式を含むコンテナです。</div>
+    <div lang="en">AccountAdProductServiceValue object that includes the ad display methods.</div>

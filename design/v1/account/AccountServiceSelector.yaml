@@ -11,7 +11,8 @@ AccountServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">指定しない場合は紐づくアカウントをすべて取得します。</div><div lang="en">If nothing is selected, all accounts are retrieved.</div>
+        <div lang="ja">指定しない場合は紐づくアカウントをすべて取得します。</div>
+        <div lang="en">If nothing is selected, all accounts are retrieved.</div>
     accountName:
       type: string
       nullable: true
@@ -42,7 +43,8 @@ AccountServiceSelector:
       maximum: 500
       default: 500
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     startIndex:
       type: integer
       nullable: true
@@ -50,7 +52,9 @@ AccountServiceSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: AccountServiceSelector
   description: |
-    <div lang="ja">AccountServiceSelectorオブジェクトは、取得するアカウントを指定します。</div><div lang="en">The AccountServiceSelector object is used to select accounts for acquisition.</div>
+    <div lang="ja">AccountServiceSelectorオブジェクトは、取得するアカウントを指定します。</div>
+    <div lang="en">The AccountServiceSelector object is used to select accounts for acquisition.</div>

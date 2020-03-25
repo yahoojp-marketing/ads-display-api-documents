@@ -17,7 +17,9 @@ FeedItemServiceValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">リクエストを受け付けた結果です。</div><div lang="en">Result of request</div>
+        <div lang="ja">リクエストを受け付けた結果です。</div>
+        <div lang="en">Result of request</div>
   title: FeedItemServiceValue
   description: |
-    <div lang="ja">FeedItemServiceValueオブジェクトは、処理結果を含む商品に関する情報を表します。</div><div lang="en">FeedItemServiceValue object describes information about item including the result of process.</div>
+    <div lang="ja">FeedItemServiceValueオブジェクトは、処理結果を含む商品に関する情報を表します。</div>
+    <div lang="en">FeedItemServiceValue object describes information about item including the result of process.</div>

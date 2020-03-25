@@ -16,7 +16,9 @@ ConversionTrackerServiceStatsPeriod:
   - UNKNOWN
   title: ConversionTrackerServiceStatsPeriod
   description: |
-    <div lang="ja">ConversionTrackerServiceStatsPeriodは、統計情報の集計期間を表します。</div><div lang="en">ConversionTrackerServiceStatsPeriod displays the summarized period of statistics.</div><hr>
+    <div lang="ja">ConversionTrackerServiceStatsPeriodは、統計情報の集計期間を表します。</div>
+    <div lang="en">ConversionTrackerServiceStatsPeriod displays the summarized period of statistics.</div>
+    <hr>
     <p>* <code>DEFINITE_VALUE_YESTERDAY</code> - <span lang="ja">昨日 / 確定値</span><span lang="en">Yesterday / Definite Value</span></p>
     <p>* <code>DEFINITE_VALUE_LASTBSDAY</code> - <span lang="ja">先週（月-金）/ 確定値</span><span lang="en">Last week (Business days) / Definite Value</span></p>
     <p>* <code>DEFINITE_VALUE_LASTWEEK</code> - <span lang="ja">先週（月-日）/ 確定値</span><span lang="en">Last week (All days) / Definite Value</span></p>

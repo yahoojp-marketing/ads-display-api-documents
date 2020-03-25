@@ -7,37 +7,43 @@ CampaignMigrationServiceJob:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     failedCount:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">失敗キャンペーン数</div><div lang="en">Number of failed campaigns</div>
+        <div lang="ja">失敗キャンペーン数</div>
+        <div lang="en">Number of failed campaigns</div>
     inProgressCount:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">進行中キャンペーン数</div><div lang="en">Number of progressing campaigns</div>
+        <div lang="ja">進行中キャンペーン数</div>
+        <div lang="en">Number of progressing campaigns</div>
     jobStatus:
       $ref: 'CampaignMigrationServiceJobStatus.yaml#/CampaignMigrationServiceJobStatus'
     migrationJobEndDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">マイグレーションジョブ終了日時</div><div lang="en">Migration job end date</div>
+        <div lang="ja">マイグレーションジョブ終了日時</div>
+        <div lang="en">Migration job end date</div>
     migrationJobId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">マイグレーションジョブID</div><div lang="en">Migration job ID</div>
+        <div lang="ja">マイグレーションジョブID</div>
+        <div lang="en">Migration job ID</div>
     migrationJobSubmitDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">マイグレーションジョブ登録日時</div><div lang="en">Migration job submit date</div>
+        <div lang="ja">マイグレーションジョブ登録日時</div>
+        <div lang="en">Migration job submit date</div>
     scope:
       $ref: 'CampaignMigrationServiceScope.yaml#/CampaignMigrationServiceScope'
     succeededCount:
@@ -45,13 +51,16 @@ CampaignMigrationServiceJob:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">正常終了キャンペーン数</div><div lang="en">Number of completed campaigns</div>
+        <div lang="ja">正常終了キャンペーン数</div>
+        <div lang="en">Number of completed campaigns</div>
     totalCount:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">全キャンペーン数</div><div lang="en">Number of total campaigns</div>
+        <div lang="ja">全キャンペーン数</div>
+        <div lang="en">Number of total campaigns</div>
   title: CampaignMigrationServiceJob
   description: |
-    <div lang="ja">CampaignMigrationServiceJobオブジェクトは、マイグレーションジョブの処理状況を示すオブジェクトです。</div><div lang="en">CampaignMigrationServiceJob object indicates processing status of migration job.</div>
+    <div lang="ja">CampaignMigrationServiceJobオブジェクトは、マイグレーションジョブの処理状況を示すオブジェクトです。</div>
+    <div lang="en">CampaignMigrationServiceJob object indicates processing status of migration job.</div>

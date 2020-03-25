@@ -36,7 +36,8 @@ StatsServiceTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットID</div><div lang="en">StatsServiceTarget ID</div>
+        <div lang="ja">ターゲットID</div>
+        <div lang="en">StatsServiceTarget ID</div>
     targetSetting:
       $ref: 'StatsServiceTargetSetting.yaml#/StatsServiceTargetSetting'
     targetType:

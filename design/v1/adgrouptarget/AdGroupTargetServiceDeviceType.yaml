@@ -9,8 +9,16 @@ AdGroupTargetServiceDeviceType:
   - UNKNOWN
   title: AdGroupTargetServiceDeviceType
   description: |
-    <div lang="ja">AdGroupTargetServiceDeviceTypeは、配信先デバイスの種類を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>※SET時、入札価格調整率のみ設定可能です。</div>
-    <div lang="en">AdGroupTargetServiceDeviceType displays types of devices to be posted on.<br>Although this field will be returned in the response, it will be ignored on input. <br>*Can set only bid adjustment in SET operation.</div>
+    <div lang="ja">
+    AdGroupTargetServiceDeviceTypeは、配信先デバイスの種類を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    ※SET時、入札価格調整率のみ設定可能です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceDeviceType displays types of devices to be posted on.<br>
+    Although this field will be returned in the response, it will be ignored on input. <br>
+    *Can set only bid adjustment in SET operation.
+    </div>
     <hr>
     <p>* <code>DESKTOP</code> - <span lang="ja">PC</span><span lang="en">PC</span></p>
     <p>* <code>WAP_MOBILE</code> - <span lang="ja">従来型携帯電話（フィーチャーフォン）</span><span lang="en">Contemporary mobile phones (Feature Phone)</span></p>

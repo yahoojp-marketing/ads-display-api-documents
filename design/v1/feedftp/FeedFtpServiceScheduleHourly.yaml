@@ -7,7 +7,14 @@ FeedFtpServiceScheduleHourly:
       nullable: true
       format: int32
       description: |
-        <div lang="ja">何時間ごとに実行するかの間隔です。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Interval of the execution time.<br>This field is required in requests.</div>
+        <div lang="ja">
+        何時間ごとに実行するかの間隔です。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Interval of the execution time.<br>
+        This field is required in requests.
+        </div>
   title: FeedFtpServiceScheduleHourly
   description: |
     <div lang="ja">FeedFtpServiceScheduleHourlyオブジェクトは、定期アップロードを何時間ごとに実行するかを表します。</div>

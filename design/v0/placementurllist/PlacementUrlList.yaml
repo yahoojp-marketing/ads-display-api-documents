@@ -9,12 +9,14 @@ PlacementUrlList:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     description:
       type: string
       nullable: true
       description: |
-        <div lang="ja">urlリストの説明です。</div><div lang="en">Url List Description</div>
+        <div lang="ja">urlリストの説明です。</div>
+        <div lang="en">Url List Description</div>
     unknownDomainFlg:
       $ref: 'PlacementUrlListServiceUnknownDomainFlg.yaml#/PlacementUrlListServiceUnknownDomainFlg'
     urlListId:
@@ -22,12 +24,14 @@ PlacementUrlList:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">urlリストIDです。</div><div lang="en">Url List ID</div>
+        <div lang="ja">urlリストIDです。</div>
+        <div lang="en">Url List ID</div>
     urlListName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">urlリスト名です。</div><div lang="en">Url List Name</div>
+        <div lang="ja">urlリスト名です。</div>
+        <div lang="en">Url List Name</div>
     urls:
       type: array
       nullable: true
@@ -35,48 +39,53 @@ PlacementUrlList:
         $ref: 'PlacementUrlListServiceUrlList.yaml#/PlacementUrlListServiceUrlList'
   title: PlacementUrlList
   description: |
-    <div lang="ja">PlacementUrlListオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div><div lang="en">The objects to keep Placement Url Information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-      </tr>
-      <tr>
-        <td>description</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>unknownDomainFlg</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>urlListId</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-      </tr>
-      <tr>
-        <td>urlListName</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>urls</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <div lang="ja">PlacementUrlListオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div>
+    <div lang="en">The objects to keep Placement Url Information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+        </tr>
+        <tr>
+          <td>description</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>unknownDomainFlg</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>urlListId</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+        </tr>
+        <tr>
+          <td>urlListName</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>urls</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

@@ -6,4 +6,5 @@ DictionaryServiceOsVersionSelector:
       $ref: 'DictionaryServiceDeviceOsType.yaml#/DictionaryServiceDeviceOsType'
   title: DictionaryServiceOsVersionSelector
   description: |
-    <div lang="ja">DictionaryServiceOsVersionSelectorオブジェクトは、getOsVersionメソッドの検索条件（実行パラメータ）を保持します。</div><div lang="en">DictionaryServiceOsVersionSelector object contains a set of criteria (parameters) for getOsVersion method.</div>
+    <div lang="ja">DictionaryServiceOsVersionSelectorオブジェクトは、getOsVersionメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">DictionaryServiceOsVersionSelector object contains a set of criteria (parameters) for getOsVersion method.</div>

@@ -10,7 +10,8 @@ ConversionTrackerServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ ConversionTrackerServiceOperation:
       maxItems: 500
   title: ConversionTrackerServiceOperation
   description: |
-    <div lang="ja">ConversionTrackerServiceOperationオブジェクトは、メソッドで操作対象となるコンバージョントラッカー情報を保持します。</div><div lang="en">ConversionTrackerServiceOperation object contains the information of conversion tracking which is operation target by method.</div>
+    <div lang="ja">ConversionTrackerServiceOperationオブジェクトは、メソッドで操作対象となるコンバージョントラッカー情報を保持します。</div>
+    <div lang="en">ConversionTrackerServiceOperation object contains the information of conversion tracking which is operation target by method.</div>

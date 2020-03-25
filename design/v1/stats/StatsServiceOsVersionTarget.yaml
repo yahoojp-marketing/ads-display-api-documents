@@ -6,7 +6,8 @@ StatsServiceOsVersionTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">OSバージョン</div><div lang="en">OS Version</div>
+        <div lang="ja">OSバージョン</div>
+        <div lang="en">OS Version</div>
   title: StatsServiceOsVersionTarget
   description: |
     <div lang="ja">StatsServiceOsVersionTargetオブジェクトは、OSバージョンターゲットの設定情報を保持します。</div>

@@ -9,8 +9,14 @@ AdGroupAdServiceAdStyle:
   - UNKNOWN
   title: AdGroupAdServiceAdStyle
   description: |
-    <div lang="ja">AdGroupAdServiceAdStyleは、掲載フォーマットの種別を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-    <div lang="en">AdGroupAdServiceAdStyle displays the ad style type.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+    <div lang="ja">
+    AdGroupAdServiceAdStyleは、掲載フォーマットの種別を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAdStyle displays the ad style type.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
     <hr>
     <p>* <code>TEXT</code> - <span lang="ja">テキストの掲載フォーマット</span><span lang="en">Text ad style</span></p>
     <p>* <code>IMAGE</code> - <span lang="ja">画像の掲載フォーマット</span><span lang="en">Image ad style</span></p>

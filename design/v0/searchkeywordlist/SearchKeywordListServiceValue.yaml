@@ -17,4 +17,5 @@ SearchKeywordListServiceValue:
       $ref: 'SearchKeywordList.yaml#/SearchKeywordList'
   title: SearchKeywordListServiceValue
   description: |
-    <div lang="ja">SearchKeywordListServiceValueオブジェクトは、操作結果を含むサーチキーワードリストのコンテナを表します。</div><div lang="en">SearchKeywordListServiceValue object displays the container that includes operation results for search keyword list.</div>
+    <div lang="ja">SearchKeywordListServiceValueオブジェクトは、操作結果を含むサーチキーワードリストのコンテナを表します。</div>
+    <div lang="en">SearchKeywordListServiceValue object displays the container that includes operation results for search keyword list.</div>

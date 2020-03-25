@@ -11,7 +11,8 @@ FeedServiceUploadLimit:
       nullable: true
       format: int32
       description: |
-        <div lang="ja">上限数です。</div><div lang="en">Number of limit.</div>
+        <div lang="ja">上限数です。</div>
+        <div lang="en">Number of limit.</div>
   title: FeedServiceUploadLimit
   description: |
     <div lang="ja">FeedServiceUploadLimitオブジェクトは、Feedファイルの制限情報を保持します。</div>

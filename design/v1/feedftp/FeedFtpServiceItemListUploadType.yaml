@@ -7,8 +7,14 @@ FeedFtpServiceItemListUploadType:
   - UNKNOWN
   title: FeedFtpServiceItemListUploadType
   description: |
-    <div lang="ja">商品リストファイルアップロード時の取り込み種別です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-    <div lang="en">FeedFtpServiceItemListUploadType object displays the upload type of Item List file.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    <div lang="ja">
+    商品リストファイルアップロード時の取り込み種別です。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    FeedFtpServiceItemListUploadType object displays the upload type of Item List file.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>
     <hr>
     <p>* <code>UPDATE_PART</code> - <span lang="ja">部分更新</span><span lang="en">Update partially.</span></p>
     <p>* <code>UPDATE_ALL</code> - <span lang="ja">全件更新</span><span lang="en">Update all.</span></p>

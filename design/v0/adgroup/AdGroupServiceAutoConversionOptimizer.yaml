@@ -5,34 +5,40 @@ AdGroupServiceAutoConversionOptimizer:
     eligibilityFlg:
       $ref: 'AdGroupServiceEligibilityFlg.yaml#/AdGroupServiceEligibilityFlg'
       description: |
-        <div lang="ja">コンバージョン単価の目標値です。※設定範囲：1 - 9,999,999,999 ※コンバージョン最適化機能が動作している場合には、手動で設定されている入札設定は無効になります。</div><div lang="en">This field is desired conversion cost value. ※Settable range：1 - 9,999,999,999 ※If function of conversion optimization is running, manual bid settings is invalid.</div>
+        <div lang="ja">コンバージョン単価の目標値です。※設定範囲：1 - 9,999,999,999 ※コンバージョン最適化機能が動作している場合には、手動で設定されている入札設定は無効になります。</div>
+        <div lang="en">This field is desired conversion cost value. ※Settable range：1 - 9,999,999,999 ※If function of conversion optimization is running, manual bid settings is invalid.</div>
     targetCpa:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">コンバージョン最適化利用可否です。<br>※DISABLEの場合は自動入札（コンバージョン最適化）は使えません。</div><div lang="en">Availability of conversion optimization. If this field value is 'DISABLE',this AdGroup cannot use Auto Bidding(Conversion Optimization).</div>
+        <div lang="ja">コンバージョン最適化利用可否です。<br>※DISABLEの場合は自動入札（コンバージョン最適化）は使えません。</div>
+        <div lang="en">Availability of conversion optimization. If this field value is 'DISABLE',this AdGroup cannot use Auto Bidding(Conversion Optimization).</div>
   title: AdGroupServiceAutoConversionOptimizer
   description: |
     <div lang="ja">AdGroupServiceAutoConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。</div>
-    <div lang="en">AdGroupServiceAutoConversionOptimizer is an object that holds the conversion optimization 'Auto Bidding' settings.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>conversionOptimizerEligibilityFlg</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>targetCpa</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">AdGroupServiceAutoConversionOptimizer is an object that holds the conversion optimization 'Auto Bidding' settings.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>conversionOptimizerEligibilityFlg</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>targetCpa</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

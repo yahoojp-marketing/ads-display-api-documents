@@ -7,13 +7,15 @@ Balance:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">The account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
     balance:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">未消化予算です。</div><div lang="en">The balance.</div>
+        <div lang="ja">未消化予算です。</div>
+        <div lang="en">The balance.</div>
   title: Balance
   description: |
     <div lang="ja">Balanceオブジェクトは、選択したアカウントの未消化予算情報を表します。</div>

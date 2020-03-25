@@ -9,4 +9,5 @@ RetargetingTagServiceReturnValue:
         $ref: 'RetargetingTagServiceValue.yaml#/RetargetingTagServiceValue'
   title: RetargetingTagServiceReturnValue
   description: |
-    <div lang="ja">RetargetingTagServiceReturnValueオブジェクトは、サイトリターゲティングタグの情報を格納するコンテナです。</div><div lang="en">RetargetingTagServiceReturnValue object is a container that holds tag information of site retargeting.</div>
+    <div lang="ja">RetargetingTagServiceReturnValueオブジェクトは、サイトリターゲティングタグの情報を格納するコンテナです。</div>
+    <div lang="en">RetargetingTagServiceReturnValue object is a container that holds tag information of site retargeting.</div>

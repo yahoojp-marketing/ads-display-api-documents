@@ -10,8 +10,14 @@ RetargetingListServiceTargetListType:
   - UNKNOWN
   title: RetargetingListServiceTargetListType
   description: |
-    <div lang="ja">RetargetingListServiceTargetListTypeは、ターゲティングの種別を表します。<br>このフィールドは、ADDおよびSET時に必須となります。</div>
-    <div lang="en">RetargetingListServiceTargetListType serves types of targets. <br>This field is required in ADD and SET operation.</div>
+    <div lang="ja">
+    RetargetingListServiceTargetListTypeは、ターゲティングの種別を表します。<br>
+    このフィールドは、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    RetargetingListServiceTargetListType serves types of targets. <br>
+    This field is required in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>DEFAULT_LIST</code> - <span lang="ja">デフォルトリストです。</span><span lang="en">Default List.</span></p>
     <p>* <code>RULE</code> - <span lang="ja">ルール(条件)です。</span><span lang="en">Rules (conditions).</span></p>

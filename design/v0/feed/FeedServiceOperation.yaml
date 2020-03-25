@@ -10,7 +10,8 @@ FeedServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">AccountId</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">AccountId</div>
     operand:
       type: array
       nullable: false

@@ -7,12 +7,14 @@ StatsServiceCampaignStatsValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンID</div><div lang="en">Campaign ID</div>
+        <div lang="ja">キャンペーンID</div>
+        <div lang="en">Campaign ID</div>
     campaignName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーン名</div><div lang="en">Campaign name</div>
+        <div lang="ja">キャンペーン名</div>
+        <div lang="en">Campaign name</div>
     stats:
       $ref: 'Stats.yaml#/Stats'
   title: StatsServiceCampaignStatsValue

@@ -9,7 +9,8 @@ BalanceServiceSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">The account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
   title: BalanceServiceSelector
   description: |
     <div lang="ja">BalanceServiceSelectorオブジェクトは、操作対象となる未消化予算情報を表します。</div>

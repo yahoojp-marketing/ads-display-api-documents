@@ -9,9 +9,11 @@ CampaignMigrationServiceDownloadSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     lang:
       $ref: 'CampaignMigrationServiceLang.yaml#/CampaignMigrationServiceLang'
   title: CampaignMigrationServiceDownloadSelector
   description: |
-    <div lang="ja">マイグレーション対象のキャンペーン一覧をダウンロードします。</div><div lang="en">Download the list of campaigns targeted for migration.</div>
+    <div lang="ja">マイグレーション対象のキャンペーン一覧をダウンロードします。</div>
+    <div lang="en">Download the list of campaigns targeted for migration.</div>

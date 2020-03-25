@@ -7,7 +7,14 @@ FeedFtp:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang="en">Account ID.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     activeStatus:
       $ref: 'FeedFtpServiceActiveStatus.yaml#/FeedFtpServiceActiveStatus'
     feedId:
@@ -15,12 +22,26 @@ FeedFtp:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Feedを識別するIdです。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Feed ID.<br>This field is required in requests.</div>
+        <div lang="ja">
+        Feedを識別するIdです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Feed ID.<br>
+        This field is required in requests.
+        </div>
     feedUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">商品リストファイルのURLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">URL of item list file.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        商品リストファイルのURLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        URL of item list file.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     itemListUploadType:
       $ref: 'FeedFtpServiceItemListUploadType.yaml#/FeedFtpServiceItemListUploadType'
     schedule:
@@ -29,12 +50,26 @@ FeedFtp:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ユーザー名です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">User name.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        ユーザー名です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        User name.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     userPassword:
       type: string
       nullable: true
       description: |
-        <div lang="ja">パスワードです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">Password.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        パスワードです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Password.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
   title: FeedFtp
   description: |
     <div lang="ja">FeedFtpオブジェクトは、定期アップロード設定情報を保持します。</div>

@@ -10,7 +10,8 @@ ReportDefinitionServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">The account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ ReportDefinitionServiceOperation:
       maxItems: 30
   title: ReportDefinitionServiceOperation
   description: |
-    <div lang="ja">ReportDefinitionServiceOperationオブジェクトは、操作の対象となるレポート定義および操作の内容を表します。</div><div lang="en">The ReportDefinitionServiceOperation object serves operation target report definitions and operation content.</div>
+    <div lang="ja">ReportDefinitionServiceOperationオブジェクトは、操作の対象となるレポート定義および操作の内容を表します。</div>
+    <div lang="en">The ReportDefinitionServiceOperation object serves operation target report definitions and operation content.</div>

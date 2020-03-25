@@ -9,45 +9,50 @@ AdGroupTargetServiceAdScheduleTarget:
       nullable: true
       format: int32
       description: |
-        <div lang="ja">終了時間（時のみ）です。</div><div lang="en">End time (hour only)</div>
+        <div lang="ja">終了時間（時のみ）です。</div>
+        <div lang="en">End time (hour only)</div>
     startHour:
       type: integer
       nullable: true
       format: int32
       description: |
-        <div lang="ja">開始時間（時のみ）です。</div><div lang="en">Start time (hour only)</div>
+        <div lang="ja">開始時間（時のみ）です。</div>
+        <div lang="en">Start time (hour only)</div>
   title: AdGroupTargetServiceAdScheduleTarget
   description: |
     <div lang="ja">AdGroupTargetServiceAdScheduleTargetオブジェクトは、時間帯ターゲティングの設定情報を保持します。</div>
     <div lang="en">AdGroupTargetServiceAdScheduleTarget object is a container for storing day of week/hours targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>dayOfWeek</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>endHour</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>startHour</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>dayOfWeek</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>endHour</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>startHour</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+        </tr>
+      </table>
+    </details>

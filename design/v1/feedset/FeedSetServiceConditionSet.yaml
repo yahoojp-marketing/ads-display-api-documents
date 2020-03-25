@@ -11,4 +11,11 @@ FeedSetServiceConditionSet:
         $ref: 'FeedSetServiceCondition.yaml#/FeedSetServiceCondition'
   title: FeedSetServiceConditionSet
   description: |
-    <div lang="ja">FeedSetServiceConditionSetオブジェクトは、商品セット情報の条件を保持します。<br>ADD時、このフィールドは必須です。</div><div lang="en">FeedSetServiceConditionSet object contains conditions of Item Set information.<br>This field is required in ADD operation. </div>
+    <div lang="ja">
+    FeedSetServiceConditionSetオブジェクトは、商品セット情報の条件を保持します。<br>
+    ADD時、このフィールドは必須です。
+    </div>
+    <div lang="en">
+    FeedSetServiceConditionSet object contains conditions of Item Set information.<br>
+    This field is required in ADD operation.
+    </div>

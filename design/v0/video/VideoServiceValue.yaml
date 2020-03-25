@@ -17,19 +17,23 @@ VideoServiceValue:
       $ref: 'Video.yaml#/Video'
   title: VideoServiceValue
   description: |
-    <div lang="ja">VideoServiceValueオブジェクトは、メソッドの実行結果（1Entity）を保持します。</div><div lang="en">VideoServiceValue objects stores the execution result (1 Entity) of method.</div><hr>
-    <details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>GET</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>video</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <div lang="ja">VideoServiceValueオブジェクトは、メソッドの実行結果（1Entity）を保持します。</div>
+    <div lang="en">VideoServiceValue objects stores the execution result (1 Entity) of method.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>video</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

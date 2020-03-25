@@ -10,14 +10,17 @@ AuditLogServiceDownloadSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     auditLogJobId:
       type: integer
       nullable: false
       format: int64
       description: |
-        <div lang="ja">操作履歴のダウンロードジョブIDです。</div><div lang="en">The operation history job ID.</div>
+        <div lang="ja">操作履歴のダウンロードジョブIDです。</div>
+        <div lang="en">The operation history job ID.</div>
   title: AuditLogServiceDownloadSelector
   description: |
-    <div lang="ja">操作履歴をダウンロードします。</div><div lang="en">Download the operation history.</div>
+    <div lang="ja">操作履歴をダウンロードします。</div>
+    <div lang="en">Download the operation history.</div>
 

@@ -12,8 +12,14 @@ AdGroupTargetServiceDayOfWeek:
   - UNKNOWN
   title: AdGroupTargetServiceDayOfWeek
   description: |
-    <div lang="ja">AdGroupTargetServiceDayOfWeekは、配信する曜日を表します。<br>このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。</div>
-    <div lang="en">AdGroupTargetServiceDayOfWeek serves the days of the week for delivery.<br>This field is required in ADD operation, and will be optional in REPLACE operation.</div>
+    <div lang="ja">
+    AdGroupTargetServiceDayOfWeekは、配信する曜日を表します。<br>
+    このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceDayOfWeek serves the days of the week for delivery.<br>
+    This field is required in ADD operation, and will be optional in REPLACE operation.
+    </div>
     <hr>
     <p>* <code>MONDAY</code> - <span lang="ja">月曜日です。</span><span lang="en">Monday</span></p>
     <p>* <code>TUESDAY</code> - <span lang="ja">火曜日です。</span><span lang="en">Tuesday</span></p>

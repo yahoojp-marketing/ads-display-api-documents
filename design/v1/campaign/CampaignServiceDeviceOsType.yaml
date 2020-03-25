@@ -7,8 +7,16 @@ CampaignServiceDeviceOsType:
   - UNKNOWN
   title: CampaignServiceDeviceOsType
   description: |
-    <div lang="ja">CampaignServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時に無視されます。<br>※campiagnTypeがAPPの場合、ADD時に必須となります。</div>
-    <div lang="en">CampaignServiceDeviceOsType serves OS types for devices to be posted on.<br>This field is optional in ADD operation, and will be ignored in SET and REMOVE operation. <br>*If campaignType is APP, this field is required in ADD operation.</div>
+    <div lang="ja">
+    CampaignServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>
+    このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時に無視されます。<br>
+    ※campiagnTypeがAPPの場合、ADD時に必須となります。
+    </div>
+    <div lang="en">
+    CampaignServiceDeviceOsType serves OS types for devices to be posted on.<br>
+    This field is optional in ADD operation, and will be ignored in SET and REMOVE operation. <br>
+    *If campaignType is APP, this field is required in ADD operation.
+    </div>
     <hr>
     <p>* <code>ANDROID</code> - <span lang="ja">Android向けに配信されます。</span><span lang="en">Deliver to Android.</span></p>
     <p>* <code>IOS</code> - <span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></p>

@@ -7,36 +7,79 @@ Feed:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Account ID.<br>This field is required in requests.</div>
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        This field is required in requests.
+        </div>
     feedId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Feedを識別するIDです。<br>SET時およびREMOVE時、このフィールドは必須です。</div><div lang="en">ID for identifying Feed.<br>This field is required in SET and REMOVE operation.</div>
+        <div lang="ja">
+        Feedを識別するIDです。<br>
+        SET時およびREMOVE時、このフィールドは必須です。
+        </div>
+        <div lang="en">
+        ID for identifying Feed.<br>
+        This field is required in SET and REMOVE operation.
+        </div>
     feedName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">Feedを識別する名称です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">Name for identifying Feed.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        Feedを識別する名称です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Name for identifying Feed.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     itemCount:
       type: integer
       nullable: true
       format: int32
       description: |
-        <div lang="ja">アイテム数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang="en">Number of items.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        アイテム数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of items.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     approvedItemCount:
       type: integer
       nullable: true
       format: int32
       description: |
-        <div lang="ja">審査済みアイテム数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang="en">Number of approved items.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        審査済みアイテム数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of approved items.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     disApprovedItemCount:
       type: integer
       nullable: true
       format: int32
       description: |
-        <div lang="ja">審査否認アイテム数です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div><div lang="en">Number of disapproved items.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        審査否認アイテム数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of disapproved items.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
   title: Feed
   description: |
-    <div lang="ja">Feedオブジェクトは、Feed情報を保持します。</div><div lang="en">Feed object contains Feed informaton.</div>
+    <div lang="ja">Feedオブジェクトは、Feed情報を保持します。</div>
+    <div lang="en">Feed object contains Feed informaton.</div>

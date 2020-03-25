@@ -9,18 +9,21 @@ Account:
         type: string
         nullable: true
       description: |
-        <div lang="ja">アカウント権限</div><div lang="en">Account authority</div>
+        <div lang="ja">アカウント権限</div>
+        <div lang="en">Account authority</div>
     accountId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     accountName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アカウント名です。</div><div lang="en">Account name</div>
+        <div lang="ja">アカウント名です。</div>
+        <div lang="en">Account name</div>
     accountStatus:
       $ref: 'AccountServiceStatus.yaml#/AccountServiceStatus'
     accountType:
@@ -37,46 +40,52 @@ Account:
       $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
   title: Account
   description: |
-    <div lang="ja">Accountオブジェクトは、アカウント情報を示します。</div><div lang="en">Account objects serve account information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>accountAuthorities</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Requirement</td>
-      </tr>
-      <tr>
-        <td>accountName</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>accountStatus</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>accountType</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>authType</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>autoTaggingEnabled</td>
-        <td>Optional<br><div lang="ja">default: FALSE</div><div lang="en">default: FALSE</div></td>
-      </tr>
-      <tr>
-        <td>budget</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>deliveryStatus</td>
-        <td>Optional</td>
-      </tr>
-    </table></details>
+    <div lang="ja">Accountオブジェクトは、アカウント情報を示します。</div>
+    <div lang="en">Account objects serve account information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>accountAuthorities</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Requirement</td>
+        </tr>
+        <tr>
+          <td>accountName</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>accountStatus</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>accountType</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>authType</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>autoTaggingEnabled</td>
+          <td>Optional<br><div lang="ja">default: FALSE</div>
+          <div lang="en">default: FALSE</div></td>
+        </tr>
+        <tr>
+          <td>budget</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>deliveryStatus</td>
+          <td>Optional</td>
+        </tr>
+      </table>
+    </details>

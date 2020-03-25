@@ -7,17 +7,20 @@ StatsServiceImageStatsValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">メディアID</div><div lang="en">Media ID</div>
+        <div lang="ja">メディアID</div>
+        <div lang="en">Media ID</div>
     mediaName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">実ファイル名</div><div lang="en">File name</div>
+        <div lang="ja">実ファイル名</div>
+        <div lang="en">File name</div>
     mediaTitle:
       type: string
       nullable: true
       description: |
-        <div lang="ja">メディア名</div><div lang="en">Media title</div>
+        <div lang="ja">メディア名</div>
+        <div lang="en">Media title</div>
     stats:
       $ref: 'Stats.yaml#/Stats'
   title: StatsServiceImageStatsValue

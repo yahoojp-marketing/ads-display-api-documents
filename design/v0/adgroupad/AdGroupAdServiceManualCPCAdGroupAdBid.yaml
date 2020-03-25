@@ -7,23 +7,29 @@ AdGroupAdServiceManualCPCAdGroupAdBid:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">入札価格です。</div><div lang="en">Bid amount.</div>
+        <div lang="ja">入札価格です。</div>
+        <div lang="en">Bid amount.</div>
   title: AdGroupAdServiceManualCPCAdGroupAdBid
   description: |
-    <div lang="ja">AdGroupAdServiceManualCPCAdGroupAdBidオブジェクトは、広告の手動入札方法（CPC）を表します。 ※広告掲載方式がVIDEO_AD(動画広告)のキャンペーンIDを指定した時は利用できません。</div><div lang="en">AdGroupAdServiceManualCPCAdGroupAdBid object serves the manual bid (CPC) of the ad level. ※It is not available when specifying campaign ID for ad distribution type 'VIDEO_AD'.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>GET</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>maxCpc</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore<br>NotUpdatable</td>
-      </tr>
-    </table></details>
+    <div lang="ja">AdGroupAdServiceManualCPCAdGroupAdBidオブジェクトは、広告の手動入札方法（CPC）を表します。 ※広告掲載方式がVIDEO_AD(動画広告)のキャンペーンIDを指定した時は利用できません。</div>
+    <div lang="en">AdGroupAdServiceManualCPCAdGroupAdBid object serves the manual bid (CPC) of the ad level. ※It is not available when specifying campaign ID for ad distribution type 'VIDEO_AD'.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>maxCpc</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore<br>NotUpdatable</td>
+        </tr>
+      </table>
+    </details>

@@ -9,8 +9,14 @@ AdGroupAdServiceCarrierName:
   - UNKNOWN
   title: AdGroupAdServiceCarrierName
   description: |
-    <div lang="ja">AdGroupAdServiceCarrierNameは、モバイルキャリアを表します。<br>ADD時、このフィールドは必須となります。</div>
-    <div lang="en">AdGroupAdServiceCarrierName serves carrier types.<br>This field is required in ADD operation.</div>
+    <div lang="ja">
+    AdGroupAdServiceCarrierNameは、モバイルキャリアを表します。<br>
+    ADD時、このフィールドは必須となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceCarrierName serves carrier types.<br>
+    This field is required in ADD operation.
+    </div>
     <hr>
     <p>* <code>DOCOMO</code> - <span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></p>
     <p>* <code>KDDI</code> - <span lang="ja">au KDDIです。</span><span lang="en">au KDDI</span></p>

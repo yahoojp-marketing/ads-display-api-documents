@@ -6,36 +6,41 @@ AdGroupTargetServicePlacementTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">プレイスメントリスト名です。</div><div lang="en">Placement List Name</div>
+        <div lang="ja">プレイスメントリスト名です。</div>
+        <div lang="en">Placement List Name</div>
     placementUrlListType:
       $ref: 'AdGroupTargetServicePlacementUrlListType.yaml#/AdGroupTargetServicePlacementUrlListType'
       description: |
-        <div lang="ja">プレイスメントリスト種別です。</div><div lang="en">Placement List Type</div>
+        <div lang="ja">プレイスメントリスト種別です。</div>
+        <div lang="en">Placement List Type</div>
   title: AdGroupTargetServicePlacementTarget
   description: |
     <div lang="ja">AdGroupTargetServicePlacementTargetオブジェクトは、プレイスメントターゲティングの設定情報を保持するオブジェクトです。</div>
     <div lang="en">The AdGroupTargetServicePlacementTarget object is a container for storing placement targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>placementUrlListName</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>placementUrlListType</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Requirement</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>placementUrlListName</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>placementUrlListType</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Requirement</td>
+        </tr>
+      </table>
+    </details>

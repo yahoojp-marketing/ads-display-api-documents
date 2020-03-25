@@ -16,6 +16,12 @@ RetargetingListServiceTargetList:
       $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
   title: RetargetingListServiceTargetList
   description: |
-    <div lang="ja">RetargetingListServiceTargetListオブジェクトは、リターゲティングのターゲット種類とターゲットリストの情報を表します。<br>このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
-    <div lang="en">RetargetingListServiceTargetList object displays the types of target and target list for site retargeting. <br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    <div lang="ja">
+    RetargetingListServiceTargetListオブジェクトは、リターゲティングのターゲット種類とターゲットリストの情報を表します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceTargetList object displays the types of target and target list for site retargeting. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
     

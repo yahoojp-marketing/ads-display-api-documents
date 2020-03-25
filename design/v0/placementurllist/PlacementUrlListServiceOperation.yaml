@@ -10,7 +10,8 @@ PlacementUrlListServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ PlacementUrlListServiceOperation:
       maxItems: 100
   title: PlacementUrlListServiceOperation
   description: |
-    <div lang="ja">PlacementUrlListServiceOperationオブジェクトは、メソッドで操作対象のプレイスメントUrl情報を保持するオブジェクトです。</div><div lang="en">The objects to keep Placement Url information which is operation target by method.</div>
+    <div lang="ja">PlacementUrlListServiceOperationオブジェクトは、メソッドで操作対象のプレイスメントUrl情報を保持するオブジェクトです。</div>
+    <div lang="en">The objects to keep Placement Url information which is operation target by method.</div>

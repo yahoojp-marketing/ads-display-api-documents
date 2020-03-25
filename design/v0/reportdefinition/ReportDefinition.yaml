@@ -7,12 +7,14 @@ ReportDefinition:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     completeTime:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ジョブ完了日時です。</div><div lang="en">The date and time of Job completion</div>
+        <div lang="ja">ジョブ完了日時です。</div>
+        <div lang="en">The date and time of Job completion</div>
     dateRange:
       $ref: 'ReportDefinitionServiceDateRange.yaml#/ReportDefinitionServiceDateRange'
     dateRangeType:
@@ -45,23 +47,27 @@ ReportDefinition:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ジョブエラー詳細です。</div><div lang="en">Job Error Detail</div>
+        <div lang="ja">ジョブエラー詳細です。</div>
+        <div lang="en">Job Error Detail</div>
     reportJobId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">レポートジョブIDです。</div><div lang="en">Report Job Id</div>
+        <div lang="ja">レポートジョブIDです。</div>
+        <div lang="en">Report Job Id</div>
     reportName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">レポート名です。</div><div lang="en">Report name.</div>
+        <div lang="ja">レポート名です。</div>
+        <div lang="en">Report name.</div>
     requestTime:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ジョブ依頼日時です。</div><div lang="en">The date and time of Job request</div>
+        <div lang="ja">ジョブ依頼日時です。</div>
+        <div lang="en">The date and time of Job request</div>
     sortFields:
       type: array
       nullable: true
@@ -69,101 +75,108 @@ ReportDefinition:
         type: string
         nullable: true
       description: |
-        <div lang="ja">ソートです。ソートしたいフィールドを選択してください。<br>・最大で5つまで指定可能です。<br>・指定フィールドの前に&#34;+&#34;を追加すると昇順、&#34;-&#34;を追加すると降順で表示されます。</div><div lang="en">Can select the fields to sort.<br>・Up to select 5 types of field to sort.<br>・Add &#34;+&#34; before the field name to arrange in ascending order.<br>・Add &#34;-&#34; before the field name to arrange in descending order.</div>
+        <div lang="ja">ソートです。ソートしたいフィールドを選択してください。<br>・最大で5つまで指定可能です。<br>・指定フィールドの前に&#34;+&#34;を追加すると昇順、&#34;-&#34;を追加すると降順で表示されます。</div>
+        <div lang="en">Can select the fields to sort.<br>・Up to select 5 types of field to sort.<br>・Add &#34;+&#34; before the field name to arrange in ascending order.<br>・Add &#34;-&#34; before the field name to arrange in descending order.</div>
     zip:
       $ref: 'ReportDefinitionServiceZip.yaml#/ReportDefinitionServiceZip'
   title: ReportDefinition
   description: |
-    <div lang="ja">ReportDefinitionオブジェクトは、レポート定義を表します。</div><div lang="en">The ReportDefinition object serves report definitions.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>completeTime</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>dateRange</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>dateRangeType</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>downloadEncode</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>downloadFormat</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>fields</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>filters</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>frequencyRange</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>jobStatus</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>lang</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>reportJobErrorDetail</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>reportJobId</td>
-        <td>Ignore</td>
-        <td>Requirement<br><div lang="ja">NonUpdatable</div><div lang="en">NonUpdatable</div></td>
-      </tr>
-      <tr>
-        <td>reportName</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>requestTime</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>sortFields</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>zip</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">ReportDefinitionオブジェクトは、レポート定義を表します。</div>
+    <div lang="en">The ReportDefinition object serves report definitions.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>completeTime</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>dateRange</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>dateRangeType</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>downloadEncode</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>downloadFormat</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>fields</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>filters</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>frequencyRange</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>jobStatus</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>lang</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>reportJobErrorDetail</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>reportJobId</td>
+          <td>Ignore</td>
+          <td>Requirement<br><div lang="ja">NonUpdatable</div>
+          <div lang="en">NonUpdatable</div></td>
+        </tr>
+        <tr>
+          <td>reportName</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>requestTime</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>sortFields</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>zip</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

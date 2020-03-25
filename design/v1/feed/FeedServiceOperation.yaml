@@ -10,7 +10,8 @@ FeedServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">AccountId</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">AccountId</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ FeedServiceOperation:
       maxItems: 1
   title: FeedServiceOperation
   description: |
-    <div lang="ja">FeedServiceOperationオブジェクトは、mutate対象となるFeed情報を保持します。</div><div lang="en">FeedServiceOperation object contains Feed information by mutate operation.</div>
+    <div lang="ja">FeedServiceOperationオブジェクトは、mutate対象となるFeed情報を保持します。</div>
+    <div lang="en">FeedServiceOperation object contains Feed information by mutate operation.</div>

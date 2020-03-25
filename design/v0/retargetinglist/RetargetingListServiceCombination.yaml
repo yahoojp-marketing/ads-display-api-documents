@@ -11,24 +11,29 @@ RetargetingListServiceCombination:
         $ref: 'RetargetingListServiceTargetListData.yaml#/RetargetingListServiceTargetListData'
   title: RetargetingListServiceCombination
   description: |
-    <div lang="ja">RetargetingListServiceCombinationオブジェクトは、ターゲットリストの組み合わせに関する情報を格納するコンテナです。</div><div lang="en">RetargetingListServiceCombination object is a container for storing combination of target list informarion.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>logicalOperator</td>
-        <td>Requirement</td>
-        <td>Requirement<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>targetLists</td>
-        <td>Requirement</td>
-        <td>Requirement<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">RetargetingListServiceCombinationオブジェクトは、ターゲットリストの組み合わせに関する情報を格納するコンテナです。</div>
+    <div lang="en">RetargetingListServiceCombination object is a container for storing combination of target list informarion.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>logicalOperator</td>
+          <td>Requirement</td>
+          <td>Requirement<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>targetLists</td>
+          <td>Requirement</td>
+          <td>Requirement<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

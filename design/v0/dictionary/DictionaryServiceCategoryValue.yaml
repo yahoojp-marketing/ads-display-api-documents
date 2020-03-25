@@ -17,4 +17,5 @@ DictionaryServiceCategoryValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceCategoryValue
   description: |
-    <div lang="ja">DictionaryServiceCategoryValueオブジェクトは、カテゴリー情報を取得するコンテナです。</div><div lang="en">DictionaryServiceCategoryValue object is a container that retrieves category information.</div>
+    <div lang="ja">DictionaryServiceCategoryValueオブジェクトは、カテゴリー情報を取得するコンテナです。</div>
+    <div lang="en">DictionaryServiceCategoryValue object is a container that retrieves category information.</div>

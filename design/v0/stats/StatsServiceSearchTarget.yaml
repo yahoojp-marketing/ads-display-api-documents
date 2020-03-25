@@ -6,7 +6,8 @@ StatsServiceSearchTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">サーチキーワードリスト名</div><div lang="en">Search Keyword List name</div>
+        <div lang="ja">サーチキーワードリスト名</div>
+        <div lang="en">Search Keyword List name</div>
   title: StatsServiceSearchTarget
   description: |
     <div lang="ja">StatsServiceSearchTargetオブジェクトは、サーチターゲットの設定情報を保持します。</div>

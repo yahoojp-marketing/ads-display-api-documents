@@ -7,7 +7,8 @@ FeedSetServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of items to be retrieved.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be retrieved.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ FeedSetServicePage:
         $ref: 'FeedSetServiceValue.yaml#/FeedSetServiceValue'
   title: FeedSetServicePage
   description: |
-    <div lang="ja">FeedSetServicePageオブジェクトは、取得される商品セット情報を保持します。</div><div lang="en">FeedSetServicePage object contains Item Set information to be acquired.</div>
+    <div lang="ja">FeedSetServicePageオブジェクトは、取得される商品セット情報を保持します。</div>
+    <div lang="en">FeedSetServicePage object contains Item Set information to be acquired.</div>

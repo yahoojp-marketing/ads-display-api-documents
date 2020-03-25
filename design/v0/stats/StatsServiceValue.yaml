@@ -7,7 +7,8 @@ StatsServiceValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     adGroupStatsValue:
       $ref: 'StatsServiceAdGroupStatsValue.yaml#/StatsServiceAdGroupStatsValue'
     adStatsValue:
@@ -43,19 +44,19 @@ StatsServiceValue:
     <div lang="en">StatsServiceValue object is container for the execution result (1 entity) per single stats information by method.</div>
     <hr>
     <details>
-        <summary>Requirement</summary>
-        <table border='1'>
-            <tr>
-                <th>PROPERTY</th>
-                <th>GET</th>
-            </tr>
-            <tr>
-                <td>accountId</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>statsPeriod</td>
-                <td>-</td>
-            </tr>
-        </table>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>statsPeriod</td>
+          <td>-</td>
+        </tr>
+      </table>
     </details>

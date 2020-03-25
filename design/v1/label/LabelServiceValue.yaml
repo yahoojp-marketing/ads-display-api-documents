@@ -8,7 +8,8 @@ LabelServiceValue:
       items:
         $ref: '../../Error.yaml#/Error'
       description: |
-        <div lang="ja">エラー内容です。</div><div lang="en">Error content.</div>
+        <div lang="ja">エラー内容です。</div>
+        <div lang="en">Error content.</div>
     label:
       $ref: 'Label.yaml#/Label'
     operationSucceeded:

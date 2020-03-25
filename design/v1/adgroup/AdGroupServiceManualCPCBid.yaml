@@ -7,9 +7,25 @@ AdGroupServiceManualCPCBid:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">入札価格です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Bid amount.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        入札価格です。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Bid amount.<br>
+        This field is required in requests.
+        </div>
   title: AdGroupServiceManualCPCBid
   description: |
-    <div lang="ja">AdGroupServiceManualCPCBidオブジェクトは、広告グループの入札価格を保持します。 ※広告掲載方式がVIDEO_AD（動画広告）のキャンペーンIDを指定した時は利用できません。<br>このフィールドは、省略可能となります。<br>※ADD時、typeがMANUAL_CPCの場合は必須です。</div>
-    <div lang="en">AdGroupServiceManualCPCBid object stores the bid amount of ad group. *It is not available when a campaign ID with ad distribution type 'VIDEO_AD' is specified.<br>This field is optional.<br>*If type is MANUAL_CPC, this field is required in ADD operation.</div>
+    <div lang="ja">
+    AdGroupServiceManualCPCBidオブジェクトは、広告グループの入札価格を保持します。<br>
+    ※広告掲載方式がVIDEO_AD（動画広告）のキャンペーンIDを指定した時は利用できません。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、typeがMANUAL_CPCの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupServiceManualCPCBid object stores the bid amount of ad group.<br>
+    *It is not available when a campaign ID with ad distribution type 'VIDEO_AD' is specified.<br>
+    This field is optional.<br>
+    *If type is MANUAL_CPC, this field is required in ADD operation.
+    </div>

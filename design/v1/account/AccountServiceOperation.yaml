@@ -10,7 +10,8 @@ AccountServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ AccountServiceOperation:
       maxItems: 1
   title: AccountServiceOperation
   description: |
-    <div lang="ja">AccountServiceOperationオブジェクトは、操作の対象となるアカウント情報を表します。</div><div lang="en">The AccountServiceOperation object is a container for storing account information.</div>
+    <div lang="ja">AccountServiceOperationオブジェクトは、操作の対象となるアカウント情報を表します。</div>
+    <div lang="en">The AccountServiceOperation object is a container for storing account information.</div>

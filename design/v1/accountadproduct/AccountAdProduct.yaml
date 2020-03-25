@@ -7,7 +7,8 @@ AccountAdProduct:
       nullable: true
       format: int64
       description:
-        <div lang="ja">アカウントIDです。</div><div lang="en">AccountId.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">AccountId.</div>
     adProduct:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ AccountAdProduct:
         $ref: 'AccountAdProductServiceAdProduct.yaml#/AccountAdProductServiceAdProduct'
   title: AccountAdProduct
   description: |
-    <div lang="ja">AccountAdProductオブジェクトは、広告掲載方式を含むコンテナです。</div><div lang="en">AccountAdProduct object is a container that includes the ad display method.</div>
+    <div lang="ja">AccountAdProductオブジェクトは、広告掲載方式を含むコンテナです。</div>
+    <div lang="en">AccountAdProduct object is a container that includes the ad display method.</div>

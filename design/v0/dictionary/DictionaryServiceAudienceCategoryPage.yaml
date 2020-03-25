@@ -7,7 +7,8 @@ DictionaryServiceAudienceCategoryPage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of items to be retrieved.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be retrieved.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ DictionaryServiceAudienceCategoryPage:
         $ref: 'DictionaryServiceAudienceCategoryValue.yaml#/DictionaryServiceAudienceCategoryValue'
   title: DictionaryServiceAudienceCategoryPage
   description: |
-    <div lang="ja">DictionaryServiceAudienceCategoryPageオブジェクトは、オーディエンスカテゴリー情報を格納するコンテナです。</div><div lang="en">DictionaryServiceAudienceCategoryPage object contains audience category information.</div>
+    <div lang="ja">DictionaryServiceAudienceCategoryPageオブジェクトは、オーディエンスカテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceAudienceCategoryPage object contains audience category information.</div>

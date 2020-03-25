@@ -7,37 +7,44 @@ AdGroup:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
     adGroupBiddingStrategy:
       $ref: 'AdGroupServiceBiddingStrategy.yaml#/AdGroupServiceBiddingStrategy'
       description: |
-        <div lang="ja">広告グループ入札戦略</div><div lang="en">Ad group bit strategy.</div>
+        <div lang="ja">広告グループ入札戦略</div>
+        <div lang="en">Ad group bit strategy.</div>
     adGroupId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループID</div><div lang="en">Ad group ID.</div>
+        <div lang="ja">広告グループID</div>
+        <div lang="en">Ad group ID.</div>
     adGroupName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告グループ名</div><div lang="en">Ad group name.</div>
+        <div lang="ja">広告グループ名</div>
+        <div lang="en">Ad group name.</div>
     bid:
       $ref: 'AdGroupServiceBid.yaml#/AdGroupServiceBid'
       description: |
-        <div lang="ja">入札価格情報</div><div lang="en">Bid amount.</div>
+        <div lang="ja">入札価格情報</div>
+        <div lang="en">Bid amount.</div>
     campaignId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンID</div><div lang="en">Campaign ID.</div>
+        <div lang="ja">キャンペーンID</div>
+        <div lang="en">Campaign ID.</div>
     campaignName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーン名</div><div lang="en">Campaign name.</div>
+        <div lang="ja">キャンペーン名</div>
+        <div lang="en">Campaign name.</div>
     conversionOptimizer:
       $ref: 'AdGroupServiceConversionOptimizer.yaml#/AdGroupServiceConversionOptimizer'
     device:
@@ -59,7 +66,8 @@ AdGroup:
       type: string
       nullable: true
       description: |
-        <div lang="ja">OSバージョン※deviceOsVersionを空で指定する場合：「NONE」</div><div lang="en">OS version∗To specify null as deviceOsVersion: &#34;NONE&#34;</div>
+        <div lang="ja">OSバージョン※deviceOsVersionを空で指定する場合：「NONE」</div>
+        <div lang="en">OS version∗To specify null as deviceOsVersion: &#34;NONE&#34;</div>
     dynamicImageExtensions:
       $ref: 'AdGroupServiceDynamicImageExtensions.yaml#/AdGroupServiceDynamicImageExtensions'
     feedSetId:
@@ -67,12 +75,14 @@ AdGroup:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">商品セットID</div><div lang="en">Feed set ID.</div>
+        <div lang="ja">商品セットID</div>
+        <div lang="en">Feed set ID.</div>
     isRemoveFeedSetId:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">商品セットとの関連付けを削除（配信停止）</div><div lang="en">Remove association with feed set ∗Stop delivery.</div>
+        <div lang="ja">商品セットとの関連付けを削除（配信停止）</div>
+        <div lang="en">Remove association with feed set ∗Stop delivery.</div>
     labels:
       type: array
       nullable: true
@@ -87,120 +97,130 @@ AdGroup:
       $ref: 'AdGroupServiceUserStatus.yaml#/AdGroupServiceUserStatus'
   title: AdGroup
   description: |
-    <div lang="ja">AdGroupオブジェクトは、広告グループ情報を保持します。</div><div lang="en">The Ad Group object is a container for storing ad group information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Requirement</td>
-        <td>RequirementNotUpdatable</td>
-        <td>RequirementNotUpdatable</td>
-      </tr>
-      <tr>
-        <td>adGroupBiddingStrategy</td>
-        <td><div lang="ja">Optional<br>*目的なしのキャンペーン配下の広告グループの場合 : 設定不可</div><div lang="en">Optional<br>*For ad groups under campaigns with no campaignGoal: Cannot be set</div></td>
-        <td><div lang="ja">Optional<br>*目的なしのキャンペーン配下の広告グループの場合 : 設定不可</div><div lang="en">Optional<br>*For ad groups under campaigns with no campaignGoal: Cannot be set</div></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>adGroupId</td>
-        <td>Ignore</td>
-        <td>RequirementNotUpdatable</td>
-        <td>RequirementNotUpdatable</td>
-      </tr>
-      <tr>
-        <td>adGroupName</td>
-        <td>Requirement</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>bid</td>
-        <td>Requirement</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>campaignId</td>
-        <td>Requirement</td>
-        <td>RequirementNotUpdatable</td>
-        <td>RequirementNotUpdatable</td>
-      </tr>
-      <tr>
-        <td>campaignName</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>conversionOptimizer</td>
-        <td>Optional<div lang="ja">Default : NoneAdGroupConversionOptimizer</div><div lang="en">Default: NoneAdGroupConversionOptimizer</div></td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>device</td>
-        <td>Requirement</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>deviceApp</td>
-        <td>Optional</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>deviceOs</td>
-        <td>Optional</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>deviceOsVersion</td>
-        <td>Optional</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>dynamicImageExtensions</td>
-        <td>Optional</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>feedSetId</td>
-        <td>Optional</td>
-        <td>Optional<div lang="ja">Updatable&lt;</div><div lang="en">Updatable&lt;</div></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>isRemoveFeedSetId</td>
-        <td>Optional</td>
-        <td>Optional<div lang="ja">Updatable&lt;</div><div lang="en">Updatable&lt;</div></td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>labels</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>smartDeviceCarriers</td>
-        <td>Optional</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>userStatus</td>
-        <td>Requirement</td>
-        <td>OptionalUpdatable</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">AdGroupオブジェクトは、広告グループ情報を保持します。</div>
+    <div lang="en">The Ad Group object is a container for storing ad group information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Requirement</td>
+          <td>RequirementNotUpdatable</td>
+          <td>RequirementNotUpdatable</td>
+        </tr>
+        <tr>
+          <td>adGroupBiddingStrategy</td>
+          <td><div lang="ja">Optional<br>*目的なしのキャンペーン配下の広告グループの場合 : 設定不可</div>
+          <div lang="en">Optional<br>*For ad groups under campaigns with no campaignGoal: Cannot be set</div></td>
+          <td><div lang="ja">Optional<br>*目的なしのキャンペーン配下の広告グループの場合 : 設定不可</div>
+          <div lang="en">Optional<br>*For ad groups under campaigns with no campaignGoal: Cannot be set</div></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>adGroupId</td>
+          <td>Ignore</td>
+          <td>RequirementNotUpdatable</td>
+          <td>RequirementNotUpdatable</td>
+        </tr>
+        <tr>
+          <td>adGroupName</td>
+          <td>Requirement</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>bid</td>
+          <td>Requirement</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>campaignId</td>
+          <td>Requirement</td>
+          <td>RequirementNotUpdatable</td>
+          <td>RequirementNotUpdatable</td>
+        </tr>
+        <tr>
+          <td>campaignName</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>conversionOptimizer</td>
+          <td>Optional<div lang="ja">Default : NoneAdGroupConversionOptimizer</div>
+          <div lang="en">Default: NoneAdGroupConversionOptimizer</div></td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>device</td>
+          <td>Requirement</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>deviceApp</td>
+          <td>Optional</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>deviceOs</td>
+          <td>Optional</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>deviceOsVersion</td>
+          <td>Optional</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>dynamicImageExtensions</td>
+          <td>Optional</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>feedSetId</td>
+          <td>Optional</td>
+          <td>Optional<div lang="ja">Updatable&lt;</div>
+          <div lang="en">Updatable&lt;</div></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>isRemoveFeedSetId</td>
+          <td>Optional</td>
+          <td>Optional<div lang="ja">Updatable&lt;</div>
+          <div lang="en">Updatable&lt;</div></td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>labels</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>smartDeviceCarriers</td>
+          <td>Optional</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>userStatus</td>
+          <td>Requirement</td>
+          <td>OptionalUpdatable</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

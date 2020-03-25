@@ -8,8 +8,14 @@ AdGroupServiceDeviceOsType:
   - UNKNOWN
   title: AdGroupServiceDeviceOsType
   description: |
-    <div lang="ja">AdGroupServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AdGroupServiceDeviceOsType serves OS types for devices to be posted on.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceDeviceOsType serves OS types for devices to be posted on.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>IOS</code> - <span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></p>
     <p>* <code>ANDROID</code> - <span lang="ja">Android向けに配信されます。</span><span lang="en">Deliver to Android.</span></p>

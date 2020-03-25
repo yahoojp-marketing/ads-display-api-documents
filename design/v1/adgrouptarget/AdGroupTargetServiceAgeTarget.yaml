@@ -8,6 +8,14 @@ AdGroupTargetServiceAgeTarget:
       $ref: 'AdGroupTargetServiceEstimateFlg.yaml#/AdGroupTargetServiceEstimateFlg'
   title: AdGroupTargetServiceAgeTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceAgeTargetオブジェクトは、年齢ターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがAGE_TARGETの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceAgeTarget object is a container for storing age targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is AGE_TARGET, this field is required.</div>
+    <div lang="ja">
+    AdGroupTargetServiceAgeTargetオブジェクトは、年齢ターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがAGE_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceAgeTarget object is a container for storing age targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is AGE_TARGET, this field is required.
+    </div>
 

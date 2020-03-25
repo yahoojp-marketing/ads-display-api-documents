@@ -9,16 +9,36 @@ AdGroupTargetServiceAdScheduleTarget:
       nullable: true
       format: int32
       description: |
-        <div lang="ja">終了時間（時のみ）です。<br>このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。</div>
-        <div lang="en">End time (hour only).<br>This field is required in ADD operation, and will be optional in REPLACE operation.</div>
+        <div lang="ja">
+        終了時間（時のみ）です。<br>
+        このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。
+        </div>
+        <div lang="en">
+        End time (hour only).<br>
+        This field is required in ADD operation, and will be optional in REPLACE operation.
+        </div>
     startHour:
       type: integer
       nullable: true
       format: int32
       description: |
-        <div lang="ja">開始時間（時のみ）です。<br>このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。</div>
-        <div lang="en">Start time (hour only).<br>This field is required in ADD operation, and will be optional in REPLACE operation.</div>
+        <div lang="ja">
+        開始時間（時のみ）です。<br>
+        このフィールドは、ADD時は必須となり、REPLACE時は省略可能となります。
+        </div>
+        <div lang="en">
+        Start time (hour only).<br>
+        This field is required in ADD operation, and will be optional in REPLACE operation.
+        </div>
   title: AdGroupTargetServiceAdScheduleTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceAdScheduleTargetオブジェクトは、時間帯ターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがAD_SCHEDULE_TARGETの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceAdScheduleTarget object is a container for storing day of week/hours targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>*If targetType is AD_SCHEDULE_TARGET, this field is required.</div>
+    <div lang="ja">
+    AdGroupTargetServiceAdScheduleTargetオブジェクトは、時間帯ターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがAD_SCHEDULE_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceAdScheduleTarget object is a container for storing day of week/hours targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    *If targetType is AD_SCHEDULE_TARGET, this field is required.
+    </div>

@@ -30,30 +30,33 @@ CampaignServiceFrequencyCap:
       }
     }
     </code>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>frequencyLevel</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>frequencyTimeUnit</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>impression</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>frequencyLevel</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>frequencyTimeUnit</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>impression</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

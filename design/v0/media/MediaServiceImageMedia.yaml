@@ -22,13 +22,15 @@ MediaServiceImageMedia:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ファイルサイズです。</div><div lang="en">The file size of image.</div>
+        <div lang="ja">ファイルサイズです。</div>
+        <div lang="en">The file size of image.</div>
     height:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">縦の長さです。</div><div lang="en">The height of image.</div>
+        <div lang="ja">縦の長さです。</div>
+        <div lang="en">The height of image.</div>
     mediaAdFormat:
       type: string
       nullable: true
@@ -42,7 +44,8 @@ MediaServiceImageMedia:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">横幅です。</div><div lang="en">The width of image.</div>
+        <div lang="ja">横幅です。</div>
+        <div lang="en">The width of image.</div>
   title: MediaServiceImageMedia
   description: |
     <div lang="ja">MediaServiceImageMediaオブジェクトは、画像を格納するコンテナです。</div>

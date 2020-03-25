@@ -10,7 +10,8 @@ AdGroupLabelServiceValue:
       items:
         $ref: '../../Error.yaml#/Error'
       description: |
-        <div lang="ja">エラー内容です。</div><div lang="en">Error content.</div>
+        <div lang="ja">エラー内容です。</div>
+        <div lang="en">Error content.</div>
     operationSucceeded:
       type: boolean
       nullable: true

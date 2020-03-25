@@ -6,11 +6,11 @@ StatsServicePlacementTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">プレイスメントURLリスト名</div><div lang="en">Placement Url List Name</div>
+        <div lang="ja">プレイスメントURLリスト名</div>
+        <div lang="en">Placement Url List Name</div>
     placementUrlListType:
       $ref: 'StatsServicePlacementUrlListType.yaml#/StatsServicePlacementUrlListType'
   title: StatsServicePlacementTarget
   description: |
     <div lang="ja">StatsServicePlacementTargetオブジェクトは、プレイスメントターゲットの設定情報を保持します。</div>
     <div lang="en">StatsServicePlacementTarget object holds configuration information of placement targeting.</div>
-

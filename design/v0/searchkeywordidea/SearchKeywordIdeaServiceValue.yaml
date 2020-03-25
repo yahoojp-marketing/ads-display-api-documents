@@ -17,4 +17,5 @@ SearchKeywordIdeaServiceValue:
       $ref: 'SearchKeywordIdea.yaml#/SearchKeywordIdea'
   title: SearchKeywordIdeaServiceValue
   description: |
-    <div lang="ja">SearchKeywordIdeaServiceValueオブジェクトは、サーチターゲティング対象キーワードを含むコンテナです。</div><div lang="en">SearchKeywordIdeaServiceValue object is a container that includes keyword for search targeting.</div>
+    <div lang="ja">SearchKeywordIdeaServiceValueオブジェクトは、サーチターゲティング対象キーワードを含むコンテナです。</div>
+    <div lang="en">SearchKeywordIdeaServiceValue object is a container that includes keyword for search targeting.</div>

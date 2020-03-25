@@ -9,35 +9,41 @@ FeedItem:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">在庫数</div><div lang="en">Stock quantity.</div>
+        <div lang="ja">在庫数</div>
+        <div lang="en">Stock quantity.</div>
     displaySettings:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">配信設定<br>0:配信しない、1:配信する</div><div lang="en">Display settings.<br>0: Off, 1: On</div>
+        <div lang="ja">配信設定<br>0:配信しない、1:配信する</div>
+        <div lang="en">Display settings.<br>0: Off, 1: On</div>
     feedId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Feedを識別するId</div><div lang="en">ID for identifying Feed.</div>
+        <div lang="ja">Feedを識別するId</div>
+        <div lang="en">ID for identifying Feed.</div>
     formattedPrice:
       type: string
       nullable: true
       description: |
-        <div lang="ja">文字列の価格</div><div lang="en">Text strings price.</div>
+        <div lang="ja">文字列の価格</div>
+        <div lang="en">Text strings price.</div>
     formattedSalePrice:
       type: string
       nullable: true
       description: |
-        <div lang="ja">文字列のセール価格</div><div lang="en">Sale price of text strings.</div>
+        <div lang="ja">文字列のセール価格</div>
+        <div lang="en">Sale price of text strings.</div>
     inStock:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">在庫情報<br>0:在庫なし、1:在庫あり</div><div lang="en">Inventory information.<br>0: Out of order, 1: In stock</div>
+        <div lang="ja">在庫情報<br>0:在庫なし、1:在庫あり</div>
+        <div lang="en">Inventory information.<br>0: Out of order, 1: In stock</div>
     isRemoveCapacity:
       $ref: 'FeedItemServiceIsRemoveFlg.yaml#/FeedItemServiceIsRemoveFlg'
     isRemoveFormattedPrice:
@@ -52,85 +58,93 @@ FeedItem:
       type: string
       nullable: true
       description: |
-        <div lang="ja">商品ID</div><div lang="en">Item ID.</div>
+        <div lang="ja">商品ID</div>
+        <div lang="en">Item ID.</div>
     price:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">価格</div><div lang="en">Price.</div>
+        <div lang="ja">価格</div>
+        <div lang="en">Price.</div>
     salePrice:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">セール価格</div><div lang="en">Sale price.</div>
+        <div lang="ja">セール価格</div>
+        <div lang="en">Sale price.</div>
   title: FeedItem
   description: |
-    <div lang="ja">FeedItemオブジェクトは、商品の情報を格納するコンテナです。</div><div lang="en">FeedItem object contain information about the product.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>availability</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>capacity</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>displaySettings</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>feedId</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>formattedPrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>formattedSalePrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>inStock</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>isRemoveCapacity</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>isRemoveFormattedPrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>isRemoveFormattedSalePrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>isRemovePrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>isRemoveSalePrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>itemId</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>price</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-      <tr>
-        <td>salePrice</td>
-        <td>Optional<br>Updatable</td>
-      </tr>
-    </table></details>
+    <div lang="ja">FeedItemオブジェクトは、商品の情報を格納するコンテナです。</div>
+    <div lang="en">FeedItem object contain information about the product.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>availability</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>capacity</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>displaySettings</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>feedId</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>formattedPrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>formattedSalePrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>inStock</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>isRemoveCapacity</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>isRemoveFormattedPrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>isRemoveFormattedSalePrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>isRemovePrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>isRemoveSalePrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>itemId</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>price</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+        <tr>
+          <td>salePrice</td>
+          <td>Optional<br>Updatable</td>
+        </tr>
+      </table>
+    </details>

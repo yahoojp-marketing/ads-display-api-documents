@@ -17,24 +17,31 @@ CampaignServiceBudget:
   title: CampaignServiceBudget
   description: |
     <div lang="ja">CampaignServiceBudgetオブジェクトは、キャンペーン予算に関する情報を表します。</div>
-    <div lang="en">The CampaignServiceBudget object serves campaign budgets.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>amount</td>
-        <td>Optional<br><div lang="ja">* 目的ありの場合 : 必須</div><div lang="en">* With campaignGoal: Requirement</div></td>
-        <td>Optional</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>budgetDeliveryMethod</td>
-        <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: cannot be set</div></td>
-        <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div><div lang="en">* With campaignGoal: cannot be set</div></td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">The CampaignServiceBudget object serves campaign budgets.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>amount</td>
+          <td>Optional<br><div lang="ja">* 目的ありの場合 : 必須</div>
+          <div lang="en">* With campaignGoal: Requirement</div></td>
+          <td>Optional</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>budgetDeliveryMethod</td>
+          <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: cannot be set</div></td>
+          <td>Optional<br><div lang="ja">* 目的ありの場合 : 設定不可</div>
+          <div lang="en">* With campaignGoal: cannot be set</div></td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

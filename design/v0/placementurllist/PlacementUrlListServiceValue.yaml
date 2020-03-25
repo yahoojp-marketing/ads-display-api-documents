@@ -17,4 +17,5 @@ PlacementUrlListServiceValue:
       $ref: 'PlacementUrlList.yaml#/PlacementUrlList'
   title: PlacementUrlListServiceValue
   description: |
-    <div lang="ja">PlacementUrlListServiceValueオブジェクトは、メソッドの実行結果（１Entity）を保持するオブジェクトです。</div><div lang="en">The objects to keep execution result of method(1 Entity).</div>
+    <div lang="ja">PlacementUrlListServiceValueオブジェクトは、メソッドの実行結果（１Entity）を保持するオブジェクトです。</div>
+    <div lang="en">The objects to keep execution result of method(1 Entity).</div>

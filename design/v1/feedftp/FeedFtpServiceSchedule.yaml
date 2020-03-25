@@ -23,5 +23,11 @@ FeedFtpServiceSchedule:
         <div lang="en">ScheduleWeekly object displays what day of the week and what time of the day the Periodic Upload runs.</div>
   title: FeedFtpServiceSchedule
   description: |
-    <div lang="ja">FeedFtpServiceScheduleオブジェクトは、定期アップロードのスケジュールを表します。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-    <div lang="en">FeedFtpServiceSchedule object displays Periodic Upload schedule.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    <div lang="ja">
+    FeedFtpServiceScheduleオブジェクトは、定期アップロードのスケジュールを表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    FeedFtpServiceSchedule object displays Periodic Upload schedule.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>

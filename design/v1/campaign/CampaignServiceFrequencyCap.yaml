@@ -11,12 +11,32 @@ CampaignServiceFrequencyCap:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">同一ユーザに対する広告の最大インプレッション数です。<br>このフィールドは、ADDおよびSET時に省略可能となります。</div>
-        <div lang="en">Maximum Number of Ad Impressions to Unique User.<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        同一ユーザに対する広告の最大インプレッション数です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Maximum Number of Ad Impressions to Unique User.<br>
+        This field is optional in ADD and SET operation.
+        </div>
   title: CampaignServiceFrequencyCap
   description: |
-    <div lang="ja">CampaignServiceFrequencyCapは、フリクエンシー制御を表します。<br>このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>※ADDおよびSET時、目的ありの場合は設定不可となります。<br>※ADD時は全ての項目の指定が必須です。<br>※SET時は更新する項目のみのリクエストが可能です。<br>※フリークエンシーキャップの解除方法は、以下の通りです：</div>
-    <div lang="en">CampaignServiceFrequencyCap object describes frequency restriction.<br>This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>*In ADD and SET operation, this field cannot be set for campaigns with campaign goal. <br>*All items must be specified in ADD operation.<br>*Only update items can be requested in SET operation.<br>*Method to remove the frequency cap:</div>
+    <div lang="ja">
+    CampaignServiceFrequencyCapは、フリクエンシー制御を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+    ※ADDおよびSET時、目的ありの場合は設定不可となります。<br>
+    ※ADD時は全ての項目の指定が必須です。<br>
+    ※SET時は更新する項目のみのリクエストが可能です。<br>
+    ※フリークエンシーキャップの解除方法は、以下の通りです：
+    </div>
+    <div lang="en">
+    CampaignServiceFrequencyCap object describes frequency restriction.<br>
+    This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>
+    *In ADD and SET operation, this field cannot be set for campaigns with campaign goal. <br>
+    *All items must be specified in ADD operation.<br>
+    *Only update items can be requested in SET operation.<br>
+    *Method to remove the frequency cap:
+    </div>
     <code>
     {
       "frequencyCap": {
@@ -24,4 +44,3 @@ CampaignServiceFrequencyCap:
       }
     }
     </code>
-    

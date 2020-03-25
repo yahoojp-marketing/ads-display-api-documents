@@ -7,7 +7,8 @@ AdGroupAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
     ad:
       $ref: 'AdGroupAdServiceAd.yaml#/AdGroupAdServiceAd'
     adGroupId:
@@ -15,23 +16,27 @@ AdGroupAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループID</div><div lang="en">Ad group ID.</div>
+        <div lang="ja">広告グループID</div>
+        <div lang="en">Ad group ID.</div>
     adGroupName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告グループ名</div><div lang="en">Ad group name.</div>
+        <div lang="ja">広告グループ名</div>
+        <div lang="en">Ad group name.</div>
     adId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告ID</div><div lang="en">Ad ID.</div>
+        <div lang="ja">広告ID</div>
+        <div lang="en">Ad ID.</div>
     adName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告名</div><div lang="en">Ad name.</div>
+        <div lang="ja">広告名</div>
+        <div lang="en">Ad name.</div>
     adStyle:
       $ref: 'AdGroupAdServiceAdStyle.yaml#/AdGroupAdServiceAdStyle'
     approvalStatus:
@@ -43,12 +48,14 @@ AdGroupAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンID</div><div lang="en">Campaign ID.</div>
+        <div lang="ja">キャンペーンID</div>
+        <div lang="en">Campaign ID.</div>
     campaignName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーン名</div><div lang="en">Campaign name.</div>
+        <div lang="ja">キャンペーン名</div>
+        <div lang="en">Campaign name.</div>
     disapprovalReasonCodes:
       type: array
       nullable: true
@@ -56,7 +63,8 @@ AdGroupAd:
         type: string
         nullable: true
       description: |
-        <div lang="ja">掲載拒否の理由</div><div lang="en">Reject reason on editorial review.</div>
+        <div lang="ja">掲載拒否の理由</div>
+        <div lang="en">Reject reason on editorial review.</div>
     impressionBeaconUrls:
       type: array
       nullable: true
@@ -64,7 +72,8 @@ AdGroupAd:
         type: string
         nullable: true
       description: |
-        <div lang="ja">インプレッションビーコンURL</div><div lang="en">Impression beacon URL.</div>
+        <div lang="ja">インプレッションビーコンURL</div>
+        <div lang="en">Impression beacon URL.</div>
     isRemoveBeaconUrls:
       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
     isRemoveThirdPartyTrackingScriptUrl:
@@ -79,12 +88,14 @@ AdGroupAd:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">メディアIDです。</div><div lang="en">Media ID.</div>
+        <div lang="ja">メディアIDです。</div>
+        <div lang="en">Media ID.</div>
     thirdPartyTrackingScriptUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">第三者計測スクリプトURL</div><div lang="en">Third party tracking script URL.</div>
+        <div lang="ja">第三者計測スクリプトURL</div>
+        <div lang="en">Third party tracking script URL.</div>
     thirdPartyTrackingVendor:
       type: string
       nullable: true
@@ -95,153 +106,158 @@ AdGroupAd:
       $ref: 'AdGroupAdServiceUserStatus.yaml#/AdGroupAdServiceUserStatus'
   title: AdGroupAd
   description: |
-    <div lang="ja">AdGroupAdオブジェクトは、広告の情報を格納するコンテナです。</div><div lang="en">The AdGroupAd object is a container for storing ad information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>GET</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>ad</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>adGroupId</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>adGroupName</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>adId</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>adName</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>adStyle</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>approvalStatus</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>bid</td>
-        <td>-</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>campaignId</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>campaignName</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>disapprovalReasonCodes</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>impressionBeaconUrls</td>
-        <td>-</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>isRemoveBeaconUrls</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>isRemoveThirdPartyTrackingScriptUrl</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>labels</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>mediaId</td>
-        <td>-</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>thirdPartyTrackingScriptUrl</td>
-        <td>-</td>
-        <td>Optional</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>thirdPartyTrackingVendor</td>
-        <td>-</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>userStatus</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">AdGroupAdオブジェクトは、広告の情報を格納するコンテナです。</div>
+    <div lang="en">The AdGroupAd object is a container for storing ad information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>ad</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>adGroupId</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>adGroupName</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>adId</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>adName</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>adStyle</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>approvalStatus</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>bid</td>
+          <td>-</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>campaignId</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>campaignName</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>disapprovalReasonCodes</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>impressionBeaconUrls</td>
+          <td>-</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>isRemoveBeaconUrls</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>isRemoveThirdPartyTrackingScriptUrl</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>labels</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>mediaId</td>
+          <td>-</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>thirdPartyTrackingScriptUrl</td>
+          <td>-</td>
+          <td>Optional</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>thirdPartyTrackingVendor</td>
+          <td>-</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>userStatus</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

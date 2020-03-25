@@ -10,7 +10,8 @@ FeedFtpRequestServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">account Id</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">account Id</div>
     operand:
       type: array
       nullable: false

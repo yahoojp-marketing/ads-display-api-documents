@@ -17,4 +17,5 @@ DictionaryServiceGeographicLocationValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceGeographicLocationValue
   description: |
-    <div lang="ja">DictionaryServiceGeographicLocationValueオブジェクトは、地域情報のリストを表します。</div><div lang="en">DictionaryServiceGeographicLocationValue object displays the list of geographic location.</div>
+    <div lang="ja">DictionaryServiceGeographicLocationValueオブジェクトは、地域情報のリストを表します。</div>
+    <div lang="en">DictionaryServiceGeographicLocationValue object displays the list of geographic location.</div>

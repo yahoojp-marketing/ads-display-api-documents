@@ -7,7 +7,8 @@ BalanceServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of entries.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
     values:
       $ref: 'BalanceServiceValue.yaml#/BalanceServiceValue'
   title: BalanceServicePage

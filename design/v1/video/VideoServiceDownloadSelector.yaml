@@ -11,15 +11,18 @@ VideoServiceDownloadSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     mediaId:
       type: integer
       nullable: false
       format: int64
       description: |
-        <div lang="ja">メディアID</div><div lang="en">Media ID</div>
+        <div lang="ja">メディアID</div>
+        <div lang="en">Media ID</div>
     qualityType:
       $ref: 'VideoServiceQualityType.yaml#/VideoServiceQualityType'
   title: VideoServiceDownloadSelector
   description: |
-    <div lang="ja">ビデオをダウンロードします。</div><div lang="en"> Download the video.</div>
+    <div lang="ja">ビデオをダウンロードします。</div>
+    <div lang="en"> Download the video.</div>

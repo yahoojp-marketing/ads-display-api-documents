@@ -6,7 +6,9 @@ AdGroupAdServiceBannerImageAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">表示URLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>
+        <div lang="ja">
+        表示URLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
         ・標準キャンペーンの場合<br>
         &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
         ・アプリキャンペーンの場合<br>
@@ -16,7 +18,8 @@ AdGroupAdServiceBannerImageAd:
         &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
         </div>
         <div lang="en">
-        Display URL.<br>This field is optional in ADD and SET operation.<br>
+        Display URL.<br>
+        This field is optional in ADD and SET operation.<br>
         - Standard campaign:<br>
         &nbsp;&nbsp;Required for ADD, optional for SET.<br>
         - Mobile app campaign:<br>
@@ -29,9 +32,23 @@ AdGroupAdServiceBannerImageAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">リンク先URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Destination URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
   title: AdGroupAdServiceBannerImageAd
   description: |
-    <div lang="ja">AdGroupAdServiceBannerImageAdオブジェクトは、画像で構成される広告の情報を表します。<br>このフィールドは、省略可能となります。<br>※ADD時、adTypeがBANNER_IMAGE_ADの場合は必須です。</div>
-    <div lang="en">AdGroupAdServiceBannerImageAd object describes information regarding ads composed of images.<br>This field is optional.<br>*If adType is BANNER_IMAGE_AD, this field is required in ADD operation.</div>
+    <div lang="ja">
+    AdGroupAdServiceBannerImageAdオブジェクトは、画像で構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがBANNER_IMAGE_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceBannerImageAd object describes information regarding ads composed of images.<br>
+    This field is optional.<br>
+    *If adType is BANNER_IMAGE_AD, this field is required in ADD operation.
+    </div>

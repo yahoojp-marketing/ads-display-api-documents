@@ -10,4 +10,5 @@ DictionaryServiceGeographicLocationSelector:
       $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'
   title: DictionaryServiceGeographicLocationSelector
   description: |
-    <div lang="ja">DictionaryServiceGeographicLocationSelectorオブジェクトは、取得する地域情報のリスト言語を表します。</div><div lang="en">DictionaryServiceGeographicLocationSelector object displays the language selection for retrieving geographic location list.</div>
+    <div lang="ja">DictionaryServiceGeographicLocationSelectorオブジェクトは、取得する地域情報のリスト言語を表します。</div>
+    <div lang="en">DictionaryServiceGeographicLocationSelector object displays the language selection for retrieving geographic location list.</div>

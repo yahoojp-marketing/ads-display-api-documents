@@ -8,20 +8,24 @@ AdGroupTargetServiceDeviceTarget:
   description: |
     <div lang="ja">AdGroupTargetServiceDeviceTargetオブジェクトは、デバイスターゲティングの設定情報を保持します。</div>
     <div lang="en">The AdGroupTargetServiceDeviceTarget object is a container for storing device targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>deviceType</td>
-        <td>Ignore</td>
-        <td>Ignore<br><div lang="ja">※入札価格調整率のみ設定可能です。</div><div lang="en">*Can set only bid adjustment.</div></td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>deviceType</td>
+          <td>Ignore</td>
+          <td>Ignore<br><div lang="ja">※入札価格調整率のみ設定可能です。</div>
+          <div lang="en">*Can set only bid adjustment.</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

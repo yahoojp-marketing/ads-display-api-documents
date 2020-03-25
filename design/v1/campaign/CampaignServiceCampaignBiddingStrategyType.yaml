@@ -11,8 +11,14 @@ CampaignServiceCampaignBiddingStrategyType:
   - UNKNOWN
   title: CampaignServiceCampaignBiddingStrategyType
   description: |
-    <div lang="ja">キャンペーン入札戦略タイプです。<br>このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。</div>
-    <div lang="en">CampaignServiceCampaignBiddingStrategyType describes setting of campaign bid strategy type.<br>This field is required in ADD and SET operation, and will be ignored in REMOVE operation.</div>
+    <div lang="ja">
+    キャンペーン入札戦略タイプです。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    CampaignServiceCampaignBiddingStrategyType describes setting of campaign bid strategy type.<br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
     <p>* <code>AUTO</code> - <span lang="ja">自動入札</span><span lang="en">Auto bidding</span></p>
     <hr>
     <p>* <code>MAX_VCPM</code> - <span lang="ja">最大入札価格指定（vCPM）</span><span lang="en">Max. bid value (vCPM)</span></p>

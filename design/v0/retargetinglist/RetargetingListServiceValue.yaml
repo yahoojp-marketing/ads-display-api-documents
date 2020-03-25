@@ -17,4 +17,5 @@ RetargetingListServiceValue:
       $ref: 'RetargetingList.yaml#/RetargetingList'
   title: RetargetingListServiceValue
   description: |
-    <div lang="ja">RetargetingListServiceValueオブジェクトは、取得されたサイトリターゲティングのターゲットリスト情報を表します。</div><div lang="en">The objects to keep the result of method’s execution(1 Entity).</div>
+    <div lang="ja">RetargetingListServiceValueオブジェクトは、取得されたサイトリターゲティングのターゲットリスト情報を表します。</div>
+    <div lang="en">The objects to keep the result of method’s execution(1 Entity).</div>

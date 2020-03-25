@@ -24,8 +24,14 @@ AdGroupTargetServiceTarget:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">trueの場合、ターゲティング種別をすべて削除します。<br>このフィールドは、ADD、SETおよびREMOVE時は無視され、REPLACE時は省略可能となります。</div>
-        <div lang="en">If true, delete all targeting types.<br>This field will be ignored in ADD, SET and REMOVE operation, and will be optional in REPLACE operation.</div>
+        <div lang="ja">
+        trueの場合、ターゲティング種別をすべて削除します。<br>
+        このフィールドは、ADD、SETおよびREMOVE時は無視され、REPLACE時は省略可能となります。
+        </div>
+        <div lang="en">
+        If true, delete all targeting types.<br>
+        This field will be ignored in ADD, SET and REMOVE operation, and will be optional in REPLACE operation.
+        </div>
     osTarget:
       $ref: 'AdGroupTargetServiceOsTarget.yaml#/AdGroupTargetServiceOsTarget'
     osVersionTarget:
@@ -42,7 +48,8 @@ AdGroupTargetServiceTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ターゲットIDです。<br>
+        <div lang="ja">
+        ターゲットIDです。<br>
         このフィールドは、ADDおよびREPLACE時は省略可能となり、SETおよびREMOVE時は必須となります。<br>
         ※ADD時、targetTypeが以下のいずれかの場合は必須です。<br>
         ‐SITE_RETARGETING<br>
@@ -63,7 +70,9 @@ AdGroupTargetServiceTarget:
         ‐OS_VERSION_TARGET: osVersion<br>
         ‐AUDIENCE_CATEGORY_TARGET: オーディエンスカテゴリーコード(audience category)
         </div>
-        <div lang="en">Target ID.<br>This field is optional in ADD and REPLACE operation, and is required in SET and REMOVE operation.<br>
+        <div lang="en">
+        Target ID.<br>
+        This field is optional in ADD and REPLACE operation, and is required in SET and REMOVE operation.<br>
         *If targetType is any of the following, this field is required in ADD operation.<br>
         ‐SITE_RETARGETING<br>
         ‐PLACEMENT_TARGET<br>
@@ -87,5 +96,11 @@ AdGroupTargetServiceTarget:
       $ref: 'AdGroupTargetServiceTargetType.yaml#/AdGroupTargetServiceTargetType'
   title: AdGroupTargetServiceTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceTargetオブジェクトは、ターゲティング設定情報を保持します。<br>このフィールドは、リクエストの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceTarget object is a container for storing targeting settings.<br>This field is required in requests.</div>
+    <div lang="ja">
+    AdGroupTargetServiceTargetオブジェクトは、ターゲティング設定情報を保持します。<br>
+    このフィールドは、リクエストの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceTarget object is a container for storing targeting settings.<br>
+    This field is required in requests.
+    </div>

@@ -8,8 +8,14 @@ ReportDefinitionServiceFrequencyRange:
   - UNKNOWN
   title: ReportDefinitionServiceFrequencyRange
   description: |
-    <div lang="ja">ReportDefinitionServiceFrequencyRangeは、フリークエンシーの計測期間を表します。<br>このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。</div>
-    <div lang="en">ReportDefinitionServiceFrequencyRange serves measurement range of reach frequency. <br>This field is optional in ADD operation, and will be ignored in REMOVE operation.</div>
+    <div lang="ja">
+    ReportDefinitionServiceFrequencyRangeは、フリークエンシーの計測期間を表します。<br>
+    このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceFrequencyRange serves measurement range of reach frequency. <br>
+    This field is optional in ADD operation, and will be ignored in REMOVE operation.
+    </div>
     <hr>
     <p>* <code>DAILY</code> - <span lang="ja">1日単位です。</span><span lang="en">Daily range.</span></p>
     <p>* <code>WEEKLY</code> - <span lang="ja">1週間単位です。</span><span lang="en">Weekly range.</span></p>

@@ -13,7 +13,9 @@ DictionaryServiceAudienceCategoryValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: DictionaryServiceAudienceCategoryValue
   description: |
-    <div lang="ja">DictionaryServiceAudienceCategoryValueオブジェクトは、オーディエンスカテゴリー情報を取得するコンテナです。</div><div lang="en">DictionaryServiceAudienceCategoryValue object is a container that retrieves audience category information.</div>
+    <div lang="ja">DictionaryServiceAudienceCategoryValueオブジェクトは、オーディエンスカテゴリー情報を取得するコンテナです。</div>
+    <div lang="en">DictionaryServiceAudienceCategoryValue object is a container that retrieves audience category information.</div>

@@ -7,7 +7,8 @@ SearchKeywordIdeaServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of entries.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ SearchKeywordIdeaServicePage:
         $ref: 'SearchKeywordIdeaServiceValue.yaml#/SearchKeywordIdeaServiceValue'
   title: SearchKeywordIdeaServicePage
   description: |
-    <div lang="ja">SearchKeywordIdeaServicePageオブジェクトは、サーチターゲティング対象キーワードに関するエントリーを表します。</div><div lang="en">SearchKeywordIdeaServicePage object displays the entry related to keyword for search targeting.</div>
+    <div lang="ja">SearchKeywordIdeaServicePageオブジェクトは、サーチターゲティング対象キーワードに関するエントリーを表します。</div>
+    <div lang="en">SearchKeywordIdeaServicePage object displays the entry related to keyword for search targeting.</div>

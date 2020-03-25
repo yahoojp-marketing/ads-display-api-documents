@@ -7,7 +7,8 @@ AdGroupAdServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of items to be acquired.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be acquired.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ AdGroupAdServicePage:
         $ref: 'AdGroupAdServiceValue.yaml#/AdGroupAdServiceValue'
   title: AdGroupAdServicePage
   description: |
-    <div lang="ja">AdGroupAdServicePageオブジェクトは、取得される広告に関するエントリーを表します。</div><div lang="en">The AdGroupAdOperation object is a container for storing ad information entry.</div>
+    <div lang="ja">AdGroupAdServicePageオブジェクトは、取得される広告に関するエントリーを表します。</div>
+    <div lang="en">The AdGroupAdOperation object is a container for storing ad information entry.</div>

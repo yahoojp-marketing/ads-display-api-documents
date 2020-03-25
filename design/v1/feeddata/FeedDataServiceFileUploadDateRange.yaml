@@ -6,12 +6,15 @@ FeedDataServiceFileUploadDateRange:
       type: string
       nullable: true
       description: |
-        <div lang="ja">終了日 yyyyMMdd形式</div><div lang="en">End Date.<br>Format: yyyyMMdd</div>
+        <div lang="ja">終了日 yyyyMMdd形式</div>
+        <div lang="en">End Date.<br>Format: yyyyMMdd</div>
     startDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">開始日 yyyyMMdd形式</div><div lang="en">Start date.<br>Format: yyyyMMdd</div>
+        <div lang="ja">開始日 yyyyMMdd形式</div>
+        <div lang="en">Start date.<br>Format: yyyyMMdd</div>
   title: FeedDataServiceFileUploadDateRange
   description: |
-    <div lang="ja">FileUploadDataRangeオブジェクトは、アップロードした日付を範囲指定する情報を保持する</div><div lang="en">FileUploadDataRange object retains specific term of file upload date information.</div>
+    <div lang="ja">FileUploadDataRangeオブジェクトは、アップロードした日付を範囲指定する情報を保持する</div>
+    <div lang="en">FileUploadDataRange object retains specific term of file upload date information.</div>

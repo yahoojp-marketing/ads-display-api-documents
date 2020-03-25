@@ -8,8 +8,14 @@ AdGroupServiceOptimizerType:
   - UNKNOWN
   title: AdGroupServiceOptimizerType
   description: |
-    <div lang="ja">AdGroupServiceOptimizerTypeは、コンバージョン最適化タイプを表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AdGroupServiceOptimizerType displays the type of conversion optimization.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceOptimizerTypeは、コンバージョン最適化タイプを表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceOptimizerType displays the type of conversion optimization.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>NONE</code> - <span lang="ja">キャンペーンの入札方法を適用します。</span><span lang="en">Apply same Bidding with campaign.</span></p>
     <p>* <code>MANUAL</code> - <span lang="ja">手動入札です。</span><span lang="en">Manual Bidding.</span></p>

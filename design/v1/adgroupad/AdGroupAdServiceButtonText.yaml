@@ -22,11 +22,16 @@ AdGroupAdServiceButtonText:
   - UNKNOWN
   title: AdGroupAdServiceButtonText
   description: |
-    <div lang="ja">AdGroupAdServiceButtonTextはボタンテキストを表します。<br>
+    <div lang="ja">
+    AdGroupAdServiceButtonTextはボタンテキストを表します。<br>
     このフィールドは、dynamicAd、responsiveImageAdおよびresponsiveVideoAd配下では省略可能となります。その際、dynamicAd配下では、ADD時のデフォルト設定値はFOR_MORE_INFOとなります。<br>
-    また、staticFrameAd配下では、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-    <div lang="en">AdGroupAdServiceButtonText displays the button text.<br>This field will be optional under dynamicAd, responsiveImageAd, and responsiveVideoAd. In these cases, under dynamicAd, the default value in ADD operation will be FOR_MORE_INFO.<br>
-    Under staticFrameAd, although this field will be returned in the response,it will be ignored on input.</div>
+    また、staticFrameAd配下では、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceButtonText displays the button text.<br>
+    This field will be optional under dynamicAd, responsiveImageAd, and responsiveVideoAd. In these cases, under dynamicAd, the default value in ADD operation will be FOR_MORE_INFO.<br>
+    Under staticFrameAd, although this field will be returned in the response,it will be ignored on input.
+    </div>
     <hr>
     <p>* <code>INSTALL</code> - <span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></p>
     <p>* <code>MORE_DETAIL</code> - <span lang="ja">「詳しくはこちら」ボタンです。（デフォルト値です）</span><span lang="en">&#34;More detail.&#34; button.（Default）</span></p>

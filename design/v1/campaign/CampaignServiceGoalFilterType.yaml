@@ -8,8 +8,13 @@ CampaignServiceGoalFilterType:
   - UNKNOWN
   title: CampaignServiceGoalFilterType
   description: |
-    <div lang="ja">CampaignServiceGoalFilterTypeは、キャンペーン目的の有無でキャンペーンをフィルタリングするための設定です。<br>※Campaign.campaignGoalがNONEの場合は「目的なし」、NONE以外の場合は「目的あり」と定義します。</div>
-    <div lang="en">CampaignServiceGoalFilterType is a setting for filtering campaigns &#34;with campaignGoal&#34; or &#34;with no campaignGoal&#34;.</div>
+    <div lang="ja">
+    CampaignServiceGoalFilterTypeは、キャンペーン目的の有無でキャンペーンをフィルタリングするための設定です。<br>
+    ※Campaign.campaignGoalがNONEの場合は「目的なし」、NONE以外の場合は「目的あり」と定義します。
+    </div>
+    <div lang="en">
+    CampaignServiceGoalFilterType is a setting for filtering campaigns &#34;with campaignGoal&#34; or &#34;with no campaignGoal&#34;.
+    </div>
     <hr>
     <p>* <code>ALL</code> - <span lang="ja">全てのキャンペーンを取得（DEFAULT）</span><span lang="en">All campaigns (Default)</span></p>
     <p>* <code>NON_GOAL</code> - <span lang="ja">目的なしキャンペーンのみ取得</span><span lang="en">Only campaigns with no campaignGoal</span></p>

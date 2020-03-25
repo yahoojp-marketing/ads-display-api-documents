@@ -8,24 +8,30 @@ FeedSetServiceCondition:
       type: string
       nullable: true
       description: |
-        <div lang="ja">値<br>設定可能な値はFeedSetServiceConditionTypeをご参照ください。<br></div><div lang="en">Value<br>Refer to FeedSetServiceConditionType for possible values.<br></div>
+        <div lang="ja">値<br>設定可能な値はFeedSetServiceConditionTypeをご参照ください。<br></div>
+        <div lang="en">Value<br>Refer to FeedSetServiceConditionType for possible values.<br></div>
   title: FeedSetServiceCondition
   description: |
-    <div lang="ja">FeedSetServiceConditionオブジェクトは、商品セット情報のOR条件を保持します。</div><div lang="en">FeedSetServiceCondition object contains OR conditional retrieval of feedset information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>compareOperator</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>value</td>
-        <td>Requirement</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">FeedSetServiceConditionオブジェクトは、商品セット情報のOR条件を保持します。</div>
+    <div lang="en">FeedSetServiceCondition object contains OR conditional retrieval of feedset information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>compareOperator</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>value</td>
+          <td>Requirement</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

@@ -8,7 +8,9 @@ DictionaryServiceOsVersion:
       type: string
       nullable: true
       description: |
-        <div lang="ja">OSバージョンです。</div><div lang="en">OS Version</div>
+        <div lang="ja">OSバージョンです。</div>
+        <div lang="en">OS Version</div>
   title: DictionaryServiceOsVersion
   description: |
-    <div lang="ja">DictionaryServiceOsVersionオブジェクトは、OSバージョンを保持します。</div><div lang="en">DictionaryServiceOsVersion object contains OS version.</div>
+    <div lang="ja">DictionaryServiceOsVersionオブジェクトは、OSバージョンを保持します。</div>
+    <div lang="en">DictionaryServiceOsVersion object contains OS version.</div>

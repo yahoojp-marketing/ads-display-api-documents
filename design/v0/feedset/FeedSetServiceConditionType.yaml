@@ -18,7 +18,9 @@ FeedSetServiceConditionType:
   - UNKNOWN
   title: FeedSetServiceConditionType
   description: |
-    <div lang="ja">商品セットの条件に設定できる項目の種別です。</div><div lang="en">FeedSetServiceConditionType object describes the type of items available for condition of Item Set.</div><hr>
+    <div lang="ja">商品セットの条件に設定できる項目の種別です。</div>
+    <div lang="en">FeedSetServiceConditionType object describes the type of items available for condition of Item Set.</div>
+    <hr>
     <p>* <code>CATEGORY_ID</code> - <span lang="ja">カテゴリーID</span><span lang="en">Category ID</span></p>
     <p>* <code>STOCK_QUANTITY</code> - <span lang="ja">在庫数</span><span lang="en">Stock quantity</span></p>
     <p>* <code>PRICE</code> - <span lang="ja">価格</span><span lang="en">Price</span></p>

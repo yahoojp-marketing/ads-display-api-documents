@@ -10,8 +10,14 @@ VideoServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。<br>このフィールドは、SETおよびREMOVE時に必須となります。</div>
-        <div lang="en">AccountID.<br>This field is required in SET and REMOVE operation. </div>
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、SETおよびREMOVE時に必須となります。
+        </div>
+        <div lang="en">
+        AccountID.<br>
+        This field is required in SET and REMOVE operation.
+        </div>
     operand:
       type: array
       nullable: false
@@ -21,7 +27,7 @@ VideoServiceOperation:
       maxItems: 100
       description: |
         <div lang="ja">このフィールドは、SETおよびREMOVE時に必須となります。</div>
-        <div lang="en"><br>This field is required in SET and REMOVE operation. </div>
+        <div lang="en">This field is required in SET and REMOVE operation.</div>
   title: VideoServiceOperation
   description: |
     <div lang="ja">VideoServiceOperationオブジェクトは、メソッドの操作対象を保持します。</div>

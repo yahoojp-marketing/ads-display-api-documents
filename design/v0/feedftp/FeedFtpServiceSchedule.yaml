@@ -15,7 +15,8 @@ FeedFtpServiceSchedule:
     scheduleType:
       $ref: 'FeedFtpServiceScheduleType.yaml#/FeedFtpServiceScheduleType'
       description: |
-        <div lang="ja">スケジュールタイプ</div><div lang="en">Schedule type.</div>
+        <div lang="ja">スケジュールタイプ</div>
+        <div lang="en">Schedule type.</div>
     scheduleWeekly:
       $ref: 'FeedFtpServiceScheduleWeekly.yaml#/FeedFtpServiceScheduleWeekly'
       description: |

@@ -9,7 +9,8 @@ ReportDefinitionServiceSelector:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     numberResults:
       type: integer
       nullable: true
@@ -18,7 +19,8 @@ ReportDefinitionServiceSelector:
       maximum: 500
       default: 200
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
     reportJobIds:
       type: array
       nullable: true
@@ -28,7 +30,8 @@ ReportDefinitionServiceSelector:
         format: int64
       maxItems: 500
       description: |
-        <div lang="ja">レポートIDです。</div><div lang="en">Report ID.</div>
+        <div lang="ja">レポートIDです。</div>
+        <div lang="en">Report ID.</div>
     reportJobStatuses:
       type: array
       nullable: true
@@ -42,7 +45,9 @@ ReportDefinitionServiceSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div><div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
   title: ReportDefinitionServiceSelector
   description: |
-    <div lang="ja">ReportDefinitionServiceSelectorオブジェクトは、操作の対象とするレポートを表します。</div><div lang="en">ReportDefinitionServiceSelector object serves the report definition for the target of operation.</div>
+    <div lang="ja">ReportDefinitionServiceSelectorオブジェクトは、操作の対象とするレポートを表します。</div>
+    <div lang="en">ReportDefinitionServiceSelector object serves the report definition for the target of operation.</div>

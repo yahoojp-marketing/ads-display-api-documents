@@ -17,4 +17,5 @@ AccountServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: AccountServiceValue
   description: |
-    <div lang="ja">AccountServiceValueオブジェクトは、アカウント情報を格納するコンテナです。</div><div lang="en">The AccountServiceValue object is a container for storing account information.</div>
+    <div lang="ja">AccountServiceValueオブジェクトは、アカウント情報を格納するコンテナです。</div>
+    <div lang="en">The AccountServiceValue object is a container for storing account information.</div>

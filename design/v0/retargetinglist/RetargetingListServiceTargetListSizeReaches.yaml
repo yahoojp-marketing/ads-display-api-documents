@@ -7,29 +7,35 @@ RetargetingListServiceTargetListSizeReaches:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">ターゲットリストのサイズのリーチ数</div><div lang="en">Reaches of target list size</div>
+        <div lang="ja">ターゲットリストのサイズのリーチ数</div>
+        <div lang="en">Reaches of target list size</div>
     targetListSize:
       $ref: 'RetargetingListServiceTargetListSize.yaml#/RetargetingListServiceTargetListSize'
   title: RetargetingListServiceTargetListSizeReaches
   description: |
-    <div lang="ja">ターゲットリストのサイズの各リーチ数を保持するオブジェクトです。</div><div lang="en">RetargetingListServiceTargetListSizeReaches object contains each reaches of target list size.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>reach</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>targetListSize</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">ターゲットリストのサイズの各リーチ数を保持するオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceTargetListSizeReaches object contains each reaches of target list size.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>reach</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>targetListSize</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

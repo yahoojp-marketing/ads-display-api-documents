@@ -17,4 +17,5 @@ FeedServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: FeedServiceValue
   description: |
-    <div lang="ja">FeedServiceValueオブジェクトは、操作結果を含むFeed情報を表します。</div><div lang="en">FeedServiceValue object describes Feed information including operation result.</div>
+    <div lang="ja">FeedServiceValueオブジェクトは、操作結果を含むFeed情報を表します。</div>
+    <div lang="en">FeedServiceValue object describes Feed information including operation result.</div>

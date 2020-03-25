@@ -13,7 +13,8 @@ FeedFtpServiceValue:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div><div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: FeedFtpServiceValue
   description: |
     <div lang="ja">FeedFtpServiceValueオブジェクトは、操作結果を含む定期アップロード設定情報を表します。</div>

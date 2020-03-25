@@ -13,4 +13,3 @@ StatsServicePlacementUrlListType:
     <p>* <code>WHITE_LIST</code> - <span lang="ja">ホワイトリスト</span><span lang="en">White list.</span></p>
     <p>* <code>BLACK_LIST</code> - <span lang="ja">ブラックリスト</span><span lang="en">Black list.</span></p>
     <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
-

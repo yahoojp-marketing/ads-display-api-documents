@@ -7,7 +7,8 @@ MediaServiceRecord:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     approvalStatus:
       $ref: 'MediaServiceApprovalStatus.yaml#/MediaServiceApprovalStatus'
     campaignBannerFlg:
@@ -16,7 +17,8 @@ MediaServiceRecord:
       type: string
       nullable: true
       description: |
-        <div lang="ja">入稿日時です。</div><div lang="en">Date and time of creation.</div>
+        <div lang="ja">入稿日時です。</div>
+        <div lang="en">Date and time of creation.</div>
     disapprovalReasonCodes:
       type: array
       nullable: true
@@ -24,7 +26,8 @@ MediaServiceRecord:
         type: string
         nullable: true
       description: |
-        <div lang="ja">掲載拒否の理由です。</div><div lang="en">Reason code why it&#39;s disapproved on the review.</div>
+        <div lang="ja">掲載拒否の理由です。</div>
+        <div lang="en">Reason code why it&#39;s disapproved on the review.</div>
     logoFlg:
       $ref: 'MediaServiceLogoFlg.yaml#/MediaServiceLogoFlg'
     imageMedia:
@@ -34,17 +37,20 @@ MediaServiceRecord:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">画像IDです。</div><div lang="en">Media ID (image ID).</div>
+        <div lang="ja">画像IDです。</div>
+        <div lang="en">Media ID (image ID).</div>
     mediaName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">実ファイル名です。</div><div lang="en">File name.</div>
+        <div lang="ja">実ファイル名です。</div>
+        <div lang="en">File name.</div>
     mediaTitle:
       type: string
       nullable: true
       description: |
-        <div lang="ja">画像名です。</div><div lang="en">Image name.</div>
+        <div lang="ja">画像名です。</div>
+        <div lang="en">Image name.</div>
     thumbnailFlg:
       $ref: 'MediaServiceThumbnailFlg.yaml#/MediaServiceThumbnailFlg'
     userStatus:

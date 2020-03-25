@@ -12,8 +12,14 @@ FeedFtpServiceScheduleWeek:
   - UNKNOWN
   title: FeedFtpServiceScheduleWeek
   description: |
-    <div lang="ja">FeedFtpServiceScheduleWeekは、曜日を表します。<br>このフィールドは、リクエストの場合は必須です。</div>
-    <div lang="en">FeedFtpServiceScheduleWeek serves the days of the week.<br>This field is required in requests.</div>
+    <div lang="ja">
+    FeedFtpServiceScheduleWeekは、曜日を表します。<br>
+    このフィールドは、リクエストの場合は必須です。
+    </div>
+    <div lang="en">
+    FeedFtpServiceScheduleWeek serves the days of the week.<br>
+    This field is required in requests.
+    </div>
     <hr>
     <p>* <code>SUN</code> - <span lang="ja">日曜日です。</span><span lang="en">Sunday</span></p>
     <p>* <code>MON</code> - <span lang="ja">月曜日です。</span><span lang="en">Monday</span></p>

@@ -7,34 +7,40 @@ StatsServiceAdStatsValue:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンID</div><div lang="en">Campaign ID</div>
+        <div lang="ja">キャンペーンID</div>
+        <div lang="en">Campaign ID</div>
     campaignName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーン名</div><div lang="en">Campaign name</div>
+        <div lang="ja">キャンペーン名</div>
+        <div lang="en">Campaign name</div>
     adGroupId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループID</div><div lang="en">Ad group ID</div>
+        <div lang="ja">広告グループID</div>
+        <div lang="en">Ad group ID</div>
     adGroupName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告グループ名</div><div lang="en">Ad group name</div>
+        <div lang="ja">広告グループ名</div>
+        <div lang="en">Ad group name</div>
     adId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告ID</div><div lang="en">Ad ID</div>
+        <div lang="ja">広告ID</div>
+        <div lang="en">Ad ID</div>
     adName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告名</div><div lang="en">Ad name</div>
+        <div lang="ja">広告名</div>
+        <div lang="en">Ad name</div>
     stats:
       $ref: 'Stats.yaml#/Stats'
   title: StatsServiceAdStatsValue

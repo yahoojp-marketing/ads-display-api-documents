@@ -12,7 +12,9 @@ CampaignMigrationServiceJobStatus:
   - UNKNOWN
   title: CampaignMigrationServiceJobStatus
   description: |
-    <div lang="ja">CampaignMigrationServiceJobStatusはマイグレーションジョブの状態を示します。</div><div lang="en">CampaignMigrationServiceJobStatus object indicates migration job status.</div><hr>
+    <div lang="ja">CampaignMigrationServiceJobStatusはマイグレーションジョブの状態を示します。</div>
+    <div lang="en">CampaignMigrationServiceJobStatus object indicates migration job status.</div>
+    <hr>
     <p>* <code>NOT_STARTED</code> - <span lang="ja">未処理</span><span lang="en">Unprocessed</span></p>
     <p>* <code>IN_PROGRESS</code> - <span lang="ja">処理中</span><span lang="en">In progress</span></p>
     <p>* <code>COMPLETED</code> - <span lang="ja">正常終了</span><span lang="en">Completed</span></p>

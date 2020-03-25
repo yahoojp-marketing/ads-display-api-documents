@@ -10,8 +10,14 @@ AdGroupAdServiceApprovalStatus:
   - UNKNOWN
   title: AdGroupAdServiceApprovalStatus
   description: |
-    <div lang="ja">AdGroupAdServiceApprovalStatusは、広告の審査状況を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-    <div lang="en">AdGroupAdServiceApprovalStatus displays editorial status.<br>Although this field will be returned in the response, it will be ignored on input. </div>
+    <div lang="ja">
+    AdGroupAdServiceApprovalStatusは、広告の審査状況を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceApprovalStatus displays editorial status.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
     <hr>
     <p>* <code>APPROVED</code> - <span lang="ja">承認済みです。</span><span lang="en">The item was approved.</span></p>
     <p>* <code>APPROVED_WITH_REVIEW</code> - <span lang="ja">承認済です。<br>すでに掲載中の広告を再編集し、審査中となり、編集前の広告が掲載されています。</span><span lang="en">The item was approved. Update items is under review.</span></p>

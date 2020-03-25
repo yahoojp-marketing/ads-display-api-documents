@@ -17,4 +17,5 @@ FeedSetServiceValue:
         <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
   title: FeedSetServiceValue
   description: |
-    <div lang="ja">FeedSetServiceValueオブジェクトは、操作結果を含む商品セット情報を表します。</div><div lang="en">FeedSetServiceValue object describes Item Set information including operation result.</div>
+    <div lang="ja">FeedSetServiceValueオブジェクトは、操作結果を含む商品セット情報を表します。</div>
+    <div lang="en">FeedSetServiceValue object describes Item Set information including operation result.</div>

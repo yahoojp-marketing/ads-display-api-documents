@@ -6,21 +6,47 @@ AdGroupTargetServiceAudienceCategoryTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カテゴリ種別です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Category type.<br>Although this field will be returned in the response, it will be ignored on input.</div>
+        <div lang="ja">
+        カテゴリ種別です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Category type.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     categoryNameEn:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カテゴリ名（英語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Category name (English).<br>Although this field will be returned in the response, it will be ignored on input. </div>
+        <div lang="ja">
+        カテゴリ名（英語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Category name (English).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     categoryNameJa:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カテゴリ名（日本語）です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-        <div lang="en">Category name (Japanese).<br>Although this field will be returned in the response, it will be ignored on input. </div>
+        <div lang="ja">
+        カテゴリ名（日本語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Category name (Japanese).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
   title: AdGroupTargetServiceAudienceCategoryTarget
   description: |
-    <div lang="ja">AdGroupTargetServiceAudienceCategoryTargetオブジェクトは、オーディエンスカテゴリーターゲティングの設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>※targetTypeがAUDIENCE_CATEGORY_TARGETの場合は必須です。</div>
-    <div lang="en">AdGroupTargetServiceAudienceCategoryTarget object contains information about audience category targeting settings.<br>This field is optional in ADD, SET and REPLACE operation.<br>∗If targetType is AUDIENCE_CATEGORY_TARGET, this field is required.</div>
+    <div lang="ja">
+    AdGroupTargetServiceAudienceCategoryTargetオブジェクトは、オーディエンスカテゴリーターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがAUDIENCE_CATEGORY_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceAudienceCategoryTarget object contains information about audience category targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is AUDIENCE_CATEGORY_TARGET, this field is required.
+    </div>

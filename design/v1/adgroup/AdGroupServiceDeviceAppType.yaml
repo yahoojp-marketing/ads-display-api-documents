@@ -8,8 +8,14 @@ AdGroupServiceDeviceAppType:
   - UNKNOWN
   title: AdGroupServiceDeviceAppType
   description: |
-    <div lang="ja">AdGroupServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AdGroupServiceDeviceAppType serves application types for devices.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceDeviceAppType serves application types for devices.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>APP</code> - <span lang="ja">アプリ向けに配信されます。</span><span lang="en">Deliver to apps.</span></p>
     <p>* <code>WEB</code> - <span lang="ja">ウェブサイト向けに配信されます。</span><span lang="en">Deliver to the Web.</span></p>

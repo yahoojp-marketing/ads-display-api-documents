@@ -15,7 +15,9 @@ FeedDataServiceFileUploadStatus:
   - UNKNOWN
   title: FeedDataServiceFileUploadStatus
   description: |
-    <div lang="ja">ファイルアップロード状況</div><div lang="en">FeedDataServiceFileUploadStatus object displays status of file upload.</div><hr>
+    <div lang="ja">ファイルアップロード状況</div>
+    <div lang="en">FeedDataServiceFileUploadStatus object displays status of file upload.</div>
+    <hr>
     <p>* <code>UPLOADED</code> - <span lang="ja">アップロード済み 処理中</span><span lang="en">Uploaded (in progress).</span></p>
     <p>* <code>COMPLETED</code> - <span lang="ja">完了</span><span lang="en">Completed.</span></p>
     <p>* <code>FILE_FORMAT_ERROR</code> - <span lang="ja">アップロードファイルに不備あり</span><span lang="en">File format error occurred.</span></p>

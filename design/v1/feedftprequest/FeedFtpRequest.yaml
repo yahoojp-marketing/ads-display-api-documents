@@ -7,7 +7,14 @@ FeedFtpRequest:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Feedを識別するIdです。<br>このフィールドは、リクエストの場合は必須です。</div><div lang="en">Feed ID.<br>This field is required in requests.</div>
+        <div lang="ja">
+        Feedを識別するIdです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Feed ID.<br>
+        This field is required in requests.
+        </div>
   title: FeedFtpRequest
   description: |
     <div lang="ja">FeedFtpRequestオブジェクトは、即時アップロードリクエスト情報を保持します。</div>

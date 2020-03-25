@@ -10,13 +10,16 @@ ReportDefinitionServiceDownloadSelector:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">The account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
     reportJobId:
       type: integer
       nullable: false
       format: int64
       description: |
-        <div lang="ja">レポートジョブIDです。</div><div lang="en">Report Job Id</div>
+        <div lang="ja">レポートジョブIDです。</div>
+        <div lang="en">Report Job Id</div>
   title: ReportDefinitionServiceDownloadSelector
   description: |
-    <div lang="ja">レポートをダウンロードします。</div><div lang="en">Download the report.</div>
+    <div lang="ja">レポートをダウンロードします。</div>
+    <div lang="en">Download the report.</div>

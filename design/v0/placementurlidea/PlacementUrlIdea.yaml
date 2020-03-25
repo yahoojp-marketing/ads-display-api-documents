@@ -6,7 +6,8 @@ PlacementUrlIdea:
       type: string
       nullable: true
       description: |
-        <div lang="ja">検索キーワードです。</div><div lang="en">Search Keyword</div>
+        <div lang="ja">検索キーワードです。</div>
+        <div lang="en">Search Keyword</div>
     siteCategory:
       type: array
       nullable: true
@@ -14,12 +15,14 @@ PlacementUrlIdea:
         type: string
         nullable: true
       description: |
-        <div lang="ja">検索カテゴリです。</div><div lang="en">Search Category</div>
+        <div lang="ja">検索カテゴリです。</div>
+        <div lang="en">Search Category</div>
     searchUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">取得URLです。<br>不明なURLの場合　UNKNOWN_URLが入ります。</div><div lang="en">URL</div>
+        <div lang="ja">取得URLです。<br>不明なURLの場合　UNKNOWN_URLが入ります。</div>
+        <div lang="en">URL</div>
     adFormat:
       type: array
       nullable: true
@@ -30,37 +33,43 @@ PlacementUrlIdea:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">PC でのリーチ数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">Reach Number of PC(1000 In the case of 0)</div>
+        <div lang="ja">PC でのリーチ数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">Reach Number of PC(1000 In the case of 0)</div>
     desktopAdRequests:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">PC でのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">AD Number of PC(1000 In the case of 0)</div>
+        <div lang="ja">PC でのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">AD Number of PC(1000 In the case of 0)</div>
     smartPhoneReaches:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">SmartPhone でのリーチ数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">Reach Number of SmartPhone (1000 In the case of 0)</div>
+        <div lang="ja">SmartPhone でのリーチ数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">Reach Number of SmartPhone (1000 In the case of 0)</div>
     smartPhoneAdRequests:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">SmartPhone でのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">AD Number of SmartPhone(1000 In the case of 0)</div>
+        <div lang="ja">SmartPhone でのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">AD Number of SmartPhone(1000 In the case of 0)</div>
     tabletReaches:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Tablet でのリーチ数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">Tablet(1000 In the case of 0)</div>
+        <div lang="ja">Tablet でのリーチ数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">Tablet(1000 In the case of 0)</div>
     tabletAdRequests:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">TabletでのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div><div lang="en">AD Number of Tablet (1000 In the case of 0)</div>
+        <div lang="ja">TabletでのADリクエスト数です。<br>・1000未満の時は0が取得されます。</div>
+        <div lang="en">AD Number of Tablet (1000 In the case of 0)</div>
   title: PlacementUrlIdea
   description: |
     <div lang="ja">PlacementUrlIdeaオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div>

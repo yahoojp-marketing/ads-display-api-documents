@@ -15,8 +15,18 @@ RetargetingListServiceTargetListSize:
   - UNKNOWN
   title: RetargetingListServiceTargetListSize
   description: |
-    <div lang="ja">RetargetingListServiceTargetListSizeは、類似ターゲットリストのサイズを表します。<br>similarityTargetList配下では、ADD時およびSET時に省略可能となり、REMOVE時に無視されます。<br>※ADD時のデフォルト設定値はRATE_10となります。<br>targetListSizeReaches配下では、このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。</div>
-    <div lang="en">RetargetingListServiceTargetListSize serves target list size of similarity target list. <br>Under similaritytargetList, this field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>*The default value in ADD operation will be RATE_10. <br>Under targetListSizeReaches, although this field will be returned in the response, it will be ignored on input. </div>
+    <div lang="ja">
+    RetargetingListServiceTargetListSizeは、類似ターゲットリストのサイズを表します。<br>
+    similarityTargetList配下では、ADD時およびSET時に省略可能となり、REMOVE時に無視されます。<br>
+    ※ADD時のデフォルト設定値はRATE_10となります。<br>
+    targetListSizeReaches配下では、このフィールドはレスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceTargetListSize serves target list size of similarity target list. <br>
+    Under similaritytargetList, this field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>
+    *The default value in ADD operation will be RATE_10. <br>
+    Under targetListSizeReaches, although this field will be returned in the response, it will be ignored on input.
+    </div>
     <hr>
     <p>* <code>RATE_1</code> - <span lang="ja">類似度：閾値0.1</span><span lang="en">Similarity: Threshold 0.1</span></p>
     <p>* <code>RATE_2</code> - <span lang="ja">類似度：閾値0.2</span><span lang="en">Similarity: Threshold 0.2</span></p>

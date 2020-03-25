@@ -10,7 +10,8 @@ AdGroupAdServiceOperation:
       nullable: false
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID</div>
     operand:
       type: array
       nullable: false
@@ -20,4 +21,5 @@ AdGroupAdServiceOperation:
       maxItems: 2000
   title: AdGroupAdServiceOperation
   description: |
-    <div lang="ja">AdGroupAdServiceOperationオブジェクトは、操作を表します。</div><div lang="en">The AdGroupAdServiceOperation object is a container for operation.</div>
+    <div lang="ja">AdGroupAdServiceOperationオブジェクトは、操作を表します。</div>
+    <div lang="en">The AdGroupAdServiceOperation object is a container for operation.</div>

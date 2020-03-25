@@ -6,29 +6,36 @@ ConversionTrackerServiceStatsPeriodCustomDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">統計情報取得終了日時<br>※フォーマット：yyyyMMdd</div><div lang="en">Acquisition end date of stats information<br>∗ Format: yyyyMMdd</div>
+        <div lang="ja">統計情報取得終了日時<br>※フォーマット：yyyyMMdd</div>
+        <div lang="en">Acquisition end date of stats information<br>∗ Format: yyyyMMdd</div>
     statsStartDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">統計情報取得開始日時<br>※フォーマット：yyyyMMdd</div><div lang="en">Acquisition start date of stats information<br>∗ Format: yyyyMMdd</div>
+        <div lang="ja">統計情報取得開始日時<br>※フォーマット：yyyyMMdd</div>
+        <div lang="en">Acquisition start date of stats information<br>∗ Format: yyyyMMdd</div>
   title: ConversionTrackerServiceStatsPeriodCustomDate
   description: |
-    <div lang="ja">ConversionTrackerServiceStatsPeriodCustomDateは、統計情報の取得日を保持するオブジェクトです。</div><div lang="en">ConversionTrackerServiceStatsPeriodCustomDate object contains date of acquisition of stats information.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>statsEndDate</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>statsStartDate</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <div lang="ja">ConversionTrackerServiceStatsPeriodCustomDateは、統計情報の取得日を保持するオブジェクトです。</div>
+    <div lang="en">ConversionTrackerServiceStatsPeriodCustomDate object contains date of acquisition of stats information.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>statsEndDate</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>statsStartDate</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

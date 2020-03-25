@@ -6,37 +6,42 @@ AdGroupTargetServiceGeoTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">地域名（英語）です。</div><div lang="en">Region name (English)</div>
+        <div lang="ja">地域名（英語）です。</div>
+        <div lang="en">Region name (English)</div>
     geoNameJa:
       type: string
       nullable: true
       description: |
-        <div lang="ja">地域名（日本語）です。</div><div lang="en">Region name (Japanese)</div>
+        <div lang="ja">地域名（日本語）です。</div>
+        <div lang="en">Region name (Japanese)</div>
   title: AdGroupTargetServiceGeoTarget
   description: |
     <div lang="ja">AdGroupTargetServiceGeoTargetオブジェクトは、地域ターゲティングの設定情報を保持します。</div>
     <div lang="en">The AdGroupTargetServiceGeoTarget object is a container for storing geological targeting settings.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>geoNameEn</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>geoNameJa</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>geoNameEn</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>geoNameJa</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

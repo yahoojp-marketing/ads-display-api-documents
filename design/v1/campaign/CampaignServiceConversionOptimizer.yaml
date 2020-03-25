@@ -10,5 +10,13 @@ CampaignServiceConversionOptimizer:
       $ref: 'CampaignServiceManualCampaignConversionOptimizer.yaml#/CampaignServiceManualCampaignConversionOptimizer'
   title: CampaignServiceConversionOptimizer
   description: |
-    <div lang="ja">CampaignServiceConversionOptimizerは、コンバージョン最適化制御を保持するオブジェクトです。<br>このフィールドは、SET時に省略可能となり、ADDおよびREMOVE時に無視されます。<br>※SET時、目的ありの場合は設定不可となります。</div>
-    <div lang="en">CampaignServiceConversionOptimizer retains conversion optimization control.<br>This field is optional in SET operation, and will be ignored in ADD and REMOVE operation. <br>*For campaign with campaign goal, this field cannot be set in SET operation.</div>
+    <div lang="ja">
+    CampaignServiceConversionOptimizerは、コンバージョン最適化制御を保持するオブジェクトです。<br>
+    このフィールドは、SET時に省略可能となり、ADDおよびREMOVE時に無視されます。<br>
+    ※SET時、目的ありの場合は設定不可となります。
+    </div>
+    <div lang="en">
+    CampaignServiceConversionOptimizer retains conversion optimization control.<br>
+    This field is optional in SET operation, and will be ignored in ADD and REMOVE operation. <br>
+    *For campaign with campaign goal, this field cannot be set in SET operation.
+    </div>

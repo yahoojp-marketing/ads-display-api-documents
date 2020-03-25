@@ -7,13 +7,15 @@ AdGroupTarget:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントIDです。</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
     adGroupId:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">広告グループIDです。</div><div lang="en">Ad group ID.</div>
+        <div lang="ja">広告グループIDです。</div>
+        <div lang="en">Ad group ID.</div>
     bidMultiplier:
       type: number
       nullable: true
@@ -26,55 +28,59 @@ AdGroupTarget:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">キャンペーンIDです。</div><div lang="en">Campaign ID.</div>
+        <div lang="ja">キャンペーンIDです。</div>
+        <div lang="en">Campaign ID.</div>
     target:
       $ref: 'AdGroupTargetServiceTarget.yaml#/AdGroupTargetServiceTarget'
   title: AdGroupTarget
   description: |
     <div lang="ja">AdGroupTargetオブジェクトは、広告グループに設定されているターゲティング情報を格納します。</div>
     <div lang="en">The AdGroupTargets object is a container for storing targeting information specified ad group.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-        <th>REPLACE</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>adGroupId</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>bidMultiplier</td>
-        <td>Optional</td>
-        <td>Optional</td>
-        <td>Ignore</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>campaignId</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-        <td>Requirement<br>NotUpdatable</td>
-      </tr>
-      <tr>
-        <td>target</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-        <td>Requirement</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+          <th>REPLACE</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>adGroupId</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>bidMultiplier</td>
+          <td>Optional</td>
+          <td>Optional</td>
+          <td>Ignore</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>campaignId</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+          <td>Requirement<br>NotUpdatable</td>
+        </tr>
+        <tr>
+          <td>target</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+          <td>Requirement</td>
+        </tr>
+      </table>
+    </details>

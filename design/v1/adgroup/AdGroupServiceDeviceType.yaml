@@ -10,8 +10,14 @@ AdGroupServiceDeviceType:
   - UNKNOWN
   title: AdGroupServiceDeviceType
   description: |
-    <div lang="ja">AdGroupServiceDeviceTypeは、配信先デバイスの種類を表します。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-    <div lang="en">AdGroupServiceDeviceType displays types of devices to be posted on.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceDeviceTypeは、配信先デバイスの種類を表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceDeviceType displays types of devices to be posted on.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>
     <hr>
     <p>* <code>DESKTOP</code> - <span lang="ja">PC</span><span lang="en">PC</span></p>
     <p>* <code>WAP_MOBILE</code> - <span lang="ja">従来型携帯電話（フィーチャーフォン）</span><span lang="en">Contemporary mobile phones (Feature Phone)</span></p>

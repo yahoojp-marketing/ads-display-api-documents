@@ -6,35 +6,42 @@ DictionaryServiceCategoryChild:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カテゴリコードです。</div><div lang="en">Category code.</div>
+        <div lang="ja">カテゴリコードです。</div>
+        <div lang="en">Category code.</div>
     fullName:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カテゴリ名称です。（カテゴリ名称、サブカテゴリ名称を含めた正式名称です。）</div><div lang="en">Category name in high level.</div>
+        <div lang="ja">カテゴリ名称です。（カテゴリ名称、サブカテゴリ名称を含めた正式名称です。）</div>
+        <div lang="en">Category name in high level.</div>
     name:
       type: string
       nullable: true
       description: |
-        <div lang="ja">サブカテゴリ名称です。</div><div lang="en">Category name.</div>
+        <div lang="ja">サブカテゴリ名称です。</div>
+        <div lang="en">Category name.</div>
     reachDesktop:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">PCのリーチ実績数です。</div><div lang="en">Reach record number of PC</div>
+        <div lang="ja">PCのリーチ実績数です。</div>
+        <div lang="en">Reach record number of PC</div>
     reachSmartphone:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">スマホのリーチ実績数です。</div><div lang="en">Reach record number of smartphone</div>
+        <div lang="ja">スマホのリーチ実績数です。</div>
+        <div lang="en">Reach record number of smartphone</div>
     reachTablet:
       type: integer
       nullable: true
       format: int64
       description: |
-        <div lang="ja">タブレットのリーチ実績数です。</div><div lang="en">Reach record number of tablet</div>
+        <div lang="ja">タブレットのリーチ実績数です。</div>
+        <div lang="en">Reach record number of tablet</div>
   title: DictionaryServiceCategoryChild
   description: |
-    <div lang="ja">DictionaryServiceCategoryChildオブジェクトは、1-5階層までのカテゴリー情報を格納するコンテナです。</div><div lang="en">DictionaryServiceCategoryChild object is a container of category information in level 1-5.</div>
+    <div lang="ja">DictionaryServiceCategoryChildオブジェクトは、1-5階層までのカテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceCategoryChild object is a container of category information in level 1-5.</div>

@@ -6,7 +6,8 @@ AccountAdProductServiceAdProduct:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告商品情報です。</div><div lang="en">Information of ad product.</div>
+        <div lang="ja">広告商品情報です。</div>
+        <div lang="en">Information of ad product.</div>
   title: AccountAdProductServiceAdProduct
   description: |
     <div lang="ja">AccountAdProductServiceAdProductオブジェクトは、広告掲載方式に関する情報を表します。</div>

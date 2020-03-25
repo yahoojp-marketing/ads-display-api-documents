@@ -7,7 +7,8 @@ SearchKeywordListServicePage:
       nullable: false
       format: int32
       description: |
-        <div lang="ja">取得される項目の総件数です。</div><div lang="en">Total number of entries.</div>
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
     values:
       type: array
       nullable: true
@@ -15,4 +16,5 @@ SearchKeywordListServicePage:
         $ref: 'SearchKeywordListServiceValue.yaml#/SearchKeywordListServiceValue'
   title: SearchKeywordListServicePage
   description: |
-    <div lang="ja">SearchKeywordListServicePageオブジェクトは、取得されるサーチキーワードリストに関するエントリーを表します。</div><div lang="en">SearchKeywordListServicePage object displays that relatred to retrieved search keyword list.</div>
+    <div lang="ja">SearchKeywordListServicePageオブジェクトは、取得されるサーチキーワードリストに関するエントリーを表します。</div>
+    <div lang="en">SearchKeywordListServicePage object displays that relatred to retrieved search keyword list.</div>

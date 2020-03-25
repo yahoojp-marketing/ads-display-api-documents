@@ -10,29 +10,35 @@ ConversionTrackerServiceAppConversion:
       type: string
       nullable: true
       description: |
-        <div lang="ja">計測対象のアプリIDです。</div><div lang="en">App ID of the object to be tracked.</div>
+        <div lang="ja">計測対象のアプリIDです。</div>
+        <div lang="en">App ID of the object to be tracked.</div>
   title: ConversionTrackerServiceAppConversion
   description: |
-    <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョントラッカーの情報を保持します。</div><div lang="en">ConversionTrackerServiceAppConversion object contains the information for ConversionTrackerServiceAppConversionTracker.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>appConversionPlatform</td>
-        <td>Required</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>appConversionType</td>
-        <td>Optional<br>*Default : FIRST_OPEN</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>appId</td>
-        <td>Required</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="ja">ConversionTrackerServiceAppConversionオブジェクトは、アプリコンバージョントラッカーの情報を保持します。</div>
+    <div lang="en">ConversionTrackerServiceAppConversion object contains the information for ConversionTrackerServiceAppConversionTracker.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>appConversionPlatform</td>
+          <td>Required</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>appConversionType</td>
+          <td>Optional<br>*Default : FIRST_OPEN</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>appId</td>
+          <td>Required</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

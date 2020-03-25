@@ -7,7 +7,8 @@ FeedFtp:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">アカウントID</div><div lang="en">Account ID.</div>
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
     activeStatus:
       $ref: 'FeedFtpServiceActiveStatus.yaml#/FeedFtpServiceActiveStatus'
     feedId:
@@ -15,12 +16,14 @@ FeedFtp:
       nullable: true
       format: int64
       description: |
-        <div lang="ja">Feedを識別するId</div><div lang="en">Feed ID.</div>
+        <div lang="ja">Feedを識別するId</div>
+        <div lang="en">Feed ID.</div>
     feedUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">商品リストファイルのURL</div><div lang="en">URL of item list file.</div>
+        <div lang="ja">商品リストファイルのURL</div>
+        <div lang="en">URL of item list file.</div>
     itemListUploadType:
       $ref: 'FeedFtpServiceItemListUploadType.yaml#/FeedFtpServiceItemListUploadType'
     schedule:
@@ -29,56 +32,61 @@ FeedFtp:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ユーザー名</div><div lang="en">User name.</div>
+        <div lang="ja">ユーザー名</div>
+        <div lang="en">User name.</div>
     userPassword:
       type: string
       nullable: true
       description: |
-        <div lang="ja">パスワード</div><div lang="en">Password.</div>
+        <div lang="ja">パスワード</div>
+        <div lang="en">Password.</div>
   title: FeedFtp
   description: |
     <div lang="ja">FeedFtpオブジェクトは、定期アップロード設定情報を保持します。</div>
     <div lang="en">FeedFtp object retains Periodic Upload setting information.</div>
-    <hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-      </tr>
-      <tr>
-        <td>accountId</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-      <tr>
-        <td>activeStatus</td>
-        <td>Optional</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>feedUrl</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>itemListUploadType</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>schedule</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>userName</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-      </tr>
-      <tr>
-        <td>userPassword</td>
-        <td>Requirement</td>
-        <td>Optional</td>
-      </tr>
-    </table></details>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+        </tr>
+        <tr>
+          <td>accountId</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+        <tr>
+          <td>activeStatus</td>
+          <td>Optional</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>feedUrl</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>itemListUploadType</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>schedule</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>userName</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+        </tr>
+        <tr>
+          <td>userPassword</td>
+          <td>Requirement</td>
+          <td>Optional</td>
+        </tr>
+      </table>
+    </details>

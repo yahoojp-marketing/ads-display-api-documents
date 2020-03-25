@@ -12,7 +12,15 @@ ConversionTrackerServiceCategory:
   - UNKNOWN
   title: ConversionTrackerServiceCategory
   description: |
-    <div lang="ja">ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリーです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div><div lang="en">ConversionTrackerServiceCategory is a category for ConversionTracker.<br>This field is required in ADD operation, and will be optional in SET operation.</div><hr>
+    <div lang="ja">
+    ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリーです。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>
+    <hr>
     <p>* <code>NONE</code> - <span lang="ja">未設定です。</span><span lang="en">None</span></p>
     <p>* <code>DEFAULT</code> - <span lang="ja">その他です。</span><span lang="en">Other</span></p>
     <p>* <code>PAGE_VIEW</code> - <span lang="ja">主要なページの閲覧です。</span><span lang="en">Main page view</span></p>

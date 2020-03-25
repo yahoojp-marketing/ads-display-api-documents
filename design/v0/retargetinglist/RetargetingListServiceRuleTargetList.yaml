@@ -11,12 +11,14 @@ RetargetingListServiceRuleTargetList:
       nullable: true
       format: int32
       description: |
-        <div lang="ja">リーチの蓄積期間（1日～540日）です。</div><div lang="en">Cookies validation period. (1 - 540 days)</div>
+        <div lang="ja">リーチの蓄積期間（1日～540日）です。</div>
+        <div lang="en">Cookies validation period. (1 - 540 days)</div>
     retargetingTagId:
       type: string
       nullable: true
       description: |
-        <div lang="ja">リターゲティングタグIDです。</div><div lang="en">ID of Retargeting Tag.</div>
+        <div lang="ja">リターゲティングタグIDです。</div>
+        <div lang="en">ID of Retargeting Tag.</div>
     rules:
       type: array
       nullable: true
@@ -24,48 +26,54 @@ RetargetingListServiceRuleTargetList:
         $ref: 'RetargetingListServiceRule.yaml#/RetargetingListServiceRule'
   title: RetargetingListServiceRuleTargetList
   description: |
-    <div lang="ja">RetargetingListServiceRuleTargetListオブジェクトは、ルール設定のリストを表します。</div><div lang="en">RetargetingListServiceRuleTargetList object displays the list of rule settings.</div><hr><details><summary>Requirement</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>GET</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>isOpen</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td><div lang="ja">targetListTypeがDEFAULT_LISTまたはRULEの場合、Optional/Updatable</div><div lang="en">If targetListType is either DEFAULT_LIST or RULE, Optional/Updatable</div></td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>isPreset</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>reachPeriod</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Optional<br>Updatable</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>retargetingTagId</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>rules</td>
-        <td>-</td>
-        <td>Requirement</td>
-        <td>Requirement<br>Updatable</td>
-        <td>-</td>
-      </tr>
-    </table></details>
+    <div lang="ja">RetargetingListServiceRuleTargetListオブジェクトは、ルール設定のリストを表します。</div>
+    <div lang="en">RetargetingListServiceRuleTargetList object displays the list of rule settings.</div>
+    <hr>
+    <details>
+      <summary>Requirement</summary>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>GET</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>isOpen</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td><div lang="ja">targetListTypeがDEFAULT_LISTまたはRULEの場合、Optional/Updatable</div>
+          <div lang="en">If targetListType is either DEFAULT_LIST or RULE, Optional/Updatable</div></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>isPreset</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>reachPeriod</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Optional<br>Updatable</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>retargetingTagId</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>rules</td>
+          <td>-</td>
+          <td>Requirement</td>
+          <td>Requirement<br>Updatable</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </details>

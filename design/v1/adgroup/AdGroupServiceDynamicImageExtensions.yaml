@@ -7,8 +7,14 @@ AdGroupServiceDynamicImageExtensions:
   - UNKNOWN
   title: AdGroupServiceDynamicImageExtensions
   description: |
-    <div lang="ja">AdGroupServiceDynamicImageExtensionsは、画像自動付与の設定を表します。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-    <div lang="en">AdGroupServiceDynamicImageExtensions serves setting of Dynamic Image Extensions.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    AdGroupServiceDynamicImageExtensionsは、画像自動付与の設定を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceDynamicImageExtensions serves setting of Dynamic Image Extensions.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>ACTIVE</code> - <span lang="ja">画像自動付与を設定します。</span><span lang="en">Dynamic Image Extension is active.</span></p>
     <p>* <code>PAUSED</code> - <span lang="ja">画像自動付与を設定しません。</span><span lang="en">Dynamic Image Extension is not active.</span></p>

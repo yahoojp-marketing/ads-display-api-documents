@@ -7,8 +7,14 @@ ReportDefinitionServiceReportSortType:
   - UNKNOWN
   title: ReportDefinitionServiceReportSortType
   description: |
-    <div lang="ja">ReportDefinitionServiceReportSortTypeは、ソート条件を表します。<br>このフィールドは、ADD時に必須となります。</div>
-    <div lang="en">ReportDefinitionServiceReportSortType is a sort condition type.<br> This field is required in ADD operation.</div>
+    <div lang="ja">
+    ReportDefinitionServiceReportSortTypeは、ソート条件を表します。<br>
+    このフィールドは、ADD時に必須となります。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceReportSortType is a sort condition type.<br>
+     This field is required in ADD operation.
+     </div>
     <hr>
     <p>* <code>ASC</code> - <span lang="ja">昇順にソートされます。</span><span lang="en">Sort in ascending order.</span></p>
     <p>* <code>DESC</code> - <span lang="ja">降順にソートされます。</span><span lang="en">Sort in descending order.</span></p>

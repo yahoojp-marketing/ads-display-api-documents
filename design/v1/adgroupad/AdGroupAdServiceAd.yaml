@@ -24,5 +24,11 @@ AdGroupAdServiceAd:
       $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
   title: AdGroupAdServiceAd
   description: |
-    <div lang="ja">AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-    <div lang="en">AdGroupAdServiceAd object is a container for storing ads.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+    <div lang="ja">
+    AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAd object is a container for storing ads.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>

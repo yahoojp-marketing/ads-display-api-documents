@@ -8,8 +8,14 @@ CampaignServiceFrequencyLevel:
   - UNKNOWN
   title: CampaignServiceFrequencyLevel
   description: |
-    <div lang="ja">CampaignServiceFrequencyLevelは、フリークエンシー制限単位を表します。<br>このフィールドは、ADDおよびSET時に省略可能となります。</div>
-    <div lang="en">Frequency setting level.<br>This field is optional in ADD and SET operation.</div>
+    <div lang="ja">
+    CampaignServiceFrequencyLevelは、フリークエンシー制限単位を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。
+    </div>
+    <div lang="en">
+    Frequency setting level.<br>
+    This field is optional in ADD and SET operation.
+    </div>
     <hr>
     <p>* <code>CAMPAIGN</code> - <span lang="ja">キャンペーン単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Campaign</span></p>
     <p>* <code>AD_GROUP</code> - <span lang="ja">広告グループ単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Ad Group</span></p>

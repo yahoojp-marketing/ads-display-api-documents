@@ -5,22 +5,26 @@ AdGroupServiceManualConversionOptimizer:
     eligibilityFlg:
       $ref: 'AdGroupServiceEligibilityFlg.yaml#/AdGroupServiceEligibilityFlg'
       description: |
-        <div lang="ja">コンバージョン最適化利用可否です。<br>※DISABLEの場合は自動入札（コンバージョン最適化）は使えません。</div><div lang="en">Availability of conversion optimization. If this field value is 'DISABLE',this AdGroup cannot use Auto Bidding(Conversion Optimization).</div>
+        <div lang="ja">コンバージョン最適化利用可否です。<br>※DISABLEの場合は自動入札（コンバージョン最適化）は使えません。</div>
+        <div lang="en">Availability of conversion optimization. If this field value is 'DISABLE',this AdGroup cannot use Auto Bidding(Conversion Optimization).</div>
   title: AdGroupServiceManualConversionOptimizer
   description: |
     <div lang="ja">AdGroupServiceManualConversionOptimizerは、コンバージョン最適化「手動入札」設定を保持するオブジェクトです。</div>
-    <div lang="en">AdGroupServiceManualConversionOptimizer displays the contents of conversion optimization 'Manual Bidding' settings.</summary>
-    <table border='1'>
-      <tr>
-        <th>PROPERTY</th>
-        <th>ADD</th>
-        <th>SET</th>
-        <th>REMOVE</th>
-      </tr>
-      <tr>
-        <td>conversionOptimizerEligibilityFlg</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-        <td>Ignore</td>
-      </tr>
-    </table></details>
+    <div lang="en">AdGroupServiceManualConversionOptimizer displays the contents of conversion optimization 'Manual Bidding' settings.</div>
+    <hr>
+    <details>
+      <table border='1'>
+        <tr>
+          <th>PROPERTY</th>
+          <th>ADD</th>
+          <th>SET</th>
+          <th>REMOVE</th>
+        </tr>
+        <tr>
+          <td>conversionOptimizerEligibilityFlg</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+          <td>Ignore</td>
+        </tr>
+      </table>
+    </details>

@@ -6,19 +6,33 @@ AdGroupAdServiceMobileAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文（1行目）です。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Description text (line 1).<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        説明文（1行目）です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Description text (line 1).<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     description2:
       type: string
       nullable: true
       description: |
-        <div lang="ja">説明文（2行目）です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
-        <div lang="en">Description text (line 2).<br>This field is optional in ADD and SET operation.</div>
+        <div lang="ja">
+        説明文（2行目）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Description text (line 2).<br>
+        This field is optional in ADD and SET operation.
+        </div>
     displayUrl:
       type: string
       nullable: true
       description: |
-        <div lang="ja">表示URLです。<br>ADDおよびSET時、このフィールドは省略可能となります。<br>
+        <div lang="ja">
+        表示URLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
         ・標準キャンペーンの場合<br>
         &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
         ・アプリキャンペーンの場合<br>
@@ -28,7 +42,8 @@ AdGroupAdServiceMobileAd:
         &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
         </div>
         <div lang="en">
-        Display URL.<br>This field is optional in ADD and SET operation.<br>
+        Display URL.<br>
+        This field is optional in ADD and SET operation.<br>
         - Standard campaign:<br>
         &nbsp;&nbsp;Required for ADD, optional for SET.<br>
         - Mobile app campaign:<br>
@@ -41,8 +56,14 @@ AdGroupAdServiceMobileAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">タイトルです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Title.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        タイトルです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Title.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
     mobileCarriers:
       type: array
       nullable: true
@@ -52,9 +73,23 @@ AdGroupAdServiceMobileAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">リンク先URLです。<br>このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
-        <div lang="en">Destination URL.<br>This field is required in ADD operation, and will be optional in SET operation.</div>
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
   title: AdGroupAdServiceMobileAd
   description: |
-    <div lang="ja">AdGroupAdServiceMobileAdオブジェクトは、モバイル広告の情報を表します。<br>このフィールドは、省略可能となります。<br>※ADD時、adTypeがTEXT_SHORT_AD1またはTEXT_SHORT_AD2の場合は必須です。</div>
-    <div lang="en">AdGroupAdServiceMobileAd object describes mobile ad information.<br>This field is optional.<br>*If adType is TEXT_SHORT_AD1 or TEXT_SHORT_AD2, this field is required in ADD operation.</div>
+    <div lang="ja">
+    AdGroupAdServiceMobileAdオブジェクトは、モバイル広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがTEXT_SHORT_AD1またはTEXT_SHORT_AD2の場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceMobileAd object describes mobile ad information.<br>
+    This field is optional.<br>
+    *If adType is TEXT_SHORT_AD1 or TEXT_SHORT_AD2, this field is required in ADD operation.
+    </div>
