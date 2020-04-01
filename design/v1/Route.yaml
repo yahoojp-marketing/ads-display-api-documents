@@ -239,14 +239,14 @@ tags:
     <h2 lang="ja">レポートフィールド</h2>
     <h2 lang="en">Report Fields</h2>
     <ul>
-    <li><div lang="ja"><a href="./reports/ja/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div></li><li><div lang="en"><a href="./reports/ja/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/INTEREST_CATEGORY.csv" download>インタレストカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/ja/INTEREST_CATEGORY.csv" download>Interest category report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/ja/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/ja/SITE_CATEGORY.csv" download>Site category report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/URL.csv" download>配信先URLレポート</a></div></li><li><div lang="en"><a href="./reports/ja/URL.csv" download>Ad Delivery URL report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="./reports/ja/FREQUENCY.csv" download>Frequency report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/ja/REACH.csv" download>Reach report</a></div></li>
-    <li><div lang="ja"><a href="./reports/ja/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/ja/LABEL.csv" download>Label report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div></li><li><div lang="en"><a href="./reports/v1/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/INTEREST_CATEGORY.csv" download>インタレストカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v1/INTEREST_CATEGORY.csv" download>Interest category report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v1/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v1/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/URL.csv" download>配信先URLレポート</a></div></li><li><div lang="en"><a href="./reports/v1/URL.csv" download>Ad Delivery URL report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="./reports/v1/FREQUENCY.csv" download>Frequency report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v1/REACH.csv" download>Reach report</a></div></li>
+    <li><div lang="ja"><a href="./reports/v1/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/v1/LABEL.csv" download>Label report</a></div></li>
     </ul>
 - name: MediaService
   description: |
