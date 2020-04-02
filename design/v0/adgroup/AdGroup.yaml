@@ -81,8 +81,8 @@ AdGroup:
       type: boolean
       nullable: true
       description: |
-        <div lang="ja">商品セットとの関連付けを削除（配信停止）</div>
-        <div lang="en">Remove association with feed set ∗Stop delivery.</div>
+        <div lang="ja">商品セットとの関連付けを削除<br/>*商品セットの関連付けが必須となったため、この機能は廃止しました。</div>
+        <div lang="en">Remove association with feed set.<br/>* Association with feed set changed to required, so this feature was abolished.</div>
     labels:
       type: array
       nullable: true
@@ -192,16 +192,18 @@ AdGroup:
         </tr>
         <tr>
           <td>feedSetId</td>
-          <td>Optional</td>
-          <td>Optional<div lang="ja">Updatable&lt;</div>
-          <div lang="en">Updatable&lt;</div></td>
+          <td>Optional
+            <div lang="ja">*未指定の場合、デフォルトセットを自動で関連付けます。</div>
+            <div lang="en">* If feedSetId is not specified, the default set is associated automatically.</div>
+          </td>
+          <td>Optional<div lang="ja">Updatable</div>
+          <div lang="en">Updatable</div></td>
           <td>Ignore</td>
         </tr>
         <tr>
           <td>isRemoveFeedSetId</td>
-          <td>Optional</td>
-          <td>Optional<div lang="ja">Updatable&lt;</div>
-          <div lang="en">Updatable&lt;</div></td>
+          <td>Ignore</td>
+          <td>Ignore</td>
           <td>Ignore</td>
         </tr>
         <tr>

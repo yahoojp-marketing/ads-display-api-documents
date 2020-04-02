@@ -109,23 +109,27 @@ AdGroup:
       description: |
         <div lang="ja">
         商品セットIDです。<br>
-        ADDおよびSET時、このフィールドは省略可能となります。
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        *ADD時に未指定の場合、デフォルトセットを自動で関連付けます。
         </div>
         <div lang="en">
         Feed set ID.<br>
-        This field is optional in ADD and SET operation.
+        This field is optional in ADD and SET operation.<br>
+        * If feedSetId is not specified in ADD operation, the default set is associated automatically.
         </div>
     isRemoveFeedSetId:
       type: boolean
       nullable: true
       description: |
         <div lang="ja">
-        商品セットとの関連付けを削除します。（配信停止）<br>
-        ADDおよびSET時、このフィールドは省略可能となります。
+        商品セットとの関連付けを削除します。<br>
+        このフィールドは、リクエストの際には無視されます。<br>
+        *商品セットの関連付けが必須となったため、この機能は廃止しました。
         </div>
         <div lang="en">
         Remove association with feed set. (Stop delivery)<br>
-        This field is optional in ADD and SET operation.
+        This field will be ignored on input.<br>
+        * Association with feed set changed to required, so this feature was abolished.
         </div>
     labels:
       type: array
