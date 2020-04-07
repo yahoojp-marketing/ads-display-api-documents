@@ -39,8 +39,14 @@ tags:
 - name: AdGroupService
   description: |
     <label class="campaign"></label>
-    <div lang="ja">AdGroupServiceは広告グループの操作を提供します。</div>
-    <div lang="en">Use this service to get, add, update, or delete adgroup.</div>
+    <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
+      ディスプレイ広告（運用型）における広告グループの作成は、以下のベストプラクティスを参照してください。<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+    </div>
+    <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
+      See the following Best Practice to learn about how to create an ad group on Display Ads (Auction).<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+    </div>
 - name: AuditLogService
   description: |
     <label class="campaign"></label>
@@ -49,91 +55,14 @@ tags:
 - name: CampaignService
   description: |
     <label class="campaign"></label>
-    <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。</div>
-    <div lang="en">Use this service to get, add, update, or delete campaigns.</div>
-    <div lang="ja"><b>キャンペーン目的について</b><br>
-    ・キャンペーン目的の詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">ヘルプ</a>をご参照ください。<br>
-    ・Campaign.campaignGoalがNONEの場合は「目的なし」、NONE以外の場合は「目的あり」と定義します。<br>
-    ・「目的あり」と「目的なし」のキャンペーンでそれぞれ必須、あるいは更新可能なフィールドが異なるため、以下の表に目的のあり／なし、add／setの場合の必須、更新可能フィールドをまとめます。<br>
-    ※ -- は、「設定不可」を表します。
+    <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
+      ディスプレイ広告（運用型）におけるキャンペーンの作成は、以下のベストプラクティスを参照してください。<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
     </div>
-    <div lang="en"><b>About campaignGoal</b><br>
-    - It defined "with no campaignGoal" if Campaign.campaignGoal is set NONE, otherwise defined "with campaignGoal".<br>
-    - The fields that are required or updateable for "with campaignGoal" and "with no campaignGoal" campaigns are different. The following table summarizes the required or updatable fields for "with / with no campaignGoal" and add / set.<br>
-    * "--" mean "cannot be set".
+    <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
+      See the following Best Practice to learn about how to create a campaign on Display Ads (Auction).<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
     </div>
-    <table border='1'>
-      <tr>
-        <th><div lang="ja">フィールド名</div><div lang="en">field name</div></th>
-        <th><div lang="ja">目的なし<br>add</div><div lang="en">with no campaignGoal/<br>add</div></th>
-        <th><div lang="ja">目的なし<br>set</div><div lang="en">with no campaignGoal/<br>set</div></th>
-        <th><div lang="ja">目的あり<br>add</div><div lang="en">with campaignGoal/<br>add</div></th>
-        <th><div lang="ja">目的あり<br>set</div><div lang="en">with campaignGoal/<br>set</div></th>
-      </tr>
-      <tr>
-        <td>adProductType</td>
-        <td>Required</td>
-        <td>--</td>
-        <td>--</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>budget.amount</td>
-        <td>Optional</td>
-        <td>Updatable</td>
-        <td>Required</td>
-        <td>Updatable</td>
-      </tr>
-      <tr>
-        <td>budget.budgetDeliveryMethod</td>
-        <td>Optional</td>
-        <td>Updatable</td>
-        <td>--</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>campaignBiddingStrategy</td>
-        <td>--</td>
-        <td>--</td>
-        <td>Required</td>
-        <td>Updatable</td>
-      </tr>
-      <tr>
-        <td>campaignGoal</td>
-        <td>--</td>
-        <td>--</td>
-        <td>Required</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>conversionOptimizer</td>
-        <td>--</td>
-        <td>Updatable</td>
-        <td>--</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>frequencyCap</td>
-        <td>Optional</td>
-        <td>Updatable</td>
-        <td>--</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>type</td>
-        <td>Optional</td>
-        <td>--</td>
-        <td>--</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td>viewableFrequencyCap</td>
-        <td>--</td>
-        <td>--</td>
-        <td>Optional</td>
-        <td>Updatable</td>
-      </tr>
-    </table>
 - name: CampaignMigrationService
   description: |
     <label class="campaign"></label>
@@ -261,8 +190,14 @@ tags:
 - name: AdGroupAdService
   description: |
     <label class="campaign"></label>
-    <div lang="ja">AdGroupAdServiceは広告の操作を提供します。</div>
-    <div lang="en">Use this service to get, add, update or delete ad information.</div>
+    <div lang="ja">AdGroupAdServiceは広告の操作を提供します。<br>
+      ディスプレイ広告（運用型）における広告の作成は、以下のベストプラクティスを参照してください。<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+    </div>
+    <div lang="en">Use this service to get, add, update or delete ad information.<br>
+      See the following Best Practice to learn about how to create an ad on Display Ads (Auction).<br>
+      <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+    </div>
 - name: FeedService
   description: |
     <label class="campaign"></label>

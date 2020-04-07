@@ -11,8 +11,14 @@ AdGroupServiceManualCPCBid:
         <div lang="en">Bid amount.</div>
   title: AdGroupServiceManualCPCBid
   description: |
-    <div lang="ja">AdGroupServiceManualCPCBidオブジェクトは、広告グループの入札価格を保持します。 ※広告掲載方式がVIDEO_AD(動画広告)のキャンペーンIDを指定した時は利用できません。</div>
-    <div lang="en">Adgroup level bids used in manual CPC bidding strategy. ※This is not available when specified a campaign ID of Ad Distribution type "VIDEO_AD".</div>
+    <div lang="ja">AdGroupServiceManualCPCBidオブジェクトは、広告グループの入札価格を保持します。<br>
+    ※広告掲載方式がVIDEO_AD(動画広告)のキャンペーンIDを指定した時は利用できません。<br>
+    詳細は、「<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=1281">広告グループの作成 - 広告グループの入札価格を入力</a>」を参照してください。
+    </div>
+    <div lang="en">Adgroup level bids used in manual CPC bidding strategy.<br>
+    ※This is not available when specified a campaign ID for ad distribution type "VIDEO_AD".<br>
+    More details are described on <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=487">Create Ad Group - Enter the Bid amount of the Ad Group</a>.
+    </div>
     <hr>
     <details>
       <summary>Requirement</summary>

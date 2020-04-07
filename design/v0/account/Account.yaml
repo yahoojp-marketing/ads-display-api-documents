@@ -40,8 +40,66 @@ Account:
       $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
   title: Account
   description: |
-    <div lang="ja">Accountオブジェクトは、アカウント情報を示します。</div>
-    <div lang="en">Account objects serve account information.</div>
+    <div lang="ja">Accountオブジェクトは、アカウント情報を示します。<br>
+    accountAuthoritiesで返却される値は、以下のとおりです。
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>キャンペーン目的</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>サイト誘導</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>動画再生</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>アプリ訴求</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>コンバージョン</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>商品リスト訴求</td>
+        </tr>
+      </table>
+    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a>をご確認ください。
+    </div>
+    <div lang="en">Account objects serve account information.<br>
+    Responded values of `accountAuthorities` are as follows.
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>campaign goal</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>Website traffic</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>Video view</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>App promotion</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>Conversion</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>Item list promotion</td>
+        </tr>
+      </table>
+    Details of these campaign goal are described on <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a> (Japanese context only).
+    </div>
     <hr>
     <details>
       <summary>Requirement</summary>

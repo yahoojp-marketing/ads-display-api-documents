@@ -19,13 +19,15 @@ AdGroupServiceManualCPVBid:
   description: |
     <div lang="ja">
     AdGroupServiceManualCPVBidオブジェクトは、広告グループの入札価格（CPV）を保持します。<br>
-    ※広告掲載方式がVIDEO_AD（動画広告）のキャンペーンIDを指定した時のみ利用可能です。<br>
     このフィールドは、省略可能となります。<br>
-    ※ADD時、typeがMANUAL_CPVの場合は必須です。
+    ※ADD時、typeがMANUAL_CPVの場合は必須です。<br>
+    ※広告掲載方式がVIDEO_AD(動画広告)、およびPC_BRAND_PANEL_VIDEO（PCブランドパネル（動画））のキャンペーンIDを指定した時のみ利用可能です。<br>
+    詳細は、「<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=1281">広告グループの作成 - 広告グループの入札価格を入力</a>」を参照してください。
     </div>
     <div lang="en">
     AdGroupServiceManualCPVBid object stores the bid amount of ad group (CPV).<br>
-    *It is available only when a campaign ID with ad distribution type 'VIDEO_AD' is specified.<br>
     This field is optional.<br>
-    *If type is MANUAL_CPV, this field is required in ADD operation.
+    *If type is MANUAL_CPV, this field is required in ADD operation.<br>
+    *This information is available only when a campaign ID for ad distribution type 'VIDEO_AD' or 'PC_BRAND_PANEL_VIDEO' is specified.<br>
+    More details are described on <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=487">Create Ad Group - Enter the Bid amount of the Ad Group</a>.
     </div>
