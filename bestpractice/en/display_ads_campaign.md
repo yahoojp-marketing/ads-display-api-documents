@@ -6,9 +6,9 @@
 Refer to the introduction on [ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/) (Japanese context only). Currently available for limited users.
 
 
-## How to create a campaign on YDN API
+## How to create a campaign on Yahoo! Ads API
 
-For creating a campaign, ad group and ads of Display Ads (Auction), following services of YDN API will be used.
+For creating a campaign, ad group and ads of Display Ads (Auction), following services of Yahoo! Ads API will be used.
 
 - CampaignService
 - AdGroupService
