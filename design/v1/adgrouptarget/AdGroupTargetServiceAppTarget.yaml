@@ -11,11 +11,9 @@ AdGroupTargetServiceAppTarget:
   description: |
     <div lang="ja">
     AdGroupTargetServiceAppTargetオブジェクトは、アプリターゲティングの設定情報を保持します。<br>
-    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
-    ※targetTypeがAPP_TARGETの場合は必須です。
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">
     AdGroupTargetServiceAppTarget object is a container for storing app targeting settings.<br>
-    This field is optional in ADD, SET and REPLACE operation.<br>
-    ∗If targetType is APP_TARGET, this field is required.
+    Although this field will be returned in the response, it will be ignored on input.
     </div>

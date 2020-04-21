@@ -12,15 +12,11 @@ AdGroupTargetServiceCarrierType:
   description: |
     <div lang="ja">
     AdGroupTargetServiceCarrierTypeは、スマートフォン、タブレットのキャリアの種別を表します。<br>
-    ※deviceTypeがDESKTOP、WAP_MOBILEの場合は設定できません。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
-    ※SET時、入札価格調整率のみ設定可能です。
+    ※deviceTypeがDESKTOP、WAP_MOBILEの場合は設定できません。
     </div>
     <div lang="en">
     AdGroupTargetServiceCarrierType serves carrier type of Smartphone and Tablet.<br>
-    *Cannot be set when deviceType is DESKTOP/WAP_MOBILE.<br>
-    Although this field will be returned in the response, it will be ignored on input. <br>
-    *Can set only bid adjustment in SET operation.
+    *Cannot be set when deviceType is DESKTOP/WAP_MOBILE.
     </div>
     <hr>
     <p>* <code>DOCOMO</code> - <span lang="ja">NTTドコモ</span><span lang="en">NTT docomo</span></p>

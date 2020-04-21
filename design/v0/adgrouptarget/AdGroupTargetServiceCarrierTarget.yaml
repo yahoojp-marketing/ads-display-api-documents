@@ -31,4 +31,6 @@ AdGroupTargetServiceCarrierTarget:
           <td>Ignore</td>
         </tr>
       </table>
+      <div lang="ja">SET時に必要なtargetIdは、AdGroupオブジェクトにキャリアが設定されている場合にレスポンスされます。</div>
+      <div lang="en">The targetId required on SET will be responded when carriers are set on AdGroup object.</div>
     </details>

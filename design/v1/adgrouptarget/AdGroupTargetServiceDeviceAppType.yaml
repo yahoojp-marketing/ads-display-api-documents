@@ -8,12 +8,10 @@ AdGroupTargetServiceDeviceAppType:
   title: AdGroupTargetServiceDeviceAppType
   description: |
     <div lang="ja">
-    AdGroupTargetServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    AdGroupTargetServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。
     </div>
     <div lang="en">
-    AdGroupTargetServiceDeviceAppType serves application types for devices.<br>
-    Although this field will be returned in the response, it will be ignored on input.
+    AdGroupTargetServiceDeviceAppType serves application types for devices.
     </div>
     <hr>
     <p>* <code>APP</code> - <span lang="ja">アプリ向けに配信されます。</span><span lang="en">Deliver to apps.</span></p>

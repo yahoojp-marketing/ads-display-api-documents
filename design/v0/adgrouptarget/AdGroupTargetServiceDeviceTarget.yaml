@@ -28,4 +28,6 @@ AdGroupTargetServiceDeviceTarget:
           <td>Ignore</td>
         </tr>
       </table>
+      <div lang="ja">SET時に必要なtargetIdは、AdGroupオブジェクトにデバイスが設定されている場合にレスポンスされます。</div>
+      <div lang="en">The targetId required on SET will be responded when devices are set on AdGroup object.</div>
     </details>

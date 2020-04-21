@@ -8,12 +8,10 @@ AdGroupTargetServiceDeviceOsType:
   title: AdGroupTargetServiceDeviceOsType
   description: |
     <div lang="ja">
-    AdGroupTargetServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    AdGroupTargetServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。
     </div>
     <div lang="en">
-    AdGroupTargetServiceDeviceOsType serves OS types for devices to be posted on.<br>
-    Although this field will be returned in the response, it will be ignored on input.
+    AdGroupTargetServiceDeviceOsType serves OS types for devices to be posted on.
     </div>
     <hr>
     <p>* <code>IOS</code> - <span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></p>

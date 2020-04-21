@@ -151,13 +151,10 @@ AdGroupTargetServiceTarget:
         </tr>
         <tr>
           <td>appTarget</td>
-          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
-          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
+          <td>Ignore</div>
+          <td>Ignore</div>
           <td>-</td>
-          <td>Optional<br><div lang="ja">※targetTypeがAPP_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is APP_TARGET, Requirement</div></td>
+          <td>Ignore</div>
         </tr>
         <tr>
           <td>audienceCategoryTarget</td>
@@ -171,23 +168,23 @@ AdGroupTargetServiceTarget:
         </tr>
         <tr>
           <td>carrierTarget</td>
-          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
-          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
+          <td>Ignore</div>
+          <td>Optional<br>
+            <div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
+            <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div>
+          </td>
           <td>-</td>
-          <td>Optional<br><div lang="ja">※targetTypeがCARRIER_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is CARRIER_TARGET, Requirement</div></td>
+          <td>Ignore</div>
         </tr>
         <tr>
           <td>deviceTarget</td>
-          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
-          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
+          <td>Ignore</div>
+          <td>Optional<br>
+            <div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
+            <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div>
+          </td>
           <td>-</td>
-          <td>Optional<br><div lang="ja">※targetTypeがDEVICE_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is DEVICE_TARGET, Requirement</div></td>
+          <td>Ignore</div>
         </tr>
         <tr>
           <td>genderTarget</td>
@@ -228,23 +225,17 @@ AdGroupTargetServiceTarget:
         </tr>
         <tr>
           <td>osTarget</td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
+          <td>Ignore</div>
+          <td>Ignore</div>
           <td>-</td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_TARGET, Requirement</div></td>
+          <td>Ignore</div>
         </tr>
         <tr>
           <td>osVersionTarget</td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
+          <td>Ignore</div>
+          <td>Ignore</div>
           <td>-</td>
-          <td>Optional<br><div lang="ja">※targetTypeがOS_VERSION_TARGETの場合、Requirement</div>
-          <div lang="en">∗ If targetType is OS_VERSION_TARGET, Requirement</div></td>
+          <td>Ignore</div>
         </tr>
         <tr>
           <td>placementTarget</td>
