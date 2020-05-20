@@ -1,7 +1,6 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 ディスプレイ広告 API リファレンス β版 / Yahoo! Ads Display Ads API Reference β
-    Version'
+  title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! Ads Display Ads API Reference'
   version: 'v1'
   description: |
     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。<br>
