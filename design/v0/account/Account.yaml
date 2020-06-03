@@ -67,6 +67,10 @@ Account:
           <td>ITEM_LIST</td>
           <td>商品リスト訴求</td>
         </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>ブランド認知</td>
+        </tr>
       </table>
     それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a>をご確認ください。
     </div>
@@ -96,6 +100,10 @@ Account:
         <tr>
           <td>ITEM_LIST</td>
           <td>Item list promotion</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>Brand awareness</td>
         </tr>
       </table>
     Details of these campaign goal are described on <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a> (Japanese context only).
