@@ -142,7 +142,7 @@ AdGroupAdServiceAd:
           <td>textAd</td>
           <td>Optional
             <br>
-            <div lang="ja">※adTypeがTEXT_LONG_AD1またはTEXT_SHORT_AD2の場合:Requirement。
+            <div lang="ja">※adTypeがTEXT_LONG_AD1またはTEXT_LONG_AD2の場合:Requirement。
             </div>
             <div lang="en">∗ If adType is either TEXT_LONG_AD1 or TEXT_LONG_AD2, Requirement
             </div>

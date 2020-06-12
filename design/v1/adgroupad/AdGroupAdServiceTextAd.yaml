@@ -81,7 +81,7 @@ AdGroupAdServiceTextAd:
     <div lang="ja">
     AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。<br>
     このフィールドは、省略可能となります。<br>
-    ※ADD時、adTypeがTEXT_LONG_AD1またはTEXT_SHORT_AD2の場合は必須です。
+    ※ADD時、adTypeがTEXT_LONG_AD1またはTEXT_LONG_AD2の場合は必須です。
     </div>
     <div lang="en">
     AdGroupAdServiceTextAd object describes the Text Ad information.<br>
