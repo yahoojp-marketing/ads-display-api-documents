@@ -11,8 +11,14 @@ DictionaryServiceGeographicLocation:
       type: string
       nullable: true
       description: |
-        <div lang="ja">地域コードです。</div>
-        <div lang="en">Geographic code.</div>
+        <div lang="ja">
+        地域コードです。<br>
+        「その他」の地域コード(TC-CI-00000073)は、地域ターゲティングでは利用できません。
+        </div>
+        <div lang="en">
+        Geographic code.<br>
+        The "other" geo code (TC-CI-00000073) is not available for geo targeting.
+        </div>
     fullName:
       type: string
       nullable: true
