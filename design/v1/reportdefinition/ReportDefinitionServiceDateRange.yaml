@@ -8,10 +8,12 @@ ReportDefinitionServiceDateRange:
       description: |
         <div lang="ja">
         集計終了日です。<br>
+        ※フォーマット：yyyyMMdd<br>
         このフィールドは、ADD時に必須となり、REMOVE時に無視されます。
         </div>
         <div lang="en">
         The compilation end date. <br>
+        ∗ Format: yyyyMMdd<br>
         This field is required in ADD operation, and will be ignored in REMOVE operation.
         </div>
     startDate:
@@ -20,10 +22,12 @@ ReportDefinitionServiceDateRange:
       description: |
         <div lang="ja">
         集計開始日です。<br>
+        ※フォーマット：yyyyMMdd<br>
         このフィールドは、ADD時に必須となり、REMOVE時に無視されます。
         </div>
         <div lang="en">
         The compilation start date.<br>
+        ∗ Format: yyyyMMdd<br>
         This field is required in ADD operation, and will be ignored in REMOVE operation.
         </div>
   title: ReportDefinitionServiceDateRange

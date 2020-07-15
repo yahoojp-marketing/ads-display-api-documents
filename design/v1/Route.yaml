@@ -215,8 +215,16 @@ tags:
   - name: AdGroupTargetService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AdGroupTargetServiceでは、広告グループにおけるターゲティング設定情報の操作（取得、追加、更新、削除、置換）を行います。</div>
-      <div lang="en">The service let you perform targeting settings operations (get, add, set, replace and remove) for ad group.</div>
+      <div lang="ja">
+        AdGroupTargetServiceでは、広告グループにおけるターゲティング設定情報の操作（取得、追加、更新、削除、置換）を行います。<br>
+        ディスプレイ広告（運用型）におけるターゲティング設定は、以下のベストプラクティスを参照してください。<br>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+      </div>
+      <div lang="en">
+        The service let you perform targeting settings operations (get, add, set, replace and remove) for ad group.<br>
+        See the following Best Practice to learn about how to set targetings on Display Ads (Auction).<br>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+      </div>
   - name: ConversionTrackerService
     description: |
       <label class="campaign"></label>

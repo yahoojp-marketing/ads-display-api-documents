@@ -6,14 +6,26 @@ ReportDefinitionServiceDateRange:
       type: string
       nullable: true
       description: |
-        <div lang="ja">集計終了日です。DateRangeTypeがCUSTOM_DATEの場合、必須項目です。</div>
-        <div lang="en">The compilation end date. This item is required if DateRangeType is set to &#34;CUSTOM DATE&#34;.</div>
+        <div lang="ja">
+        集計終了日です。DateRangeTypeがCUSTOM_DATEの場合、必須項目です。<br>
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        The compilation end date. This item is required if DateRangeType is set to &#34;CUSTOM DATE&#34;.<br>
+        ∗ Format: yyyyMMdd
+        </div>
     startDate:
       type: string
       nullable: true
       description: |
-        <div lang="ja">集計開始日です。DateRangeTypeがCUSTOM_DATEの場合、必須項目です。</div>
-        <div lang="en">The compilation start date. This item is required if DateRangeType is set to &#34;CUSTOM DATE&#34;.</div>
+        <div lang="ja">
+        集計開始日です。DateRangeTypeがCUSTOM_DATEの場合、必須項目です。
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        The compilation start date. This item is required if DateRangeType is set to &#34;CUSTOM DATE&#34;.
+        ∗ Format: yyyyMMdd
+        </div>
   title: ReportDefinitionServiceDateRange
   description: |
     <div lang="ja">ReportDefinitionServiceDateRangeオブジェクトは、レポートの集計対象期間を表します。</div>
