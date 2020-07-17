@@ -1,0 +1,38 @@
+GuaranteedAdGroupAdServiceBannerImageAd:
+  type: object
+  nullable: true
+  properties:
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: GuaranteedAdGroupAdServiceBannerImageAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceBannerImageAdオブジェクトは、画像で構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceBannerImageAd object describes information regarding ads composed of images.<br>
+    This field is optional.<br>
+    </div>

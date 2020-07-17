@@ -1,0 +1,33 @@
+AdGroupServiceAutoConversionOptimizer:
+  type: object
+  nullable: true
+  properties:
+    eligibilityFlg:
+      $ref: 'AdGroupServiceEligibilityFlg.yaml#/AdGroupServiceEligibilityFlg'
+    targetCpa:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        コンバージョン単価の目標値です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※設定範囲は1 - 9,999,999,999です。<br>
+        ※コンバージョン最適化機能が動作している場合には、手動で設定されている入札設定は無効になります。
+        </div>
+        <div lang="en">
+        Target cost per conversion.<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Settable range is 1 - 9,999,999,999.<br>
+        ∗If function of conversion optimization is running, manual bid settings is invalid.
+        </div>
+  title: AdGroupServiceAutoConversionOptimizer
+  description: |
+    <div lang="ja">
+    AdGroupServiceAutoConversionOptimizerオブジェクトは、コンバージョン最適化設定情報を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceAutoConversionOptimizer displays the contents of conversion optimization 'Auto Bidding' settings.<br>
+    This field is optional in ADD and SET operation.
+    </div>

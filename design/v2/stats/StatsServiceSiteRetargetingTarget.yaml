@@ -1,0 +1,16 @@
+StatsServiceSiteRetargetingTarget:
+  type: object
+  nullable: true
+  properties:
+    targetListDeliverType:
+      $ref: 'StatsServiceTargetListDeliverType.yaml#/StatsServiceTargetListDeliverType'
+    targetListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットリスト名</div>
+        <div lang="en">Target list name</div>
+  title: StatsServiceSiteRetargetingTarget
+  description: |
+    <div lang="ja">StatsServiceSiteRetargetingTargetオブジェクトは、サイトリターゲティングの設定情報を保持します。</div>
+    <div lang="en">StatsServiceSiteRetargetingTarget object holds configuration information of Site retargeting.</div>

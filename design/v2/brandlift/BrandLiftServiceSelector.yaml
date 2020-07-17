@@ -1,0 +1,64 @@
+BrandLiftServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件 : アカウントID</div>
+        <div lang="en">Search Condition: Account ID</div>
+    brandLiftIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: false
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">検索条件 : ブランドリフト調査ID</div>
+        <div lang="en">Search Condition: BrandLift ID</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">検索条件 : キャンペーンID</div>
+        <div lang="en">Search Condition: Campaign ID</div>
+    approvalStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'BrandLiftServiceApprovalStatus.yaml#/BrandLiftServiceApprovalStatus'
+      maxItems: 6
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: BrandLiftServiceSelector
+  description: |
+    <div lang="ja">BrandLiftServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">The BrandLiftServiceSelector object is a container for storing a set of criteria (parameters) for get method.</div>

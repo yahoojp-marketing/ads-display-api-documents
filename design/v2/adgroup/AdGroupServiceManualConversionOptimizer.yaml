@@ -1,0 +1,16 @@
+AdGroupServiceManualConversionOptimizer:
+  type: object
+  nullable: true
+  properties:
+    eligibilityFlg:
+      $ref: 'AdGroupServiceEligibilityFlg.yaml#/AdGroupServiceEligibilityFlg'
+  title: AdGroupServiceManualConversionOptimizer
+  description: |
+    <div lang="ja">
+    AdGroupServiceManualConversionOptimizerは、コンバージョン最適化「手動入札」設定を保持するオブジェクトです。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceManualConversionOptimizer displays the contents of conversion optimization 'Manual Bidding' settings.<br>
+    This field is optional in ADD and SET operation.
+    </div>

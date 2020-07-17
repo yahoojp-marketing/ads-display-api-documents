@@ -1,0 +1,15 @@
+SearchKeywordIdeaServiceAvailabilityStatus:
+  type: string
+  nullable: true
+  enum:
+  - AVAILABLE
+  - UNAVAILABLE
+  - UNKNOWN
+  title: SearchKeywordIdeaServiceAvailabilityStatus
+  description: |
+    <div lang="ja">SearchKeywordIdeaServiceAvailabilityStatusオブジェクトは、サーチターゲティング対象キーワードの利用可否を表します。</div>
+    <div lang="en">SearchKeywordIdeaServiceAvailabilityStatus object is the availability of keywords for search targeting.</div>
+    <hr>
+    <p>* <code>AVAILABLE</code> - <span lang="ja">利用可です。</span><span lang="en">Available</span></p>
+    <p>* <code>UNAVAILABLE</code> - <span lang="ja">利用不可です。</span><span lang="en">Unavailable</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

@@ -1,0 +1,20 @@
+StatsServiceInterestCategoryTarget:
+  type: object
+  nullable: true
+  properties:
+    categoryFullNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリ名（英語）</div>
+        <div lang="en">Interest category name (English)</div>
+    categoryFullNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリ名（日本語）</div>
+        <div lang="en">Interest category name (Japanese)</div>
+  title: StatsServiceInterestCategoryTarget
+  description: |
+    <div lang="ja">StatsServiceInterestCategoryTargetオブジェクトは、インタレストカテゴリターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceInterestCategoryTarget object holds configuration information of Interest category targeting.</div>

@@ -1,0 +1,21 @@
+GuaranteedPreviewServiceMaterialType:
+  type: string
+  nullable: true
+  enum:
+    - AD
+    - MEDIA
+    - UNKNOWN
+  title: GuaranteedPreviewServiceMaterialType
+  description: |
+    <div lang="ja">
+    GuaranteedPreviewServiceMaterialTypeは、プレビュー素材の種別を表します。<br>
+    このフィールドは、リクエストの場合は必須です。<br>
+    </div>
+    <div lang="en">	
+    GuaranteedPreviewServiceMaterialType describes the type of the preview material.<br>
+    This field is required in requests.
+    </div>
+    <hr>	
+    <p>* <code>AD</code> - <span lang="ja">ADのプレビュー素材です。</span><span lang="en">Preview material of AD.</span></p>
+    <p>* <code>MEDIA</code> - <span lang="ja">MEDIAのプレビュー素材です。</span><span lang="en">Preview material of MEDIA.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

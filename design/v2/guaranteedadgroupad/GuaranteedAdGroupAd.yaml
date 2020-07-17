@@ -1,0 +1,206 @@
+GuaranteedAdGroupAd:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    ad:
+      $ref: 'GuaranteedAdGroupAdServiceAd.yaml#/GuaranteedAdGroupAdServiceAd'
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad group ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adGroupName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告グループ名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad group name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告IDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adStyle:
+      $ref: 'GuaranteedAdGroupAdServiceAdStyle.yaml#/GuaranteedAdGroupAdServiceAdStyle'
+    approvalStatus:
+      $ref: 'GuaranteedAdGroupAdServiceApprovalStatus.yaml#/GuaranteedAdGroupAdServiceApprovalStatus'
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Campaign name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        掲載拒否の理由です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reject reason on editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    impressionBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        インプレッションビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Impression beacon URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupAdServiceLabel.yaml#/GuaranteedAdGroupAdServiceLabel'
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    thirdPartyTrackingScriptUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        第三者計測スクリプトURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Third party tracking script URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    thirdPartyTrackingVendor:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        第三者計測ベンダー（ReadOnly）です。<br>
+        thirdPartyTrackingScriptUrlのドメインに基づく第三者計測ベンダーが設定されます。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Third party tracking vendor (Read only).<br>
+        Third party tracking vendor based on domain of thirdPartyTrackingScriptUrl is set.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    userStatus:
+      $ref: 'GuaranteedAdGroupAdServiceUserStatus.yaml#/GuaranteedAdGroupAdServiceUserStatus'
+    landingPageStatus:
+      $ref: 'GuaranteedAdGroupAdLandingPageStatus.yaml#/GuaranteedAdGroupAdLandingPageStatus'
+    preApprovalId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        事前承認IDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Pre-approval ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    landingPageUpdateScheduledTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先更新予定日時です。<br>
+        ※フォーマット：yyyyMMddHHmm<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        The scheduled update date and time for the landing page.<br>
+        *format: yyyyMMddHHmm<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: GuaranteedAdGroupAd
+  description: |
+    <div lang="ja">GuaranteedAdGroupAdオブジェクトは、予約型の広告の情報を格納するコンテナです。</div>
+    <div lang="en">The GuaranteedAdGroupAd object is a container for storing ad information of guaranteed campaign.</div>

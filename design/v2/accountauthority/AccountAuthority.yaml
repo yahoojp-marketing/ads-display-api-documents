@@ -1,0 +1,98 @@
+AccountAuthority:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    authorities:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">アカウント権限です。</div>
+        <div lang="en">Account authority.</div>
+  title: AccountAuthority
+  description: |
+    <div lang="ja">AccountAuthorityオブジェクトは、アカウント権限情報を示します。<br>
+    authoritiesで返却される値は、以下のとおりです。
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>キャンペーン目的</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>運用型：サイト誘導</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>運用型：動画再生</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>運用型：アプリ訴求</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>運用型：コンバージョン</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>運用型：商品リスト訴求</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>運用型：ブランド認知</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>予約型：ブランド認知</td>
+        </tr>
+      </table>
+    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a>をご確認ください。
+    </div>
+    <div lang="en">AccountAuthority objects serve account authority information.<br>
+    Responded values of `authorities` are as follows.
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>AUCTION : campaign goal</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>AUCTION : Website traffic</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>AUCTION : Video view</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>AUCTION : App promotion</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>AUCTION : Conversion</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>AUCTION : Item list promotion</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>AUCTION : Brand awareness</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>GUARANTEED : Brand awareness</td>
+        </tr>
+      </table>
+    Details of these campaign goal are described on <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51512">目的別キャンペーン作成について</a> (Japanese context only).
+    </div>

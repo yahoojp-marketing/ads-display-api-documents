@@ -1,0 +1,27 @@
+RetargetingListServiceTargetList:
+  type: object
+  nullable: true
+  required:
+  - targetListType
+  properties:
+    combinationTargetList:
+      $ref: 'RetargetingListServiceCombinationTargetList.yaml#/RetargetingListServiceCombinationTargetList'
+    customAudienceTargetList:
+      $ref: 'RetargetingListServiceCustomAudienceTargetList.yaml#/RetargetingListServiceCustomAudienceTargetList'
+    ruleTargetList:
+      $ref: 'RetargetingListServiceRuleTargetList.yaml#/RetargetingListServiceRuleTargetList'
+    similarityTargetList:
+      $ref: 'RetargetingListServiceSimilarityTargetList.yaml#/RetargetingListServiceSimilarityTargetList'
+    targetListType:
+      $ref: 'RetargetingListServiceTargetListType.yaml#/RetargetingListServiceTargetListType'
+  title: RetargetingListServiceTargetList
+  description: |
+    <div lang="ja">
+    RetargetingListServiceTargetListオブジェクトは、リターゲティングのターゲット種類とターゲットリストの情報を表します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceTargetList object displays the types of target and target list for site retargeting. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
+    

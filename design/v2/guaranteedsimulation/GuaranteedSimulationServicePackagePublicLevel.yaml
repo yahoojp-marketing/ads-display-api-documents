@@ -1,0 +1,21 @@
+GuaranteedSimulationServicePackagePublicLevel:
+  type: string
+  nullable: true
+  enum:
+    - PUBLIC
+    - LIMITED
+    - UNKNOWN
+  title: GuaranteedSimulationServicePackagePublicLevel
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServicePackagePublicLevelは、商品設定の公開レベルを表します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServicePackagePublicLevel describes the public level of package setting.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>PUBLIC</code> - <span lang="ja">一般公開されている商品です。</span><span lang="en">Public package.</span></p>
+    <p>* <code>LIMITED</code> - <span lang="ja">限定公開の商品です。</span><span lang="en">Limited release package.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

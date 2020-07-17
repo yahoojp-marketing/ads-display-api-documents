@@ -1,0 +1,85 @@
+ConversionTrackerServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID。</div>
+        <div lang="en">Account ID.</div>
+    appConversionPlatform:
+      $ref: 'ConversionTrackerServiceAppConversionPlatform.yaml#/ConversionTrackerServiceAppConversionPlatform'
+    appIds:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      maxItems: 1000
+      description: |
+        <div lang="ja">アプリID。</div>
+        <div lang="en">App ID.</div>
+    categories:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+      maxItems: 7
+    conversionTrackerIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">コンバージョントラッカーのID。</div>
+        <div lang="en">Conversion Tracker ID.</div>
+    conversionTrackerTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceType.yaml#/ConversionTrackerServiceType'
+      maxItems: 2
+    countingType:
+      $ref: 'ConversionTrackerServiceCountingType.yaml#/ConversionTrackerServiceCountingType'
+    excludeFromBidding:
+      $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    statsPeriod:
+      $ref: 'ConversionTrackerServiceStatsPeriod.yaml#/ConversionTrackerServiceStatsPeriod'
+    statsPeriodCustomDate:
+      $ref: 'ConversionTrackerServiceStatsPeriodCustomDate.yaml#/ConversionTrackerServiceStatsPeriodCustomDate'
+    statuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+      maxItems: 2
+  title: ConversionTrackerServiceSelector
+  description: |
+    <div lang="ja">ConversionTrackerServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">ConversionTrackerServiceSelector object contains a set of criteria (parameters) for get method.</div>

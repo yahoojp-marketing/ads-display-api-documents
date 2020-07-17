@@ -1,0 +1,23 @@
+MediaServiceFileType:
+  type: string
+  nullable: true
+  enum:
+  - JPEG
+  - GIF
+  - PNG
+  - UNKNOWN
+  title: MediaServiceFileType
+  description: |
+    <div lang="ja">
+    MediaServiceFileTypeは、画像のファイルタイプです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    MediaServiceFileType serves the file type of media.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>GIF</code> - <span lang="ja">GIF（静止画）です。</span><span lang="en">GIF image.</span></p>
+    <p>* <code>PNG</code> - <span lang="ja">PNGです。</span><span lang="en">PNG image.</span></p>
+    <p>* <code>JPEG</code> - <span lang="ja">JPEGです。</span><span lang="en">JPEG image.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

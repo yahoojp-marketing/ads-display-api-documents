@@ -1,0 +1,31 @@
+RetargetingListServiceRuleType:
+  type: string
+  nullable: true
+  enum:
+  - URL
+  - LABEL
+  - REFERER_URL
+  - PAGE_TYPE
+  - ITEM_ID
+  - ITEM_CATEGORY_ID
+  - EVENT_TYPE
+  - UNKNOWN
+  title: RetargetingListServiceRuleType
+  description: |
+    <div lang="ja">
+    RetargetingListServiceRuleTypeは、ルールタイプのリストの種類を表示します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceRuleType display the type of the rule. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
+    <hr>
+    <p>* <code>URL</code> - <span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></p>
+    <p>* <code>LABEL</code> - <span lang="ja">カスタムラベルを利用したリスト設定</span><span lang="en">List setting using the Custom label.</span></p>
+    <p>* <code>REFERER_URL</code> - <span lang="ja">リファラURLを利用したリスト設定</span><span lang="en">List setting using the Referer URL.</span></p>
+    <p>* <code>PAGE_TYPE</code> - <span lang="ja">ページ種別を利用したリスト設定</span><span lang="en">List setting using the page type.</span></p>
+    <p>* <code>ITEM_ID</code> - <span lang="ja">アイテムIDを利用したリスト設定</span><span lang="en">List setting using the Item ID.</span></p>
+    <p>* <code>ITEM_CATEGORY_ID</code> - <span lang="ja">アイテムカテゴリーを利用したリスト設定</span><span lang="en">List setting using the Item category.</span></p>
+    <p>* <code>EVENT_TYPE</code> - <span lang="ja">イベント種別を利用したリスト設定</span><span lang="en">List setting using the event type.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

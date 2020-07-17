@@ -1,0 +1,28 @@
+ConversionTrackerServiceWebConversionSnippet:
+  type: object
+  nullable: true
+  properties:
+    tag:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        従来のコンバージョンタグです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Previous tag of Conversion.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    webConversionSnippetType:
+      $ref: 'ConversionTrackerServiceWebConversionSnippetType.yaml#/ConversionTrackerServiceWebConversionSnippetType'
+  title: ConversionTrackerServiceWebConversionSnippet
+  description: |
+    <div lang="ja">
+    ConversionTrackerServiceWebConversionSnippetオブジェクトは、ウェブコンバージョントラッカーのトラッキングスクリプト情報を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceWebConversionSnippet object displays the tracking script information of Web Conversion Tracker.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

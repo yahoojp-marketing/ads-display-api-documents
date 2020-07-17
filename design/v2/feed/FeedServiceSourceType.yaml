@@ -1,0 +1,21 @@
+FeedServiceSourceType:
+  type: string
+  nullable: true
+  enum:
+  - FTP_SCHEDULE
+  - FTP_DIRECT
+  - API
+  - FTP_AND_API
+  - CAMPAIGN_MANAGEMENT_TOOL
+  - UNKNOWN
+  title: FeedServiceSourceType
+  description: |
+    <div lang="ja">FeedServiceSourceTypeは、ファイルアップロード実施ツールの種別を表します。</div>
+    <div lang="en">FeedServiceSourceType serves file upload tool type.</div>
+    <hr>
+    <p>* <code>FTP_SCHEDULE</code> - <span lang="ja">FTP(スケジュール)によるアップロードです。</span><span lang="en">Upload by FTP(SCHEDULE).</span></p>
+    <p>* <code>FTP_DIRECT</code> - <span lang="ja">FTP(即時)によるアップロードです。</span><span lang="en">Upload by FTP(DIRECT).</span></p>
+    <p>* <code>API</code> - <span lang="ja">APIによるアップロードです。</span><span lang="en">Upload by API.</span></p>
+    <p>* <code>FTP_AND_API</code> - <span lang="ja">FTP+APIによるアップロードです。</span><span lang="en">Upload by FTP and API.</span></p>
+    <p>* <code>CAMPAIGN_MANAGEMENT_TOOL</code> - <span lang="ja">広告管理ツールによるアップロードです。</span><span lang="en">Upload by Campaign Management Tool.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

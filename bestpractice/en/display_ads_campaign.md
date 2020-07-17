@@ -3,7 +3,7 @@
 
 ## What is Display Ads (Auction)
 
-Refer to the introduction on [ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/) (Japanese context only). Currently available for limited users.
+Refer to the introduction on [ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/) (Japanese context only).
 
 
 ## How to create a campaign on Yahoo! Ads API

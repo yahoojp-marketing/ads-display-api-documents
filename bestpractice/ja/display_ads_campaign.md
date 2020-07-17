@@ -3,7 +3,7 @@
 
 ## ディスプレイ広告（運用型）とは
 
-[ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/)をご参照ください。現在は一部のお客様のみご利用になれます。
+[ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/)をご参照ください。
 
 
 ## Yahoo!広告 APIでの入稿方法

@@ -1,0 +1,32 @@
+GuaranteedAdGroupAdServiceAd:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'GuaranteedAdGroupAdServiceAdType.yaml#/GuaranteedAdGroupAdServiceAdType'
+    bannerImageAd:
+      $ref: 'GuaranteedAdGroupAdServiceBannerImageAd.yaml#/GuaranteedAdGroupAdServiceBannerImageAd'
+    bannerVideoAd:
+      $ref: 'GuaranteedAdGroupAdServiceBannerVideoAd.yaml#/GuaranteedAdGroupAdServiceBannerVideoAd'
+    brandPanelQuintie:
+      $ref: 'GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml#/GuaranteedAdGroupAdServiceBrandPanelQuintie'
+    brandPanelQuintieVideo:
+      $ref: 'GuaranteedAdGroupAdServiceBrandPanelQuintieVideo.yaml#/GuaranteedAdGroupAdServiceBrandPanelQuintieVideo'
+    topImpactSquare:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquare.yaml#/GuaranteedAdGroupAdServiceTopImpactSquare'
+    topImpactSquareVideo:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquareVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactSquareVideo'
+    topImpactQuintie:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactQuintie.yaml#/GuaranteedAdGroupAdServiceTopImpactQuintie'
+    topImpactQuintieVideo:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactQuintieVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactQuintieVideo'
+  title: GuaranteedAdGroupAdServiceAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceAd object is a container for storing ads.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

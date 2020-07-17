@@ -1,0 +1,11 @@
+StatsServiceCarrierTarget:
+  type: object
+  nullable: true
+  properties:
+    carrierType:
+      $ref: 'StatsServiceCarrierType.yaml#/StatsServiceCarrierType'
+  title: StatsServiceCarrierTarget
+  description: |
+    <div lang="ja">StatsServiceCarrierTargetオブジェクトは、モバイルキャリアターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceCarrierTarget object holds configuration information of mobile carrier targeting.</div>
+

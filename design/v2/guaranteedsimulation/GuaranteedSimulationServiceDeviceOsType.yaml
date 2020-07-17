@@ -1,0 +1,15 @@
+GuaranteedSimulationServiceDeviceOsType:
+  type: string
+  nullable: true
+  enum:
+  - IOS
+  - ANDROID
+  - UNKNOWN
+  title: GuaranteedSimulationServiceDeviceOsType
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>
+    <div lang="en">GuaranteedSimulationServiceDeviceOsType serves OS types for devices to be posted on.</div>
+    <hr>
+    <p>* <code>IOS</code> - <span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></p>
+    <p>* <code>ANDROID</code> - <span lang="ja">Android向けに配信されます。</span><span lang="en">Deliver to Android.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

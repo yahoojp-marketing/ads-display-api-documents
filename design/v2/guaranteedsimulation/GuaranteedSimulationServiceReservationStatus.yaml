@@ -1,0 +1,23 @@
+GuaranteedSimulationServiceReservationStatus:
+  type: string
+  nullable: true
+  enum:
+  - RESERVABLE
+  - UNRESERVABLE
+  - RESERVED
+  - UNKNOWN
+  title: GuaranteedSimulationServiceReservationStatus
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceReservationStatusは、予約型キャンペーンの予約可否ステータスを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceReservationStatus describes the reservation availability status of guaranteed campaign.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>RESERVABLE</code> - <span lang="ja">予約可能です。</span><span lang="en">Can be reserved.</span></p>
+    <p>* <code>UNRESERVABLE</code> - <span lang="ja">予約不可能です。</span><span lang="en">Cannot be reserved.</span></p>
+    <p>* <code>RESERVED</code> - <span lang="ja">予約済みです。</span><span lang="en">Reserved.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

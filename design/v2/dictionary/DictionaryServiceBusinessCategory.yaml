@@ -1,0 +1,20 @@
+DictionaryServiceBusinessCategory:
+  type: object
+  nullable: true
+  properties:
+    businessCategoryId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ビジネスカテゴリIDを表します。</div>
+        <div lang="en">Business category ID.</div>
+    businessCategoryName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ビジネスカテゴリ名を表します。</div>
+        <div lang="en">Business category name.</div>
+  title: DictionaryServiceBusinessCategory
+  description: |
+    <div lang="ja">DictionaryServiceBusinessCategoryオブジェクトは、ビジネスカテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceBusinessCategory object contains ad category information.</div>

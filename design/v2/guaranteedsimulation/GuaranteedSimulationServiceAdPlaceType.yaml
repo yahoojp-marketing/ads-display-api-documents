@@ -1,0 +1,23 @@
+GuaranteedSimulationServiceAdPlaceType:
+  type: string
+  nullable: true
+  enum:
+  - YAHOO_JAPAN_TOP
+  - YAHOO_JAPAN_ALL
+  - YAHOO_JAPAN_EXCLUSION_OF_TOP
+  - UNKNOWN
+  title: GuaranteedSimulationServiceAdPlaceType
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceAdPlaceTypeは、広告の掲載面を表します。<br>
+    このフィールドは、ADD時は必須となります。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceAdPlaceType describes the ad placements.<br>
+    This field is required in ADD operation.
+    </div>
+    <hr>
+    <p>* <code>YAHOO_JAPAN_TOP</code> - <span lang="ja">「Yahoo! JAPANトップページ」です。</span><span lang="en">Top page of "Yahoo! Japan".</span></p>
+    <p>* <code>YAHOO_JAPAN_ALL</code> - <span lang="ja">「Yahoo! JAPAN全て」です。</span><span lang="en">All of "Yahoo! Japan".</span></p>
+    <p>* <code>YAHOO_JAPAN_EXCLUSION_OF_TOP</code> - <span lang="ja">「Yahoo! JAPANトップページ以外」です。</span><span lang="en">All of "Yahoo! Japan" except the top page.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
