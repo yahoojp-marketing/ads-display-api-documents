@@ -56,10 +56,9 @@ ReportDefinitionServiceのaddを使用します。  <br>
 ##### ＜リクエストサンプル＞
 ```json
 {
-  "accountId": 11111111,
+  "accountId": 111111,
   "operand": [
     {
-      "dateRangeType": "LAST_7_DAYS",
       "fields": [
         "ACCOUNT_ID",
         "ACCOUNT_NAME",
@@ -92,41 +91,59 @@ ReportDefinitionServiceのaddを使用します。  <br>
           ]
         }
       ],
-      "lang": "JA",
-      "reportName": "Test Report",
+      "reportCompressType": "ZIP",
+      "reportDateRangeType": "LAST_7_DAYS",
+      "reportDownloadEncode": "UTF-8",
+      "reportDownloadFormat": "CSV",
+      "reportLanguage": "JA",
+      "reportName": "test report 01",
       "sortFields": [
         {
           "field": "ACCOUNT_ID",
           "reportSortType": "ASC"
         }
-      ],
-      "zip": "ON"
+      ]
     }
   ]
 }
 ```
 
 ##### ＜レスポンスサンプル＞
-※長くなるため、一部、省略しています。
 ```json
 {
     "errors": null,
-    "rid": "11111111",
+    "rid": "51ca5746bc4bf4075eef078e14463b8b",
     "rval": {
         "values": [
             {
                 "errors": null,
                 "operationSucceeded": true,
                 "reportDefinition": {
-                    "accountId": 11111111,
+                    "accountId": 111111,
                     "completeTime": null,
                     "dateRange": null,
-                    "dateRangeType": "LAST_7_DAYS",
-                    "downloadEncode": "UTF-8",
-                    "downloadFormat": "CSV",
                     "fields": [
                         "ACCOUNT_ID",
-                        ...
+                        "ACCOUNT_NAME",
+                        "CAMPAIGN_ID",
+                        "CAMPAIGN_NAME",
+                        "ADGROUP_ID",
+                        "ADGROUP_NAME",
+                        "AD_ID",
+                        "AD_NAME",
+                        "AD_TYPE",
+                        "URL_ID",
+                        "URL_NAME",
+                        "PREF_ID",
+                        "PREF_NAME",
+                        "CITY_ID",
+                        "CITY_NAME",
+                        "WARD_ID",
+                        "WARD_NAME",
+                        "GENDER",
+                        "AGE",
+                        "MONTH",
+                        "DAY"
                     ],
                     "filters": [
                         {
@@ -138,11 +155,22 @@ ReportDefinitionServiceのaddを使用します。  <br>
                         }
                     ],
                     "frequencyRange": null,
-                    "jobStatus": "WAIT",
-                    "lang": "JA",
+                    "reportCompressType": "ZIP",
+                    "reportDateRangeType": "LAST_7_DAYS",
+                    "reportDownloadEncode": "UTF-8",
+                    "reportDownloadFormat": "CSV",
+                    "reportJobStatus": "WAIT",
                     "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    ...
+                    "reportJobId": 222222,
+                    "reportLanguage": "JA",
+                    "reportName": "test report 01",
+                    "requestTime": "20200722191736",
+                    "sortFields": [
+                        {
+                            "field": "ACCOUNT_ID",
+                            "reportSortType": "ASC"
+                        }
+                    ]
                 }
             }
         ]
@@ -150,30 +178,28 @@ ReportDefinitionServiceのaddを使用します。  <br>
 }
 ```
 
-
 #### 3.	レポート作成状況の確認
 ReportDefinitionServiceのgetを使用します。<br>
 作成状況の確認ができます。<br>
-レスポンスのjobStatusがCOMPLETEDになったら、4に進みます。
+レスポンスのreportJobStatusがCOMPLETEDになったら、4に進みます。
 
 ##### ＜リクエストサンプル＞
 ```json
 {
-  "accountId": 11111111,
+  "accountId": 111111,
   "numberResults": 10,
   "reportJobIds": [
-    11111111
+    222222
   ],
   "startIndex": 1
 }
 ```
 
 ##### ＜レスポンスサンプル＞
-※長くなるため、一部、省略しています。
 ```json
 {
     "errors": null,
-    "rid": "11111111",
+    "rid": "4af57c41216af87b6f5de4449bc82318",
     "rval": {
         "totalNumEntries": 1,
         "values": [
@@ -181,15 +207,31 @@ ReportDefinitionServiceのgetを使用します。<br>
                 "errors": null,
                 "operationSucceeded": true,
                 "reportDefinition": {
-                    "accountId": 11111111,
-                    "completeTime": "20200522101201",
+                    "accountId": 111111,
+                    "completeTime": "20200722191737",
                     "dateRange": null,
-                    "dateRangeType": "LAST_7_DAYS",
-                    "downloadEncode": "UTF-8",
-                    "downloadFormat": "CSV",
                     "fields": [
                         "ACCOUNT_ID",
-                        ...
+                        "ACCOUNT_NAME",
+                        "CAMPAIGN_ID",
+                        "CAMPAIGN_NAME",
+                        "ADGROUP_ID",
+                        "ADGROUP_NAME",
+                        "AD_ID",
+                        "AD_NAME",
+                        "AD_TYPE",
+                        "URL_ID",
+                        "URL_NAME",
+                        "PREF_ID",
+                        "PREF_NAME",
+                        "CITY_ID",
+                        "CITY_NAME",
+                        "WARD_ID",
+                        "WARD_NAME",
+                        "GENDER",
+                        "AGE",
+                        "MONTH",
+                        "DAY"
                     ],
                     "filters": [
                         {
@@ -201,11 +243,22 @@ ReportDefinitionServiceのgetを使用します。<br>
                         }
                     ],
                     "frequencyRange": null,
-                    "jobStatus": "COMPLETED",
-                    "lang": "JA",
+                    "reportCompressType": "ZIP",
+                    "reportDateRangeType": "LAST_7_DAYS",
+                    "reportDownloadEncode": "UTF-8",
+                    "reportDownloadFormat": "CSV",
+                    "reportJobStatus": "COMPLETED",
                     "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    ...
+                    "reportJobId": 222222,
+                    "reportLanguage": "JA",
+                    "reportName": "test report 01",
+                    "requestTime": "20200722191736",
+                    "sortFields": [
+                        {
+                            "field": "ACCOUNT_ID",
+                            "reportSortType": "ASC"
+                        }
+                    ]
                 }
             }
         ]
@@ -220,8 +273,8 @@ ReportDefinitionServiceのdownloadを使用します。<br>
 ##### ＜リクエストサンプル＞
 ```json
 {
-  "accountId": 11111111,
-  "reportJobId": 11111111
+  "accountId": 111111,
+  "reportJobId": 222222
 }
 ```
 

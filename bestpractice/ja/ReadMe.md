@@ -5,3 +5,5 @@
 
 ## Appendix
 * [値の制限](./constraints.md)
+* [エラーコード](./errorcodes.md)
+

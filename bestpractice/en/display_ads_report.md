@@ -56,10 +56,9 @@ Use add of ReportDefinitionService.
 ##### Request Sample
 ```json
 {
-  "accountId": 11111111,
+  "accountId": 111111,
   "operand": [
     {
-      "dateRangeType": "LAST_7_DAYS",
       "fields": [
         "ACCOUNT_ID",
         "ACCOUNT_NAME",
@@ -92,41 +91,59 @@ Use add of ReportDefinitionService.
           ]
         }
       ],
-      "lang": "EN",
-      "reportName": "Test Report",
+      "reportCompressType": "ZIP",
+      "reportDateRangeType": "LAST_7_DAYS",
+      "reportDownloadEncode": "UTF-8",
+      "reportDownloadFormat": "CSV",
+      "reportLanguage": "EN",
+      "reportName": "test report 01",
       "sortFields": [
         {
           "field": "ACCOUNT_ID",
           "reportSortType": "ASC"
         }
-      ],
-      "zip": "ON"
+      ]
     }
   ]
 }
 ```
 
 ##### Response Sample
-I omit a part.
 ```json
 {
     "errors": null,
-    "rid": "11111111",
+    "rid": "51ca5746bc4bf4075eef078e14463b8b",
     "rval": {
         "values": [
             {
                 "errors": null,
                 "operationSucceeded": true,
                 "reportDefinition": {
-                    "accountId": 11111111,
+                    "accountId": 111111,
                     "completeTime": null,
                     "dateRange": null,
-                    "dateRangeType": "LAST_7_DAYS",
-                    "downloadEncode": "UTF-8",
-                    "downloadFormat": "CSV",
                     "fields": [
                         "ACCOUNT_ID",
-                        ...
+                        "ACCOUNT_NAME",
+                        "CAMPAIGN_ID",
+                        "CAMPAIGN_NAME",
+                        "ADGROUP_ID",
+                        "ADGROUP_NAME",
+                        "AD_ID",
+                        "AD_NAME",
+                        "AD_TYPE",
+                        "URL_ID",
+                        "URL_NAME",
+                        "PREF_ID",
+                        "PREF_NAME",
+                        "CITY_ID",
+                        "CITY_NAME",
+                        "WARD_ID",
+                        "WARD_NAME",
+                        "GENDER",
+                        "AGE",
+                        "MONTH",
+                        "DAY"
                     ],
                     "filters": [
                         {
@@ -138,11 +155,22 @@ I omit a part.
                         }
                     ],
                     "frequencyRange": null,
-                    "jobStatus": "WAIT",
-                    "lang": "EN",
+                    "reportCompressType": "ZIP",
+                    "reportDateRangeType": "LAST_7_DAYS",
+                    "reportDownloadEncode": "UTF-8",
+                    "reportDownloadFormat": "CSV",
+                    "reportJobStatus": "WAIT",
                     "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    ...
+                    "reportJobId": 222222,
+                    "reportLanguage": "EN",
+                    "reportName": "test report 01",
+                    "requestTime": "20200722191736",
+                    "sortFields": [
+                        {
+                            "field": "ACCOUNT_ID",
+                            "reportSortType": "ASC"
+                        }
+                    ]
                 }
             }
         ]
@@ -156,21 +184,20 @@ Also, when jobStatus of response is "completed", go to 4.
 ##### Request Sample
 ```json
 {
-  "accountId": 11111111,
+  "accountId": 111111,
   "numberResults": 10,
   "reportJobIds": [
-    11111111
+    222222
   ],
   "startIndex": 1
 }
 ```
 
 ##### Response Sample
-I omit a part.
 ```json
 {
     "errors": null,
-    "rid": "11111111",
+    "rid": "4af57c41216af87b6f5de4449bc82318",
     "rval": {
         "totalNumEntries": 1,
         "values": [
@@ -178,15 +205,31 @@ I omit a part.
                 "errors": null,
                 "operationSucceeded": true,
                 "reportDefinition": {
-                    "accountId": 11111111,
-                    "completeTime": "20200522101201",
+                    "accountId": 111111,
+                    "completeTime": "20200722191737",
                     "dateRange": null,
-                    "dateRangeType": "LAST_7_DAYS",
-                    "downloadEncode": "UTF-8",
-                    "downloadFormat": "CSV",
                     "fields": [
                         "ACCOUNT_ID",
-                        ...
+                        "ACCOUNT_NAME",
+                        "CAMPAIGN_ID",
+                        "CAMPAIGN_NAME",
+                        "ADGROUP_ID",
+                        "ADGROUP_NAME",
+                        "AD_ID",
+                        "AD_NAME",
+                        "AD_TYPE",
+                        "URL_ID",
+                        "URL_NAME",
+                        "PREF_ID",
+                        "PREF_NAME",
+                        "CITY_ID",
+                        "CITY_NAME",
+                        "WARD_ID",
+                        "WARD_NAME",
+                        "GENDER",
+                        "AGE",
+                        "MONTH",
+                        "DAY"
                     ],
                     "filters": [
                         {
@@ -198,11 +241,22 @@ I omit a part.
                         }
                     ],
                     "frequencyRange": null,
-                    "jobStatus": "COMPLETED",
-                    "lang": "EN",
+                    "reportCompressType": "ZIP",
+                    "reportDateRangeType": "LAST_7_DAYS",
+                    "reportDownloadEncode": "UTF-8",
+                    "reportDownloadFormat": "CSV",
+                    "reportJobStatus": "COMPLETED",
                     "reportJobErrorDetail": null,
-                    "reportJobId": 11111111,
-                    ...
+                    "reportJobId": 222222,
+                    "reportLanguage": "EN",
+                    "reportName": "test report 01",
+                    "requestTime": "20200722191736",
+                    "sortFields": [
+                        {
+                            "field": "ACCOUNT_ID",
+                            "reportSortType": "ASC"
+                        }
+                    ]
                 }
             }
         ]
@@ -217,8 +271,8 @@ Download report from ReportList.
 ##### Request Sample
 ```json
 {
-  "accountId": 11111111,
-  "reportJobId": 11111111
+  "accountId": 111111,
+  "reportJobId": 222222
 }
 ```
 

@@ -1,11 +1,13 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! Ads Display Ads API Reference'
+  title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
   version: 'v2'
   description: |
     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
-    <div lang="en">Display Ads API Web Services supported in Yahoo! Ads API.</div>
+    <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v2/Route.yaml">OpenAPI Specification</a></div>
+    <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+    <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
 
 components:
   securitySchemes:
@@ -17,7 +19,7 @@ components:
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v2/token
           scopes:
             yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo!
-              Ads via applications.
+              JAPAN Ads via applications.
 security:
   - oAuth: [yahooads]
 
@@ -140,29 +142,35 @@ tags:
   - name: ReportDefinitionService
     description: |
       <label class="report"></label>
-      <div lang="ja">ReportDefinitionServiceでは、レポート出力項目の取得およびレポートの追加を行います。<br>
-      レポート形式、期間およびフィールドを指定して、レポートの作成・削除を行います。<br>
-      またレポートのダウンロードURLを取得する操作が提供されます。<br>
-      以下の操作が実行可能です。<br>
-      ・レポートの取得<br>
-      ・レポートの登録<br>
-      ・レポートの削除<br>
-      ・レポート出力項目の取得<br>
-      【注意事項】<br>
-      ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
-      ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
+      <div lang="ja">
+        ReportDefinitionServiceでは、レポート出力項目の取得およびレポートの追加を行います。<br>
+        レポート形式、期間およびフィールドを指定して、レポートの作成・削除を行います。<br>
+        またレポートのダウンロードURLを取得する操作が提供されます。<br>
+        以下の操作が実行可能です。<br>
+        ・レポートの取得<br>
+        ・レポートの登録<br>
+        ・レポートの削除<br>
+        ・レポート出力項目の取得<br>
+        ディスプレイ広告のレポートの作成については、以下のベストプラクティスを参照してください。<br>
+        ・<a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_report.md">ディスプレイ広告レポート</a><br>
+        【注意事項】<br>
+        ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
+        ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
       </div>
-      <div lang="en">ReportDefinitionService acquires, creates, and deletes reports.<br>
-      Report defines report type, date range, and fields.<br>
-      It also includes an operation that acquires report download URLs.<br>
-      The following operations are provided:<br>
-      - Get reports<br>
-      - Add reports<br>
-      - Delete reports<br>
-      - Get report fields' information<br>
-      [Notes]<br>
-      - Any ad data without actual performance is not output for all report types.<br>
-      - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
+      <div lang="en">
+        ReportDefinitionService acquires, creates, and deletes reports.<br>
+        Report defines report type, date range, and fields.<br>
+        It also includes an operation that acquires report download URLs.<br>
+        The following operations are provided:<br>
+        - Get reports<br>
+        - Add reports<br>
+        - Delete reports<br>
+        - Get report fields' information<br>
+        See the following Best Practice to learn about how to create a report on Display Ads.<br>
+        - <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_report.md">Display Ads Report</a><br>
+        [Notes]<br>
+        - Any ad data without actual performance is not output for all report types.<br>
+        - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
       </div>
       <h2 lang="ja">レポートフィールド</h2>
       <h2 lang="en">Report Fields</h2>
