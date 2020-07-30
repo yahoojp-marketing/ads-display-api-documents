@@ -8,6 +8,10 @@ DictionaryServiceAudienceCategory:
       description: |
         <div lang="ja">提供されるカテゴリの種別を表します。</div>
         <div lang="en">Audience category information.</div>
+        <hr>
+        <p>* <code>AFFINITY</code> - <span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></p>
+        <p>* <code>IN_MARKET</code> - <span lang="ja">購買意向です。</span><span lang="en">In-market.</span></p>
+        <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></p>
     child:
       type: array
       nullable: true
