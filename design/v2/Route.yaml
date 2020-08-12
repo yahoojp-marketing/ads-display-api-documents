@@ -5648,11 +5648,13 @@ paths:
       description: |
         <div lang="ja">
           予約型キャンペーンの配信シミュレーションに関する情報を追加します。<br>
-          ※GuaranteedSimulationService/addによる配信シミュレーションの実施は、一部の利用者向けの限定機能となります。
+          ※GuaranteedSimulationService/addによる配信シミュレーションの実施は、一部の利用者向けの限定機能となります。<br>
+          ※リクエスト制限は「最大5件/秒」固定です。サービス種別「campaign」とは別にカウントされます。
         </div>
         <div lang="en">
           Adds information about the delivery simulation of the guaranteed campaign.<br>
-          * The delivery simulation implementation via GuaranteedSimulationService/add is a limited function for some users.
+          * The delivery simulation implementation via GuaranteedSimulationService/add is a limited function for some users.<br>
+          * Request restrictions is a maximum of "5 requests per second". It counts separately from the service type "campaign".
         </div>
       tags:
         - GuaranteedSimulationService

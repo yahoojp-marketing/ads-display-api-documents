@@ -51,3 +51,4 @@
 "AVG_FREQUENCY","平均接触回数","Average frequency","avgFrequency","DOUBLE",,"Metric",""
 "START_DATE","開始日","Start date","startDate","STRING",,"Attribute",""
 "END_DATE","終了日","End date","endDate","STRING",,"Attribute",""
+"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute",""

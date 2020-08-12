@@ -70,3 +70,4 @@
 "VIEWABLE_IMPS_RATE","ビューアブルインプレッション率","Viewable impression rate","viewableImpressionRate","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_NAME]","Metric",""
 "VIEWABLE_CLICK_RATE","ビューアブルクリック率","Viewable CTR","viewableCtr","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_NAME]","Metric",""
 "VIDEO_VIEWS_TO_10_SEC","動画の10秒再生数","10 sec video views","videoViewsTo10sec","LONG","[CONVERSION_CATEGORY, CONVERSION_NAME]","Metric",""
+"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute",""
