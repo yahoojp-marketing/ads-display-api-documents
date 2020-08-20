@@ -60,3 +60,4 @@
 "VIEWABLE_IMPS_RATE","ビューアブルインプレッション率","Viewable impression rate","viewableImpressionRate","DOUBLE",,"Metric",""
 "VIEWABLE_CLICK_RATE","ビューアブルクリック率","Viewable CTR","viewableCtr","DOUBLE",,"Metric",""
 "VIDEO_VIEWS_TO_10_SEC","動画の10秒再生数","10 sec video views","videoViewsTo10sec","LONG",,"Metric",""
+"CONV_VALUE_VIA_VIEW_THROUGH","ビュースルーコンバージョン数","View-through conversions","convValueViaViewThrough","LONG",,"Metric",""

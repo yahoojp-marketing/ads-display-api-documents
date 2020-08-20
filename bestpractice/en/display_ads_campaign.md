@@ -26,7 +26,7 @@ When you create a campaign, a goal of the campaign set to achieve a business goa
 
 Since available campaign goals vary by each account, you need to check available campaign goals in advance.
 
-See also `Account` object for more detail.
+See also `AccountAuthority` object for more detail.
 
 
 ### 2. Create a campaign by goal
@@ -39,7 +39,7 @@ Required items on creating a campaign by goal are as follows.
 
 <table>
 <tr><th>Field</th><th>Required?</th><th>Note</th></tr>
-<tr><td>campaignGoal</td><td>Required</td><td>Enter a campaign goal from the value acquired on accountAuthorities of AccountService/get</td></tr>
+<tr><td>campaignGoal</td><td>Required</td><td>Enter a campaign goal from the value acquired on AccountAuthorityService/get</td></tr>
 <tr><td>budget.amount</td><td>Required</td><td>Campaign Daily Budget</td></tr>
 <tr><td>campaignBiddingStrategy</td><td>Required</td><td>More detail is described on Yahoo! Ads Help "<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について (Bidding Strategy)</a>" (Japanese context only).</td></tr>
 <tr><td>viewableFrequencyCap</td><td>Optional</td><td>　</td></tr>

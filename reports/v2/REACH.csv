@@ -52,3 +52,4 @@
 "START_DATE","開始日","Start date","startDate","STRING",,"Attribute",""
 "END_DATE","終了日","End date","endDate","STRING",,"Attribute",""
 "SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute",""
+"CONV_VALUE_VIA_VIEW_THROUGH","ビュースルーコンバージョン数","View-through conversions","convValueViaViewThrough","LONG",,"Metric",""

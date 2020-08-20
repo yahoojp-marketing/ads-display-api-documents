@@ -24,9 +24,9 @@ Yahoo!広告 APIでは、ディスプレイ広告（運用型）（以下、運�
 
 目的別キャンペーンを作成する際には、広告出稿の目的（以下、キャンペーン目的と表記）を指定する必要があります。
 
-また、アカウント毎に利用可能なキャンペーン目的が異なるため、事前に利用可能なキャンペーン目的を `AccountService/get` で確認する必要があります。
+また、アカウント毎に利用可能なキャンペーン目的が異なるため、事前に利用可能なキャンペーン目的を `AccountAuthorityService/get` で確認する必要があります。
 
-詳細は `Account` オブジェクトを参照してください。
+詳細は `AccountAuthority` オブジェクトを参照してください。
 
 
 ### 2. 目的別キャンペーンを作成する
@@ -39,7 +39,7 @@ CampaignServiceのaddを利用します。
 
 <table>
 <tr><th>フィールド</th><th>要不要</th><th>補足</th></tr>
-<tr><td>campaignGoal</td><td>必須</td><td>AccountService/getのaccountAuthoritiesで取得した値から、設定する目的を入力</td></tr>
+<tr><td>campaignGoal</td><td>必須</td><td>AccountAuthorityService/getで取得した値から、設定する目的を入力</td></tr>
 <tr><td>budget.amount</td><td>必須</td><td>1日の予算</td></tr>
 <tr><td>campaignBiddingStrategy</td><td>必須</td><td>詳細はYahoo!広告ヘルプ「<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について</a>」を参照してください。</td></tr>
 <tr><td>viewableFrequencyCap</td><td>任意</td><td>　</td></tr>
