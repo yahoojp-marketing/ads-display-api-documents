@@ -15,8 +15,8 @@ components:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v2/authorize
-          tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v2/token
+          authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
+          tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
             yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo!
               JAPAN Ads via applications.
