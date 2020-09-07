@@ -48,10 +48,14 @@ ReportDefinitionServiceReportDateRangeType:
     <p>* <code>GUARANTEED_CAMPAIGN_PERIOD</code> -
       <span lang="ja">
         通期です。<br>
+        リーチレポートでのみ指定可能です。<br>
+        通期を指定する場合は、frequencyRangeでもGUARANTEED_CAMPAIGN_PERIODを指定する必要があります。<br>
         ※この「通期」は、予約型キャンペーンの開始から終了までの全期間を意味します。
       </span>
       <span lang="en">
         Lifetime.<br>
+        Can be specified only in the reach report.<br>
+        If specified this, "GUARANTEED_CAMPAIGN_PERIOD" must be specified for frequencyRange as well.<br>
         * "lifetime" means the entire period from the start to the end of the guaranteed campaign.
       </span>
     </p>

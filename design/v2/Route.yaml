@@ -2916,6 +2916,8 @@ paths:
             <tr><td>250003</td><td>Invalid combination in report date settings.</td><td><div lang="ja">指定されたレポート作成のタイミングでは、指定日を設定できません。</div><div lang="en">Cannot specify a certain date for the timing (interval type) to create a report you specified.</div></td></tr>
             <tr><td>240010</td><td>Over limit of report template number.</td><td><div lang="ja">登録されるテンプレート登録数が上限を超えています。</div><div lang="en">The number of registration template is over the limit number.</div></td></tr>
             <tr><td>250004</td><td>Invalid combination in date range type.</td><td><div lang="ja">指定されたレポートの集計期間では、「任意日付」は選択できません。</div><div lang="en">Cannot select "custom date" for the period you specified.</div></td></tr>
+            <tr><td>250005</td><td>Invalid field for the filter.</td><td><div lang="ja">フィルターに指定できないフィールドを指定しています。</div><div lang="en">Specifying the field which cannot be set to the filter.</div></td></tr>
+            <tr><td>250006</td><td>"GUARANTEED_CAMPAIGN_PERIOD" cannot be selected as the compilation period for the specified combination of report fields.</td><td><div lang="ja">指定されたレポートフィールドの組み合わせでは、集計期間として「通期」は選択できません。</div><div lang="en">"GUARANTEED_CAMPAIGN_PERIOD" cannot be selected as the compilation period for the specified combination of report fields.</div></td></tr>
             </table>
             </details>
           content:
