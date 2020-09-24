@@ -2,10 +2,10 @@ GuaranteedSimulationServicePackagePermissionType:
   type: string
   nullable: true
   enum:
-  - FORBIDDEN
-  - PERMITTED
-  - FIXED
-  - UNKNOWN
+    - FORBIDDEN
+    - PERMITTED
+    - FIXED
+    - UNKNOWN
   title: GuaranteedSimulationServicePackagePermissionType
   description: |
     <div lang="ja">
