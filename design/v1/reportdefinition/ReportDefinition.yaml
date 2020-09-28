@@ -69,11 +69,13 @@ ReportDefinition:
       description: |
         <div lang="ja">
         ジョブエラー詳細です。<br>
-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        「Over limit of file size.」が返される場合は、レポートのサイズが小さくなるようにレポート作成時の条件を変更してください。
         </div>
         <div lang="en">
         Job Error Detail. <br>
-        Although this field will be returned in the response, it will be ignored on input.
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        If the message "Over limit of file size." is returned, change the report creation conditions to reduce the size of the report.
         </div>
     reportJobId:
       type: integer

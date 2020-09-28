@@ -37,9 +37,11 @@ ReportDefinitionServiceFilter:
   description: |
     <div lang="ja">
     ReportDefinitionServiceFilterオブジェクトは、フィルター定義を表します。<br>
+    フィルタ条件は最大6つまで設定が可能です。<br>
     このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。
     </div>
     <div lang="en">
     ReportDefinitionServiceFilter object serves filter definitions. <br>
+    Filter condition can set up to 6.<br>
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
