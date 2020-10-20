@@ -183,6 +183,8 @@ tags:
       <li><div lang="ja"><a href="./reports/v3/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="./reports/v3/FREQUENCY.csv" download>Frequency report</a></div></li>
       <li><div lang="ja"><a href="./reports/v3/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v3/REACH.csv" download>Reach report</a></div></li>
       <li><div lang="ja"><a href="./reports/v3/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/v3/LABEL.csv" download>Label report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v3/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v3/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div></li><li><div lang="en"><a href="./reports/v3/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
       </ul>
   - name: MediaService
     description: |
