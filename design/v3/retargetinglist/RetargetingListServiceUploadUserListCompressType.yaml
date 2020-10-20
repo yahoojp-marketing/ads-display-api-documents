@@ -1,0 +1,17 @@
+RetargetingListServiceUploadUserListCompressType:
+  type: string
+  nullable: true
+  enum:
+  - NONE
+  - ZIP
+  - GZIP
+  - UNKNOWN
+  title: RetargetingListServiceUploadUserListCompressType
+  description: |
+    <div lang="ja">RetargetingListServiceUploadUserListCompressTypeは、アップロードする連携データファイルの圧縮形式を表します。</div>
+    <div lang="en">RetargetingListServiceUploadUserListCompressType displays kind of compress type of upload file.</div>
+    <hr>
+    <p>* <code>NONE</code> - <span lang="ja">非圧縮形式です。</span><span lang="en">Uncompressed format.</span></p>
+    <p>* <code>ZIP</code> - <span lang="ja">ZIP形式です。</span><span lang="en">ZIP format.</span></p>
+    <p>* <code>GZIP</code> - <span lang="ja">GZIP形式です。</span><span lang="en">GZIP format.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

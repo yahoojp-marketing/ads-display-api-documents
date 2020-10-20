@@ -1,0 +1,27 @@
+GuaranteedSimulationServicePrediction:
+  type: object
+  nullable: true
+  properties:
+    results:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServicePredictionResult.yaml#/GuaranteedSimulationServicePredictionResult'
+    requestedConditionResult:
+      $ref: 'GuaranteedSimulationServicePredictionResult.yaml#/GuaranteedSimulationServicePredictionResult'
+    reservedConditionResult:
+      $ref: 'GuaranteedSimulationServicePredictionResult.yaml#/GuaranteedSimulationServicePredictionResult'
+  title: GuaranteedSimulationServicePrediction
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServicePredictionオブジェクトは、GuaranteedSimulationオブジェクトで定義された条件に基づく配信シミュレーションの予測結果を表します。<br>
+    - results: 予約確定前の配信シミュレーションの予測結果のデータセットです。<br>
+    - requestedConditionResult: 指定された条件（sov, reach, vImps, lifetimeBudget）に関連する予約確定前の配信シミュレーションの予測結果です。<br>
+    - reservedConditionResult: 指定された条件（sov, reach, vImps, lifetimeBudget）に関連する予約確定後の配信シミュレーションの予測結果です。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServicePrediction object describes the prediction result of the delivery simulation based on conditions defined in GuaranteedSimulation object.<br>
+    - results: Prediction result data set of the delivery simulation before reservation is confirmed.<br>
+    - requestedConditionResult: Prediction result of the delivery simulation before reservation is confirmed that is related to the specified conditions (sov, reach, vImps, lifetimeBudget).<br>
+    - reservedConditionResult: Prediction result of the delivery simulation after reservation is confirmed that is related to the specified conditions (sov, reach, vImps, lifetimeBudget).
+    </div>

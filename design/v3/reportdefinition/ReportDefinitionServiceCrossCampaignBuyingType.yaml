@@ -1,0 +1,23 @@
+ReportDefinitionServiceCrossCampaignBuyingType:
+  type: string
+  nullable: true
+  enum:
+  - AUCTION
+  - GUARANTEED
+  - UNKNOWN
+  title: ReportDefinitionServiceCrossCampaignBuyingType
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceCrossCampaignBuyingTypeは、横断リーチレポートの組み合わせの対象となるキャンペーン購入タイプを示します。<br>
+      このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+      ※ADD時、crossCampaignTypeが<code>CAMPAIGN_BUYING_TYPE</code>の場合は必須です。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceCrossCampaignBuyingType indicates the campaign purchase type that is subject to combination of Cross-campaign Reach Report.<br> 
+      This field is optional in ADD operation, and will be ignored in REMOVE operation.<br>
+      *If crossCampaignType is <code>CAMPAIGN_BUYING_TYPE</code>, this field is required in ADD operation.
+    </div>
+    <hr>
+    <p>* <code>AUCTION</code> - <span lang="ja">運用型です。</span><span lang="en">Auction.</span></p>
+    <p>* <code>GUARANTEED</code> - <span lang="ja">予約型です。</span><span lang="en">Guaranteed.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

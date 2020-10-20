@@ -1,0 +1,21 @@
+GuaranteedCampaignServiceAdCategoryStatus:
+  type: string
+  nullable: true
+  enum:
+  - ADDED
+  - NONE
+  - UNKNOWN
+  title: CampaignServiceBiddingStrategyType
+  description: |
+    <div lang="ja">
+    GuaranteedCampaignServiceAdCategoryStatusは、予約型のキャンペーンの広告カテゴリーステータスを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedCampaignServiceAdCategoryStatus describes the ad category status of a guaranteed campaign.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>ADDED</code> - <span lang="ja">広告カテゴリーを設定済みです。</span><span lang="en">Ad Category is already specified.</span></p>
+    <p>* <code>NONE</code> - <span lang="ja">広告カテゴリーの設定はありません。</span><span lang="en">Ad Category is not specified.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

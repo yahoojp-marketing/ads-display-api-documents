@@ -1,0 +1,36 @@
+ReportDefinitionServiceConversionPathReportCondition:
+  type: object
+  nullable: true
+  properties:
+    lookbackWindow:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+          ルックバック期間（日数）です。<br>
+          このフィールドは、ADDに必須となります。
+        </div>
+        <div lang="en">
+          Look back period (number of days). <br>
+          This field is required in ADD operation. 
+        </div>
+    includeViewInteraction:
+      $ref: 'ReportDefinitionServiceIncludeViewInteractionFlg.yaml#/ReportDefinitionServiceIncludeViewInteractionFlg'
+    conversionPathFilters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ReportDefinitionServiceConversionPathFilter.yaml#/ReportDefinitionServiceConversionPathFilter'
+  title: ReportDefinitionServiceConversionPathReportCondition
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceConversionPathReportConditionオブジェクトは、コンバージョン経路レポートの作成条件を表します。<br>
+      このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+      ※ADD時、reportTypeが<code>CONVERSION_PATH</code>の場合は必須です。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceConversionPathReportCondition describes the condition to create Conversion Path Report. <br>
+      This field is optional in ADD operation, and will be ignored in REMOVE operation. <br>
+      *If reportType is <code>CONVERSION_PATH</code>, this field is required in ADD operation.
+    </div>

@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedAdScheduleTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedAdScheduleTarget.yaml#/GuaranteedSimulationServicePermittedAdScheduleTarget'
+  title: GuaranteedSimulationServicePackagePermittedAdScheduleTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedAdScheduleTargetオブジェクトは、時間帯ターゲット設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedAdScheduleTarget object holds the restriction information about the day of week/hours target setting.</div>

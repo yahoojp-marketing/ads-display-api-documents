@@ -1,0 +1,130 @@
+AdGroupAdServiceStaticFrameAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    colorSetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        カラーセットIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Color set ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Description.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        タイトルです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Title.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    isRemoveLogoMediaId:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    layout:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告レイアウトです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad Layout.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ロゴ画像のメディアIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Media ID of logo image.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の主体者表記です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Advertiser Indication.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    size:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告サイズです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad Size.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: AdGroupAdServiceStaticFrameAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceStaticFrameAdオブジェクトは、広告枠サイズ固定広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがSTATIC_FRAME_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceStaticFrameAd object describes the Static Frame Ad information.<br>
+    This field is optional.<br>
+    *If adType is STATIC_FRAME_AD, this field is required in ADD operation.
+    </div>

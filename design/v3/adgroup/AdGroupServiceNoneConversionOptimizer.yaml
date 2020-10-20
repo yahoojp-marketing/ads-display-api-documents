@@ -1,0 +1,16 @@
+AdGroupServiceNoneConversionOptimizer:
+  type: object
+  nullable: true
+  properties:
+    eligibilityFlg:
+      $ref: 'AdGroupServiceEligibilityFlg.yaml#/AdGroupServiceEligibilityFlg'
+  title: AdGroupServiceNoneConversionOptimizer
+  description: |
+    <div lang="ja">
+    AdGroupServiceNoneConversionOptimizerは、コンバージョン最適化「キャンペーンの入札方法を適用する」設定を保持するオブジェクトです。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupServiceNoneConversionOptimizer displays the contents of conversion optimization 'Apply same Bidding with campaign' settings.<br>
+    This field is optional in ADD and SET operation.
+    </div>

@@ -30,7 +30,7 @@
 "VIDEO_VIEWS_TO_75","動画の75%再生数","75% video views","videoViewsTo75","LONG",,"Metric",""
 "VIDEO_VIEWS_TO_95","動画の95%再生数","95% video views","videoViewsTo95","LONG",,"Metric",""
 "VIDEO_VIEWS_TO_100","動画の100%再生数","100% video views","videoViewsTo100","LONG",,"Metric",""
-"AVG_PERCENT_VIDEO_VIEWED","動画の平均再生開始率","Avg. video view rate","avgVideoViewRate","DOUBLE",,"Metric",""
+"AVG_PERCENT_VIDEO_VIEWED","動画の平均再生率","Avg. video view rate","avgVideoViewRate","DOUBLE",,"Metric",""
 "AVG_DURATION_VIDEO_VIEWED","動画の平均再生時間（秒）","Avg. duration of video viewed","avgDurationOfVideoViewed","DOUBLE",,"Metric",""
 "VIDEO_VIEWS","動画の再生開始数","Video views","videoViews","LONG",,"Metric",""
 "PAID_VIDEO_VIEWS","課金が発生した動画再生数（CPV課金キャンペーンのみ）","Paid video views (CPV)","paidVideoViewsCPV","LONG",,"Metric",""

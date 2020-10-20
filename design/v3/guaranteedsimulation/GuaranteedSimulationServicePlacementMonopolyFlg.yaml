@@ -1,0 +1,21 @@
+GuaranteedSimulationServicePlacementMonopolyFlg:
+  type: string
+  nullable: true
+  enum:
+  - 'FALSE'
+  - 'TRUE'
+  - UNKNOWN
+  title: GuaranteedSimulationServicePlacementMonopolyFlg
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServicePlacementMonopolyFlgは、専売枠へ配信可能かを表します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServicePlacementMonopolyFlg describes whether it can be delivered to a monopoly place.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>TRUE</code> - <span lang="ja">専売枠商品です。</span><span lang="en">Monopoly goods.</span></p>
+    <p>* <code>FALSE</code> - <span lang="ja">非専売枠商品です。</span><span lang="en">Non-monopoly goods.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

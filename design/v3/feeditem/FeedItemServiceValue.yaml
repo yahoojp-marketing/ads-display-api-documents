@@ -1,0 +1,25 @@
+FeedItemServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+    requestReceived:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">リクエストを受け付けた結果です。</div>
+        <div lang="en">Result of request</div>
+  title: FeedItemServiceValue
+  description: |
+    <div lang="ja">FeedItemServiceValueオブジェクトは、処理結果を含む商品に関する情報を表します。</div>
+    <div lang="en">FeedItemServiceValue object describes information about item including the result of process.</div>

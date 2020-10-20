@@ -1,0 +1,21 @@
+SearchLiftServiceKeywordCategory:
+  type: string
+  nullable: true
+  enum:
+  - BRAND
+  - SERVICE
+  - CAMPAIGN
+  - UNKNOWN
+  title: SearchLiftServiceKeywordCategory
+  description: |
+    <div lang="ja">
+    SearchLiftServiceKeywordCategoryは、キーワードカテゴリを表します。
+    </div>
+    <div lang="en">
+    SearchLiftServiceKeywordCategory describes the keyword category.
+    </div>
+    <hr>
+    <p>* <code>BRAND</code> - <span lang="ja">ブランドです。</span><span lang="en">Brand</span></p>
+    <p>* <code>SERVICE</code> - <span lang="ja">サービスです。</span><span lang="en">Service</span></p>
+    <p>* <code>CAMPAIGN</code> - <span lang="ja">キャンペーンです。</span><span lang="en">Campaign</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

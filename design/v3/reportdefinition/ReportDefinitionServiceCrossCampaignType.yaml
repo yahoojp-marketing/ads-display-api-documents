@@ -1,0 +1,23 @@
+ReportDefinitionServiceCrossCampaignType:
+  type: string
+  nullable: true
+  enum:
+  - CAMPAIGN_ID
+  - CAMPAIGN_GOAL
+  - CAMPAIGN_BUYING_TYPE
+  - UNKNOWN
+  title: ReportDefinitionServiceCrossCampaignType
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceCrossCampaignTypeは、横断リーチレポートの組み合わせの種別を示します。<br>
+      このフィールドは、ADD時に必須となります。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceCrossCampaignType indicates the combination type of Cross-campaign Reach Report. <br> 
+      This field is required in ADD operation. 
+    </div>
+    <hr>
+    <p>* <code>CAMPAIGN_ID</code> - <span lang="ja">キャンペーンIDの組み合わせです。</span><span lang="en">Combination of campaign ID.</span></p>
+    <p>* <code>CAMPAIGN_GOAL</code> - <span lang="ja">キャンペーン目的の組み合わせです。</span><span lang="en">Combination of campaign goal.</span></p>
+    <p>* <code>CAMPAIGN_BUYING_TYPE</code> - <span lang="ja">キャンペーン購入タイプの組み合わせです。</span><span lang="en">Combination of campaign purchase type.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

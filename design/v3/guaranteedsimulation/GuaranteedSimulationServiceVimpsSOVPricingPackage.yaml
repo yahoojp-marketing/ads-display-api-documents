@@ -1,0 +1,34 @@
+GuaranteedSimulationServiceVimpsSOVPricingPackage:
+  type: object
+  nullable: true
+  properties:
+    fixedLifetimeBudget:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品価格を表します。</div>
+        <div lang="en">Package price.</div>
+    sovRate:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        SOV（1%〜100%）です。<br>
+        ADD時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        SOV (1% to 100%).<br>
+        This field is optional in ADD operation.
+        </div>
+  title: GuaranteedSimulationServiceVimpsSOVPricingPackage
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServiceVimpsSOVPricingPackageは、vimps購入型（SOV）の購入タイプ設定情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServiceVimpsSOVPricingPackage holds the purchase type setting information about the vimps purchase type (share of voice).<br>
+      Although this field will be returned in the response, it will be ignored on input. 
+    </div>

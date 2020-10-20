@@ -2947,8 +2947,8 @@ paths:
   /MediaService/add:
     post:
       description: |
-        <div lang="ja">画像のアップロードを行います。</div>
-        <div lang="en">Uploads the media.</div>
+        <div lang="ja">画像のアップロードを行います（最大1件）。</div>
+        <div lang="en">Uploads the media (maximum of 1 media).</div>
       tags:
         - MediaService
       requestBody:

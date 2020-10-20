@@ -1,0 +1,22 @@
+AdGroupServiceConversionOptimizer:
+  type: object
+  nullable: true
+  properties:
+    autoConversionOptimizer:
+      $ref: 'AdGroupServiceAutoConversionOptimizer.yaml#/AdGroupServiceAutoConversionOptimizer'
+    manualConversionOptimizer:
+      $ref: 'AdGroupServiceManualConversionOptimizer.yaml#/AdGroupServiceManualConversionOptimizer'
+    noneConversionOptimizer:
+      $ref: 'AdGroupServiceNoneConversionOptimizer.yaml#/AdGroupServiceNoneConversionOptimizer'
+    optimizerType:
+      $ref: 'AdGroupServiceOptimizerType.yaml#/AdGroupServiceOptimizerType'
+  title: AdGroupServiceConversionOptimizer
+  description: |
+    <div lang="ja">
+    AdGroupServiceConversionOptimizerは、コンバージョン最適化制御を保持するオブジェクトです。<br>
+    このフィールドは省略可能となります。その際、ADD時のoptimizerTypeのデフォルト設定値はNONEとなります。
+    </div>
+    <div lang="en">
+    AdGroupServiceConversionOptimizer retains conversion optimization control.<br>
+    This field is optional. The default value of optimizerType in ADD operation will be NONE.
+    </div>

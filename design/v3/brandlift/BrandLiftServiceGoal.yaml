@@ -1,0 +1,27 @@
+BrandLiftServiceGoal:
+  type: string
+  nullable: true
+  enum:
+  - AD_RECALL
+  - BRAND_AWARENESS
+  - MESSAGE_ASSOCIATION
+  - PURCHASE_INTENTION
+  - FAVOR
+  - COMPARISON
+  - UNKNOWN
+  title: BrandLiftServiceGoal
+  description: |
+    <div lang="ja">
+    BrandLiftServiceGoalは、調査目的を表します。
+    </div>
+    <div lang="en">
+    BrandLiftServiceGoal describes the survey goal.
+    </div>
+    <hr>
+    <p>* <code>AD_RECALL</code> - <span lang="ja">広告想起です。</span><span lang="en">Ads recall.</span></p>
+    <p>* <code>BRAND_AWARENESS</code> - <span lang="ja">ブランド認知です。</span><span lang="en">Brand awareness.</span></p>
+    <p>* <code>MESSAGE_ASSOCIATION</code> - <span lang="ja">メッセージ連想です。</span><span lang="en">Message association.</span></p>
+    <p>* <code>PURCHASE_INTENTION</code> - <span lang="ja">購入意向です。</span><span lang="en">Purchase intention.</span></p>
+    <p>* <code>FAVOR</code> - <span lang="ja">好意度です。</span><span lang="en">Favorableness.</span></p>
+    <p>* <code>COMPARISON</code> - <span lang="ja">比較検討です。</span><span lang="en">Comparative consideration.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

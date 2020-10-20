@@ -1,0 +1,16 @@
+GuaranteedSimulationServicePermittedAppTarget:
+  type: object
+  nullable: true
+  properties:
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットID</div>
+        <div lang="en">Target ID</div>
+    appType:
+      $ref: 'GuaranteedSimulationServiceDeviceAppType.yaml#/GuaranteedSimulationServiceDeviceAppType'
+  title: GuaranteedSimulationServicePermittedAppTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePermittedAppTargetオブジェクトは、アプリターゲットの設定情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePermittedAppTarget object holds configuration information of app targeting.</div>

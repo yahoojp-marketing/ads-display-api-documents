@@ -1,0 +1,25 @@
+ReportDefinitionServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'ReportDefinition.yaml#/ReportDefinition'
+      minItems: 1
+      maxItems: 30
+  title: ReportDefinitionServiceOperation
+  description: |
+    <div lang="ja">ReportDefinitionServiceOperationオブジェクトは、操作の対象となるレポート定義および操作の内容を表します。</div>
+    <div lang="en">The ReportDefinitionServiceOperation object serves operation target report definitions and operation content.</div>

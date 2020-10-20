@@ -1,0 +1,17 @@
+GuaranteedSimulationServiceActionAfterVideoAdTap:
+  type: string
+  nullable: true
+  enum:
+  - NONE
+  - FOR_VIEW
+  - FOR_CLICK
+  - UNKNOWN
+  title: GuaranteedSimulationServiceActionAfterVideoAdTap
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceActionAfterVideoAdTapは、動画広告をタップした後の動作を表します。</div>
+    <div lang="en">GuaranteedSimulationServiceActionAfterVideoAdTap describes what happens after a video ad is tapped.</div>
+    <hr>
+    <p>* <code>NONE</code> - <span lang="ja">指定しません。</span><span lang="en">Not specified.</span></p>
+    <p>* <code>FOR_VIEW</code> - <span lang="ja">動画をフルスクリーンで再生します。</span><span lang="en">Play the video in full screen.</span></p>
+    <p>* <code>FOR_CLICK</code> - <span lang="ja">ランディングページを表示します。</span><span lang="en">Display the landing page.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

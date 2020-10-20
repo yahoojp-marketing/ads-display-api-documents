@@ -1,0 +1,25 @@
+GuaranteedSimulationServiceFrequencyTimeUnit:
+  type: string
+  nullable: true
+  enum:
+  - DAY
+  - WEEK
+  - MONTH
+  - LIFETIME
+  - UNKNOWN
+  title: GuaranteedSimulationServiceFrequencyTimeUnit
+  description: |
+    <div lang="ja">
+    フリークエンシー制御期間を表します。<br>
+    ADD時、このフィールドは必須となります。
+    </div>
+    <div lang="en">
+    Frequency setting period.<br>
+    In ADD operation, this field will be required.
+    </div>
+    <hr>
+    <p>* <code>DAY</code> - <span lang="ja">日単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Day.</span></p>
+    <p>* <code>WEEK</code> - <span lang="ja">週単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Week.</span></p>
+    <p>* <code>MONTH</code> - <span lang="ja">月単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Month.</span></p>
+    <p>* <code>LIFETIME</code> - <span lang="ja">通期でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Lifetime of campaign.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

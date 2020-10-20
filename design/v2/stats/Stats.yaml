@@ -334,7 +334,7 @@ Stats:
       nullable: true
       format: double
       description: |
-        <div lang="ja">動画の平均再生開始率</div>
+        <div lang="ja">動画の平均再生率</div>
         <div lang="en">Avg. video view rate</div>
     averageDurationVideoViewed:
       type: number

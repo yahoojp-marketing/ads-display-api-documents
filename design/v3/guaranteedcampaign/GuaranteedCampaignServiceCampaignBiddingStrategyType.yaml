@@ -1,0 +1,20 @@
+GuaranteedCampaignServiceCampaignBiddingStrategyType:
+  type: string
+  nullable: true
+  enum:
+  - MAX_VCPM
+  - SOV
+  - UNKNOWN
+  title: GuaranteedCampaignServiceCampaignBiddingStrategyType
+  description: |
+    <div lang="ja">
+    キャンペーン入札戦略タイプです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedCampaignServiceCampaignBiddingStrategyType describes setting of campaign bid strategy type.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <p>* <code>MAX_VCPM</code> - <span lang="ja">最大入札価格指定（vCPM）です。</span><span lang="en">Max. bid value (vCPM)</span></p>
+    <p>* <code>SOV</code> - <span lang="ja">SOV割合指定です。</span><span lang="en">Specified SOV rate.</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

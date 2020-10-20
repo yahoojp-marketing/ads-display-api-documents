@@ -1,0 +1,25 @@
+GuaranteedSimulationServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulation.yaml#/GuaranteedSimulation'
+      minItems: 1
+      maxItems: 1
+  title: GuaranteedSimulationServiceOperation
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceOperationオブジェクトは、操作の対象となる配信シミュレーション情報と処理の内容を表します。</div>
+    <div lang="en">GuaranteedSimulationServiceOperation object describes the delivery simulation information to be operated and the content of the processing.</div>

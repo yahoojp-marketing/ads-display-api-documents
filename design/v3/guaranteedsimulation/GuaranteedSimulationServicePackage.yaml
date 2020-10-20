@@ -1,0 +1,149 @@
+GuaranteedSimulationServicePackage:
+  type: object
+  nullable: true
+  properties:
+    packageId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">商品IDです。</div>
+        <div lang="en">Package ID.</div>
+    packageHistoryId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">商品履歴IDです。</div>
+        <div lang="en">Package history ID.</div>
+    packageName:
+      type: string
+      nullable: false
+      description: |
+        <div lang="ja">商品名です。</div>
+        <div lang="en">Package name.</div>
+    sellingStartDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          商品開始日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          Start date of the package.<br>
+          Format: yyyyMMdd
+        </div>
+    sellingEndDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          商品終了日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          End date of the package.<br>
+          Format: yyyyMMdd
+        </div>
+    adDeliveryDurationStartDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          広告の掲載有効期間の開始日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          Start date of the ad delivery validity period.<br>
+          Format: yyyyMMdd
+        </div>
+    reservationStartDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          予約期間開始日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          Start date of reservation period.<br>
+          Format: yyyyMMdd
+        </div>
+    reservationEndDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          予約期間終了日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          End date of reservation period.<br>
+          Format: yyyyMMdd
+        </div>
+    adDeliveryDurationEndDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+          掲載有効期間の終了日です。<br>
+          ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+          End date of the ad delivery validity period.<br>
+          Format: yyyyMMdd
+        </div>
+    buyingTerm:
+      $ref: 'GuaranteedSimulationServiceBuyingTerm.yaml#/GuaranteedSimulationServiceBuyingTerm'
+    pricingPackage:
+      $ref: 'GuaranteedSimulationServicePricingPackage.yaml#/GuaranteedSimulationServicePricingPackage'
+    packagePublicLevel:
+      $ref: 'GuaranteedSimulationServicePackagePublicLevel.yaml#/GuaranteedSimulationServicePackagePublicLevel'
+    salesDocument:
+      $ref: 'GuaranteedSimulationServiceSalesDocument.yaml#/GuaranteedSimulationServiceSalesDocument'
+    promotionalDocument:
+      $ref: 'GuaranteedSimulationServicePromotionalDocument.yaml#/GuaranteedSimulationServicePromotionalDocument'
+    relatedDocument:
+      $ref: 'GuaranteedSimulationServiceRelatedDocument.yaml#/GuaranteedSimulationServiceRelatedDocument'
+    adTypePermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    adRequirements:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceAdRequirement.yaml#/GuaranteedSimulationServiceAdRequirement'
+    actionAfterVideoAdTap:
+      $ref: 'GuaranteedSimulationServiceActionAfterVideoAdTap.yaml#/GuaranteedSimulationServiceActionAfterVideoAdTap'
+    remarks:
+      type: string
+      nullable: false
+      description: |
+        <div lang="ja">備考です。</div>
+        <div lang="en">Remarks.</div>
+    packagePermittedViewableFrequencyCap:
+      $ref: 'GuaranteedSimulationServicePackagePermittedViewableFrequencyCap.yaml#/GuaranteedSimulationServicePackagePermittedViewableFrequencyCap'
+    packagePermittedAdPlaceTypes:
+      $ref: 'GuaranteedSimulationServicePackagePermittedAdPlaceTypes.yaml#/GuaranteedSimulationServicePackagePermittedAdPlaceTypes'
+    packagePermittedGenderTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedGenderTarget.yaml#/GuaranteedSimulationServicePackagePermittedGenderTarget'
+    packagePermittedAgeTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedAgeTarget.yaml#/GuaranteedSimulationServicePackagePermittedAgeTarget'
+    packagePermittedAudienceCategoryTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedAudienceCategoryTarget.yaml#/GuaranteedSimulationServicePackagePermittedAudienceCategoryTarget'
+    packagePermittedGeoTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedGeoTarget.yaml#/GuaranteedSimulationServicePackagePermittedGeoTarget'
+    packagePermittedAdScheduleTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedAdScheduleTarget.yaml#/GuaranteedSimulationServicePackagePermittedAdScheduleTarget'
+    packagePermittedDeviceTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedDeviceTarget.yaml#/GuaranteedSimulationServicePackagePermittedDeviceTarget'
+    packagePermittedOsTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedOsTarget.yaml#/GuaranteedSimulationServicePackagePermittedOsTarget'
+    packagePermittedAppTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedAppTarget.yaml#/GuaranteedSimulationServicePackagePermittedAppTarget'
+    packagePermittedPlacementCategoryTarget:
+      $ref: 'GuaranteedSimulationServicePackagePermittedPlacementCategoryTarget.yaml#/GuaranteedSimulationServicePackagePermittedPlacementCategoryTarget'
+  title: GuaranteedSimulationServicePackage
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackageオブジェクトは、商品情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackage object contains package information.</div>

@@ -1,0 +1,13 @@
+RetargetingListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceValue.yaml#/RetargetingListServiceValue'
+  title: RetargetingListServiceReturnValue
+  description: |
+    <div lang="ja">RetargetingListServiceReturnValueオブジェクトは、サイトリターゲティングのターゲットリスト情報を表します。</div>
+    <div lang="en">RetargetingListServiceReturnValue object displays the return value of target list for site retargeting.</div>

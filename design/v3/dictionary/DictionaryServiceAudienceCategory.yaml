@@ -1,0 +1,57 @@
+DictionaryServiceAudienceCategory:
+  type: object
+  nullable: true
+  properties:
+    audienceCategoryType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">提供されるカテゴリの種別を表します。</div>
+        <div lang="en">Audience category information.</div>
+        <hr>
+        <p>* <code>AFFINITY</code> - <span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></p>
+        <p>* <code>IN_MARKET</code> - <span lang="ja">購買意向です。</span><span lang="en">In-market.</span></p>
+        <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></p>
+    isGuaranteedPermitted:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">予約型販売対象を表します</div>
+        <div lang="en">Indicates that it is subject to guaranteed sale.</div>
+    child:
+      type: array
+      nullable: true
+      items:
+        $ref: 'DictionaryServiceAudienceCategory.yaml#/DictionaryServiceAudienceCategory'
+      description: |
+        <div lang="ja">子要素としてDictionaryServiceAudienceCategoryオブジェクトを使用します。</div>
+        <div lang="en">DictionaryServiceAudienceCategory object is used.</div>
+    code:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリコードです。</div>
+        <div lang="en">Category code</div>
+    fullName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">カテゴリ名称です。（カテゴリ名称、サブカテゴリ名称を含めた正式名称です。）</div>
+        <div lang="en">Category name (A formal name including category name and sub category name.)</div>
+    name:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">サブカテゴリ名称です。</div>
+        <div lang="en">Sub-category name</div>
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">リーチ数です。</div>
+        <div lang="en">Reach record number</div>
+  title: DictionaryServiceAudienceCategory
+  description: |
+    <div lang="ja">DictionaryServiceAudienceCategoryオブジェクトは、オーディエンスカテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceAudienceCategory object contains audience category information.</div>

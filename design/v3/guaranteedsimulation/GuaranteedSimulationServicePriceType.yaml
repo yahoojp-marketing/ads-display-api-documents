@@ -1,0 +1,23 @@
+GuaranteedSimulationServicePriceType:
+  type: string
+  nullable: true
+  enum:
+  - VIMPS_CUSTOM
+  - VIMPS_SOV
+  - VIMPS_REACH
+  - UNKNOWN
+  title: GuaranteedSimulationServicePriceType
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServicePriceTypeは、商品の購入タイプを表します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServicePriceType describes the purchase type of the package.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <p>* <code>VIMPS_CUSTOM</code> - <span lang="ja">vimps購入型（変動）</span><span lang="en">Vimps purchase type (variable)</span></p>
+    <p>* <code>VIMPS_SOV</code> - <span lang="ja">vimps購入型（SOV）</span><span lang="en">Vimps purchase type (share of voice)</span></p>
+    <p>* <code>VIMPS_REACH</code> - <span lang="ja">vimps購入型（リーチ固定）</span><span lang="en">Vimps purchase type (fixed reach)</span></p>
+    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
