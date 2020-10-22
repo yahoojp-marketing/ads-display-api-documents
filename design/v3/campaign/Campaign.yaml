@@ -172,11 +172,13 @@ Campaign:
       description: |
         <div lang="ja">
         キャンペーン掲載タイプです。<br>
-        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        CampaignDeliveryTypeを指定してのキャンペーン作成は、一部の利用者向けの機能となります。
         </div>
         <div lang="en">
         Campaign delivery type.<br>
-        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        Creating a campaign with the CampaignDeliveryType specified is a function for some users.
         </div>
     createdDate:
       type: string

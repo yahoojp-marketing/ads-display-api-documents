@@ -19,5 +19,5 @@ ReportDefinitionServiceCrossCampaignType:
     <hr>
     <p>* <code>CAMPAIGN_ID</code> - <span lang="ja">キャンペーンIDの組み合わせです。</span><span lang="en">Combination of campaign ID.</span></p>
     <p>* <code>CAMPAIGN_GOAL</code> - <span lang="ja">キャンペーン目的の組み合わせです。</span><span lang="en">Combination of campaign goal.</span></p>
-    <p>* <code>CAMPAIGN_BUYING_TYPE</code> - <span lang="ja">キャンペーン購入タイプの組み合わせです。</span><span lang="en">Combination of campaign purchase type.</span></p>
+    <p>* <code>CAMPAIGN_BUYING_TYPE</code> - <span lang="ja">キャンペーン購入タイプの組み合わせです。</span><span lang="en">Combination of campaign buying type.</span></p>
     <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>

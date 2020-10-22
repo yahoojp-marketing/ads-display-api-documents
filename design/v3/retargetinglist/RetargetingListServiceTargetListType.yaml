@@ -12,11 +12,13 @@ RetargetingListServiceTargetListType:
   description: |
     <div lang="ja">
     RetargetingListServiceTargetListTypeは、ターゲティングの種別を表します。<br>
-    このフィールドは、ADDおよびSET時に必須となります。
+    このフィールドは、ADDおよびSET時に必須となります。<br>
+    ただし、ADD時にDEFAULT_LISTを指定することはできません。
     </div>
     <div lang="en">
     RetargetingListServiceTargetListType serves types of targets. <br>
-    This field is required in ADD and SET operation.
+    This field is required in ADD and SET operation.<br>
+    However, DEFAULT_LIST cannot be specified in ADD operation.
     </div>
     <hr>
     <p>* <code>DEFAULT_LIST</code> - <span lang="ja">デフォルトリストです。</span><span lang="en">Default List.</span></p>
