@@ -6,7 +6,7 @@ info:
   description: |
     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
-    <div><a target="_blank" href="./design/v0/Route.yaml">OpenAPI Specification</a></div>
+    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v0/Route.yaml">OpenAPI Specification</a></div>
 
 components:
   securitySchemes:
@@ -36,22 +36,22 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
         ディスプレイ広告（運用型）における広告グループの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
         See the following Best Practice to learn about how to create an ad group on Display Ads (Auction).<br>
-        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: CampaignService
     description: |
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
         ディスプレイ広告（運用型）におけるキャンペーンの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
         See the following Best Practice to learn about how to create a campaign on Display Ads (Auction).<br>
-        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: FeedDataService
     description: |
@@ -152,11 +152,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">AdGroupAdServiceは広告の操作を提供します。<br>
         ディスプレイ広告（運用型）における広告の作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update or delete ad information.<br>
         See the following Best Practice to learn about how to create an ad on Display Ads (Auction).<br>
-        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: FeedService
     description: |
