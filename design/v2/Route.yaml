@@ -5,9 +5,9 @@ info:
   description: |
     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v2/Route.yaml">OpenAPI Specification</a></div>
-    <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
-    <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+    <div><a target="_blank" href="./design/v2/Route.yaml">OpenAPI Specification</a></div>
+    <div lang="ja"><a target="_blank" href="./bestpractice/ja">Best Practice</a></div>
+    <div lang="en"><a target="_blank" href="./bestpractice/en">Best Practice</a></div>
 
 components:
   securitySchemes:
@@ -42,11 +42,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
         ディスプレイ広告（運用型）における広告グループの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
         See the following Best Practice to learn about how to create an ad group on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: AuditLogService
     description: |
@@ -58,11 +58,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
         ディスプレイ広告（運用型）におけるキャンペーンの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
         See the following Best Practice to learn about how to create a campaign on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: CampaignMigrationService
     description: |
@@ -152,7 +152,7 @@ tags:
         ・レポートの削除<br>
         ・レポート出力項目の取得<br>
         ディスプレイ広告のレポートの作成については、以下のベストプラクティスを参照してください。<br>
-        ・<a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_report.md">ディスプレイ広告レポート</a><br>
+        ・<a href="./bestpractice/ja/display_ads_report.md">ディスプレイ広告レポート</a><br>
         【注意事項】<br>
         ・すべてのレポートタイプにおいて配信実績のないデータは出力されません。<br>
         ・レポートは、リクエストしてから1週間（7日間）で自動的に削除されます。<br>
@@ -167,7 +167,7 @@ tags:
         - Delete reports<br>
         - Get report fields' information<br>
         See the following Best Practice to learn about how to create a report on Display Ads.<br>
-        - <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_report.md">Display Ads Report</a><br>
+        - <a href="./bestpractice/en/display_ads_report.md">Display Ads Report</a><br>
         [Notes]<br>
         - Any ad data without actual performance is not output for all report types.<br>
         - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
@@ -175,14 +175,14 @@ tags:
       <h2 lang="ja">レポートフィールド</h2>
       <h2 lang="en">Report Fields</h2>
       <ul>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/INTEREST_CATEGORY.csv" download>インタレストカテゴリーレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/INTEREST_CATEGORY.csv" download>Interest category report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/SITE_CATEGORY.csv" download>Site category report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/URL.csv" download>配信先URLレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/URL.csv" download>Ad Delivery URL report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/FREQUENCY.csv" download>Frequency report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/REACH.csv" download>Reach report</a></div></li>
-      <li><div lang="ja"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/reports/v2/LABEL.csv" download>Label report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div></li><li><div lang="en"><a href="./reports/v2/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/INTEREST_CATEGORY.csv" download>インタレストカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v2/INTEREST_CATEGORY.csv" download>Interest category report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v2/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v2/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/URL.csv" download>配信先URLレポート</a></div></li><li><div lang="en"><a href="./reports/v2/URL.csv" download>Ad Delivery URL report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="./reports/v2/FREQUENCY.csv" download>Frequency report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v2/REACH.csv" download>Reach report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v2/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/v2/LABEL.csv" download>Label report</a></div></li>
       </ul>
   - name: MediaService
     description: |
@@ -199,11 +199,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">AdGroupAdServiceは広告の操作を提供します。<br>
         ディスプレイ広告（運用型）における広告の作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update or delete ad information.<br>
         See the following Best Practice to learn about how to create an ad on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: FeedService
     description: |
@@ -231,12 +231,12 @@ tags:
       <div lang="ja">
         AdGroupTargetServiceでは、広告グループにおけるターゲティング設定情報の操作（取得、追加、更新、削除、置換）を行います。<br>
         ディスプレイ広告（運用型）におけるターゲティング設定は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        <a href="./bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">
         The service let you perform targeting settings operations (get, add, set, replace and remove) for ad group.<br>
         See the following Best Practice to learn about how to set targetings on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        <a href="./bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
   - name: ConversionTrackerService
     description: |
