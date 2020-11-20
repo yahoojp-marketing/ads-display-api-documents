@@ -16,6 +16,11 @@ GuaranteedAdGroupAdLandingPageStatus:
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>COMPLETED</code> - <span lang="ja">完成/公開済み</span><span lang="en">Completed/Published</span></p>
-    <p>* <code>SPECIFIED_UPDATE_SCHEDULED_TIME</code> - <span lang="ja">公開日時を指定中(後日更新/公開予定)</span><span lang="en">The release date is being specified (will be updated and released later)</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">完成/公開済み</span><span lang="en">Completed/Published</span></dd>
+      <dt class="term__item">SPECIFIED_UPDATE_SCHEDULED_TIME</dt>
+      <dd class="term__desc"><span lang="ja">公開日時を指定中(後日更新/公開予定)</span><span lang="en">The release date is being specified (will be updated and released later)</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

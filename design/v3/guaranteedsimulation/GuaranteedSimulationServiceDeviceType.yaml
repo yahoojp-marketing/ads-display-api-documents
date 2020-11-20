@@ -11,7 +11,13 @@ GuaranteedSimulationServiceDeviceType:
     <div lang="ja">GuaranteedSimulationServiceDeviceTypeは、配信先デバイスの種類を表します。</div>
     <div lang="en">GuaranteedSimulationServiceDeviceType displays types of devices to be posted on.</div>
     <hr>
-    <p>* <code>DESKTOP</code> - <span lang="ja">PC</span><span lang="en">PC</span></p>
-    <p>* <code>SMARTPHONE</code> - <span lang="ja">スマートフォン</span><span lang="en">Smartphones</span></p>
-    <p>* <code>TABLET</code> - <span lang="ja">タブレット</span><span lang="en">Tablet device</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">DESKTOP</dt>
+      <dd class="term__desc"><span lang="ja">PC</span><span lang="en">PC</span></dd>
+      <dt class="term__item">SMARTPHONE</dt>
+      <dd class="term__desc"><span lang="ja">スマートフォン</span><span lang="en">Smartphones</span></dd>
+      <dt class="term__item">TABLET</dt>
+      <dd class="term__desc"><span lang="ja">タブレット</span><span lang="en">Tablet device</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

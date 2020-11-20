@@ -22,8 +22,15 @@ RetargetingListServiceJobStatus:
       * If the status is "FAILED", it means that the job did not complete successfully due to a problem other than the file contents.
     </div>
     <hr>
-    <p>* <code>RECEIVING</code> - <span lang="ja">データ取り込み中です。</span><span lang="en">Data is being imported.</span></p>
-    <p>* <code>RECEIVED</code> - <span lang="ja">データ取り込み完了です。</span><span lang="en">Importing data is completed.</span></p>
-    <p>* <code>INVALID_FILE</code> - <span lang="ja">ファイルフォーマットエラーです。</span><span lang="en">File format error.</span></p>
-    <p>* <code>FAILED</code> - <span lang="ja">ジョブが失敗しました。</span><span lang="en">Job failed.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></p>
+    <dl class=term>
+      <dt class="term__item">RECEIVING</dt>
+      <dd class="term__desc"><span lang="ja">データ取り込み中です。</span><span lang="en">Data is being imported.</span></dd>
+      <dt class="term__item">RECEIVED</dt>
+      <dd class="term__desc"><span lang="ja">データ取り込み完了です。</span><span lang="en">Importing data is completed.</span></dd>
+      <dt class="term__item">INVALID_FILE</dt>
+      <dd class="term__desc"><span lang="ja">ファイルフォーマットエラーです。</span><span lang="en">File format error.</span></dd>
+      <dt class="term__item">FAILED</dt>
+      <dd class="term__desc"><span lang="ja">ジョブが失敗しました。</span><span lang="en">Job failed.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

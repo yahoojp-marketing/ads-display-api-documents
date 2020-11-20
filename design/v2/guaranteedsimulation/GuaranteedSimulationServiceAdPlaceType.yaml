@@ -17,7 +17,13 @@ GuaranteedSimulationServiceAdPlaceType:
     This field is required in ADD operation.
     </div>
     <hr>
-    <p>* <code>YAHOO_JAPAN_TOP</code> - <span lang="ja">「Yahoo! JAPANトップページ」です。</span><span lang="en">Top page of "Yahoo! Japan".</span></p>
-    <p>* <code>YAHOO_JAPAN_ALL</code> - <span lang="ja">「Yahoo! JAPAN全て」です。</span><span lang="en">All of "Yahoo! Japan".</span></p>
-    <p>* <code>YAHOO_JAPAN_EXCLUSION_OF_TOP</code> - <span lang="ja">「Yahoo! JAPANトップページ以外」です。</span><span lang="en">All of "Yahoo! Japan" except the top page.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">YAHOO_JAPAN_TOP</dt>
+      <dd class="term__desc"><span lang="ja">「Yahoo! JAPANトップページ」です。</span><span lang="en">Top page of "Yahoo! Japan".</span></dd>
+      <dt class="term__item">YAHOO_JAPAN_ALL</dt>
+      <dd class="term__desc"><span lang="ja">「Yahoo! JAPAN全て」です。</span><span lang="en">All of "Yahoo! Japan".</span></dd>
+      <dt class="term__item">YAHOO_JAPAN_EXCLUSION_OF_TOP</dt>
+      <dd class="term__desc"><span lang="ja">「Yahoo! JAPANトップページ以外」です。</span><span lang="en">All of "Yahoo! Japan" except the top page.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

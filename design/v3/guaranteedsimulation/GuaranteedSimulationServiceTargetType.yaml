@@ -23,13 +23,25 @@ GuaranteedSimulationServiceTargetType:
     This field is required in requests.
     </div>
     <hr>
-    <p>* <code>AD_SCHEDULE_TARGET</code> - <span lang="ja">曜日・時間帯ターゲティング</span><span lang="en">Day of Week / Hours Targeting</span></p>
-    <p>* <code>GEO_TARGET</code> - <span lang="ja">地域ターゲティング</span><span lang="en">Geographic Targeting</span></p>
-    <p>* <code>AGE_TARGET</code> - <span lang="ja">年齢ターゲティング</span><span lang="en">Age Targeting</span></p>
-    <p>* <code>GENDER_TARGET</code> - <span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></p>
-    <p>* <code>DEVICE_TARGET</code> - <span lang="ja">デバイスターゲティング</span><span lang="en">Device Targeting</span></p>
-    <p>* <code>APP_TARGET</code> - <span lang="ja">ウェブ/アプリターゲティング</span><span lang="en">Web/App Targeting</span></p>
-    <p>* <code>OS_TARGET</code> - <span lang="ja">OSターゲティング</span><span lang="en">OS Targeting</span></p>
-    <p>* <code>AUDIENCE_CATEGORY_TARGET</code> - <span lang="ja">オーディエンスカテゴリターゲティング</span><span lang="en">Audience Category Targeting</span></p>
-    <p>* <code>PLACEMENT_CATEGORY_TARGET</code> - <span lang="ja">プレイスメントカテゴリターゲティング</span><span lang="en">Placement Category Targeting</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">AD_SCHEDULE_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">曜日・時間帯ターゲティング</span><span lang="en">Day of Week / Hours Targeting</span></dd>
+      <dt class="term__item">GEO_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">地域ターゲティング</span><span lang="en">Geographic Targeting</span></dd>
+      <dt class="term__item">AGE_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">年齢ターゲティング</span><span lang="en">Age Targeting</span></dd>
+      <dt class="term__item">GENDER_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></dd>
+      <dt class="term__item">DEVICE_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">デバイスターゲティング</span><span lang="en">Device Targeting</span></dd>
+      <dt class="term__item">APP_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">ウェブ/アプリターゲティング</span><span lang="en">Web/App Targeting</span></dd>
+      <dt class="term__item">OS_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">OSターゲティング</span><span lang="en">OS Targeting</span></dd>
+      <dt class="term__item">AUDIENCE_CATEGORY_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">オーディエンスカテゴリターゲティング</span><span lang="en">Audience Category Targeting</span></dd>
+      <dt class="term__item">PLACEMENT_CATEGORY_TARGET</dt>
+      <dd class="term__desc"><span lang="ja">プレイスメントカテゴリターゲティング</span><span lang="en">Placement Category Targeting</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

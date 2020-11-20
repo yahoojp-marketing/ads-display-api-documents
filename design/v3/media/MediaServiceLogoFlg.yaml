@@ -16,6 +16,11 @@ MediaServiceLogoFlg:
     This field is optional in ADD and SET operation.
     </div>
     <hr>
-    <p>* <code>FALSE</code> - <span lang="ja">通常画像です。</span><span lang="en">Normal image.</span></p>
-    <p>* <code>TRUE</code> - <span lang="ja">ロゴ画像です。</span><span lang="en">Logo image.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">通常画像です。</span><span lang="en">Normal image.</span></dd>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">ロゴ画像です。</span><span lang="en">Logo image.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -10,6 +10,11 @@ StatsServicePlacementUrlListType:
     <div lang="ja">StatsServicePlacementUrlListTypeは、プレイスメントURLリストの種別を表します。</div>
     <div lang="en">StatsServicePlacementUrlListType stands for the type of Placement URL list.</div>
     <hr>
-    <p>* <code>WHITE_LIST</code> - <span lang="ja">ホワイトリスト</span><span lang="en">White list.</span></p>
-    <p>* <code>BLACK_LIST</code> - <span lang="ja">ブラックリスト</span><span lang="en">Black list.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">WHITE_LIST</dt>
+      <dd class="term__desc"><span lang="ja">ホワイトリスト</span><span lang="en">White list.</span></dd>
+      <dt class="term__item">BLACK_LIST</dt>
+      <dd class="term__desc"><span lang="ja">ブラックリスト</span><span lang="en">Black list.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

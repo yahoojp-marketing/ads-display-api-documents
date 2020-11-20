@@ -17,7 +17,13 @@ GuaranteedSimulationServicePackagePermissionType:
       Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>FORBIDDEN</code> - <span lang="ja">設定不可です。</span><span lang="en">Cannot be set.</span></p>
-    <p>* <code>PERMITTED</code> - <span lang="ja">設定可能です。</span><span lang="en">Can be set.</span></p>
-    <p>* <code>FIXED</code> - <span lang="ja">固定値です。</span><span lang="en">Fixed value.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">FORBIDDEN</dt>
+      <dd class="term__desc"><span lang="ja">設定不可です。</span><span lang="en">Cannot be set.</span></dd>
+      <dt class="term__item">PERMITTED</dt>
+      <dd class="term__desc"><span lang="ja">設定可能です。</span><span lang="en">Can be set.</span></dd>
+      <dt class="term__item">FIXED</dt>
+      <dd class="term__desc"><span lang="ja">固定値です。</span><span lang="en">Fixed value.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

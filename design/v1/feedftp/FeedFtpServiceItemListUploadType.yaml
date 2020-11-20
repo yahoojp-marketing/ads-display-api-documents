@@ -16,6 +16,11 @@ FeedFtpServiceItemListUploadType:
     This field is required in ADD operation, and will be optional in SET operation.
     </div>
     <hr>
-    <p>* <code>UPDATE_PART</code> - <span lang="ja">部分更新</span><span lang="en">Update partially.</span></p>
-    <p>* <code>UPDATE_ALL</code> - <span lang="ja">全件更新</span><span lang="en">Update all.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">UPDATE_PART</dt>
+      <dd class="term__desc"><span lang="ja">部分更新</span><span lang="en">Update partially.</span></dd>
+      <dt class="term__item">UPDATE_ALL</dt>
+      <dd class="term__desc"><span lang="ja">全件更新</span><span lang="en">Update all.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

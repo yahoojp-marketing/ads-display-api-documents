@@ -19,9 +19,17 @@ RetargetingListServiceTargetListType:
     This field is required in ADD and SET operation.
     </div>
     <hr>
-    <p>* <code>DEFAULT_LIST</code> - <span lang="ja">デフォルトリストです。</span><span lang="en">Default List.</span></p>
-    <p>* <code>RULE</code> - <span lang="ja">ルール(条件)です。</span><span lang="en">Rules (conditions).</span></p>
-    <p>* <code>COMBINATION</code> - <span lang="ja">組み合わせです。</span><span lang="en">Combination.</span></p>
-    <p>* <code>SIMILARITY</code> - <span lang="ja">類似ユーザーリストです。</span><span lang="en">Similar User List.</span></p>
-    <p>* <code>CUSTOM_AUDIENCE</code> - <span lang="ja">カスタムオーディエンスリストです。</span><span lang="en">Custom Audience List.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">DEFAULT_LIST</dt>
+      <dd class="term__desc"><span lang="ja">デフォルトリストです。</span><span lang="en">Default List.</span></dd>
+      <dt class="term__item">RULE</dt>
+      <dd class="term__desc"><span lang="ja">ルール(条件)です。</span><span lang="en">Rules (conditions).</span></dd>
+      <dt class="term__item">COMBINATION</dt>
+      <dd class="term__desc"><span lang="ja">組み合わせです。</span><span lang="en">Combination.</span></dd>
+      <dt class="term__item">SIMILARITY</dt>
+      <dd class="term__desc"><span lang="ja">類似ユーザーリストです。</span><span lang="en">Similar User List.</span></dd>
+      <dt class="term__item">CUSTOM_AUDIENCE</dt>
+      <dd class="term__desc"><span lang="ja">カスタムオーディエンスリストです。</span><span lang="en">Custom Audience List.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

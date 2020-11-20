@@ -11,7 +11,13 @@ StatsServiceGender:
     <div lang="ja">StatsServiceGenderは、性別を表します。</div>
     <div lang="en">StatsServiceGender stands for the gender.</div>
     <hr>
-    <p>* <code>ST_MALE</code> - <span lang="ja">男性</span><span lang="en">Male</span></p>
-    <p>* <code>ST_FEMALE</code> - <span lang="ja">女性</span><span lang="en">Female</span></p>
-    <p>* <code>ST_UNKNOWN</code> - <span lang="ja">性別不明</span><span lang="en">Unknown</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">ST_MALE</dt>
+      <dd class="term__desc"><span lang="ja">男性</span><span lang="en">Male</span></dd>
+      <dt class="term__item">ST_FEMALE</dt>
+      <dd class="term__desc"><span lang="ja">女性</span><span lang="en">Female</span></dd>
+      <dt class="term__item">ST_UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">性別不明</span><span lang="en">Unknown</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

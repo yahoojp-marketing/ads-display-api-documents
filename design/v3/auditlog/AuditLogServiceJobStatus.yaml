@@ -17,7 +17,13 @@ AuditLogServiceJobStatus:
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>IN_PROGRESS</code> - <span lang="ja">処理中です。</span><span lang="en">Job is in progress.</span></p>
-    <p>* <code>COMPLETED</code> - <span lang="ja">処理終了です。</span><span lang="en">Job is completed.</span></p>
-    <p>* <code>SYSTEM_ERROR</code> - <span lang="ja">システムエラーです。</span><span lang="en">System error.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">IN_PROGRESS</dt>
+      <dd class="term__desc"><span lang="ja">処理中です。</span><span lang="en">Job is in progress.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">処理終了です。</span><span lang="en">Job is completed.</span></dd>
+      <dt class="term__item">SYSTEM_ERROR</dt>
+      <dd class="term__desc"><span lang="ja">システムエラーです。</span><span lang="en">System error.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

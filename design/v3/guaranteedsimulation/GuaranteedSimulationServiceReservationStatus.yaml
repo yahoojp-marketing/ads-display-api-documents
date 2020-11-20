@@ -17,7 +17,13 @@ GuaranteedSimulationServiceReservationStatus:
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>RESERVABLE</code> - <span lang="ja">予約可能です。</span><span lang="en">Can be reserved.</span></p>
-    <p>* <code>UNRESERVABLE</code> - <span lang="ja">予約不可能です。</span><span lang="en">Cannot be reserved.</span></p>
-    <p>* <code>RESERVED</code> - <span lang="ja">予約済みです。</span><span lang="en">Reserved.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">RESERVABLE</dt>
+      <dd class="term__desc"><span lang="ja">予約可能です。</span><span lang="en">Can be reserved.</span></dd>
+      <dt class="term__item">UNRESERVABLE</dt>
+      <dd class="term__desc"><span lang="ja">予約不可能です。</span><span lang="en">Cannot be reserved.</span></dd>
+      <dt class="term__item">RESERVED</dt>
+      <dd class="term__desc"><span lang="ja">予約済みです。</span><span lang="en">Reserved.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

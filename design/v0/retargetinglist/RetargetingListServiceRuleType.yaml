@@ -15,11 +15,21 @@ RetargetingListServiceRuleType:
     <div lang="ja">RetargetingListServiceRuleTypeは、ルールタイプのリストの種類を表示します。</div>
     <div lang="en">RetargetingListServiceRuleType display the type of the rule.</div>
     <hr>
-    <p>* <code>URL</code> - <span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></p>
-    <p>* <code>LABEL</code> - <span lang="ja">カスタムラベルを利用したリスト設定</span><span lang="en">List setting using the Custom label.</span></p>
-    <p>* <code>REFERER_URL</code> - <span lang="ja">リファラURLを利用したリスト設定</span><span lang="en">List setting using the Referer URL.</span></p>
-    <p>* <code>PAGE_TYPE</code> - <span lang="ja">ページ種別を利用したリスト設定</span><span lang="en">List setting using the page type.</span></p>
-    <p>* <code>ITEM_ID</code> - <span lang="ja">アイテムIDを利用したリスト設定</span><span lang="en">List setting using the Item ID.</span></p>
-    <p>* <code>ITEM_CATEGORY_ID</code> - <span lang="ja">アイテムカテゴリーを利用したリスト設定</span><span lang="en">List setting using the Item category.</span></p>
-    <p>* <code>EVENT_TYPE</code> - <span lang="ja">イベント種別を利用したリスト設定</span><span lang="en">List setting using the event type.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></dd>
+      <dt class="term__item">LABEL</dt>
+      <dd class="term__desc"><span lang="ja">カスタムラベルを利用したリスト設定</span><span lang="en">List setting using the Custom label.</span></dd>
+      <dt class="term__item">REFERER_URL</dt>
+      <dd class="term__desc"><span lang="ja">リファラURLを利用したリスト設定</span><span lang="en">List setting using the Referer URL.</span></dd>
+      <dt class="term__item">PAGE_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">ページ種別を利用したリスト設定</span><span lang="en">List setting using the page type.</span></dd>
+      <dt class="term__item">ITEM_ID</dt>
+      <dd class="term__desc"><span lang="ja">アイテムIDを利用したリスト設定</span><span lang="en">List setting using the Item ID.</span></dd>
+      <dt class="term__item">ITEM_CATEGORY_ID</dt>
+      <dd class="term__desc"><span lang="ja">アイテムカテゴリーを利用したリスト設定</span><span lang="en">List setting using the Item category.</span></dd>
+      <dt class="term__item">EVENT_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">イベント種別を利用したリスト設定</span><span lang="en">List setting using the event type.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

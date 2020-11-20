@@ -11,7 +11,13 @@ SearchKeywordListServiceKeywordFrequency:
     <div lang="ja">SearchKeywordListServiceKeywordFrequencyは、サーチキーワードの検索回数を表します。</div>
     <div lang="en">SearchKeywordListServiceKeywordFrequency is an object for storing the search frequency information on Search Keyword.</div>
     <hr>
-    <p>* <code>ONCE_OR_MORE</code> - <span lang="ja">1回以上。</span><span lang="en">once or more</span></p>
-    <p>* <code>TWICE_OR_MORE</code> - <span lang="ja">2回以上。</span><span lang="en">twice or more</span></p>
-    <p>* <code>THREE_TIMES_OR_MORE</code> - <span lang="ja">3回以上。</span><span lang="en">three times or more</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">ONCE_OR_MORE</dt>
+      <dd class="term__desc"><span lang="ja">1回以上。</span><span lang="en">once or more</span></dd>
+      <dt class="term__item">TWICE_OR_MORE</dt>
+      <dd class="term__desc"><span lang="ja">2回以上。</span><span lang="en">twice or more</span></dd>
+      <dt class="term__item">THREE_TIMES_OR_MORE</dt>
+      <dd class="term__desc"><span lang="ja">3回以上。</span><span lang="en">three times or more</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

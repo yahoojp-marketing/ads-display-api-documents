@@ -17,7 +17,13 @@ GuaranteedSimulationServiceBuyingTermType:
       Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>SINGLE_DAY</code> - <span lang="ja">単一日です。</span><span lang="en">Single day.</span></p>
-    <p>* <code>SINGLE_TERM</code> - <span lang="ja">単一期間です。</span><span lang="en">Single term.</span></p>
-    <p>* <code>CUSTOM_RANGE</code> - <span lang="ja">任意の範囲です。</span><span lang="en">Custom range.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">SINGLE_DAY</dt>
+      <dd class="term__desc"><span lang="ja">単一日です。</span><span lang="en">Single day.</span></dd>
+      <dt class="term__item">SINGLE_TERM</dt>
+      <dd class="term__desc"><span lang="ja">単一期間です。</span><span lang="en">Single term.</span></dd>
+      <dt class="term__item">CUSTOM_RANGE</dt>
+      <dd class="term__desc"><span lang="ja">任意の範囲です。</span><span lang="en">Custom range.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

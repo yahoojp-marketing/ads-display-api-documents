@@ -16,6 +16,11 @@ GuaranteedSimulationServicePriceType:
       Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>VIMPS_CUSTOM</code> - <span lang="ja">vimps購入型（変動）</span><span lang="en">Vimps purchase type (variable)</span></p>
-    <p>* <code>VIMPS_REACH</code> - <span lang="ja">vimps購入型（リーチ固定）</span><span lang="en">Vimps purchase type (fixed reach)</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">VIMPS_CUSTOM</dt>
+      <dd class="term__desc"><span lang="ja">vimps購入型（変動）</span><span lang="en">Vimps purchase type (variable)</span></dd>
+      <dt class="term__item">VIMPS_REACH</dt>
+      <dd class="term__desc"><span lang="ja">vimps購入型（リーチ固定）</span><span lang="en">Vimps purchase type (fixed reach)</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

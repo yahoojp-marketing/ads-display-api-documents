@@ -17,7 +17,13 @@ ReportDefinitionServiceFrequencyRange:
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
     <hr>
-    <p>* <code>DAILY</code> - <span lang="ja">1日単位です。</span><span lang="en">Daily range.</span></p>
-    <p>* <code>WEEKLY</code> - <span lang="ja">1週間単位です。</span><span lang="en">Weekly range.</span></p>
-    <p>* <code>MONTHLY</code> - <span lang="ja">1ヶ月単位です。</span><span lang="en">Monthly range.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">DAILY</dt>
+      <dd class="term__desc"><span lang="ja">1日単位です。</span><span lang="en">Daily range.</span></dd>
+      <dt class="term__item">WEEKLY</dt>
+      <dd class="term__desc"><span lang="ja">1週間単位です。</span><span lang="en">Weekly range.</span></dd>
+      <dt class="term__item">MONTHLY</dt>
+      <dd class="term__desc"><span lang="ja">1ヶ月単位です。</span><span lang="en">Monthly range.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

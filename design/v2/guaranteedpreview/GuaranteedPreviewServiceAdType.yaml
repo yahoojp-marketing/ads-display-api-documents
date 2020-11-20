@@ -20,10 +20,19 @@ GuaranteedPreviewServiceAdType:
     This field is required in requests.
     </div>	
     <hr>	
-    <p>* <code>BRANDPANEL_QUINTIE</code> - <span lang="ja">予約型専用広告：16:9の縮小機能付き画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 image with reduction function.</span></p>
-    <p>* <code>BRANDPANEL_QUINTIE_VIDEO</code> - <span lang="ja">予約型専用広告：16:9の縮小機能付き動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 video with reduction function.</span></p>
-    <p>* <code>TOP_IMPACT_SQUARE</code> - <span lang="ja">予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.</span></p>
-    <p>* <code>TOP_IMPACT_SQUARE_VIDEO</code> - <span lang="ja">予約型専用広告：メインの1:1の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 video, the center image, the right side image, and the left side image.</span></p>
-    <p>* <code>TOP_IMPACT_QUINTIE</code> - <span lang="ja">予約型専用広告：メインの16:9の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 image with reduction function, the center image, the right side image, and the left side image.</span></p>
-    <p>* <code>TOP_IMPACT_QUINTIE_VIDEO</code> - <span lang="ja">予約型専用広告：メインの16:9の縮小機能付き動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 video with reduction function, the center image, the right side image, and the left side image.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">BRANDPANEL_QUINTIE</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 image with reduction function.</span></dd>
+      <dt class="term__item">BRANDPANEL_QUINTIE_VIDEO</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 video with reduction function.</span></dd>
+      <dt class="term__item">TOP_IMPACT_SQUARE</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.</span></dd>
+      <dt class="term__item">TOP_IMPACT_SQUARE_VIDEO</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 video, the center image, the right side image, and the left side image.</span></dd>
+      <dt class="term__item">TOP_IMPACT_QUINTIE</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 image with reduction function, the center image, the right side image, and the left side image.</span></dd>
+      <dt class="term__item">TOP_IMPACT_QUINTIE_VIDEO</dt>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の縮小機能付き動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 video with reduction function, the center image, the right side image, and the left side image.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

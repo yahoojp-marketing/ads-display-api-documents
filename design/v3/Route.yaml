@@ -1932,10 +1932,16 @@ paths:
             </div>
             </div>
             <hr>
-            <p>* <code>IDFA</code> - <span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></li>
-            <p>* <code>AAID</code> - <span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></li>
-            <p>* <code>MAIL_ADDRESS</code> - <span lang="ja">ハッシュ化メールアドレスです。</span><span lang="en">Hashed email address.</span></li>
-            <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+            <dl class=term>
+              <dt class="term__item"><code>IDFA</dt>
+              <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></dd>
+              <dt class="term__item"><code>AAID</dt>
+              <dd class="term__desc"><span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></dd>
+              <dt class="term__item"><code>MAIL_ADDRESS</dt>
+              <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスです。</span><span lang="en">Hashed email address.</span></dd>
+              <dt class="term__item"><code>UNKNOWN</dt>
+              <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+            </dl>
         - in: query
           name: compressType
           schema:
@@ -1945,10 +1951,16 @@ paths:
             <div lang="ja">RetargetingListServiceUploadUserListCompressTypeは、アップロードするファイルの圧縮形式を表します。</div>
             <div lang="en">RetargetingListServiceUploadUserListCompressType displays kind of compress type of upload file.</div>
             <hr>
-            <p>* <code>NONE</code> - <span lang="ja">非圧縮形式です。</span><span lang="en">Uncompressed format.</span></p>
-            <p>* <code>ZIP</code> - <span lang="ja">ZIP形式です。</span><span lang="en">ZIP format. </span></p>
-            <p>* <code>GZIP</code> - <span lang="ja">GZIP形式です。</span><span lang="en">GZIP format.</span></p>
-            <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+            <dl class=term>
+              <dt class="term__item"><code>NONE</dt>
+              <dd class="term__desc"><span lang="ja">非圧縮形式です。</span><span lang="en">Uncompressed format.</span></dd>
+              <dt class="term__item"><code>ZIP</dt>
+              <dd class="term__desc"><span lang="ja">ZIP形式です。</span><span lang="en">ZIP format. </span></dd>
+              <dt class="term__item"><code>GZIP</dt>
+              <dd class="term__desc"><span lang="ja">GZIP形式です。</span><span lang="en">GZIP format.</span></dd>
+              <dt class="term__item"><code>UNKNOWN</dt>
+              <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+            </dl>
         - in: query
           name: customUserId
           schema:

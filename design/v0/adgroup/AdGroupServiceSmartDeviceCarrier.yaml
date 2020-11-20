@@ -14,10 +14,19 @@ AdGroupServiceSmartDeviceCarrier:
     <div lang="ja">AdGroupServiceSmartDeviceCarrierは、スマートデバイスのモバイルキャリアを表します。</div>
     <div lang="en">AdGroupServiceSmartDeviceCarrier serves the carrier type of smart device.</div>
     <hr>
-    <p>* <code>DOCOMO</code> - <span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></p>
-    <p>* <code>KDDI</code> - <span lang="ja">au KDDIです。</span><span lang="en">au KDDI</span></p>
-    <p>* <code>SOFTBANK</code> - <span lang="ja">ソフトバンクモバイルです。</span><span lang="en">SoftBank Mobile</span></p>
-    <p>* <code>YMOBILE</code> - <span lang="ja">Y!mobileです。</span><span lang="en">Y!mobile</span></p>
-    <p>* <code>OTHERS</code> - <span lang="ja">その他のモバイルキャリアです。</span><span lang="en">Other mobile carriers.</span></p>
-    <p>* <code>NONE</code> - <span lang="ja">未設定です。</span><span lang="en">no setting</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">DOCOMO</dt>
+      <dd class="term__desc"><span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></dd>
+      <dt class="term__item">KDDI</dt>
+      <dd class="term__desc"><span lang="ja">au KDDIです。</span><span lang="en">au KDDI</span></dd>
+      <dt class="term__item">SOFTBANK</dt>
+      <dd class="term__desc"><span lang="ja">ソフトバンクモバイルです。</span><span lang="en">SoftBank Mobile</span></dd>
+      <dt class="term__item">YMOBILE</dt>
+      <dd class="term__desc"><span lang="ja">Y!mobileです。</span><span lang="en">Y!mobile</span></dd>
+      <dt class="term__item">OTHERS</dt>
+      <dd class="term__desc"><span lang="ja">その他のモバイルキャリアです。</span><span lang="en">Other mobile carriers.</span></dd>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">未設定です。</span><span lang="en">no setting</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

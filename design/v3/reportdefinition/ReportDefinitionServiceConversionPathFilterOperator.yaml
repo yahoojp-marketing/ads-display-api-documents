@@ -20,10 +20,19 @@ ReportDefinitionServiceConversionPathFilterOperator:
       This field is optional in ADD operation, and will be ignored in REMOVE operation. 
     </div>
     <hr>
-    <p>* <code>EQUALS</code> - <span lang="ja">完全一致する対象を含む経路です。</span><span lang="en">A path that includes an exact match target.</span></p>
-    <p>* <code>NOT_EQUALS</code> - <span lang="ja">完全一致する対象を含まない経路です。</span><span lang="en">A path that does not include an exact match target.</span></p>
-    <p>* <code>CONTAINS</code> - <span lang="ja">部分一致する対象を含む経路です。</span><span lang="en">A path that includes a broad match target.</span></p>
-    <p>* <code>NOT_CONTAINS</code> - <span lang="ja">部分一致する対象を含まない経路です。</span><span lang="en">A path that does not include a broad match target.</span></p>
-    <p>* <code>START_WITH</code> - <span lang="ja">前方一致する対象を含む経路です。</span><span lang="en">A path that includes prefix match target.</span></p>
-    <p>* <code>END_WITH</code> - <span lang="ja">後方一致する対象を含む経路です。</span><span lang="en">A path that includes backward match target. </span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">完全一致する対象を含む経路です。</span><span lang="en">A path that includes an exact match target.</span></dd>
+      <dt class="term__item">NOT_EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">完全一致する対象を含まない経路です。</span><span lang="en">A path that does not include an exact match target.</span></dd>
+      <dt class="term__item">CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">部分一致する対象を含む経路です。</span><span lang="en">A path that includes a broad match target.</span></dd>
+      <dt class="term__item">NOT_CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">部分一致する対象を含まない経路です。</span><span lang="en">A path that does not include a broad match target.</span></dd>
+      <dt class="term__item">START_WITH</dt>
+      <dd class="term__desc"><span lang="ja">前方一致する対象を含む経路です。</span><span lang="en">A path that includes prefix match target.</span></dd>
+      <dt class="term__item">END_WITH</dt>
+      <dd class="term__desc"><span lang="ja">後方一致する対象を含む経路です。</span><span lang="en">A path that includes backward match target. </span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

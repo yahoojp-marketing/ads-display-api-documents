@@ -12,8 +12,15 @@ MediaServiceApprovalStatus:
     <div lang="ja">MediaServiceApprovalStatusは、画像の審査の状況です。</div>
     <div lang="en">MediaServiceApprovalStatus serves the approval status of media.</div>
     <hr>
-    <p>* <code>POST_DISAPPROVED</code> - <span lang="ja">事後審査否認のため掲載停止です。</span><span lang=" en">The item was taken offline due to a post review.</span></p>
-    <p>* <code>APPROVED</code> - <span lang="ja">審査済みです。</span><span lang="en">The item was approved.</span></p>
-    <p>* <code>REVIEW</code> - <span lang="ja">審査中です。</span><span lang="en">Under editorial review.</span></p>
-    <p>* <code>PRE_DISAPPROVED</code> - <span lang="ja">事前審査否認のため掲載不可です。</span><span lang="en">The item was rejected.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">POST_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">事後審査否認のため掲載停止です。</span><span lang=" en">The item was taken offline due to a post review.</span></dd>
+      <dt class="term__item">APPROVED</dt>
+      <dd class="term__desc"><span lang="ja">審査済みです。</span><span lang="en">The item was approved.</span></dd>
+      <dt class="term__item">REVIEW</dt>
+      <dd class="term__desc"><span lang="ja">審査中です。</span><span lang="en">Under editorial review.</span></dd>
+      <dt class="term__item">PRE_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">事前審査否認のため掲載不可です。</span><span lang="en">The item was rejected.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -16,6 +16,11 @@ GuaranteedSimulationServicePackagePublicLevel:
       Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>PUBLIC</code> - <span lang="ja">一般公開されている商品です。</span><span lang="en">Public package.</span></p>
-    <p>* <code>LIMITED</code> - <span lang="ja">限定公開の商品です。</span><span lang="en">Limited release package.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">PUBLIC</dt>
+      <dd class="term__desc"><span lang="ja">一般公開されている商品です。</span><span lang="en">Public package.</span></dd>
+      <dt class="term__item">LIMITED</dt>
+      <dd class="term__desc"><span lang="ja">限定公開の商品です。</span><span lang="en">Limited release package.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

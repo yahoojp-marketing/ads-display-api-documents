@@ -16,6 +16,11 @@ GuaranteedPreviewServiceMaterialType:
     This field is required in requests.
     </div>
     <hr>	
-    <p>* <code>AD</code> - <span lang="ja">ADのプレビュー素材です。</span><span lang="en">Preview material of AD.</span></p>
-    <p>* <code>MEDIA</code> - <span lang="ja">MEDIAのプレビュー素材です。</span><span lang="en">Preview material of MEDIA.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">AD</dt>
+      <dd class="term__desc"><span lang="ja">ADのプレビュー素材です。</span><span lang="en">Preview material of AD.</span></dd>
+      <dt class="term__item">MEDIA</dt>
+      <dd class="term__desc"><span lang="ja">MEDIAのプレビュー素材です。</span><span lang="en">Preview material of MEDIA.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

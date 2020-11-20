@@ -18,14 +18,27 @@ ReportDefinitionServiceFilterOperator:
     <div lang="ja">ReportDefinitionServiceFilterOperatorオブジェクトは、フィルターで指定できる演算子を表します。</div>
     <div lang="en">ReportDefinitionServiceFilterOperator object displays the operator to be specified by filter.</div>
     <hr>
-    <p>* <code>NOT_EQUALS</code> - <span lang="ja">≠</span><span lang="en">≠</span></p>
-    <p>* <code>CONTAINS_ANY</code> - <span lang="ja">指定したいずれかの値を含む（リスト項目専用）</span><span lang="en">Contains any of specified values (used for list only)</span></p>
-    <p>* <code>EQUALS</code> - <span lang="ja">=</span><span lang="en">=</span></p>
-    <p>* <code>GREATER_THAN_EQUALS</code> - <span lang="ja">≧</span><span lang="en">≧</span></p>
-    <p>* <code>LESS_THAN_EQUALS</code> - <span lang="ja">≦</span><span lang="en">≦</span></p>
-    <p>* <code>GREATER_THAN</code> - <span lang="ja">＞</span><span lang="en">＞</span></p>
-    <p>* <code>LESS_THAN</code> - <span lang="ja">＜</span><span lang="en">＜</span></p>
-    <p>* <code>CONTAINS</code> - <span lang="ja">部分一致</span><span lang="en">contains</span></p>
-    <p>* <code>IN</code> - <span lang="ja">いずれかに一致</span><span lang="en">in</span></p>
-    <p>* <code>CONTAINS_ALL</code> - <span lang="ja">指定した全ての値を含む（リスト項目専用）</span><span lang="en">Contains all of specified values (used for list only)</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">NOT_EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">≠</span><span lang="en">≠</span></dd>
+      <dt class="term__item">CONTAINS_ANY</dt>
+      <dd class="term__desc"><span lang="ja">指定したいずれかの値を含む（リスト項目専用）</span><span lang="en">Contains any of specified values (used for list only)</span></dd>
+      <dt class="term__item">EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">=</span><span lang="en">=</span></dd>
+      <dt class="term__item">GREATER_THAN_EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">≧</span><span lang="en">≧</span></dd>
+      <dt class="term__item">LESS_THAN_EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">≦</span><span lang="en">≦</span></dd>
+      <dt class="term__item">GREATER_THAN</dt>
+      <dd class="term__desc"><span lang="ja">＞</span><span lang="en">＞</span></dd>
+      <dt class="term__item">LESS_THAN</dt>
+      <dd class="term__desc"><span lang="ja">＜</span><span lang="en">＜</span></dd>
+      <dt class="term__item">CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">部分一致</span><span lang="en">contains</span></dd>
+      <dt class="term__item">IN</dt>
+      <dd class="term__desc"><span lang="ja">いずれかに一致</span><span lang="en">in</span></dd>
+      <dt class="term__item">CONTAINS_ALL</dt>
+      <dd class="term__desc"><span lang="ja">指定した全ての値を含む（リスト項目専用）</span><span lang="en">Contains all of specified values (used for list only)</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

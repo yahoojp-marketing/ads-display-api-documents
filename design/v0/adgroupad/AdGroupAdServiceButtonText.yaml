@@ -25,21 +25,41 @@ AdGroupAdServiceButtonText:
     <div lang="ja">AdGroupAdServiceButtonTextはボタンテキストを表します。</div>
     <div lang="en">AdGroupAdServiceButtonText displays the button text.</div>
     <hr>
-    <p>* <code>INSTALL</code> - <span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></p>
-    <p>* <code>MORE_DETAIL</code> - <span lang="ja">「詳しくはこちら」ボタンです。（デフォルト値です）</span><span lang="en">&#34;More detail.&#34; button.（Default）</span></p>
-    <p>* <code>CONFIRM_PROPERTY</code> - <span lang="ja">「物件を見る」ボタンです。</span><span lang="en">&#34;Confirm property.&#34; button.</span></p>
-    <p>* <code>DOWNLOAD</code> - <span lang="ja">「ダウンロード」ボタンです。</span><span lang="en">&#34;Download.&#34; button.</span></p>
-    <p>* <code>REGISTER</code> - <span lang="ja">「ご登録はこちら」ボタンです。</span><span lang="en">&#34;Register here.&#34; button.</span></p>
-    <p>* <code>PURCHASE_NOW</code> - <span lang="ja">「今すぐ購入」ボタンです。</span><span lang="en">&#34;Buy now.&#34; button.</span></p>
-    <p>* <code>REQUEST_INFO</code> - <span lang="ja">「資料請求」ボタンです。</span><span lang="en">&#34;Request information.&#34; button.</span></p>
-    <p>* <code>RESERVE_NOW</code> - <span lang="ja">「今すぐ予約」ボタンです。</span><span lang="en">&#34;Reserve now.&#34; button.</span></p>
-    <p>* <code>REGISTER_NOW</code> - <span lang="ja">「今すぐ登録」ボタンです。</span><span lang="en">&#34;Register now.&#34; button.</span></p>
-    <p>* <code>EXPERIENCE</code> - <span lang="ja">「体験する」ボタンです。</span><span lang="en">&#34;Experience.&#34; button.</span></p>
-    <p>* <code>RESERVE_HERE</code> - <span lang="ja">「ご予約はこちら」ボタンです。</span><span lang="en">&#34;Reserve here.&#34; button.</span></p>
-    <p>* <code>APPLY_NOW</code> - <span lang="ja">「今すぐ申込む」ボタンです。</span><span lang="en">&#34;Apply now.&#34; button.</span></p>
-    <p>* <code>FOR_MORE_INFO</code> - <span lang="ja">「もっとみる」ボタンです。</span><span lang="en">&#34;More information.&#34; button.</span></p>
-    <p>* <code>PURCHASE</code> - <span lang="ja">「ご購入はこちら」ボタンです。</span><span lang="en">&#34;Buy here.&#34; button.</span></p>
-    <p>* <code>CONTACT_US</code> - <span lang="ja">「お問い合わせ」ボタンです。</span><span lang="en">&#34;Contact us.&#34; button.</span></p>
-    <p>* <code>CONFIRM_NOW</code> - <span lang="ja">「今すぐチェック」ボタンです。</span><span lang="en">&#34;Check now.&#34; button.</span></p>
-    <p>* <code>APPLY_HERE</code> - <span lang="ja">「お申込みはこちら」ボタンです。</span><span lang="en">&#34;Click here to apply.&#34; button.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">INSTALL</dt>
+      <dd class="term__desc"><span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></dd>
+      <dt class="term__item">MORE_DETAIL</dt>
+      <dd class="term__desc"><span lang="ja">「詳しくはこちら」ボタンです。（デフォルト値です）</span><span lang="en">&#34;More detail.&#34; button.（Default）</span></dd>
+      <dt class="term__item">CONFIRM_PROPERTY</dt>
+      <dd class="term__desc"><span lang="ja">「物件を見る」ボタンです。</span><span lang="en">&#34;Confirm property.&#34; button.</span></dd>
+      <dt class="term__item">DOWNLOAD</dt>
+      <dd class="term__desc"><span lang="ja">「ダウンロード」ボタンです。</span><span lang="en">&#34;Download.&#34; button.</span></dd>
+      <dt class="term__item">REGISTER</dt>
+      <dd class="term__desc"><span lang="ja">「ご登録はこちら」ボタンです。</span><span lang="en">&#34;Register here.&#34; button.</span></dd>
+      <dt class="term__item">PURCHASE_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ購入」ボタンです。</span><span lang="en">&#34;Buy now.&#34; button.</span></dd>
+      <dt class="term__item">REQUEST_INFO</dt>
+      <dd class="term__desc"><span lang="ja">「資料請求」ボタンです。</span><span lang="en">&#34;Request information.&#34; button.</span></dd>
+      <dt class="term__item">RESERVE_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ予約」ボタンです。</span><span lang="en">&#34;Reserve now.&#34; button.</span></dd>
+      <dt class="term__item">REGISTER_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ登録」ボタンです。</span><span lang="en">&#34;Register now.&#34; button.</span></dd>
+      <dt class="term__item">EXPERIENCE</dt>
+      <dd class="term__desc"><span lang="ja">「体験する」ボタンです。</span><span lang="en">&#34;Experience.&#34; button.</span></dd>
+      <dt class="term__item">RESERVE_HERE</dt>
+      <dd class="term__desc"><span lang="ja">「ご予約はこちら」ボタンです。</span><span lang="en">&#34;Reserve here.&#34; button.</span></dd>
+      <dt class="term__item">APPLY_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ申込む」ボタンです。</span><span lang="en">&#34;Apply now.&#34; button.</span></dd>
+      <dt class="term__item">FOR_MORE_INFO</dt>
+      <dd class="term__desc"><span lang="ja">「もっとみる」ボタンです。</span><span lang="en">&#34;More information.&#34; button.</span></dd>
+      <dt class="term__item">PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">「ご購入はこちら」ボタンです。</span><span lang="en">&#34;Buy here.&#34; button.</span></dd>
+      <dt class="term__item">CONTACT_US</dt>
+      <dd class="term__desc"><span lang="ja">「お問い合わせ」ボタンです。</span><span lang="en">&#34;Contact us.&#34; button.</span></dd>
+      <dt class="term__item">CONFIRM_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐチェック」ボタンです。</span><span lang="en">&#34;Check now.&#34; button.</span></dd>
+      <dt class="term__item">APPLY_HERE</dt>
+      <dd class="term__desc"><span lang="ja">「お申込みはこちら」ボタンです。</span><span lang="en">&#34;Click here to apply.&#34; button.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

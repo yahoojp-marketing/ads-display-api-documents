@@ -24,14 +24,27 @@ ReportDefinitionServiceType:
       For ReportDefinitionServiceReportTypeCondition, only <code>CONVERSION_PATH</code>, <code>CROSS_CAMPAIGN_REACHES</code>, <code>FREQUENCY</code>, <code>REACH</code> can be specified. 
     </div>
     <hr>
-    <p>* <code>AD</code> - <span lang="ja">以下のレポートを表します：<br>・アカウントレポート<br>・キャンペーンレポート<br>・広告グループレポート<br>・広告レポート<br>・リンク先URLレポート<br></span><span lang="en">Represents the type of report below:<br>・Account Report<br>・Campaign Report<br>・Ad Group Report<br>・Ad Report<br>・Destination URL Report<br></span></p>
-    <p>* <code>AUDIENCE_CATEGORY</code> - <span lang="ja">オーディエンスカテゴリーレポートです。</span><span lang="en">Audience Category Report.</span></p>
-    <p>* <code>CONVERSION_PATH</code> - <span lang="ja">コンバージョン経路レポートです。</span><span lang="en">Conversion Path Report.</span></p>
-    <p>* <code>CROSS_CAMPAIGN_REACHES</code> - <span lang="ja">横断リーチレポートです。</span><span lang="en">Cross-campaign Reach Report. </span></p>
-    <p>* <code>FREQUENCY</code> - <span lang="ja">リーチフリークエンシーレポートです。</span><span lang="en">Reach Frequency Report.</span></p>
-    <p>* <code>INTEREST_CATEGORY</code> - <span lang="ja">インタレストカテゴリーレポートです。</span><span lang="en">Interest Category Report.</span></p>
-    <p>* <code>LABEL</code> - <span lang="ja">ラベル</span><span lang="en">Label.</span></p>
-    <p>* <code>SITE_CATEGORY</code> - <span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></p>
-    <p>* <code>REACH</code> - <span lang="ja">リーチレポートです。</span><span lang="en">Reach Report.</span></p>
-    <p>* <code>URL</code> - <span lang="ja">配信先URLレポートです。</span><span lang="en">Ad Delivery URL Report.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">AD</dt>
+      <dd class="term__desc"><span lang="ja">以下のレポートを表します：<br>・アカウントレポート<br>・キャンペーンレポート<br>・広告グループレポート<br>・広告レポート<br>・リンク先URLレポート<br></span><span lang="en">Represents the type of report below:<br>・Account Report<br>・Campaign Report<br>・Ad Group Report<br>・Ad Report<br>・Destination URL Report<br></span></dd>
+      <dt class="term__item">AUDIENCE_CATEGORY</dt>
+      <dd class="term__desc"><span lang="ja">オーディエンスカテゴリーレポートです。</span><span lang="en">Audience Category Report.</span></dd>
+      <dt class="term__item">CONVERSION_PATH</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン経路レポートです。</span><span lang="en">Conversion Path Report.</span></dd>
+      <dt class="term__item">CROSS_CAMPAIGN_REACHES</dt>
+      <dd class="term__desc"><span lang="ja">横断リーチレポートです。</span><span lang="en">Cross-campaign Reach Report. </span></dd>
+      <dt class="term__item">FREQUENCY</dt>
+      <dd class="term__desc"><span lang="ja">リーチフリークエンシーレポートです。</span><span lang="en">Reach Frequency Report.</span></dd>
+      <dt class="term__item">INTEREST_CATEGORY</dt>
+      <dd class="term__desc"><span lang="ja">インタレストカテゴリーレポートです。</span><span lang="en">Interest Category Report.</span></dd>
+      <dt class="term__item">LABEL</dt>
+      <dd class="term__desc"><span lang="ja">ラベル</span><span lang="en">Label.</span></dd>
+      <dt class="term__item">SITE_CATEGORY</dt>
+      <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></dd>
+      <dt class="term__item">REACH</dt>
+      <dd class="term__desc"><span lang="ja">リーチレポートです。</span><span lang="en">Reach Report.</span></dd>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">配信先URLレポートです。</span><span lang="en">Ad Delivery URL Report.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

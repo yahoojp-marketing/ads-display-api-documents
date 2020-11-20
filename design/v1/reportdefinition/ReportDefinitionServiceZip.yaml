@@ -16,6 +16,11 @@ ReportDefinitionServiceZip:
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
     <hr>
-    <p>* <code>ON</code> - <span lang="ja">ZIP型式で圧縮されます。</span><span lang="en">ZIP compressed</span></p>
-    <p>* <code>OFF</code> - <span lang="ja">ZIP型式で圧縮されません。</span><span lang="en">Not ZIP compressed</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">ON</dt>
+      <dd class="term__desc"><span lang="ja">ZIP型式で圧縮されます。</span><span lang="en">ZIP compressed</span></dd>
+      <dt class="term__item">OFF</dt>
+      <dd class="term__desc"><span lang="ja">ZIP型式で圧縮されません。</span><span lang="en">Not ZIP compressed</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

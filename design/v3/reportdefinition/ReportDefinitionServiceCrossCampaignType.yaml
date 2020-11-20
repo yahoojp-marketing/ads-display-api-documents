@@ -17,7 +17,13 @@ ReportDefinitionServiceCrossCampaignType:
       This field is required in ADD operation. 
     </div>
     <hr>
-    <p>* <code>CAMPAIGN_ID</code> - <span lang="ja">キャンペーンIDの組み合わせです。</span><span lang="en">Combination of campaign ID.</span></p>
-    <p>* <code>CAMPAIGN_GOAL</code> - <span lang="ja">キャンペーン目的の組み合わせです。</span><span lang="en">Combination of campaign goal.</span></p>
-    <p>* <code>CAMPAIGN_BUYING_TYPE</code> - <span lang="ja">キャンペーン購入タイプの組み合わせです。</span><span lang="en">Combination of campaign buying type.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">CAMPAIGN_ID</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーンIDの組み合わせです。</span><span lang="en">Combination of campaign ID.</span></dd>
+      <dt class="term__item">CAMPAIGN_GOAL</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーン目的の組み合わせです。</span><span lang="en">Combination of campaign goal.</span></dd>
+      <dt class="term__item">CAMPAIGN_BUYING_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーン購入タイプの組み合わせです。</span><span lang="en">Combination of campaign buying type.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

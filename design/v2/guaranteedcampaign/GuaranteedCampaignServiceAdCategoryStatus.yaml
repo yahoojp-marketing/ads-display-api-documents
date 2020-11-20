@@ -16,6 +16,11 @@ GuaranteedCampaignServiceAdCategoryStatus:
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>
-    <p>* <code>ADDED</code> - <span lang="ja">広告カテゴリーを設定済みです。</span><span lang="en">Ad Category is already specified.</span></p>
-    <p>* <code>NONE</code> - <span lang="ja">広告カテゴリーの設定はありません。</span><span lang="en">Ad Category is not specified.</span></p>
-    <p>* <code>UNKNOWN</code> - <span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></p>
+    <dl class=term>
+      <dt class="term__item">ADDED</dt>
+      <dd class="term__desc"><span lang="ja">広告カテゴリーを設定済みです。</span><span lang="en">Ad Category is already specified.</span></dd>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">広告カテゴリーの設定はありません。</span><span lang="en">Ad Category is not specified.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
