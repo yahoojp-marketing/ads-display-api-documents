@@ -9,11 +9,11 @@ AccountServiceCanManageAccounts:
   description: |
     <div lang="ja">
     AccountServiceCanManageAccountsは、マネージャアカウントかどうかを表します。<br>
-    ※v4以降提供開始
+    ※現在利用できません
     </div>
     <div lang="en">
     AccountServiceCanManageAccounts indicates whether it is a manager account.<br>
-    * This is available from v4.
+    * Not Available.
     </div>
     <hr>
     <dl class=term>

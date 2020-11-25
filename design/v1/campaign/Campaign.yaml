@@ -21,15 +21,13 @@ Campaign:
       description: |
         <div lang="ja">
         配信方法です。<br>
-        ADD時、このフィールドは目的なしの場合は必須となり、目的ありの場合は設定不可となります。<br>
-        REMOVE時、このフィールドは無視されます。<br>
-        ※指定可能な値は、AccountAdProductServiceのGET操作で取得されるAdProductをご確認ください。
+        ADD時、このフィールドは指定できません。<br>
+        REMOVE時、このフィールドは無視されます。
         </div>
         <div lang="en">
         Ad product information.<br>
-        In ADD operation, this field is required for campaigns with no campaign goal, and this field cannot be set for campaigns with campaign goal. <br>
-        In REMOVE operation, this field will be ignored.<br>
-        * Available values can be referred to adProductType field of AdProduct object obtained by GET operation of AccountAdProductService.
+        In ADD operation, this field can not be set. <br>
+        In REMOVE operation, this field will be ignored.
         </div>
     appId:
       type: string
@@ -73,13 +71,13 @@ Campaign:
       description: |
         <div lang="ja">
         キャンペーン目的です。<br>
-        ADD時、このフィールドは目的なしの場合は設定不可となり、目的ありの場合は必須となります。<br>
+        ADD時、このフィールドは必須となります。<br>
         SETおよびREMOVE時、このフィールドは無視されます。<br>
         ※指定可能な値は、AccountServiceのGET操作で得られるAccountのaccountAuthoritiesフィールドをご確認ください。<br>
         </div>
         <div lang="en">
         Campaign goal.<br>
-        In ADD operation, this field cannot be set for campaigns with no campaign goal, and will be required for campaigns with campaign goal.<br>
+        In ADD operation, this field is required.<br>
         In SET and REMOVE operation, this field will be ignored.<br>
         * Available values can be referred to accountAuthorities field of Account object obtained by GET operation of AccountService.<br>
         </div>

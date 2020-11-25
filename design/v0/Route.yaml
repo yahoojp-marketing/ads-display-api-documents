@@ -46,10 +46,12 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
+        ディスプレイ広告（YDN）のキャンペーンは新規作成できません。<br>
         ディスプレイ広告（運用型）におけるキャンペーンの作成は、以下のベストプラクティスを参照してください。<br>
         <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
+        Creating new YDN campaigns is unavailable.<br>
         See the following Best Practice to learn about how to create a campaign on Display Ads (Auction).<br>
         <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
       </div>
@@ -103,7 +105,6 @@ tags:
       <label class="report"></label>
       <div lang="ja">ReportDefinitionServiceでは、レポート出力項目の取得およびレポートの追加を行います。<br>
       レポート形式、期間およびフィールドを指定して、レポートの作成・削除を行います。<br>
-      またレポートのダウンロードURLを取得する操作が提供されます。<br>
       以下の操作が実行可能です。<br>
       ・レポートの取得<br>
       ・レポートの登録<br>
@@ -115,7 +116,6 @@ tags:
       </div>
       <div lang="en">ReportDefinitionService acquires, creates, and deletes reports.<br>
       Report defines report type, date range, and fields.<br>
-      It also includes an operation that acquires report download URLs.<br>
       The following operations are provided:<br>
       - Get reports<br>
       - Add reports<br>
