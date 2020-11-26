@@ -20,7 +20,6 @@ ConversionTrackerServiceCategory:
     ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
     This field is required in ADD operation, and will be optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NONE</dt>
       <dd class="term__desc"><span lang="ja">未設定です。</span><span lang="en">None</span></dd>

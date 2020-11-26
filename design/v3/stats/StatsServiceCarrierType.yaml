@@ -12,7 +12,6 @@ StatsServiceCarrierType:
   description: |
     <div lang="ja">StatsServiceCarrierTypeは、スマートフォン、タブレットのキャリアの種別を表します。 ※DESKTOP、WAP_MOBILEの場合は設定できません。</div>
     <div lang="en">StatsServiceCarrierType stands for carrier type of Smartphone and Tablet. ∗Not available for DESKTOP/WAP_MOBILE device.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOCOMO</dt>
       <dd class="term__desc"><span lang="ja">NTTドコモ</span><span lang="en">NTT docomo</span></dd>

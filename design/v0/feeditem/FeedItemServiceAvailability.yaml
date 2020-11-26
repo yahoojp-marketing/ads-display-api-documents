@@ -10,7 +10,6 @@ FeedItemServiceAvailability:
   description: |
     <div lang="ja">在庫状況です。</div>
     <div lang="en">FeedItemServiceAvailability describes stock status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">OUT_OF_STOCK</dt>
       <dd class="term__desc"><span lang="ja">在庫なし</span><span lang="en">Out of stock</span></dd>

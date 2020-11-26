@@ -10,7 +10,6 @@ FeedFtpServiceScheduleType:
   description: |
     <div lang="ja">定期アップロードのスケジュールタイプです。</div>
     <div lang="en">FeedFtpServiceScheduleType displays the schedule type of Periodic Upload.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">HOURLY</dt>
       <dd class="term__desc"><span lang="ja">時間</span><span lang="en">Hourly</span></dd>

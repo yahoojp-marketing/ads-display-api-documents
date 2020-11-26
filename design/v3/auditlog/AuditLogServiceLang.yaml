@@ -15,7 +15,6 @@ AuditLogServiceLang:
     AuditLogServiceLang serves the language of download data.<br>
     This field is optional in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">JA</dt>
       <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese</span></dd>

@@ -15,7 +15,6 @@ RetargetingListServiceCompareOperator:
   description: |
     <div lang="ja">RetargetingListServiceCompareOperatorは、ルールタイプの条件の種類を表示します。</div>
     <div lang="en">RetargetingListServiceCompareOperator displays the types of rule conditions.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EQUAL</dt>
       <dd class="term__desc"><span lang="ja">次と等しい条件を表します。</span><span lang="en">Equals to the next conditions.</span></dd>

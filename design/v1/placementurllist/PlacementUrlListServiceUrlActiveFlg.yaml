@@ -15,7 +15,6 @@ PlacementUrlListServiceUrlActiveFlg:
     Placement Url Active Flag.<br>
     This field is optional in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">プレイスメントターゲティングURL有効</span><span lang="en">Active</span></dd>

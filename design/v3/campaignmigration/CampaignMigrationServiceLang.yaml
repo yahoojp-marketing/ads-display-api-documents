@@ -9,7 +9,6 @@ CampaignMigrationServiceLang:
   description: |
     <div lang="ja">CampaignMigrationServiceLangはマイグレーション処理の言語を示します。</div>
     <div lang="en">CampaignMigrationServiceLang indicates language of the migration process.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">JA</dt>
       <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese</span></dd>

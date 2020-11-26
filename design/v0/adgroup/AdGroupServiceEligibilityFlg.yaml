@@ -9,7 +9,6 @@ AdGroupServiceEligibilityFlg:
   description: |
     <div lang="ja">AdGroupServiceEligibilityFlgは、コンバージョン最適化利用可否フラグを表します。</div>
     <div lang="en">AdGroupServiceEligibilityFlg serves if conversion optimization is valid.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ENABLE</dt>
       <dd class="term__desc"><span lang="ja">コンバージョン最適化利用可能</span><span lang="en">Can use the Conversion Optimization functions.</span></dd>

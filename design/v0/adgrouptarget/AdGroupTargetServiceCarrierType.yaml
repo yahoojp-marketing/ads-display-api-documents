@@ -12,7 +12,6 @@ AdGroupTargetServiceCarrierType:
   description: |
     <div lang="ja">AdGroupTargetServiceCarrierTypeは、スマートフォン、タブレットのキャリアの種別を表します。 ※DESKTOP、WAP_MOBILEの場合は設定できません。</div>
     <div lang="en">AdGroupTargetServiceCarrierType serves carrier type of Smartphone and Tablet. *This is not available for DESKTOP/WAP_MOBILE device.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOCOMO</dt>
       <dd class="term__desc"><span lang="ja">NTTドコモ</span><span lang="en">NTT docomo</span></dd>

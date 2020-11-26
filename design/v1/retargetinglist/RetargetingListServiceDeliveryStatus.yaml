@@ -15,7 +15,6 @@ RetargetingListServiceDeliveryStatus:
     RetargetingListServiceDeliveryStatus serves the account delivery status.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">オンラインです。</span><span lang="en">Online</span></dd>

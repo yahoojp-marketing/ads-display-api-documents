@@ -9,7 +9,6 @@ PlacementUrlListServiceUrlActiveFlg:
   description: |
     <div lang="ja">PlacementUrlListServiceUrlActiveFlgは、プレイスメントURLアクティブフラグを表します。</div>
     <div lang="en">Placement Url Active Flag.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">プレイスメントターゲティングURL有効</span><span lang="en">Active</span></dd>

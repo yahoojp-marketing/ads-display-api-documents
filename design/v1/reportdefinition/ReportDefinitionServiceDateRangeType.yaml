@@ -33,7 +33,6 @@ ReportDefinitionServiceDateRangeType:
     - Frequency Report and Reach Report don't provide today's actual value. <br>
     - The value will be determined around 5 AM the next morning (JST).<br>
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">LAST_7_DAYS</dt>
       <dd class="term__desc"><span lang="ja">本日を除く、過去7日間です。</span><span lang="en">Reports are generated for the last 7 days not including today.</span></dd>

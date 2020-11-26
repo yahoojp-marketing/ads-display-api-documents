@@ -15,7 +15,6 @@ ConversionTrackerServiceExcludeFromBidding:
     ConversionTrackerServiceExcludeFromBidding displays use or not for auto bidding.<br>
     This field is optional in requests. The default value in ADD operation will be FALSE.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">FALSE</dt>
       <dd class="term__desc"><span lang="ja">使用します。</span><span lang="en">Include.</span></dd>

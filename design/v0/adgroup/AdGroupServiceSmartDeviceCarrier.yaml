@@ -13,7 +13,6 @@ AdGroupServiceSmartDeviceCarrier:
   description: |
     <div lang="ja">AdGroupServiceSmartDeviceCarrierは、スマートデバイスのモバイルキャリアを表します。</div>
     <div lang="en">AdGroupServiceSmartDeviceCarrier serves the carrier type of smart device.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOCOMO</dt>
       <dd class="term__desc"><span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></dd>

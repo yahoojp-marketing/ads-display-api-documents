@@ -15,7 +15,6 @@ AdGroupTargetServiceTargetListDeliverType:
     AdGroupTargetServiceTargetListDeliverType displays the type of target list type.<br>
     This field is optional in ADD and REPLACE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INCLUDE</dt>
       <dd class="term__desc"><span lang="ja">配信対象です。</span><span lang="en">Target.</span></dd>

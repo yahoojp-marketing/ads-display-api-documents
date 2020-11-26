@@ -19,7 +19,6 @@ AdGroupServiceSmartDeviceCarrier:
     AdGroupServiceSmartDeviceCarrier serves the carrier type of smart device.<br>
     This field is optional in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOCOMO</dt>
       <dd class="term__desc"><span lang="ja">NTTドコモです。</span><span lang="en">NTT Docomo</span></dd>

@@ -21,7 +21,6 @@ RetargetingListServiceJobStatus:
       * If the status is "INVALID_FILE", there is a problem with the file contents, the file format is incorrect, or the file size exceeds the upper limit (1,073,741,824 bytes).<br>
       * If the status is "FAILED", it means that the job did not complete successfully due to a problem other than the file contents.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">RECEIVING</dt>
       <dd class="term__desc"><span lang="ja">データ取り込み中です。</span><span lang="en">Data is being imported.</span></dd>

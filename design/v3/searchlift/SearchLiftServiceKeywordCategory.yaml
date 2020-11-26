@@ -14,7 +14,6 @@ SearchLiftServiceKeywordCategory:
     <div lang="en">
     SearchLiftServiceKeywordCategory describes the keyword category.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">BRAND</dt>
       <dd class="term__desc"><span lang="ja">ブランドです。</span><span lang="en">Brand</span></dd>

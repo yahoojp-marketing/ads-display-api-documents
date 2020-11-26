@@ -16,7 +16,6 @@ CampaignServiceCampaignBiddingStrategyType:
     <dl class=term>
       <dt class="term__item">AUTO</dt>
       <dd class="term__desc"><span lang="ja">自動入札</span><span lang="en">Auto bidding</span></dd>
-    <hr>
       <dt class="term__item">MAX_VCPM</dt>
       <dd class="term__desc"><span lang="ja">最大入札価格指定（vCPM）</span><span lang="en">Max. bid value (vCPM)</span></dd>
       <dt class="term__item">MAX_CPC</dt>

@@ -10,7 +10,6 @@ RetargetingListServiceUploadUserListCompressType:
   description: |
     <div lang="ja">RetargetingListServiceUploadUserListCompressTypeは、アップロードする連携データファイルの圧縮形式を表します。</div>
     <div lang="en">RetargetingListServiceUploadUserListCompressType displays kind of compress type of upload file.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NONE</dt>
       <dd class="term__desc"><span lang="ja">非圧縮形式です。</span><span lang="en">Uncompressed format.</span></dd>

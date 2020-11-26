@@ -12,7 +12,6 @@ ReportDefinitionServiceJobStatus:
   description: |
     <div lang="ja">ReportDefinitionServiceJobStatusは、定義されたレポートの処理状況です。</div>
     <div lang="en">ReportDefinitionServiceJobStatus serves the process status for the defined report.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACCEPTED</dt>
       <dd class="term__desc"><span lang="ja">ジョブリストに登録完了しました。</span><span lang="en">Registration to job list complete.</span></dd>

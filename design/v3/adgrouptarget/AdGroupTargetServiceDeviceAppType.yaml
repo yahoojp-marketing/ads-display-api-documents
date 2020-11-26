@@ -13,7 +13,6 @@ AdGroupTargetServiceDeviceAppType:
     <div lang="en">
     AdGroupTargetServiceDeviceAppType serves application types for devices.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APP</dt>
       <dd class="term__desc"><span lang="ja">アプリ向けに配信されます。</span><span lang="en">Deliver to apps.</span></dd>

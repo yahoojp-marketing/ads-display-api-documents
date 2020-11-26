@@ -18,7 +18,6 @@ StatsServiceAge:
   description: |
     <div lang="ja">StatsServiceAgeは、年代を表します。</div>
     <div lang="en">StatsServiceAge stands for the age.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">GT_RANGE13_14</code> -<span lang="ja">13歳から14歳です。</span><span lang="en">From 13 to 14.</span></dd>
       <dt class="term__item">GT_RANGE15_17</code> -<span lang="ja">15歳から17歳です。</span><span lang="en">From 15 to 17.</span></dd>

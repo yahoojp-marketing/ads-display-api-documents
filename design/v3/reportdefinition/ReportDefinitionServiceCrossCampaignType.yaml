@@ -16,7 +16,6 @@ ReportDefinitionServiceCrossCampaignType:
       ReportDefinitionServiceCrossCampaignType indicates the combination type of Cross-campaign Reach Report. <br> 
       This field is required in ADD operation. 
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CAMPAIGN_ID</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンIDの組み合わせです。</span><span lang="en">Combination of campaign ID.</span></dd>

@@ -11,7 +11,6 @@ FeedDataServiceFileUploadSrc:
   description: |
     <div lang="ja">商品リストファイルのアップロード元種別です。</div>
     <div lang="en">FeedDataServiceFileUploadSrc object displays source of item list upload.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CAMPAIGN_MANAGEMENT_TOOL</dt>
       <dd class="term__desc"><span lang="ja">広告管理ツール</span><span lang="en">Campaign Management Tool.</span></dd>

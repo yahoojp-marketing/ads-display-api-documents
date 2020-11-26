@@ -15,7 +15,6 @@ ConversionTrackerServiceCountingType:
     ConversionTrackerServiceCountingType displays conversion measurement method.<br>
     This field is optional in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ONE_PER_CLICK</dt>
       <dd class="term__desc"><span lang="ja">ユニークコンバージョンです。</span><span lang="en">Unique conversion.</span></dd>

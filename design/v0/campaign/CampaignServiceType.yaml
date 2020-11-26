@@ -9,7 +9,6 @@ CampaignServiceType:
   description: |
     <div lang="ja">CampaignServiceTypeは、キャンペーンタイプを表します。</div>
     <div lang="en">CampaignServiceType serves type of campaign.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">STANDARD</dt>
       <dd class="term__desc"><span lang="ja">標準キャンペーン</span><span lang="en">Standard campaign</span></dd>

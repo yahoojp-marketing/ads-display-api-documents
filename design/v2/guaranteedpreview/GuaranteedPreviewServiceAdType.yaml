@@ -18,8 +18,7 @@ GuaranteedPreviewServiceAdType:
     <div lang="en">	
     GuaranteedAdGroupAdServiceAdType describes the type of ad.<br>	
     This field is required in requests.
-    </div>	
-    <hr>	
+    </div>		
     <dl class=term>
       <dt class="term__item">BRANDPANEL_QUINTIE</dt>
       <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 image with reduction function.</span></dd>

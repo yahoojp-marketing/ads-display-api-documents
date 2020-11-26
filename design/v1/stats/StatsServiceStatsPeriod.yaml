@@ -18,7 +18,6 @@ StatsServiceStatsPeriod:
   description: |
     <div lang="ja">StatsServiceStatsPeriodは、統計情報の集計期間を表します。</div>
     <div lang="en">StatsServiceStatsPeriod displays the summarized period of statistics.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">REALTIME_TODAY</dt>
       <dd class="term__desc"><span lang="ja">今日 / 速報値</span><span lang="en">Today / Quick estimation</span></dd>

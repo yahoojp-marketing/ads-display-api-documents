@@ -17,7 +17,6 @@ ReportDefinitionServiceCrossCampaignBuyingType:
       This field is optional in ADD operation, and will be ignored in REMOVE operation.<br>
       *If crossCampaignType is <code>CAMPAIGN_BUYING_TYPE</code>, this field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AUCTION</dt>
       <dd class="term__desc"><span lang="ja">運用型です。</span><span lang="en">Auction.</span></dd>

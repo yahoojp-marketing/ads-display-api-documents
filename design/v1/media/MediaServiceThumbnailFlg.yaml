@@ -15,7 +15,6 @@ MediaServiceThumbnailFlg:
     MediaServiceThumbnailFlg displays the setting flag for the thumbnail image.<br>
     This field is optional in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">FALSE</dt>
       <dd class="term__desc"><span lang="ja">通常画像です。</span><span lang="en">Normal image.</span></dd>

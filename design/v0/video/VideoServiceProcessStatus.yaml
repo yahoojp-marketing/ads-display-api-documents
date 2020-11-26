@@ -10,7 +10,6 @@ VideoServiceProcessStatus:
   description: |
     <div lang="ja">VideoServiceProcessStatusは、動画の処理状況です。</div>
     <div lang="en">VideoServiceProcessStatus display the process status of videos.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PROCESSING</dt>
       <dd class="term__desc"><span lang="ja">処理中です。</span><span lang="en">It is in process.</span></dd>

@@ -9,7 +9,6 @@ RetargetingListServiceDeliveryStatus:
   description: |
     <div lang="ja">RetargetingListServiceDeliveryStatusは、アカウントの配信状況を表します。</div>
     <div lang="en">RetargetingListServiceDeliveryStatus serves the account delivery status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">オンラインです。</span><span lang="en">Online</span></dd>

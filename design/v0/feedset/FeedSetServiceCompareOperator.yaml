@@ -11,7 +11,6 @@ FeedSetServiceCompareOperator:
   description: |
     <div lang="ja">商品セットの設定条件です。</div>
     <div lang="en">FeedSetServiceCompareOperator object describes setting conditions of Item Set.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EQUAL</dt>
       <dd class="term__desc"><span lang="ja">完全一致</span><span lang="en">Exact match</span></dd>

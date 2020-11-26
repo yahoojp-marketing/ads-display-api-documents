@@ -10,7 +10,6 @@ AdGroupTargetServiceGender:
   description: |
     <div lang="ja">AdGroupTargetServiceGenderは、性別を表します。</div>
     <div lang="en">AdGroupTargetServiceGender serves genders.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ST_MALE</dt>
       <dd class="term__desc"><span lang="ja">男性</span><span lang="en">Male</span></dd>

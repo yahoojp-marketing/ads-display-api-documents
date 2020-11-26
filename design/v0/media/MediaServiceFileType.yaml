@@ -10,7 +10,6 @@ MediaServiceFileType:
   description: |
     <div lang="ja">MediaServiceFileTypeは、画像のファイルタイプです。</div>
     <div lang="en">MediaServiceFileType serves the file type of media.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">GIF</dt>
       <dd class="term__desc"><span lang="ja">GIF（静止画）です。</span><span lang="en">GIF image.</span></dd>

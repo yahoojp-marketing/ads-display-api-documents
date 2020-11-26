@@ -13,7 +13,6 @@ SearchKeywordIdeaServiceSortField:
   description: |
     <div lang="ja">SearchKeywordIdeaServiceSortFieldオブジェクトは、ソート対象項目です。</div>
     <div lang="en">SearchKeywordIdeaServiceSortField object is sorting item.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">KEYWORD</dt>
       <dd class="term__desc"><span lang="ja">キーワードです。</span><span lang="en">Keyword</span></dd>

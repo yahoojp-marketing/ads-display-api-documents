@@ -9,7 +9,6 @@ AdGroupTargetServiceAudienceCategoryType:
   description: |
     <div lang="ja">AdGroupTargetServiceAudienceCategoryTypeは、オーディエンスカテゴリーの種類を表します。</div>
     <div lang="en">Type of audience category.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AFFINITY</dt>
       <dd class="term__desc"><span lang="ja">興味・関心</span><span lang="en">Interest/Concern</span></dd>

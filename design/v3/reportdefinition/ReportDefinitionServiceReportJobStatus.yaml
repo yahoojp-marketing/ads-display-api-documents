@@ -18,7 +18,6 @@ ReportDefinitionServiceReportJobStatus:
     ReportDefinitionServiceReportJobStatus serves the process status for the defined report.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">WAIT</dt>
       <dd class="term__desc"><span lang="ja">待機中です。</span><span lang="en">Please wait for report request to complete.</span></dd>

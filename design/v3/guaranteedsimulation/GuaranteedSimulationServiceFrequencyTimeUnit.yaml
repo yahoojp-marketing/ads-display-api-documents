@@ -17,7 +17,6 @@ GuaranteedSimulationServiceFrequencyTimeUnit:
     Frequency setting period.<br>
     In ADD operation, this field will be required.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DAY</dt>
       <dd class="term__desc"><span lang="ja">日単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Day.</span></dd>

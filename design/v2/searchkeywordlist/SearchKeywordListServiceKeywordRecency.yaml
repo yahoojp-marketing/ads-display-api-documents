@@ -20,7 +20,6 @@ SearchKeywordListServiceKeywordRecency:
     This field is optional in ADD and SET operation. <br>
     *The default value in ADD operation will be WITHIN_30DAYS.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">WITHIN_1DAY</dt>
       <dd class="term__desc"><span lang="ja">1日以内。</span><span lang="en">within one day</span></dd>

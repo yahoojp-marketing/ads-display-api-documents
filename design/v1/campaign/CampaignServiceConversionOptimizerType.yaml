@@ -17,7 +17,6 @@ CampaignServiceConversionOptimizerType:
     This field is optional in SET operation, and will be ignored in ADD and REMOVE operation. <br>
     *For campaign with campaign goal, this field cannot be set in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MANUAL</dt>
       <dd class="term__desc"><span lang="ja">手動入札です。</span><span lang="en">Manual Bidding.</span></dd>

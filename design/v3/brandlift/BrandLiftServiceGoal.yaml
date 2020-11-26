@@ -17,7 +17,6 @@ BrandLiftServiceGoal:
     <div lang="en">
     BrandLiftServiceGoal describes the survey goal.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD_RECALL</dt>
       <dd class="term__desc"><span lang="ja">広告想起です。</span><span lang="en">Ads recall.</span></dd>

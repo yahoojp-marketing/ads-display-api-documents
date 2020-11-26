@@ -20,7 +20,6 @@ FeedSetServiceConditionType:
   description: |
     <div lang="ja">商品セットの条件に設定できる項目の種別です。</div>
     <div lang="en">FeedSetServiceConditionType object describes the type of items available for condition of Item Set.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CATEGORY_ID</dt>
       <dd class="term__desc"><span lang="ja">カテゴリーID</span><span lang="en">Category ID</span></dd>

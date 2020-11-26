@@ -20,7 +20,6 @@ AdGroupTargetServiceDayOfWeek:
     AdGroupTargetServiceDayOfWeek serves the days of the week for delivery.<br>
     This field is required in ADD operation, and will be optional in REPLACE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MONDAY</dt>
       <dd class="term__desc"><span lang="ja">月曜日です。</span><span lang="en">Monday</span></dd>

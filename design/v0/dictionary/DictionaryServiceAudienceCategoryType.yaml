@@ -9,7 +9,6 @@ DictionaryServiceAudienceCategoryType:
   description: |
     <div lang="ja">DictionaryServiceAudienceCategoryTypeは、提供されるカテゴリの種別を表します。</div>
     <div lang="en">AudienceCategoryPage object contains audience category information.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AFFINITY</dt>
       <dd class="term__desc"><span lang="ja">興味関心です。</span><span lang="en">Interest and concern</span></dd>

@@ -9,7 +9,6 @@ PlacementUrlListServiceUnknownDomainFlg:
   description: |
     <div lang="ja">PlacementUrlListServiceUnknownDomainFlgは、不明ドメインフラグを表します。</div>
     <div lang="en">Unknown Domain Flag.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">不明ドメインを含む</span><span lang="en">Including the unknown domain</span></dd>

@@ -15,7 +15,6 @@ GuaranteedSimulationServicePackagePublicLevel:
       GuaranteedSimulationServicePackagePublicLevel describes the public level of package setting.<br>
       Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PUBLIC</dt>
       <dd class="term__desc"><span lang="ja">一般公開されている商品です。</span><span lang="en">Public package.</span></dd>

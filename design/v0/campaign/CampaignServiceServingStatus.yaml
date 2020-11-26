@@ -10,7 +10,6 @@ CampaignServiceServingStatus:
   description: |
     <div lang="ja">CampaignServiceServingStatusは、キャンペーンレベルの配信状況です。 ユーザーによる広告配信の調整に関わらず、キャンペーンとしての状態を表します。</div>
     <div lang="en">CampaignServiceServingStatus serves delivery status in campaign level. Display the campaign status, regardless of userStatus setting.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SERVING</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンは、現在配信されています。</span><span lang="en">The campaign is currently serving ads.</span></dd>

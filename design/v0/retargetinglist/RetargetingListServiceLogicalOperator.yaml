@@ -10,7 +10,6 @@ RetargetingListServiceLogicalOperator:
   description: |
     <div lang="ja">RetargetingListServiceLogicalOperatorは、条件の種類を表示します。</div>
     <div lang="en">RetargetingListServiceLogicalOperator displays the type of conditions.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">OR</dt>
       <dd class="term__desc"><span lang="ja">いずれかのターゲットリストに一致していることを表します。</span><span lang="en">Matches either of the target list.</span></dd>

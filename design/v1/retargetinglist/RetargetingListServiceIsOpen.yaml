@@ -19,7 +19,6 @@ RetargetingListServiceIsOpen:
     If targetListType is DEFAULT_LIST, this field is optional in SET operation.<br>
     For other cases, this field will be ignored.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">ターゲットリストに対してリーチを貯めます。</span><span lang="en">Store Reaches to Target List.</span></dd>

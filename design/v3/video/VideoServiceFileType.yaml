@@ -8,7 +8,6 @@ VideoServiceFileType:
   description: |
     <div lang="ja">VideoServiceFileTypeは、動画のファイルタイプを表します。</div>
     <div lang="en">VideoServiceFileType object stores the file type of videos.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MP4</dt>
       <dd class="term__desc"><span lang="ja">MP4形式です。</span><span lang="en">MP4 format.</span></dd>

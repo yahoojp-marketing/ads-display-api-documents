@@ -18,7 +18,6 @@ GuaranteedSimulationServiceAge:
   description: |
     <div lang="ja">GuaranteedSimulationServiceAgeは、年代を表します。</div>
     <div lang="en">GuaranteedSimulationServiceAge displays ages.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">GT_RANGE13_14</dt>
       <dd class="term__desc"><span lang="ja">13歳から14歳です。</span><span lang="en">From 13 to 14.</span></dd>

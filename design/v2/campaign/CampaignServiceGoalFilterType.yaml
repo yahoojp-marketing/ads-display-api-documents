@@ -15,7 +15,6 @@ CampaignServiceGoalFilterType:
     <div lang="en">
     CampaignServiceGoalFilterType is a setting for filtering campaigns &#34;with campaignGoal&#34; or &#34;with no campaignGoal&#34;.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">全てのキャンペーンを取得（DEFAULT）</span><span lang="en">All campaigns (Default)</span></dd>

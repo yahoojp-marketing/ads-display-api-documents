@@ -15,7 +15,6 @@ ConversionTrackerServiceAppConversionPlatform:
     ConversionTrackerServiceAppConversionPlatform displays a target platform of the app conversion.<br>
     This field is required in ADD operation, and will be ignored in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ITUNES</dt>
       <dd class="term__desc"><span lang="ja">App Store</span><span lang="en">App Store</span></dd>

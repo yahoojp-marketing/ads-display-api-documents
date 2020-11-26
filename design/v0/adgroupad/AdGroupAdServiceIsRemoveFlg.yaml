@@ -9,7 +9,6 @@ AdGroupAdServiceIsRemoveFlg:
   description: |
     <div lang="ja">AdGroupAdServiceIsRemoveFlgは、項目の削除を表します。</div>
     <div lang="en">AdGroupAdServiceIsRemoveFlg is an object for removing an information item.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">項目の削除。</span><span lang="en">removes the information item.</span></dd>

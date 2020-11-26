@@ -15,7 +15,6 @@ GuaranteedAdGroupAdServiceAdStyle:
     GuaranteedAdGroupAdServiceAdStyle displays the ad style type.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IMAGE</dt>
       <dd class="term__desc"><span lang="ja">画像の掲載フォーマット</span><span lang="en">Image ad style</span></dd>

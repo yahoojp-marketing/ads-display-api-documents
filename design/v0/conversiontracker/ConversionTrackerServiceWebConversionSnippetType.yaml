@@ -9,7 +9,6 @@ ConversionTrackerServiceWebConversionSnippetType:
   description: |
     <div lang="ja">ConversionTrackerServiceWebConversionSnippetTypeは、トラッキングスクリプトのタイプを表します。</div>
     <div lang="en">ConversionTrackerServiceWebConversionSnippetType displays the type of tracking script.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IMG</dt>
       <dd class="term__desc"><span lang="ja">画像タグです。</span><span lang="en">Image tag</span></dd>

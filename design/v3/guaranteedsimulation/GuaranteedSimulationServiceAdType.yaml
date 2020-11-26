@@ -25,7 +25,6 @@ GuaranteedSimulationServiceAdType:
     GuaranteedSimulationServiceAdType describes the type of ad.<br>
     This field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">BANNER_VIDEO_AD</dt>
       <dd class="term__desc"><span lang="ja">動画で構成される広告です。</span><span lang="en">Ad composed of video.</span></dd>

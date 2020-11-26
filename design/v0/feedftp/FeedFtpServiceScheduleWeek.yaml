@@ -14,7 +14,6 @@ FeedFtpServiceScheduleWeek:
   description: |
     <div lang="ja">FeedFtpServiceScheduleWeekは、曜日を表します。</div>
     <div lang="en">FeedFtpServiceScheduleWeek serves the days of the week.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SUN</dt>
       <dd class="term__desc"><span lang="ja">日曜日です。</span><span lang="en">Sunday</span></dd>

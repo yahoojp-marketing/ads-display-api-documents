@@ -16,7 +16,6 @@ AdGroupServiceDeviceOsType:
     AdGroupServiceDeviceOsType serves OS types for devices to be posted on.<br>
     This field is optional in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IOS</dt>
       <dd class="term__desc"><span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></dd>

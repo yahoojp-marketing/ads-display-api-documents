@@ -9,7 +9,6 @@ MediaServiceCampaignBannerFlg:
   description: |
     <div lang="ja">MediaServiceCampaignBannerFlgは、キャンペーンバナーの設定フラグを表します。</div>
     <div lang="en">MediaServiceCampaignBannerFlg displays the flag settings of Campaign banner image.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンバナー画像です。</span><span lang="en">Campaign banner image.</span></dd>

@@ -10,7 +10,6 @@ StatsServiceTargetSetting:
   description: |
     <div lang="ja">StatsServiceTargetSettingは、ターゲット設定の有効/無効を表します。</div>
     <div lang="en">StatsServiceTargetSetting displays the setting information of target.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NONE</dt>
       <dd class="term__desc"><span lang="ja">有効（すべて）</span><span lang="en">None（All）</span></dd>

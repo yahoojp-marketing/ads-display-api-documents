@@ -9,7 +9,6 @@ AdGroupTargetServiceDeviceOsType:
   description: |
     <div lang="ja">AdGroupTargetServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>
     <div lang="en">AdGroupTargetServiceDeviceOsType serves OS types for devices to be posted on.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IOS</dt>
       <dd class="term__desc"><span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></dd>

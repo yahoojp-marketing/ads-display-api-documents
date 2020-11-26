@@ -9,7 +9,6 @@ StatsServiceDeviceOsType:
   description: |
     <div lang="ja">StatsServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>
     <div lang="en">StatsServiceDeviceOsType stands for OS types of the delivery target device.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IOS</dt>
       <dd class="term__desc"><span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></dd>

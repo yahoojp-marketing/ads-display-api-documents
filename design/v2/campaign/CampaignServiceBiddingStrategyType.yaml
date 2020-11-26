@@ -15,7 +15,6 @@ CampaignServiceBiddingStrategyType:
     CampaignServiceBiddingStrategyType serves types of bidding strategies.<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MANUAL_CPC</dt>
       <dd class="term__desc"><span lang="ja">手動入札（CPC）</span><span lang="en">Manual CPC.</span></dd>

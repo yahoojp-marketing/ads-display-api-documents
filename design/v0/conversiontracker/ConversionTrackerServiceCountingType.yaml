@@ -9,7 +9,6 @@ ConversionTrackerServiceCountingType:
   description: |
     <div lang="ja">ConversionTrackerServiceCountingTypeは、コンバージョンの計測方法を表します。</div>
     <div lang="en">ConversionTrackerServiceCountingType displays conversion measurement method.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ONE_PER_CLICK</dt>
       <dd class="term__desc"><span lang="ja">ユニークコンバージョンです。</span><span lang="en">Unique conversion.</span></dd>

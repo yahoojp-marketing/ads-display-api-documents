@@ -9,7 +9,6 @@ ReportDefinitionServiceZip:
   description: |
     <div lang="ja">ReportDefinitionServiceZipは、ダウンロードレポートの圧縮型式を表します。</div>
     <div lang="en">ReportDefinitionServiceZip serves whether or not reports are compressed.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ON</dt>
       <dd class="term__desc"><span lang="ja">ZIP型式で圧縮されます。</span><span lang="en">ZIP compressed</span></dd>

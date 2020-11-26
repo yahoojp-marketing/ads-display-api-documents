@@ -11,7 +11,6 @@ StatsServiceDeviceType:
   description: |
     <div lang="ja">StatsServiceDeviceTypeは、配信先デバイスの種類を表します。</div>
     <div lang="en">StatsServiceDeviceType stands for the types of target devices.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DESKTOP</dt>
       <dd class="term__desc"><span lang="ja">PC</span><span lang="en">PC</span></dd>

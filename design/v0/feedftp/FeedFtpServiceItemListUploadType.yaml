@@ -9,7 +9,6 @@ FeedFtpServiceItemListUploadType:
   description: |
     <div lang="ja">商品リストファイルアップロード時の取り込み種別です。</div>
     <div lang="en">FeedFtpServiceItemListUploadType object displays the upload type of Item List file.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UPDATE_PART</dt>
       <dd class="term__desc"><span lang="ja">部分更新</span><span lang="en">Update partially.</span></dd>

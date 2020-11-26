@@ -9,7 +9,6 @@ ReportDefinitionServiceLang:
   description: |
     <div lang="ja">ReportDefinitionServiceLangは、定義されたカラム名の言語です。</div>
     <div lang="en">ReportDefinitionServiceLang serves the language for the defined column name.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EN</dt>
       <dd class="term__desc"><span lang="ja">英語です。</span><span lang="en">English</span></dd>

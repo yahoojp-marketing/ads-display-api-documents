@@ -15,7 +15,6 @@ ReportDefinitionServiceIncludeViewInteractionFlg:
       ReportDefinitionServiceIncludeViewInteractionFlg is a flag which indicates whether to include view interaction in Conversion Path Report.<br>
       This field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">ビューインタラクションを含めます。</span><span lang="en">Includes view interaction.</span></dd>

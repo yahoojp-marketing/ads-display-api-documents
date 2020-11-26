@@ -15,7 +15,6 @@ ReportDefinitionServiceZip:
     ReportDefinitionServiceZip serves whether or not reports are compressed. <br>
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ON</dt>
       <dd class="term__desc"><span lang="ja">ZIP型式で圧縮されます。</span><span lang="en">ZIP compressed</span></dd>

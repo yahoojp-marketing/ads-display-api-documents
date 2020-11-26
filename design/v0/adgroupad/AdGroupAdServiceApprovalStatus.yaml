@@ -12,7 +12,6 @@ AdGroupAdServiceApprovalStatus:
   description: |
     <div lang="ja">AdGroupAdServiceApprovalStatusは、広告の審査状況を表します。</div>
     <div lang="en">AdGroupAdServiceApprovalStatus displays editorial status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APPROVED</dt>
       <dd class="term__desc"><span lang="ja">承認済みです。</span><span lang="en">The item was approved.</span></dd>

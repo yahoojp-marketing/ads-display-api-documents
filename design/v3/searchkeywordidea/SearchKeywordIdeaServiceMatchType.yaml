@@ -9,7 +9,6 @@ SearchKeywordIdeaServiceMatchType:
   description: |
     <div lang="ja">SearchKeywordIdeaServiceMatchTypeオブジェクトは、検索方法を表します。</div>
     <div lang="en">SearchKeywordIdeaServiceMatchType object is a search method.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EXACT</dt>
       <dd class="term__desc"><span lang="ja">完全一致です。</span><span lang="en">exact match</span></dd>

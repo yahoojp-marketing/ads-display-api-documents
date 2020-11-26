@@ -15,7 +15,6 @@ ReportDefinitionServiceConversionPathFilterType:
       ReportDefinitionServiceConversionPathFilterType indicates the filter condition item of Conversion Path Report. <br> 
       This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CAMPAIGN_ID</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンIDです。</span><span lang="en">Campaign ID.</span></dd>

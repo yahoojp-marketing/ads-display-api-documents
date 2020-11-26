@@ -9,7 +9,6 @@ RetargetingListServiceIsPreset:
   description: |
     <div lang="ja">RetargetingListServiceIsPresetは、過去の訪問履歴の対象の有無を表します。</div>
     <div lang="en">RetargetingListServiceIsPreset display the setting of history of past visit.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">過去の訪問履歴を含みます。</span><span lang="en">Includes the past visit.</span></dd>

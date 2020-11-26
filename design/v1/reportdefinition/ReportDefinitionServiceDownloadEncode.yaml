@@ -16,7 +16,6 @@ ReportDefinitionServiceDownloadEncode:
     ReportDefinitionServiceDownloadEncode serves encoding for the report to be downloaded. <br>
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EUC</dt>
       <dd class="term__desc"><span lang="ja">EUCです。</span><span lang="en">EUC</span></dd>

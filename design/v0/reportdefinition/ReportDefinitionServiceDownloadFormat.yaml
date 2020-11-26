@@ -9,7 +9,6 @@ ReportDefinitionServiceDownloadFormat:
   description: |
     <div lang="ja">ReportDefinitionServiceDownloadFormatは、定義されたダウンロードレポートのファイル形式を表します。</div>
     <div lang="en">ReportDefinitionServiceDownloadFormat serves file format for the defined download report.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CSV</dt>
       <dd class="term__desc"><span lang="ja">カンマ区分されたフォーマットです。</span><span lang="en">Formats spanided by commas.</span></dd>

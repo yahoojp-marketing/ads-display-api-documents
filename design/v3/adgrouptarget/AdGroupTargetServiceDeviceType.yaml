@@ -15,7 +15,6 @@ AdGroupTargetServiceDeviceType:
     <div lang="en">
     AdGroupTargetServiceDeviceType displays types of devices to be posted on.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DESKTOP</dt>
       <dd class="term__desc"><span lang="ja">PC</span><span lang="en">PC</span></dd>

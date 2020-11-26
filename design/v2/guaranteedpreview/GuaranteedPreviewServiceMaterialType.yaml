@@ -14,8 +14,7 @@ GuaranteedPreviewServiceMaterialType:
     <div lang="en">	
     GuaranteedPreviewServiceMaterialType describes the type of the preview material.<br>
     This field is required in requests.
-    </div>
-    <hr>	
+    </div>	
     <dl class=term>
       <dt class="term__item">AD</dt>
       <dd class="term__desc"><span lang="ja">ADのプレビュー素材です。</span><span lang="en">Preview material of AD.</span></dd>

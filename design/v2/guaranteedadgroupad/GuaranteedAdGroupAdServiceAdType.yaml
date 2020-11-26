@@ -23,7 +23,6 @@ GuaranteedAdGroupAdServiceAdType:
     Although this field will be returned in the response, it will be ignored on input.<br>
     In addition, the number of available characters of ad creatives vary with selected devices.	
     </div>	
-    <hr>
     <dl class=term>
       <dt class="term__item">BANNER_VIDEO_AD</dt>
       <dd class="term__desc"><span lang="ja">動画で構成される広告です。</span><span lang="en">Ad composed of video.</span></dd>

@@ -9,7 +9,6 @@ SearchKeywordIdeaServiceSortType:
   description: |
     <div lang="ja">SearchKeywordIdeaServiceSortTypeオブジェクトは、ソート方法を表します。</div>
     <div lang="en">SearchKeywordIdeaServiceSortType object is sorting method.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ASC</dt>
       <dd class="term__desc"><span lang="ja">昇順です。</span><span lang="en">Ascending order</span></dd>

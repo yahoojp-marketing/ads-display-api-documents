@@ -16,7 +16,6 @@ GuaranteedSimulationServicePackagePermissionType:
       GuaranteedSimulationServicePackagePermissionType describes the restriction of the package setting.<br>
       Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">FORBIDDEN</dt>
       <dd class="term__desc"><span lang="ja">設定不可です。</span><span lang="en">Cannot be set.</span></dd>

@@ -19,7 +19,6 @@ ReportDefinitionServiceConversionPathFilterOperator:
       ReportDefinitionServiceConversionPathFilterOperator indicates the filter condition item of Conversion Path Report. <br> 
       This field is optional in ADD operation, and will be ignored in REMOVE operation. 
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EQUALS</dt>
       <dd class="term__desc"><span lang="ja">完全一致する対象を含む経路です。</span><span lang="en">A path that includes an exact match target.</span></dd>

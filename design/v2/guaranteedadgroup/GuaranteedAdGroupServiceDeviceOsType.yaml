@@ -16,7 +16,6 @@ GuaranteedAdGroupServiceDeviceOsType:
     GuaranteedAdGroupServiceDeviceOsType serves OS types for devices to be posted on.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IOS</dt>
       <dd class="term__desc"><span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></dd>

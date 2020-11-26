@@ -9,7 +9,6 @@ AdGroupAdServiceBiddingStrategyType:
   description: |
     <div lang="ja">AdGroupAdServiceBiddingStrategyTypeは、入札方法の種類を表します。</div>
     <div lang="en">AdGroupAdServiceBiddingStrategyType serves types of bidding strategies.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MANUAL_CPC</dt>
       <dd class="term__desc"><span lang="ja">手動入札（CPC）</span><span lang="en">Manual CPC.</span></dd>

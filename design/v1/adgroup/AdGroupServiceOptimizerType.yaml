@@ -16,7 +16,6 @@ AdGroupServiceOptimizerType:
     AdGroupServiceOptimizerType displays the type of conversion optimization.<br>
     This field is optional in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NONE</dt>
       <dd class="term__desc"><span lang="ja">キャンペーンの入札方法を適用します。</span><span lang="en">Apply same Bidding with campaign.</span></dd>

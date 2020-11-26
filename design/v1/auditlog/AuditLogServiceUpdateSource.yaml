@@ -16,7 +16,6 @@ AuditLogServiceUpdateSource:
     AuditLogServiceUpdateSource serves update tool type of the download data.<br>
     This field is optional in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">CAMPAIGN_MANAGEMENT_TOOL</dt>
       <dd class="term__desc"><span lang="ja">広告管理ツールからの履歴です。</span><span lang="en">Campaign Management Tool</span></dd>

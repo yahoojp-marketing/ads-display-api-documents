@@ -19,7 +19,6 @@ CampaignServiceType:
     *The default value in ADD operation will be STANDARD. <br>
     For campaigns with campaign goal, this field cannot be set in ADD operation, and the value will be automatically STANDARD.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">STANDARD</dt>
       <dd class="term__desc"><span lang="ja">標準キャンペーン</span><span lang="en">Standard campaign</span></dd>

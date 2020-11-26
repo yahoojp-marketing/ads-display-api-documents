@@ -11,7 +11,6 @@ AdGroupAdServiceAdStyle:
   description: |
     <div lang="ja">AdGroupAdServiceAdStyleは掲載フォーマットの種別を表します。</div>
     <div lang="en">AdGroupAdServiceAdStyle displays the ad style type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TEXT</dt>
       <dd class="term__desc"><span lang="ja">テキストの掲載フォーマット</span><span lang="en">Text ad style</span></dd>

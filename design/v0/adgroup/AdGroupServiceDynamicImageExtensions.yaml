@@ -9,7 +9,6 @@ AdGroupServiceDynamicImageExtensions:
   description: |
     <div lang="ja">AdGroupServiceDynamicImageExtensionsは、画像自動付与の設定を表します。</div>
     <div lang="en">AdGroupServiceDynamicImageExtensions serves setting of Dynamic Image Extensions</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">画像自動付与を設定します。</span><span lang="en">Dynamic Image Extension is active.</span></dd>

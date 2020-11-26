@@ -16,7 +16,6 @@ AuditLogServiceJobStatus:
     AuditLogServiceJobStatus serves process status of download job.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IN_PROGRESS</dt>
       <dd class="term__desc"><span lang="ja">処理中です。</span><span lang="en">Job is in progress.</span></dd>

@@ -10,7 +10,6 @@ ReportDefinitionServiceFrequencyRange:
   description: |
     <div lang="ja">ReportDefinitionServiceFrequencyRangeは、フリークエンシーの計測期間を表します。</div>
     <div lang="en">ReportDefinitionServiceFrequencyRange serves measurement range of reach frequency.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DAILY</dt>
       <dd class="term__desc"><span lang="ja">1日単位です。</span><span lang="en">Daily range.</span></dd>

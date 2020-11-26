@@ -9,7 +9,6 @@ AdGroupTargetServiceEstimateFlg:
   description: |
     <div lang="ja">AdGroupTargetServiceEstimateFlgは、拡張配信の設定有無を表します。</div>
     <div lang="en">AdGroupTargetServiceEstimateFlg displays the advance delivery setting.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PAUSED</dt>
       <dd class="term__desc"><span lang="ja">指定した性別または年齢のユーザーに配信します。</span><span lang="en">Deliver ads to users as designated gender or ages</span></dd>

@@ -8,7 +8,6 @@ DictionaryServiceAudienceCategory:
       description: |
         <div lang="ja">提供されるカテゴリの種別を表します。</div>
         <div lang="en">Audience category information.</div>
-        <hr>
         <dl class=term>
           <dt class="term__item">AFFINITY</dt>
           <dd class="term__desc"><span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></dd>

@@ -16,7 +16,6 @@ CampaignServiceFrequencyTimeUnit:
     Frequency setting period.<br>
     This field is optional in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DAY</dt>
       <dd class="term__desc"><span lang="ja">日単位でのフリークエンシー設定です。</span><span lang="en">Frequency Setting per Day</span></dd>

@@ -9,7 +9,6 @@ CampaignServiceConversionOptimizerEligibilityFlg:
   description: |
     <div lang="ja">CampaignServiceConversionOptimizerEligibilityFlgは、コンバージョン最適化機能が使用可能であるか表示します。</div>
     <div lang="en">CampaignServiceConversionOptimizerEligibilityFlg serves  if conversion optimization is valid.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ENABLE</dt>
       <dd class="term__desc"><span lang="ja">コンバージョン最適化機能は使用可能です。</span><span lang="en">Can use the Conversion Optimization functions.</span></dd>

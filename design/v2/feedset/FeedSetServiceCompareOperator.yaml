@@ -17,7 +17,6 @@ FeedSetServiceCompareOperator:
     FeedSetServiceCompareOperator object describes setting conditions of Item Set.<br>
     This field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EQUAL</dt>
       <dd class="term__desc"><span lang="ja">完全一致</span><span lang="en">Exact match</span></dd>

@@ -23,7 +23,6 @@ ReportDefinitionServiceType:
       ReportDefinitionServiceType serves category type of report.<br>
       For ReportDefinitionServiceReportTypeCondition, only <code>CONVERSION_PATH</code>, <code>CROSS_CAMPAIGN_REACHES</code>, <code>FREQUENCY</code>, <code>REACH</code> can be specified. 
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD</dt>
       <dd class="term__desc"><span lang="ja">以下のレポートを表します：<br>・アカウントレポート<br>・キャンペーンレポート<br>・広告グループレポート<br>・広告レポート<br>・リンク先URLレポート<br></span><span lang="en">Represents the type of report below:<br>・Account Report<br>・Campaign Report<br>・Ad Group Report<br>・Ad Report<br>・Destination URL Report<br></span></dd>

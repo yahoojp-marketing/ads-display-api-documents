@@ -16,7 +16,6 @@ FeedItemServiceAvailability:
     FeedItemServiceAvailability describes stock status.<br>
     This field is optional in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">OUT_OF_STOCK</dt>
       <dd class="term__desc"><span lang="ja">在庫なしです。</span><span lang="en">Out of stock</span></dd>

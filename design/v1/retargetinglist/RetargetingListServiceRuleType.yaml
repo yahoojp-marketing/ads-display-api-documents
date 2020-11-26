@@ -20,7 +20,6 @@ RetargetingListServiceRuleType:
     RetargetingListServiceRuleType display the type of the rule. <br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">URL</dt>
       <dd class="term__desc"><span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></dd>

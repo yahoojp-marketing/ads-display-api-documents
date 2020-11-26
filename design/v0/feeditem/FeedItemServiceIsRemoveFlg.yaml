@@ -9,7 +9,6 @@ FeedItemServiceIsRemoveFlg:
   description: |
     <div lang="ja">FeedItemServiceIsRemoveFlgは、項目を削除するフラグです。</div>
     <div lang="en">FeedItemServiceIsRemoveFlg is a flag for removing an information item.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">項目の削除。</span><span lang="en">removes the information item.</span></dd>

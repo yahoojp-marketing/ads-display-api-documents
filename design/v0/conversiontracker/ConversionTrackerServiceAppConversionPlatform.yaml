@@ -9,7 +9,6 @@ ConversionTrackerServiceAppConversionPlatform:
   description: |
     <div lang="ja">ConversionTrackerServiceAppConversionPlatformは、アプリコンバージョンの対象プラットフォームを表します。</div>
     <div lang="en">ConversionTrackerServiceAppConversionPlatform displays a target platform of the app conversion.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ITUNES</dt>
       <dd class="term__desc"><span lang="ja">App Store</span><span lang="en">App Store</span></dd>

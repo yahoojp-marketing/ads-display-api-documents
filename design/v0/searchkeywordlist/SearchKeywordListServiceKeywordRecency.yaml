@@ -12,7 +12,6 @@ SearchKeywordListServiceKeywordRecency:
   description: |
     <div lang="ja">SearchKeywordListServiceKeywordRecencyは、サーチキーワードの有効期間を表します。</div>
     <div lang="en">SearchKeywordListServiceKeywordRecency is an object for storing the effective period information of Search Keyword.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">WITHIN_1DAY</dt>
       <dd class="term__desc"><span lang="ja">1日以内。</span><span lang="en">within one day</span></dd>

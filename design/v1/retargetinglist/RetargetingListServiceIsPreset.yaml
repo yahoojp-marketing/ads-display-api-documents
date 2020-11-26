@@ -15,7 +15,6 @@ RetargetingListServiceIsPreset:
     RetargetingListServiceIsPreset display the setting of history of past visit.<br>
     This field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">過去の訪問履歴を含みます。</span><span lang="en">Includes the past visit.</span></dd>

@@ -9,7 +9,6 @@ CampaignServiceBudgetDeliveryMethod:
   description: |
     <div lang="ja">CampaignServiceBudgetDeliveryMethodは、配信方法を表します。</div>
     <div lang="en">CampaignServiceBudgetDeliveryMethod serves delivery method of budget.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">STANDARD</dt>
       <dd class="term__desc"><span lang="ja">1日の中で均等に広告を表示します。</span><span lang="en">The budget server will throttle serving evenly across the entire time period.</span></dd>

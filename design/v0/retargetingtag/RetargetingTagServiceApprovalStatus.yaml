@@ -10,7 +10,6 @@ RetargetingTagServiceApprovalStatus:
   description: |
     <div lang="ja">RetargetingTagServiceApprovalStatusは、サイトリターゲティング のタグ承認のステータスを表示します。</div>
     <div lang="en">RetargetingTagServiceApprovalStatus displays the status of tag approval for site retargeting.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AVAILABLE</dt>
       <dd class="term__desc"><span lang="ja">サイトリターゲティングのタグを利用可能です。</span><span lang="en">It was approved, and can use the tag .</span></dd>

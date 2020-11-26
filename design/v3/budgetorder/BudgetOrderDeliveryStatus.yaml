@@ -15,7 +15,6 @@ BudgetOrderDeliveryStatus:
     BudgetOrderDeliveryStatus serves the account delivery status.<br>
     This field is optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ACTIVE</dt>
       <dd class="term__desc"><span lang="ja">オンラインです。</span><span lang="en">Online</span></dd>

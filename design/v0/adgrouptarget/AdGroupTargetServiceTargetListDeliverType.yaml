@@ -9,7 +9,6 @@ AdGroupTargetServiceTargetListDeliverType:
   description: |
     <div lang="ja">AdGroupTargetServiceTargetListDeliverTypeは、ターゲットリスト種別（配信対象・配信除外対象の設定）を表します。</div>
     <div lang="en">AdGroupTargetServiceTargetListDeliverType displays the type of target list type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INCLUDE</dt>
       <dd class="term__desc"><span lang="ja">配信対象です。</span><span lang="en">Target.</span></dd>

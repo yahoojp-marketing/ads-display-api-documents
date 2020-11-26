@@ -18,7 +18,6 @@ AdGroupTargetServiceCarrierType:
     AdGroupTargetServiceCarrierType serves carrier type of Smartphone and Tablet.<br>
     *Cannot be set when deviceType is DESKTOP/WAP_MOBILE.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DOCOMO</dt>
       <dd class="term__desc"><span lang="ja">NTTドコモ</span><span lang="en">NTT docomo</span></dd>

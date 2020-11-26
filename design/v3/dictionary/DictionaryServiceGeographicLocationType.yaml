@@ -9,7 +9,6 @@ DictionaryServiceGeographicLocationType:
   description: |
     <div lang="ja">DictionaryServiceGeographicLocationTypeは、地域情報の種別を表します。</div>
     <div lang="en">DictionaryServiceGeographicLocationType describes the type of location information.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TARGETING</dt>
       <dd class="term__desc"><span lang="ja">ターゲティング用です。</span><span lang="en">For Targeting</span></dd>

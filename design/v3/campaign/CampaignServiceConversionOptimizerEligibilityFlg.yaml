@@ -15,7 +15,6 @@ CampaignServiceConversionOptimizerEligibilityFlg:
     CampaignServiceConversionOptimizerEligibilityFlg serves  if conversion optimization is valid.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ENABLE</dt>
       <dd class="term__desc"><span lang="ja">コンバージョン最適化機能は使用可能です。</span><span lang="en">Can use the Conversion Optimization functions.</span></dd>

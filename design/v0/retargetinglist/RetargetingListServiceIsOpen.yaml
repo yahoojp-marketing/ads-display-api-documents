@@ -9,7 +9,6 @@ RetargetingListServiceIsOpen:
   description: |
     <div lang="ja">RetargetingListServiceIsOpenは、リーチ蓄積の有無を表します。</div>
     <div lang="en">RetargetingListServiceIsOpen display the setting of store of reaches to Target List.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">ターゲットリストに対してリーチを貯めます。</span><span lang="en">Store Reaches to Target List.</span></dd>

@@ -15,7 +15,6 @@ FeedFtpServiceItemListUploadType:
     FeedFtpServiceItemListUploadType object displays the upload type of Item List file.<br>
     This field is required in ADD operation, and will be optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UPDATE_PART</dt>
       <dd class="term__desc"><span lang="ja">部分更新</span><span lang="en">Update partially.</span></dd>

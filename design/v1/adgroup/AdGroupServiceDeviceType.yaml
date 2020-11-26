@@ -18,7 +18,6 @@ AdGroupServiceDeviceType:
     AdGroupServiceDeviceType displays types of devices to be posted on.<br>
     This field is required in ADD operation, and will be optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DESKTOP</dt>
       <dd class="term__desc"><span lang="ja">PC</span><span lang="en">PC</span></dd>

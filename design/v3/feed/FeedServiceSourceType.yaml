@@ -12,7 +12,6 @@ FeedServiceSourceType:
   description: |
     <div lang="ja">FeedServiceSourceTypeは、ファイルアップロード実施ツールの種別を表します。</div>
     <div lang="en">FeedServiceSourceType serves file upload tool type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">FTP_SCHEDULE</dt>
       <dd class="term__desc"><span lang="ja">FTP(スケジュール)によるアップロードです。</span><span lang="en">Upload by FTP(SCHEDULE).</span></dd>

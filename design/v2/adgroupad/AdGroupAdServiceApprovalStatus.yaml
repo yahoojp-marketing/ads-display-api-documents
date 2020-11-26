@@ -18,7 +18,6 @@ AdGroupAdServiceApprovalStatus:
     AdGroupAdServiceApprovalStatus displays editorial status.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">APPROVED</dt>
       <dd class="term__desc"><span lang="ja">承認済みです。</span><span lang="en">The item was approved.</span></dd>

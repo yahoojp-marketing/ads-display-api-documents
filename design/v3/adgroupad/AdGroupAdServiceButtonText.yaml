@@ -32,7 +32,6 @@ AdGroupAdServiceButtonText:
     This field will be optional under dynamicAd, responsiveImageAd, and responsiveVideoAd. In these cases, under dynamicAd, the default value in ADD operation will be FOR_MORE_INFO.<br>
     Under staticFrameAd, although this field will be returned in the response,it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INSTALL</dt>
       <dd class="term__desc"><span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></dd>

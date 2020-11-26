@@ -16,7 +16,6 @@ GuaranteedSimulationServiceReservationStatus:
     GuaranteedSimulationServiceReservationStatus describes the reservation availability status of guaranteed campaign.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">RESERVABLE</dt>
       <dd class="term__desc"><span lang="ja">予約可能です。</span><span lang="en">Can be reserved.</span></dd>

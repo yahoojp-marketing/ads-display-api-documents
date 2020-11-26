@@ -27,7 +27,6 @@ RetargetingListServiceTargetListSize:
     *The default value in ADD operation will be RATE_10. <br>
     Under targetListSizeReaches, although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">RATE_1</dt>
       <dd class="term__desc"><span lang="ja">類似度：閾値0.1</span><span lang="en">Similarity: Threshold 0.1</span></dd>

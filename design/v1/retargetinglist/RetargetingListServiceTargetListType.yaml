@@ -18,7 +18,6 @@ RetargetingListServiceTargetListType:
     RetargetingListServiceTargetListType serves types of targets. <br>
     This field is required in ADD and SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DEFAULT_LIST</dt>
       <dd class="term__desc"><span lang="ja">デフォルトリストです。</span><span lang="en">Default List.</span></dd>

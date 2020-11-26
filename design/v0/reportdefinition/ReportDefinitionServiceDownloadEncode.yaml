@@ -10,7 +10,6 @@ ReportDefinitionServiceDownloadEncode:
   description: |
     <div lang="ja">ReportDefinitionServiceDownloadEncodeは、ダウンロードするレポートの文字コードを表します。</div>
     <div lang="en">ReportDefinitionServiceDownloadEncode serves encoding for the report to be downloaded.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EUC</dt>
       <dd class="term__desc"><span lang="ja">EUCです。</span><span lang="en">EUC</span></dd>

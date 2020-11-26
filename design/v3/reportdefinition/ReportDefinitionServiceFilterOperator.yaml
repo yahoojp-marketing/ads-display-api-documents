@@ -23,7 +23,6 @@ ReportDefinitionServiceFilterOperator:
     ReportDefinitionServiceFilterOperator object displays the operator to be specified by filter. <br>
     This field is required in ADD operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">NOT_EQUALS</dt>
       <dd class="term__desc"><span lang="ja">≠</span><span lang="en">≠</span></dd>

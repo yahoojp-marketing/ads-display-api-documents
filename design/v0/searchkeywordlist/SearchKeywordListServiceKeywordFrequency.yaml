@@ -10,7 +10,6 @@ SearchKeywordListServiceKeywordFrequency:
   description: |
     <div lang="ja">SearchKeywordListServiceKeywordFrequencyは、サーチキーワードの検索回数を表します。</div>
     <div lang="en">SearchKeywordListServiceKeywordFrequency is an object for storing the search frequency information on Search Keyword.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ONCE_OR_MORE</dt>
       <dd class="term__desc"><span lang="ja">1回以上。</span><span lang="en">once or more</span></dd>

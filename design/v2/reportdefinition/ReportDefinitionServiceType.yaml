@@ -15,7 +15,6 @@ ReportDefinitionServiceType:
   description: |
     <div lang="ja">ReportDefinitionServiceTypeは、レポートカテゴリーを表します。</div>
     <div lang="en">ReportDefinitionServiceType serves category type of report.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SITE_CATEGORY</dt>
       <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></dd>

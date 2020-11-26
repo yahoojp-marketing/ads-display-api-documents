@@ -18,7 +18,6 @@ SearchKeywordListServiceKeywordFrequency:
     This field is optional in ADD and SET operation. <br>
     *The default value in ADD operation will be ONCE_OR_MORE.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ONCE_OR_MORE</dt>
       <dd class="term__desc"><span lang="ja">1回以上。</span><span lang="en">once or more</span></dd>

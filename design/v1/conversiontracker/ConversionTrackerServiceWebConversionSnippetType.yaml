@@ -15,7 +15,6 @@ ConversionTrackerServiceWebConversionSnippetType:
     ConversionTrackerServiceWebConversionSnippetType displays the type of tracking script.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IMG</dt>
       <dd class="term__desc"><span lang="ja">画像タグです。</span><span lang="en">Image tag</span></dd>

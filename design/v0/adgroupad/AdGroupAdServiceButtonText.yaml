@@ -24,7 +24,6 @@ AdGroupAdServiceButtonText:
   description: |
     <div lang="ja">AdGroupAdServiceButtonTextはボタンテキストを表します。</div>
     <div lang="en">AdGroupAdServiceButtonText displays the button text.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">INSTALL</dt>
       <dd class="term__desc"><span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></dd>

@@ -14,7 +14,6 @@ AdGroupTargetServiceDayOfWeek:
   description: |
     <div lang="ja">AdGroupTargetServiceDayOfWeekは、配信する曜日を表します。</div>
     <div lang="en">AdGroupTargetServiceDayOfWeek serves the days of the week for delivery.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MONDAY</dt>
       <dd class="term__desc"><span lang="ja">月曜日です。</span><span lang="en">Monday</span></dd>

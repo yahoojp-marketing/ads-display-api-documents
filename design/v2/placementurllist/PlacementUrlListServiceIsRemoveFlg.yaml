@@ -17,7 +17,6 @@ PlacementUrlListServiceIsRemoveFlg:
     If the set value is 'TRUE', the set value will be invalid.<br>
     This field will be ignored in ADD operation, and will be optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">TRUE</dt>
       <dd class="term__desc"><span lang="ja">項目の削除。</span><span lang="en">removes the information item.</span></dd>

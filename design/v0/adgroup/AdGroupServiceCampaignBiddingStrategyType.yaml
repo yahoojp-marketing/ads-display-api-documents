@@ -13,7 +13,6 @@ AdGroupServiceCampaignBiddingStrategyType:
   description: |
     <div lang="ja">AdGroupServiceCampaignBiddingStrategyTypeは、キャンペーン入札戦略の設定を表します。</div>
     <div lang="en">AdGroupServiceCampaignBiddingStrategyType serves setting of Campaign bid strategy type.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AUTO</dt>
       <dd class="term__desc"><span lang="ja">自動入札</span><span lang="en">Auto bidding</span></dd>

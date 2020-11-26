@@ -15,7 +15,6 @@ GuaranteedAdGroupAdLandingPageStatus:
     GuaranteedAdGroupAdLandingPageStatus describes the status of the landing page.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">COMPLETED</dt>
       <dd class="term__desc"><span lang="ja">完成/公開済み</span><span lang="en">Completed/Published</span></dd>

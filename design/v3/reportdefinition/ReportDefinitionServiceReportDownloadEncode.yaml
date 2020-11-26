@@ -17,7 +17,6 @@ ReportDefinitionServiceReportDownloadEncode:
     ReportDefinitionServiceReportDownloadEncode serves encoding for the report to be downloaded. <br>
     This field is optional in ADD operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">UTF-8</dt>
       <dd class="term__desc"><span lang="ja">文字コード：UTF-8です。<br>※デフォルトに設定されます。</span><span lang="en">Character code: UTF-8.<br>*Default setting.</span></dd>

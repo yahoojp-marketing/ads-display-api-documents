@@ -16,7 +16,6 @@ MediaServiceFileType:
     MediaServiceFileType serves the file type of media.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">GIF</dt>
       <dd class="term__desc"><span lang="ja">GIF（静止画）です。</span><span lang="en">GIF image.</span></dd>

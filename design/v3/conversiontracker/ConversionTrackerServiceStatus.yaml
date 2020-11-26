@@ -15,7 +15,6 @@ ConversionTrackerServiceStatus:
     It shows ConversionTracker status.<br>
     This field is required in ADD operation, and will be optional in SET operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ENABLED</dt>
       <dd class="term__desc"><span lang="ja">コンバージョントラッカーを使用できます。</span><span lang="en">Can use Conversion Tracker.</span></dd>

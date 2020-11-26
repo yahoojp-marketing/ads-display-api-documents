@@ -9,7 +9,6 @@ ConversionTrackerServiceStatus:
   description: |
     <div lang="ja">コンバージョントラッカー情報のステータスを表します。</div>
     <div lang="en">It shows ConversionTracker status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">ENABLED</dt>
       <dd class="term__desc"><span lang="ja">コンバージョントラッカーを使用できます。</span><span lang="en">Can use Conversion Tracker.</span></dd>

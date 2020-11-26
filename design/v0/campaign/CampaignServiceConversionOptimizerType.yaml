@@ -9,7 +9,6 @@ CampaignServiceConversionOptimizerType:
   description: |
     <div lang="ja">CampaignServiceConversionOptimizerTypeは、コンバージョン最適化タイプを表します。</div>
     <div lang="en">CampaignServiceConversionOptimizerType displays the type of Conversion Optimization.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MANUAL</dt>
       <dd class="term__desc"><span lang="ja">手動入札です。</span><span lang="en">Manual Bidding.</span></dd>

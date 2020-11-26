@@ -15,7 +15,6 @@ MediaServiceType:
     MediaServiceType serves the type of media. <br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">IMAGE</dt>
       <dd class="term__desc"><span lang="ja">画像です。</span><span lang="en">Image.</span></dd>

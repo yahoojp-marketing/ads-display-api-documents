@@ -14,7 +14,6 @@ RetargetingListServiceRuleType:
   description: |
     <div lang="ja">RetargetingListServiceRuleTypeは、ルールタイプのリストの種類を表示します。</div>
     <div lang="en">RetargetingListServiceRuleType display the type of the rule.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">URL</dt>
       <dd class="term__desc"><span lang="ja">URLを利用したリスト設定</span><span lang="en">List setting using the URL.</span></dd>

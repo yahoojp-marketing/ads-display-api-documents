@@ -21,7 +21,6 @@ RetargetingListServiceCompareOperator:
     RetargetingListServiceCompareOperator displays the types of rule conditions.<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">EQUAL</dt>
       <dd class="term__desc"><span lang="ja">次と等しい条件を表します。</span><span lang="en">Equals to the next conditions.</span></dd>

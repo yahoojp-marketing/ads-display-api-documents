@@ -18,7 +18,6 @@ ConversionTrackerServiceStatsPeriod:
   description: |
     <div lang="ja">ConversionTrackerServiceStatsPeriodは、統計情報の集計期間を表します。</div>
     <div lang="en">ConversionTrackerServiceStatsPeriod displays the summarized period of statistics.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">DEFINITE_VALUE_YESTERDAY</dt>
       <dd class="term__desc"><span lang="ja">昨日 / 確定値</span><span lang="en">Yesterday / Definite Value</span></dd>

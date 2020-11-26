@@ -14,7 +14,6 @@ StatsServiceDayOfWeek:
   description: |
     <div lang="ja">StatsServiceDayOfWeekは、配信する曜日を表します。</div>
     <div lang="en">StatsServiceDayOfWeek stands for the days of the week to deliver.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">MONDAY</dt>
       <dd class="term__desc"><span lang="ja">月曜日です。</span><span lang="en">Monday</span></dd>

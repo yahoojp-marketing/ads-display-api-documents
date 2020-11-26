@@ -20,7 +20,6 @@ FeedFtpServiceScheduleWeek:
     FeedFtpServiceScheduleWeek serves the days of the week.<br>
     This field is required in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SUN</dt>
       <dd class="term__desc"><span lang="ja">日曜日です。</span><span lang="en">Sunday</span></dd>

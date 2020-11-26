@@ -9,7 +9,6 @@ SearchKeywordListServiceDeliveryStatus:
   description: |
     <div lang="ja">SearchKeywordListServiceDeliveryStatusは、アカウントの配信状況を表します。</div>
     <div lang="en">SearchKeywordListServiceDeliveryStatus serves the account delivery status.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PAUSED</dt>
       <dd class="term__desc"><span lang="ja">オフラインです。</span><span lang="en">Offline</span></dd>

@@ -16,7 +16,6 @@ StatsServiceTargetType:
   description: |
     <div lang="ja">StatsServiceTargetTypeは、ターゲティングの種別を表します。</div>
     <div lang="en">StatsServiceTargetType stands for types of target.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD_SCHEDULE_TARGET</dt>
       <dd class="term__desc"><span lang="ja">時間帯ターゲティング</span><span lang="en">Days of Week/Hour Targeting</span></dd>

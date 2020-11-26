@@ -28,7 +28,6 @@ AdGroupTargetServiceTargetType:
     AdGroupTargetServiceTargetType serves types of targets.<br>
     This field is required in requests.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">AD_SCHEDULE_TARGET</dt>
       <dd class="term__desc"><span lang="ja">曜日・時間帯ターゲティング</span><span lang="en">Day of Week / Hours Targeting</span></dd>

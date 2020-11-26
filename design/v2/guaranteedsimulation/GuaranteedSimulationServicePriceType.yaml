@@ -15,7 +15,6 @@ GuaranteedSimulationServicePriceType:
       GuaranteedSimulationServicePriceType describes the purchase type of the package.<br>
       Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">VIMPS_CUSTOM</dt>
       <dd class="term__desc"><span lang="ja">vimps購入型（変動）</span><span lang="en">Vimps purchase type (variable)</span></dd>

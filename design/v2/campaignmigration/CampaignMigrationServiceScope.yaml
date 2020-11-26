@@ -9,7 +9,6 @@ CampaignMigrationServiceScope:
   description: |
     <div lang="ja">CampaignMigrationServiceScopeはマイグレーションの対象となるキャンペーンの範囲を示します。</div>
     <div lang="en">CampaignMigrationServiceScope indicates the campaign scope to be migrated.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">SINGLE_ACCOUNT</dt>
       <dd class="term__desc"><span lang="ja">単一アカウント</span><span lang="en">Single account</span></dd>

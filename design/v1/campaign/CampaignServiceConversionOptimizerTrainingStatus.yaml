@@ -16,7 +16,6 @@ CampaignServiceConversionOptimizerTrainingStatus:
     ConversionOptimizerTrainingStatus indicates the conversion optimizer training status. <br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
     <dl class=term>
       <dt class="term__item">PROCESSING</dt>
       <dd class="term__desc"><span lang="ja">学習中です。</span><span lang="en">Under training process.</span></dd>

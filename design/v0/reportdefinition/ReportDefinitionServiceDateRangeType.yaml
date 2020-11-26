@@ -16,7 +16,6 @@ ReportDefinitionServiceDateRangeType:
   description: |
     <div lang="ja">ReportDefinitionServiceDateRangeTypeは、レポートの集計対象期間を表します。</div>
     <div lang="en">ReportDefinitionServiceDateRangeType serves the report compilation target period.</div>
-    <hr>
     <dl class=term>
       <dt class="term__item">LAST_7_DAYS</dt>
       <dd class="term__desc"><span lang="ja">本日を除く、過去7日間です。</span><span lang="en">Reports are generated for the last 7 days not including today.</span></dd>
