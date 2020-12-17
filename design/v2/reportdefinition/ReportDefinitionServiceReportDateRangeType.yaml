@@ -55,7 +55,8 @@ ReportDefinitionServiceReportDateRangeType:
       <dd class="term__desc"><span lang="ja">先週の月曜日から日曜日です。</span><span lang="en">Reports are generated for the seven-day period starting with previous Monday.</span></dd>
       <dt class="term__item">LAST_BUSINESS_WEEK</dt>
       <dd class="term__desc"><span lang="ja">先週の月曜日から5営業日です。</span><span lang="en">Reports are generated for the 5 day business week starting with previous Monday.</span></dd>
-      <dt class="term__item">GUARANTEED_CAMPAIGN_PERIOD</code> -
+      <dt class="term__item">GUARANTEED_CAMPAIGN_PERIOD</dt>
+      <dd class="term__desc">
       <span lang="ja">
         通期です。<br>
         リーチレポートでのみ指定可能です。<br>

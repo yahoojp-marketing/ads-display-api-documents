@@ -8,6 +8,16 @@ DictionaryServiceAudienceCategory:
       description: |
         <div lang="ja">提供されるカテゴリの種別を表します。</div>
         <div lang="en">Audience category information.</div>
+        <dl class=term>
+          <dt class="term__item">AFFINITY</dt>
+          <dd class="term__desc"><span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></dd>
+          <dt class="term__item">IN_MARKET</dt>
+          <dd class="term__desc"><span lang="ja">購買意向です。</span><span lang="en">In-market.</span></dd>
+          <dt class="term__item">ATTRIBUTE_LIFE_EVENTS</dt>
+          <dd class="term__desc"><span lang="ja">属性ライフイベントです。</span><span lang="en">Attribute-life-events.</span></dd>
+          <dt class="term__item">UNKNOWN</dt>
+          <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+        </dl>
     child:
       type: array
       nullable: true

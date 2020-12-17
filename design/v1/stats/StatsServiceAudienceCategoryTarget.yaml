@@ -6,8 +6,14 @@ StatsServiceAudienceCategoryTarget:
       type: string
       nullable: true
       description: |
-        <div lang="ja">提供されるカテゴリの種別を表します。</div>
-        <div lang="en">Audience category information.</div>
+        <div lang="ja">
+        提供されるカテゴリの種別を表します。<br>
+        *返却される値の詳細については、DictionaryServiceで取得されるDictionaryServiceAudienceCategoryオブジェクトのaudienceCategoryTypeフィールドをご参照ください。
+        </div>
+        <div lang="en">
+        Audience category information.<br>
+        *For details of the returned value, refer to the audienceCategoryType field of DictionaryServiceAudienceCategory object obtained via DictionaryService.
+        </div>
     categoryNameEn:
       type: string
       nullable: true

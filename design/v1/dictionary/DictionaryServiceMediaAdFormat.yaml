@@ -6,8 +6,14 @@ DictionaryServiceMediaAdFormat:
       type: string
       nullable: true
       description: |
-        <div lang="ja">ディスプレイ（画像）広告のフォーマットです。</div>
-        <div lang="en">Format of display (image) ads</div>
+        <div lang="ja">
+        ディスプレイ（画像）広告のフォーマットです。<br>
+        ※YJ_1350_760, YJ_450_150は予約型広告専用のadFormatとなります。
+        </div>
+        <div lang="en">
+        Format of display (image) ads.<br>
+        *YJ_1350_760 and YJ_450_150 are adFormat exclusive for Guaranteed ads.
+        </div>
     aspect:
       type: boolean
       nullable: true

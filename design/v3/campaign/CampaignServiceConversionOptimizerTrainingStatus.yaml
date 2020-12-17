@@ -2,10 +2,10 @@ CampaignServiceConversionOptimizerTrainingStatus:
   type: string
   nullable: true
   enum:
-  - PROCESSING
-  - COMPLETED
-  - PAUSED
-  - UNKNOWN
+    - PROCESSING
+    - COMPLETED
+    - PAUSED
+    - UNKNOWN
   title: CampaignServiceConversionOptimizerTrainingStatus
   description: |
     <div lang="ja">
@@ -19,7 +19,8 @@ CampaignServiceConversionOptimizerTrainingStatus:
     <dl class=term>
       <dt class="term__item">PROCESSING</dt>
       <dd class="term__desc"><span lang="ja">学習中です。</span><span lang="en">Under training process.</span></dd>
-      <dt class="term__item">COMPLETED</code>  - <span lang="ja">学習完了です。</span><span lang="en">Training completed.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">学習完了です。</span><span lang="en">Training completed.</span></dd>
       <dt class="term__item">PAUSED</dt>
       <dd class="term__desc"><span lang="ja">学習停止です。</span><span lang="en">Training paused.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

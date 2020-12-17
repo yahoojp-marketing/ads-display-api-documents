@@ -8,11 +8,13 @@ AdGroupTargetServiceAudienceCategoryTarget:
       description: |
         <div lang="ja">
         カテゴリ種別です。<br>
-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        *返却される値の詳細については、DictionaryServiceで取得されるDictionaryServiceAudienceCategoryオブジェクトのaudienceCategoryTypeフィールドをご参照ください。
         </div>
         <div lang="en">
         Category type.<br>
-        Although this field will be returned in the response, it will be ignored on input.
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        *For details of the returned value, refer to the audienceCategoryType field of DictionaryServiceAudienceCategory object obtained via DictionaryService.
         </div>
     categoryNameEn:
       type: string

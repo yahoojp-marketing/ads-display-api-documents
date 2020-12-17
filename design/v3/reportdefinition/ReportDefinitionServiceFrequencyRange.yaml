@@ -24,7 +24,8 @@ ReportDefinitionServiceFrequencyRange:
       <dd class="term__desc"><span lang="ja">1週間単位です。</span><span lang="en">Weekly range.</span></dd>
       <dt class="term__item">MONTHLY</dt>
       <dd class="term__desc"><span lang="ja">1ヶ月単位です。</span><span lang="en">Monthly range.</span></dd>
-      <dt class="term__item">GUARANTEED_CAMPAIGN_PERIOD</code> -
+      <dt class="term__item">GUARANTEED_CAMPAIGN_PERIOD</dt>
+      <dd class="term__desc">
       <span lang="ja">
         通期です。<br>
         リーチレポートでのみ指定可能です。<br>

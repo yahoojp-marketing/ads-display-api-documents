@@ -51,5 +51,6 @@
 "AVG_FREQUENCY","平均接触回数","Average frequency","avgFrequency","DOUBLE",,"Metric","","",""
 "START_DATE","開始日","Start date","startDate","STRING",,"Attribute","","",""
 "END_DATE","終了日","End date","endDate","STRING",,"Attribute","","",""
-"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,,標準","E-commerce,,Standard",""
+"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,標準","E-commerce,In-house,Standard",""
 "CONV_VALUE_VIA_VIEW_THROUGH","ビュースルーコンバージョン数","View-through conversions","convValueViaViewThrough","LONG",,"Metric","","",""
+"VIDEO_VIEW_THROUGH_RATE","動画の再生完了率","Video view through rate","videoViewThroughRate","DOUBLE",,"Metric","","",""
