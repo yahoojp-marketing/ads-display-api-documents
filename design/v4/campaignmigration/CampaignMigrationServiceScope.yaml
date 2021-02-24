@@ -1,0 +1,19 @@
+CampaignMigrationServiceScope:
+  type: string
+  nullable: true
+  enum:
+  - SINGLE_ACCOUNT
+  - ALL_ACCOUNT
+  - UNKNOWN
+  title: CampaignMigrationServiceScope
+  description: |
+    <div lang="ja">CampaignMigrationServiceScopeはマイグレーションの対象となるキャンペーンの範囲を示します。</div>
+    <div lang="en">CampaignMigrationServiceScope indicates the campaign scope to be migrated.</div>
+    <dl class=term>
+      <dt class="term__item">SINGLE_ACCOUNT</dt>
+      <dd class="term__desc"><span lang="ja">単一アカウント</span><span lang="en">Single account</span></dd>
+      <dt class="term__item">ALL_ACCOUNT</dt>
+      <dd class="term__desc"><span lang="ja">全アカウント</span><span lang="en">All accounts</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

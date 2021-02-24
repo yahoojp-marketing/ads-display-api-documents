@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedAudienceCategoryTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedAudienceCategoryTarget.yaml#/GuaranteedSimulationServicePermittedAudienceCategoryTarget'
+  title: GuaranteedSimulationServicePermittedAudienceCategoryTargetList
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedAudienceCategoryTargetオブジェクトは、オーディエンスカテゴリーターゲティング設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedAudienceCategoryTarget object holds the restriction information about the setting of audience category target.</div>

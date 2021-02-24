@@ -10,11 +10,13 @@ SearchKeywordIdea:
         <div lang="ja">
         PCでのリーチ数です。<br>
         ※1000件未満の場合は<br>
-        0が取得されます。
+        0が取得されます。<br>
+        ※サーチキーワードの停止日以降はnullが返却されます。
         </div>
         <div lang="en">
         Reach numbers on PC.<br>
-        *If it is less than 1000 times, the value &#34;0&#34; will be responded.
+        *If it is less than 1000 times, the value &#34;0&#34; will be responded.<br>
+        *After the stop date of search keyword, null will be returned.
         </div>
     releaseDate:
       type: string
@@ -46,11 +48,13 @@ SearchKeywordIdea:
         <div lang="ja">
         スマートフォンでのリーチ数です。<br>
         ※1000件未満の場合は<br>
-        0が取得されます。
+        0が取得されます。<br>
+        ※サーチキーワードの停止日以降はnullが返却されます。
         </div>
         <div lang="en">
         Reach numbers on Smartphone.<br>
-        *If it is less than 1000 times, the value &#34;0&#34; will be responded.
+        *If it is less than 1000 times, the value &#34;0&#34; will be responded.<br>
+        *After the stop date of search keyword, null will be returned.
         </div>
     tabletSearchVolume:
       type: integer
@@ -60,11 +64,13 @@ SearchKeywordIdea:
         <div lang="ja">
         タブレットでのリーチ数です。<br>
         ※1000件未満の場合は<br>
-        0が取得されます。
+        0が取得されます。<br>
+        ※サーチキーワードの停止日以降はnullが返却されます。
         </div>
         <div lang="en">
         Reach numbers on Tablet.<br>
-        *If it is less than 1000 times, the value &#34;0&#34; will be responded.
+        *If it is less than 1000 times, the value &#34;0&#34; will be responded.<br>
+        *After the stop date of search keyword, null will be returned.
         </div>
     availabilityStatus:
       $ref: 'SearchKeywordIdeaServiceAvailabilityStatus.yaml#/SearchKeywordIdeaServiceAvailabilityStatus'

@@ -1,0 +1,20 @@
+AdGroupAdServiceBid:
+  type: object
+  nullable: true
+  properties:
+    biddingStrategyType:
+      $ref: 'AdGroupAdServiceBiddingStrategyType.yaml#/AdGroupAdServiceBiddingStrategyType'
+    manualCPCAdGroupAdBid:
+      $ref: 'AdGroupAdServiceManualCPCAdGroupAdBid.yaml#/AdGroupAdServiceManualCPCAdGroupAdBid'
+    manualCPVAdGroupAdBid:
+      $ref: 'AdGroupAdServiceManualCPVAdGroupAdBid.yaml#/AdGroupAdServiceManualCPVAdGroupAdBid'
+  title: AdGroupAdServiceBid
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceBidオブジェクトは、入札最適化方法を格納するコンテナです。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceBid object is a container for storing bid optimization method.<br>
+    This field is optional in ADD and SET operation.
+    </div>

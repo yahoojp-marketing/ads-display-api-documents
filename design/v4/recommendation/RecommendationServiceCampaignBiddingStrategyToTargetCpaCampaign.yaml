@@ -1,0 +1,97 @@
+RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        </div>
+        <div lang="en">
+        Campaign Name.<br>
+        </div>
+    currentBudget:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        現在のキャンペーン予算です。
+        </div>
+        <div lang="en">
+        Current campaign budget.
+        </div>
+    currentCampaignBiddingStrategyType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        現在のキャンペーン入札戦略タイプです。<br>
+        現在は"MAX_CPC"のみ返却します。
+        </div>
+        <div lang="en">
+        Current campaign bidding strategy type.<br>
+        Currently, only "MAX_CPC" will be returned.
+        </div>
+    currentMaxCpcBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        現在のキャンペーン最大入札単価(CPC)です。
+        </div>
+        <div lang="en">
+        Current max bid of campaign (CPC).
+        </div>
+    recommendedCampaignBiddingStrategyType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        推奨するキャンペーン入札戦略タイプです。<br>
+        現在は"AUTO"のみ返却します。
+        </div>
+        <div lang="en">
+        Recommended campaign bidding strategy type.<br>
+        Currently, only "AUTO" will be returned.
+        </div>
+    recommendedTargetCpaBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        推奨するキャンペーン目標単価(tCPA)です。
+        </div>
+        <div lang="en">
+        Recommended target bid of campaign (tCPA).
+        </div>
+  title: RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign
+  description: |
+    <div lang="ja">RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaignオブジェクトは、自動入札（コンバージョン単価の目標値）に適しているキャンペーンに関する最適化提案の詳細情報を表します。</div>
+    <div lang="en">RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign object describes detailed information of Recommendations about the campaign that is suitable for using autobidding (target CPA).</div>

@@ -1,0 +1,10 @@
+StatsServiceDeviceTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceType:
+      $ref: 'StatsServiceDeviceType.yaml#/StatsServiceDeviceType'
+  title: StatsServiceDeviceTarget
+  description: |
+    <div lang="ja">StatsServiceDeviceTargetオブジェクトは、デバイスターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceDeviceTarget object holds configuration information of device targeting.</div>

@@ -1,0 +1,19 @@
+GuaranteedSimulationServicePromotionalDocument:
+  type: object
+  nullable: true
+  properties:
+    files:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceDocumentFile.yaml#/GuaranteedSimulationServiceDocumentFile'
+  title: GuaranteedSimulationServicePromotionalDocument
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServicePromotionalDocumentは、販促資料情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServicePromotionalDocument holds information about the promotional document.<br>
+      Although this field will be returned in the response, it will be ignored on input. 
+    </div>

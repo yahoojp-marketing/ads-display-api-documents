@@ -27,6 +27,11 @@ servers:
   - url: https://ads-display.yahooapis.jp/api/v3
 
 tags:
+  - name: AccountManagementService
+    description: |
+      <label class="account" ></label>
+      <div lang="ja">AccountManagementServiceでは、アカウントに関する情報の取得および、追加、更新を行います。<br/>AccountManagementServiceは、一部の利用者向けの限定機能となります。</div>
+      <div lang="en">AccountManagementService provides functions for creating and managing accounts.<br/>AccountManagementService is a limited function for some users.</div>
   - name: AccountAuthorityService
     description: |
       <label class="account" ></label>
@@ -337,6 +342,160 @@ tags:
       <div lang="en">BudgetOrderService provides account budget operations.</div>
 
 paths:
+  /AccountManagementService/get:
+    post:
+      description: "<div lang=\"ja\">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div><div\
+        \ lang=\"en\">Returns the account information. Enable to set the filter condition,\
+        \ such as the account Type.</div>"
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceSelector.yaml#/AccountManagementServiceSelector'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceGetResponse.yaml#/AccountManagementServiceGetResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /AccountManagementService/add:
+    post:
+      description: "<div lang=\"ja\">後請求のアカウントに関する情報を追加します。</div><div lang=\"en\"\
+        >Adds the information related to the invoice account.</div>"
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceOperation.yaml#/AccountManagementServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceMutateResponse.yaml#/AccountManagementServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+  /AccountManagementService/set:
+    post:
+      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates\
+        \ the information related to the account.</div>"
+      tags:
+        - AccountManagementService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'accountmanagement/AccountManagementServiceOperation.yaml#/AccountManagementServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'accountmanagement/AccountManagementServiceMutateResponse.yaml#/AccountManagementServiceMutateResponse'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
   /AccountAuthorityService/get:
     post:
       description: |
@@ -4462,7 +4621,7 @@ paths:
                 <tr><td>220301</td><td>Over limit to delivered ad.</td><td><div lang="ja">配信設定中の広告の件数が上限を超えています。</div><div lang="en">Number of ads set to be distributed exceeded the limit.</div></td></tr>
                 <tr><td>220302</td><td>Over limit to ad under account.</td><td><div lang="ja">アカウント配下の広告の件数が上限を超えています。</div><div lang="en">Number of ads under an account exceeded the limit.</div></td></tr>
                 <tr><td>220322</td><td>Invalid tracking parameter.</td><td><div lang="ja">無効な文字列（無効なトラッキングパラメータなど）が存在します。</div><div lang="en">Invalid string (such as invalid Tracking Parameter</div></td></tr>
-                <tr><td>220323</td><td>Tracking parameter  is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
+                <tr><td>220323</td><td>Tracking parameter is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
@@ -4531,7 +4690,7 @@ paths:
                 <tr><td>220301</td><td>Over limit to delivered ad.</td><td><div lang="ja">配信設定中の広告の件数が上限を超えています。</div><div lang="en">Number of ads set to be distributed exceeded the limit.</div></td></tr>
                 <tr><td>220302</td><td>Over limit to ad under account.</td><td><div lang="ja">アカウント配下の広告の件数が上限を超えています。</div><div lang="en">Number of ads under an account exceeded the limit.</div></td></tr>
                 <tr><td>220322</td><td>Invalid tracking parameter.</td><td><div lang="ja">無効な文字列（無効なトラッキングパラメータなど）が存在します。</div><div lang="en">Invalid string (such as invalid Tracking Parameter</div></td></tr>
-                <tr><td>220323</td><td>Tracking parameter  is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
+                <tr><td>220323</td><td>Tracking parameter is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
@@ -4600,7 +4759,7 @@ paths:
                 <tr><td>220301</td><td>Over limit to delivered ad.</td><td><div lang="ja">配信設定中の広告の件数が上限を超えています。</div><div lang="en">Number of ads set to be distributed exceeded the limit.</div></td></tr>
                 <tr><td>220302</td><td>Over limit to ad under account.</td><td><div lang="ja">アカウント配下の広告の件数が上限を超えています。</div><div lang="en">Number of ads under an account exceeded the limit.</div></td></tr>
                 <tr><td>220322</td><td>Invalid tracking parameter.</td><td><div lang="ja">無効な文字列（無効なトラッキングパラメータなど）が存在します。</div><div lang="en">Invalid string (such as invalid Tracking Parameter</div></td></tr>
-                <tr><td>220323</td><td>Tracking parameter  is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
+                <tr><td>220323</td><td>Tracking parameter is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
@@ -4669,7 +4828,7 @@ paths:
                 <tr><td>220301</td><td>Over limit to delivered ad.</td><td><div lang="ja">配信設定中の広告の件数が上限を超えています。</div><div lang="en">Number of ads set to be distributed exceeded the limit.</div></td></tr>
                 <tr><td>220302</td><td>Over limit to ad under account.</td><td><div lang="ja">アカウント配下の広告の件数が上限を超えています。</div><div lang="en">Number of ads under an account exceeded the limit.</div></td></tr>
                 <tr><td>220322</td><td>Invalid tracking parameter.</td><td><div lang="ja">無効な文字列（無効なトラッキングパラメータなど）が存在します。</div><div lang="en">Invalid string (such as invalid Tracking Parameter</div></td></tr>
-                <tr><td>220323</td><td>Tracking parameter  is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
+                <tr><td>220323</td><td>Tracking parameter is not available for this type of ad distribution.</td><td><div lang="ja">指定された広告掲載方式に対し、トラッキングパラメータは対応していません。</div><div lang="en">There is a Tracking Parameter which is not available for the ad product.</div></td></tr>
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>

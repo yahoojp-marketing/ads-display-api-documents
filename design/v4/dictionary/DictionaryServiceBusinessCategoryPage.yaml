@@ -1,0 +1,20 @@
+DictionaryServiceBusinessCategoryPage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of items to be retrieved.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'DictionaryServiceBusinessCategoryValue.yaml#/DictionaryServiceBusinessCategoryValue'
+  title: DictionaryServiceBusinessCategoryPage
+  description: |
+    <div lang="ja">DictionaryServiceBusinessCategoryPageオブジェクトは、アドカテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">DictionaryServiceBusinessCategoryPage object contains ad category information.</div>

@@ -1,0 +1,22 @@
+GuaranteedSimulationServicePermittedSiteRetargetingTarget:
+  type: object
+  nullable: true
+  properties:
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットIDです。</div>
+        <div lang="en">Target ID.</div>
+    targetListDeliverType:
+      $ref: 'GuaranteedSimulationServiceTargetListDeliverType.yaml#/GuaranteedSimulationServiceTargetListDeliverType'
+    targetListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットリスト名です。</div>
+        <div lang="en">Target list name.</div>
+  title: GuaranteedSimulationServicePermittedSiteRetargetingTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePermittedSiteRetargetingTargetオブジェクトは、サイトリターゲティングの設定情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePermittedSiteRetargetingTarget object is a container for site retargeting settings.</div>

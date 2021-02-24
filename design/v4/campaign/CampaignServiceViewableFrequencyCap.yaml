@@ -1,0 +1,46 @@
+CampaignServiceViewableFrequencyCap:
+  type: object
+  nullable: true
+  properties:
+    frequencyLevel:
+      $ref: 'CampaignServiceFrequencyLevel.yaml#/CampaignServiceFrequencyLevel'
+    frequencyTimeUnit:
+      $ref: 'CampaignServiceFrequencyTimeUnit.yaml#/CampaignServiceFrequencyTimeUnit'
+    vImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        同一ユーザに対する広告の最大ビューアブルインプレッション数です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Maximum number of ad viewable impressions to same user.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+  title: CampaignServiceViewableFrequencyCap
+  description: |
+    <div lang="ja">
+    CampaignServiceViewableFrequencyCapは、ビューアブルフリクエンシー制御を表します。<br>
+    ADDおよびSET時、このフィールドは目的なしの場合は設定不可となり、目的ありの場合は省略可能となります。<br>
+    REMOVE時は無視されます。<br>
+    ※ADD時は全ての項目の指定が必須です。<br>
+    ※SET時は更新する項目のみのリクエストが可能です。<br>
+    ※ビューアブルフリークエンシーキャップの解除方法は、以下の通りです：
+    </div>
+    <div lang="en">
+    CampaignServiceViewableFrequencyCap object describes viewable frequency restriction.<br>
+    In ADD and SET operation, this field cannot be set for campaigns with no campaign goal, and will be optional for campaigns with campaign goal. <br>
+    In REMOVE operation, this field will be ignored.<br>
+    *All items must be specified in ADD operation.<br>
+    *Only update items can be requested in SET operation.<br>
+    *Method to remove the viewable frequency cap:
+    </div>
+    <code>
+    {
+        "viewableFrequencyCap": {
+            "vImps": 0
+        }
+    }
+    </code>

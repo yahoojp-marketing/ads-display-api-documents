@@ -1,0 +1,25 @@
+AdGroupAdServiceBiddingStrategyType:
+  type: string
+  nullable: true
+  enum:
+  - MANUAL_CPC
+  - MANUAL_CPV
+  - UNKNOWN
+  title: AdGroupAdServiceBiddingStrategyType
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceBiddingStrategyTypeは、入札方法の種類を表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceBiddingStrategyType serves types of bidding strategies.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">MANUAL_CPC</dt>
+      <dd class="term__desc"><span lang="ja">手動入札（CPC）</span><span lang="en">Manual CPC.</span></dd>
+      <dt class="term__item">MANUAL_CPV</dt>
+      <dd class="term__desc"><span lang="ja">手動入札（CPV）</span><span lang="en">Manual CPV.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

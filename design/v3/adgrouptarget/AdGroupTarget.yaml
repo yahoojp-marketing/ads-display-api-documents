@@ -36,12 +36,16 @@ AdGroupTarget:
         <div lang="ja">
         入札価格調整率です。<br>
         このフィールドは、ADD、SETおよびREPLACE時は省略可能となり、REMOVE時は無視されます。<br>
-        ※入札価格調整率が設定できないターゲティングの場合は返却されません。
+        ※入札価格調整率が設定できないターゲティングの場合は返却されません。<br>
+        ※広告グループのターゲティングにSITE_RETARGETING、SEARCH_TARGET、PLACEMENT_TARGETのいずれかを指定し、かつその広告グループがYDNキャンペーンに紐づいている場合にbidMultiplierを指定しなかった時は、nullが代入されます。<br>
+        ※その他の場合でbidMultiplierを指定しなかった時は1.0が代入されます。
         </div>
         <div lang="en">
         Bid adjustment.<br>
         This field is optional in ADD, SET and REPLACE operation, and will be ignored in REMOVE operation.<br>
-        ∗If bid adjustment is unable to set targeting, not returned.
+        ∗If bid adjustment is unable to set targeting, not returned.<br>
+        *If bidMultiplier is not specified when SITE_RETARGETING, SEARCH_TARGET, or PLACEMENT_TARGET is specified for the targeting of the ad group and the ad group is linked to the YDN campaign, null will be assigned for this field.<br>
+        *If bidMultiplier is not specified in other cases, 1.0 will be assigned for this field.
         </div>
     campaignId:
       type: integer

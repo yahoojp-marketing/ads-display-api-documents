@@ -1,0 +1,14 @@
+GuaranteedPreviewServiceMaterial:
+  type: object
+  nullable: true
+  properties:
+    materialType:
+      $ref: 'GuaranteedPreviewServiceMaterialType.yaml#/GuaranteedPreviewServiceMaterialType'
+    materialAd:
+      $ref: 'GuaranteedPreviewServiceMaterialAd.yaml#/GuaranteedPreviewServiceMaterialAd'
+    materialMedia:
+      $ref: 'GuaranteedPreviewServiceMaterialMedia.yaml#/GuaranteedPreviewServiceMaterialMedia'
+  title: GuaranteedPreviewServiceMaterial
+  description: |
+    <div lang="ja">GuaranteedPreviewServiceMaterialオブジェクトは、プレビュー素材に関する情報を表します。</div>
+    <div lang="en">GuaranteedPreviewServiceMaterial object describes information about the preview material.</div>

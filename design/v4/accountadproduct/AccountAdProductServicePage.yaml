@@ -1,0 +1,20 @@
+AccountAdProductServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAdProductServiceValue.yaml#/AccountAdProductServiceValue'
+  title: AccountAdProductServicePage
+  description: |
+    <div lang="ja">AccountAdProductServicePageオブジェクトは、広告掲載方式を含むコンテナです。</div>
+    <div lang="en">AccountAdProductServicePage object is a container that includes the ad display methods.</div>

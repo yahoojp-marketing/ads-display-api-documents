@@ -1,0 +1,25 @@
+MediaServiceType:
+  type: string
+  nullable: true
+  enum:
+  - IMAGE
+  - ANIMATION_IMAGE
+  - UNKNOWN
+  title: MediaServiceType
+  description: |
+    <div lang="ja">
+    MediaTypeは、画像の種類です。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    MediaServiceType serves the type of media. <br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">IMAGE</dt>
+      <dd class="term__desc"><span lang="ja">画像です。</span><span lang="en">Image.</span></dd>
+      <dt class="term__item">ANIMATION_IMAGE</dt>
+      <dd class="term__desc"><span lang="ja">アニメーションGIFです。</span><span lang="en">Animation GIF.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

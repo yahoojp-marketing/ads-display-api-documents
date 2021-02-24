@@ -1,0 +1,34 @@
+AdGroupAdServiceAd:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+    bannerImageAd:
+      $ref: 'AdGroupAdServiceBannerImageAd.yaml#/AdGroupAdServiceBannerImageAd'
+    bannerVideoAd:
+      $ref: 'AdGroupAdServiceBannerVideoAd.yaml#/AdGroupAdServiceBannerVideoAd'
+    dynamicAd:
+      $ref: 'AdGroupAdServiceDynamicAd.yaml#/AdGroupAdServiceDynamicAd'
+    mobileAd:
+      $ref: 'AdGroupAdServiceMobileAd.yaml#/AdGroupAdServiceMobileAd'
+    posAd:
+      $ref: 'AdGroupAdServicePosAd.yaml#/AdGroupAdServicePosAd'
+    responsiveImageAd:
+      $ref: 'AdGroupAdServiceResponsiveImageAd.yaml#/AdGroupAdServiceResponsiveImageAd'
+    responsiveVideoAd:
+      $ref: 'AdGroupAdServiceResponsiveVideoAd.yaml#/AdGroupAdServiceResponsiveVideoAd'
+    staticFrameAd:
+      $ref: 'AdGroupAdServiceStaticFrameAd.yaml#/AdGroupAdServiceStaticFrameAd'
+    textAd:
+      $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
+  title: AdGroupAdServiceAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAd object is a container for storing ads.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>

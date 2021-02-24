@@ -1,0 +1,21 @@
+FeedFtpServiceValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    feedFtp:
+      $ref: 'FeedFtp.yaml#/FeedFtp'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+  title: FeedFtpServiceValue
+  description: |
+    <div lang="ja">FeedFtpServiceValueオブジェクトは、操作結果を含む定期アップロード設定情報を表します。</div>
+    <div lang="en">FeedFtpServiceValue object displays Periodic Upload setting information including operation result.</div>

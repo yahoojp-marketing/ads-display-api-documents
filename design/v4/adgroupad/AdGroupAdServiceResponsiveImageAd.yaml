@@ -1,0 +1,107 @@
+AdGroupAdServiceResponsiveImageAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Description.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ・標準キャンペーンの場合<br>
+        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
+        ・アプリキャンペーンの場合<br>
+        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
+        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is optional in ADD and SET operation.<br>
+        - Standard campaign:<br>
+        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
+        - Mobile app campaign:<br>
+        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
+        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        タイトルです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Title.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    isRemoveLogoMediaId:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ロゴ画像のメディアIDです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の主体者表記です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Advertiser Indication.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+  title: AdGroupAdServiceResponsiveImageAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceResponsiveImageAdオブジェクトは、レスポンシブ広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがRESPONSIVE_IMAGE_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceResponsiveImageAd object describes the Responsive Ad information.<br>
+    This field is optional.<br>
+    *If adType is RESPONSIVE_IMAGE_AD, this field is required in ADD operation.
+    </div>

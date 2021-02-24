@@ -1,0 +1,38 @@
+RetargetingListServiceSimilarityTargetList:
+  type: object
+  nullable: true
+  properties:
+    targetListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        類似ユーザーをリターゲティングするターゲットIDです。<br>
+        このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。
+        </div>
+        <div lang="en">
+        Target ID for retargeting similar users. <br>
+        This field is required in ADD operation, and will be ignored in SET and REMOVE operation.
+        </div>
+    targetListSize:
+      $ref: 'RetargetingListServiceTargetListSize.yaml#/RetargetingListServiceTargetListSize'
+    targetListSizeReaches:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceTargetListSizeReaches.yaml#/RetargetingListServiceTargetListSizeReaches'
+      maxItems: 10
+  title: RetargetingListServiceSimilarityTargetList
+  description: |
+    <div lang="ja">
+    類似ユーザーターゲットの情報を保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※targetListTypeがSIMILARITYの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    RetargetingListServiceSimilarityTargetList object is a container for storing the information of Targeting information of users (similar).<br>
+    This field is optional in ADD and SET operation. <br>
+    *If targetListType is SIMILARITY, this field is required in ADD and SET operation.
+    </div>
+    

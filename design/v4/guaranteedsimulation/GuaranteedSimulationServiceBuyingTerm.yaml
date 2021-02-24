@@ -1,0 +1,22 @@
+GuaranteedSimulationServiceBuyingTerm:
+  type: object
+  nullable: true
+  properties:
+    buyingTermType:
+      $ref: 'GuaranteedSimulationServiceBuyingTermType.yaml#/GuaranteedSimulationServiceBuyingTermType'
+    singleDayBuyingTerm:
+      $ref: 'GuaranteedSimulationServiceSingleDayBuyingTerm.yaml#/GuaranteedSimulationServiceSingleDayBuyingTerm'
+    singleTermBuyingTerm:
+      $ref: 'GuaranteedSimulationServiceSingleTermBuyingTerm.yaml#/GuaranteedSimulationServiceSingleTermBuyingTerm'
+    customRangeBuyingTerm:
+      $ref: 'GuaranteedSimulationServiceCustomRangeBuyingTerm.yaml#/GuaranteedSimulationServiceCustomRangeBuyingTerm'
+  title: GuaranteedSimulationServiceBuyingTerm
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceBuyingTermは、商品購入期間情報を保持します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceBuyingTerm holds information about the package purchase term.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

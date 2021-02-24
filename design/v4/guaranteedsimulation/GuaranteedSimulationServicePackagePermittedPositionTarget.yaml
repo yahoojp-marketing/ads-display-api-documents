@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedPositionTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedPositionTarget.yaml#/GuaranteedSimulationServicePermittedPositionTarget'
+  title: GuaranteedSimulationServicePackagePermittedPositionTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedPositionTargetオブジェクトは、ポジションターゲット設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedPositionTarget object holds the restriction information about the setting of the position target.</div>
