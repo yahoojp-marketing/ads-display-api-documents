@@ -190,7 +190,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v4/FREQUENCY.csv" download>フリークエンシーレポート</a></div></li><li><div lang="en"><a href="./reports/v4/FREQUENCY.csv" download>Frequency report</a></div></li>
       <li><div lang="ja"><a href="./reports/v4/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v4/REACH.csv" download>Reach report</a></div></li>
       <li><div lang="ja"><a href="./reports/v4/SITE_RETARGETING_LIST.csv" download>サイトリターゲティング</a></div></li><li><div lang="en"><a href="./reports/v4/SITE_RETARGETING_LIST.csv" download>Site retargeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v4/SEARCH_KEYWORD_LIST.csv" download>ターチターゲティング</a></div></li><li><div lang="en"><a href="./reports/v4/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v4/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div></li><li><div lang="en"><a href="./reports/v4/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
       <li><div lang="ja"><a href="./reports/v4/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div></li><li><div lang="en"><a href="./reports/v4/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
       <li><div lang="ja"><a href="./reports/v4/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/v4/LABEL.csv" download>Label report</a></div></li>
       <li><div lang="ja"><a href="./reports/v4/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v4/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
@@ -317,6 +317,15 @@ tags:
       </div>
       <div lang="en">Use this service to get and update guaranteed campaign.<br>
       The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService. 
+      </div>
+  - name: GuaranteedReservationService
+    description: |
+      <label class="campaign"></label>
+      <div lang="ja">GuaranteedReservationServiceでは、GuaranteedSimulationServiceで実施したシミュレーション結果をもとにキャンペーンに指定された掲載期間、配信量を予約します。<br>
+      配信時は予約された内容を保証して配信を実施します。
+      </div>
+      <div lang="en"> GuaranteedReservationService reserves delivery period and delivery volume specified in campaign based on simulation result obtained via GuaranteedSimulationService. <br>
+      It will be delivered with guarantee of the reserved contents. 
       </div>
   - name: GuaranteedAdGroupService
     description: |
@@ -6665,6 +6674,61 @@ paths:
             application/json:
               schema:
                 $ref: 'guaranteedcampaign/GuaranteedCampaignServiceMutateResponse.yaml#/GuaranteedCampaignServiceMutateResponse'
+  /GuaranteedReservationService/add:
+    post:
+      description: |
+        <div lang="ja">シミュレーション結果に基づいて配信を予約します。予約を確定すると、シミュレーション時に指定した条件で予約型のキャンペーン、予約型の広告グループが自動的に作成されます。</div>
+        <div lang="en">Reserves the delivery based on simulation result. If the reservation is confirmed, guaranteed campaign or guaranteed ad group will be automatically created based on the specified condition during simulation.</div>
+      tags:
+        - GuaranteedReservationService
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: 'guaranteedreservation/GuaranteedReservationServiceOperation.yaml#/GuaranteedReservationServiceOperation'
+      responses:
+        503:
+          $ref: '../Response503.yaml#/Response503'
+        500:
+          $ref: '../Response500.yaml#/Response500'
+        403:
+          $ref: '../Response403.yaml#/Response403'
+        401:
+          $ref: '../Response401.yaml#/Response401'
+        400:
+          $ref: '../Response400.yaml#/Response400'
+        200:
+          description: |
+            <p class="cellContent__head">Error codes</p>
+            <div class="cellContent__body">
+            <table class="apiTable">
+              <colgroup span="1" class="short"></colgroup>
+              <colgroup span="2"></colgroup>
+              <thead>
+                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
+                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                <tr><td>260011</td><td>Specify the simulation result of 24 hours within.</td><td><div lang="ja">24時間以内のシミュレーション結果を指定してください。</div><div lang="en">Specify the simulation result of 24 hours within.</div></td></tr>
+                <tr><td>260012</td><td>Simulation ID that has already been used cannot be specified.</td><td><div lang="ja">使用済みのシミュレーションIDは指定できません。</div><div lang="en">Simulation ID that has already been used cannot be specified.</div></td></tr>
+              </tbody>
+            </table>
+            </div>
+          content:
+            application/json:
+              schema:
+                $ref: 'guaranteedreservation/GuaranteedReservationServiceMutateResponse.yaml#/GuaranteedReservationServiceMutateResponse'
   /GuaranteedAdGroupService/get:
     post:
       description: |
