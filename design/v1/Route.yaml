@@ -16,8 +16,7 @@ components:
           authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
-            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo!
-              JAPAN Ads via applications.
+            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
 security:
   - oAuth: [yahooads]
 
@@ -278,9 +277,7 @@ tags:
 paths:
   /AccountManagementService/get:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div><div\
-        \ lang=\"en\">Returns the account information. Enable to set the filter condition,\
-        \ such as the account Type.</div>"
+      description: "<div lang=\"ja\">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div><div lang=\"en\">Returns the account information. Enable to set the filter condition, such as the account Type.</div>"
       tags:
         - AccountManagementService
       requestBody:
@@ -330,8 +327,7 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountManagementService/add:
     post:
-      description: "<div lang=\"ja\">後請求のアカウントに関する情報を追加します。</div><div lang=\"en\"\
-        >Adds the information related to the invoice account.</div>"
+      description: "<div lang=\"ja\">後請求のアカウントに関する情報を追加します。</div><div lang=\"en\">Adds the information related to the invoice account.</div>"
       tags:
         - AccountManagementService
       requestBody:
@@ -381,8 +377,7 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountManagementService/set:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates\
-        \ the information related to the account.</div>"
+      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates the information related to the account.</div>"
       tags:
         - AccountManagementService
       requestBody:

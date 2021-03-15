@@ -20,11 +20,20 @@ ReportDefinitionServiceType:
   description: |
     <div lang="ja">
       ReportDefinitionServiceTypeは、レポートタイプを表します。<br>
-      ReportDefinitionServiceReportTypeConditionでは、<code>CONVERSION_PATH</code>、<code>CROSS_CAMPAIGN_REACHES</code>、<code>FREQUENCY</code>、<code>REACH</code>のみ指定可能です。
+      ADD時、ReportDefinitionServiceTypeの指定は不要です。ただし、以下のレポートを取得する場合は、対応するReportDefinitionServiceTypeをReportDefinitionServiceReportTypeConditionで指定する必要があります。<br>
+      - コンバージョン経路レポートの場合: <code>CONVERSION_PATH</code><br>
+      - 横断リーチレポートの場合: <code>CROSS_CAMPAIGN_REACHES</code><br>
+      - リーチフリークエンシーレポートの場合: <code>FREQUENCY</code><br>
+      - リーチレポートの場合: <code>REACH</code><br>
     </div>
     <div lang="en">
       ReportDefinitionServiceType serves category type of report.<br>
-      For ReportDefinitionServiceReportTypeCondition, only <code>CONVERSION_PATH</code>, <code>CROSS_CAMPAIGN_REACHES</code>, <code>FREQUENCY</code>, <code>REACH</code> can be specified. 
+      No need to specify ReportDefinitionServiceType in ADD operation. However, if you want to get the following report, you need to specify the corresponding ReportDefinitionServiceType in ReportDefinitionServiceReportTypeCondition.<br>
+      - Conversion Path Report: <code>CONVERSION_PATH</code><br>
+      - Cross-campaign Reach Report: <code>CROSS_CAMPAIGN_REACHES</code><br>
+      - Reach Frequency Report: <code>FREQUENCY</code><br>
+      - Reach Report: <code>REACH</code><br>
+      Only <code>CONVERSION_PATH</code>,<code>CROSS_CAMPAIGN_REACHES</code>,<code>FREQUENCY</code> and <code>REACH</code> can be specified in ADD operation.
     </div>
     <dl class=term>
       <dt class="term__item">AD</dt>
