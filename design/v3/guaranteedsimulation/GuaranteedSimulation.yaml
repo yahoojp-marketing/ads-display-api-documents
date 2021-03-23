@@ -204,10 +204,20 @@ GuaranteedSimulation:
       description: |
         <div lang="ja">
         広告カテゴリーIDです。<br>
+        広告カテゴリーは、配信する広告内容に該当するものを正確に指定して下さい。内容に応じて広告掲載量が変わるため、正確なシミュレーション結果の算出に必要です。<br>
+        詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=ja&aid=50308" target="_blank">ヘルプ</a>を参照してください。<br>
+        なお、ここで指定した広告カテゴリーと異なる広告が入稿された場合は、入稿した広告内容の修正が必要な旨をメールでご連絡します。<br>
+        ※指定した広告カテゴリーと広告タイプの組み合わせによっては、予約のキャンセルが必要な場合があります。その場合はキャンセル料が発生します。<br>
+        指定可能な値は、GuaranteedSimulationService/getAdCategoryで取得されるGuaranteedSimulationServiceAdCategoryオブジェクトのadCategoryIdフィールドをご参照ください。<br>
         ADD時、このフィールドは省略可能となります。
         </div>
         <div lang="en">
         Ad category ID.<br>
+        To get an accurate simulated result, specify the restricted contents correctly. The ad volume depends on the contents.<br>
+        <a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=en&aid=28259" target="_blank">Learn more</a><br>
+        If you add ads that have a content different from the one you specified, you will receive an email to fix them.<br>
+        You may need to cancel your ad depending on the combination of content and ad type you specified. Pay a cancellation fee in that case.<br>
+        Available values can be referred to adCategoryId field of GuaranteedSimulationServiceAdCategory object obtained by getAdCategory operation of GuaranteedSimulationService.<br>
         This field is optional in ADD operation.
         </div>
     packageId:
