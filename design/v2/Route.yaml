@@ -299,28 +299,50 @@ tags:
   - name: GuaranteedCampaignService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedCampaignServiceでは、予約型のキャンペーンの取得を行います。</div>
-      <div lang="en">Use this service to retrieve the guaranteed campaign.</div>
+      <div lang="ja">GuaranteedCampaignServiceでは、予約型のキャンペーンの取得を行います。<br>
+      1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。
+      </div>
+      <div lang="en">Use this service to retrieve the guaranteed campaign.<br>
+      The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService.
+      </div>
   - name: GuaranteedAdGroupService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedAdGroupServiceでは、予約型の広告グループの取得を行います。</div>
-      <div lang="en">Use this service to retrieve the guaranteed ad group.</div>
+      <div lang="ja">
+      GuaranteedAdGroupServiceでは、予約型の広告グループの取得を行います。
+      </div>
+      <div lang="en">
+      Use this service to retrieve the guaranteed ad group.
+      </div>
   - name: GuaranteedAdGroupAdService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedAdGroupAdServiceでは、予約型の広告の取得を行います。</div>
-      <div lang="en">Use this service to retrieve the guaranteed ad.</div>
+      <div lang="ja">
+      GuaranteedAdGroupAdServiceでは、予約型の広告の取得を行います。
+      </div>
+      <div lang="en">
+      Use this service to retrieve the guaranteed ad.
+      </div>
   - name: GuaranteedSimulationService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedSimulationServiceでは、予約型キャンペーンの配信シミュレーションの実施や、商品・広告カテゴリ一覧の取得を行います。</div>
-      <div lang="en">GuaranteedSimulationService implements the delivery simulation and returns list of package/ad categories on the guaranteed campaign.</div>
+      <div lang="ja">
+      GuaranteedSimulationServiceでは、予約型キャンペーンの配信シミュレーションの実施や、商品・広告カテゴリ一覧の取得を行います。<br>
+      ディスプレイ広告（予約型）に関する詳細については、以下のリンクもご参照ください。<br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=72966&o=default">ディスプレイ広告（予約型）の商品について</a>
+      </div>
+      <div lang="en">
+      GuaranteedSimulationService implements the delivery simulation and returns list of package/ad categories on the guaranteed campaign.
+      </div>
   - name: GuaranteedPreviewService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedPreviewServiceでは、予約型キャンペーンのプレビューURLの取得を行います。</div>
-      <div lang="en">GuaranteedPreviewService returns the preview URL of the guaranteed campaign.</div>
+      <div lang="ja">
+      GuaranteedPreviewServiceでは、予約型キャンペーンのプレビューURLの取得を行います。
+      </div>
+      <div lang="en">
+      GuaranteedPreviewService returns the preview URL of the guaranteed campaign.<br>
+      </div>
 
 paths:
   /AccountManagementService/get:

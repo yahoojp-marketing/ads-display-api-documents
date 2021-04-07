@@ -66,9 +66,11 @@ AdGroupTarget:
   description: |
     <div lang="ja">
     AdGroupTargetオブジェクトは、広告グループに設定されているターゲティング情報を格納します。<br>
-    このオブジェクトは、GuaranteedAdGroupServiceで広告グループを追加する場合は必須です。
+    このオブジェクトは、GuaranteedAdGroupServiceで広告グループを追加する場合は必須です。<br>
+    *GuaranteedAdGroupServiceでGETする際、このフィールドは返却されません。
     </div>
     <div lang="en">
     AdGroupTarget object contains targeting information specified in ad group.<br>
-    This object is required if you are adding ad group via GuaranteedAdGroupService.
+    This object is required if you are adding ad group via GuaranteedAdGroupService.<br>
+    *This field will not be returned in GET operation via GuaranteedAdGroupService.
     </div>

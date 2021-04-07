@@ -10,12 +10,12 @@ CampaignServiceDeviceOsType:
     <div lang="ja">
     CampaignServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>
     このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時に無視されます。<br>
-    ※campiagnTypeがAPPの場合、ADD時に必須となります。
+    ※campaignGoalが「APP_PROMOTION」の場合、ADD時に必須となります。
     </div>
     <div lang="en">
     CampaignServiceDeviceOsType serves OS types for devices to be posted on.<br>
     This field is optional in ADD operation, and will be ignored in SET and REMOVE operation. <br>
-    *If campaignType is APP, this field is required in ADD operation.
+    *If campaignGoal is APP_PROMOTION, this field is required in ADD operation.
     </div>
     <dl class=term>
       <dt class="term__item">ANDROID</dt>

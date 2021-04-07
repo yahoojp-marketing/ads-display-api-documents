@@ -37,13 +37,13 @@ Campaign:
         iOS:アプリIDです。<br>
         Android:パッケージ名です。<br>
         このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>
-        ※campaignTypeがAPPの場合、ADD時に必須となります。
+        ※campaignGoalが「APP_PROMOTION」の場合、ADD時に必須となります。
         </div>
         <div lang="en">
         iOS: APP ID.<br>
         Android: Package name. <br>
         This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>
-        *If campaignType is APP, this field is required in ADD operation.
+        *If campaignGoal is APP_PROMOTION, this field is required in ADD operation.
         </div>
     appName:
       type: string
@@ -52,12 +52,12 @@ Campaign:
         <div lang="ja">
         アプリの名称です。<br>
         このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>
-        ※campaignTypeがAPPの場合、ADD時に必須となります。
+        ※campaignGoalが「APP_PROMOTION」の場合、ADD時に必須となります。
         </div>
         <div lang="en">
         App Name. <br>
         This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>
-        *If campaignType is APP, this field is required in ADD operation.
+        *If campaignGoal is APP_PROMOTION, this field is required in ADD operation.
         </div>
     biddingStrategy:
       $ref: 'CampaignServiceBiddingStrategy.yaml#/CampaignServiceBiddingStrategy'

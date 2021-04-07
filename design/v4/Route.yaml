@@ -315,33 +315,43 @@ tags:
       1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。
       </div>
       <div lang="en">Use this service to get and update guaranteed campaign.<br>
-      The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService. 
+      The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService.
       </div>
   - name: GuaranteedReservationService
     description: |
       <label class="campaign"></label>
       <div lang="ja">GuaranteedReservationServiceでは、GuaranteedSimulationServiceで実施したシミュレーション結果をもとにキャンペーンに指定された掲載期間、配信量を予約します。<br>
-      配信時は予約された内容を保証して配信を実施します。
+      配信時は予約された内容を保証して配信を実施します。<br>
+      ディスプレイ広告（予約型）に関する詳細については、以下のリンクもご参照ください。<br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=72885&o=default">予約型のキャンペーンを作成する（予約する）</a>
       </div>
       <div lang="en"> GuaranteedReservationService reserves delivery period and delivery volume specified in campaign based on simulation result obtained via GuaranteedSimulationService. <br>
-      It will be delivered with guarantee of the reserved contents. 
+      It will be delivered with guarantee of the reserved contents.
       </div>
   - name: GuaranteedAdGroupService
     description: |
       <label class="campaign"></label>
       <div lang="ja">GuaranteedAdGroupServiceでは、予約型の広告グループの操作を提供します。<br>
       予約型の広告グループを削除する場合は、AdGroupService/removeをご利用ください。<br>
-      追加した予約型のターゲティング設定情報を更新・削除する場合は、AdGroupTargetServiceをご利用ください。
+      追加した予約型のターゲティング設定情報を取得・更新・削除する場合は、AdGroupTargetServiceをご利用ください。<br>
+      ディスプレイ広告（予約型）に関する詳細については、以下のリンクもご参照ください。<br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=75714&o=default">広告グループを追加する</a><br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=75717&o=default">クリエイティブプロファイルについて</a>
       </div>
       <div lang="en">Use this service to get, add and update guaranteed adgroup.<br>
       Use AdGroupService/remove to delete the guaranteed ad group.<br>
-      Use AdGroupTargetService to set or delete the added guaranteed targeting settings.
+      Use AdGroupTargetService to get, set or delete the added guaranteed targeting settings.
       </div>
   - name: GuaranteedAdGroupAdService
     description: |
       <label class="campaign"></label>
       <div lang="ja">GuaranteedAdGroupAdServiceでは、予約型の広告の操作を提供します。<br>
-      予約型の広告を削除する場合は、AdGroupAdService/removeをご利用ください。
+      予約型の広告を削除する場合は、AdGroupAdService/removeをご利用ください。<br>
+      ディスプレイ広告（予約型）に関する詳細については、以下のリンクもご参照ください。<br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=74226&o=default">広告を作成する（バナー広告）</a><br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=74256&o=default">広告を作成する（予約型専用広告）</a><br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=77610&o=default">広告を編集する</a><br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=77643&o=default">広告を削除する</a>
       </div>
       <div lang="en">Use this service to get, add and update guaranteed ad.<br>
       Use AdGroupAdService/remove to delete the guaranteed ad.
@@ -349,13 +359,23 @@ tags:
   - name: GuaranteedSimulationService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedSimulationServiceでは、予約型キャンペーンの配信シミュレーションの実施や、商品・広告カテゴリ一覧の取得を行います。</div>
-      <div lang="en">GuaranteedSimulationService implements the delivery simulation and returns list of package/ad categories on the guaranteed campaign.</div>
+      <div lang="ja">
+      GuaranteedSimulationServiceでは、予約型キャンペーンの配信シミュレーションの実施や、商品・広告カテゴリ一覧の取得を行います。<br>
+      ディスプレイ広告（予約型）に関する詳細については、以下のリンクもご参照ください。<br>
+      <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=72966&o=default">ディスプレイ広告（予約型）の商品について</a>
+      </div>
+      <div lang="en">
+      GuaranteedSimulationService implements the delivery simulation and returns list of package/ad categories on the guaranteed campaign.
+      </div>
   - name: GuaranteedPreviewService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">GuaranteedPreviewServiceでは、予約型キャンペーンのプレビューURLの取得を行います。</div>
-      <div lang="en">GuaranteedPreviewService returns the preview URL of the guaranteed campaign.</div>
+      <div lang="ja">
+      GuaranteedPreviewServiceでは、予約型キャンペーンのプレビューURLの取得を行います。
+      </div>
+      <div lang="en">
+      GuaranteedPreviewService returns the preview URL of the guaranteed campaign.<br>
+      </div>
   - name: BudgetOrderService
     description: |
       <label class="account"></label>

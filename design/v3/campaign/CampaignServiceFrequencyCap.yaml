@@ -25,7 +25,7 @@ CampaignServiceFrequencyCap:
     CampaignServiceFrequencyCapは、フリクエンシー制御を表します。<br>
     このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
     ※ADDおよびSET時、目的ありの場合は設定不可となります。<br>
-    ※ADD時は全ての項目の指定が必須です。<br>
+    ※ADD時、このフィールドは指定できません。<br>
     ※SET時は更新する項目のみのリクエストが可能です。<br>
     ※フリークエンシーキャップの解除方法は、以下の通りです：
     </div>
@@ -33,7 +33,7 @@ CampaignServiceFrequencyCap:
     CampaignServiceFrequencyCap object describes frequency restriction.<br>
     This field is optional in ADD and SET operation, and will be ignored in REMOVE operation. <br>
     *In ADD and SET operation, this field cannot be set for campaigns with campaign goal. <br>
-    *All items must be specified in ADD operation.<br>
+    *In ADD operation, this field can not be set.<br>
     *Only update items can be requested in SET operation.<br>
     *Method to remove the frequency cap:
     </div>

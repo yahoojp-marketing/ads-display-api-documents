@@ -65,7 +65,7 @@ AccountAuthority:
         </tr>
         <tr>
           <td>SHOPPING_ADS</td>
-          <td>ショッピング広告</td>
+          <td>eコマース</td>
           <td>キャンペーン掲載タイプ</td>
         </tr>
       </table>
@@ -116,7 +116,7 @@ AccountAuthority:
         </tr>
         <tr>
           <td>SHOPPING_ADS</td>
-          <td>Shopping ads</td>
+          <td>Ecommerce</td>
           <td>Campaign delivery type</td>
         </tr>
       </table>

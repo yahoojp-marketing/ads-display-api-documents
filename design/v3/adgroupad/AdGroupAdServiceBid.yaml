@@ -12,9 +12,11 @@ AdGroupAdServiceBid:
   description: |
     <div lang="ja">
     AdGroupAdServiceBidオブジェクトは、入札最適化方法を格納するコンテナです。<br>
-    ADDおよびSET時、このフィールドは省略可能となります。
+    SET時、このフィールドは省略可能となります。<br>
+    ADD時、このフィールドは指定できません。
     </div>
     <div lang="en">
     AdGroupAdServiceBid object is a container for storing bid optimization method.<br>
-    This field is optional in ADD and SET operation.
+    This field is optional in SET operation.<br>
+    In ADD operation, this field can not be set.
     </div>

@@ -9,11 +9,13 @@ CampaignServiceBiddingStrategyType:
   description: |
     <div lang="ja">
     CampaignServiceBiddingStrategyTypeは、入札方法の種類を表します。<br>
-    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    このフィールドは、SET時に必須となり、REMOVE時に無視されます。<br>
+    ADD時、このフィールドは指定できません。
     </div>
     <div lang="en">
     CampaignServiceBiddingStrategyType serves types of bidding strategies.<br>
-    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    This field is required in SET operation, and will be ignored in REMOVE operation.<br>
+    In ADD operation, this field can not be set.
     </div>
     <dl class=term>
       <dt class="term__item">MANUAL_CPC</dt>
