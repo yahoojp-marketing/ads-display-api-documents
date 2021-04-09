@@ -9,25 +9,25 @@ AdGroupServiceManualCPCBid:
       description: |
         <div lang="ja">
         入札価格です。<br>
-        このフィールドは、リクエストの場合は必須です。
+        SET時、このフィールドは省略可能となります。<br>
+        ADD時、このフィールドは指定できません。
         </div>
         <div lang="en">
         Bid amount.<br>
-        This field is required in requests.
+        This field is optional in SET operation.<br>
+        In ADD operation, this field can not be set.
         </div>
   title: AdGroupServiceManualCPCBid
   description: |
     <div lang="ja">
     AdGroupServiceManualCPCBidオブジェクトは、広告グループの入札価格を保持します。<br>
-    このフィールドは、省略可能となります。<br>
-    ※ADD時、typeがMANUAL_CPCの場合は必須です。<br>
-    ※広告掲載方式がVIDEO_AD（動画広告）のキャンペーンIDを指定した時は利用できません。<br>
+    SET時、このフィールドは省略可能となります。<br>
+    ADD時、このフィールドは指定できません。<br>
     詳細は、「<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=1281">広告グループの作成 - 広告グループの入札価格を入力</a>」を参照してください。
     </div>
     <div lang="en">
     AdGroupServiceManualCPCBid object stores the bid amount of ad group.<br>
-    This field is optional.<br>
-    *If type is MANUAL_CPC, this field is required in ADD operation.<br>
-    *It is not available when a campaign ID with ad distribution type 'VIDEO_AD' is specified.<br>
+    This field is optional in SET operation.<br>
+    In ADD operation, this field can not be set.<br>
     More details are described on <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=487">Create Ad Group - Enter the Bid amount of the Ad Group</a>.
     </div>
