@@ -9,24 +9,16 @@ AdGroupAdServiceBannerImageAd:
         <div lang="ja">
         表示URLです。<br>
         ADDおよびSET時、このフィールドは省略可能となります。<br>
-        ・標準キャンペーンの場合<br>
-        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
-        ・アプリキャンペーンの場合<br>
-        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
-        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com<br>
+        ただし、キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        - iOSの場合：itunes.apple.com<br>
+        - Androidの場合：play.google.com
         </div>
         <div lang="en">
         Display URL.<br>
         This field is optional in ADD and SET operation.<br>
-        - Standard campaign:<br>
-        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
-        - Mobile app campaign:<br>
-        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
-        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
+        However, not allowed for ADD and SET when a campaign goal is "app promotion". Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
+        - For iOS : itunes.apple.com<br>
+        - For Android : play.google.com
         </div>
     url:
       type: string
