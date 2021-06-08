@@ -1,0 +1,326 @@
+GuaranteedInventoryServiceInventory:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        ADD時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        This field is optional in ADD operation.
+        </div>
+    lifetimeBudget:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンの通期予算額です。<br>
+        ※この「通期予算」は、キャンペーンの全期間を通じて消費される予算を意味します。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        An amount of campaign's lifetime budget.<br>
+        * "lifetime budget" means the total budget that is spent throughout the entire duration of the campaign.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        リーチ数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of reaches.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    vImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ビューアブルインプレッションです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Viewable impressions.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    sovRate:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        SOV（1%〜100%）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        SOV (1% to 100%).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    slots:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        購入枠数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of buying slots.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    campaignGoal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン目的です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Campaign goal.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンの開始日です。<br>
+        ADD時、このフィールドは必須となります。
+        </div>
+        <div lang="en">
+        Start date of campaign. <br>
+        This field is required in ADD operation.
+        </div>
+        Format: yyyyMMdd
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンの終了日です。<br>
+        ADD時、このフィールドは必須となります。<br>
+        </div>
+        <div lang="en">
+        End date of campaign. <br>
+        This field is required in ADD operation.<br>
+        </div>
+        Format: yyyyMMdd
+    maxSellableVImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        販売可能な最大ビューアブルインプレッション数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Maximum number of viewable impression available for sale. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    maxSellableReach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        販売可能な最大リーチ数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Maximum number of reach available for sale.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    maxReservableVImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        指定された条件で予約可能な最大配信量です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Maximum ad delivery amount that can be reserved under the specified conditions. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    maxReservableSlots:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最大予約可能枠数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Maximum number of reservable slots. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    lowerBudgetLimit:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        予約可能な下限通期予算です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Minimum reservable lifetime budget.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    upperBudgetLimit:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        予約可能な上限通期予算です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Maximum reservable lifetime budget.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    packageId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品IDです。<br>
+        ADD時、このフィールドは必須となります。
+        </div>
+        <div lang="en">
+        Package ID.<br>
+        In ADD operation, this field will be required.
+        </div>
+    packageName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        商品名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Package name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    packageHistoryId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品履歴IDです。<br>
+        ADD時、このフィールドは必須となります。
+        </div>
+        <div lang="en">
+        Package history ID.<br>
+        In ADD operation, this field will be required.
+        </div>
+    adCategoryIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">
+        広告カテゴリーIDです。<br>
+        広告カテゴリーは、配信する広告内容に該当するものを正確に指定して下さい。内容に応じて広告掲載量が変わるため、正確なシミュレーション結果の算出に必要です。<br>
+        詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=ja&aid=50308" target="_blank">ヘルプ</a>を参照してください。<br>
+        なお、ここで指定した広告カテゴリーと異なる広告が入稿された場合は、入稿した広告内容の修正が必要な旨をメールでご連絡します。<br>
+        ADD時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Ad category ID.<br>
+        To get an accurate simulated result, specify the restricted contents correctly. The ad volume depends on the contents.<br>
+        <a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=en&aid=28259" target="_blank">Learn more</a><br>
+        If you add ads that have a content different from the one you specified, you will receive an email to fix them.<br>
+        This field is optional in ADD operation.
+        </div>
+    promotionUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">表示URLです。<br>
+        ADD時、このフィールドは省略可能となります。</div>
+        <div lang="en">Promotion url.<br>
+        This field is optional in ADD operation.</div>
+    minimumPurchaseVImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最低購入ビューアブルインプレッション数を表します。</div>
+        <div lang="en">Minimum purchase viewable impression.</div>
+    maximumPurchaseVImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最大購入ビューアブルインプレッション数を表します。</div>
+        <div lang="en">Maximum purchase viewable impression.</div>
+    inventoryUnit:
+      $ref: 'GuaranteedInventoryServiceInventoryUnit.yaml#/GuaranteedInventoryServiceInventoryUnit'
+    campaignBiddingStrategyType:
+      $ref: 'GuaranteedInventoryServiceCampaignBiddingStrategyType.yaml#/GuaranteedInventoryServiceCampaignBiddingStrategyType'
+    viewableFrequencyCap:
+      $ref: 'GuaranteedInventoryServiceViewableFrequencyCap.yaml#/GuaranteedInventoryServiceViewableFrequencyCap'
+    reservationStatus:
+      $ref: 'GuaranteedInventoryServiceReservationStatus.yaml#/GuaranteedInventoryServiceReservationStatus'
+    unreservableReason:
+      $ref: 'GuaranteedInventoryServiceUnreservableReason.yaml#/GuaranteedInventoryServiceUnreservableReason'
+    adRequirements:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServiceAdRequirement.yaml#/GuaranteedInventoryServiceAdRequirement'
+    inventoryDetailStatus:
+      $ref: 'GuaranteedInventoryServiceInventoryDetailStatus.yaml#/GuaranteedInventoryServiceInventoryDetailStatus'
+    actionAfterVideoAdTap:
+      $ref: 'GuaranteedInventoryServiceActionAfterVideoAdTap.yaml#/GuaranteedInventoryServiceActionAfterVideoAdTap'
+    priceType:
+      $ref: 'GuaranteedInventoryServicePriceType.yaml#/GuaranteedInventoryServicePriceType'
+    placementMonopolyFlg:
+      $ref: 'GuaranteedInventoryServicePlacementMonopolyFlg.yaml#/GuaranteedInventoryServicePlacementMonopolyFlg'
+    predictionResults:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServicePredictionResult.yaml#/GuaranteedInventoryServicePredictionResult'
+    requestedConditionPredictionResult:
+      $ref: 'GuaranteedInventoryServicePredictionResult.yaml#/GuaranteedInventoryServicePredictionResult'
+    inventoryResult:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServiceInventoryResult.yaml#/GuaranteedInventoryServiceInventoryResult'
+    targets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServiceAdGroupTarget.yaml#/GuaranteedInventoryServiceAdGroupTarget'
+  title: GuaranteedInventory
+  description: |
+    <div lang="ja">GuaranteedInventoryオブジェクトは、予約型キャンペーンの配信シミュレーション情報を保持します。</div>
+    <div lang="en">GuaranteedInventory object holds information about the delivery simulation of the guaranteed campaign.</div>

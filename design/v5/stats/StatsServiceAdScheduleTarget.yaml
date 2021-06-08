@@ -1,0 +1,24 @@
+StatsServiceAdScheduleTarget:
+  type: object
+  nullable: true
+  properties:
+    dayOfWeek:
+      $ref: 'StatsServiceDayOfWeek.yaml#/StatsServiceDayOfWeek'
+    endHour:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">終了時間(時のみ)</div>
+        <div lang="en">End time (hour only)</div>
+    startHour:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">開始時間(時のみ)</div>
+        <div lang="en">Start time (hour only)</div>
+  title: StatsServiceAdScheduleTarget
+  description: |
+    <div lang="ja">StatsServiceAdScheduleTargetオブジェクトは、時間帯ターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceAdScheduleTarget object is a container for storing day of week/hours targeting settings.</div>

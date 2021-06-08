@@ -1,0 +1,45 @@
+RetargetingListServiceUploadUserListJob:
+  type: object
+  nullable: true
+  properties:
+    uploadJobId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロードジョブIDです。</div>
+        <div lang="en">Upload job ID.</div>
+    retargetingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">サイトリターゲティングのタグIDです。</div>
+        <div lang="en">Tag ID for site retargeting.</div>
+    targetListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">カスタムオーディエンスのターゲットリストIDです。</div>
+        <div lang="en">Target list ID of custom audience.</div>
+    uploadType:
+      $ref: 'RetargetingListServiceUploadUserListUploadType.yaml#/RetargetingListServiceUploadUserListUploadType'
+    uploadSubmitDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード日時</div>
+        <div lang="en">Upload date and time.</div>
+        <br>Format: yyyyMMddHHmmss
+    receivedDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード受付完了日時</div>
+        <div lang="en">Upload job completion date and time.</div>
+        <br>Format: yyyyMMddHHmmss
+    jobStatus:
+      $ref: 'RetargetingListServiceJobStatus.yaml#/RetargetingListServiceJobStatus'
+  title: RetargetingListServiceUploadUserListJob
+  description: |
+    <div lang="ja">RetargetingListServiceUploadUserListJobオブジェクトは、ユーザーリストのアップロードジョブの処理状況を示すオブジェクトです。</div>
+    <div lang="en">RetargetingListServiceUploadUserListJob object indicates the processing status of user list upload.</div>

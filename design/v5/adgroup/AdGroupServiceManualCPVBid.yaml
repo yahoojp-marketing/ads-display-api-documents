@@ -1,0 +1,33 @@
+AdGroupServiceManualCPVBid:
+  type: object
+  nullable: true
+  properties:
+    maxCpv:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        入札価格です。<br>
+        SET時、このフィールドは省略可能となります。<br>
+        ADD時、このフィールドは指定できません。
+        </div>
+        <div lang="en">
+        Bid amount.<br>
+        This field is optional in SET operation.<br>
+        In ADD operation, this field can not be set.
+        </div>
+  title: AdGroupServiceManualCPVBid
+  description: |
+    <div lang="ja">
+    AdGroupServiceManualCPVBidオブジェクトは、広告グループの入札価格（CPV）を保持します。<br>
+    SET時、このフィールドは省略可能となります。<br>
+    ADD時、このフィールドは指定できません。<br>
+    詳細は、「<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=1281">広告グループの作成 - 広告グループの入札価格を入力</a>」を参照してください。
+    </div>
+    <div lang="en">
+    AdGroupServiceManualCPVBid object stores the bid amount of ad group (CPV).<br>
+    This field is optional in SET operation.<br>
+    In ADD operation, this field can not be set.<br>
+    More details are described on <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=487">Create Ad Group - Enter the Bid amount of the Ad Group</a>.
+    </div>

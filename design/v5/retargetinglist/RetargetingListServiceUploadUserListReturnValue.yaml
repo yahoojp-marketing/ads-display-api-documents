@@ -1,0 +1,13 @@
+RetargetingListServiceUploadUserListReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceUploadUserListValue.yaml#/RetargetingListServiceUploadUserListValue'
+  title: RetargetingListServiceUploadUserListReturnValue
+  description: |
+    <div lang="ja">RetargetingListServiceUploadUserListReturnValueオブジェクトは、ユーザーリストのアップロード情報を表します。</div>
+    <div lang="en">RetargetingListServiceUploadUserListReturnValue object describes upload information of the user list.</div>

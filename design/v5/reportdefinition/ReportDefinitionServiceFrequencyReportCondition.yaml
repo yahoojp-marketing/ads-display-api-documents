@@ -1,0 +1,18 @@
+ReportDefinitionServiceFrequencyReportCondition:
+  type: object
+  nullable: true
+  properties:
+    frequencyRange:
+      $ref: 'ReportDefinitionServiceFrequencyRange.yaml#/ReportDefinitionServiceFrequencyRange'
+  title: ReportDefinitionServiceFrequencyReportCondition
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceFrequencyReportConditionオブジェクトは、フリークエンシーレポートの作成条件を表します。<br>
+      このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+      ※ADD時、reportTypeが<code>FREQUENCY</code>の場合は必須です。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceFrequencyReportCondition describes the condition to create Frequency Report. <br>
+      This field is optional in ADD operation, and will be ignored in REMOVE operation. <br> 
+      *If reportType is <code>FREQUENCY</code>, this field is required in ADD operation. 
+    </div>

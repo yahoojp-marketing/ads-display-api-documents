@@ -1,0 +1,16 @@
+GuaranteedSimulationServiceSalesDocument:
+  type: object
+  nullable: true
+  properties:
+    file:
+      $ref: 'GuaranteedSimulationServiceDocumentFile.yaml#/GuaranteedSimulationServiceDocumentFile'
+  title: GuaranteedSimulationServiceSalesDocument
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServiceSalesDocumentは、セールスシート情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServiceSalesDocument holds the sales sheet information.<br>
+      Although this field will be returned in the response, it will be ignored on input. 
+    </div>

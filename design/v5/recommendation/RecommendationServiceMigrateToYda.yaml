@@ -1,0 +1,13 @@
+RecommendationServiceMigrateToYda:
+  type: object
+  nullable: true
+  properties:
+    migrateToYdaCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceMigrateToYdaCampaign.yaml#/RecommendationServiceMigrateToYdaCampaign'
+  title: RecommendationServiceMigrateToYda
+  description: |
+    <div lang="ja">RecommendationServiceMigrateToYdaオブジェクトは、ディスプレイ広告（運用型）形式への変換が必要なキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceMigrateToYda object describes the Recommendations information of campaigns that are required to convert to Display Ads (Auction).</div>

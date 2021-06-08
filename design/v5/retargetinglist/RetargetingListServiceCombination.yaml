@@ -1,0 +1,21 @@
+RetargetingListServiceCombination:
+  type: object
+  nullable: true
+  properties:
+    logicalOperator:
+      $ref: 'RetargetingListServiceLogicalOperator.yaml#/RetargetingListServiceLogicalOperator'
+    targetLists:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceTargetListData.yaml#/RetargetingListServiceTargetListData'
+  title: RetargetingListServiceCombination
+  description: |
+    <div lang="ja">
+    RetargetingListServiceCombinationオブジェクトは、ターゲットリストの組み合わせに関する情報を格納するコンテナです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    RetargetingListServiceCombination object is a container for storing combination of target list information. <br>
+    This field is required in ADD and SET operation.
+    </div>

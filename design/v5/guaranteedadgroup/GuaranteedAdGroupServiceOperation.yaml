@@ -1,0 +1,25 @@
+GuaranteedAdGroupServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedAdGroup.yaml#/GuaranteedAdGroup'
+      minItems: 1
+      maxItems: 2000
+  title: GuaranteedAdGroupServiceOperation
+  description: |
+    <div lang="ja">GuaranteedAdGroupServiceOperationオブジェクトは、操作の対象となる予約型の広告グループと処理の内容を表します。</div>
+    <div lang="en">GuaranteedAdGroupServiceOperation object describes the guaranteed ad group to be operated on and the content of the process.</div>

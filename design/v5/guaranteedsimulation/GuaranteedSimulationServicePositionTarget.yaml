@@ -1,0 +1,18 @@
+GuaranteedSimulationServicePositionTarget:
+  type: object
+  nullable: true
+  properties:
+    positionType:
+      $ref: 'GuaranteedSimulationServicePositionType.yaml#/GuaranteedSimulationServicePositionType'
+  title: GuaranteedSimulationServicePositionTarget
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServicePositionTargetオブジェクトは、ポジションターゲティングの設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※targetTypeがPOSITION_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServicePositionTarget object is a container for storing position targeting settings.<br>
+    This field is optional in ADD operation.<br>
+    ∗If targetType is POSITION_TARGET, this field is required.
+    </div>

@@ -1,0 +1,39 @@
+AdGroupTargetServiceGeoTarget:
+  type: object
+  nullable: true
+  properties:
+    geoNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        地域名（英語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Region name (English).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    geoNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        地域名（日本語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Region name (Japanese).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: AdGroupTargetServiceGeoTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceGeoTargetオブジェクトは、地域ターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがGEO_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceGeoTarget object is a container for storing geological targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is GEO_TARGET, this field is required.
+    </div>

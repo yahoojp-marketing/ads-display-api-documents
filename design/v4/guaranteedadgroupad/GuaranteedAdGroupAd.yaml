@@ -191,10 +191,10 @@ GuaranteedAdGroupAd:
       nullable: true
       description: |
         <div lang="ja">
-        事前承認IDです。<br>
+        事前承認ID（数字のみ）です。<br>
         </div>
         <div lang="en">
-        Pre-approval ID.<br>
+        Pre-approval ID (Only number).<br>
         </div>
     landingPageUpdateScheduledTime:
       type: string
@@ -203,10 +203,12 @@ GuaranteedAdGroupAd:
         <div lang="ja">
         リンク先更新予定日時です。<br>
         ※フォーマット：yyyyMMddHHmm<br>
+        ※landingPageStatusがSPECIFIED_UPDATE_SCHEDULED_TIMEの場合は必須です。
         </div>
         <div lang="en">
         The scheduled update date and time for the landing page.<br>
         *format: yyyyMMddHHmm<br>
+        ∗If landingPageStatus is SPECIFIED_UPDATE_SCHEDULED_TIME, this field is required.
         </div>
   title: GuaranteedAdGroupAd
   description: |

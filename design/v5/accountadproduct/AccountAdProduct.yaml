@@ -1,0 +1,20 @@
+AccountAdProduct:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description:
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">AccountId.</div>
+    adProduct:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AccountAdProductServiceAdProduct.yaml#/AccountAdProductServiceAdProduct'
+  title: AccountAdProduct
+  description: |
+    <div lang="ja">AccountAdProductオブジェクトは、広告掲載方式を含むコンテナです。</div>
+    <div lang="en">AccountAdProduct object is a container that includes the ad display method.</div>

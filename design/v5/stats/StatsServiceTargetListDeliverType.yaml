@@ -1,0 +1,19 @@
+StatsServiceTargetListDeliverType:
+  type: string
+  nullable: true
+  enum:
+  - INCLUDE
+  - EXCLUDE
+  - UNKNOWN
+  title: StatsServiceTargetListDeliverType
+  description: |
+    <div lang="ja">StatsServiceTargetListDeliverTypeは、ターゲットリスト種別（配信対象・配信除外対象の設定）を表します。</div>
+    <div lang="en">StatsServiceTargetListDeliverType stands for the type of target list type.</div>
+    <dl class=term>
+      <dt class="term__item">INCLUDE</dt>
+      <dd class="term__desc"><span lang="ja">配信対象です。</span><span lang="en">Delivery target</span></dd>
+      <dt class="term__item">EXCLUDE</dt>
+      <dd class="term__desc"><span lang="ja">配信除外です。</span><span lang="en">Delivery excluded target</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

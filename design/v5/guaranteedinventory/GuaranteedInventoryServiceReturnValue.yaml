@@ -1,0 +1,13 @@
+GuaranteedInventoryServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServiceValue.yaml#/GuaranteedInventoryServiceValue'
+  title: GuaranteedInventoryServiceReturnValue
+  description: |
+    <div lang="ja">GuaranteedInventoryServiceReturnValueオブジェクトは、予約型キャンペーンの在庫情報を格納するコンテナです。</div>
+    <div lang="en">GuaranteedInventoryServiceReturnValue object contains the guaranteed campaign delivery simulation including the operation result.</div>

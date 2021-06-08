@@ -1,0 +1,14 @@
+StatsServiceSearchTarget:
+  type: object
+  nullable: true
+  properties:
+    searchKeywordListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">サーチキーワードリスト名</div>
+        <div lang="en">Search Keyword List name</div>
+  title: StatsServiceSearchTarget
+  description: |
+    <div lang="ja">StatsServiceSearchTargetオブジェクトは、サーチターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceSearchTarget object holds configuration information of search targeting.</div>

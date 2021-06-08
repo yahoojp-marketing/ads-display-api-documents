@@ -1,0 +1,70 @@
+RecommendationServiceMigrateToYdaCampaign:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        </div>
+        <div lang="en">
+        Campaign Name.<br>
+        </div>
+    campaignUserStatus:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン配信設定です。
+        </div>
+        <div lang="en">
+        Campaign delivery setting.
+        </div>
+    stardDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン配信開始日です。<br>※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        Start date of campaign delivery.<br>* Format: yyyyMMdd
+        </div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン配信終了日です。<br>※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        End date of campaign delivery.<br>* Format: yyyyMMdd
+        </div>
+  title: RecommendationServiceMigrateToYdaCampaign
+  description: |
+    <div lang="ja">RecommendationServiceMigrateToYdaCampaignオブジェクトは、ディスプレイ広告（運用型）形式への変換が必要なキャンペーンに関する最適化提案の詳細情報を表します。</div>
+    <div lang="en">RecommendationServiceMigrateToYdaCampaign object describes the detailed information of Recommendations about campaigns that are required to convert to Display Ads (Auction).</div>

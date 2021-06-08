@@ -1,0 +1,23 @@
+AccountLinkServiceRetargetingListSharingEnabled:
+  type: string
+  nullable: true
+  enum:
+  - 'FALSE'
+  - 'TRUE'
+  - UNKNOWN
+  title: AccountLinkServiceRetargetingListSharingEnabled
+  description: |
+    <div lang="ja">
+    AccountLinkServiceRetargetingListSharingEnabledは、リターゲティングリスト共有が有効なリンクかどうかを表します。<br>
+    </div>
+    <div lang="en">
+    AccountLinkServiceRetargetingListSharingEnabled describes whether the link is valid for the sharing of retargeting list.<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">リターゲティングリスト共有が有効なリンクです。</span><span lang="en">Retargeting list sharing is a enable.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">リターゲティングリスト共有が無効なリンクです。</span><span lang="en">Retargeting list sharing is a disable.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

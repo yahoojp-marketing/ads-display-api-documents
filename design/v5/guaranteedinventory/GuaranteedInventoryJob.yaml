@@ -1,0 +1,104 @@
+GuaranteedInventoryJob:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    inventoryJobId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">在庫確認ジョブIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Inventory check job ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    inventoryJobName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">在庫確認ジョブ名です。<br>
+        ADD時、このフィールドは必須となります。</div>
+        <div lang="en">Inventory check job name.<br>
+        This field is required in ADD operation.</div>
+    notificationBusinessIds:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">連絡先Yahoo! JAPANビジネスIDです。<br>
+        ADD時、このフィールドは省略可能となります。</div>
+        <div lang="en">Yahoo! JAPAN Business ID to send notifications.<br>
+        This field is optional in ADD operation.</div>
+    inventoryJobStartDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        在庫確認ジョブの開始日時です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Start date of inventory check job.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+        Format: yyyyMMddHHmmss
+    inventoryJobEndDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        在庫確認ジョブの完了日時です。<br>
+        在庫確認ジョブが実行中の場合はnullで返ります。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">
+        End date of inventory check job. <br>
+        Null will be returned if the inventory check job is still running. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+        Format: yyyyMMddHHmmss
+    createdBusinessId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">在庫確認ジョブ作成者のYahoo! JAPANビジネスIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Yahoo! JAPAN Business ID of inventory check job creator. <br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+    isExpiredPackage:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">
+        予約有効終了日が過去日の商品が指定されているかどうかのフラグです。<br>
+        trueの場合、その商品の予約有効終了日を超えていることを示しています。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">
+        A flag which indicates if the expired package is specified. <br>
+        If the value is true, it indicates that the package reservation expiration date has already passed. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    inventoryJobStatus:
+      $ref: 'GuaranteedInventoryServiceInventoryJobStatus.yaml#/GuaranteedInventoryServiceInventoryJobStatus'
+    inventories:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedInventoryServiceInventory.yaml#/GuaranteedInventoryServiceInventory'
+  title: GuaranteedInventoryJob
+  description: |
+    <div lang="ja">GuaranteedInventoryJobオブジェクトは、在庫情報のジョブを格納するコンテナです。</div>
+    <div lang="en">GuaranteedInventoryJob contains the job of inventory information.</div>

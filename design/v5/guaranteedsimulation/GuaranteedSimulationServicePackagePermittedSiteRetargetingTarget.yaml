@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedSiteRetargetingTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedSiteRetargetingTarget.yaml#/GuaranteedSimulationServicePermittedSiteRetargetingTarget'
+  title: GuaranteedSimulationServicePackagePermittedSiteRetargetingTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedSiteRetargetingTargetオブジェクトは、サイトリターゲティング設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedSiteRetargetingTarget object holds limit information about the site retargeting setting.</div>

@@ -1,0 +1,29 @@
+RetargetingListServiceTargetListSizeReaches:
+  type: object
+  nullable: true
+  properties:
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ターゲットリストのサイズのリーチ数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reaches of target list size. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    targetListSize:
+      $ref: 'RetargetingListServiceTargetListSize.yaml#/RetargetingListServiceTargetListSize'
+  title: RetargetingListServiceTargetListSizeReaches
+  description: |
+    <div lang="ja">
+    ターゲットリストのサイズの各リーチ数を保持するオブジェクトです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    RetargetingListServiceTargetListSizeReaches object contains each reaches of target list size. <br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

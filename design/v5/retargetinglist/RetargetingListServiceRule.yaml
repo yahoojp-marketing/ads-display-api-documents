@@ -1,0 +1,19 @@
+RetargetingListServiceRule:
+  type: object
+  nullable: true
+  properties:
+    ruleConditions:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RetargetingListServiceRuleCondition.yaml#/RetargetingListServiceRuleCondition'
+  title: RetargetingListServiceRule
+  description: |
+    <div lang="ja">
+    RetargetingListServiceRuleオブジェクトは、ターゲットリストに設定可能な条件を表します。<br>
+    このフィールドは、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    RetargetingListServiceRule object displays the possible conditions for target list.<br>
+    This field is required in ADD and SET operation.
+    </div>

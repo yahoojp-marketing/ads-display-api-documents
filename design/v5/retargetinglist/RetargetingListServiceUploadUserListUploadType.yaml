@@ -1,0 +1,23 @@
+RetargetingListServiceUploadUserListUploadType:
+  type: string
+  nullable: true
+  enum:
+  - IDFA
+  - AAID
+  - MAIL_ADDRESS
+  - USERID
+  - UNKNOWN
+  title: RetargetingListServiceUploadUserListUploadType
+  description: |
+    <div lang="ja">RetargetingListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。</div>
+    <div lang="en">RetargetingListServiceUploadUserListUploadType displays kind of upload method.</div>
+    <dl class=term>
+      <dt class="term__item">IDFA</dt>
+      <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></li>
+      <dt class="term__item">AAID</dt>
+      <dd class="term__desc"><span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></li>
+      <dt class="term__item">MAIL_ADDRESS</dt>
+      <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスです。</span><span lang="en">Hashed email address.</span></li>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
