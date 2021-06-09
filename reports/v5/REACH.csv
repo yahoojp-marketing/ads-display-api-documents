@@ -54,3 +54,6 @@
 "SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,標準","Ecommerce,In-house,Standard",""
 "CONV_VALUE_VIA_VIEW_THROUGH","ビュースルーコンバージョン数","View-through conversions","convValueViaViewThrough","LONG",,"Metric","","",""
 "VIDEO_VIEW_THROUGH_RATE","動画の再生完了率","Video view through rate","videoViewThroughRate","DOUBLE",,"Metric","","",""
+"CAMPAIGN_USER_STATUS","キャンペーン配信設定","Campaign status","campaignUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
+"ADGROUP_USER_STATUS","広告グループ配信設定","Ad group status","adGroupUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
+"AD_USER_STATUS","広告配信設定","Ad status","adUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
