@@ -4278,7 +4278,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4344,7 +4344,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4410,7 +4410,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4476,7 +4476,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4581,7 +4581,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>

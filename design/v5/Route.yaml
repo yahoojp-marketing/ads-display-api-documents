@@ -3592,8 +3592,8 @@ paths:
   /ContentsKeywordIdeaService/get:
     post:
       description: |
-        <div lang="ja">コンテンツターゲティング対象キーワードを取得します。</div>
-        <div lang="en">Retrieves the keyword for contents targeting.</div>
+        <div lang="ja">コンテンツターゲティング対象キーワードを取得します。※現在利用できません</div>
+        <div lang="en">Retrieves the keyword for contents targeting. * Not Available.</div>
       tags:
         - ContentsKeywordIdeaService
       requestBody:
@@ -3644,8 +3644,8 @@ paths:
   /ContentsKeywordListService/get:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを取得します。</div>
-        <div lang="en">Retrieces the contents keyeord list.</div>
+        <div lang="ja">コンテンツキーワードリストを取得します。 ※現在利用できません</div>
+        <div lang="en">Retrieces the contents keyeord list. * Not Available.</div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3697,8 +3697,8 @@ paths:
   /ContentsKeywordListService/add:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを追加します。</div>
-        <div lang="en">Add the contents keyword list.</div>
+        <div lang="ja">コンテンツキーワードリストを追加します。※現在利用できません</div>
+        <div lang="en">Add the contents keyword list. * Not Available.</div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3750,8 +3750,8 @@ paths:
   /ContentsKeywordListService/set:
     post:
       description: |
-        <div lang="ja">変更対象のコンテンツキーワードリストを設定します。</div>
-        <div lang="en">Set the contents keyword list to be updated.</div>
+        <div lang="ja">変更対象のコンテンツキーワードリストを設定します。 ※現在利用できません</div>
+        <div lang="en">Set the contents keyword list to be updated. * Not Available.</div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3803,8 +3803,8 @@ paths:
   /ContentsKeywordListService/remove:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを削除します。</div>
-        <div lang="en">Removes the contents keyword list.</div>
+        <div lang="ja">コンテンツキーワードリストを削除します。※現在利用できません</div>
+        <div lang="en">Removes the contents keyword list. * Not Available.</div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -4632,7 +4632,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4698,7 +4698,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4764,7 +4764,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4830,7 +4830,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
@@ -4935,7 +4935,7 @@ paths:
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
-                <tr><td>220209</td><td>Too long video play time (max. 60 seconds).</td><td><div lang="ja">再生時間が60秒を超える動画が指定されています。</div><div lang="en">Play time of the specified video is longer than 60 seconds.</div></td></tr>
+                <tr><td>220209</td><td>Too long video play time.</td><td><div lang="ja">再生時間が上限を超過する動画が指定されています。</div><div lang="en">Play time of the specified video exceeds the limit.</div></td></tr>
                 <tr><td>220210</td><td>Too short video play time (min. 5 seconds).</td><td><div lang="ja">再生時間が5秒未満の動画が指定されています。</div><div lang="en">Play time of the specified video is shorter than 5 seconds.</div></td></tr>
                 <tr><td>220211</td><td>Invalid video codec.</td><td><div lang="ja">動画ファイルの映像コーデックが不正です。</div><div lang="en">Video codec of the specified video file is invalid.</div></td></tr>
                 <tr><td>220212</td><td>Invalid audio codec.</td><td><div lang="ja">動画ファイルの音声コーデックが不正です。</div><div lang="en">Audio codec of the specified video file is invalid.</div></td></tr>
