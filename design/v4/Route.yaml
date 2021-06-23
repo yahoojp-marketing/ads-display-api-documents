@@ -45,13 +45,9 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
-        ディスプレイ広告（運用型）における広告グループの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a><br>
         また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
-        See the following Best Practice to learn about how to create an ad group on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a><br>
         ADD, SET and REMOVE operations are no longer available for the ad group of YDN Campaign.
       </div>
   - name: AuditLogService
@@ -64,15 +60,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
         1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。<br>
-        ディスプレイ広告（運用型）におけるキャンペーンの作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a><br>
         また、ディスプレイ広告（YDN）のキャンペーンのADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
         The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService.<br>
         Creating new YDN campaigns is unavailable.<br>
-        See the following Best Practice to learn about how to create a campaign on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a><br>
         ADD, SET and REMOVE operations are no longer available for the YDN Campaign.
       </div>
   - name: CampaignMigrationService
@@ -80,30 +72,11 @@ tags:
       <label class="campaign"></label>
       <div lang="ja">CampaignMigrationServiceは目的なしのキャンペーンを一括で目的ありのキャンペーンにマイグレーションする機能を提供します。</div>
       <div lang="en">CampaignMigrationService provides a function to migrate "with no campaignGoal" campaigns to "with campaignGoal" at once.</div>
-      <div lang="ja"><b>マイグレーションの流れ</b><br>
-      1. downloadでマイグレーション用csvファイルを取得します。<br>
-      2. csvファイルを編集してマイグレーションの内容を定義します。<br>
-      &nbsp;&nbsp;i. csvファイルの編集方法については<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51680">ヘルプ</a>をご参照ください。<br>
-      3. uploadでマイグレーション用csvファイルのアップロード処理を実施します。<br>
-      &nbsp;&nbsp;i. アップロード処理が完了すると、HTTPのレスポンス内に含まれる、migrationJobId（以下マイグレーションジョブID）を取得します。<br>
-      4. migrationJobIdをもとに、getでマイグレーションのステータスを取得します。<br>
-      5. ステータス（migrationJobStatus）が"IN_PROGRESS"ならば、マイグレーション処理の実行中です。<br>
-      &nbsp;&nbsp;i. ステータスの確認を完了になるまで実施してください。<br>
-      6. ステータスが"COMPLETED"ならば、アップロード処理が正常に終了しました。<br>
-      &nbsp;&nbsp;i. succeededCountで正常に処理された件数を確認できます。<br>
-      &nbsp;&nbsp;ii. failedCountが1以上の場合は、downloadErrorFileからエラーの詳細をダウンロードできます。<br>
+      <div lang="ja">
+        <b>CampaignMigrationServiceの機能提供は終了しました。</b>
       </div>
-      <div lang="en"><b>Migration process</b><br>
-      1. Get csv file that includes campaigns for migration by using download.<br>
-      2. Edit csv file for migration.<br>
-      3. Upload csv file by using upload.<br>
-      &nbsp;&nbsp;i. When the upload process is completed, migrationJobId(Migration ID) should be obtained in the HTTP response.<br>
-      4. Acquire migration status by using get based on migrationJobId.<br>
-      5. If the status (migrationJobStatus) is "IN_PROGRESS", the migration is in progress, not completed.<br>
-      &nbsp;&nbsp;i. Retry retrieving the migration status until you confirm the status "COMPLETED".<br>
-      6. If the status is "COMPLETED", the migration is completed.<br>
-      &nbsp;&nbsp;i. Confirm the number of cases succeeded by using succeededCount.<br>
-      &nbsp;&nbsp;ii. If there are errors, please download the file to acquire the error details by using downloadErrorFile (Process results is added into the csv file).<br>
+      <div lang="en">
+        <b>CampaignMigrationServie is no longer available.</b>
       </div>
   - name: FeedDataService
     description: |
@@ -219,15 +192,11 @@ tags:
       <div lang="ja">
         AdGroupAdServiceは広告の操作を提供します。<br>
         リンク先URLやトラッキングURLなどに設定することができるトラッキング用パラメータについては、 <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=52808">ヘルプ</a>をご参照ください。<br>
-        また、ディスプレイ広告（運用型）における広告の作成は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a><br>
         また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告のADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">
         Use this service to get, add, update or delete ad information.<br>
         Refer to <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=28832">Help page</a> for the tracking parameters that can be set for landing page URL or tracking URL.<br>
-        See the following Best Practice to learn about how to create an ad on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a><br>
         ADD, SET and REMOVE operations are no longer available for the ad of YDN Campaign.
       </div>
   - name: FeedService
@@ -254,14 +223,10 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">
-        AdGroupTargetServiceでは、広告グループにおけるターゲティング設定情報の操作（取得、追加、更新、削除、置換）を行います。<br>
-        ディスプレイ広告（運用型）におけるターゲティング設定は、以下のベストプラクティスを参照してください。<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja/display_ads_campaign.md">ディスプレイ広告（運用型）で目的別キャンペーンを入稿する</a>
+        AdGroupTargetServiceでは、広告グループにおけるターゲティング設定情報の操作（取得、追加、更新、削除、置換）を行います。
       </div>
       <div lang="en">
-        The service let you perform targeting settings operations (get, add, set, replace and remove) for ad group.<br>
-        See the following Best Practice to learn about how to set targetings on Display Ads (Auction).<br>
-        <a href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en/display_ads_campaign.md">Create a campaign by objective on Display Ads (Auction)</a>
+        The service let you perform targeting settings operations (get, add, set, replace and remove) for ad group.
       </div>
   - name: ConversionTrackerService
     description: |
