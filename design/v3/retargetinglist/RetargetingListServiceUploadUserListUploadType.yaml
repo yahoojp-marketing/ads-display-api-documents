@@ -9,8 +9,16 @@ RetargetingListServiceUploadUserListUploadType:
   - UNKNOWN
   title: RetargetingListServiceUploadUserListUploadType
   description: |
-    <div lang="ja">RetargetingListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。</div>
-    <div lang="en">RetargetingListServiceUploadUserListUploadType displays kind of upload method.</div>
+    <div lang="ja">
+      RetargetingListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。<br>
+      <code>MAIL_ADDRESS</code>ではハッシュ化が必須となります。<br>
+      メールアドレスのハッシュ化の詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=69234" target="_blank">ヘルプ</a>を参照してください。
+    </div>
+    <div lang="en">
+      RetargetingListServiceUploadUserListUploadType displays kind of upload method.<br>
+      Hashing process is requied when RetargetingListServiceUploadUserListUploadType is <code>MAIL_ADDRESS</code>.<br>
+      More details for hashing of email are described on <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=en&aid=37704&o=default">Import data and create custom list</a>.
+    </div>
     <dl class=term>
       <dt class="term__item">IDFA</dt>
       <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></li>
