@@ -11,14 +11,14 @@ AdGroupAdServiceCarouselAd:
         <div lang="ja">
         表示URLです。<br>
         ADDおよびSET時、このフィールドは省略可能となります。<br>
-        ただし、キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        ただし、キャンペーン目的が「アプリ訴求」の時にパラメータを省略した場合、キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
         - iOSの場合：itunes.apple.com<br>
         - Androidの場合：play.google.com
         </div>
         <div lang="en">
         Display URL.<br>
         This field is optional in ADD and SET operation.<br>
-        However, not allowed for ADD and SET when a campaign goal is "app promotion". Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
+        However, if the parameter is omitted when the campaign goal is "app promotion", one of the following URLs will be set automatically based on the DeviceOsType specified in the campaign.<br>
         - For iOS : itunes.apple.com<br>
         - For Android : play.google.com
         </div>

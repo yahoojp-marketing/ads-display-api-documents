@@ -60,7 +60,7 @@ FeedService:addで、Feed情報を新規登録します。
 ##### リクエストサンプル
 ※リクエストボディには `multipart/form-data` 形式でnameを `file` とした商品情報tsvファイルを指定します。<br>
 ※`isDebug:true` とすることで、アップロード回数を消費せずにファイルアップロードリクエストが成功するかどうかを確認できます。<br>
-https://ads-display.yahooapis.jp/api/v2/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_ALL&isDebug=false
+https://ads-display.yahooapis.jp/api/v5/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_ALL&isDebug=false
 
 ##### レスポンスサンプル
 ```json
@@ -101,7 +101,7 @@ FeedDataService:uploadで商品情報を更新します。更新方法には全�
 
 ##### リクエストサンプル
 ※部分更新のため、uploadTypeを、UPDATE_PARTにします。<br>
-https://ads-display.yahooapis.jp/api/v2/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_PART&isDebug=false
+https://ads-display.yahooapis.jp/api/v5/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_PART&isDebug=false
 
 ##### レスポンスサンプル
 ```json
