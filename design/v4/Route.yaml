@@ -2062,10 +2062,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2120,10 +2123,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2178,10 +2184,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2236,10 +2245,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -2408,10 +2420,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
                 <tr><td>0200</td><td>The action is unavailable for test account.</td><td><div lang="ja">テストアカウントでは利用頂けない機能です。</div><div lang="en">The action is unavailable for test account.</div></td></tr>
               </tbody>
             </table>
@@ -2467,10 +2482,13 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>210001</td><td>Selected value is not approved to update.</td><td><div lang="ja">選択した内容は更新が許可されておりません。</div><div lang="en">The selected elements is not approved to use for the updates of target list.</div></td></tr>
-                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
                 <tr><td>210002</td><td>Cannot update from the dependency.</td><td><div lang="ja">依存関係があるため、更新できません。</div><div lang="en">Due to the dependency relations</div></td></tr>
-                <tr><td>211006</td><td>Cannot set SharedTargetList as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set SharedTargetList as baseList.</div></td></tr>
-                <tr><td>211005</td><td>Cannot remove SharedTargetList set to AdGroup.</td><td><div lang="ja">配信中のAdGroupと紐づくターゲットリストは共有取り消しできません。</div><div lang="en">Cannot remove SharedTargetList set to AdGroup.</div></td></tr>
+                <tr><td>210003</td><td>A function is not permitted this account.</td><td><div lang="ja">利用が許可されていないアカウントです。</div><div lang="en">Custom audience is not available for this account.</div></td></tr>
+                <tr><td>211005</td><td>Cannot remove shared target list set to AdGroup.</td><td><div lang="ja">広告グループと紐づく共有リストは削除できません。</div><div lang="en">Cannot remove shared target list set to AdGroup.</div></td></tr>
+                <tr><td>211006</td><td>Cannot set shared target list as baseList.</td><td><div lang="ja">共有リストをベースにした類似リストは作成できません。</div><div lang="en">Cannot set shared target list as baseList.</div></td></tr>
+                <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
+                <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
               </tbody>
             </table>
             </div>

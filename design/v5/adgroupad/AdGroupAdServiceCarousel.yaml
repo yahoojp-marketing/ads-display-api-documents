@@ -24,11 +24,11 @@ AdGroupAdServiceCarousel:
       description: |
         <div lang="ja">
         メディアIDです。<br>
-        このフィールドは、ADD時およびSET時に指定不可です。
+        このフィールドは、ADD時およびSET時に必須です。
         </div>
         <div lang="en">
         Media ID.<br>
-        This field cannot be specified in ADD and SET operation.
+        This field is requred in ADD and SET operation.
         </div>
     headline:
       type: string
@@ -48,11 +48,11 @@ AdGroupAdServiceCarousel:
       description: |
         <div lang="ja">
         広告の説明文です。<br>
-        このフィールドは、SET時は必須となり、ADD時は省略可能となります。
+        このフィールドは、ADD時およびSET時に必須です。
         </div>
         <div lang="en">
         Ad description.<br>
-        This field is required in SET operation, and will be optional in ADD operation.
+        This field is requred in ADD and SET operation.
         </div>
     url:
       type: string

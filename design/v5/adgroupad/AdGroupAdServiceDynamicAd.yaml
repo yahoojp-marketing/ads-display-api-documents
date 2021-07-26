@@ -197,12 +197,12 @@ AdGroupAdServiceDynamicAd:
       description: |
         <div lang="ja">
         リンク先URLです。<br>
-        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="reference/ads-display-api/v5/CampaignService/get/">こちら</a>をご参照ください。<br>
+        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="/reference/ads-display-api/v5/CampaignService/get/">こちら</a>をご参照ください。<br>
         このフィールドは、ADD時は必須となり、SET時は省略可能となります。
         </div>
         <div lang="en">
         Destination URL.<br>
-        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="reference/ads-display-api/v5/CampaignService/get/en/">this page</a>.<br>
+        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="/reference/ads-display-api/v5/CampaignService/get/en/">this page</a>.<br>
         This field is required in ADD operation, and will be optional in SET operation.
         </div>
     isRemovePrefix:
