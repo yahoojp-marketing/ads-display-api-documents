@@ -72,7 +72,7 @@ AdGroupTargetServiceTargetType:
       <dt class="term__item">PLACEMENT_CATEGORY_DETAIL_TARGET</dt>
       <dd class="term__desc"><span lang="ja">プレイスメントカテゴリ詳細ターゲティング</span><span lang="en">Placement Category Detail Targeting</span></dd>
       <dt class="term__item">CONTENTS_TARGET</dt>
-      <dd class="term__desc"><span lang="ja">コンテンツターゲティング</span><span lang="en">Contents Targeting * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">コンテンツターゲティング</span><span lang="en">Contents Targeting</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

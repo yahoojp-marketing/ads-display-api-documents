@@ -21,11 +21,10 @@ AdGroupTargetServiceContentsTarget:
     <div lang="ja">
     AdGroupTargetServiceContentsTargetオブジェクトは、コンテンツターゲティングの設定情報を保持します。<br>
     ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
-    ※targetTypeがCONTENTS_TARGETの場合は必須です。<br>
+    ※targetTypeがCONTENTS_TARGETの場合は必須です。
     </div>
     <div lang="en">
     AdGroupTargetServiceContentsTarget object is a container for storing contents settings.<br>
     This field is optional in ADD, SET and REPLACE operation.<br>
-    ∗If targetType is CONTENTS_TARGET, this field is required.<br>
-    * Not Available.
+    ∗If targetType is CONTENTS_TARGET, this field is required.
     </div>
