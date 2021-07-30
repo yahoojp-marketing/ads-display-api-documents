@@ -51,7 +51,7 @@ AdGroupAdServiceAdType:
       <dt class="term__item">POS_AD</dt>
       <dd class="term__desc"><span lang="ja">「説明文33文字」の掲載位置指定テキストです。</span><span lang="en">Positioning text is &#34;description is 33 characters&#34;.</span></dd>
       <dt class="term__item">CAROUSEL_AD</dt>
-      <dd class="term__desc"><span lang="ja">カルーセル広告です。こちらは現在指定することができません。</span><span lang="en">Carousel ad. Currently, this cannot be specified.</span></dd>
+      <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

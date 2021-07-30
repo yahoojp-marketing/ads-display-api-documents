@@ -42,12 +42,12 @@ AdGroupAdServiceCarouselAd:
         <div lang="ja">
         広告の主体者表記です。<br>
         このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
-        ただし、キャンペーン目的「アプリ訴求」の場合は、キャンペーンのアプリ名と同一の値が自動的に設定され、アプリ名以外の値には変更できません。
+        ただし、キャンペーン目的「アプリ訴求」の場合は、キャンペーンのアプリ名と同一の値が自動的に設定され、アプリ名以外の値は設定できません。
         </div>
         <div lang="en">
         Advertiser Indication of the ad.<br>
         This field is required in ADD operation, and will be optional in SET operation.<br>
-        However, if campaignGoal is APP_PROMOTION, it will automatically be set to the same value as appName of campaign, and it cannot be changed to any other value.
+        However, if campaignGoal is APP_PROMOTION, it will automatically be set to the same value as appName of campaign, and it cannot be set to any other value.
         </div>
     url:
       type: string

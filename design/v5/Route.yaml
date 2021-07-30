@@ -121,13 +121,13 @@ tags:
   - name: ContentsKeywordIdeaService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">SearchKeywordIdeaServiceは、コンテンツターゲティング対象キーワードを取得します。 ※現在利用できません</div>
-      <div lang="en">SearchKeywordIdeaService retrieves the keyword for contents targeting. * Not Available.</div>
+      <div lang="ja">SearchKeywordIdeaServiceは、コンテンツターゲティング対象キーワードを取得します。 </div>
+      <div lang="en">SearchKeywordIdeaService retrieves the keyword for contents targeting. </div>
   - name: ContentsKeywordListService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">ContentsKeywordListServiceは、コンテンツキーワードリストの取得および追加・更新・削除を行います。※現在利用できません</div>
-      <div lang="en">ContentsKeywordListService retrieves, add, update, and delete the contents keyword list. * Not Available.</div>
+      <div lang="ja">ContentsKeywordListServiceは、コンテンツキーワードリストの取得および追加・更新・削除を行います。</div>
+      <div lang="en">ContentsKeywordListService retrieves, add, update, and delete the contents keyword list. </div>
   - name: AccountAdProductService
     description: |
       <label class="account"></label>
@@ -3575,8 +3575,8 @@ paths:
   /ContentsKeywordIdeaService/get:
     post:
       description: |
-        <div lang="ja">コンテンツターゲティング対象キーワードを取得します。※現在利用できません</div>
-        <div lang="en">Retrieves the keyword for contents targeting. * Not Available.</div>
+        <div lang="ja">コンテンツターゲティング対象キーワードを取得します。</div>
+        <div lang="en">Retrieves the keyword for contents targeting. </div>
       tags:
         - ContentsKeywordIdeaService
       requestBody:
@@ -3627,8 +3627,8 @@ paths:
   /ContentsKeywordListService/get:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを取得します。 ※現在利用できません</div>
-        <div lang="en">Retrieces the contents keyeord list. * Not Available.</div>
+        <div lang="ja">コンテンツキーワードリストを取得します。</div>
+        <div lang="en">Retrieces the contents keyeord list. </div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3680,8 +3680,8 @@ paths:
   /ContentsKeywordListService/add:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを追加します。※現在利用できません</div>
-        <div lang="en">Add the contents keyword list. * Not Available.</div>
+        <div lang="ja">コンテンツキーワードリストを追加します。</div>
+        <div lang="en">Add the contents keyword list. </div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3733,8 +3733,8 @@ paths:
   /ContentsKeywordListService/set:
     post:
       description: |
-        <div lang="ja">変更対象のコンテンツキーワードリストを設定します。 ※現在利用できません</div>
-        <div lang="en">Set the contents keyword list to be updated. * Not Available.</div>
+        <div lang="ja">変更対象のコンテンツキーワードリストを設定します。 </div>
+        <div lang="en">Set the contents keyword list to be updated. </div>
       tags:
         - ContentsKeywordListService
       requestBody:
@@ -3786,8 +3786,8 @@ paths:
   /ContentsKeywordListService/remove:
     post:
       description: |
-        <div lang="ja">コンテンツキーワードリストを削除します。※現在利用できません</div>
-        <div lang="en">Removes the contents keyword list. * Not Available.</div>
+        <div lang="ja">コンテンツキーワードリストを削除します。</div>
+        <div lang="en">Removes the contents keyword list. </div>
       tags:
         - ContentsKeywordListService
       requestBody:
