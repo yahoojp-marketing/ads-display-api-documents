@@ -28,12 +28,12 @@ servers:
 tags:
   - name: AccountManagementService
     description: |
-      <label class="account" ></label>
+      <label class="account"></label>
       <div lang="ja">AccountManagementServiceでは、アカウントに関する情報の取得および、追加、更新を行います。<br/>AccountManagementServiceは、一部の利用者向けの限定機能となります。</div>
       <div lang="en">AccountManagementService provides functions for creating and managing accounts.<br/>AccountManagementService is a limited function for some users.</div>
   - name: AccountAuthorityService
     description: |
-      <label class="account" ></label>
+      <label class="account"></label>
       <div lang="ja">AccountAuthorityServiceでは、アカウント権限を取得します。</div>
       <div lang="en">AccountAuthorityService provides account authority information.</div>
   - name: AccountService
@@ -227,7 +227,7 @@ tags:
       </div>
   - name: ConversionTrackerService
     description: |
-      <label class="campaign"></label>
+      <label class="account"></label>
       <div lang="ja">ConversionTrackerServiceでは、コンバージョントラッカー情報の操作（取得、追加、更新）を行います。</div>
       <div lang="en">ConversionTrackerService is to get, add, and update ConversionTracker information.</div>
   - name: BalanceService
