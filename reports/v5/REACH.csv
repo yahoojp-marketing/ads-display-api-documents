@@ -47,8 +47,8 @@
 "CONVERSION_RATE_VIA_AD_CLICK","コンバージョン率（クリック経由）","Conv. rate (via click)","convRateViaClick","DOUBLE",,"Metric","","",""
 "COST_PER_CONV_VIA_AD_CLICK","コスト/コンバージョン数（クリック経由）","Cost/conv. (via click)","costPerConvViaClick","DOUBLE",,"Metric","","",""
 "CROSS_DEVICE_CONVERSIONS","クロスデバイスコンバージョン数","Cross-device conv.","crossDeviceConv","LONG",,"Metric","","",""
-"REACHES","リーチ数","Reaches","reaches","LONG","[VIEWABLE_IMPRESSION_REACHES, VIEWABLE_IMPRESSION_AVG_FREQUENCY, MEASURED_IMPRESSION_REACHES, MEASURED_IMPRESSION_AVG_FREQUENCY]","Metric",,,"この項目は非推奨です。 / This field is not recommended."
-"AVG_FREQUENCY","平均接触回数","Average frequency","avgFrequency","DOUBLE","[VIEWABLE_IMPRESSION_REACHES, VIEWABLE_IMPRESSION_AVG_FREQUENCY, MEASURED_IMPRESSION_REACHES, MEASURED_IMPRESSION_AVG_FREQUENCY]","Metric",,,"この項目は非推奨です。 / This field is not recommended."
+"REACHES","リーチ数","Reaches","reaches","LONG","[MEASURED_IMPRESSION_AVG_FREQUENCY, MEASURED_IMPRESSION_REACHES, VIEWABLE_IMPRESSION_AVG_FREQUENCY, VIEWABLE_IMPRESSION_REACHES]","Metric","","",""
+"AVG_FREQUENCY","平均接触回数","Average frequency","avgFrequency","DOUBLE","[MEASURED_IMPRESSION_AVG_FREQUENCY, MEASURED_IMPRESSION_REACHES, VIEWABLE_IMPRESSION_AVG_FREQUENCY, VIEWABLE_IMPRESSION_REACHES]","Metric","","",""
 "START_DATE","開始日","Start date","startDate","STRING",,"Attribute","","",""
 "END_DATE","終了日","End date","endDate","STRING",,"Attribute","","",""
 "SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,標準","Ecommerce,In-house,Standard",""
@@ -57,7 +57,7 @@
 "CAMPAIGN_USER_STATUS","キャンペーン配信設定","Campaign status","campaignUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
 "ADGROUP_USER_STATUS","広告グループ配信設定","Ad group status","adGroupUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
 "AD_USER_STATUS","広告配信設定","Ad status","adUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
-"VIEWABLE_IMPRESSION_REACHES","リーチ数（ビューアブルインプレッション）","Reaches (viewable impression)","viewableImpressionReaches","LONG","[REACHES, AVG_FREQUENCY]","Metric",,,
-"VIEWABLE_IMPRESSION_AVG_FREQUENCY","平均接触回数（ビューアブルインプレッション）","Average frequency (viewable impression)","viewableImpressionAvgFrequency","DOUBLE","[REACHES, AVG_FREQUENCY]","Metric",,,
-"MEASURED_IMPRESSION_REACHES","リーチ数（メジャードインプレッション）","Reaches (measured impression)","measuredImpressionReaches","LONG","[REACHES, AVG_FREQUENCY]","Metric",,,
-"MEASURED_IMPRESSION_AVG_FREQUENCY","平均接触回数（メジャードインプレッション）","Average frequency (measured impression)","measuredImpressionAvgFrequency","DOUBLE","[REACHES, AVG_FREQUENCY]","Metric",,,
+"VIEWABLE_IMPRESSION_REACHES","リーチ数（ビューアブルインプレッション）","Reaches (viewable impression)","viewableImpressionReaches","LONG","[AVG_FREQUENCY, REACHES]","Metric","","",""
+"VIEWABLE_IMPRESSION_AVG_FREQUENCY","平均接触回数（ビューアブルインプレッション）","Average frequency (viewable impression)","viewableImpressionAvgFrequency","DOUBLE","[AVG_FREQUENCY, REACHES]","Metric","","",""
+"MEASURED_IMPRESSION_REACHES","リーチ数（メジャードインプレッション）","Reaches (measured impression)","measuredImpressionReaches","LONG","[AVG_FREQUENCY, REACHES]","Metric","","",""
+"MEASURED_IMPRESSION_AVG_FREQUENCY","平均接触回数（メジャードインプレッション）","Average frequency (measured impression)","measuredImpressionAvgFrequency","DOUBLE","[AVG_FREQUENCY, REACHES]","Metric","","",""
