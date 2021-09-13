@@ -153,7 +153,7 @@ Campaign:
         ※SET時、こちらが審査中の場合、編集はできません。<br>※現在利用できません</div>
         <div lang="en">Tracking URL.<br>
         This field is optional in ADD and SET operation.<br>
-        *In SET operation, cannot update it when this field is in editorial review.<br>* Not Available./div>
+        *In SET operation, cannot update it when this field is in editorial review.<br>* Not Available.</div>
     userStatus:
       $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
     viewableFrequencyCap:

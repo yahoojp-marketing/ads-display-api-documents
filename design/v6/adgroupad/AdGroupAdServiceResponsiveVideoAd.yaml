@@ -58,7 +58,7 @@ AdGroupAdServiceResponsiveVideoAd:
         If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
         This field is optional in SET operation.<br>
         If url is specified in SET operation, the value in this field will be cleared.
-        <br>* Not Available./div>
+        <br>* Not Available.</div>
     smartphoneFinalUrl:
       type: string
       nullable: true
