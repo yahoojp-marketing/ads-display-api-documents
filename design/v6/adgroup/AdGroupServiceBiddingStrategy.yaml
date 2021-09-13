@@ -1,0 +1,76 @@
+AdGroupServiceBiddingStrategy:
+  type: object
+  nullable: true
+  properties:
+    campaignBiddingStrategyType:
+      $ref: 'AdGroupServiceCampaignBiddingStrategyType.yaml#/AdGroupServiceCampaignBiddingStrategyType'
+    maxCpcBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ最大入札価格（CPC）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAX_CPCの場合のみ指定可能です。
+        </div>
+        <div lang="en">
+        Ad group MAX_CPC bid value.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAX_CPC.
+        </div>
+    maxCpvBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ最大入札価格（CPV）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAX_CPVの場合のみ指定可能です。
+        </div>
+        <div lang="en">Ad group MAX_CPV bid value.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAX_CPV.
+        </div>
+    maxVcpmBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ最大入札価格（vCPM）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAX_VCPMの場合のみ指定可能です。
+        </div>
+        <div lang="en">Ad group MAX_VCPM bid value.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAX_VCPM.
+        </div>
+    targetCpaBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ目標単価（tCPA）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがTARGET_CPAの場合のみ指定可能です。
+        </div>
+        <div lang="en">
+        Ad group TARGET_CPA bid value.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is TARGET_CPA.
+        </div>
+  title: AdGroupServiceBiddingStrategy
+  description: |
+    <div lang="ja">
+    AdGroupServiceBiddingStrategyは、広告グループ入札戦略を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。<br>
+    ※目的ありのキャンペーンの場合のみ設定可能です。
+    </div>
+    <div lang="en">
+    AdGroupServiceBiddingStrategy object describes bidding strategy of ad group.<br>
+    This field is optional in ADD and SET operation.<br>
+    *This can only be specified for campaigns with campaignGoal.
+    </div>

@@ -1,0 +1,295 @@
+AdGroupAdServiceDynamicAd:
+  type: object
+  nullable: true
+  properties:
+    brandColor:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        ブランドカラーです。<br>
+        ※RGB、HEX指定です。<br>
+        設定例：#FFFFFF<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Brand color.<br>
+        Format :RGB or HEX<br>
+        e.g.：#FFFFFF<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    campaignBannerMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンバナー画像のメディアIDです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    campaignBannerMediaId2:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 2です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 2.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    campaignBannerMediaId3:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 3です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 3.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    campaignBannerMediaId4:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンバナー画像のメディアID 4です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Campaign banner media ID 4.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    campaignBannerUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンバナーURLです。<br>
+        このフィールドは省略可能となります。<br>
+        ADD時、設定する場合は以下のいずれかの指定が必要となります。<br>
+        - campaignBannerMediaId<br>
+        - campaignBannerMediaId2<br>
+        - campaignBannerMediaId3<br>
+        - campaignBannerMediaId4
+        </div>
+        <div lang="en">
+        Campaign banner URL.<br>
+        This field is optional.<br>
+        For setting in ADD operation, one of the following is required:<br>
+        - campaignBannerMediaId<br>
+        - campaignBannerMediaId2<br>
+        - campaignBannerMediaId3<br>
+        - campaignBannerMediaId4
+        </div>
+    customParameters:
+      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        SET時、このフィールドは省略可能となります。<br>
+        ADD時にurlを指定する場合、このフィールドは必須です。<br>
+        ADD時にfinalUrlを指定する場合、このフィールドを指定することはできません。代わりにfinalUrlから生成された値が自動で設定されます。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is optional in SET operation.<br>
+        If you specify url in ADD operation, this field is required.<br>
+        When finalUrl is specified in ADD operation, this field cannot be specified. Instead, the value generated from finalUrl will be set automatically.
+        </div>
+    displayUrlLevel:
+      $ref: 'AdGroupAdServiceDisplayUrlLevel.yaml#/AdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        SET時、このフィールドは省略可能となります。<br>
+        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+        <br>※現在利用できません
+        </div>
+        <div lang="en">Final URL.<br>
+        This field is optional in SET operation.<br>
+        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+        If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
+        If url is specified in SET operation, the value in this field will be cleared.
+        <br>* Not Available.
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+        <br>※現在利用できません
+        </div>
+        <div lang="en">Final URL (smartphone).<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
+        If url is specified in SET operation, the value in this field will be cleared.
+        <br>* Not Available.
+        </div>
+    isRemoveCampaignBannerMediaId:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveCampaignBannerMediaId2:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveCampaignBannerMediaId3:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveCampaignBannerMediaId4:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveCampaignBannerUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveSmartphoneFinalUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveTrackingUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    logoMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ロゴ画像のメディアIDです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    logoMediaId2:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ロゴ画像のメディアID 2です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image 2.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    logoMediaId3:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        ロゴ画像のメディアID 3です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of logo image 3.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    prefix:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        プレフィックスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Prefix.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の主体者表記です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Advertiser Indication.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    suffix:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        サフィックスです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Suffix.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+        <br>※現在利用できません
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        If url is specified in SET operation, the value in this field will be cleared.
+        <br>* Not Available.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="/reference/ads-display-api/v6/CampaignService/get/">こちら</a>をご参照ください。<br>
+        SET時、このフィールドは省略可能となります。<br>
+        ADD時、urlフィールドとfinalUrlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        urlフィールドを設定する場合、displayUrlの指定が必須になります。またその際は、finalUrl、smartphoneFinalUrl、trackingUrl、customParametersは指定不可です。<br>
+        SET時にfinalUrlを指定する場合、このフィールドの値はクリアされます。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="/reference/ads-display-api/v6/CampaignService/get/en/">this page</a>.<br>
+        This field is optional in SET operation.<br>
+        In ADD operation, url field and finalUrl field cannot be set at the same time, and one of them must be set.<br>
+        When url field is specified, displayUrl must be specified. In that case, finalUrl, smartphoneFinalUrl, trackingUrl and customParameters cannot be specified.<br>
+        If finalUrl is specified in SET operation, the value in this field will be cleared.
+        </div>
+    isRemovePrefix:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveSuffix:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    isRemoveBrandColor:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+  title: AdGroupAdServiceDynamicAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceDynamicAdオブジェクトは、動的ディスプレイ広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがDYNAMIC_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceDynamicAd object describes information regarding dynamic ads for display.<br>
+    This field is optional.<br>
+    *If adType is DYNAMIC_AD, this field is required in ADD operation.
+    </div>

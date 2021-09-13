@@ -1,0 +1,28 @@
+GuaranteedSimulationServiceCustomRangeBuyingTerm:
+  type: object
+  nullable: true
+  properties:
+    buyingTermDateMinRange:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品購入期間日数（範囲最小）を表します。</div>
+        <div lang="en">The number of days in the package purchase term (minimum range).</div>
+    buyingTermDateMaxRange:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品購入期間日数（範囲最大）を表します。</div>
+        <div lang="en">The number of days in the package purchase term (maximum range).</div>
+  title: GuaranteedSimulationServiceCustomRangeBuyingTerm
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServiceBuyingTermは、範囲指定の商品購入期間情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServiceBuyingTerm holds information about the package purchase term with range specified.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>

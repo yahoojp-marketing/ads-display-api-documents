@@ -1,0 +1,13 @@
+GuaranteedReservationServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedReservationServiceValue.yaml#/GuaranteedReservationServiceValue'
+  title: GuaranteedReservationServiceReturnValue
+  description: |
+    <div lang="ja">GuaranteedReservationServiceReturnValueオブジェクトは、シミュレーション結果に基づいた予約情報を格納するコンテナです。</div>
+    <div lang="en">GuaranteedReservationServiceReturnValue object contains a reservation information based on simulation result.</div>

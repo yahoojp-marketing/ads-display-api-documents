@@ -1,0 +1,37 @@
+GuaranteedSimulationServiceSlotsPricingPackage:
+  type: object
+  nullable: true
+  properties:
+    fixedLifetimeBudget:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">商品価格を表します。</div>
+        <div lang="en">Package price.</div>
+    fixedBudgetApplyTermType:
+      $ref: 'GuaranteedSimulationServiceFixedBudgetApplyTermType.yaml#/GuaranteedSimulationServiceFixedBudgetApplyTermType'
+    sellingSlots:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">販売枠数を表します。</div>
+        <div lang="en">Number of selling slots.</div>
+    minimumBuyingSlots:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">最低購入枠数を表します。</div>
+        <div lang="en">Minimum number of purchase slots.</div>
+  title: GuaranteedSimulationServiceSlotsPricingPackage
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServiceSlotsPricingPackageは、枠購入型の購入タイプ設定情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServiceSlotsPricingPackage holds purchase type setting information of slots purchase type.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>

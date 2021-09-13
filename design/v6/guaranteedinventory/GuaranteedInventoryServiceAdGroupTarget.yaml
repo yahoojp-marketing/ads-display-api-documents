@@ -1,0 +1,16 @@
+GuaranteedInventoryServiceAdGroupTarget:
+  type: object
+  nullable: true
+  properties:
+    target:
+      $ref: 'GuaranteedInventoryServiceTarget.yaml#/GuaranteedInventoryServiceTarget'
+  title: GuaranteedInventoryServiceAdGroupTarget
+  description: |
+    <div lang="ja">
+    GuaranteedInventoryServiceAdGroupTargetオブジェクトは、予約型キャンペーンの配信シミュレーションのターゲティング情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    GuaranteedInventoryServiceAdGroupTarget object holds the targeting information about the delivery simulation of the guaranteed campaign.<br>
+    This field is optional in ADD operation.
+    </div>

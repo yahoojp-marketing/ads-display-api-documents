@@ -1,0 +1,25 @@
+GuaranteedSimulationServiceInstreamDurationType:
+  type: string
+  nullable: true
+  enum:
+  - MAX_6_SECONDS
+  - MAX_15_SECONDS
+  - MAX_30_SECONDS
+  - UNLIMITED
+  - UNKNOWN
+  title: GuaranteedSimulationServiceInstreamDurationType
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceInstreamDurationTypeは、インストリーム広告の尺の種類を表します。</div>
+    <div lang="en">GuaranteedSimulationServiceInstreamDurationType describes the duration type of in-stream ads.</div>
+    <dl class=term>
+      <dt class="term__item">MAX_6_SECONDS</dt>
+      <dd class="term__desc"><span lang="ja">最大6秒です。</span><span lang="en">Max 6 seconds.</span></dd>
+      <dt class="term__item">MAX_15_SECONDS</dt>
+      <dd class="term__desc"><span lang="ja">最大15秒です。</span><span lang="en">Max 15 seconds.</span></dd>
+      <dt class="term__item">MAX_30_SECONDS</dt>
+      <dd class="term__desc"><span lang="ja">最大30秒です。</span><span lang="en">Max 30 seconds.</span></dd>
+      <dt class="term__item">UNLIMITED</dt>
+      <dd class="term__desc"><span lang="ja">上限なしです。</span><span lang="en">No upper limit.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

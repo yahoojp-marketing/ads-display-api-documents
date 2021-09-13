@@ -1,0 +1,10 @@
+VideoServiceQualityType:
+  type: string
+  nullable: true
+  enum:
+  - ORIGINAL
+  - HIGH
+  - MIDDLE
+  - LOW
+  - UNKNOWN
+  title: VideoServiceQualityType

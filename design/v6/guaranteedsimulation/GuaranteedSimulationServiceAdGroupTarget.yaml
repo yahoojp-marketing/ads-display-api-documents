@@ -1,0 +1,16 @@
+GuaranteedSimulationServiceAdGroupTarget:
+  type: object
+  nullable: true
+  properties:
+    target:
+      $ref: 'GuaranteedSimulationServiceTarget.yaml#/GuaranteedSimulationServiceTarget'
+  title: GuaranteedSimulationServiceAdGroupTarget
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceAdGroupTargetオブジェクトは、予約型キャンペーンの配信シミュレーションのターゲティング情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceAdGroupTarget object holds the targeting information about the delivery simulation of the guaranteed campaign.<br>
+    This field is optional in ADD operation.
+    </div>

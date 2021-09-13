@@ -1,0 +1,32 @@
+GuaranteedSimulationServiceAdCategory:
+  type: object
+  nullable: true
+  properties:
+    adCategoryId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告カテゴリーIDを表します。</div>
+        <div lang="en">Ad category ID.</div>
+    adCategoryName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告カテゴリー名を表します。</div>
+        <div lang="en">Ad category name.</div>
+    parentCategoryId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">親カテゴリIDを表します。</div>
+        <div lang="en">Parent category ID.</div>
+    parentCategoryName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">親カテゴリ名を表します。</div>
+        <div lang="en">Parent category name.</div>
+  title: GuaranteedSimulationServiceAdCategory
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceAdCategoryオブジェクトは、広告カテゴリー情報を格納するコンテナです。</div>
+    <div lang="en">GuaranteedSimulationServiceAdCategory object contains ad category information.</div>

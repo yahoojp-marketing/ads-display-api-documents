@@ -1,0 +1,22 @@
+StatsServiceTargetSetting:
+  type: string
+  nullable: true
+  enum:
+  - NONE
+  - ACTIVE
+  - PAUSED
+  - UNKNOWN
+  title: StatsServiceTargetSetting
+  description: |
+    <div lang="ja">StatsServiceTargetSettingは、ターゲット設定の有効/無効を表します。</div>
+    <div lang="en">StatsServiceTargetSetting displays the setting information of target.</div>
+    <dl class=term>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">有効（すべて）</span><span lang="en">None（All）</span></dd>
+      <dt class="term__item">ACTIVE</dt>
+      <dd class="term__desc"><span lang="ja">有効</span><span lang="en">Active</span></dd>
+      <dt class="term__item">PAUSED</dt>
+      <dd class="term__desc"><span lang="ja">無効</span><span lang="en">Paused</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

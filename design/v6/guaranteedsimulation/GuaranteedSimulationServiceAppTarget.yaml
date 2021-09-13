@@ -1,0 +1,18 @@
+GuaranteedSimulationServiceAppTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceAppType:
+      $ref: 'GuaranteedSimulationServiceDeviceAppType.yaml#/GuaranteedSimulationServiceDeviceAppType'
+  title: GuaranteedSimulationServiceAppTarget
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceAppTargetオブジェクトは、アプリターゲティングの設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※targetTypeがAPP_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceAppTarget object is a container for storing app targeting settings.<br>
+    This field is optional in ADD operation.<br>
+    ∗If targetType is APP_TARGET, this field is required.
+    </div>
