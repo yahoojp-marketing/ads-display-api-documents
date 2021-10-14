@@ -12,11 +12,13 @@ AdGroupServiceDeviceType:
   description: |
     <div lang="ja">
     AdGroupServiceDeviceTypeは、配信先デバイスの種類を表します。<br>
-    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+    ただし、キャンペーン目的「アプリ訴求」の場合は、NONEとDESKTOPを指定することはできません。
     </div>
     <div lang="en">
     AdGroupServiceDeviceType displays types of devices to be posted on.<br>
-    This field is required in ADD operation, and will be optional in SET operation.
+    This field is required in ADD operation, and will be optional in SET operation.<br>
+    If campaignGoal is APP_PROMOTION, "NONE" and "DESKTOP" cannot be specified.
     </div>
     <dl class=term>
       <dt class="term__item">DESKTOP</dt>

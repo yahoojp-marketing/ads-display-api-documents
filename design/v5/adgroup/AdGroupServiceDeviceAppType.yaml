@@ -10,11 +10,15 @@ AdGroupServiceDeviceAppType:
   description: |
     <div lang="ja">
     AdGroupServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。<br>
-    ADDおよびSET時、このフィールドは省略可能となります。
+    ADDおよびSET時、このフィールドは省略可能となります。<br>
+    deviceTypeがDESKTOPまたはWAP_MOBILEの場合は、deviceAppTypeを指定することはできません。<br>
+    deviceTypeがNONEの場合は、deviceAppTypeまたはdeviceOsTypeのいずれかを指定する必要があります。
     </div>
     <div lang="en">
     AdGroupServiceDeviceAppType serves application types for devices.<br>
-    This field is optional in ADD and SET operation.
+    This field is optional in ADD and SET operation.<br>
+    If deviceType is DESKTOP or WAP_MOBILE, deviceAppType cannot be specified.<br>
+    If deviceType is NONE, deviceAppType or deviceOsType must be specified.
     </div>
     <dl class=term>
       <dt class="term__item">APP</dt>

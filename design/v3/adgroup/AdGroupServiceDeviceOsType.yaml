@@ -10,11 +10,17 @@ AdGroupServiceDeviceOsType:
   description: |
     <div lang="ja">
     AdGroupServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。<br>
-    ADDおよびSET時、このフィールドは省略可能となります。
+    ADDおよびSET時、このフィールドは省略可能となります。<br>
+    deviceTypeがDESKTOPまたはWAP_MOBILEの場合は、deviceOsTypeを指定することはできません。<br>
+    deviceAppTypeがNONEの場合は、deviceOsTypeを指定することはできません。<br>
+    deviceTypeがNONEの場合は、deviceAppTypeまたはdeviceOsTypeのいずれかを指定する必要があります。
     </div>
     <div lang="en">
     AdGroupServiceDeviceOsType serves OS types for devices to be posted on.<br>
-    This field is optional in ADD and SET operation.
+    This field is optional in ADD and SET operation.<br>
+    If deviceType is DESKTOP or WAP_MOBILE, deviceOsType cannot be specified.<br>
+    If deviceAppType is NONE, deviceOsType cannot be specified.<br>
+    If deviceType is NONE, deviceAppType or deviceOsType must be specified.
     </div>
     <dl class=term>
       <dt class="term__item">IOS</dt>

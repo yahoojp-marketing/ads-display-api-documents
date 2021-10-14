@@ -9,13 +9,13 @@ AdGroupAdServiceDisplayUrlLevel:
   description: |
     <div lang="ja">
     AdGroupAdServiceDisplayUrlLevelは、表示するURLの階層を表します。<br>
-    キャンペーン目的「アプリ訴求」の場合はdisplayUrlLevelは無視されます。<br>
+    キャンペーン目的「アプリ訴求」の場合、displayUrlLevelフィールドには「DOMAIN」の指定が必須になります。<br>
     SET時にurlを指定する場合、このフィールドの値はクリアされます。
     <br>※現在利用できません
     </div>
     <div lang="en">
     AdGroupAdServiceDisplayUrlLevel describes a level of URL to display.<br>
-    If campaignGoal is APP_PROMOTION, displayUrlLevel will be ignored.<br>
+    If campaignGoal is APP_PROMOTION, "DOMAIN" must be specified in displayUrlLevel field.<br>
     If url is specified in SET operation, the value in this field will be cleared.
     <br>* Not Available.
     </div>

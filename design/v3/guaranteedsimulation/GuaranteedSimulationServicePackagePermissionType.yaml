@@ -11,11 +11,13 @@ GuaranteedSimulationServicePackagePermissionType:
   description: |
     <div lang="ja">
       GuaranteedSimulationServicePackagePermissionTypeは、商品設定の制限を表します。<br>
-      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+      ※商品開始日が2021/07以降の商品のadTypePermissionについて、値が参照できない際はv6以降での参照をお願いします。
     </div>
     <div lang="en">
       GuaranteedSimulationServicePackagePermissionType describes the restriction of the package setting.<br>
-      Although this field will be returned in the response, it will be ignored on input.
+      Although this field will be returned in the response, it will be ignored on input.<br>
+      Regarding the products with sellingStartDate specified as 2021/07 or after, if you cannot confirm its adTypePermission, refer to the value from v6.
     </div>
     <dl class=term>
       <dt class="term__item">FORBIDDEN</dt>

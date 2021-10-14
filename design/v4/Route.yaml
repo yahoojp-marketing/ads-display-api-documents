@@ -2130,6 +2130,7 @@ paths:
                 <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
                 <tr><td>211008</td><td>Cannot remove a target list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくターゲットリストは削除できません。</div><div lang="en">Cannot remove a target list set to AdGroup.</div></td></tr>
                 <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
+                <tr><td>211010</td><td>Cannot create a target list.</td><td><div lang="ja">サイトリターゲティングタグを未発行のためターゲットリストを作成できません。</div><div lang="en">Target list cannot be created because the site retargeting tag has not been issued.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -4691,7 +4692,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -4766,7 +4767,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -4841,7 +4842,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -4916,7 +4917,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -7056,7 +7057,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
                 <tr><td>260010</td><td>Ad type that is not registered in simulation cannot be specified.</td><td><div lang="ja">シミュレーションに登録されていない広告種別は指定できません。</div><div lang="en">Ad type that is not registered in simulation cannot be specified.</div></td></tr>
                 <tr><td>220120</td><td>Cannot operate with only one ad in an ad group.</td><td><div lang="ja">広告グループ内に1件しかない広告の操作はできません。</div><div lang="en">Cannot operate with only one ad in an ad group.</div></td></tr>
                 <tr><td>220116</td><td>This video duration cannot be used with the specified ad type.</td><td><div lang="ja">指定した広告種別では利用できない動画時間です。</div><div lang="en">This video duration cannot be used with the specified ad type.</div></td></tr>
@@ -7131,7 +7132,7 @@ paths:
                 <tr><td>220324</td><td>Entered tracking parameter cannot be used.</td><td><div lang="ja">入力されたトラッキングパラメータは利用できません。</div><div lang="en">There is a Tracking Parameter which is not available for the YDN-unaligned tracking tool</div></td></tr>
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
-                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。<br>Unmodifiable the user status on campaign banner media.</td></tr>
+                <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
                 <tr><td>220120</td><td>Cannot operate with only one ad in an ad group.</td><td><div lang="ja">広告グループ内に1件しかない広告の操作はできません。</div><div lang="en">Cannot operate with only one ad in an ad group.</div></td></tr>
                 <tr><td>260010</td><td>Ad type that is not registered in simulation cannot be specified.</td><td><div lang="ja">シミュレーションに登録されていない広告種別は指定できません。</div><div lang="en">Ad type that is not registered in simulation cannot be specified.</div></td></tr>
                 <tr><td>220116</td><td>This video duration cannot be used with the specified ad type.</td><td><div lang="ja">指定した広告種別では利用できない動画時間です。</div><div lang="en">This video duration cannot be used with the specified ad type.</div></td></tr>

@@ -26,27 +26,27 @@ AdGroupTargetServiceAge:
     </div>
     <dl class=term>
       <dt class="term__item">GT_RANGE13_14</dt>
-      <dd class="term__desc"><span lang="ja">13歳から14歳です。</span><span lang="en">From 13 to 14.</span></dd>
+      <dd class="term__desc"><span lang="ja">13歳から14歳です。※現在利用できません</span><span lang="en">From 13 to 14. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE15_17</dt>
-      <dd class="term__desc"><span lang="ja">15歳から17歳です。</span><span lang="en">From 15 to 17.</span></dd>
+      <dd class="term__desc"><span lang="ja">15歳から17歳です。※現在利用できません</span><span lang="en">From 15 to 17. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE18_19</dt>
-      <dd class="term__desc"><span lang="ja">18歳から19歳です。</span><span lang="en">From 18 to 19.</span></dd>
+      <dd class="term__desc"><span lang="ja">18歳から19歳です。※現在利用できません</span><span lang="en">From 18 to 19. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE20_21</dt>
-      <dd class="term__desc"><span lang="ja">20歳から21歳です。</span><span lang="en">From 20 to 21.</span></dd>
+      <dd class="term__desc"><span lang="ja">20歳から21歳です。※現在利用できません</span><span lang="en">From 20 to 21. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE22_29</dt>
-      <dd class="term__desc"><span lang="ja">22歳から29歳です。</span><span lang="en">From 22 to 29.</span></dd>
+      <dd class="term__desc"><span lang="ja">22歳から29歳です。※現在利用できません</span><span lang="en">From 22 to 29. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE30_39</dt>
-      <dd class="term__desc"><span lang="ja">30歳から39歳です。</span><span lang="en">From 30 to 39.</span></dd>
+      <dd class="term__desc"><span lang="ja">30歳から39歳です。※現在利用できません</span><span lang="en">From 30 to 39. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE40_49</dt>
-      <dd class="term__desc"><span lang="ja">40歳から49歳です。</span><span lang="en">From 40 to 49.</span></dd>
+      <dd class="term__desc"><span lang="ja">40歳から49歳です。※現在利用できません</span><span lang="en">From 40 to 49. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE50_59</dt>
-      <dd class="term__desc"><span lang="ja">50歳から59歳です。</span><span lang="en">From 50 to 59.</span></dd>
+      <dd class="term__desc"><span lang="ja">50歳から59歳です。※現在利用できません</span><span lang="en">From 50 to 59. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE60_69</dt>
-      <dd class="term__desc"><span lang="ja">60歳から69歳です。</span><span lang="en">From 60 to 69.</span></dd>
+      <dd class="term__desc"><span lang="ja">60歳から69歳です。※現在利用できません</span><span lang="en">From 60 to 69. * Not Available.</span></dd>
       <dt class="term__item">GT_RANGE70_UL</dt>
-      <dd class="term__desc"><span lang="ja">70歳以上です。</span><span lang="en">70 and up.</span></dd>
+      <dd class="term__desc"><span lang="ja">70歳以上です。※現在利用できません</span><span lang="en">70 and up. * Not Available.</span></dd>
       <dt class="term__item">GT_UNKNOWN</dt>
-      <dd class="term__desc"><span lang="ja">年齢不明です。</span><span lang="en">AdGroupTargetServiceAge unknown.</span></dd>
+      <dd class="term__desc"><span lang="ja">年齢不明です。※現在利用できません</span><span lang="en">AdGroupTargetServiceAge unknown. * Not Available.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>
