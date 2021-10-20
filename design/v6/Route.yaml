@@ -39,8 +39,8 @@ tags:
   - name: AccountTrackingUrlService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">AccountTrackingUrlServiceでは、トラッキングに関する情報の取得および更新を行います。<br>※現在利用できません</div>
-      <div lang="en">AccountTrackingUrlService is to get or update tracking information.<br>* Not Available.</div>
+      <div lang="ja">AccountTrackingUrlServiceでは、トラッキングに関する情報の取得および更新を行います。</div>
+      <div lang="en">AccountTrackingUrlService is to get or update tracking information.</div>
   - name: AccountService
     description: |
       <label class="account"></label>

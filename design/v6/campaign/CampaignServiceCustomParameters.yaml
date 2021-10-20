@@ -12,6 +12,6 @@ CampaignServiceCustomParameters:
   title: CampaignServiceCustomParameters
   description: |
     <div lang="ja">CampaignServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
-    ADD時およびSET時、このフィールドは省略可能となります。<br>※現在利用できません</div>
+    ADD時およびSET時、このフィールドは省略可能となります。</div>
     <div lang="en">CampaignServiceCustomParameters displays the setting of custom parameters.<br>
-    This field is optional in ADD and SET operation.<br>* Not Available.</div>
+    This field is optional in ADD and SET operation.</div>

@@ -93,15 +93,19 @@ AdGroupAdServiceCarousel:
         ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
         finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
         SET時は省略可能となります。<br>
-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
-        <br>※現在利用できません
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
+        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
+        - iOSの場合：itunes.apple.com<br>
+        - Androidの場合：play.google.com
         </div>
         <div lang="en">Final URL.<br>
         In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
         If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
         This field is optional in SET operation.<br>
-        If url is specified in SET operation, the value in this field will be cleared.
-        <br>* Not Available.
+        If url is specified in SET operation, the value in this field will be cleared.<br>
+        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
+        - For iOS : itunes.apple.com<br>
+        - For Android : play.google.com
         </div>
     smartphoneFinalUrl:
       type: string
@@ -111,13 +115,11 @@ AdGroupAdServiceCarousel:
         finalUrlを指定するときのみ、任意で指定できます。<br>
         キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
         SET時にurlを指定する場合、このフィールドの値はクリアされます。
-        <br>※現在利用できません
         </div>
         <div lang="en">Final URL (smartphone).<br>
         This field can be optionally specified only when specifying finalUrl.<br>
         Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
         If url is specified in SET operation, the value in this field will be cleared.
-        <br>* Not Available.
         </div>
     isRemoveSmartphoneFinalUrl:
       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
