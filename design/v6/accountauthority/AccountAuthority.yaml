@@ -64,8 +64,23 @@ AccountAuthority:
           <td>キャンペーン目的</td>
         </tr>
         <tr>
+          <td>STORE_VISIT</td>
+          <td>来店促進</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPayギフト</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
           <td>SHOPPING_ADS</td>
           <td>eコマース</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>セールスプロモーション</td>
           <td>キャンペーン掲載タイプ</td>
         </tr>
         <tr>
@@ -135,8 +150,23 @@ AccountAuthority:
           <td>Campaign goal</td>
         </tr>
         <tr>
+          <td>STORE_VISIT</td>
+          <td>Store Visit</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPay Gift</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
           <td>SHOPPING_ADS</td>
           <td>Ecommerce</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>Sales Promotion</td>
           <td>Campaign delivery type</td>
         </tr>
         <tr>

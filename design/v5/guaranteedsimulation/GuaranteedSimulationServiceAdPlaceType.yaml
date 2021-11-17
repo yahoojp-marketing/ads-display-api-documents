@@ -10,11 +10,11 @@ GuaranteedSimulationServiceAdPlaceType:
   description: |
     <div lang="ja">
     GuaranteedSimulationServiceAdPlaceTypeは、広告の掲載面を表します。<br>
-    このフィールドは、ADD時は必須となります。
+    このフィールドは、ADDおよびSET時に省略可能となります。
     </div>
     <div lang="en">
     GuaranteedSimulationServiceAdPlaceType describes the ad placements.<br>
-    This field is required in ADD operation.
+    This field is optional in ADD and SET operation.
     </div>
     <dl class=term>
       <dt class="term__item">YAHOO_JAPAN_TOP</dt>

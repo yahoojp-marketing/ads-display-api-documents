@@ -121,8 +121,8 @@ tags:
   - name: ContentsKeywordIdeaService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">SearchKeywordIdeaServiceは、コンテンツターゲティング対象キーワードを取得します。 </div>
-      <div lang="en">SearchKeywordIdeaService retrieves the keyword for contents targeting. </div>
+      <div lang="ja">ContentsKeywordIdeaServiceは、コンテンツターゲティング対象キーワードを取得します。 </div>
+      <div lang="en">ContentsKeywordIdeaService retrieves the keyword for contents targeting. </div>
   - name: ContentsKeywordListService
     description: |
       <label class="campaign"></label>

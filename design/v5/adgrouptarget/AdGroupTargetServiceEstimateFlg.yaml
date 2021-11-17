@@ -8,7 +8,7 @@ AdGroupTargetServiceEstimateFlg:
   title: AdGroupTargetServiceEstimateFlg
   description: |
     <div lang="ja">
-    AdGroupTargetServiceEstimateFlgは、拡張配信の設定有無を表します。<br>
+    AdGroupTargetServiceEstimateFlgは、拡張配信の設定有無を表します。 ※現在利用できません<br>
     このフィールドはAdGroupTargetServiceAgeが以下の場合には指定できません。<br>
     GT_RANGE15_19<br>
     GT_RANGE20_24<br>
@@ -26,7 +26,7 @@ AdGroupTargetServiceEstimateFlg:
     ADDおよびREPLACE時、このフィールドは必須となります。
     </div>
     <div lang="en">
-    AdGroupTargetServiceEstimateFlg displays the advance delivery setting.<br>
+    AdGroupTargetServiceEstimateFlg displays the advance delivery setting. * Not Available.<br>
     This field cannot be specified if AdGroupTargetServiceAge is following value:<br>
     GT_RANGE15_19<br>
     GT_RANGE20_24<br>
