@@ -29,7 +29,7 @@ ReportDefinitionServiceType:
       - Conversion Path Report: <code>CONVERSION_PATH</code><br>
       - Cross-campaign Reach Report: <code>CROSS_CAMPAIGN_REACHES</code><br>
       - Reach Report: <code>REACH</code><br>
-      Only <code>CONVERSION_PATH</code>,<code>CROSS_CAMPAIGN_REACHES</code>,<code>FREQUENCY</code> and <code>REACH</code> can be specified in ADD operation.
+      Only <code>CONVERSION_PATH</code>,<code>CROSS_CAMPAIGN_REACHES</code> and <code>REACH</code> can be specified in ADD operation.
     </div>
     <dl class=term>
       <dt class="term__item">AD</dt>
