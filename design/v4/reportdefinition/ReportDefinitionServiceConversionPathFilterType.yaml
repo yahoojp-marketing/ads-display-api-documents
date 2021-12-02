@@ -21,7 +21,7 @@ ReportDefinitionServiceConversionPathFilterType:
       <dd class="term__desc"><span lang="ja">キャンペーンIDです。</span><span lang="en">Campaign ID.</span></dd>
       <dt class="term__item">CAMPAIGN_NAME</dt>
       <dd class="term__desc"><span lang="ja">キャンペーン名です。</span><span lang="en">Campaign name.</span></dd>
-      <dt class="term__item">CAMPAIGN_ID</dt>
+      <dt class="term__item">CONVERSION_ID</dt>
       <dd class="term__desc"><span lang="ja">コンバージョンIDです。</span><span lang="en">Conversion ID.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
