@@ -4240,7 +4240,6 @@ paths:
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
-                <tr><td>220107</td><td>Invalid aspect ratio of an image.</td><td><div lang="ja">画像ファイルの広告サイズがサポートされていません。</div><div lang="en">Image file of the ads is not in supportive size.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -4315,7 +4314,7 @@ paths:
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
-                <tr><td>220107</td><td>Invalid aspect ratio of an image.</td><td><div lang="ja">画像ファイルの広告サイズがサポートされていません。</div><div lang="en">Image file of the ads is not in supportive size.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -4390,7 +4389,7 @@ paths:
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
-                <tr><td>220107</td><td>Invalid aspect ratio of an image.</td><td><div lang="ja">画像ファイルの広告サイズがサポートされていません。</div><div lang="en">Image file of the ads is not in supportive size.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -4465,7 +4464,6 @@ paths:
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
-                <tr><td>220107</td><td>Invalid aspect ratio of an image.</td><td><div lang="ja">画像ファイルの広告サイズがサポートされていません。</div><div lang="en">Image file of the ads is not in supportive size.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -4540,7 +4538,6 @@ paths:
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
                 <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
-                <tr><td>220107</td><td>Invalid aspect ratio of an image.</td><td><div lang="ja">画像ファイルの広告サイズがサポートされていません。</div><div lang="en">Image file of the ads is not in supportive size.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -4612,7 +4609,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
-                <tr><td>220207</td><td>Invalid aspect ratio of an video.</td><td><div lang="ja">動画ファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for video file.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
@@ -4678,7 +4675,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
-                <tr><td>220207</td><td>Invalid aspect ratio of an video.</td><td><div lang="ja">動画ファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for video file.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
@@ -4744,7 +4741,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
-                <tr><td>220207</td><td>Invalid aspect ratio of an video.</td><td><div lang="ja">動画ファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for video file.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
@@ -4810,7 +4807,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
-                <tr><td>220207</td><td>Invalid aspect ratio of an video.</td><td><div lang="ja">動画ファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for video file.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
@@ -4915,7 +4912,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
-                <tr><td>220207</td><td>Invalid aspect ratio of an video.</td><td><div lang="ja">動画ファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for video file.</div></td></tr>
+                <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
                 <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>

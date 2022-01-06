@@ -23,10 +23,12 @@ GuaranteedPreview:
       description: |
         <div lang="ja">
         プレビューURLです。<br>
+        有効なプレビューURLを取得する場合、指定されたアカウントID配下にある広告IDおよび各種メディアIDを指定してください。<br>
         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
         </div>
         <div lang="en">
         Preview URL.<br>
+        Specify the Ad ID and various Media IDs under the specified Account ID if you will get a valid preview url.<br>
         Although this field will be returned in the response, it will be ignored on input.
         </div>
   title: GuaranteedPreview

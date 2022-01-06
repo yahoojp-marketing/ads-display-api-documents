@@ -29,26 +29,25 @@ ReportCategoryを指定して、レポートフィールドのリストを取得
 ※長くなるため、一部、省略しています。
 ```json
 {
+  "errors": null,
+  "rid": "11111111",
+  "rval": {
     "errors": null,
-    "rid": "11111111",
-    "rval": {
-        "errors": null,
-        "fields": [
-            {
-                "displayFieldNameEN": "Account ID",
-                "displayFieldNameJA": "アカウントID",
-                "fieldName": "ACCOUNT_ID",
-                "fieldType": "LONG",
-                "filterable": true,
-                "impossibleCombinationFields": null,
-                "xmlAttributeName": "accountID"
-            },
-        ...
-        ],
-        "operationSucceeded": true
-    }
-}
-```
+    "fields": [
+      {
+        "displayFieldNameEN": "Account ID",
+        "displayFieldNameJA": "アカウントID",
+        "fieldName": "ACCOUNT_ID",
+        "fieldType": "LONG",
+        "filterable": true,
+        "impossibleCombinationFields": null,
+        "xmlAttributeName": "accountID"
+      },
+    ...
+    ],
+    "operationSucceeded": true
+  }
+}```
 
 #### 2.	レポートの作成
 ReportDefinitionServiceのaddを使用します。  <br>
@@ -93,7 +92,7 @@ ReportDefinitionServiceのaddを使用します。  <br>
       ],
       "reportCompressType": "ZIP",
       "reportDateRangeType": "LAST_7_DAYS",
-      "reportDownloadEncode": "UTF-8",
+      "reportDownloadEncode": "UTF8",
       "reportDownloadFormat": "CSV",
       "reportLanguage": "JA",
       "reportName": "test report 01",
@@ -111,70 +110,73 @@ ReportDefinitionServiceのaddを使用します。  <br>
 ##### ＜レスポンスサンプル＞
 ```json
 {
-    "errors": null,
-    "rid": "51ca5746bc4bf4075eef078e14463b8b",
-    "rval": {
-        "values": [
+  "errors": null,
+  "rid": "6ef3dba169e73bb6a11e5ddc85652f70",
+  "rval": {
+    "values": [
+      {
+        "errors": null,
+        "operationSucceeded": true,
+        "reportDefinition": {
+          "accountId": 111111,
+          "completeTime": null,
+          "dateRange": null,
+          "fields": [
+            "ACCOUNT_ID",
+            "ACCOUNT_NAME",
+            "CAMPAIGN_ID",
+            "CAMPAIGN_NAME",
+            "ADGROUP_ID",
+            "ADGROUP_NAME",
+            "AD_ID",
+            "AD_NAME",
+            "AD_TYPE",
+            "URL_ID",
+            "URL_NAME",
+            "PREF_ID",
+            "PREF_NAME",
+            "CITY_ID",
+            "CITY_NAME",
+            "WARD_ID",
+            "WARD_NAME",
+            "GENDER",
+            "AGE",
+            "MONTH",
+            "DAY"
+          ],
+          "filters": [
             {
-                "errors": null,
-                "operationSucceeded": true,
-                "reportDefinition": {
-                    "accountId": 111111,
-                    "completeTime": null,
-                    "dateRange": null,
-                    "fields": [
-                        "ACCOUNT_ID",
-                        "ACCOUNT_NAME",
-                        "CAMPAIGN_ID",
-                        "CAMPAIGN_NAME",
-                        "ADGROUP_ID",
-                        "ADGROUP_NAME",
-                        "AD_ID",
-                        "AD_NAME",
-                        "AD_TYPE",
-                        "URL_ID",
-                        "URL_NAME",
-                        "PREF_ID",
-                        "PREF_NAME",
-                        "CITY_ID",
-                        "CITY_NAME",
-                        "WARD_ID",
-                        "WARD_NAME",
-                        "GENDER",
-                        "AGE",
-                        "MONTH",
-                        "DAY"
-                    ],
-                    "filters": [
-                        {
-                            "field": "ACCOUNT_ID",
-                            "filterOperator": "NOT_EQUALS",
-                            "values": [
-                                "100"
-                            ]
-                        }
-                    ],
-                    "frequencyRange": null,
-                    "reportCompressType": "ZIP",
-                    "reportDateRangeType": "LAST_7_DAYS",
-                    "reportDownloadEncode": "UTF-8",
-                    "reportDownloadFormat": "CSV",
-                    "reportJobStatus": "WAIT",
-                    "reportJobErrorDetail": null,
-                    "reportJobId": 222222,
-                    "reportLanguage": "JA",
-                    "reportName": "test report 01",
-                    "requestTime": "20200722191736",
-                    "sortFields": [
-                        {
-                            "field": "ACCOUNT_ID",
-                            "reportSortType": "ASC"
-                        }
-                    ]
-                }
+              "field": "ACCOUNT_ID",
+              "filterOperator": "NOT_EQUALS",
+              "values": [
+                "100"
+              ]
             }
-        ]
-    }
+          ],
+          "reportCompressType": "ZIP",
+          "reportDateRangeType": "LAST_7_DAYS",
+          "reportDownloadEncode": "UTF8",
+          "reportDownloadFormat": "CSV",
+          "reportJobStatus": "WAIT",
+          "reportJobErrorDetail": null,
+          "reportJobId": 222222,
+          "reportLanguage": "JA",
+          "reportName": "test report 01",
+          "requestTime": "20211224185454",
+          "reportSkipColumnHeader": "FALSE",
+          "reportSkipReportSummary": "FALSE",
+          "reportDecimalPartDisplayType": "SIMPLE_DISPLAY",
+          "reportTypeCondition": null,
+          "sortFields": [
+            {
+              "field": "ACCOUNT_ID",
+              "reportSortType": "ASC"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -198,71 +200,74 @@ ReportDefinitionServiceのgetを使用します。<br>
 ##### ＜レスポンスサンプル＞
 ```json
 {
-    "errors": null,
-    "rid": "4af57c41216af87b6f5de4449bc82318",
-    "rval": {
-        "totalNumEntries": 1,
-        "values": [
+  "errors": null,
+  "rid": "1abd04462d335b6f9061b4837aa7a5c7",
+  "rval": {
+    "totalNumEntries": 1,
+    "values": [
+      {
+        "errors": null,
+        "operationSucceeded": true,
+        "reportDefinition": {
+          "accountId": 111111,
+          "completeTime": "20211224185457",
+          "dateRange": null,
+          "fields": [
+            "ACCOUNT_ID",
+            "ACCOUNT_NAME",
+            "CAMPAIGN_ID",
+            "CAMPAIGN_NAME",
+            "ADGROUP_ID",
+            "ADGROUP_NAME",
+            "AD_ID",
+            "AD_NAME",
+            "AD_TYPE",
+            "URL_ID",
+            "URL_NAME",
+            "PREF_ID",
+            "PREF_NAME",
+            "CITY_ID",
+            "CITY_NAME",
+            "WARD_ID",
+            "WARD_NAME",
+            "GENDER",
+            "AGE",
+            "MONTH",
+            "DAY"
+          ],
+          "filters": [
             {
-                "errors": null,
-                "operationSucceeded": true,
-                "reportDefinition": {
-                    "accountId": 111111,
-                    "completeTime": "20200722191737",
-                    "dateRange": null,
-                    "fields": [
-                        "ACCOUNT_ID",
-                        "ACCOUNT_NAME",
-                        "CAMPAIGN_ID",
-                        "CAMPAIGN_NAME",
-                        "ADGROUP_ID",
-                        "ADGROUP_NAME",
-                        "AD_ID",
-                        "AD_NAME",
-                        "AD_TYPE",
-                        "URL_ID",
-                        "URL_NAME",
-                        "PREF_ID",
-                        "PREF_NAME",
-                        "CITY_ID",
-                        "CITY_NAME",
-                        "WARD_ID",
-                        "WARD_NAME",
-                        "GENDER",
-                        "AGE",
-                        "MONTH",
-                        "DAY"
-                    ],
-                    "filters": [
-                        {
-                            "field": "ACCOUNT_ID",
-                            "filterOperator": "NOT_EQUALS",
-                            "values": [
-                                "100"
-                            ]
-                        }
-                    ],
-                    "frequencyRange": null,
-                    "reportCompressType": "ZIP",
-                    "reportDateRangeType": "LAST_7_DAYS",
-                    "reportDownloadEncode": "UTF-8",
-                    "reportDownloadFormat": "CSV",
-                    "reportJobStatus": "COMPLETED",
-                    "reportJobErrorDetail": null,
-                    "reportJobId": 222222,
-                    "reportLanguage": "JA",
-                    "reportName": "test report 01",
-                    "requestTime": "20200722191736",
-                    "sortFields": [
-                        {
-                            "field": "ACCOUNT_ID",
-                            "reportSortType": "ASC"
-                        }
-                    ]
-                }
+              "field": "ACCOUNT_ID",
+              "filterOperator": "NOT_EQUALS",
+              "values": [
+                "100"
+              ]
             }
-        ]
-    }
+          ],
+          "reportCompressType": "ZIP",
+          "reportDateRangeType": "LAST_7_DAYS",
+          "reportDownloadEncode": "UTF8",
+          "reportDownloadFormat": "CSV",
+          "reportJobStatus": "COMPLETED",
+          "reportJobErrorDetail": null,
+          "reportJobId": 222222,
+          "reportLanguage": "JA",
+          "reportName": "test report 01",
+          "requestTime": "20211224185454",
+          "reportSkipColumnHeader": "FALSE",
+          "reportSkipReportSummary": "FALSE",
+          "reportDecimalPartDisplayType": "SIMPLE_DISPLAY",
+          "reportTypeCondition": null,
+          "sortFields": [
+            {
+              "field": "ACCOUNT_ID",
+              "reportSortType": "ASC"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
 ```
 
