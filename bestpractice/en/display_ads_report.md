@@ -30,7 +30,7 @@ I omit a part.
 ```json
 {
   "errors": null,
-  "rid": "11111111",
+  "rid": "6ef3dba169e73bb6a11e5ddc85652f70",
   "rval": {
     "errors": null,
     "fields": [
@@ -47,7 +47,8 @@ I omit a part.
     ],
     "operationSucceeded": true
   }
-}```
+}
+```
 
 #### 2.	Create Report 
 Use add of ReportDefinitionService.  

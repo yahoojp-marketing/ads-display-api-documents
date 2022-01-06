@@ -27,10 +27,11 @@ ReportCategoryを指定して、レポートフィールドのリストを取得
 
 ##### ＜レスポンスサンプル＞
 ※長くなるため、一部、省略しています。
+
 ```json
 {
   "errors": null,
-  "rid": "11111111",
+  "rid": "6ef3dba169e73bb6a11e5ddc85652f70",
   "rval": {
     "errors": null,
     "fields": [
@@ -47,7 +48,8 @@ ReportCategoryを指定して、レポートフィールドのリストを取得
     ],
     "operationSucceeded": true
   }
-}```
+}
+```
 
 #### 2.	レポートの作成
 ReportDefinitionServiceのaddを使用します。  <br>
