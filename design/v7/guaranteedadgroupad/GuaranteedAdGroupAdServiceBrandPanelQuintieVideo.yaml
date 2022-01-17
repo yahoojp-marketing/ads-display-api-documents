@@ -1,0 +1,237 @@
+GuaranteedAdGroupAdServiceBrandPanelQuintieVideo:
+  type: object
+  nullable: true
+  properties:
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Thumbnail ID.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+        SET時は省略可能となります。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Final URL.<br>
+        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+        If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+        This field is optional in SET operation.<br>
+        * Not Available.
+        </div>
+    isRemoveTrackingUrl:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        If url is specified in SET operation, the value in this field will be cleared.<br>
+        * Not Available.
+        </div>
+    isRemoveVideo10SecBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo25PercentBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo3SecBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo50PercentBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideo75PercentBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideoCompleteBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    isRemoveVideoStartBeaconUrls:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    video3SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        3秒視聴ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (3 seconds).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video25PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        25％再生視聴ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (25%).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video50PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        50％再生視聴ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (50%).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video75PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        75％再生視聴ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (75%).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video10SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        10秒視聴ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (10 seconds).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoCompleteBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生完了ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (complete).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoStartBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生開始ビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時はすべて上書きされます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (start).<br>
+        This field is optional in ADD and SET operation.<br>
+        ∗Replace all URLs in SET operation.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+  title: GuaranteedAdGroupAdServiceBrandPanelQuintieVideo
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceBrandPanelQuintieVideoオブジェクトは、予約型専用広告：16:9の縮小機能付き動画で構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceBrandPanelQuintieVideo object describes information about a guaranteed ad composed of 16:9 video with reduction function.<br>
+    This field is optional.<br>
+    </div>

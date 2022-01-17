@@ -1,0 +1,76 @@
+AdGroupTarget:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Ad group ID.<br>
+        This field is required in requests.
+        </div>
+    bidMultiplier:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        入札価格調整率です。<br>
+        このフィールドは、ADD、SETおよびREPLACE時は省略可能となり、REMOVE時は無視されます。<br>
+        ※入札価格調整率が設定できないターゲティングの場合は返却されません。<br>
+        ※広告グループのターゲティングにAUDIENCE_LIST_TARGET、SEARCH_TARGET、PLACEMENT_TARGETのいずれかを指定し、かつその広告グループがYDNキャンペーンに紐づいている場合にbidMultiplierを指定しなかった時は、nullが代入されます。<br>
+        ※その他の場合でbidMultiplierを指定しなかった時は1.0が代入されます。
+        </div>
+        <div lang="en">
+        Bid adjustment.<br>
+        This field is optional in ADD, SET and REPLACE operation, and will be ignored in REMOVE operation.<br>
+        ∗If bid adjustment is unable to set targeting, not returned.<br>
+        *If bidMultiplier is not specified when AUDIENCE_LIST_TARGET, SEARCH_TARGET, or PLACEMENT_TARGET is specified for the targeting of the ad group and the ad group is linked to the YDN campaign, null will be assigned for this field.<br>
+        *If bidMultiplier is not specified in other cases, 1.0 will be assigned for this field.
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        This field is required in requests.
+        </div>
+    target:
+      $ref: 'AdGroupTargetServiceTarget.yaml#/AdGroupTargetServiceTarget'
+  title: AdGroupTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetオブジェクトは、広告グループに設定されているターゲティング情報を格納します。<br>
+    このオブジェクトは、GuaranteedAdGroupServiceで広告グループを追加する場合は必須です。<br>
+    *GuaranteedAdGroupServiceでGETする際、このフィールドは返却されません。
+    </div>
+    <div lang="en">
+    AdGroupTarget object contains targeting information specified in ad group.<br>
+    This object is required if you are adding ad group via GuaranteedAdGroupService.<br>
+    *This field will not be returned in GET operation via GuaranteedAdGroupService.
+    </div>

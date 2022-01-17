@@ -1,0 +1,20 @@
+GuaranteedPreviewServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - material
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件 : アカウントID</div>
+        <div lang="en">Search Condition: Account ID</div>
+    material:
+       $ref: 'GuaranteedPreviewServiceMaterial.yaml#/GuaranteedPreviewServiceMaterial'
+  title: GuaranteedPreviewServiceSelector
+  description: |
+    <div lang="ja">GuaranteedPreviewServiceSelectorオブジェクトは、getメソッドのプレビュー情報の取得条件を保持します。</div>
+    <div lang="en">GuaranteedPreviewServiceSelector object holds acquisition conditions of preview information in the get method.</div>

@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedDeviceTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedDeviceTarget.yaml#/GuaranteedSimulationServicePermittedDeviceTarget'
+  title: GuaranteedSimulationServicePackagePermittedDeviceTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedDeviceTargetオブジェクトは、デバイスターゲット設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedDeviceTarget object holds the restriction information about the setting of the device target.</div>

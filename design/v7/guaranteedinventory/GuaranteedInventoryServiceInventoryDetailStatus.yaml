@@ -1,0 +1,22 @@
+GuaranteedInventoryServiceInventoryDetailStatus:
+  type: string
+  nullable: true
+  enum:
+    - WAIT
+    - SUCCEEDED
+    - FAILED
+    - UNKNOWN
+  title: GuaranteedInventoryServiceInventoryDetailStatus
+  description: |
+    <div lang="ja">GuaranteedInventoryServiceInventoryDetailStatusは、在庫確認の実行ステータスの詳細を表します。</div>
+    <div lang="en">GuaranteedInventoryServiceInventoryDetailStatus describes the execution status details of inventory check.</div>
+    <dl class=term>
+      <dt class="term__item">WAIT</dt>
+      <dd class="term__desc"><span lang="ja">未処理です。</span><span lang="en">Not yet processed.</span></dd>
+      <dt class="term__item">SUCCEEDED</dt>
+      <dd class="term__desc"><span lang="ja">完了しています。</span><span lang="en">Completed.</span></dd>
+      <dt class="term__item">FAILED</dt>
+      <dd class="term__desc"><span lang="ja">失敗しています。</span><span lang="en">Failed.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

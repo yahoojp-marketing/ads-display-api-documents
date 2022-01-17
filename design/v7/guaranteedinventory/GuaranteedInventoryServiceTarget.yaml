@@ -1,0 +1,52 @@
+GuaranteedInventoryServiceTarget:
+  type: object
+  nullable: true
+  properties:
+    adScheduleTarget:
+      $ref: 'GuaranteedInventoryServiceAdScheduleTarget.yaml#/GuaranteedInventoryServiceAdScheduleTarget'
+    ageTarget:
+      $ref: 'GuaranteedInventoryServiceAgeTarget.yaml#/GuaranteedInventoryServiceAgeTarget'
+    appTarget:
+      $ref: 'GuaranteedInventoryServiceAppTarget.yaml#/GuaranteedInventoryServiceAppTarget'
+    audienceCategoryTarget:
+      $ref: 'GuaranteedInventoryServiceAudienceCategoryTarget.yaml#/GuaranteedInventoryServiceAudienceCategoryTarget'
+    deviceTarget:
+      $ref: 'GuaranteedInventoryServiceDeviceTarget.yaml#/GuaranteedInventoryServiceDeviceTarget'
+    genderTarget:
+      $ref: 'GuaranteedInventoryServiceGenderTarget.yaml#/GuaranteedInventoryServiceGenderTarget'
+    geoTarget:
+      $ref: 'GuaranteedInventoryServiceGeoTarget.yaml#/GuaranteedInventoryServiceGeoTarget'
+    osTarget:
+      $ref: 'GuaranteedInventoryServiceOsTarget.yaml#/GuaranteedInventoryServiceOsTarget'
+    placementCategoryTarget:
+      $ref: 'GuaranteedInventoryServicePlacementCategoryTarget.yaml#/GuaranteedInventoryServicePlacementCategoryTarget'
+    placementCategoryDetailTarget:
+      $ref: 'GuaranteedInventoryServicePlacementCategoryDetailTarget.yaml#/GuaranteedInventoryServicePlacementCategoryDetailTarget'
+    positionTarget:
+      $ref: 'GuaranteedInventoryServicePositionTarget.yaml#/GuaranteedInventoryServicePositionTarget'
+    audienceListTarget:
+      $ref: 'GuaranteedInventoryServiceAudienceListTarget.yaml#/GuaranteedInventoryServiceAudienceListTarget'
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        ターゲットIDです。<br>
+        このフィールドは、ADD時は省略可能となります。
+        </div>
+        <div lang="en">
+        Target ID.<br>
+        This field is optional in ADD operation.
+        </div>
+    targetType:
+      $ref: 'GuaranteedInventoryServiceTargetType.yaml#/GuaranteedInventoryServiceTargetType'
+  title: GuaranteedInventoryServiceTarget
+  description: |
+    <div lang="ja">
+    GuaranteedInventoryServiceTargetオブジェクトは、ターゲティング設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    GuaranteedInventoryServiceTarget object holds information of the target setting.<br>
+    This field is optional in ADD operation.
+    </div>

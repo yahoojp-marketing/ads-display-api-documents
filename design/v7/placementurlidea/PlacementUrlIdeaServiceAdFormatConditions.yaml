@@ -1,0 +1,20 @@
+PlacementUrlIdeaServiceAdFormatConditions:
+  type: object
+  nullable: true
+  properties:
+    adStyle:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告スタイルです。</div>
+        <div lang="en">Ad style.</div>
+    mediaAdFormat:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">メディアフォーマットです。</div>
+        <div lang="en">Media format.</div>
+  title: PlacementUrlIdeaServiceAdFormatConditions
+  description: |
+    <div lang="ja">PlacementUrlIdeaServiceAdFormatConditionsオブジェクトは、広告掲載フォーマットの情報を保持するオブジェクトです。</div>
+    <div lang="en">PlacementUrlIdeaServiceAdFormatConditions stores Ad Distribution format information.</div>

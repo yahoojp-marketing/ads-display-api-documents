@@ -1,0 +1,55 @@
+RecommendationServiceCampaignsForAddingAdsCampaign:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        </div>
+        <div lang="en">
+        Campaign Name.<br>
+        </div>
+    recommendationMediaAdFormat:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        推奨するメディアフォーマットです。<br>
+        フォーマットの詳細はDictionaryService/getMediaAdFormatのmediaAdFormatフィールドで確認できます。
+        </div>
+        <div lang="en">
+        Recommended media ad format.<br>
+        The format details can be found in mediaAdFormat field of DictionaryService/getMediaAdFormat operation.
+        </div>
+  title: RecommendationServiceCampaignsForAddingAdsCampaign
+  description: |
+    <div lang="ja">RecommendationServiceCampaignsForAddingAdsCampaignオブジェクトは、入稿していない画像サイズが存在するキャンペーンに関する最適化提案の詳細情報を表します。</div>
+    <div lang="en">RecommendationServiceCampaignsForAddingAdsCampaign object describes detailed information about Recommendations for the campaign with an image size that have not been submitted.</div>

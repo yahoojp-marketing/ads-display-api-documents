@@ -1,0 +1,25 @@
+ConversionTrackerServiceType:
+  type: string
+  nullable: true
+  enum:
+  - WEB_CONVERSION
+  - APP_CONVERSION
+  - UNKNOWN
+  title: ConversionTrackerServiceType
+  description: |
+    <div lang="ja">
+    ConversionTrackerServiceTypeは、コンバージョンの種別を表します。<br>
+    このフィールドは、リクエストの場合は必須です。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceType describes conversion type.<br>
+    This field is required in requests.
+    </div>
+    <dl class=term>
+      <dt class="term__item">WEB_CONVERSION</dt>
+      <dd class="term__desc"><span lang="ja">ウェブコンバージョン</span><span lang="en">Web page conversions</span></dd>
+      <dt class="term__item">APP_CONVERSION</dt>
+      <dd class="term__desc"><span lang="ja">アプリコンバージョン</span><span lang="en">Mobile app conversions</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

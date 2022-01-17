@@ -1,0 +1,77 @@
+GuaranteedAdGroupAdServiceBrandPanelQuintie:
+  type: object
+  nullable: true
+  properties:
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+        SET時は省略可能となります。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Final URL.<br>
+        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+        If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+        This field is optional in SET operation.<br>
+        * Not Available.
+        </div>
+    isRemoveTrackingUrl:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        If url is specified in SET operation, the value in this field will be cleared.<br>
+        * Not Available.
+        </div>
+  title: GuaranteedAdGroupAdServiceBrandPanelQuintie
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceBrandPanelQuintieオブジェクトは、予約型専用広告：16:9の縮小機能付き画像で構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceBrandPanelQuintie object describes information about a guaranteed ad composed of 16:9 image with reduction function.<br>
+    This field is optional.<br>
+    </div>

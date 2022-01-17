@@ -1,0 +1,13 @@
+RecommendationServiceCampaignsForAddingAds:
+  type: object
+  nullable: true
+  properties:
+    campaignsForAddingAdsList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceCampaignsForAddingAdsCampaign.yaml#/RecommendationServiceCampaignsForAddingAdsCampaign'
+  title: RecommendationServiceCampaignsForAddingAds
+  description: |
+    <div lang="ja">RecommendationServiceCampaignsForAddingAdsオブジェクトは、入稿していない画像サイズが存在するキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceCampaignsForAddingAds object describes information about Recommendations for the campaign with an image size that have not been submitted.</div>

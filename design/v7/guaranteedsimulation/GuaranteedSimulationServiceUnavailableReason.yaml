@@ -1,0 +1,65 @@
+GuaranteedSimulationServiceUnavailableReason:
+  type: object
+  nullable: true
+  properties:
+    date:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        在庫がない日を表します。
+        </div>
+        <div lang="en">
+        Indicates a day when it is out of inventory. 
+        </div>
+        Format: yyyyMMdd
+    hours:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">
+        予約ができない時間帯のリストです。
+        </div>
+        <div lang="en">
+        List of time zones that cannot be reserved.
+        </div>
+    genders:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceGender.yaml#/GuaranteedSimulationServiceGender'
+    ages:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceAge.yaml#/GuaranteedSimulationServiceAge'
+    devices:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceDeviceType.yaml#/GuaranteedSimulationServiceDeviceType'
+    audienceCategories:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        在庫がないオーディエンスカテゴリーのターゲットID（カテゴリーコード）のリストです。
+        </div>
+        <div lang="en">
+        A list of Audience category target ID (category code) with no inventory.
+        </div>
+  title: GuaranteedSimulationServiceUnavailableReason
+  description: |
+    <div lang="ja">GuaranteedSimulationServiceUnavailableReasonオブジェクトは、在庫の不足理由を表します。<br>
+    このオブジェクトで返される各フィールドに対応する在庫は不足しています。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+    <div lang="en">GuaranteedSimulationServiceUnavailableReason describes a reason for lack of inventory.<br> 
+    An inventory subject to each field returned by this object is lacking.<br>
+    Although this field will be returned in the response, it will be ignored on input.</div>

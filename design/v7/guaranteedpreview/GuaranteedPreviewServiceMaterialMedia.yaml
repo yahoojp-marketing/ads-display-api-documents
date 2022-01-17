@@ -1,0 +1,93 @@
+GuaranteedPreviewServiceMaterialMedia:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'GuaranteedPreviewServiceAdType.yaml#/GuaranteedPreviewServiceAdType'
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field is required in requests.
+        </div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Thumbnail ID.<br>
+        This field is optional in requests.
+        </div>
+    adLeftSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        左サイド画像です。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Left side image.<br>
+        This field is optional in requests.
+        </div>
+    adRightSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        右サイド画像です。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Right side image.<br>
+        This field is optional in requests.
+        </div>
+    adCenterMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        センター画像です。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Center image.<br>
+        This field is optional in requests.
+        </div>
+    adShrinkMainMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        縮小メイン画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reduced main image.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    panels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedPreviewServicePanelSwitch.yaml#/GuaranteedPreviewServicePanelSwitch'
+  title: GuaranteedPreviewServiceMaterialMedia
+  description: |
+    <div lang="ja">GuaranteedPreviewServiceMaterialMediaオブジェクトは、プレビュー素材（メディア）の情報を保持します。</div>
+    <div lang="en">GuaranteedPreviewServiceMaterialMedia object holds information about the preview material (media).</div>

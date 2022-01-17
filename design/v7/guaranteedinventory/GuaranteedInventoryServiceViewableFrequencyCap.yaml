@@ -1,0 +1,31 @@
+GuaranteedInventoryServiceViewableFrequencyCap:
+  type: object
+  nullable: true
+  properties:
+    frequencyLevel:
+      $ref: 'GuaranteedInventoryServiceFrequencyLevel.yaml#/GuaranteedInventoryServiceFrequencyLevel'
+    frequencyTimeUnit:
+      $ref: 'GuaranteedInventoryServiceFrequencyTimeUnit.yaml#/GuaranteedInventoryServiceFrequencyTimeUnit'
+    vImps:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        同一ユーザに対する広告の最大ビューアブルインプレッション数です。<br>
+        ADD時、このフィールドは必須となります。
+        </div>
+        <div lang="en">
+        Maximum number of ad viewable impressions to same user.<br>
+        In ADD operation, this field will be required.
+        </div>
+  title: GuaranteedCampaignServiceViewableFrequencyCap
+  description: |
+    <div lang="ja">
+    GuaranteedCampaignServiceViewableFrequencyCapは、ビューアブルフリークエンシー制御を表します。<br>
+    ADD時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    GuaranteedCampaignServiceViewableFrequencyCap object describes viewable frequency restriction.<br>
+    This field is optional in ADD operation.
+    </div>

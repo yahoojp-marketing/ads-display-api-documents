@@ -1,0 +1,68 @@
+GuaranteedSimulationServicePackageSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件 : アカウントID</div>
+        <div lang="en">Search Condition: Account ID</div>
+    packageName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">検索条件 : 商品名</div>
+        <div lang="en">Search Condition: Package name</div>
+    packageIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+        description: |
+          <div lang="ja">検索条件 : 商品ID</div>
+          <div lang="en">Search Condition: Package IDs</div>
+    deviceTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceDeviceType.yaml#/GuaranteedSimulationServiceDeviceType'
+      description: |
+        <div lang="ja">検索条件 : 配信先デバイス</div>
+        <div lang="en">Search Condition: Devices</div>
+    adTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedSimulationServiceAdType.yaml#/GuaranteedSimulationServiceAdType'
+      description: |
+        <div lang="ja">検索条件 : 広告タイプ</div>
+        <div lang="en">Search Condition: Ad Types</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 10
+      default: 10
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: GuaranteedSimulationServicePackageSelector
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackageSelectorオブジェクトは、getPackageメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">The GuaranteedSimulationServicePackageSelector object is a container for storing a set of criteria (parameters) for getPackage method.</div>

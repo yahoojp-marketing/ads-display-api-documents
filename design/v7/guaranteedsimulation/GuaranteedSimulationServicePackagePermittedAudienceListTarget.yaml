@@ -1,0 +1,15 @@
+GuaranteedSimulationServicePackagePermittedAudienceListTarget:
+  type: object
+  nullable: true
+  properties:
+    targetPermission:
+      $ref: 'GuaranteedSimulationServicePackagePermissionType.yaml#/GuaranteedSimulationServicePackagePermissionType'
+    permittedTargets:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedSimulationServicePermittedAudienceListTarget.yaml#/GuaranteedSimulationServicePermittedAudienceListTarget'
+  title: GuaranteedSimulationServicePackagePermittedAudienceListTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePackagePermittedAudienceListTargetオブジェクトは、オーディエンスリストターゲティング設定の制限情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePackagePermittedAudienceListTarget object holds limit information about the audience list targeting setting.</div>

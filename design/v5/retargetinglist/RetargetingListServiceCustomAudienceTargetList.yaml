@@ -26,10 +26,10 @@ RetargetingListServiceCustomAudienceTargetList:
     <div lang="ja">
     RetargetingListServiceCustomAudienceTargetListオブジェクトは、Yahoo! DMPの行動履歴を利用するターゲットリストを表します。ご利用にはYahoo! DMPのご契約が必要です。<br>
     このフィールドは、ADDおよびSET時に省略可能となります。<br>
-    ※targetListTypeがCUSTOM_AUDIENCEの場合は、ADDおよびSET時に必須となります。
+    ※targetListTypeがCUSTOM_AUDIENCEの場合は、ADD時に必須となります。
     </div>
     <div lang="en">
     RetargetingListServiceCustomAudienceTargetList object displays Target List using users' visit/activity history from Yahoo! JAPAN DMP. To use the data, it is required to conclude a contract for Yahoo! DMP. <br>
     This field is optional in ADD and SET operation. <br>
-    *If targetListType is CUSTOM_AUDIENCE, this field is required in ADD and SET operation.
+    *If targetListType is CUSTOM_AUDIENCE, this field is required in ADD operation.
     </div>

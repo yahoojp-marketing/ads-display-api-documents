@@ -11,9 +11,9 @@ RetargetingListServiceRule:
   description: |
     <div lang="ja">
     RetargetingListServiceRuleオブジェクトは、ターゲットリストに設定可能な条件を表します。<br>
-    このフィールドは、ADDおよびSET時に必須となります。
+    このフィールドは、ADDおよびSET時に省略可能となります。
     </div>
     <div lang="en">
     RetargetingListServiceRule object displays the possible conditions for target list.<br>
-    This field is required in ADD and SET operation.
+    This field is optional in ADD and SET operation.
     </div>
