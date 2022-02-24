@@ -84,5 +84,11 @@ GuaranteedPreviewServiceMaterialMedia:
         </div>
   title: GuaranteedPreviewServiceMaterialMedia
   description: |
-    <div lang="ja">GuaranteedPreviewServiceMaterialMediaオブジェクトは、プレビュー素材（メディア）の情報を保持します。</div>
-    <div lang="en">GuaranteedPreviewServiceMaterialMedia object holds information about the preview material (media).</div>
+    <div lang="ja">
+    GuaranteedPreviewServiceMaterialMediaオブジェクトは、プレビュー素材（メディア）の情報を保持します。<br>
+    ※materialTypeがMEDIAの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedPreviewServiceMaterialMedia object holds information about the preview material (media).<br>
+    *If materialType is MEDIA, this field is required.
+    </div>

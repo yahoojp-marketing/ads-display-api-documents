@@ -59,11 +59,13 @@ GuaranteedAdGroupAdServiceCarouselAd:
       description: |
         <div lang="ja">
         リンク先URLです。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※現在利用できません
         </div>
         <div lang="en">
         Destination URL.<br>
-        This field is required in ADD operation, and will be optional in SET operation.
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        * Not Available.
         </div>
     customParameters:
       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
@@ -74,16 +76,12 @@ GuaranteedAdGroupAdServiceCarouselAd:
       nullable: true
       description: |
         <div lang="ja">最終リンク先URLです。<br>
-        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
-        SET時は省略可能となります。<br>
-        ※現在利用できません
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
         </div>
         <div lang="en">Final URL.<br>
-        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
-        This field is optional in SET operation.<br>
-        * Not Available.
+        This field is required in ADD operation, and will be optional in SET operation.<br>
         </div>
     smartphoneFinalUrl:
       type: string
@@ -91,11 +89,9 @@ GuaranteedAdGroupAdServiceCarouselAd:
       description: |
         <div lang="ja">スマートフォン向けURLです。<br>
         finalUrlを指定するときのみ、任意で指定できます。<br>
-        ※現在利用できません
         </div>
         <div lang="en">Final URL (smartphone).<br>
         This field can be optionally specified only when specifying finalUrl.<br>
-        * Not Available.
         </div>
     isRemoveSmartphoneFinalUrl:
       $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
@@ -109,14 +105,11 @@ GuaranteedAdGroupAdServiceCarouselAd:
         ADD時、このフィールドは省略可能となります。<br>
         ※SET時、こちらが審査中の場合、編集はできません。<br>
         finalUrlを指定するときのみ、任意で指定できます。<br>
-        ※現在利用できません
         </div>
         <div lang="en">Tracking URL.<br>
         This field is optional in ADD operation.<br>
         *In SET operation, cannot update it when this field is in editorial review.<br>
         This field can be optionally specified only when specifying finalUrl.<br>
-        If url is specified in SET operation, the value in this field will be cleared.<br>
-        * Not Available.
         </div>
     carousels:
       type: array

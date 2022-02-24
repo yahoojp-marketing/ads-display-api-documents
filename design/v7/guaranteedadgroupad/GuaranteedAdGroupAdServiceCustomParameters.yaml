@@ -13,11 +13,7 @@ GuaranteedAdGroupAdServiceCustomParameters:
   description: |
     <div lang="ja">GuaranteedAdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
     finalUrlを指定するときのみ、任意で指定できます。<br>
-    SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
-    ※現在利用できません
     </div>
     <div lang="en">GuaranteedAdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
     This field can be optionally specified only when specifying finalUrl.<br>
-    If url is specified in SET operation, the value in this field will be cleared.<br>
-    * Not Available.
     </div>

@@ -10,12 +10,10 @@ GuaranteedAdGroupAdServiceDisplayUrlLevel:
     <div lang="ja">
     GuaranteedAdGroupAdServiceDisplayUrlLevelは、表示するURLの階層を表します。<br>
     ADDおよびSET時にfinalUrlを指定する場合、このフィールドは必須となります。<br>
-    ※現在利用できません
     </div>
     <div lang="en">
     GuaranteedAdGroupAdServiceDisplayUrlLevel describes a level of URL to display.<br>
     If finalUrl is specified in ADD and SET operation, this field is required.<br>
-    * Not Available.
     </div>
     <dl class=term>
       <dt class="term__item">DOMAIN</dt>

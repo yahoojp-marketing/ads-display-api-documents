@@ -66,7 +66,7 @@ GuaranteedSimulationServiceAdType:
       <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_SWITCH_VIDEO</dt>
       <dd class="term__desc"><span lang="ja">予約型専用広告：メインの4:1の縮小機能付き動画と、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 4:1 video with reduction function, the right side image, and the left side image.</span></dd>
       <dt class="term__item">TOP_IMPACT_THEATER_VIDEO</dt>
-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 video, the center image, the right side image, and the left side image.</span></dd>
+      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。※トップインパクトシアター動画は現在指定できません。。</span><span lang="en">Guaranteed ad composed of the main 16:9 video, the center image, the right side image, and the left side image. * Top Impact Theater Video cannot be specified.</span></dd>
       <dt class="term__item">TOP_IMPACT_SQUARE_SPECIAL</dt>
       <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.</span></dd>
       <dt class="term__item">TOP_IMPACT_SQUARE_SPECIAL_VIDEO</dt>

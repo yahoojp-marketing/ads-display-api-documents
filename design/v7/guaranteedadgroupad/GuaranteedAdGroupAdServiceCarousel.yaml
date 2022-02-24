@@ -71,7 +71,6 @@ GuaranteedAdGroupAdServiceCarousel:
       nullable: true
       description: |
         <div lang="ja">最終リンク先URLです。<br>
-        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
         SET時は省略可能となります。<br>
         ※現在利用できません
         </div>
@@ -86,11 +85,9 @@ GuaranteedAdGroupAdServiceCarousel:
       description: |
         <div lang="ja">スマートフォン向けURLです。<br>
         finalUrlを指定するときのみ、任意で指定できます。<br>
-        ※現在利用できません
         </div>
         <div lang="en">Final URL (smartphone).<br>
         This field can be optionally specified only when specifying finalUrl.<br>
-        * Not Available.
         </div>
     isRemoveSmartphoneFinalUrl:
       $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'

@@ -22,11 +22,13 @@ AdGroupTarget:
       description: |
         <div lang="ja">
         広告グループIDです。<br>
-        このフィールドは、リクエストの場合は必須です。
+        このフィールドは、リクエストの場合は必須です。<br>
+        ※GuaranteedAdGroupServiceでADDおよびSETする際、このフィールドは無視されます。
         </div>
         <div lang="en">
         Ad group ID.<br>
-        This field is required in requests.
+        This field is required in requests.<br>
+        *This field will be ignored in ADD and SET operation via GuaranteedAdGroupService.
         </div>
     bidMultiplier:
       type: number
@@ -54,11 +56,13 @@ AdGroupTarget:
       description: |
         <div lang="ja">
         キャンペーンIDです。<br>
-        このフィールドは、リクエストの場合は必須です。
+        このフィールドは、リクエストの場合は必須です。<br>
+        ※GuaranteedAdGroupServiceでADDおよびSETする際、このフィールドは無視されます。
         </div>
         <div lang="en">
         Campaign ID.<br>
-        This field is required in requests.
+        This field is required in requests.<br>
+        *This field will be ignored in ADD and SET operation via GuaranteedAdGroupService.
         </div>
     target:
       $ref: 'AdGroupTargetServiceTarget.yaml#/AdGroupTargetServiceTarget'

@@ -49,7 +49,7 @@ GuaranteedAdGroupAd:
       description: |
         <div lang="ja">
         広告IDです。<br>
-        このフィールドは、SET時は必須となり、ADD時は省略可能となります。
+        このフィールドは、ADD時は無視され、SET時に必須となります。
         </div>
         <div lang="en">
         Ad ID.<br>
@@ -132,9 +132,11 @@ GuaranteedAdGroupAd:
       description: |
         <div lang="ja">
         インプレッションビーコンURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
         </div>
         <div lang="en">
         Impression beacon URL.<br>
+        This field is optional in ADD and SET operation.
         </div>
     viewableImpressionBeaconUrls:
       type: array
@@ -167,9 +169,11 @@ GuaranteedAdGroupAd:
       description: |
         <div lang="ja">
         メディアIDです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
         </div>
         <div lang="en">
         Media ID.<br>
+        This field is optional in ADD and SET operation.
         </div>
     thirdPartyTrackingScriptUrl:
       type: string
@@ -177,9 +181,11 @@ GuaranteedAdGroupAd:
       description: |
         <div lang="ja">
         第三者計測スクリプトURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
         </div>
         <div lang="en">
         Third party tracking script URL.<br>
+        This field is optional in ADD and SET operation.
         </div>
     isRemoveBeaconUrls:
       $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'

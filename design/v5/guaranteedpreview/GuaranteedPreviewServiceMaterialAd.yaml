@@ -17,5 +17,11 @@ GuaranteedPreviewServiceMaterialAd:
         </div>
   title: GuaranteedPreviewServiceMaterialAd
   description: |
-    <div lang="ja">GuaranteedPreviewServiceMaterialAdオブジェクトは、プレビュー素材（広告）の情報を保持します。</div>
-    <div lang="en">GuaranteedPreviewServiceMaterialAd object holds information about the preview material (ad).</div>
+    <div lang="ja">
+    GuaranteedPreviewServiceMaterialAdオブジェクトは、プレビュー素材（広告）の情報を保持します。<br>
+    ※materialTypeがADの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedPreviewServiceMaterialAd object holds information about the preview material (ad).<br>
+    *If materialType is AD, this field is required.
+    </div>

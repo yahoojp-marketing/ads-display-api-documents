@@ -95,7 +95,7 @@ AdGroupAdServiceCarousel:
         SET時は省略可能となります。<br>
         SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
         キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
-        - iOSの場合：itunes.apple.com<br>
+        - iOSの場合：itunes.apple.com, apps.apple.com<br>
         - Androidの場合：play.google.com
         </div>
         <div lang="en">Final URL.<br>
@@ -104,7 +104,7 @@ AdGroupAdServiceCarousel:
         This field is optional in SET operation.<br>
         If url is specified in SET operation, the value in this field will be cleared.<br>
         If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
-        - For iOS : itunes.apple.com<br>
+        - For iOS : itunes.apple.com, apps.apple.com<br>
         - For Android : play.google.com
         </div>
     smartphoneFinalUrl:

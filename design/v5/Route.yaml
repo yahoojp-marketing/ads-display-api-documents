@@ -4553,6 +4553,7 @@ paths:
                 <tr><td>220138</td><td>Unsupported image format.</td><td><div lang="ja">サポートしていない画像形式です。</div><div lang="en">Unsupported image format.</div></td></tr>
                 <tr><td>220135</td><td>Invalid relation of thumbnail flag to media format.</td><td><div lang="ja">サムネイルフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the thumbnail flag and image format.</div></td></tr>
                 <tr><td>220139</td><td>Unsupported image size.</td><td><div lang="ja">サポートしていない画像サイズです。</div><div lang="en">Unsupported image size.</div></td></tr>
+                <tr><td>220143</td><td>Unable to download this media file.</td><td><div lang="ja">ダウンロードできないメディアファイルです。詳細は審査否認理由をご確認ください。</div><div lang="en">This media file cannot be downloaded. Refer to disapproval reason for more details.</div></td></tr>
                 <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
               </tbody>
             </table>

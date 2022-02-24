@@ -32,7 +32,7 @@ AdGroupAdServiceAdType:
       <dt class="term__item">RESPONSIVE_IMAGE_AD</dt>
       <dd class="term__desc"><span lang="ja">配信される広告表示枠の形に合わせて画像のサイズ変更およびトリミングが行われるレスポンシブ広告です。</span><span lang="en">Responsive Ad which flexibly adjusts its image size and trimmed to the size of ad place.</span></dd>
       <dt class="term__item">STATIC_FRAME_AD</dt>
-      <dd class="term__desc"><span lang="ja">配信される広告表示枠の形に合わせて3種類のレイアウトが利用可能な広告枠サイズ固定広告です。</span><span lang="en">Static frame ad which flexibly adjusts to 3 layout types to the size of ad place.</span></dd>
+      <dd class="term__desc"><span lang="ja">配信される広告表示枠の形に合わせて3種類のレイアウトが利用可能な広告枠サイズ固定広告です。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Static frame ad which flexibly adjusts to 3 layout types to the size of ad place.<br>*Currently this ad type is not available for ad creation.</span></dd>
       <dt class="term__item">BANNER_VIDEO_AD</dt>
       <dd class="term__desc"><span lang="ja">動画で構成される広告です。</span><span lang="en">Ad composed of video.</span></dd>
       <dt class="term__item">RESPONSIVE_VIDEO_AD</dt>
@@ -46,7 +46,7 @@ AdGroupAdServiceAdType:
       <dt class="term__item">BANNER_IMAGE_AD</dt>
       <dd class="term__desc"><span lang="ja">画像で構成される広告です。</span><span lang="en">Ad composed of image.</span></dd>
       <dt class="term__item">POS_AD</dt>
-      <dd class="term__desc"><span lang="ja">「説明文33文字」の掲載位置指定テキストです。</span><span lang="en">Positioning text is &#34;description is 33 characters&#34;.</span></dd>
+      <dd class="term__desc"><span lang="ja">「説明文33文字」の掲載位置指定テキストです。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Positioning text is &#34;description is 33 characters&#34;.<br>*Currently this ad type is not available for ad creation.</span></dd>
       <dt class="term__item">CAROUSEL_AD</dt>
       <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
