@@ -238,5 +238,11 @@ GuaranteedAdGroupAd:
         </div>
   title: GuaranteedAdGroupAd
   description: |
-    <div lang="ja">GuaranteedAdGroupAdオブジェクトは、予約型の広告の情報を格納するコンテナです。</div>
-    <div lang="en">The GuaranteedAdGroupAd object is a container for storing ad information of guaranteed campaign.</div>
+    <div lang="ja">
+    GuaranteedAdGroupAdオブジェクトは、予約型の広告の情報を格納するコンテナです。<br>
+    各広告で設定可能な項目については、<a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=103055&o=default">予約型の広告の種類</a>をご参照ください。
+    </div>
+    <div lang="en">
+    The GuaranteedAdGroupAd object is a container for storing ad information of guaranteed campaign.<br>
+    Available fields of each ad are described on <a href="https://ads-help.yahoo.co.jp/yahooads/rf/articledetail?lan=ja&aid=103055&o=default">予約型の広告の種類</a> (Japanese context only).
+    </div>
