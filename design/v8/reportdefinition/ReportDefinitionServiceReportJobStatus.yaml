@@ -1,0 +1,34 @@
+ReportDefinitionServiceReportJobStatus:
+  type: string
+  nullable: true
+  enum:
+  - WAIT
+  - IN_PROGRESS
+  - COMPLETED
+  - CANCELED
+  - FAILED
+  - UNKNOWN
+  title: ReportDefinitionServiceReportJobStatus
+  description: |
+    <div lang="ja">
+    ReportDefinitionServiceReportJobStatusは、定義されたレポートの処理状況です。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceReportJobStatus serves the process status for the defined report.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">WAIT</dt>
+      <dd class="term__desc"><span lang="ja">待機中です。</span><span lang="en">Please wait for report request to complete.</span></dd>
+      <dt class="term__item">IN_PROGRESS</dt>
+      <dd class="term__desc"><span lang="ja">レポートは作成中です。</span><span lang="en">Report request is being processed.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">正常に終了しました。</span><span lang="en">Report request completed successfully.</span></dd>
+      <dt class="term__item">CANCELED</dt>
+      <dd class="term__desc"><span lang="ja">処理が中止されました。</span><span lang="en">The process was halted.</span></dd>
+      <dt class="term__item">FAILED</dt>
+      <dd class="term__desc"><span lang="ja">処理が失敗しました。</span><span lang="en">Report request failed.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

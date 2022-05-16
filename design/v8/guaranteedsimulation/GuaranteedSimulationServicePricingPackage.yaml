@@ -1,0 +1,24 @@
+GuaranteedSimulationServicePricingPackage:
+  type: object
+  nullable: true
+  properties:
+    priceType:
+      $ref: 'GuaranteedSimulationServicePriceType.yaml#/GuaranteedSimulationServicePriceType'
+    vimpsCustomPricingPackage:
+      $ref: 'GuaranteedSimulationServiceVimpsCustomPricingPackage.yaml#/GuaranteedSimulationServiceVimpsCustomPricingPackage'
+    vimpsSOVPricingPackage:
+      $ref: 'GuaranteedSimulationServiceVimpsSOVPricingPackage.yaml#/GuaranteedSimulationServiceVimpsSOVPricingPackage'
+    vimpsReachPricingPackage:
+      $ref: 'GuaranteedSimulationServiceVimpsReachPricingPackage.yaml#/GuaranteedSimulationServiceVimpsReachPricingPackage'
+    slotsPricingPackage:
+      $ref: 'GuaranteedSimulationServiceSlotsPricingPackage.yaml#/GuaranteedSimulationServiceSlotsPricingPackage'
+  title: GuaranteedSimulationServicePricingPackage
+  description: |
+    <div lang="ja">
+      GuaranteedSimulationServicePricingPackageは、商品の購入タイプ設定の情報を保持します。<br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      GuaranteedSimulationServicePricingPackage holds information about purchase type setting of package.<br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>

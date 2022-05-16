@@ -1,0 +1,64 @@
+GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd:
+  type: object
+  nullable: true
+  properties:
+    adShrinkMainMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        縮小メイン画像です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Reduced main image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    panels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">Final URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    isRemoveTrackingUrl:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。<br>
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD and SET operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.<br>
+        </div>
+  title: GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAdオブジェクトは、予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナーで構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがBRANDPANEL_PANORAMA_PANEL_SWITCHの場合は必須です。<br>
+    ※現在利用できません
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd object describes the information about guaranteed ad composed of the main 3:1 image, 1:1 switch image, and 16:9 reduced banner.<br>
+    This field is optional.<br>
+    *If adType is BRANDPANEL_PANORAMA_PANEL_SWITCH, this field is required in ADD operation.<br>
+    * Not Available.
+    </div>

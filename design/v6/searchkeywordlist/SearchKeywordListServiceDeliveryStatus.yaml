@@ -7,8 +7,8 @@ SearchKeywordListServiceDeliveryStatus:
   - UNKNOWN
   title: SearchKeywordListServiceDeliveryStatus
   description: |
-    <div lang="ja">SearchKeywordListServiceDeliveryStatusは、アカウントの配信状況を表します。</div>
-    <div lang="en">SearchKeywordListServiceDeliveryStatus serves the account delivery status.</div>
+    <div lang="ja">SearchKeywordListServiceDeliveryStatusは、サーチキーワードリストの状態を表します。</div>
+    <div lang="en">SearchKeywordListServiceDeliveryStatus displays the status of search keyword list.</div>
     <dl class=term>
       <dt class="term__item">PAUSED</dt>
       <dd class="term__desc"><span lang="ja">オフラインです。</span><span lang="en">Offline</span></dd>

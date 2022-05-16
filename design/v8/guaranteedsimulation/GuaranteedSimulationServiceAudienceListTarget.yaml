@@ -1,0 +1,30 @@
+GuaranteedSimulationServiceAudienceListTarget:
+  type: object
+  nullable: true
+  properties:
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        オーディエンスリスト名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Audience list name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    deliverType:
+      $ref: 'GuaranteedSimulationServiceAudienceListDeliverType.yaml#/GuaranteedSimulationServiceAudienceListDeliverType'
+  title: GuaranteedSimulationServiceAudienceListTarget
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceAudienceListTargetオブジェクトは、オーディエンスリストターゲティングの設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※targetTypeがAUDIENCE_LIST_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceAudienceListTarget object is a container for storing audience list targeting settings.<br>
+    This field is optional in ADD operation.<br>
+    ∗If targetType is AUDIENCE_LIST_TARGET, this field is required.
+    </div>

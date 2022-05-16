@@ -1,0 +1,101 @@
+GuaranteedAdGroupAdServiceTopImpactSquare:
+  type: object
+  nullable: true
+  properties:
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Final URL.<br>
+        If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        * Not Available.
+        </div>
+    isRemoveTrackingUrl:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        * Not Available.
+        </div>
+    adLeftSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        左サイド画像です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Left side image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    adRightSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        右サイド画像です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Right side image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    adCenterMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        センター画像です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Center image.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+  title: GuaranteedAdGroupAdServiceTopImpactSquare
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceTopImpactSquareオブジェクトは、予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceTopImpactSquare object describes information about a guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.<br>
+    This field is optional.<br>
+    </div>

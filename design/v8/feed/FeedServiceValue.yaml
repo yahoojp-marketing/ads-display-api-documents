@@ -1,0 +1,26 @@
+FeedServiceValue:
+  type: object
+  nullable: true
+  properties:
+    feed:
+      $ref: 'Feed.yaml#/Feed'
+    uploadLimits:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedServiceUploadLimit.yaml#/FeedServiceUploadLimit'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果</div>
+        <div lang="en">Result of operation</div>
+  title: FeedServiceValue
+  description: |
+    <div lang="ja">FeedServiceValueオブジェクトは、操作結果を含むFeed情報を表します。</div>
+    <div lang="en">FeedServiceValue object describes Feed information including operation result.</div>

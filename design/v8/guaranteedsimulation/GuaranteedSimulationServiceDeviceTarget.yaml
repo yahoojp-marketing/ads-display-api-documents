@@ -1,0 +1,18 @@
+GuaranteedSimulationServiceDeviceTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceType:
+      $ref: 'GuaranteedSimulationServiceDeviceType.yaml#/GuaranteedSimulationServiceDeviceType'
+  title: GuaranteedSimulationServiceDeviceTarget
+  description: |
+    <div lang="ja">
+    GuaranteedSimulationServiceDeviceTargetオブジェクトは、デバイスターゲティングの設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※targetTypeがDEVICE_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedSimulationServiceDeviceTarget object is a container for storing device targeting settings.<br>
+    This field is optional in ADD operation.<br>
+    ∗If targetType is DEVICE_TARGET, this field is required.
+    </div>

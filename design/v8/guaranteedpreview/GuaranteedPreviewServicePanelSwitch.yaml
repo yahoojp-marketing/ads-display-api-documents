@@ -1,0 +1,63 @@
+GuaranteedPreviewServicePanelSwitch:
+  type: object
+  nullable: true
+  properties:
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field is optional in requests.
+        </div>
+    switchMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        スイッチ画像のメディアIDです。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Media ID of switch image.<br>
+        This field is optional in requests.
+    adLeftSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        左サイド画像です。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Left side image.<br>
+        This field is optional in requests.
+        </div>
+    adRightSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        右サイド画像です。<br>
+        このフィールドは、リクエストの場合は省略可能となります。
+        </div>
+        <div lang="en">
+        Right side image.<br>
+        This field is optional in requests.
+        </div>
+  title: GuaranteedPreviewServicePanelSwitch
+  description: |
+    <div lang="ja">
+    GuaranteedPreviewServicePanelSwitchオブジェクトは、プレビュー素材（スイッチ画像）の情報を保持します。<br>
+    </div>
+    <div lang="en">
+    GuaranteedPreviewServicePanelSwitch object holds information about the preview material (switch image).
+    </div>

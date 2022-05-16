@@ -1,0 +1,20 @@
+ReportDefinitionServiceModelComparisonAccountSetting:
+  type: object
+  nullable: true
+  properties:
+    baseAccount:
+      $ref: 'ReportDefinitionServiceAccount.yaml#/ReportDefinitionServiceAccount'
+    subAccounts:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ReportDefinitionServiceAccount.yaml#/ReportDefinitionServiceAccount'
+
+  title: ReportDefinitionServiceModelComparisonAccountSetting
+  description: |
+    <div lang="ja">
+    ReportDefinitionServiceModelComparisonAccountSettingオブジェクトは、アトリビューションモデル比較の対象アカウント設定を表します。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceModelComparisonAccountSetting object describes account setting that is subject to the attribution model comparison.
+    </div>

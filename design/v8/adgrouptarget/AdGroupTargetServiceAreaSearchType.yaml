@@ -1,0 +1,23 @@
+AdGroupTargetServiceAreaSearchType:
+  type: string
+  nullable: true
+  enum:
+    - GEO
+    - RADIUS
+    - UNKNOWN
+  title: AdGroupTargetServiceAreaSearchType
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceAreaSearchTypeは、地域検索方法の種類を表します。<br>
+    ADD時のデフォルト設定値はGEOとなります。</div>
+    <div lang="en">
+    AdGroupTargetServiceAreaSearchType displays types of regional search method.<br>
+    The default value in ADD operation will be GEO.</div>
+    <dl class=term>
+      <dt class="term__item">GEO</dt>
+      <dd class="term__desc"><span lang="ja">地域指定</span><span lang="en">Specify region.</span></dd>
+      <dt class="term__item">RADIUS</dt>
+      <dd class="term__desc"><span lang="ja">半径エリア指定</span><span lang="en">Specify radius area.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

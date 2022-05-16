@@ -1,0 +1,10 @@
+StatsServiceAppTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceAppType:
+      $ref: 'StatsServiceDeviceAppType.yaml#/StatsServiceDeviceAppType'
+  title: StatsServiceAppTarget
+  description: |
+    <div lang="ja">StatsServiceAppTargetオブジェクトは、アプリターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceAppTarget object holds configuration information of app targeting.</div>

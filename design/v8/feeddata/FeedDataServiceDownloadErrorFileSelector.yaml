@@ -1,0 +1,25 @@
+FeedDataServiceDownloadErrorFileSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - itemListUploadId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アカウントIDです。</div>
+        <div lang="en">Search condition: Account ID.</div>
+    itemListUploadId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件：アップロードした商品情報を識別するID</div>
+        <div lang="en">Search condition: Uploaded item list ID.</div>
+  title: FeedDataServiceDownloadErrorFileSelector
+  description: |
+    <div lang="ja">商品情報のエラーファイルダウンロード処理を実施します。</div>
+    <div lang="en">FeedDataServiceDownloadErrorFileSelector object retains search condition of downloadErrorFile operation.</div>

@@ -1,0 +1,41 @@
+ReportDefinitionServiceModelComparisonReportCondition:
+  type: object
+  nullable: true
+  properties:
+    lookbackWindow:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+          ルックバック期間（日数）です。<br>
+          指定できる値の下限は0、上限は90です。<br>
+          このフィールドは、ADDに必須となります。
+        </div>
+        <div lang="en">
+          Look back period (number of days). <br>
+          The lower limit of the value that can be specified is 0, and the upper limit is 90.<br>
+          This field is required in ADD operation. 
+        </div>
+    includeViewInteraction:
+      $ref: 'ReportDefinitionServiceIncludeViewInteractionFlg.yaml#/ReportDefinitionServiceIncludeViewInteractionFlg'
+    includeVideoInteraction:
+      $ref: 'ReportDefinitionServiceIncludeVideoInteractionFlg.yaml#/ReportDefinitionServiceIncludeVideoInteractionFlg'
+    baseModel:
+      $ref: 'ReportDefinitionServiceAttributionModel.yaml#/ReportDefinitionServiceAttributionModel'
+    comparativeModel:
+      $ref: 'ReportDefinitionServiceAttributionModel.yaml#/ReportDefinitionServiceAttributionModel'
+    modelComparisonAccountSetting:
+      $ref: 'ReportDefinitionServiceModelComparisonAccountSetting.yaml#/ReportDefinitionServiceModelComparisonAccountSetting'
+  title: ReportDefinitionServiceModelComparisonReportCondition
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceModelComparisonReportConditionオブジェクトは、アトリビューションモデル比較レポートの作成条件を表します。<br>
+      このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+      ※ADD時、reportTypeが<code>MODEL_COMPARISON</code>の場合は必須です。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceModelComparisonReportCondition describes the condition to create Attribution Model Comparison Report. <br>
+      This field is optional in ADD operation, and will be ignored in REMOVE operation. <br>
+      *If reportType is <code>MODEL_COMPARISON</code>, this field is required in ADD operation.
+    </div>

@@ -1,0 +1,26 @@
+Recommendation:
+  type: object
+  nullable: true
+  properties:
+    'type':
+      $ref: 'RecommendationServiceType.yaml#/RecommendationServiceType'
+    campaignBiddingStrategyToTargetCpa:
+      $ref: 'RecommendationServiceCampaignBiddingStrategyToTargetCpa.yaml#/RecommendationServiceCampaignBiddingStrategyToTargetCpa'
+    dailyBudgetOver:
+      $ref: 'RecommendationServiceDailyBudgetOver.yaml#/RecommendationServiceDailyBudgetOver'
+    impsShareBudgetLossOver:
+      $ref: 'RecommendationServiceImpsShareBudgetLossOver.yaml#/RecommendationServiceImpsShareBudgetLossOver'
+    searchKeywordIdea:
+      $ref: 'RecommendationServiceSearchKeywordIdea.yaml#/RecommendationServiceSearchKeywordIdea'
+    campaignsForAddingAds:
+      $ref: 'RecommendationServiceCampaignsForAddingAds.yaml#/RecommendationServiceCampaignsForAddingAds'
+    maximizeConversions:
+      $ref: 'RecommendationServiceMaximizeConversions.yaml#/RecommendationServiceMaximizeConversions'
+    maximizeClicks:
+      $ref: 'RecommendationServiceMaximizeClicks.yaml#/RecommendationServiceMaximizeClicks'
+    maximizeVideoViews:
+      $ref: 'RecommendationServiceMaximizeVideoViews.yaml#/RecommendationServiceMaximizeVideoViews'
+  title: Recommendation
+  description: |
+    <div lang="ja">Recommendationオブジェクトは、最適化提案を格納するコンテナです。</div>
+    <div lang="en">Recommendation object is a container for storing a recommendation.</div>

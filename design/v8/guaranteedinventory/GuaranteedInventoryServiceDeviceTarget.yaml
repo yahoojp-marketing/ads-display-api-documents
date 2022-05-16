@@ -1,0 +1,18 @@
+GuaranteedInventoryServiceDeviceTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceType:
+      $ref: 'GuaranteedInventoryServiceDeviceType.yaml#/GuaranteedInventoryServiceDeviceType'
+  title: GuaranteedInventoryServiceDeviceTarget
+  description: |
+    <div lang="ja">
+    GuaranteedInventoryServiceDeviceTargetオブジェクトは、デバイスターゲティングの設定情報を保持します。<br>
+    ADD時、このフィールドは省略可能となります。<br>
+    ※targetTypeがDEVICE_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedInventoryServiceDeviceTarget object is a container for storing device targeting settings.<br>
+    This field is optional in ADD operation.<br>
+    ∗If targetType is DEVICE_TARGET, this field is required.
+    </div>

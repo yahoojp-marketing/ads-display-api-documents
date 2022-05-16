@@ -1,0 +1,16 @@
+GuaranteedSimulationServicePermittedPositionTarget:
+  type: object
+  nullable: true
+  properties:
+    targetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ターゲットID</div>
+        <div lang="en">Target ID</div>
+    positionType:
+      $ref: 'GuaranteedSimulationServicePositionType.yaml#/GuaranteedSimulationServicePositionType'
+  title: GuaranteedSimulationServicePermittedPositionTarget
+  description: |
+    <div lang="ja">GuaranteedSimulationServicePermittedPositionTargetオブジェクトは、ポジションターゲットの設定情報を保持します。</div>
+    <div lang="en">GuaranteedSimulationServicePermittedPositionTarget object holds configuration information of psition targeting.</div>

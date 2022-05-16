@@ -1,0 +1,238 @@
+Campaign:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Account ID. <br>
+        This field is required in requests.
+        </div>
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        iOS:アプリIDです。<br>
+        Android:パッケージ名です。<br>
+        このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>
+        ※campaignGoalが「APP_PROMOTION」の場合、ADD時に必須となります。
+        </div>
+        <div lang="en">
+        iOS: APP ID.<br>
+        Android: Package name. <br>
+        This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>
+        *If campaignGoal is APP_PROMOTION, this field is required in ADD operation.
+        </div>
+    appName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        アプリの名称です。<br>
+        このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時は無視されます。<br>
+        ※campaignGoalが「APP_PROMOTION」の場合、ADD時に必須となります。
+        </div>
+        <div lang="en">
+        App Name. <br>
+        This field is optional in ADD operation, and will be ignored in SET and REMOVE operation.<br>
+        *If campaignGoal is APP_PROMOTION, this field is required in ADD operation.
+        </div>
+    budget:
+      $ref: 'CampaignServiceBudget.yaml#/CampaignServiceBudget'
+    campaignBiddingStrategy:
+      $ref: 'CampaignServiceCampaignBiddingStrategy.yaml#/CampaignServiceCampaignBiddingStrategy'
+    campaignGoal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン目的です。<br>
+        ADD時、このフィールドは必須となります。<br>
+        SETおよびREMOVE時、このフィールドは無視されます。<br>
+        ※指定可能な値は、AccountAuthorityServiceのGET操作で得られるAccountAuthorityのauthoritiesフィールドをご確認ください。<br>
+        </div>
+        <div lang="en">
+        Campaign goal.<br>
+        In ADD operation, this field is required.<br>
+        In SET and REMOVE operation, this field will be ignored.<br>
+        * Available values can be referred to authorities field of AccountAuthority object obtained by GET operation of AccountAuthorityService.<br>
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        このフィールドはSETおよびREMOVE時に必須となり、ADD時に無視されます。
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        This field is required in SET and REMOVE operation, and will be ignored in ADD operation.
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        このフィールドは、ADD時は必須、SET時は省略可能となり、REMOVE時は無視されます。
+        </div>
+        <div lang="en">
+        Campaign Name.<br>
+        This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.
+        </div>
+    conversionOptimizer:
+      $ref: 'CampaignServiceConversionOptimizer.yaml#/CampaignServiceConversionOptimizer'
+    customParameters:
+      $ref: 'CampaignServiceCustomParameters.yaml#/CampaignServiceCustomParameters'
+    deviceOsType:
+      $ref: 'CampaignServiceDeviceOsType.yaml#/CampaignServiceDeviceOsType'
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        終了日です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        ※endTimeが指定されている場合、ADDおよびSET時に必須となります。<br>
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        End date.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        If endTime is specified, This field is required in ADD and SET operation.<br>
+        *format: yyyyMMdd<br>
+        </div>
+    endTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        終了時刻です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        ※フォーマット：HHmm
+        </div>
+        <div lang="en">
+        End time.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        * Format: HHmm
+        </div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        フィードIDです。<br>
+        このフィールドは、ADD時に省略可能となり、SETおよびREMOVE時に無視されます。<br>
+        ※campaignGoalが「ITEM_LIST」の場合、ADD時に必須となります。
+        </div>
+        <div lang="en">
+        Feed ID.<br>
+        This field is optional in ADD operation, and will be ignored in SET and REMOVE operation. <br>
+        *If campaignGoal is ITEM_LIST, this field is required in ADD operation.
+        </div>
+    isRemoveTrackingUrl:
+      $ref: 'CampaignServiceIsRemoveFlg.yaml#/CampaignServiceIsRemoveFlg'
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceLabel.yaml#/CampaignServiceLabel'
+    servingStatus:
+      $ref: 'CampaignServiceServingStatus.yaml#/CampaignServiceServingStatus'
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        開始日です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        ※startTimeが指定されている場合、ADDおよびSET時に必須となります。<br>
+        ※フォーマット：yyyyMMdd
+        </div>
+        <div lang="en">
+        Start date.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        If startTime is specified, This field is required in ADD and SET operation.<br>
+        *format: yyyyMMdd<br>
+        </div>
+    startTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        開始時刻です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        ※フォーマット：HHmm
+        </div>
+        <div lang="en">
+        Start time.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        * Format: HHmm
+        </div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。<br>
+        ※SET時、こちらが審査中の場合、編集はできません。</div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD and SET operation.<br>
+        *In SET operation, cannot update it when this field is in editorial review.</div>
+    userStatus:
+      $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+    viewableFrequencyCap:
+      $ref: 'CampaignServiceViewableFrequencyCap.yaml#/CampaignServiceViewableFrequencyCap'
+    campaignDeliveryType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン掲載タイプです。<br>
+        このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+        CampaignDeliveryTypeを指定してのキャンペーン作成は、一部の利用者向けの機能となります。
+        </div>
+        <div lang="en">
+        Campaign delivery type.<br>
+        This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+        Creating a campaign with the CampaignDeliveryType specified is a function for some users.
+        </div>
+    createdDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーンが作成された日時です。<br>※フォーマット：yyyyMMdd</div>
+        <div lang="en">Date of Campaign made.<br>* Format: yyyyMMdd</div>
+    vendorName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーンの広告効果測定ツールのベンダー名です。キャンペーン目的「アプリ訴求」の場合にのみ設定されます。<br>
+        このフィールドはキャンペーン作成後、最初にリンク先URLを設定した広告が作成された時に設定されます。<br>
+        キャンペーンに紐づく広告のリンク先URLには、このベンダー名に対応する広告効果測定ツールのURLのみが指定できます。<br>
+        ADD時およびSET時、<code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code> および <code>NONE</code> のみ指定可能です。
+        </div>
+        <div lang="en">
+        Vendor name of tracking tool for the campaign. It will be set only when the campaign goal is "app promotion". <br>
+        This field will be set when the first ad with destination URL is created after creating the campaign.<br>
+        Only the tracking tool URL corresponds to this tool vendor name can be specified for the destination URL of the ad linked to the campaign.<br>
+        Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code> and <code>NONE</code> can be specified in ADD and SET operation.
+        </div>
+    conversionTracker:
+      $ref: 'CampaignServiceConversionTracker.yaml#/CampaignServiceConversionTracker'
+  title: Campaign
+  description: |
+    <div lang="ja">Campaignオブジェクトは、キャンペーン情報を表します。</div>
+    <div lang="en">Campaign object describes campaign information.</div>

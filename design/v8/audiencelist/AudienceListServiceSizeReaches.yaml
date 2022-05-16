@@ -1,0 +1,29 @@
+AudienceListServiceSizeReaches:
+  type: object
+  nullable: true
+  properties:
+    reach:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        オーディエンスリストのサイズのリーチ数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reaches of audience list size. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    audienceListSize:
+      $ref: 'AudienceListServiceSize.yaml#/AudienceListServiceSize'
+  title: AudienceListServiceSizeReaches
+  description: |
+    <div lang="ja">
+    オーディエンスリストのサイズの各リーチ数を保持するオブジェクトです。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceSizeReaches object contains each reaches of audience list size. <br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

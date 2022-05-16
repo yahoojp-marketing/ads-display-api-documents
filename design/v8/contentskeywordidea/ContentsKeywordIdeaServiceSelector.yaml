@@ -1,0 +1,51 @@
+ContentsKeywordIdeaServiceSelector:
+  type: object
+  nullable: true
+  properties:
+    keywordIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">
+        検索条件：キーワードID<br>
+        ※キーワード検索用<br>
+        ※キーワード、キーワードIDの同時指定はできません。
+        </div>
+        <div lang="en">Search condition : Keyword ID.<br>
+        *Keyword for searching.<br>
+        *Can not specify Keyword and Keyword ID at the same time.
+        </div>
+    keyword:
+      $ref: 'ContentsKeywordIdeaServiceKeyword.yaml#/ContentsKeywordIdeaServiceKeyword'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 1000
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    sortField:
+      $ref: 'ContentsKeywordIdeaServiceSortField.yaml#/ContentsKeywordIdeaServiceSortField'
+    sortType:
+      $ref: 'ContentsKeywordIdeaServiceSortType.yaml#/ContentsKeywordIdeaServiceSortType'
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+  title: ContentsKeywordIdeaServiceSelector
+  description: |
+    <div lang="ja">ContentsKeywordIdeaServiceSelectorオブジェクトは、コンテンツターゲティング対象キーワードのリストを表します。</div>
+    <div lang="en">ContentsKeywordIdeaServiceSelector object displays the list of keyword for contents targeting.</div>

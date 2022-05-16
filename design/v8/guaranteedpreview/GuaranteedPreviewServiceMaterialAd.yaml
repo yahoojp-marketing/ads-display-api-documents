@@ -1,0 +1,27 @@
+GuaranteedPreviewServiceMaterialAd:
+  type: object
+  nullable: true
+  properties:
+    adId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告IDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Ad ID.<br>
+        This field is required in requests.
+        </div>
+  title: GuaranteedPreviewServiceMaterialAd
+  description: |
+    <div lang="ja">
+    GuaranteedPreviewServiceMaterialAdオブジェクトは、プレビュー素材（広告）の情報を保持します。<br>
+    ※materialTypeがADの場合は必須です。
+    </div>
+    <div lang="en">
+    GuaranteedPreviewServiceMaterialAd object holds information about the preview material (ad).<br>
+    *If materialType is AD, this field is required.
+    </div>

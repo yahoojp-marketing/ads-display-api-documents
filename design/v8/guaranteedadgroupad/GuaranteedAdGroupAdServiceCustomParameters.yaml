@@ -1,0 +1,21 @@
+GuaranteedAdGroupAdServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupAdServiceCustomParameter.yaml#/GuaranteedAdGroupAdServiceCustomParameter'
+  title: GuaranteedAdGroupAdServiceCustomParameters
+  description: |
+    <div lang="ja">GuaranteedAdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
+    finalUrlを指定するときのみ、任意で指定できます。<br>
+    ※現在利用できません
+    </div>
+    <div lang="en">GuaranteedAdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
+    This field can be optionally specified only when specifying finalUrl.<br>
+    * Not Available.
+    </div>

@@ -1,0 +1,42 @@
+AdGroupAdServicePosAd:
+  type: object
+  nullable: true
+  properties:
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Descriptive text.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="/reference/ads-display-api/v8/CampaignService/get/">こちら</a>をご参照ください。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="/reference/ads-display-api/v8/CampaignService/get/en/">this page</a>.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+  title: AdGroupAdServicePosAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServicePosAdオブジェクトは、掲載位置指定テキストの情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがPOS_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServicePosAd object serves text of positioning ad information.<br>
+    This field is optional.<br>
+    *If adType is POS_AD, this field is required in ADD operation.
+    </div>

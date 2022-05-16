@@ -1,0 +1,25 @@
+GuaranteedInventoryServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'GuaranteedInventoryJob.yaml#/GuaranteedInventoryJob'
+      minItems: 1
+      maxItems: 1
+  title: GuaranteedInventoryServiceOperation
+  description: |
+    <div lang="ja">GuaranteedInventoryServiceOperationオブジェクトは、操作の対象となる在庫確認ジョブの情報を表します。</div>
+    <div lang="en">GuaranteedInventoryServiceOperation describes the information of inventory check job to be operated.</div>
