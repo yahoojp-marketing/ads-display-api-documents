@@ -60,7 +60,7 @@ For details, refer to the help abount tsv file below.<br>
 ##### Request sample
 ※Add product information file with `multipart/form-data` and `name:file` in request body.<br>
 ※Use `isDebug:true`, check whether the upload is successful without number of upload.<br>
-https://ads-display.yahooapis.jp/api/v5/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_ALL&isDebug=false
+https://ads-display.yahooapis.jp/api/v8/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_ALL&isDebug=false
 
 ##### Response sample
 ```json
@@ -101,7 +101,7 @@ In this part, add tsv file of product information below to partial updates.<br>
 
 ##### Request sample
 ※UploadType:UPDATE_PART to partial updates.<br>
-https://ads-display.yahooapis.jp/api/v5/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_PART&isDebug=false
+https://ads-display.yahooapis.jp/api/v8/FeedDataService/upload?accountId=1002390459&feedId=1000007518&uploadType=UPDATE_PART&isDebug=false
 
 ##### Response sample
 ```json

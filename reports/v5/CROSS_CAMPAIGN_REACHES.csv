@@ -1,6 +1,0 @@
-﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","組合せ不可フィールド/Not Compatible Fields","動作区分/Behavior Type","日本語返却値/Japanese Display Values","英語返却値/English Display Values","備考/Note"
-"SUMMARY_PATTERN_FOR_CROSS_REACHES","キャンペーン","Campaign","summaryPatternForCrossReaches","STRING",,"Attribute","","",""
-"UNIQUE_USERS_WITH_VIEWABLE_IMPRESSIONS","ビューアブルインプレッションのユニークユーザー数","Unique users with viewable impressions","uniqueUsersWithViewableImpressions","LONG",,"Metric","","",""
-"UNIQUE_USERS_WITH_CLICKS_OR_VIDEO_VIEWS","クリックまたは動画再生のユニークユーザー数","Unique users with clicks or video views","uniqueUsersWithClicksOrVideoViews","LONG",,"Metric","","",""
-"UNIQUE_USERS_WITH_CONVERSIONS","コンバージョンのユニークユーザー数","Unique users with conversions","uniqueUsersWithConversions","LONG",,"Metric","","",""
-"ACCOUNT_FOR_CROSS_REACHES","アカウント","Account","account","STRING",,"Attribute","","",""
