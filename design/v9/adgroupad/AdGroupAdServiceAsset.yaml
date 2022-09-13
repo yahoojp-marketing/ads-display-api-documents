@@ -1,0 +1,45 @@
+AdGroupAdServiceAsset:
+  type: object
+  nullable: true
+  properties:
+    mediaAssets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceMediaAsset.yaml#/AdGroupAdServiceMediaAsset'
+    headlineAssets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceHeadlineAsset.yaml#/AdGroupAdServiceHeadlineAsset'
+    descriptionAssets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceDescriptionAsset.yaml#/AdGroupAdServiceDescriptionAsset'
+  title: AdGroupAdServiceAsset
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceAssetオブジェクトは、レスポンシブ広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※現在、このフィールドは利用できません。<br>
+    指定する場合の条件は以下になります。<br>
+    - mediaAssets, headlineAssets, descriptionAssetsに最低1つずつの要素の指定が必要<br>
+    - mediaAssets, headlineAssets, descriptionAssetsの内、いずれか1項目は2つ以上の要素の指定が必要<br>
+    - 各項目の要素数の上限は以下の通り<br>
+      - mediaAssets: 15<br>
+      - headlineAssets: 5<br>
+      - descriptionAssets: 5
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAsset object describes the Responsive Ad information.<br>
+    This field is optional.<br>
+    This field is currently unavailable.<br>
+    Conditions when specifying.<br>
+    - At least one element must be specified for each of mediaAssets, headlineAssets, and descriptionAssets.<br>
+    - One of mediaAssets, headlineAssets, and descriptionAssets requires the specification of two or more elements.<br>
+    - Upper limit of the number of elements.<br>
+      - mediaAssets: 15<br>
+      - headlineAssets: 5<br>
+      - descriptionAssets: 5
+    </div>

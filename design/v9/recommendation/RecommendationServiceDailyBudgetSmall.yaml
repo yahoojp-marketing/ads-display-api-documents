@@ -1,0 +1,13 @@
+RecommendationServiceDailyBudgetSmall:
+  type: object
+  nullable: true
+  properties:
+    dailyBudgetSmallCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceDailyBudgetSmallCampaign.yaml#/RecommendationServiceDailyBudgetSmallCampaign'
+  title: RecommendationServiceDailyBudgetSmall
+  description: |
+    <div lang="ja">RecommendationServiceDailyBudgetSmallオブジェクトは、1日の予算が5,000円未満のキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceDailyBudgetSmall objects describes recommendation information about the campaign with less than 5,000 JPY daily budget.</div>

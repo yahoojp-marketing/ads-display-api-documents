@@ -9,12 +9,14 @@ AccountManagementServiceClient:
         <div lang="ja">
         ビル名です。<br>
         このフィールドは、ADD時に省略可能となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         Building name.<br>
         This field is optional in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
     city:
       type: string
@@ -23,12 +25,14 @@ AccountManagementServiceClient:
         <div lang="ja">
         市区町村名です。<br>
         このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         City name.<br>
         This field is required in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
     clientPersonName:
       type: string
@@ -82,13 +86,15 @@ AccountManagementServiceClient:
         電話番号です。<br>
         ※xxxxx-xxxxx-xxxxx形式です。<br>
         このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         Phone number.<br>
         * In xxxxx-xxxxx-xxxxx format.<br>
         This field is required in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
     prefectureCode:
       $ref: 'AccountManagementServicePrefectureCode.yaml#/AccountManagementServicePrefectureCode'
@@ -99,12 +105,14 @@ AccountManagementServiceClient:
         <div lang="ja">
         町・字名です。<br>
         このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         Street1.<br>
         This field is required in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
     street2:
       type: string
@@ -113,12 +121,14 @@ AccountManagementServiceClient:
         <div lang="ja">
         丁目・番地・号です。<br>
         このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         Street2.<br>
         This field is required in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
     url:
       type: string
@@ -143,13 +153,15 @@ AccountManagementServiceClient:
         郵便番号です。<br>
         ※xxx-xxxx形式です。<br>
         このフィールドは、ADD時に必須となり、SET時に無視されます。<br>
-        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。
+        ※clientTypeがSELFの場合は、ADD時、SET時ともに無視されます。<br>
+        ※このフィールドは、レスポンスの際に返却されません。
         </div>
         <div lang="en">
         Zip code.<br>
         * In xxx-xxxx format.<br>
         This field is required in ADD operation, and will be ignored in SET operation.<br>
-        * When clientType is "SELF", this field will be ignored in ADD and SET operations.
+        * When clientType is "SELF", this field will be ignored in ADD and SET operations.<br>
+        * This field is not returned in the response.
         </div>
   title: AccountManagementServiceClient
   description: |

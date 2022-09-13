@@ -30,7 +30,7 @@ StatsServiceStatsPeriod:
       <dt class="term__item">DEFINITE_VALUE_WEEK</dt>
       <dd class="term__desc"><span lang="ja">過去7日間（今日を含まない）/ 確定値</span><span lang="en">Past 7 days (not including today) / Definite Value</span></dd>
       <dt class="term__item">DEFINITE_VALUE_TWOWEEK</dt>
-      <dd class="term__desc"><span lang="ja">過去14日間（今日>を含まない）/ 確定値</span><span lang="en">Past 14 days (not including today) / Definite Value</span></dd>
+      <dd class="term__desc"><span lang="ja">過去14日間（今日を含まない）/ 確定値</span><span lang="en">Past 14 days (not including today) / Definite Value</span></dd>
       <dt class="term__item">DEFINITE_VALUE_THIRTYDAY</dt>
       <dd class="term__desc"><span lang="ja">過去30日間（今日を含まない）/ 確定値</span><span lang="en">Past 30 days (not including today) / Definite Value</span></dd>
       <dt class="term__item">REALTIME_MONTH</dt>

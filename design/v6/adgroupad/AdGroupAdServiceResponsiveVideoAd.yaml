@@ -176,7 +176,8 @@ AdGroupAdServiceResponsiveVideoAd:
         SET時、このフィールドは省略可能となります。<br>
         ADD時、urlフィールドとfinalUrlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
         urlフィールドを設定する場合、displayUrlの指定が必須になります。またその際は、finalUrl、smartphoneFinalUrl、trackingUrl、customParametersは指定不可です。<br>
-        SET時にfinalUrlを指定する場合、このフィールドの値はクリアされます。
+        SET時にfinalUrlを指定する場合、このフィールドの値はクリアされます。<br>
+        ※現在は指定できません。
         </div>
         <div lang="en">
         Destination URL.<br>
@@ -184,7 +185,8 @@ AdGroupAdServiceResponsiveVideoAd:
         This field is optional in SET operation.<br>
         In ADD operation, url field and finalUrl field cannot be set at the same time, and one of them must be set.<br>
         When url field is specified, displayUrl must be specified. In that case, finalUrl, smartphoneFinalUrl, trackingUrl and customParameters cannot be specified.<br>
-        If finalUrl is specified in SET operation, the value in this field will be cleared.
+        If finalUrl is specified in SET operation, the value in this field will be cleared.<br>
+        ※Not available.
         </div>
     video10SecBeaconUrls:
       type: array

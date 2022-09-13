@@ -1,0 +1,13 @@
+RecommendationServiceMaximizeClicks:
+  type: object
+  nullable: true
+  properties:
+    maximizeClicksCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceMaximizeClicksCampaign.yaml#/RecommendationServiceMaximizeClicksCampaign'
+  title: RecommendationServiceMaximizeConversions
+  description: |
+    <div lang="ja">RecommendationServiceMaximizeClicksオブジェクトは、自動入札（クリック数の最大化）に適しているキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceMaximizeClicks objects describes recommendation information about the campaign that is suitable for using autobidding (Maximize Clicks).</div>

@@ -21,12 +21,14 @@ AdGroupAdServicePosAd:
         <div lang="ja">
         リンク先URLです。<br>
         アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="/reference/ads-display-api/v6/CampaignService/get/">こちら</a>をご参照ください。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※現在は指定できません。
         </div>
         <div lang="en">
         Destination URL.<br>
         For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="/reference/ads-display-api/v6/CampaignService/get/en/">this page</a>.<br>
-        This field is required in ADD operation, and will be optional in SET operation.
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        ※Not available.
         </div>
   title: AdGroupAdServicePosAd
   description: |

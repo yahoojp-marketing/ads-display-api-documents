@@ -1,0 +1,12 @@
+StatsServiceGenderTarget:
+  type: object
+  nullable: true
+  properties:
+    estimateFlg:
+      $ref: 'StatsServiceEstimateFlg.yaml#/StatsServiceEstimateFlg'
+    gender:
+      $ref: 'StatsServiceGender.yaml#/StatsServiceGender'
+  title: StatsServiceGenderTarget
+  description: |
+    <div lang="ja">StatsServiceGenderTargetオブジェクトは、性別ターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceGenderTarget object holds configuration information of gender targeting.</div>

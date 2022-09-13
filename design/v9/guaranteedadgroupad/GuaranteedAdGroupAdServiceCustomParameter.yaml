@@ -1,0 +1,20 @@
+GuaranteedAdGroupAdServiceCustomParameter:
+  type: object
+  nullable: true
+  properties:
+    key:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キーです。<br>ADDおよびSET時、このフィールドは必須となります。</div>
+        <div lang="en">Key of parameter.<br>This field is required in ADD and SET operation.</div>
+    value:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">値です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
+        <div lang="en">Value of parameter.<br>This field is optional in ADD and SET operation.</div>
+  title: GuaranteedAdGroupAdServiceCustomParameter
+  description: |
+    <div lang="ja">GuaranteedAdGroupAdServiceCustomParameterは、カスタムパラメータの内容を表します。<br>ADD時、このフィールドは必須となります。</div>
+    <div lang="en">GuaranteedAdGroupAdServiceCustomParameter displays the element of custom parameters.<br>This field is required in ADD operation.</div>
