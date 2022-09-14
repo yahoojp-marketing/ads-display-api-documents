@@ -6,7 +6,7 @@ AudienceListServiceAppVendor:
     - APPSFLYER
     - BRANCH
     - KOCHAVA
-    - SINGULER
+    - SINGULAR
     - METAPS
     - UNKNOWN
   title: AudienceListServiceAppVendor
@@ -28,8 +28,8 @@ AudienceListServiceAppVendor:
       <dd class="term__desc"><span lang="ja">BRANCH</span><span lang="en">BRANCH</span></dd>
       <dt class="term__item">KOCHAVA</dt>
       <dd class="term__desc"><span lang="ja">KOCHAVA</span><span lang="en">KOCHAVA</span></dd>
-      <dt class="term__item">SINGULER</dt>
-      <dd class="term__desc"><span lang="ja">SINGULER</span><span lang="en">SINGULER</span></dd>
+      <dt class="term__item">SINGULAR</dt>
+      <dd class="term__desc"><span lang="ja">SINGULAR</span><span lang="en">SINGULAR</span></dd>
       <dt class="term__item">METAPS</dt>
       <dd class="term__desc"><span lang="ja">METAPS</span><span lang="en">METAPS</span></dd>
       <dt class="term__item">UNKNOWN</dt>
