@@ -8,11 +8,11 @@ VideoServiceUserStatus:
   title: VideoServiceUserStatus
   description: |
     <div lang="ja">
-    VideoServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    VideoServiceUserStatusは、配信設定を表します。<br>
     このフィールドは、SET時に省略可能となります。
     </div>
     <div lang="en">
-    VideoServiceUserStatus serves ad delivery status that can be set by an user.<br>
+    VideoServiceUserStatus describes delivery settings.<br>
     This field is optional in SET operation.
     </div>
     <dl class=term>

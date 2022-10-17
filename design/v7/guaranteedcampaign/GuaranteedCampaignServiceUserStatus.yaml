@@ -8,11 +8,11 @@ GuaranteedCampaignServiceUserStatus:
   title: GuaranteedCampaignServiceUserStatus
   description: |
     <div lang="ja">
-    GuaranteedCampaignServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    GuaranteedCampaignServiceUserStatusは、配信設定を表します。<br>
     SET時、<code>ACTIVE</code>のみ指定可能です。
     </div>
     <div lang="en">
-    GuaranteedCampaignServiceUserStatus serves ad delivery status that can be set by an user.<br>
+    GuaranteedCampaignServiceUserStatus describes delivery settings.<br>
     Only <code>ACTIVE</code> can be specified in SET operation.
     </div>
     <dl class=term>

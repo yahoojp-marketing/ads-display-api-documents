@@ -8,7 +8,7 @@ AccountManagementServiceDeliveryStatus:
   title: AccountManagementServiceDeliveryStatus
   description: |
     <div lang="ja">
-    AccountManagementServiceDeliveryStatusは、アカウントの配信状況を表します。<br>
+    AccountManagementServiceDeliveryStatusは、アカウントの配信設定を表します。<br>
     このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値はACTIVEとなります。
     </div>
     <div lang="en">

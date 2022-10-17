@@ -6,8 +6,12 @@ AudienceListServiceCustomerDataAudienceList:
       type: string
       nullable: true
       description: |
-        <div lang="ja">カスタムオーディエンスID（サイトリターゲティングID）です。</div>
-        <div lang="en">Custom audience ID (site retargeting ID).</div>
+        <div lang="ja">カスタムオーディエンスID（サイトリターゲティングID）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Custom audience ID (site retargeting ID).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     reachPeriod:
       type: integer
       nullable: true

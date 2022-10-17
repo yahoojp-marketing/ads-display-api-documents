@@ -44,11 +44,9 @@ GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd:
       description: |
         <div lang="ja">トラッキングURLです。<br>
         ADDおよびSET時、このフィールドは省略可能となります。<br>
-        ※SET時、こちらが審査中の場合、編集はできません。<br>
         </div>
         <div lang="en">Tracking URL.<br>
         This field is optional in ADD and SET operation.<br>
-        *In SET operation, cannot update it when this field is in editorial review.<br>
         </div>
   title: GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd
   description: |

@@ -67,7 +67,6 @@ PlacementUrlList:
         除外専用リストには下記の制約があります。<br>
         ・１アカウントにつき1つ作成が可能です。<br>
         ・除外にのみ紐付け可能です。<br>
-        ・YDNキャンペーンには紐付けできません。<br>
         このフィールドは、ADD時に省略可能(デフォルトの値はFALSE)、SET時に指定不可となります。
         </div>
         <div lang="en">
@@ -75,7 +74,6 @@ PlacementUrlList:
         Exclusion list includes the following restrictions: <br>
         *Only one list can be created per account. <br>
         *Can be linked only to exclusion. <br>
-        *Cannot be linked with YDN campaign. <br>
         This field is optional in ADD operation (default value will be FALSE), and cannot be specified in SET operation.
         </div>
         <dl class=term>

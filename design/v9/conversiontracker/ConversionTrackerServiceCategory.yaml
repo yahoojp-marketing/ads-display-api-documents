@@ -64,61 +64,61 @@ ConversionTrackerServiceCategory:
       <dt class="term__item">DOWNLOAD</dt>
       <dd class="term__desc"><span lang="ja">アプリをインストールです。</span><span lang="en">Install app</span></dd>
       <dt class="term__item">APP_LAUNCH</dt>
-      <dd class="term__desc"><span lang="ja">アプリを起動です。*現在利用できません</span><span lang="en">App start *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリを起動です。</span><span lang="en">App start</span></dd>
       <dt class="term__item">APP_UPDATE</dt>
-      <dd class="term__desc"><span lang="ja">アプリをアップデートです。*現在利用できません</span><span lang="en">Update app *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリをアップデートです。</span><span lang="en">Update app</span></dd>
       <dt class="term__item">SIGN_UP</dt>
-      <dd class="term__desc"><span lang="ja">登録完了です。*現在利用できません</span><span lang="en">Registration complete *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">登録完了です。</span><span lang="en">Registration complete</span></dd>
       <dt class="term__item">LOGIN</dt>
-      <dd class="term__desc"><span lang="ja">ログインです。*現在利用できません</span><span lang="en">Sign in *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">ログインです。</span><span lang="en">Sign in</span></dd>
       <dt class="term__item">SEARCH</dt>
-      <dd class="term__desc"><span lang="ja">検索です。*現在利用できません</span><span lang="en">Search *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">検索です。</span><span lang="en">Search</span></dd>
       <dt class="term__item">VIEW_LISTING</dt>
-      <dd class="term__desc"><span lang="ja">商品一覧画面の閲覧です。*現在利用できません</span><span lang="en">View item list *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">商品一覧画面の閲覧です。</span><span lang="en">View item list</span></dd>
       <dt class="term__item">VIEW_PRODUCT</dt>
-      <dd class="term__desc"><span lang="ja">商品詳細画面の閲覧です。*現在利用できません</span><span lang="en">View item description *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">商品詳細画面の閲覧です。</span><span lang="en">View item description</span></dd>
       <dt class="term__item">VIEW_CART</dt>
-      <dd class="term__desc"><span lang="ja">商品カートを閲覧です。*現在利用できません</span><span lang="en">Viewing cart *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">商品カートを閲覧です。</span><span lang="en">Viewing cart</span></dd>
       <dt class="term__item">ADD_CART</dt>
-      <dd class="term__desc"><span lang="ja">商品カートに追加です。*現在利用できません</span><span lang="en">Add to cart *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">商品カートに追加です。</span><span lang="en">Add to cart</span></dd>
       <dt class="term__item">ADD_WISHLIST</dt>
-      <dd class="term__desc"><span lang="ja">お気に入りに追加です。*現在利用できません</span><span lang="en">Add to favorites *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">お気に入りに追加です。</span><span lang="en">Add to favorites</span></dd>
       <dt class="term__item">CHECK_OUT</dt>
-      <dd class="term__desc"><span lang="ja">商品購入確認です。*現在利用できません</span><span lang="en">Confirm purchase *Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">商品購入確認です。</span><span lang="en">Confirm purchase</span></dd>
       <dt class="term__item">PRODUCT_PURCHASE</dt>
-      <dd class="term__desc"><span lang="ja">アプリ内商品購入です。*現在利用できません</span><span lang="en">In-app product purchase *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">アプリ内商品購入です。</span><span lang="en">In-app product purchase</span></dd> 
       <dt class="term__item">APP_PURCHASE</dt>
-      <dd class="term__desc"><span lang="ja">アプリ内購入です。*現在利用できません</span><span lang="en">In-app purchase *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">アプリ内購入です。</span><span lang="en">In-app purchase</span></dd> 
       <dt class="term__item">SPENT_CREDITS</dt>
-      <dd class="term__desc"><span lang="ja">クレジットカードの利用です。*現在利用できません</span><span lang="en">Credit card *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">クレジットカードの利用です。</span><span lang="en">Credit card</span></dd> 
       <dt class="term__item">PAYMENT_INFO</dt>
-      <dd class="term__desc"><span lang="ja">お支払い明細を発行です。*現在利用できません</span><span lang="en">Payment details *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">お支払い明細を発行です。</span><span lang="en">Payment details</span></dd> 
       <dt class="term__item">REVIEW</dt>
-      <dd class="term__desc"><span lang="ja">コンテンツをレビューです。*現在利用できません</span><span lang="en">Review contents *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">コンテンツをレビューです。</span><span lang="en">Review contents</span></dd> 
       <dt class="term__item">SHARE</dt>
-      <dd class="term__desc"><span lang="ja">コンテンツをシェアです。*現在利用できません</span><span lang="en">Share contents *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">コンテンツをシェアです。</span><span lang="en">Share contents</span></dd> 
       <dt class="term__item">INVITE</dt>
-      <dd class="term__desc"><span lang="ja">アプリへ招待です。*現在利用できません</span><span lang="en">Invite to app *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">アプリへ招待です。</span><span lang="en">Invite to app</span></dd> 
       <dt class="term__item">RESERVATION</dt>
-      <dd class="term__desc"><span lang="ja">予約完了です。*現在利用できません</span><span lang="en">Reservation complete *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">予約完了です。</span><span lang="en">Reservation complete</span></dd> 
       <dt class="term__item">TUTORIAL</dt>
-      <dd class="term__desc"><span lang="ja">チュートリアルを完了です。*現在利用できません</span><span lang="en">Tutorial complete *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">チュートリアルを完了です。</span><span lang="en">Tutorial complete</span></dd> 
       <dt class="term__item">DEEPLINK</dt>
-      <dd class="term__desc"><span lang="ja">ディープリンクから流入です。*現在利用できません</span><span lang="en">Traffic from deep link *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">ディープリンクから流入です。</span><span lang="en">Traffic from deep link</span></dd> 
       <dt class="term__item">START_LEVEL</dt>
-      <dd class="term__desc"><span lang="ja">ゲームイベントを開始です。*現在利用できません</span><span lang="en">Start game event *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">ゲームイベントを開始です。</span><span lang="en">Start game event</span></dd> 
       <dt class="term__item">END_LEVEL</dt>
-      <dd class="term__desc"><span lang="ja">ゲームイベントを完了です。*現在利用できません</span><span lang="en">Complete game event *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">ゲームイベントを完了です。</span><span lang="en">Complete game event</span></dd> 
       <dt class="term__item">LEVEL_ACHIEVED</dt>
-      <dd class="term__desc"><span lang="ja">ゲームのレベル到達です。*現在利用できません</span><span lang="en">Achieve game level *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">ゲームのレベル到達です。</span><span lang="en">Achieve game level</span></dd> 
       <dt class="term__item">UNLOCK_ACHIEVEMENT</dt>
-      <dd class="term__desc"><span lang="ja">ゲームの目標達成です。*現在利用できません</span><span lang="en">Unlock achievement *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">ゲームの目標達成です。</span><span lang="en">Unlock achievement</span></dd> 
       <dt class="term__item">CUSTOM1</dt>
-      <dd class="term__desc"><span lang="ja">カスタムイベント1です。*現在利用できません</span><span lang="en">Custom event 1 *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">カスタムイベント1です。</span><span lang="en">Custom event 1</span></dd> 
       <dt class="term__item">CUSTOM2</dt>
-      <dd class="term__desc"><span lang="ja">カスタムイベント2です。*現在利用できません</span><span lang="en">Custom event 2 *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">カスタムイベント2です。</span><span lang="en">Custom event 2</span></dd> 
       <dt class="term__item">CUSTOM3</dt>
-      <dd class="term__desc"><span lang="ja">カスタムイベント3です。*現在利用できません</span><span lang="en">Custom event 3 *Not Available.</span></dd> 
+      <dd class="term__desc"><span lang="ja">カスタムイベント3です。</span><span lang="en">Custom event 3</span></dd> 
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

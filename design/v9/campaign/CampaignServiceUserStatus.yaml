@@ -8,11 +8,11 @@ CampaignServiceUserStatus:
   title: CampaignServiceUserStatus
   description: |
     <div lang="ja">
-    CampaignServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    CampaignServiceUserStatusは、配信設定を表します。<br>
     このフィールドは、ADD時は必須、SET時は省略可能となり、REMOVE時は無視されます。
     </div>
     <div lang="en">
-    CampaignServiceUserStatus serves ad delivery status that can be set by an user.<br>
+    CampaignServiceUserStatus describes delivery settings.<br>
     This field is required in ADD operation, is optional in SET operation, and will be ignored in REMOVE operation.
     </div>
     <dl class=term>

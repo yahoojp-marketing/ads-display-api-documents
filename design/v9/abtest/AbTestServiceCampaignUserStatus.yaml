@@ -8,12 +8,12 @@ AbTestServiceCampaignUserStatus:
   title: AbTestServiceCampaignUserStatus
   description: |
     <div lang="ja">
-    AbTestServiceCampaignUserStatusは、ユーザーによって設定されたキャンペーンの広告配信の有無を表します。<br>
+    AbTestServiceCampaignUserStatusは、キャンペーンの配信設定を表します。<br>
     このフィールドはリクエストの際には無視されます。<br>
     GET時のみレスポンスの際に返却されます。
     </div>
     <div lang="en">
-    AbTestServiceCampaignUserStatus serves ad delivery status of campaign that can be set by an user.<br>
+    AbTestServiceCampaignUserStatus describes ad delivery settings of campaign.<br>
     This field will be ignored on input.<br>
     This field will be returned in the GET response only.
     </div>

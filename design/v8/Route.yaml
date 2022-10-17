@@ -50,10 +50,8 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
-        また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
-        ADD, SET and REMOVE operations are no longer available for the ad group of YDN Campaign.
       </div>
   - name: AuditLogService
     description: |
@@ -64,13 +62,10 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
-        1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。<br>
-        また、ディスプレイ広告（YDN）のキャンペーンのADD, SET, REMOVE機能の提供は終了しました。
+        1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
         The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService.<br>
-        Creating new YDN campaigns is unavailable.<br>
-        ADD, SET and REMOVE operations are no longer available for the YDN Campaign.
       </div>
   - name: FeedDataService
     description: |
@@ -189,12 +184,10 @@ tags:
       <div lang="ja">
         AdGroupAdServiceは広告の操作を提供します。<br>
         リンク先URLやトラッキングURLなどに設定することができるトラッキング用パラメータについては、 <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=52808">ヘルプ</a>をご参照ください。<br>
-        また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告のADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">
         Use this service to get, add, update or delete ad information.<br>
         Refer to <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=28832">Help page</a> for the tracking parameters that can be set for landing page URL or tracking URL.<br>
-        ADD, SET and REMOVE operations are no longer available for the ad of YDN Campaign.
       </div>
   - name: FeedService
     description: |
@@ -859,11 +852,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを追加します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Add ad group.<br>
-          ADD operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -926,11 +917,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを変更します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates information of ad group.<br>
-          SET operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -993,11 +982,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを削除します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Removes ad group.<br>
-          REMOVE operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -1276,11 +1263,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を追加します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Adds campaign information.<br>
-          ADD operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -1341,11 +1326,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を更新します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates campaign information.<br>
-          SET operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -1406,11 +1389,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を削除します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Deletes campaign information.<br>
-          REMOVE operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -4797,11 +4778,9 @@ paths:
       description: |
         <div lang="ja">
           広告を追加します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Adds an ad.<br>
-          ADD operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService
@@ -4873,11 +4852,9 @@ paths:
       description: |
         <div lang="ja">
           広告を変更します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates an ad.<br>
-          SET operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService
@@ -4949,11 +4926,9 @@ paths:
       description: |
         <div lang="ja">
           広告を削除します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Removes an ad.<br>
-          REMOVE operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService

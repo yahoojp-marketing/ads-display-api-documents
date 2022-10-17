@@ -6,8 +6,12 @@ AudienceListServiceCustomAudienceList:
       type: string
       nullable: true
       description: |
-        <div lang="ja">Yahoo! DMPに連携するIDです。</div>
-        <div lang="en">ID to configure Yahoo! JAPAN DMP.</div>
+        <div lang="ja">Yahoo! DMPに連携するIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">ID to configure Yahoo! JAPAN DMP.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
     reachPeriod:
       type: integer
       nullable: true

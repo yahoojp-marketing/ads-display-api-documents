@@ -8,11 +8,11 @@ MediaServiceUserStatus:
   title: MediaServiceUserStatus
   description: |
     <div lang="ja">
-    MediaServiceUserStatusは、ユーザーにより広告配信の有無を調整できる設定です。<br>
+    MediaServiceUserStatusは、配信設定を表します。<br>
     このフィールドは、ADD時に必須となり、SET時に省略可能となります。
     </div>
     <div lang="en">
-    MediaServiceUserStatus serves ad delivery status that can be set by an user.<br>
+    MediaServiceUserStatus describes delivery settings.<br>
     This field is required in ADD operation, and is optional in SET operation.
     </div>
     <dl class=term>

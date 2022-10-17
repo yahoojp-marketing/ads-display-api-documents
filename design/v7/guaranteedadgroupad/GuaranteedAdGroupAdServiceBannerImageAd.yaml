@@ -64,12 +64,10 @@ GuaranteedAdGroupAdServiceBannerImageAd:
       description: |
         <div lang="ja">トラッキングURLです。<br>
         ADD時、このフィールドは省略可能となります。<br>
-        ※SET時、こちらが審査中の場合、編集はできません。<br>
         finalUrlを指定するときのみ、任意で指定できます。<br>
         </div>
         <div lang="en">Tracking URL.<br>
         This field is optional in ADD operation.<br>
-        *In SET operation, cannot update it when this field is in editorial review.<br>
         This field can be optionally specified only when specifying finalUrl.<br>
         </div>
   title: GuaranteedAdGroupAdServiceBannerImageAd

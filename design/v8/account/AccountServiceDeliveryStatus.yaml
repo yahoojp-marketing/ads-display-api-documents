@@ -8,12 +8,12 @@ AccountServiceDeliveryStatus:
   title: AccountServiceDeliveryStatus
   description: |
     <div lang="ja">
-    AccountServiceDeliveryStatusは、アカウントの配信状況を表します。<br>
+    AccountServiceDeliveryStatusは、アカウントの配信設定を表します。<br>
     SET時、このフィールドは省略可能となります。<br>
     MCCアカウントの場合、このフィールドは返却されず、リクエストの際も無視されます。
     </div>
     <div lang="en">
-    AccountServiceDeliveryStatus serves the account delivery status.<br>
+    AccountServiceDeliveryStatus serves the account delivery settings.<br>
     This field is optional in SET operation.<br>
     If isManagerAccount is "TRUE", this field will not be returned and will be ignored on request.
     </div>

@@ -8,11 +8,11 @@ AudienceListServiceDeliveryStatus:
   title: AudienceListServiceDeliveryStatus
   description: |
     <div lang="ja">
-    AudienceListServiceDeliveryStatusは、アカウントの配信状況を表します。<br>
+    AudienceListServiceDeliveryStatusは、アカウントの配信設定を表します。<br>
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">
-    AudienceListServiceDeliveryStatus serves the account delivery status.<br>
+    AudienceListServiceDeliveryStatus serves the account delivery settings.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
     <dl class=term>

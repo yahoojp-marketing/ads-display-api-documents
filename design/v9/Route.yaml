@@ -29,14 +29,8 @@ tags:
   - name: AbTestService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">
-        AbTestServiceでは、A/Bテストに関する情報の取得および、追加、更新を行います。<br>
-        ※現在、こちらのサービスは利用できません。
-      </div>
-      <div lang="en">
-        AbTestService provides functions for creating and managing A/B test.<br>
-        *Currently this service is not available.
-      </div>
+      <div lang="ja">AbTestServiceでは、A/Bテストに関する情報の取得および、追加、更新を行います。</div>
+      <div lang="en">AbTestService provides functions for creating and managing A/B test.</div>
   - name: AccountManagementService
     description: |
       <label class="account"></label>
@@ -61,10 +55,8 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">AdGroupServiceは広告グループの操作を提供します。<br>
-        また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">Use this service to get, add, update, or delete adgroup.<br>
-        ADD, SET and REMOVE operations are no longer available for the ad group of YDN Campaign.
       </div>
   - name: AuditLogService
     description: |
@@ -75,13 +67,10 @@ tags:
     description: |
       <label class="campaign"></label>
       <div lang="ja">CampaignServiceは、キャンペーンの操作を提供します。<br>
-        1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。<br>
-        また、ディスプレイ広告（YDN）のキャンペーンのADD, SET, REMOVE機能の提供は終了しました。
+        1アカウントあたりのキャンペーンの登録可能上限数は、CampaignServiceとGuaranteedCampaignServiceの合計の件数となります。
       </div>
       <div lang="en">Use this service to get, add, update, or delete campaigns.<br>
         The maximum number of campaigns that can be added per account includes the campaign number of both CampaignService and GuaranteedCampaignService.<br>
-        Creating new YDN campaigns is unavailable.<br>
-        ADD, SET and REMOVE operations are no longer available for the YDN Campaign.
       </div>
   - name: FeedDataService
     description: |
@@ -205,12 +194,10 @@ tags:
       <div lang="ja">
         AdGroupAdServiceは広告の操作を提供します。<br>
         リンク先URLやトラッキングURLなどに設定することができるトラッキング用パラメータについては、 <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=52808">ヘルプ</a>をご参照ください。<br>
-        また、ディスプレイ広告（YDN）におけるキャンペーン配下の広告のADD, SET, REMOVE機能の提供は終了しました。
       </div>
       <div lang="en">
         Use this service to get, add, update or delete ad information.<br>
         Refer to <a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=28832">Help page</a> for the tracking parameters that can be set for landing page URL or tracking URL.<br>
-        ADD, SET and REMOVE operations are no longer available for the ad of YDN Campaign.
       </div>
   - name: FeedService
     description: |
@@ -357,12 +344,10 @@ paths:
     post:
       description: |
         <div lang="ja">
-          A/Bテストの情報を取得します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストの情報を取得します。
         </div>
         <div lang="en">
-          Retrieves A/B test information.<br>
-          *Currently this service is not available.
+          Retrieves A/B test information.
         </div>
       tags:
         - AbTestService
@@ -415,12 +400,10 @@ paths:
     post:
       description: |
         <div lang="ja">
-          A/Bテストを追加します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを追加します。
         </div>
         <div lang="en">
-          Adds A/B test.<br>
-          *Currently this service is not available.
+          Adds A/B test.
         </div>
       tags:
         - AbTestService
@@ -473,12 +456,10 @@ paths:
     post:
       description: |
         <div lang="ja">
-          A/Bテストを変更します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを変更します。
         </div>
         <div lang="en">
-          Updates information of A/B test.<br>
-          *Currently this service is not available.
+          Updates information of A/B test.
         </div>
       tags:
         - AbTestService
@@ -531,12 +512,10 @@ paths:
     post:
       description: |
         <div lang="ja">
-          A/Bテストを削除します。<br>
-          ※現在、こちらのサービスは利用できません。
+          A/Bテストを削除します。
         </div>
         <div lang="en">
-          Removes A/B test.<br>
-          *Currently this service is not available.
+          Removes A/B test.
         </div>
       tags:
         - AbTestService
@@ -587,7 +566,9 @@ paths:
                 $ref: 'abtest/AbTestServiceMutateResponse.yaml#/AbTestServiceMutateResponse'
   /AccountManagementService/get:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div><div lang=\"en\">Returns the account information. Enable to set the filter condition, such as the account Type.</div>"
+      description: |
+        <div lang="ja">アカウントに関する情報を取得します。契約状況などのフィルタ条件を設定することが可能です。</div>
+        <div lang="en">Returns the account information. Enable to set the filter condition, such as the account Type.</div>
       tags:
         - AccountManagementService
       requestBody:
@@ -637,7 +618,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountManagementService/add:
     post:
-      description: "<div lang=\"ja\">後請求のアカウントに関する情報を追加します。</div><div lang=\"en\">Adds the information related to the invoice account.</div>"
+      description: |
+        <div lang="ja">後請求のアカウントに関する情報を追加します。</div>
+        <div lang="en">Adds the information related to the invoice account.</div>
       tags:
         - AccountManagementService
       requestBody:
@@ -687,7 +670,9 @@ paths:
           $ref: '../Response400.yaml#/Response400'
   /AccountManagementService/set:
     post:
-      description: "<div lang=\"ja\">アカウントに関する情報を更新します。</div><div lang=\"en\">Updates the information related to the account.</div>"
+      description: |
+        <div lang="ja">アカウントに関する情報を更新します。</div>
+        <div lang="en">Updates the information related to the account.</div>
       tags:
         - AccountManagementService
       requestBody:
@@ -1063,11 +1048,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを追加します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Add ad group.<br>
-          ADD operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -1130,11 +1113,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを変更します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates information of ad group.<br>
-          SET operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -1197,11 +1178,9 @@ paths:
       description: |
         <div lang="ja">
           広告グループを削除します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告グループのREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Removes ad group.<br>
-          REMOVE operation is no longer available for the ad group of YDN Campaign.
         </div>
       tags:
         - AdGroupService
@@ -1480,11 +1459,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を追加します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Adds campaign information.<br>
-          ADD operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -1545,11 +1522,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を更新します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates campaign information.<br>
-          SET operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -1610,11 +1585,9 @@ paths:
       description: |
         <div lang="ja">
           キャンペーン情報を削除します。<br>
-          ディスプレイ広告（YDN）のキャンペーンのREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Deletes campaign information.<br>
-          REMOVE operation is no longer available for the YDN Campaign.
         </div>
       tags:
         - CampaignService
@@ -4993,11 +4966,9 @@ paths:
       description: |
         <div lang="ja">
           広告を追加します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のADD機能の提供は終了しました。
         </div>
         <div lang="en">
           Adds an ad.<br>
-          ADD operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService
@@ -5069,11 +5040,9 @@ paths:
       description: |
         <div lang="ja">
           広告を変更します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のSET機能の提供は終了しました。
         </div>
         <div lang="en">
           Updates an ad.<br>
-          SET operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService
@@ -5145,11 +5114,9 @@ paths:
       description: |
         <div lang="ja">
           広告を削除します。<br>
-          ディスプレイ広告（YDN）におけるキャンペーン配下の広告のREMOVE機能の提供は終了しました。
         </div>
         <div lang="en">
           Removes an ad.<br>
-          REMOVE operation is no longer available for the ad of YDN Campaign.
         </div>
       tags:
         - AdGroupAdService
