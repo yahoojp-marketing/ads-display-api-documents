@@ -39,7 +39,7 @@ AudienceListServiceType:
       <dt class="term__item">CUSTOMER_DATA</dt>
       <dd class="term__desc"><span lang="ja">顧客データです。</span><span lang="en">Customer data.</span></dd>
       <dt class="term__item">APP_USER</dt>
-      <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</br>※現在指定できません</span><span lang="en">App users data.</br>※Not available.</span></dd>
+      <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>
