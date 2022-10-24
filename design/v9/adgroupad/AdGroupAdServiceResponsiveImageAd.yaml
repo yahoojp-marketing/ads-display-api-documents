@@ -12,12 +12,13 @@ AdGroupAdServiceResponsiveImageAd:
       description: |
         <div lang="ja">
         説明文です。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※レスポンシブディスプレイ広告を利用する場合は指定できません。
         </div>
         <div lang="en">
         Description.<br>
-        This field is required in ADD operation, and will be optional in SET operation.
-        </div>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *Cannot be specified when using responsive display ads.
     displayUrl:
       type: string
       nullable: true
@@ -84,11 +85,13 @@ AdGroupAdServiceResponsiveImageAd:
       description: |
         <div lang="ja">
         タイトルです。<br>
-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※レスポンシブディスプレイ広告を利用する場合は指定できません。
         </div>
         <div lang="en">
         Title.<br>
-        This field is required in ADD operation, and will be optional in SET operation.
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *Cannot be specified when using responsive display ads.
         </div>
     isRemoveSmartphoneFinalUrl:
       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'

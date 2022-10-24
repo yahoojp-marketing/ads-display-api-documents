@@ -35,5 +35,5 @@ AdGroupAdServiceDescriptionAsset:
         </div>
   title: AdGroupAdServiceDescriptionAsset
   description: |
-    <div lang="ja">AdGroupAdServiceDescriptionAssetオブジェクトは、レスポンシブ広告で指定する説明文のアセットを表します。</div>
-    <div lang="en">The AdGroupAdServiceDescriptionAsset object represents a description asset to specify in responsive ads.</div>
+    <div lang="ja">AdGroupAdServiceDescriptionAssetオブジェクトは、レスポンシブディスプレイ広告で指定する説明文のアセットを表します。</div>
+    <div lang="en">The AdGroupAdServiceDescriptionAsset object represents a description asset to specify in responsive display ads.</div>

@@ -171,11 +171,13 @@ AdGroupAd:
       description: |
         <div lang="ja">
         メディアIDです。<br>
-        ADDおよびSET時、このフィールドは省略可能となります。
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※レスポンシブディスプレイ広告を利用する場合は指定できません。
         </div>
         <div lang="en">
         Media ID.<br>
-        This field is optional in ADD and SET operation.
+        This field is optional in ADD and SET operation.<br>
+        *Cannot be specified when using responsive display ads.
         </div>
     thirdPartyTrackingScriptUrl:
       type: string

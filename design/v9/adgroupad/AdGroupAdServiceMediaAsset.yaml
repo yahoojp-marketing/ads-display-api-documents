@@ -17,5 +17,5 @@ AdGroupAdServiceMediaAsset:
         </div>
   title: AdGroupAdServiceMediaAsset
   description: |
-    <div lang="ja">AdGroupAdServiceMediaAssetオブジェクトは、レスポンシブ広告で指定するメディアアセットを表します。</div>
-    <div lang="en">The AdGroupAdServiceMediaAsset object represents a media asset to specify in responsive ads.</div>
+    <div lang="ja">AdGroupAdServiceMediaAssetオブジェクトは、レスポンシブディスプレイ広告で指定するメディアアセットを表します。</div>
+    <div lang="en">The AdGroupAdServiceMediaAsset object represents a media asset to specify in responsive display ads.</div>

@@ -35,5 +35,5 @@ AdGroupAdServiceHeadlineAsset:
         </div>
   title: AdGroupAdServiceHeadlineAsset
   description: |
-    <div lang="ja">AdGroupAdServiceHeadlineAssetオブジェクトは、レスポンシブ広告で指定するタイトルアセットを表します。</div>
-    <div lang="en">The AdGroupAdServiceHeadlineAsset object represents a headline asset to specify in responsive ads.</div>
+    <div lang="ja">AdGroupAdServiceHeadlineAssetオブジェクトは、レスポンシブディスプレイ広告で指定するタイトルアセットを表します。</div>
+    <div lang="en">The AdGroupAdServiceHeadlineAsset object represents a headline asset to specify in responsive display ads.</div>
