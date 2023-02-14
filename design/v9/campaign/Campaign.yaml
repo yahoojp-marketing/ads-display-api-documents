@@ -154,8 +154,10 @@ Campaign:
       format: double
       description: |
         <div lang="ja">最適化スコアです。<br>
+        最適化スコアは、0.0から1.0の範囲の値を返却します。<br>
         このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
         <div lang="en">Optimization score.<br>
+        Optimization score returns a value ranging from 0.0 to 1.0.<br>
         Although this field will be returned in the response, it will be ignored on input.</div>
     servingStatus:
       $ref: 'CampaignServiceServingStatus.yaml#/CampaignServiceServingStatus'

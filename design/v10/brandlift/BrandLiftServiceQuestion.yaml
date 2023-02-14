@@ -1,0 +1,60 @@
+BrandLiftServiceQuestion:
+  type: object
+  nullable: true
+  properties:
+    questionId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">調査IDです。</div>
+        <div lang="en">Question ID. </div>
+    goal:
+      $ref: 'BrandLiftServiceGoal.yaml#/BrandLiftServiceGoal'
+    preApproveId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">事前承認IDです。</div>
+        <div lang="en">Preapprove ID. </div>
+    question:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">設問です。</div>
+        <div lang="en">Question. </div>
+    answerOption1:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">回答選択肢1です。</div>
+        <div lang="en">Answer Option1. </div>
+    answerOption2:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">回答選択肢2です。</div>
+        <div lang="en">Answer Option2. </div>
+    answerOption3:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">回答選択肢3です。</div>
+        <div lang="en">Answer Option3. </div>
+    answerOption4:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">回答選択肢4です。</div>
+        <div lang="en">Answer Option4. </div>
+    answerOption5:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">回答選択肢5です。</div>
+        <div lang="en">Answer Option5. </div>
+
+  title: BrandLiftServiceQuestion
+  description: |
+    <div lang="ja">BrandLiftServiceQuestionオブジェクトは、ブランドリフト調査項目を表します。</div>
+    <div lang="en">BrandLiftServiceQuestion objects describes the brand lift survey contents.</div>

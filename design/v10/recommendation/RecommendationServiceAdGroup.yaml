@@ -1,0 +1,54 @@
+RecommendationServiceAdGroup:
+  type: object
+  nullable: true
+  properties:
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループIDです。
+        </div>
+        <div lang="en">
+        Ad group ID.
+        </div>
+    adGroupName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告グループ名です。
+        </div>
+        <div lang="en">
+        Ad group name.
+        </div>
+    mediaAdFormat:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        画像フォーマットの種類です。<br>
+        このフィールドは、 typeがNOT_OPTIMAL_AD_COUNT_PER_MEDIA_AD_FORMAT, ADGROUPS_FOR_ADDING_ADSの場合のみ返却されます。
+        </div>
+        <div lang="en">
+        The type of image format.<br>
+        This field is returned when the type is NOT_OPTIMAL_AD_COUNT_PER_MEDIA_AD_FORMAT, ADGROUPS_FOR_ADDING_ADS.
+        </div>
+    adCount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        対象メディアフォーマットを利用している広告数です。<br>
+        このフィールドは、 typeがNOT_OPTIMAL_AD_COUNT_PER_MEDIA_AD_FORMATの場合のみ返却されます。
+        </div>
+        <div lang="en">
+        The number of ads that use this media format.<br>
+        This field is returned when the type is NOT_OPTIMAL_AD_COUNT_PER_MEDIA_AD_FORMAT.
+        </div>
+  title: RecommendationServiceAdGroup
+  description: |
+    <div lang="ja">RecommendationServiceAdGroupオブジェクトは、広告グループの詳細情報を表します。</div>
+    <div lang="en">RecommendationServiceAdGroup objects describes ad group information.</div>

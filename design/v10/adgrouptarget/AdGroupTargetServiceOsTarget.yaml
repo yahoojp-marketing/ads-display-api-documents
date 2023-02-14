@@ -1,0 +1,16 @@
+AdGroupTargetServiceOsTarget:
+  type: object
+  nullable: true
+  properties:
+    deviceOsType:
+      $ref: 'AdGroupTargetServiceDeviceOsType.yaml#/AdGroupTargetServiceDeviceOsType'
+  title: AdGroupTargetServiceOsTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceOsTargetオブジェクトは、OSターゲティングの設定情報を保持します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceOsTarget object is a container for storing OS targeting settings.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

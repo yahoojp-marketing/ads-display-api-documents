@@ -12,8 +12,7 @@ AuditLogServiceDateRange:
         ・入力形式：Ymd形式<br>
         ・デフォルト値：現在の日付<br>
         ・指定可能範囲：現在の日付<br>
-        ※終了日付は開始日付以降の日付を指定してください。<br>
-        ※開始日付から終了日付の期間は最大1カ月です。
+        ※終了日付は開始日付以降の日付を指定してください。
         </div>
         <div lang="en">
         End date.<br>
@@ -21,8 +20,7 @@ AuditLogServiceDateRange:
         - Entry format : Ymd format<br>
         - Default value : Current date<br>
         - Available range : Current date<br>
-        *Enter the date after Start date.<br>
-        *Maximum length of date range between Start and End is 1 month.
+        *Enter the date after Start date.
         </div>
     startDate:
       type: string
@@ -32,17 +30,15 @@ AuditLogServiceDateRange:
         開始日付です。<br>
         このフィールドは、リクエストの場合は省略可能となります。<br>
         ・入力形式：Ymd形式<br>
-        ・デフォルト値：現在の日付<br>
-        ・指定可能範囲：前月の月初<br>
-        例：4/30時点で、開始日付に指定できるもっとも古い日付は3/1
+        ・デフォルト値：2週間前の日付<br>
+        ・指定可能範囲：1年前の日付
         </div>
         <div lang="en">
         Start date.<br>
         This field is optional in requests.<br>
         - Entry format : Ymd format<br>
-        - Default value : Current date<br>
-        - Available range : Beginning of the last month<br>
-        e.g.: The oldest date selectable as of April 30 is March 1.
+        - Default value : Dated 2 weeks ago<br>
+        - Available range : Date one year ago
         </div>
   title: AuditLogServiceDateRange
   description: |

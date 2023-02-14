@@ -10,7 +10,7 @@ ConversionTrackerServiceWebConversion:
   title: ConversionTrackerServiceWebConversion
   description: |
     <div lang="ja">
-    ConversionTrackerServiceWebConversionは、ウェブページのコンバージョントラッカー情報を表します。<br>
+    ConversionTrackerServiceWebConversionは、ウェブページのコンバージョン設定を表します。<br>
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">

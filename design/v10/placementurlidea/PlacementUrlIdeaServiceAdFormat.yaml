@@ -1,0 +1,34 @@
+PlacementUrlIdeaServiceAdFormat:
+  type: object
+  nullable: true
+  properties:
+    mainMediaFormat:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告のスタイルです。<br>IMAGE、VIDEO、NONEのみ指定できます。</div>
+        <div lang="en">Ad Style of image.<br>This field can be specified only IMAGE, VIDEO, NONE.</div>
+    adType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">広告のタイプです。</div>
+        <div lang="en">Ad Type of image.</div>
+    width:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">画像の幅です。</div>
+        <div lang="en">Width of the image.</div>
+    height:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">画像の高さです。</div>
+        <div lang="en">Height of the image.</div>
+  title: PlacementUrlIdeaServiceAdFormat
+  description: |
+    <div lang="ja">PlacementUrlIdeaServiceAdFormatは、広告のフォーマットを表します。</div>
+    <div lang="en">Ad Format.</div>

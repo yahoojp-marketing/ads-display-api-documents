@@ -9,11 +9,11 @@ AccountServiceAuthType:
   description: |
     <div lang="ja">
     権限タイプです。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    このフィールドは、GET時に省略可能となり、SET時に無視されます。
     </div>
     <div lang="en">
     Access Roles.<br>
-    Although this field will be returned in the response, it will be ignored on input.
+    Although this field is optional in GET operation, and will be ignored in SET operation.
     </div>
     <dl class=term>
       <dt class="term__item">REFERABLE</dt>

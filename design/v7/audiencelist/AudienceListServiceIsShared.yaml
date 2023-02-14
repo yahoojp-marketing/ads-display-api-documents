@@ -11,12 +11,3 @@ AudienceListServiceIsShared:
       AudienceListServiceIsShared describes the sharing status of the audience list.<br>
       Although this field will be returned in the response, it will be ignored on input.
     </div>
-    <hr>
-    <dl class=term>
-      <dt class="term__item">TRUE</dt>
-      <dd class="term__desc"><span lang="ja">共有されたオーディエンスリストです。</span><span lang="en">The shared audience list.</span></dd>
-      <dt class="term__item">FALSE</dt>
-      <dd class="term__desc"><span lang="ja">共有されていないオーディエンスリストです。</span><span lang="en">The non-shared audience list.</span></dd>
-      <dt class="term__item">UNKNOWN</dt>
-      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
-    </dl>

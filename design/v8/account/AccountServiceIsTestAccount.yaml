@@ -8,8 +8,10 @@ AccountServiceIsTestAccount:
   title: AccountServiceIsTestAccount
   description: |
     <div lang="ja">AccountServiceIsTestAccountはテストアカウントかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
     MCCアカウントの場合、このフィールドは<code>FALSE</code>になります。</div>
     <div lang="en">AccountServiceIsTestAccount indicates whether it is a test account.<br>
+    Although this field will be returned in the response, it will be ignored on input.<br>
     If isManagerAccount is "TRUE", this field will be <code>FALSE</code>.</div>
     <dl class=term>
       <dt class="term__item">TRUE</dt>

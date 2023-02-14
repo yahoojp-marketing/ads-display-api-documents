@@ -1,0 +1,16 @@
+AdGroupTargetServiceSortField:
+  type: string
+  nullable: true
+  enum:
+  - AREA_SEARCH_TYPE
+  - UNKNOWN
+  title: AdGroupTargetServiceSortField
+  description: |
+    <div lang="ja">AdGroupTargetServiceSortFieldオブジェクトは、ソート対象項目です。</div>
+    <div lang="en">AdGroupTargetServiceSortField object is sorting item.</div>
+    <dl class=term>
+      <dt class="term__item">AREA_SEARCH_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">地域検索方法の種類です。</span><span lang="en">The type of area search method.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

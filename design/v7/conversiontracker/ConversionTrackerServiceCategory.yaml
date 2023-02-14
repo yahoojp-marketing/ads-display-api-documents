@@ -13,7 +13,7 @@ ConversionTrackerServiceCategory:
   title: ConversionTrackerServiceCategory
   description: |
     <div lang="ja">
-    ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョントラッカー情報のカテゴリーです。<br>
+    ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョン設定のカテゴリーです。<br>
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。
     </div>
     <div lang="en">

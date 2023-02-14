@@ -1,0 +1,28 @@
+ContentsKeywordIdeaServiceKeyword:
+  type: object
+  nullable: true
+  properties:
+    keywords:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      maxItems: 200
+      description: |
+        <div lang="ja">
+        検索条件：キーワード<br>
+        ※キーワード提案用<br>
+        ※キーワード、キーワードIDの同時指定はできません。
+        </div>
+        <div lang="en">
+        Search condition : Keyword.<br>
+        *Keyword for suggesting.<br>
+        *Can not specify Keyword and Keyword ID at the same time.
+        </div>
+    matchType:
+      $ref: 'ContentsKeywordIdeaServiceMatchType.yaml#/ContentsKeywordIdeaServiceMatchType'
+  title: ContentsKeywordIdeaServiceKeyword
+  description: |
+    <div lang="ja">ContentsKeywordIdeaServiceKeywordオブジェクトは、コンテンツターゲティングの検索条件です。</div>
+    <div lang="en">ContentsKeywordIdeaServiceKeyword object is search condition for contents targeting.</div>

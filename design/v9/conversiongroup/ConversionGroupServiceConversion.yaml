@@ -46,5 +46,5 @@ ConversionGroupServiceConversion:
       $ref: '../conversiontracker/ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
   title: ConversionGroupServiceConversion
   description: |
-    <div lang="ja">ConversionGroupServiceConversionオブジェクトは、コンバージョン測定タグなどのコンバージョントラッカー情報を表します。</div>
-    <div lang="en">ConversionGroupServiceConversion object shows ConversionTracker information such as ConversionTag.</div>
+    <div lang="ja">ConversionGroupServiceConversionオブジェクトは、コンバージョン測定タグなどのコンバージョン設定を表します。</div>
+    <div lang="en">ConversionGroupServiceConversion object shows ConversionTracker settings such as ConversionTag.</div>

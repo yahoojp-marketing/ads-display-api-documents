@@ -8,9 +8,9 @@ ConversionTrackerServiceIsPreviousConversion:
   title: ConversionTrackerServiceIsPreviousConversion
   description: |
     <div lang="ja">
-    ConversionTrackerServiceIsPreviousConversionは、コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョントラッカー情報を含むかどうかを表すフラグです。<br>
+    ConversionTrackerServiceIsPreviousConversionは、コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定を含むかどうかを表すフラグです。<br>
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
-    *コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョントラッカー情報は、キャンペーンに紐づけることはできません。
+    *コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定は、キャンペーンに紐づけることはできません。
     </div>
     <div lang="en">
     ConversionTrackerServiceIsPreviousConversion is a flag that indicates whether to include conversion tracker information that includes conversion tag which conversion label is not set.<br>

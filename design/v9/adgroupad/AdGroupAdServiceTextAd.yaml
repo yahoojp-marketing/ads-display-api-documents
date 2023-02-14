@@ -124,7 +124,7 @@ AdGroupAdServiceTextAd:
       description: |
         <div lang="ja">
         リンク先URLです。<br>
-        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="/reference/ads-display-api/v9/CampaignService/get/">こちら</a>をご参照ください。<br>
+        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=61528">こちら</a>をご参照ください。<br>
         SET時は省略可能となります。<br>
         ADD時、urlフィールドとfinalUrlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
         urlフィールドを設定する場合、displayUrlの指定が必須になります。またその際は、finalUrl、smartphoneFinalUrl、trackingUrl、customParametersは指定不可です。<br>
@@ -133,7 +133,7 @@ AdGroupAdServiceTextAd:
         </div>
         <div lang="en">
         Destination URL.<br>
-        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="/reference/ads-display-api/v9/CampaignService/get/en/">this page</a>.<br>
+        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=en&aid=39261">this page</a>.<br>
         This field is optional in SET operation.<br>
         In ADD operation, url field and finalUrl field cannot be set at the same time, and one of them must be set.<br>
         When url field is specified, displayUrl must be specified. In that case, finalUrl, smartphoneFinalUrl, trackingUrl and customParameters cannot be specified.<br>

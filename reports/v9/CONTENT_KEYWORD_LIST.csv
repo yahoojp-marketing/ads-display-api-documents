@@ -69,5 +69,5 @@
 "VIEWABLE_CLICK_RATE","ビューアブルクリック率","Viewable CTR","viewableCtr","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
 "VIEWABLE_IMPS","ビューアブルインプレッション数","Viewable impressions","viewableImpressions","LONG","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
 "VIEWABLE_IMPS_RATE","ビューアブルインプレッション率","Viewable impression rate","viewableImpressionRate","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
-"CAMPAIGN_USER_STATUS","キャンペーン配信設定","Campaign status","campaignUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
-"ADGROUP_USER_STATUS","広告グループ配信設定","Ad group status","adGroupUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
+"CAMPAIGN_USER_STATUS","キャンペーン配信設定","Campaign delivery settings","campaignUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""
+"ADGROUP_USER_STATUS","広告グループ配信設定","Ad group delivery settings","adGroupUserStatus","STRING",,"Attribute","オン,オフ","On,Off",""

@@ -1,0 +1,20 @@
+ReportDefinitionServiceCrossCampaignBuying:
+  type: object
+  nullable: true
+  properties:
+    account:
+      $ref: 'ReportDefinitionServiceAccount.yaml#/ReportDefinitionServiceAccount'
+    campaignBuyingType:
+      $ref: 'ReportDefinitionServiceCrossCampaignBuyingType.yaml#/ReportDefinitionServiceCrossCampaignBuyingType'
+  title: ReportDefinitionServiceCrossCampaignBuying
+  description: |
+    <div lang="ja">
+    ReportDefinitionServiceCrossCampaignBuyingは、横断リーチレポートの組み合わせの対象となるアカウントおよびキャンペーン購入タイプを示します。<br>
+    このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+    ※ADD時、crossCampaignTypeが<code>CAMPAIGN_BUYING_TYPE</code>の場合は必須です。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceCrossCampaignBuying indicates account and campaign purchase type that is subject to Cross-campaign Reach Report combination.<br>
+    This field is optional in ADD operation, and will be ignored in REMOVE operation.<br>
+    *If crossCampaignType is <code>CAMPAIGN_BUYING_TYPE</code>, this field is required in ADD operation.
+    </div>

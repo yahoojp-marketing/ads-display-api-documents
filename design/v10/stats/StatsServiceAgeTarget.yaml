@@ -1,0 +1,12 @@
+StatsServiceAgeTarget:
+  type: object
+  nullable: true
+  properties:
+    age:
+      $ref: 'StatsServiceAge.yaml#/StatsServiceAge'
+    estimateFlg:
+      $ref: 'StatsServiceEstimateFlg.yaml#/StatsServiceEstimateFlg'
+  title: StatsServiceAgeTarget
+  description: |
+    <div lang="ja">StatsServiceAgeTargetオブジェクトは、年齢ターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceAgeTarget object holds configuration information of age targeting.</div>

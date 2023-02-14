@@ -1,0 +1,38 @@
+AudienceListServiceSimilarityAudienceList:
+  type: object
+  nullable: true
+  properties:
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        オーディエンスリスト（類似ユーザー）を作成する基となるオーディエンスリストIDです。<br>
+        このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。
+        </div>
+        <div lang="en">
+        Audience list ID that is the basis for creating the audience list (similar users).<br>
+        This field is required in ADD operation, and will be ignored in SET and REMOVE operation.
+        </div>
+    audienceListSize:
+      $ref: 'AudienceListServiceSize.yaml#/AudienceListServiceSize'
+    audienceListSizeReaches:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceSizeReaches.yaml#/AudienceListServiceSizeReaches'
+      maxItems: 10
+  title: AudienceListServiceSimilarityAudienceList
+  description: |
+    <div lang="ja">
+    類似ユーザーターゲットの情報を保持するオブジェクトです。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがSIMILARITYの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceSimilarityAudienceList object is a container for storing the information of Targeting information of users (similar).<br>
+    This field is optional in ADD and SET operation. <br>
+    *If audienceListType is SIMILARITY, this field is required in ADD and SET operation.
+    </div>
+    

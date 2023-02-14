@@ -8,9 +8,9 @@ ConversionTrackerServiceExcludePreviousConversion:
   title: ConversionTrackerServiceExcludePreviousConversion
   description: |
     <div lang="ja">
-    ConversionTrackerServiceExcludePreviousConversionは、コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョントラッカー情報をを除外するかどうかを表すフラグです。<br>
+    ConversionTrackerServiceExcludePreviousConversionは、コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定を除外するかどうかを表すフラグです。<br>
     このフィールドは、リクエストの場合は省略可能です。GET時のデフォルト設定値はFALSEとなります。<br>
-    *コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョントラッカー情報は、キャンペーンに紐づけることはできません。
+    *コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定は、キャンペーンに紐づけることはできません。
     </div>
     <div lang="en">
     ConversionTrackerServiceExcludePreviousConversion is a flag that indicates whether to include conversion tracker information that includes conversion tag which conversion label is not set.<br>

@@ -1,0 +1,39 @@
+AdGroupAdServiceDescriptionAsset:
+  type: object
+  nullable: true
+  properties:
+    text:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文のテキストです。<br>
+        このフィールドは、ADDおよびSET時に必須となります。<br>
+        最大90文字まで指定できます。
+        </div>
+        <div lang="en">
+        Description text.<br>
+        This field is required in ADD and SET operation.<br>
+        Up to 90 characters can be specified.
+        </div>
+    approvalStatus:
+      $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        掲載拒否の理由です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reject reason on editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: AdGroupAdServiceDescriptionAsset
+  description: |
+    <div lang="ja">AdGroupAdServiceDescriptionAssetオブジェクトは、レスポンシブディスプレイ広告で指定する説明文のアセットを表します。</div>
+    <div lang="en">The AdGroupAdServiceDescriptionAsset object represents a description asset to specify in responsive display ads.</div>

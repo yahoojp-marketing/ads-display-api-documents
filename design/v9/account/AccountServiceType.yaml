@@ -8,8 +8,10 @@ AccountServiceType:
   title: AccountServiceType
   description: |
     <div lang="ja">AccountServiceTypeは、アカウントの料金支払い種別を表します。<br>
+    このフィールドは、SET時は無視され、GET時は省略可能となります。<br>
     MCCアカウントの場合、このフィールドは返却されません。</div>
     <div lang="en">AccountServiceType displays the account charge type.<br>
+    This field will be ignored in SET operation, and will be optional in GET operation.<br>
     If isManagerAccount is "TRUE", this field will not be returned.</div>
     <dl class=term>
       <dt class="term__item">PREPAY</dt>

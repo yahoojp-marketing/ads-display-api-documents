@@ -1,0 +1,21 @@
+AdGroupAdServiceMediaAsset:
+  type: object
+  nullable: true
+  properties:
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、ADDおよびSET時に必須となります。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field is required in ADD and SET operation.
+        </div>
+  title: AdGroupAdServiceMediaAsset
+  description: |
+    <div lang="ja">AdGroupAdServiceMediaAssetオブジェクトは、レスポンシブディスプレイ広告で指定するメディアアセットを表します。</div>
+    <div lang="en">The AdGroupAdServiceMediaAsset object represents a media asset to specify in responsive display ads.</div>

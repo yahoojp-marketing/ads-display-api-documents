@@ -1,0 +1,84 @@
+RecommendationServiceMaximizeConversionsCampaign:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        optimizationScoreLiftがnullでない場合は、1つのキャンペーンに関する提案に共通の最適化提案IDが割り当てられます。
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        When optimizationScoreLift isn't null, the system will assign a common recommendation ID to the suggestion for the campaign.
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        </div>
+        <div lang="en">
+        Campaign Name.<br>
+        </div>
+    currentBudget:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        現在のキャンペーン予算です。
+        </div>
+        <div lang="en">
+        Current campaign budget.
+        </div>
+    currentCampaignBiddingStrategyType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        現在のキャンペーン入札戦略タイプです。
+        </div>
+        <div lang="en">
+        Current campaign bidding strategy type.
+        </div>
+    currentCpcBidValue:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        現在のキャンペーン最大入札単価(CPC)です。
+        </div>
+        <div lang="en">
+        Current max bid of campaign (CPC).
+        </div>
+    recommendedCampaignBiddingStrategyType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        推奨するキャンペーン入札戦略タイプです。<br>
+        </div>
+        <div lang="en">
+        Recommended campaign bidding strategy type.
+        </div>
+  title: RecommendationServiceMaximizeConversionsCampaign
+  description: |
+    <div lang="ja">RecommendationServiceMaximizeConversionsCampaignオブジェクトは、自動入札（コンバージョン数の最大化）に適しているキャンペーンに関する最適化提案の詳細情報を表します。</div>
+    <div lang="en">RecommendationServiceMaximizeConversionsCampaign object describes detailed information of Recommendations about the campaign that is suitable for using autobidding (Maximize Conversions).</div>

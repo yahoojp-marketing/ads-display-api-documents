@@ -1,0 +1,74 @@
+AdGroupAdServiceTextAd:
+  type: object
+  nullable: true
+  properties:
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文（1行目）です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Description text (line 1).<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    description2:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        説明文（2行目）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。
+        </div>
+        <div lang="en">
+        Description text (line 2).<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        タイトルです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Title.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        アプリ訴求キャンペーンで設定可能なリンク先URLについては<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=61528">こちら</a>をご参照ください。<br>
+        SET時は省略可能となります。<br>
+        ADD時、urlフィールドとfinalUrlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        urlフィールドを設定する場合、displayUrlの指定が必須になります。またその際は、finalUrl、smartphoneFinalUrl、trackingUrl、customParametersは指定不可です。<br>
+        SET時にfinalUrlを指定する場合、このフィールドの値はクリアされます。<br>
+        ※現在は指定できません。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        For information about the destination URL that can be set with campaigns for "app promotion", refer to <a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=en&aid=39261">this page</a>.<br>
+        This field is optional in SET operation.<br>
+        In ADD operation, url field and finalUrl field cannot be set at the same time, and one of them must be set.<br>
+        When url field is specified, displayUrl must be specified. In that case, finalUrl, smartphoneFinalUrl, trackingUrl and customParameters cannot be specified.<br>
+        If finalUrl is specified in SET operation, the value in this field will be cleared.<br>
+        ※Not available.
+        </div>
+  title: AdGroupAdServiceTextAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがTEXT_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceTextAd object describes the Text Ad information.<br>
+    This field is optional.<br>
+    *If adType is TEXT_AD, this field is required in ADD operation.
+    </div>

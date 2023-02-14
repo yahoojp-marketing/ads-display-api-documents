@@ -9,9 +9,11 @@ AccountServiceIsManagerAccount:
   description: |
     <div lang="ja">
     AccountServiceIsManagerAccountは、MCCアカウントかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">
     AccountServiceIsManagerAccount indicates whether it is an MCC account.<br>
+    Although this field will be returned in the response, it will be ignored on input.
     </div>
     <dl class=term>
       <dt class="term__item">TRUE</dt>

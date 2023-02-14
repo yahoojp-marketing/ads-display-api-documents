@@ -8,7 +8,7 @@ ConversionTrackerServiceStatus:
   title: ConversionTrackerServiceStatus
   description: |
     <div lang="ja">
-    コンバージョントラッカー情報のステータスを表します。<br>
+    コンバージョン設定のステータスを表します。<br>
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。
     </div>
     <div lang="en">

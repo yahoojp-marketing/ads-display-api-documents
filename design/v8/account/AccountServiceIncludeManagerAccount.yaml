@@ -9,8 +9,14 @@ AccountServiceIncludeManagerAccount:
     - UNKNOWN
   title: AccountServiceIncludeManagerAccount
   description: |
-    <div lang="ja">AccountServiceIncludeManagerAccountオブジェクトは、取得するアカウントにMCCアカウントを含むかどうかを表します。</div>
-    <div lang="en">AccountServiceIncludeManagerAccount represents whether the account to be retrieved includes an MCC account.</div>
+    <div lang="ja">
+    AccountServiceIncludeManagerAccountオブジェクトは、取得するアカウントにMCCアカウントを含むかどうかを表します。<br>
+    このフィールドは、省略可能となります。
+    </div>
+    <div lang="en">
+    AccountServiceIncludeManagerAccount represents whether the account to be retrieved includes an MCC account.<br>
+    This field is optional.
+    </div>
     <dl class=term>
       <dt class="term__item">ONLY_MANAGER</dt>
       <dd class="term__desc"><span lang="ja">MCCアカウントのみです。</span><span lang="en">MCC account only.</span></dd>

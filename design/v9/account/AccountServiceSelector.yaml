@@ -17,8 +17,12 @@ AccountServiceSelector:
       type: string
       nullable: true
       description: |
-        <div lang="ja">アカウント名です。</div>
-        <div lang="en">Account name.</div>
+        <div lang="ja">アカウント名です。<br>
+        このフィールドは、省略可能となります。<br>
+        </div>
+        <div lang="en">Account name.<br>
+        This field is optional.<br>
+        </div>
     accountStatuses:
       type: array
       nullable: true

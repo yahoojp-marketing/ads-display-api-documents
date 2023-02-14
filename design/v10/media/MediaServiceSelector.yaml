@@ -1,0 +1,61 @@
+MediaServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">The account ID.</div>
+    approvalStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'MediaServiceApprovalStatus.yaml#/MediaServiceApprovalStatus'
+      maxItems: 4
+    mediaIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 500
+      description: |
+        <div lang="ja">画像IDです。</div>
+        <div lang="en">The media ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'MediaServiceUserStatus.yaml#/MediaServiceUserStatus'
+      maxItems: 2
+    createdDateRange:
+      $ref: 'MediaServiceCreatedDateRange.yaml#/MediaServiceCreatedDateRange'
+  title: MediaServiceSelector
+  description: |
+    <div lang="ja">MediaServiceSelectorオブジェクトは、操作の対象とする画像およびフィルタ条件を表します。</div>
+    <div lang="en">The MediaServiceSelector object serves operation target media and filtering condition.</div>

@@ -1,0 +1,13 @@
+RecommendationServiceInsufficientClicks:
+  type: object
+  nullable: true
+  properties:
+    insufficientClicksCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceInsufficientClicksCampaign.yaml#/RecommendationServiceInsufficientClicksCampaign'
+  title: RecommendationServiceInsufficientClicks
+  description: |
+    <div lang="ja">RecommendationServiceInsufficientClicksオブジェクトは、クリック数が少ないキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceInsufficientClicks objects describes recommendation information about the campaign that need to increase clicks.</div>

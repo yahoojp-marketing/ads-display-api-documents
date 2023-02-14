@@ -1,0 +1,139 @@
+AdGroupAdServiceCarousel:
+  type: object
+  nullable: true
+  properties:
+    displayOrder:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        カルーセルの表示順です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※指定しない場合は自動で設定されます。
+        </div>
+        <div lang="en">
+        Carousel display order.<br>
+        This field is optional in ADD and SET operation.<br>
+        *If not specified, it will be set automatically.
+        </div>
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告のタイトルです。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Ad title.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の説明文です。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Ad description.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンク先URLです。<br>
+        ADD時、urlフィールドとfinalUrlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        SET時は省略可能となります。<br>
+        SET時にfinalUrlを指定する場合、このフィールドの値はクリアされます。<br>
+        ※現在は指定できません。
+        </div>
+        <div lang="en">
+        Destination URL.<br>
+        In ADD operation, url field and finalUrl field cannot be set at the same time, and one of them must be set.<br>
+        This field is optional in SET operation.<br>
+        If finalUrl is specified in SET operation, the value in this field will be cleared.<br>
+        ※Not available.
+        </div>
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        掲載拒否の理由です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reject reason on editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+        finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
+        SET時は省略可能となります。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
+        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
+        - iOSの場合：itunes.apple.com, apps.apple.com<br>
+        - Androidの場合：play.google.com
+        </div>
+        <div lang="en">Final URL.<br>
+        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+        If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
+        This field is optional in SET operation.<br>
+        If url is specified in SET operation, the value in this field will be cleared.<br>
+        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
+        - For iOS : itunes.apple.com, apps.apple.com<br>
+        - For Android : play.google.com
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+        </div>
+        <div lang="en">Final URL (smartphone).<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
+        If url is specified in SET operation, the value in this field will be cleared.
+        </div>
+    isRemoveSmartphoneFinalUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+  title: AdGroupAdServiceCarousel
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceCarouselオブジェクトはカルーセル広告の詳細情報を表します。<br>
+    ※SET時には、現在のCarouselsに含まれるCarouselが全て指定したCarouselsに置き換わります。<br>
+    ※特定のCarousel単体を指定して変更することはできません。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceCarousel object describes the detailed information of carousel ad.<br>
+    *In SET operation, all Carousel included in the current Carousels will be replaced with the specified Carousels.<br>
+    *Cannot specify a specific Carousel alone.
+    </div>

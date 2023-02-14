@@ -1,0 +1,73 @@
+FeedDataServiceRecord:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    completeDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">取り込み完了日(yyyyMMdd)</div>
+        <div lang="en">
+        Complete date.<br>
+        Format: yyyyMMdd
+        </div>
+    errorCount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">不備がある商品情報の件数</div>
+        <div lang="en">Number of item list with error.</div>
+    errorRate:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">エラー率</div>
+        <div lang="en">Error rate.</div>
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">Feedを識別するId</div>
+        <div lang="en">Feed ID.</div>
+    fileUploadSource:
+      $ref: 'FeedDataServiceFileUploadSource.yaml#/FeedDataServiceFileUploadSource'
+    fileUploadStatus:
+      $ref: 'FeedDataServiceFileUploadStatus.yaml#/FeedDataServiceFileUploadStatus'
+    isDebug:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">trueはデバッグモードでの実行を意味します。</div>
+        <div lang="en">&#34;true&#34; means to run in debug mode.</div>
+    itemListUploadId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アップロードした商品情報を識別するID</div>
+        <div lang="en">Uploaded item list ID.</div>
+    itemListUploadType:
+      $ref: 'FeedDataServiceItemListUploadType.yaml#/FeedDataServiceItemListUploadType'
+    uploadDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード日(yyyyMMdd)</div>
+        <div lang="en">
+        Upload date.<br>
+        Format: yyyyMMdd
+        </div>
+  title: FeedDataServiceRecord
+  description: |
+    <div lang="ja">FeedDataServiceRecordオブジェクトは、アップロードした商品情報(ファイル形式)の状態を保持する。</div>
+    <div lang="en">FeedDataServiceRecord object retains status of uploaded item list(file format).</div>

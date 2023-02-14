@@ -1,0 +1,43 @@
+AudienceListServiceData:
+  type: object
+  nullable: true
+  properties:
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        組み合わせ対象のオーディエンスリストIDです。<br>
+        このフィールドは、ADDおよびSET時に必須となります。
+        </div>
+        <div lang="en">
+        Audience list ID that is subject to the combination.<br>
+        This field is required in ADD and SET operation.
+        </div>
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">組み合わせ対象のオーディエンスリストの名前です。</div>
+        <div lang="en">Audience list name that is subject to the combination.</div>
+    audienceListNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">組み合わせ対象のオーディエンスリストの名前(英語)です。<br>
+        共通オーディエンスリストの場合のみ返却されます。
+        </div>
+        <div lang="en">Audience list name (Eng) that is subject to the combination.<br>
+        This field is returned when the audience list is shared audience list.
+        </div>
+  title: AudienceListServiceData
+  description: |
+    <div lang="ja">
+    AudienceListServiceDataオブジェクトは、オーディエンスリストを表します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceData object displays the audience list. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>

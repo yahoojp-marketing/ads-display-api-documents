@@ -100,8 +100,12 @@ tags:
   - name: SearchKeywordIdeaService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">SearchKeywordIdeaServiceは、サーチターゲティング対象キーワードを取得します。</div>
-      <div lang="en">SearchKeywordIdeaService retrieves the keyword for search targeting.</div>
+      <div lang="ja">SearchKeywordIdeaServiceは、サーチターゲティング対象キーワードを取得します。<br>
+      定期的にサーチキーワードの見直しを行いますので、サーチキーワードの定期的な取得をお願いいたします。
+      </div>
+      <div lang="en">SearchKeywordIdeaService retrieves the keyword for search targeting.<br>
+      We will review our search keywords on a regular basis, so make sure to acquire search keywords regularly.
+      </div>
   - name: SearchKeywordListService
     description: |
       <label class="campaign"></label>
@@ -148,20 +152,20 @@ tags:
         - Any ad data without actual performance is not output for all report types.<br>
         - Report download jobs will be automatically deleted after a week (7 days) from requested.<br>
       </div>
-      <h2 lang="ja">レポートフィールド</h2>
-      <h2 lang="en">Report Fields</h2>
+      <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+      <h2 lang="en" class="reportFields__title">Report Fields</h2>
       <ul>
-      <li><div lang="ja"><a href="./reports/v7/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div></li><li><div lang="en"><a href="./reports/v7/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v7/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div></li><li><div lang="en"><a href="./reports/v7/SITE_CATEGORY.csv" download>Site category report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/URL.csv" download>配信先URLレポート</a></div></li><li><div lang="en"><a href="./reports/v7/URL.csv" download>Ad Delivery URL report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/REACH.csv" download>リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v7/REACH.csv" download>Reach report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div></li><li><div lang="en"><a href="./reports/v7/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div></li><li><div lang="en"><a href="./reports/v7/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div></li><li><div lang="en"><a href="./reports/v7/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/LABEL.csv" download>ラベルレポート</a></div></li><li><div lang="en"><a href="./reports/v7/LABEL.csv" download>Label report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div></li><li><div lang="en"><a href="./reports/v7/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v7/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div></li><li><div lang="en"><a href="./reports/v7/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v7/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div><div lang="en"><a href="./reports/v7/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v7/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v7/URL.csv" download>Ad Delivery URL report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v7/REACH.csv" download>Reach report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v7/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v7/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v7/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v7/LABEL.csv" download>Label report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v7/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v7/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v7/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
       </ul>
   - name: MediaService
     description: |
@@ -221,8 +225,8 @@ tags:
   - name: ConversionTrackerService
     description: |
       <label class="account"></label>
-      <div lang="ja">ConversionTrackerServiceでは、コンバージョントラッカー情報の操作（取得、追加、更新）を行います。</div>
-      <div lang="en">ConversionTrackerService is to get, add, and update ConversionTracker information.</div>
+      <div lang="ja">ConversionTrackerServiceでは、コンバージョン設定の操作（取得、追加、更新）を行います。</div>
+      <div lang="en">ConversionTrackerService is to get, add, and update ConversionTracker settings.</div>
   - name: BalanceService
     description: |
       <label class="account"></label>
@@ -5818,8 +5822,8 @@ paths:
   /ConversionTrackerService/get:
     post:
       description: |
-        <div lang="ja">指定アカウントのコンバージョントラッカー情報を取得します。</div>
-        <div lang="en">Get ConversionTracker information of specified account.</div>
+        <div lang="ja">指定アカウントのコンバージョン設定を取得します。</div>
+        <div lang="en">Get ConversionTracker settings of specified account.</div>
       tags:
         - ConversionTrackerService
       requestBody:
@@ -5869,7 +5873,7 @@ paths:
   /ConversionTrackerService/add:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を追加します。</div>
+        <div lang="ja">コンバージョン設定を追加します。</div>
         <div lang="en">Add Conversion Tracker information.</div>
       tags:
         - ConversionTrackerService
@@ -5920,7 +5924,7 @@ paths:
   /ConversionTrackerService/set:
     post:
       description: |
-        <div lang="ja">コンバージョントラッカー情報を更新します。</div>
+        <div lang="ja">コンバージョン設定を更新します。</div>
         <div lang="en">Update Conversion Tracker information.</div>
       tags:
         - ConversionTrackerService
