@@ -1,0 +1,3897 @@
+
+
+------
+diff -ru v9/Route.yaml v10/Route.yaml
+--- v9/Route.yaml	2023-02-09 12:03:16.000000000 +0900
++++ v10/Route.yaml	2023-02-14 13:17:26.000000000 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
+-  version: 'v9'
++  version: 'v10'
+   description: |
+     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v9/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v10/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [yahooads]
+
+ servers:
+-  - url: https://ads-display.yahooapis.jp/api/v9
++  - url: https://ads-display.yahooapis.jp/api/v10
+
+ tags:
+   - name: AbTestService
+@@ -165,17 +165,17 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v9/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v9/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div><div lang="en"><a href="./reports/v9/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v9/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v9/URL.csv" download>Ad Delivery URL report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v9/REACH.csv" download>Reach report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v9/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v9/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v9/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v9/LABEL.csv" download>Label report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v9/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v9/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v9/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v10/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div><div lang="en"><a href="./reports/v10/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v10/SITE_CATEGORY.csv" download>Site category report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v10/URL.csv" download>Ad Delivery URL report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v10/REACH.csv" download>Reach report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v10/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v10/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v10/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v10/LABEL.csv" download>Label report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v10/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v10/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v10/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+       </ul>
+   - name: MediaService
+     description: |
+@@ -3279,6 +3279,128 @@
+             application/json:
+               schema:
+                 $ref: 'dictionary/DictionaryServiceGetBusinessCategoryResponse.yaml#/DictionaryServiceGetBusinessCategoryResponse'
++  /DictionaryService/getSharedAudienceListInfo:
++    post:
++      description: |
++        <div lang="ja">共通オーディエンスリストの情報を取得します。<br>
++        ※現在利用できません
++        </div>
++        <div lang="en">Retrieves information of shared audience list.<br>
++        * Not Available.
++        </div>
++      tags:
++        - DictionaryService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'dictionary/DictionaryServiceSharedAudienceListInfoSelector.yaml#/DictionaryServiceSharedAudienceListInfoSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
++                <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'dictionary/DictionaryServiceGetSharedAudienceListInfoResponse.yaml#/DictionaryServiceGetSharedAudienceListInfoResponse'
++  /DictionaryService/getSharedAudienceListMaster:
++    post:
++      description: |
++        <div lang="ja">共通オーディエンスリストのマスタ情報を取得します。<br>
++        ※現在利用できません
++        </div>
++        <div lang="en">Retrieves information of shared audience list master.<br>
++        * Not Available.
++        </div>
++      tags:
++        - DictionaryService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'dictionary/DictionaryServiceSharedAudienceListMasterSelector.yaml#/DictionaryServiceSharedAudienceListMasterSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
++                <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
++                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
++                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'dictionary/DictionaryServiceGetSharedAudienceListMasterResponse.yaml#/DictionaryServiceGetSharedAudienceListMasterResponse'
+   /SearchKeywordIdeaService/get:
+     post:
+       description: |
+@@ -4780,8 +4902,8 @@
+             $ref: 'video/VideoServiceUserStatus.yaml#/VideoServiceUserStatus'
+           required: true
+           description: |
+-            <div lang="ja">ユーザーにより広告配信の有無を調整できる設定です。</div>
+-            <div lang="en">Ad delivery status that can be set by an user is served.</div>
++            <div lang="ja">配信設定です。</div>
++            <div lang="en">Delivery settings..</div>
+       requestBody:
+         content:
+           multipart/form-data:
+
+
+------
+diff -ru v9/account/Account.yaml v10/account/Account.yaml
+--- v9/account/Account.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/account/Account.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -75,6 +75,19 @@
+         <div lang="en">Contact Business ID.<br>
+         If isManagerAccount is "TRUE", this field will not be returned and will be ignored on request.<br>
+         If isTestAccount is "TRUE", this field cannot be updated.</div>
++    optimizationScore:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">最適化スコアです。<br>
++        最適化スコアは、0.0から1.0の範囲の値を返却します。<br>
++        アカウントの最適化スコアが計算不可の場合、最適化スコアは返却されません。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
++        <div lang="en">Optimization score.<br>
++        Optimization score returns a value ranging from 0.0 to 1.0.<br>
++        If the optimization score an account has is not computable, the optimization score will not be returned.
++        Although this field will be returned in the response, it will be ignored on input.</div>
+   title: Account
+   description: |
+     <div lang="ja">Accountオブジェクトは、アカウント情報を示します。<br>
+
+
+------
+diff -ru v9/accountmanagement/AccountManagementServiceDeliveryStatus.yaml v10/accountmanagement/AccountManagementServiceDeliveryStatus.yaml
+--- v9/accountmanagement/AccountManagementServiceDeliveryStatus.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/accountmanagement/AccountManagementServiceDeliveryStatus.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -12,7 +12,7 @@
+     このフィールドは、省略可能となります。その際、ADD時のデフォルト設定値はACTIVEとなります。
+     </div>
+     <div lang="en">
+-    AccountManagementServiceDeliveryStatus object describes account delivery status.<br>
++    AccountManagementServiceDeliveryStatus object describes account delivery settings.<br>
+     This field is optional. The default value in ADD operation will be ACTIVE.
+     </div>
+     <dl class=term>
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceCpcBiddingScheme.yaml v10/adgroup/AdGroupServiceCpcBiddingScheme.yaml
+--- v9/adgroup/AdGroupServiceCpcBiddingScheme.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroup/AdGroupServiceCpcBiddingScheme.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -17,6 +17,8 @@
+         This field is optional in ADD and SET operation.<br>
+         *This can only be specified when campaignBiddingStrategyType is CPC.
+         </div>
++    isRemoveCpc:
++      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+   title: AdGroupServiceCpcBiddingScheme
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceCpvBiddingScheme.yaml v10/adgroup/AdGroupServiceCpvBiddingScheme.yaml
+--- v9/adgroup/AdGroupServiceCpvBiddingScheme.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroup/AdGroupServiceCpvBiddingScheme.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -17,6 +17,8 @@
+         This field is optional in ADD and SET operation.<br>
+         *This can only be specified when campaignBiddingStrategyType is CPV.
+         </div>
++    isRemoveCpv:
++      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+   title: AdGroupServiceCpvBiddingScheme
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceMaximizeConversionsBiddingScheme.yaml v10/adgroup/AdGroupServiceMaximizeConversionsBiddingScheme.yaml
+--- v9/adgroup/AdGroupServiceMaximizeConversionsBiddingScheme.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroup/AdGroupServiceMaximizeConversionsBiddingScheme.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -17,11 +17,13 @@
+         This field is optional in ADD and SET operation.<br>
+         *This can only be specified when campaignBiddingStrategyType is MAXIMIZE_CONVERSIONS.
+         </div>
++    isRemoveTargetCpa:
++      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+   title: AdGroupServiceMaximizeConversionsBiddingScheme
+   description: |
+     <div lang="ja">
+     AdGroupServiceMaximizeConversionsBiddingSchemeオブジェクトは、広告グループ目標単価（tCPA）の設定情報を表します。
+     </div>
+     <div lang="en">
+-    AdGroupServiceCpcBiddingScheme object holds configuration information of Target CPA (tCPA) of ad group.
++    AdGroupServiceMaximizeConversionsBiddingScheme object holds configuration information of Target CPA (tCPA) of ad group.
+     </div>
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceSelector.yaml v10/adgroup/AdGroupServiceSelector.yaml
+--- v9/adgroup/AdGroupServiceSelector.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroup/AdGroupServiceSelector.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -18,7 +18,7 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 500
++      maxItems: 1000
+       description: |
+         <div lang="ja">検索条件：広告グループID</div>
+         <div lang="en">Search Condition: Ad group ID.</div>
+@@ -29,11 +29,11 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 500
++      maxItems: 1000
+       description: |
+         <div lang="ja">検索条件：キャンペーンID</div>
+         <div lang="en">Search Condition: Campaign ID.</div>
+-    containsLabelIdFlg:
++    containsLabel:
+       type: boolean
+       nullable: true
+       description: |
+
+
+------
+diff -ru v9/adgroup/AdGroupServiceVcpmBiddingScheme.yaml v10/adgroup/AdGroupServiceVcpmBiddingScheme.yaml
+--- v9/adgroup/AdGroupServiceVcpmBiddingScheme.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroup/AdGroupServiceVcpmBiddingScheme.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -17,6 +17,8 @@
+         This field is optional in ADD and SET operation.<br>
+         *This can only be specified when campaignBiddingStrategyType is vCPM.
+         </div>
++    isRemoveVcpm:
++      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+   title: AdGroupServiceVcpmBiddingScheme
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v9/adgroupad/AdGroupAd.yaml v10/adgroupad/AdGroupAd.yaml
+--- v9/adgroupad/AdGroupAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -67,8 +67,6 @@
+         Ad name.<br>
+         This field is required in ADD operation, and will be optional in SET operation.
+         </div>
+-    adStyle:
+-      $ref: 'AdGroupAdServiceAdStyle.yaml#/AdGroupAdServiceAdStyle'
+     approvalStatus:
+       $ref: 'AdGroupAdServiceApprovalStatus.yaml#/AdGroupAdServiceApprovalStatus'
+     campaignId:
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAd.yaml v10/adgroupad/AdGroupAdServiceAd.yaml
+--- v9/adgroupad/AdGroupAdServiceAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -4,26 +4,98 @@
+   properties:
+     adType:
+       $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+-    bannerImageAd:
+-      $ref: 'AdGroupAdServiceBannerImageAd.yaml#/AdGroupAdServiceBannerImageAd'
+-    bannerVideoAd:
+-      $ref: 'AdGroupAdServiceBannerVideoAd.yaml#/AdGroupAdServiceBannerVideoAd'
+-    dynamicAd:
+-      $ref: 'AdGroupAdServiceDynamicAd.yaml#/AdGroupAdServiceDynamicAd'
+-    mobileAd:
+-      $ref: 'AdGroupAdServiceMobileAd.yaml#/AdGroupAdServiceMobileAd'
+-    posAd:
+-      $ref: 'AdGroupAdServicePosAd.yaml#/AdGroupAdServicePosAd'
+-    responsiveImageAd:
+-      $ref: 'AdGroupAdServiceResponsiveImageAd.yaml#/AdGroupAdServiceResponsiveImageAd'
+-    responsiveVideoAd:
+-      $ref: 'AdGroupAdServiceResponsiveVideoAd.yaml#/AdGroupAdServiceResponsiveVideoAd'
+-    staticFrameAd:
+-      $ref: 'AdGroupAdServiceStaticFrameAd.yaml#/AdGroupAdServiceStaticFrameAd'
+-    textAd:
+-      $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
++    mainMediaFormat:
++      $ref: 'AdGroupAdServiceMainMediaFormat.yaml#/AdGroupAdServiceMainMediaFormat'
++    bannerAd:
++      $ref: 'AdGroupAdServiceBannerAd.yaml#/AdGroupAdServiceBannerAd'
+     carouselAd:
+       $ref: 'AdGroupAdServiceCarouselAd.yaml#/AdGroupAdServiceCarouselAd'
++    dynamicDisplayAd:
++      $ref: 'AdGroupAdServiceDynamicDisplayAd.yaml#/AdGroupAdServiceDynamicDisplayAd'
++    responsiveAd:
++      $ref: 'AdGroupAdServiceResponsiveAd.yaml#/AdGroupAdServiceResponsiveAd'
++    textAd:
++      $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
++    customParameters:
++      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
++    displayUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">
++        表示URLです。<br>
++        SET時、このフィールドは省略可能となります。<br>
++        ADD時にurlを指定する場合、このフィールドは必須です。<br>
++        ADD時にfinalUrlを指定する場合、このフィールドを指定することはできません。代わりにfinalUrlから生成された値が自動で設定されます。<br>
++        ただし、キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
++        - iOSの場合：itunes.apple.com<br>
++        - Androidの場合：play.google.com
++        </div>
++        <div lang="en">
++        Display URL.<br>
++        This field is optional in SET operation.<br>
++        If you specify url in ADD operation, this field is required.<br>
++        When finalUrl is specified in ADD operation, this field cannot be specified. Instead, the value generated from finalUrl will be set automatically.<br>
++        However, not allowed for ADD and SET when a campaign goal is "app promotion". Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
++        - For iOS : itunes.apple.com<br>
++        - For Android : play.google.com
++        </div>
++    displayUrlLevel:
++      $ref: 'AdGroupAdServiceDisplayUrlLevel.yaml#/AdGroupAdServiceDisplayUrlLevel'
++    finalUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">最終リンク先URLです。<br>
++        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
++        finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
++        SET時は省略可能となります。<br>
++        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
++        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
++        - iOSの場合：itunes.apple.com, apps.apple.com<br>
++        - Androidの場合：play.google.com
++        </div>
++        <div lang="en">Final URL.<br>
++        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
++        If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
++        This field is optional in SET operation.<br>
++        If url is specified in SET operation, the value in this field will be cleared.<br>
++        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
++        - For iOS : itunes.apple.com, apps.apple.com<br>
++        - For Android : play.google.com
++        </div>
++    smartphoneFinalUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">スマートフォン向けURLです。<br>
++        finalUrlを指定するときのみ、任意で指定できます。<br>
++        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
++        SET時にurlを指定する場合、このフィールドの値はクリアされます。
++        </div>
++        <div lang="en">Final URL (smartphone).<br>
++        This field can be optionally specified only when specifying finalUrl.<br>
++        Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
++        If url is specified in SET operation, the value in this field will be cleared.
++        </div>
++    isRemoveSmartphoneFinalUrl:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    trackingUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">トラッキングURLです。<br>
++        ADD時、このフィールドは省略可能となります。<br>
++        finalUrlを指定するときのみ、任意で指定できます。<br>
++        SET時にurlを指定する場合、このフィールドの値はクリアされます。
++        </div>
++        <div lang="en">Tracking URL.<br>
++        This field is optional in ADD operation.<br>
++        This field can be optionally specified only when specifying finalUrl.<br>
++        If url is specified in SET operation, the value in this field will be cleared.
++        </div>
++    isRemoveTrackingUrl:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+   title: AdGroupAdServiceAd
+   description: |
+     <div lang="ja">
+Only in v9/adgroupad: AdGroupAdServiceAdStyle.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAdType.yaml v10/adgroupad/AdGroupAdServiceAdType.yaml
+--- v9/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAdType.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,17 +2,11 @@
+   type: string
+   nullable: true
+   enum:
+-  - TEXT_LONG_AD1
+-  - TEXT_SHORT_AD1
+-  - TEXT_SHORT_AD2
+-  - POS_AD
+-  - RESPONSIVE_IMAGE_AD
+-  - STATIC_FRAME_AD
+-  - RESPONSIVE_VIDEO_AD
+-  - DYNAMIC_AD
+-  - BANNER_IMAGE_AD
+-  - BANNER_VIDEO_AD
++  - BANNER_AD
+   - CAROUSEL_AD
++  - DYNAMIC_DISPLAY_AD
++  - RESPONSIVE_AD
++  - TEXT_AD
+   - UNKNOWN
+   title: AdGroupAdServiceAdType
+   description: |
+@@ -27,28 +21,16 @@
+     In addition, the number of available characters of ad creatives vary with selected devices.
+     </div>
+     <dl class=term>
+-      <dt class="term__item">TEXT_SHORT_AD2</dt>
+-      <dd class="term__desc"><span lang="ja">「タイトル14文字、説明文19文字」のショートテキスト広告です。<br>モバイルの場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Short text ad is &#34;title is 14 characters&#34; and &#34;description is 19 characters&#34;.<br>It is available for Mobile.<br>∗Currently this ad type is not available for ad creation.</span></dd>
+-      <dt class="term__item">RESPONSIVE_IMAGE_AD</dt>
+-      <dd class="term__desc"><span lang="ja">配信される広告表示枠の形に合わせて画像のサイズ変更およびトリミングが行われるレスポンシブ広告です。</span><span lang="en">Responsive Ad which flexibly adjusts its image size and trimmed to the size of ad place.</span></dd>
+-      <dt class="term__item">STATIC_FRAME_AD</dt>
+-      <dd class="term__desc"><span lang="ja">配信される広告表示枠の形に合わせて3種類のレイアウトが利用可能な広告枠サイズ固定広告です。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Static frame ad which flexibly adjusts to 3 layout types to the size of ad place.<br>*Currently this ad type is not available for ad creation.</span></dd>
+-      <dt class="term__item">BANNER_VIDEO_AD</dt>
+-      <dd class="term__desc"><span lang="ja">動画で構成される広告です。</span><span lang="en">Ad composed of video.</span></dd>
+-      <dt class="term__item">RESPONSIVE_VIDEO_AD</dt>
+-      <dd class="term__desc"><span lang="ja">入稿内容（テキスト、動画、ボタンなど）の構成要素を組み合わせ、多様なデバイスや広告掲載面に対応したクリエイティブを表示できる広告です。</span><span lang="en">Video ad which displays a specified video on the ad place.</span></dd>
+-      <dt class="term__item">DYNAMIC_AD</dt>
+-      <dd class="term__desc"><span lang="ja">ウェブサイトや表示するデバイスに合わせて、画像の大きさや商品の組み合わせなど、さまざまな形式で商品を表示する広告です。</span><span lang="en">Dynamic ad which displays products in various formats, such as image size or product combination according to website and device to be displayed.</span></dd>
+-      <dt class="term__item">TEXT_LONG_AD1</dt>
+-      <dd class="term__desc"><span lang="ja">「タイトル15文字、説明文19文字-19文字」のテキスト広告です。PC、スマートフォン・タブレット端末の場合にご利用いただけます。（推奨）</span><span lang="en">Text ad is &#34;title is 15 characters&#34; and &#34;description is 19 characters / 19 characters&#34;.<br>It is available for PC, Smartphone and Tablet. (Recommended)</span></dd>
+-      <dt class="term__item">TEXT_SHORT_AD1</dt>
+-      <dd class="term__desc"><span lang="ja">「タイトル12文字、説明文12文字」のショートテキスト広告です。<br>モバイルの場合にご利用いただけます。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Short text ad is &#34;title is 12 characters&#34; and &#34;description is 12 characters&#34;.<br>It is available for Mobile.<br>∗Currently this ad type is not available for ad creation.</span></dd>
+-      <dt class="term__item">BANNER_IMAGE_AD</dt>
+-      <dd class="term__desc"><span lang="ja">画像で構成される広告です。</span><span lang="en">Ad composed of image.</span></dd>
+-      <dt class="term__item">POS_AD</dt>
+-      <dd class="term__desc"><span lang="ja">「説明文33文字」の掲載位置指定テキストです。<br>※現在、こちらの広告タイプでは入稿できません。</span><span lang="en">Positioning text is &#34;description is 33 characters&#34;.<br>*Currently this ad type is not available for ad creation.</span></dd>
++      <dt class="term__item">BANNER_AD</dt>
++      <dd class="term__desc"><span lang="ja">バナー広告です。</span><span lang="en">Banner ad.</span></dd>
+       <dt class="term__item">CAROUSEL_AD</dt>
+       <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
++      <dt class="term__item">DYNAMIC_DISPLAY_AD</dt>
++      <dd class="term__desc"><span lang="ja">動的ディスプレイ広告です。</span><span lang="en">Dynamic display ad.</span></dd>
++      <dt class="term__item">RESPONSIVE_AD</dt>
++      <dd class="term__desc"><span lang="ja">レスポンシブ広告です。</span><span lang="en">Responsive Ad.</span></dd>
++      <dt class="term__item">TEXT_AD</dt>
++      <dd class="term__desc"><span lang="ja">テキスト広告です。</span><span lang="en">Text ad.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceAsset.yaml v10/adgroupad/AdGroupAdServiceAsset.yaml
+--- v9/adgroupad/AdGroupAdServiceAsset.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceAsset.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -22,8 +22,12 @@
+     <div lang="ja">
+     AdGroupAdServiceAssetオブジェクトは、レスポンシブディスプレイ広告の情報を表します。<br>
+     詳細は<a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=ja&aid=51344" target="_blank">レスポンシブ（画像）</a>を参照してください。<br>
+-    このフィールドは、省略可能となります。</div>
++    このフィールドは、省略可能となります。<br>
++    ※mainMediaFormatがIMAGEの場合にのみ指定できます。
++    </div>
+     <div lang="en">
+     AdGroupAdServiceAsset object describes the Responsive Display Ad information.<br>
+     More details are described on <a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=en&aid=28655">Responsive（Image）</a>.<br>
+-    This field is optional.</div>
++    This field is optional.<br>
++    *If mainMediaFormat is IMAGE, this field can be specified.
++    </div>
+Only in v10/adgroupad: AdGroupAdServiceBannerAd.yaml
+Only in v9/adgroupad: AdGroupAdServiceBannerImageAd.yaml
+Only in v9/adgroupad: AdGroupAdServiceBannerVideoAd.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceCarouselAd.yaml v10/adgroupad/AdGroupAdServiceCarouselAd.yaml
+--- v9/adgroupad/AdGroupAdServiceCarouselAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceCarouselAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -4,72 +4,6 @@
+   properties:
+     buttonText:
+       $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+-    customParameters:
+-      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+-    displayUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">
+-        表示URLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
+-        ADD時にurlを指定する場合、このフィールドは必須です。<br>
+-        ADD時にfinalUrlを指定する場合、このフィールドを指定することはできません。代わりにfinalUrlから生成された値が自動で設定されます。<br>
+-        ただし、キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+-        - iOSの場合：itunes.apple.com<br>
+-        - Androidの場合：play.google.com
+-        </div>
+-        <div lang="en">
+-        Display URL.<br>
+-        This field is optional in ADD and SET operation.<br>
+-        If you specify url in ADD operation, this field is required.<br>
+-        When finalUrl is specified in ADD operation, this field cannot be specified. Instead, the value generated from finalUrl will be set automatically.<br>
+-        However, not allowed for ADD and SET when a campaign goal is "app promotion". Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
+-        - For iOS : itunes.apple.com<br>
+-        - For Android : play.google.com
+-        </div>
+-    displayUrlLevel:
+-      $ref: 'AdGroupAdServiceDisplayUrlLevel.yaml#/AdGroupAdServiceDisplayUrlLevel'
+-    finalUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">最終リンク先URLです。<br>
+-        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+-        finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
+-        SET時は省略可能となります。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
+-        - iOSの場合：itunes.apple.com, apps.apple.com<br>
+-        - Androidの場合：play.google.com
+-        </div>
+-        <div lang="en">Final URL.<br>
+-        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+-        If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is optional in SET operation.<br>
+-        If url is specified in SET operation, the value in this field will be cleared.<br>
+-        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
+-        - For iOS : itunes.apple.com, apps.apple.com<br>
+-        - For Android : play.google.com
+-        </div>
+-    smartphoneFinalUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">スマートフォン向けURLです。<br>
+-        finalUrlを指定するときのみ、任意で指定できます。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+-        </div>
+-        <div lang="en">Final URL (smartphone).<br>
+-        This field can be optionally specified only when specifying finalUrl.<br>
+-        Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
+-        If url is specified in SET operation, the value in this field will be cleared.
+-        </div>
+-    isRemoveSmartphoneFinalUrl:
+-      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+-    isRemoveTrackingUrl:
+-      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+     logoMediaId:
+       type: integer
+       nullable: true
+@@ -97,20 +31,6 @@
+         This field is required in ADD operation, and will be optional in SET operation.<br>
+         However, if campaignGoal is APP_PROMOTION, it will automatically be set to the same value as appName of campaign, and it cannot be set to any other value.
+         </div>
+-    trackingUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
+-        finalUrlを指定するときのみ、任意で指定できます。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+-        </div>
+-        <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
+-        This field can be optionally specified only when specifying finalUrl.<br>
+-        If url is specified in SET operation, the value in this field will be cleared.
+-        </div>
+     url:
+       type: string
+       nullable: true
+Only in v9/adgroupad: AdGroupAdServiceCarrierName.yaml
+Only in v9/adgroupad: AdGroupAdServiceDynamicAd.yaml
+Only in v10/adgroupad: AdGroupAdServiceDynamicDisplayAd.yaml
+Only in v10/adgroupad: AdGroupAdServiceMainMediaFormat.yaml
+Only in v9/adgroupad: AdGroupAdServiceMobileAd.yaml
+Only in v9/adgroupad: AdGroupAdServicePosAd.yaml
+Only in v10/adgroupad: AdGroupAdServiceResponsiveAd.yaml
+Only in v9/adgroupad: AdGroupAdServiceResponsiveImageAd.yaml
+Only in v9/adgroupad: AdGroupAdServiceResponsiveVideoAd.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceSelector.yaml v10/adgroupad/AdGroupAdServiceSelector.yaml
+--- v9/adgroupad/AdGroupAdServiceSelector.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceSelector.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -18,7 +18,7 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 500
++      maxItems: 1000
+       description: |
+         <div lang="ja">検索条件 : 広告グループID</div>
+         <div lang="en">Search Condition: Ad Group ID</div>
+@@ -29,7 +29,7 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 500
++      maxItems: 1000
+       description: |
+         <div lang="ja">検索条件 : 広告ID</div>
+         <div lang="en">Search Condition: Ad ID</div>
+@@ -46,11 +46,11 @@
+         type: integer
+         nullable: true
+         format: int64
+-      maxItems: 500
++      maxItems: 1000
+       description: |
+         <div lang="ja">検索条件 : キャンペーンID</div>
+         <div lang="en">Search Condition: Campaign ID</div>
+-    containsLabelIdFlg:
++    containsLabel:
+       type: boolean
+       nullable: true
+       description: |
+Only in v9/adgroupad: AdGroupAdServiceStaticFrameAd.yaml
+
+
+------
+diff -ru v9/adgroupad/AdGroupAdServiceTextAd.yaml v10/adgroupad/AdGroupAdServiceTextAd.yaml
+--- v9/adgroupad/AdGroupAdServiceTextAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgroupad/AdGroupAdServiceTextAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,8 +2,6 @@
+   type: object
+   nullable: true
+   properties:
+-    customParameters:
+-      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+     description:
+       type: string
+       nullable: true
+@@ -28,66 +26,6 @@
+         Description text (line 2).<br>
+         This field is optional in ADD and SET operation.
+         </div>
+-    displayUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">
+-        表示URLです。<br>
+-        SET時、このフィールドは省略可能となります。<br>
+-        ADD時にurlを指定する場合、このフィールドは必須です。<br>
+-        ADD時にfinalUrlを指定する場合、このフィールドを指定することはできません。代わりにfinalUrlから生成された値が自動で設定されます。<br>
+-        ただし、キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+-        - iOSの場合：itunes.apple.com<br>
+-        - Androidの場合：play.google.com
+-        </div>
+-        <div lang="en">
+-        Display URL.<br>
+-        This field is optional in SET operation.<br>
+-        If you specify url in ADD operation, this field is required.<br>
+-        When finalUrl is specified in ADD operation, this field cannot be specified. Instead, the value generated from finalUrl will be set automatically.<br>
+-        However, not allowed for ADD and SET when a campaign goal is "app promotion". Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
+-        - For iOS : itunes.apple.com<br>
+-        - For Android : play.google.com
+-        </div>
+-    displayUrlLevel:
+-      $ref: 'AdGroupAdServiceDisplayUrlLevel.yaml#/AdGroupAdServiceDisplayUrlLevel'
+-    finalUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">最終リンク先URLです。<br>
+-        SET時、このフィールドは省略可能となります。<br>
+-        ADD時、finalUrlフィールドとurlフィールドは同時に設定することはできず、どちらか片方の設定が必須となります。<br>
+-        finalUrlフィールドを設定する場合、smartphoneFinalUrl、trackingUrl、customParametersは任意になります。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
+-        - iOSの場合：itunes.apple.com, apps.apple.com<br>
+-        - Androidの場合：play.google.com
+-        </div>
+-        <div lang="en">Final URL.<br>
+-        This field is optional in SET operation.<br>
+-        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+-        If you specify finalUrl, smartphoneFinalUrl, trackingUrl and customParameters will be optional.<br>
+-        If url is specified in SET operation, the value in this field will be cleared.<br>
+-        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
+-        - For iOS : itunes.apple.com, apps.apple.com<br>
+-        - For Android : play.google.com
+-        </div>
+-    smartphoneFinalUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">スマートフォン向けURLです。<br>
+-        finalUrlを指定するときのみ、任意で指定できます。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+-        </div>
+-        <div lang="en">Final URL (smartphone).<br>
+-        This field can be optionally specified only when specifying finalUrl.<br>
+-        Not allowed for ADD and SET when a campaign goal is "app promotion".<br>
+-        If url is specified in SET operation, the value in this field will be cleared.
+-        </div>
+     headline:
+       type: string
+       nullable: true
+@@ -100,24 +38,6 @@
+         Title.<br>
+         This field is required in ADD operation, and will be optional in SET operation.
+         </div>
+-    isRemoveSmartphoneFinalUrl:
+-      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+-    isRemoveTrackingUrl:
+-      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+-    trackingUrl:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
+-        finalUrlを指定するときのみ、任意で指定できます。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+-        </div>
+-        <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
+-        This field can be optionally specified only when specifying finalUrl.<br>
+-        If url is specified in SET operation, the value in this field will be cleared.
+-        </div>
+     url:
+       type: string
+       nullable: true
+@@ -145,10 +65,10 @@
+     <div lang="ja">
+     AdGroupAdServiceTextAdオブジェクトは、テキスト広告の情報を表します。<br>
+     このフィールドは、省略可能となります。<br>
+-    ※ADD時、adTypeがTEXT_LONG_AD1の場合は必須です。
++    ※ADD時、adTypeがTEXT_ADの場合は必須です。
+     </div>
+     <div lang="en">
+     AdGroupAdServiceTextAd object describes the Text Ad information.<br>
+     This field is optional.<br>
+-    *If adType is TEXT_LONG_AD1, this field is required in ADD operation.
++    *If adType is TEXT_AD, this field is required in ADD operation.
+     </div>
+
+
+------
+diff -ru v9/adgrouptarget/AdGroupTargetServiceAudienceListTarget.yaml v10/adgrouptarget/AdGroupTargetServiceAudienceListTarget.yaml
+--- v9/adgrouptarget/AdGroupTargetServiceAudienceListTarget.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgrouptarget/AdGroupTargetServiceAudienceListTarget.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -16,6 +16,19 @@
+         Audience List name.<br>
+         Although this field will be returned in the response, it will be ignored on input.
+         </div>
++    audienceListNameEn:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">
++        オーディエンスリスト名(英語)です。<br>
++        共通オーディエンスリストの場合のみ返却されます。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">Audience list name (Eng).<br>
++        This field is returned when the audience list is shared audience list.<br>
++        Although this field will be returned in the response, it will be ignored on input.
++        </div>
+     audienceListType:
+       $ref: 'AdGroupTargetServiceAudienceListType.yaml#/AdGroupTargetServiceAudienceListType'
+   title: AdGroupTargetServiceAudienceListTarget
+
+
+------
+diff -ru v9/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml v10/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml
+--- v9/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -11,6 +11,10 @@
+   - CUSTOMER_DATA
+   - OFFERED_BY_YAHOO_JAPAN
+   - APP_USER
++  - YAHOO_JAPAN_AUDIENCE_DISCOVERY
++  - AFFINITY
++  - IN_MARKET
++  - ATTRIBUTE_LIFE_EVENTS
+   - UNKNOWN
+   title: AdGroupTargetServiceAudienceListType
+   description: |
+@@ -40,6 +44,14 @@
+       <dd class="term__desc"><span lang="ja">ヤフー提供データです。</span><span lang="en">Audience list (offered by Yahoo! JAPAN) data.</span></dd>
+       <dt class="term__item">APP_USER</dt>
+       <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
++      <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>
++      <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! JAPAN Audience Discovery.</span></dd>
++      <dt class="term__item">AFFINITY</dt>
++      <dd class="term__desc"><span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></dd>
++      <dt class="term__item">IN_MARKET</dt>
++      <dd class="term__desc"><span lang="ja">購買意向です。</span><span lang="en">In-market.</span></dd>
++      <dt class="term__item">ATTRIBUTE_LIFE_EVENTS</dt>
++      <dd class="term__desc"><span lang="ja">属性ライフイベントです。</span><span lang="en">Attribute-life-events.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v9/audiencelist/AudienceList.yaml v10/audiencelist/AudienceList.yaml
+--- v9/audiencelist/AudienceList.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/audiencelist/AudienceList.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -99,7 +99,17 @@
+     sourceType:
+       $ref: 'AudienceListServiceSourceType.yaml#/AudienceListServiceSourceType'
+     isShared:
+-      $ref: 'AudienceListServiceIsShared.yaml#/AudienceListServiceIsShared'
++      type: boolean
++      nullable: true
++      description: |
++        <div lang="ja">
++          AudienceListServiceIsSharedは、オーディエンスリストの共有ステータスを示します。<br>
++          このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++          AudienceListServiceIsShared describes the sharing status of the audience list.<br>
++          Although this field will be returned in the response, it will be ignored on input.
++        </div>
+     dataConnectionStopped:
+       $ref: 'AudienceListServiceDataConnectionStopped.yaml#/AudienceListServiceDataConnectionStopped'
+   title: AudienceList
+
+
+------
+diff -ru v9/audiencelist/AudienceListServiceContent.yaml v10/audiencelist/AudienceListServiceContent.yaml
+--- v9/audiencelist/AudienceListServiceContent.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/audiencelist/AudienceListServiceContent.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -16,6 +16,8 @@
+       $ref: 'AudienceListServiceCustomerDataAudienceList.yaml#/AudienceListServiceCustomerDataAudienceList'
+     appUserAudienceList:
+       $ref: 'AudienceListServiceAppUserAudienceList.yaml#/AudienceListServiceAppUserAudienceList'
++    yahooJapanAudienceDiscoveryAudienceList:
++      $ref: 'AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml#/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList'
+     audienceListType:
+       $ref: 'AudienceListServiceType.yaml#/AudienceListServiceType'
+   title: AudienceListServiceContent
+
+
+------
+diff -ru v9/audiencelist/AudienceListServiceData.yaml v10/audiencelist/AudienceListServiceData.yaml
+--- v9/audiencelist/AudienceListServiceData.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/audiencelist/AudienceListServiceData.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -21,6 +21,16 @@
+       description: |
+         <div lang="ja">組み合わせ対象のオーディエンスリストの名前です。</div>
+         <div lang="en">Audience list name that is subject to the combination.</div>
++    audienceListNameEn:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">組み合わせ対象のオーディエンスリストの名前(英語)です。<br>
++        共通オーディエンスリストの場合のみ返却されます。
++        </div>
++        <div lang="en">Audience list name (Eng) that is subject to the combination.<br>
++        This field is returned when the audience list is shared audience list.
++        </div>
+   title: AudienceListServiceData
+   description: |
+     <div lang="ja">
+Only in v9/audiencelist: AudienceListServiceIsShared.yaml
+
+
+------
+diff -ru v9/audiencelist/AudienceListServiceSourceType.yaml v10/audiencelist/AudienceListServiceSourceType.yaml
+--- v9/audiencelist/AudienceListServiceSourceType.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/audiencelist/AudienceListServiceSourceType.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -5,6 +5,7 @@
+   - SITE_RETARGETING_TAG
+   - CUSTOMER_DATA_FILE
+   - APP_DATA
++  - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+   - UNKNOWN
+   title: AudienceListServiceSourceType
+   description: |
+@@ -23,6 +24,8 @@
+       <dd class="term__desc"><span lang="ja">顧客データファイルです。</span><span lang="en">Customer data file.</span></dd>
+       <dt class="term__item">APP_DATA</dt>
+       <dd class="term__desc"><span lang="ja">アプリデータです。</span><span lang="en">App data.</span></dd>
++      <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>
++      <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! Audience Discovery.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v9/audiencelist/AudienceListServiceType.yaml v10/audiencelist/AudienceListServiceType.yaml
+--- v9/audiencelist/AudienceListServiceType.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/audiencelist/AudienceListServiceType.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -10,18 +10,19 @@
+   - WEBSITE_VISITORS
+   - CUSTOMER_DATA
+   - APP_USER
++  - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+   - UNKNOWN
+   title: AudienceListServiceType
+   description: |
+     <div lang="ja">
+     AudienceListServiceTypeは、オーディエンスリストの種別を表します。<br>
+     このフィールドは、ADDおよびSET時に必須となります。<br>
+-    ただし、ADD時にDEFAULT_LISTを指定することはできません。
++    ただし、ADD時にDEFAULT_LISTおよびYAHOO_JAPAN_AUDIENCE_DISCOVERYを指定することはできません。
+     </div>
+     <div lang="en">
+     AudienceListServiceType serves types of audience list. <br>
+     This field is required in ADD and SET operation.<br>
+-    However, DEFAULT_LIST cannot be specified in ADD operation.
++    However, DEFAULT_LIST and YAHOO_JAPAN_AUDIENCE_DISCOVERY cannot be specified in ADD operation.
+     </div>
+     <dl class=term>
+       <dt class="term__item">DEFAULT_LIST</dt>
+@@ -40,6 +41,8 @@
+       <dd class="term__desc"><span lang="ja">顧客データです。</span><span lang="en">Customer data.</span></dd>
+       <dt class="term__item">APP_USER</dt>
+       <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
++      <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>
++      <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! JAPAN Audience Discovery.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v10/audiencelist: AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml
+
+
+------
+diff -ru v9/auditlog/AuditLogServiceJob.yaml v10/auditlog/AuditLogServiceJob.yaml
+--- v9/auditlog/AuditLogServiceJob.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/auditlog/AuditLogServiceJob.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -112,8 +112,8 @@
+         Displays progress in integers from 1 to 100.<br>
+         Although this field will be returned in the response, it will be ignored on input.
+         </div>
+-    updateSource:
+-      $ref: 'AuditLogServiceUpdateSource.yaml#/AuditLogServiceUpdateSource'
++    sourceType:
++      $ref: 'AuditLogServiceSourceType.yaml#/AuditLogServiceSourceType'
+   title: AuditLogServiceJob
+   description: |
+     <div lang="ja">AuditLogServiceJobは操作履歴のダウンロードジョブの情報を保持するオブジェクトです。</div>
+Only in v10/auditlog: AuditLogServiceSourceType.yaml
+Only in v9/auditlog: AuditLogServiceUpdateSource.yaml
+
+
+------
+diff -ru v9/campaign/Campaign.yaml v10/campaign/Campaign.yaml
+--- v9/campaign/Campaign.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/campaign/Campaign.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -94,8 +94,8 @@
+       $ref: 'CampaignServiceConversionOptimizer.yaml#/CampaignServiceConversionOptimizer'
+     customParameters:
+       $ref: 'CampaignServiceCustomParameters.yaml#/CampaignServiceCustomParameters'
+-    deviceOsType:
+-      $ref: 'CampaignServiceDeviceOsType.yaml#/CampaignServiceDeviceOsType'
++    appOsType:
++      $ref: 'CampaignServiceAppOsType.yaml#/CampaignServiceAppOsType'
+     endDate:
+       type: string
+       nullable: true
+Only in v10/campaign: CampaignServiceAppOsType.yaml
+Only in v9/campaign: CampaignServiceDeviceOsType.yaml
+
+
+------
+diff -ru v9/campaign/CampaignServiceSelector.yaml v10/campaign/CampaignServiceSelector.yaml
+--- v9/campaign/CampaignServiceSelector.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/campaign/CampaignServiceSelector.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -22,7 +22,7 @@
+       description: |
+         <div lang="ja">検索条件 : キャンペーンID</div>
+         <div lang="en">Search Condition: Campaign ID</div>
+-    containsLabelIdFlg:
++    containsLabel:
+       type: boolean
+       nullable: true
+       description: |
+@@ -79,9 +79,6 @@
+       items:
+         $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+       maxItems: 2
+-      description: |
+-        <div lang="ja">検索条件 : 取得範囲</div>
+-        <div lang="en">Search Condition: Delivery status of user settings</div>
+     createdDateRange:
+       $ref: 'CampaignServiceCreatedDateRange.yaml#/CampaignServiceCreatedDateRange'
+     conversionGroupIds:
+Only in v10/dictionary: DictionaryServiceGetSharedAudienceListInfoResponse.yaml
+Only in v10/dictionary: DictionaryServiceGetSharedAudienceListMasterResponse.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListInfo.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListInfoPage.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListInfoSelector.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListInfoValue.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListMaster.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListMasterPage.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListMasterSelector.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListMasterValue.yaml
+Only in v10/dictionary: DictionaryServiceSharedAudienceListType.yaml
+Only in v10/feeddata: FeedDataServiceFileUploadSource.yaml
+Only in v9/feeddata: FeedDataServiceFileUploadSrc.yaml
+
+
+------
+diff -ru v9/feeddata/FeedDataServiceRecord.yaml v10/feeddata/FeedDataServiceRecord.yaml
+--- v9/feeddata/FeedDataServiceRecord.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/feeddata/FeedDataServiceRecord.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -39,8 +39,8 @@
+       description: |
+         <div lang="ja">Feedを識別するId</div>
+         <div lang="en">Feed ID.</div>
+-    fileUploadSrc:
+-      $ref: 'FeedDataServiceFileUploadSrc.yaml#/FeedDataServiceFileUploadSrc'
++    fileUploadSource:
++      $ref: 'FeedDataServiceFileUploadSource.yaml#/FeedDataServiceFileUploadSource'
+     fileUploadStatus:
+       $ref: 'FeedDataServiceFileUploadStatus.yaml#/FeedDataServiceFileUploadStatus'
+     isDebug:
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAd.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAd.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -49,11 +49,11 @@
+       description: |
+         <div lang="ja">
+         広告IDです。<br>
+-        このフィールドは、ADD時は無視され、SET時に必須となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Ad ID.<br>
+-        This field is required in SET operation, and will be optional in ADD operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adName:
+       type: string
+@@ -61,14 +61,12 @@
+       description: |
+         <div lang="ja">
+         広告名です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Ad name.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+-    adStyle:
+-      $ref: 'GuaranteedAdGroupAdServiceAdStyle.yaml#/GuaranteedAdGroupAdServiceAdStyle'
+     approvalStatus:
+       $ref: 'GuaranteedAdGroupAdServiceApprovalStatus.yaml#/GuaranteedAdGroupAdServiceApprovalStatus'
+     campaignId:
+@@ -132,11 +130,11 @@
+       description: |
+         <div lang="ja">
+         インプレッションビーコンURLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Impression beacon URL.<br>
+-        This field is optional in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     viewableImpressionBeaconUrls:
+       type: array
+@@ -147,16 +145,12 @@
+       description: |
+         <div lang="ja">
+         ビューアブルインプレッションビーコンURLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Viewable impression beacon URL.<br>
+-        This field is optional in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+-    isRemoveImpressionBeaconUrls:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+-    isRemoveViewableImpressionBeaconUrls:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     labels:
+       type: array
+       nullable: true
+@@ -169,11 +163,11 @@
+       description: |
+         <div lang="ja">
+         メディアIDです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID.<br>
+-        This field is optional in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     thirdPartyTrackingScriptUrl:
+       type: string
+@@ -181,16 +175,12 @@
+       description: |
+         <div lang="ja">
+         第三者計測スクリプトURLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Third party tracking script URL.<br>
+-        This field is optional in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+-    isRemoveBeaconUrls:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+-    isRemoveThirdPartyTrackingScriptUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     thirdPartyTrackingVendor:
+       type: string
+       nullable: true
+@@ -225,16 +215,14 @@
+       description: |
+         <div lang="ja">
+         リンク先更新予定日時です。<br>
+-        SET時は、finalUrlを指定した場合のみ指定できます。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※フォーマット：yyyyMMddHHmm<br>
+-        ※landingPageStatusがSPECIFIED_UPDATE_SCHEDULED_TIMEの場合は必須です。
+
+         </div>
+         <div lang="en">
+         The scheduled update date and time for the landing page.<br>
+-        *In SET operation, it can be specified only when finalUrl is specified.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         *format: yyyyMMddHHmm<br>
+-        ∗If landingPageStatus is SPECIFIED_UPDATE_SCHEDULED_TIME, this field is required.
+         </div>
+   title: GuaranteedAdGroupAd
+   description: |
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -4,50 +4,34 @@
+   properties:
+     adType:
+       $ref: 'GuaranteedAdGroupAdServiceAdType.yaml#/GuaranteedAdGroupAdServiceAdType'
+-    bannerImageAd:
+-      $ref: 'GuaranteedAdGroupAdServiceBannerImageAd.yaml#/GuaranteedAdGroupAdServiceBannerImageAd'
+-    bannerVideoAd:
+-      $ref: 'GuaranteedAdGroupAdServiceBannerVideoAd.yaml#/GuaranteedAdGroupAdServiceBannerVideoAd'
++    mainMediaFormat:
++      $ref: 'GuaranteedAdGroupAdServiceMainMediaFormat.yaml#/GuaranteedAdGroupAdServiceMainMediaFormat'
++    bannerAd:
++      $ref: 'GuaranteedAdGroupAdServiceBannerAd.yaml#/GuaranteedAdGroupAdServiceBannerAd'
++    carouselAd:
++      $ref: 'GuaranteedAdGroupAdServiceCarouselAd.yaml#/GuaranteedAdGroupAdServiceCarouselAd'
++    instreamAd:
++      $ref: 'GuaranteedAdGroupAdServiceInstreamAd.yaml#/GuaranteedAdGroupAdServiceInstreamAd'
+     brandPanelQuintie:
+       $ref: 'GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml#/GuaranteedAdGroupAdServiceBrandPanelQuintie'
+     brandPanelPanorama:
+       $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanorama'
+-    brandPanelPanoramaVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanoramaVideo.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanoramaVideo'
+-    brandPanelQuintieVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceBrandPanelQuintieVideo.yaml#/GuaranteedAdGroupAdServiceBrandPanelQuintieVideo'
++    brandPanelPanoramaPanelSwitch:
++      $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd'
+     topImpactSquare:
+       $ref: 'GuaranteedAdGroupAdServiceTopImpactSquare.yaml#/GuaranteedAdGroupAdServiceTopImpactSquare'
+-    topImpactSquareVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquareVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactSquareVideo'
+     topImpactQuintie:
+       $ref: 'GuaranteedAdGroupAdServiceTopImpactQuintie.yaml#/GuaranteedAdGroupAdServiceTopImpactQuintie'
+-    topImpactQuintieVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactQuintieVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactQuintieVideo'
+-    topImpactPanorama:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanorama.yaml#/GuaranteedAdGroupAdServiceTopImpactPanorama'
+-    topImpactPanoramaVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaVideo'
+-    topImpactPanoramaSideVisionVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideVisionVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideVisionVideo'
+-    topImpactPanoramaSideSwitchVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitchVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitchVideo'
+-    topImpactTheaterVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactTheaterVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactTheaterVideo'
+-    topImpactSquareSpecial:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquareSpecial.yaml#/GuaranteedAdGroupAdServiceTopImpactSquareSpecial'
+-    topImpactSquareSpecialVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquareSpecialVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactSquareSpecialVideo'
++    topImpactTheater:
++      $ref: 'GuaranteedAdGroupAdServiceTopImpactTheater.yaml#/GuaranteedAdGroupAdServiceTopImpactTheater'
+     topImpactPrimeDisplayDouble:
+       $ref: 'GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml#/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble'
+-    topImpactPrimeDisplayDoubleVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDoubleVideo.yaml#/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDoubleVideo'
+-    instreamVideo:
+-      $ref: 'GuaranteedAdGroupAdServiceInstreamVideoAd.yaml#/GuaranteedAdGroupAdServiceInstreamVideoAd'
+-    carouselAd:
+-      $ref: 'GuaranteedAdGroupAdServiceCarouselAd.yaml#/GuaranteedAdGroupAdServiceCarouselAd'
+-    brandPanelPanoramaPanelSwitch:
+-      $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd'
++    topImpactPanorama:
++      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanorama.yaml#/GuaranteedAdGroupAdServiceTopImpactPanorama'
++    topImpactPanoramaSideVision:
++      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideVision.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideVision'
++    topImpactPanoramaSideSwitch:
++      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitch.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitch'
+     topImpactPanoramaPanelSwitch:
+       $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd'
+   title: GuaranteedAdGroupAdServiceAd
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceAdStyle.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,89 +2,60 @@
+   type: string
+   nullable: true
+   enum:
+-    - BANNER_VIDEO_AD
+-    - BANNER_IMAGE_AD
++    - BANNER_AD
++    - CAROUSEL_AD
++    - INSTREAM_AD
+     - BRANDPANEL_QUINTIE
+-    - BRANDPANEL_QUINTIE_VIDEO
+     - BRANDPANEL_PANORAMA
+-    - BRANDPANEL_PANORAMA_VIDEO
++    - BRANDPANEL_PANORAMA_PANEL_SWITCH
+     - TOP_IMPACT_SQUARE
+-    - TOP_IMPACT_SQUARE_VIDEO
+     - TOP_IMPACT_QUINTIE
+-    - TOP_IMPACT_QUINTIE_VIDEO
+-    - TOP_IMPACT_PANORAMA
+-    - TOP_IMPACT_PANORAMA_VIDEO
+-    - TOP_IMPACT_PANORAMA_SIDE_VISION_VIDEO
+-    - TOP_IMPACT_PANORAMA_SIDE_SWITCH_VIDEO
+-    - TOP_IMPACT_THEATER_VIDEO
+-    - TOP_IMPACT_SQUARE_SPECIAL
+-    - TOP_IMPACT_SQUARE_SPECIAL_VIDEO
++    - TOP_IMPACT_THEATER
+     - TOP_IMPACT_PRIME_DISPLAY_DOUBLE
+-    - TOP_IMPACT_PRIME_DISPLAY_DOUBLE_VIDEO
+-    - INSTREAM_VIDEO_AD
+-    - CAROUSEL_AD
+-    - BRANDPANEL_PANORAMA_PANEL_SWITCH
++    - TOP_IMPACT_PANORAMA
++    - TOP_IMPACT_PANORAMA_SIDE_VISION
++    - TOP_IMPACT_PANORAMA_SIDE_SWITCH
+     - TOP_IMPACT_PANORAMA_PANEL_SWITCH
+     - UNKNOWN
+   title: GuaranteedAdGroupAdServiceAdType
+   description: |
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+-    このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+-    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なる場合があります。
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceAdType describes the type of ad.<br>
+-    This field is required in ADD operation, and will be optional in SET operation.<br>
+-    In addition, the number of available characters of ad creatives may vary with selected devices.
++    Although this field will be returned in the response, it will be ignored on input.
+     </div>
+     <dl class=term>
+-      <dt class="term__item">BANNER_VIDEO_AD</dt>
+-      <dd class="term__desc"><span lang="ja">動画で構成される広告です。</span><span lang="en">Ad composed of video.</span></dd>
+-      <dt class="term__item">BANNER_IMAGE_AD</dt>
+-      <dd class="term__desc"><span lang="ja">画像で構成される広告です。</span><span lang="en">Ad composed of image.</span></dd>
++      <dt class="term__item">BANNER_AD</dt>
++      <dd class="term__desc"><span lang="ja">バナー広告です。</span><span lang="en">Banner ad.</span></dd>
++      <dt class="term__item">CAROUSEL_AD</dt>
++      <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
++      <dt class="term__item">INSTREAM_AD</dt>
++      <dd class="term__desc"><span lang="ja">インストリーム広告です。</span><span lang="en">In-stream ad.</span></dd>
+       <dt class="term__item">BRANDPANEL_QUINTIE</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 image with reduction function.</span></dd>
+-      <dt class="term__item">BRANDPANEL_QUINTIE_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 video with reduction function.</span></dd>
++      <dd class="term__desc"><span lang="ja">ブランドパネル クインティ広告です。</span><span lang="en">Brand Panel Quintuple ad.</span></dd>
+       <dt class="term__item">BRANDPANEL_PANORAMA</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：4:1の縮小機能付き画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of 4:1 video with reduction function.</span></dd>
+-      <dt class="term__item">BRANDPANEL_PANORAMA_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：4:1の縮小機能付き動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 4:1 video with reduction function.</span></dd>
++      <dd class="term__desc"><span lang="ja">ブランドパネル パノラマ広告です。</span><span lang="en">Brand Panel Panorama ad.</span></dd>
++      <dt class="term__item">BRANDPANEL_PANORAMA_PANEL_SWITCH</dt>
++      <dd class="term__desc"><span lang="ja">ブランドパネル パノラマ パネルスイッチ広告です。</span><span lang="en">Brand Panel Panorama Panel-switch ad.</span></dd>
+       <dt class="term__item">TOP_IMPACT_SQUARE</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_SQUARE_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 video, the center image, the right side image, and the left side image.</span></dd>
++      <dd class="term__desc"><span lang="ja">トップインパクト スクエア広告です。</span><span lang="en">Top Impact Square ad.</span></dd>
+       <dt class="term__item">TOP_IMPACT_QUINTIE</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 image with reduction function, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_QUINTIE_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の縮小機能付き動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 video with reduction function, the center image, the right side image, and the left side image.</span></dd>
++      <dd class="term__desc"><span lang="ja">トップインパクト クインティ広告です。</span><span lang="en">Top Impact Quintuple ad.</span></dd>
+       <dt class="term__item">TOP_IMPACT_PANORAMA</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの4:1の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 4:1 image with reduction function, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_PANORAMA_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの4:1の縮小機能付き動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 4:1 video with reduction function, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_VISION_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の縮小機能付き動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 video with reduction function.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_SWITCH_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの4:1の縮小機能付き動画と、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 4:1 video with reduction function, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_THEATER_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの16:9の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 16:9 video, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_SQUARE_SPECIAL</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_SQUARE_SPECIAL_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの1:1の動画と、センター画像、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 1:1 video, the center image, the right side image, and the left side image.</span></dd>
++      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ広告です。</span><span lang="en">Top Impact Panorama ad.</span></dd>
++      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_VISION</dt>
++      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドビジョン広告です。</span><span lang="en">Top Impact Panorama Side Vision ad.</span></dd>
++      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_SWITCH</dt>
++      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドスイッチ広告です。</span><span lang="en">Top Impact Panorama Side Switch ad.</span></dd>
++      <dt class="term__item">TOP_IMPACT_THEATER</dt>
++      <dd class="term__desc"><span lang="ja">トップインパクト シアター広告です。</span><span lang="en">Top Impact Theater ad.</span></dd>
+       <dt class="term__item">TOP_IMPACT_PRIME_DISPLAY_DOUBLE</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの2:1の画像と、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 2:1 image, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">TOP_IMPACT_PRIME_DISPLAY_DOUBLE_VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの2:1の動画と、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 2:1 video, the right side image, and the left side image.</span></dd>
+-      <dt class="term__item">INSTREAM_VIDEO_AD</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：16:9の動画で構成される広告です。</span><span lang="en">Guaranteed ad composed of 16:9 video.</span></dd>
+-      <dt class="term__item">CAROUSEL_AD</dt>
+-      <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
+-      <dt class="term__item">BRANDPANEL_PANORAMA_PANEL_SWITCH</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナーで構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 3:1 image, 1:1 switch image, and 16:9 reduced banner.</span></dd>
++      <dd class="term__desc"><span lang="ja">トップインパクト プライムディスプレイ ダブル広告です。</span><span lang="en">Top Impact Prime Display Double ad.</span></dd>
+       <dt class="term__item">TOP_IMPACT_PANORAMA_PANEL_SWITCH</dt>
+-      <dd class="term__desc"><span lang="ja">予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナー、右サイド画像、左サイド画像で構成される広告です。</span><span lang="en">Guaranteed ad composed of the main 3:1 image, 1:1 switch image, 16:9 reduced banner, the right side image, and the left side image.</span></dd>
++      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドスイッチ広告です。</span><span lang="en">Top Impact Panorama Side Switch ad.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+     </dl>
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceBannerAd.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceBannerImageAd.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceBannerVideoAd.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,27 +24,25 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -55,19 +53,151 @@
+       description: |
+         <div lang="ja">
+         縮小メイン画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Reduced main image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceBrandPanelPanorama
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceBrandPanelPanoramaオブジェクトは、予約型専用広告：4:1の縮小機能付き画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceBrandPanelPanoramaオブジェクトは、ブランドパネル パノラマ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceBrandPanelPanorama object describes information about a guaranteed ad composed of 4:1 image with reduction function.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceBrandPanelPanorama object describes information of Brand Panel Panorama ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,12 +9,12 @@
+       description: |
+         <div lang="ja">
+         パネルの表示順です。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※指定しない場合は自動で設定されます。
+         </div>
+         <div lang="en">
+         Panel display order.<br>
+-        This field is optional in ADD and SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         *If not specified, it will be set automatically.
+         </div>
+     finalUrl:
+@@ -22,10 +22,10 @@
+       nullable: true
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     mediaId:
+       type: integer
+@@ -34,11 +34,11 @@
+       description: |
+         <div lang="ja">
+         メディアIDです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     switchMediaId:
+       type: integer
+@@ -47,17 +47,17 @@
+       description: |
+         <div lang="ja">
+         スイッチ画像のメディアIDです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID of switch image.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+   title: GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchオブジェクトは、予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナーで構成される広告の詳細情報を表します。
++    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchオブジェクトは、ブランドパネル パノラマ パネルスイッチ広告の詳細情報を表します。
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch object describes detailed information about guaranteed ad composed of the main 3:1 image, 1:1 switch image, and 16:9 reduced banner.
++    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitch object describes detailed information of Brand Panel Panorama Panel-switch ad.
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,11 +9,11 @@
+       description: |
+         <div lang="ja">
+         縮小メイン画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Reduced main image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     panels:
+       type: array
+@@ -25,38 +25,34 @@
+       nullable: true
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     displayUrlLevel:
+       $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD and SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         </div>
+   title: GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAdオブジェクトは、予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナーで構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
+-    ※ADD時、adTypeがBRANDPANEL_PANORAMA_PANEL_SWITCHの場合は必須です。<br>
++    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAdオブジェクトは、ブランドパネル パノラマ パネルスイッチ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     ※現在利用できません
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd object describes the information about guaranteed ad composed of the main 3:1 image, 1:1 switch image, and 16:9 reduced banner.<br>
+-    This field is optional.<br>
+-    *If adType is BRANDPANEL_PANORAMA_PANEL_SWITCH, this field is required in ADD operation.<br>
++    GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd object describes the information of Brand Panel Panorama Panel-switch ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     * Not Available.
+     </div>
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceBrandPanelPanoramaVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,24 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,37 +37,154 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
+   title: GuaranteedAdGroupAdServiceBrandPanelQuintie
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceBrandPanelQuintieオブジェクトは、予約型専用広告：16:9の縮小機能付き画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceBrandPanelQuintieオブジェクトは、ブランドパネル クインティ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceBrandPanelQuintie object describes information about a guaranteed ad composed of 16:9 image with reduction function.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceBrandPanelQuintie object describes information of Brand Panel Quintuple ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceBrandPanelQuintieVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarousel.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarousel.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarousel.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarousel.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,12 +9,12 @@
+       description: |
+         <div lang="ja">
+         カルーセルの表示順です。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※指定しない場合は自動で設定されます。
+         </div>
+         <div lang="en">
+         Carousel display order.<br>
+-        This field is optional in ADD and SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         *If not specified, it will be set automatically.
+         </div>
+     mediaId:
+@@ -24,11 +24,11 @@
+       description: |
+         <div lang="ja">
+         メディアIDです。<br>
+-        このフィールドは、ADD時およびSET時に指定不可です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID.<br>
+-        This field cannot be specified in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     headline:
+       type: string
+@@ -36,11 +36,11 @@
+       description: |
+         <div lang="ja">
+         広告のタイトルです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Ad title.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     description:
+       type: string
+@@ -59,12 +59,11 @@
+       nullable: true
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+-        In ADD operation, finalUrl field and url field cannot be set at the same time, and one of them must be set.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+     smartphoneFinalUrl:
+@@ -79,8 +78,6 @@
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+-    isRemoveSmartphoneFinalUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     disapprovalReasonCodes:
+       type: array
+       nullable: true
+@@ -100,11 +97,9 @@
+   description: |
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceCarouselオブジェクトはカルーセル広告の詳細情報を表します。<br>
+-    ※SET時には、現在のCarouselsに含まれるCarouselが全て指定したCarouselsに置き換わります。<br>
+-    ※特定のCarousel単体を指定して変更することはできません。
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceCarousel object describes the detailed information of carousel ad.<br>
+-    *In SET operation, all Carousel included in the current Carousels will be replaced with the specified Carousels.<br>
+-    *Cannot specify a specific Carousel alone.
++    This field will be returned in the response, it will be ignored on input.
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarouselAd.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarouselAd.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarouselAd.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCarouselAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,25 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
+-        ・標準キャンペーンの場合<br>
+-        &nbsp;&nbsp;ADDでは入力必須です。SETでの入力は任意です。<br>
+-        ・アプリキャンペーンの場合<br>
+-        &nbsp;&nbsp;ADD、SETのどちらも指定できません。<br>
+-        &nbsp;&nbsp;※アプリキャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+-        &nbsp;&nbsp;&nbsp;&nbsp;- iOSの場合：itunes.apple.com<br>
+-        &nbsp;&nbsp;&nbsp;&nbsp;- Androidの場合：play.google.com
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is optional in ADD and SET operation.<br>
+-        - Standard campaign:<br>
+-        &nbsp;&nbsp;Required for ADD, optional for SET.<br>
+-        - Mobile app campaign:<br>
+-        &nbsp;&nbsp;Not allowed for ADD and SET.<br>
+-        &nbsp;&nbsp;*Based on DeviceOsType specified on Mobile app campaign, any of the following URLs will be automatically set.<br>
+-        &nbsp;&nbsp;&nbsp;&nbsp;- For iOS : itunes.apple.com<br>
+-        &nbsp;&nbsp;&nbsp;&nbsp;- For Android : play.google.com<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         </div>
+     logoMediaId:
+       type: integer
+@@ -35,11 +21,11 @@
+       description: |
+         <div lang="ja">
+         ロゴの画像IDです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Logo image ID.<br>
+-        This field is optional in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     principal:
+       type: string
+@@ -47,11 +33,11 @@
+       description: |
+         <div lang="ja">
+         広告の主体者表記です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Advertiser Indication of the ad.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -63,12 +49,12 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+     smartphoneFinalUrl:
+@@ -83,21 +69,17 @@
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+-    isRemoveSmartphoneFinalUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -110,11 +92,9 @@
+   description: |
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceCarouselAdオブジェクトはカルーセル広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
+-    ※ADD時、adTypeがCAROUSEL_ADの場合は必須です。
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceCarouselAd obeject describes information of carousel ad.<br>
+-    This field is optional.<br>
+-    *If adType is CAROUSEL_AD, this field is required in ADD operation.
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCustomParameter.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCustomParameter.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceCustomParameter.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceCustomParameter.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -6,15 +6,15 @@
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">キーです。<br>ADDおよびSET時、このフィールドは必須となります。</div>
+-        <div lang="en">Key of parameter.<br>This field is required in ADD and SET operation.</div>
++        <div lang="ja">キーです。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
++        <div lang="en">Key of parameter.<br>This field will be returned in the response, it will be ignored on input.</div>
+     value:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">値です。<br>ADDおよびSET時、このフィールドは省略可能となります。</div>
+-        <div lang="en">Value of parameter.<br>This field is optional in ADD and SET operation.</div>
++        <div lang="ja">値です。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
++        <div lang="en">Value of parameter.<br>This field will be returned in the response, it will be ignored on input.</div>
+   title: GuaranteedAdGroupAdServiceCustomParameter
+   description: |
+-    <div lang="ja">GuaranteedAdGroupAdServiceCustomParameterは、カスタムパラメータの内容を表します。<br>ADD時、このフィールドは必須となります。</div>
+-    <div lang="en">GuaranteedAdGroupAdServiceCustomParameter displays the element of custom parameters.<br>This field is required in ADD operation.</div>
++    <div lang="ja">GuaranteedAdGroupAdServiceCustomParameterは、カスタムパラメータの内容を表します。<br>このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
++    <div lang="en">GuaranteedAdGroupAdServiceCustomParameter displays the element of custom parameters.<br>This field will be returned in the response, it will be ignored on input.</div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,12 +9,12 @@
+   description: |
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceDisplayUrlLevelは、表示するURLの階層を表します。<br>
+-    ADDおよびSET時にfinalUrlを指定する場合、このフィールドは必須となります。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     ※現在利用できません
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceDisplayUrlLevel describes a level of URL to display.<br>
+-    If finalUrl is specified in ADD and SET operation, this field is required.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     * Not Available.
+     </div>
+     <dl class=term>
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceInstreamAd.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceInstreamVideoAd.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceIsRemoveFlg.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceIsRemoveFlg.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceIsRemoveFlg.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceIsRemoveFlg.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -10,12 +10,12 @@
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceIsRemoveFlgは、項目を削除するフラグです。<br>
+     設定値が「TRUE」の場合、設定されている値が無効になります。<br>
+-    このフィールドは、ADD時は無視され、SET時は省略可能となります。
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceIsRemoveFlg is a flag for removing an information item.<br>
+     If the set value is 'TRUE', the set value will be invalid.<br>
+-    This field will be ignored in ADD operation, and will be optional in SET operation.
++    This field will be returned in the response, it will be ignored on input..
+     </div>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceMainMediaFormat.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceMutateResponse.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceOperation.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceReturnValue.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanorama.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanorama.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanorama.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanorama.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,27 +24,25 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -55,11 +53,11 @@
+       description: |
+         <div lang="ja">
+         左サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Left side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adRightSideMediaId:
+       type: integer
+@@ -68,11 +66,11 @@
+       description: |
+         <div lang="ja">
+         右サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Right side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adShrinkMainMediaId:
+       type: integer
+@@ -81,19 +79,151 @@
+       description: |
+         <div lang="ja">
+         縮小メイン画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Reduced main image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactPanorama
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactPanoramaオブジェクトは、予約型専用広告：メインの4:1の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceTopImpactPanoramaオブジェクトは、トップインパクト パノラマ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactPanorama object describes information about a guaranteed ad composed of the main 4:1 image with reduction function, the center image, the right side image, and the left side image.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceTopImpactPanorama object describes information of Top Impact Panorama ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,12 +9,12 @@
+       description: |
+         <div lang="ja">
+         パネルの表示順です。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※指定しない場合は自動で設定されます。
+         </div>
+         <div lang="en">
+         Panel display order.<br>
+-        This field is optional in ADD and SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         *If not specified, it will be set automatically.
+         </div>
+     finalUrl:
+@@ -22,10 +22,10 @@
+       nullable: true
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     mediaId:
+       type: integer
+@@ -34,11 +34,11 @@
+       description: |
+         <div lang="ja">
+         メディアIDです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     switchMediaId:
+       type: integer
+@@ -47,11 +47,11 @@
+       description: |
+         <div lang="ja">
+         スイッチ画像のメディアIDです。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Media ID of switch image.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adLeftSideMediaId:
+       type: integer
+@@ -60,11 +60,11 @@
+       description: |
+         <div lang="ja">
+         左サイド画像です。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Left side image.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adRightSideMediaId:
+       type: integer
+@@ -73,17 +73,17 @@
+       description: |
+         <div lang="ja">
+         右サイド画像です。<br>
+-        このフィールドは、ADD時およびSET時に必須です。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Right side image.<br>
+-        This field is required in ADD and SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchオブジェクトは、予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナー、右サイド画像、左サイド画像で構成される広告の詳細情報を表します。
++    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchオブジェクトは、トップインパクト パノラマ パネルスイッチ広告の詳細情報を表します。
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch object describes detailed information about guaranteed ad composed of the main 3:1 image, 1:1 switch image, 16:9 reduced banner, the right side image, and the left side image.
++    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch object describes detailed information of Top Impact Panorama Panel-switch ad.
+     </div>
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,11 +9,11 @@
+       description: |
+         <div lang="ja">
+         縮小メイン画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Reduced main image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     panels:
+       type: array
+@@ -25,38 +25,34 @@
+       nullable: true
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     displayUrlLevel:
+       $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD and SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAdオブジェクトは、予約型専用広告：メインの3:1の画像と、1:1のスイッチ画像、16:9の縮小バナー、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
+-    ※ADD時、adTypeがTOP_IMPACT_PANORAMA_PANEL_SWITCHの場合は必須です。<br>
++    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAdオブジェクトは、トップインパクト パノラマ パネルスイッチ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     ※現在利用できません
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd object describes the information about guaranteed ad composed of the main 3:1 image, 1:1 switch image, 16:9 reduced banner, the right side image, and the left side image.<br>
+-    This field is optional.<br>
+-    *If adType is TOP_IMPACT_PANORAMA_PANEL_SWITCH, this field is required in ADD operation.<br>
++    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd object describes the information of Top Impact Panorama Panel-switch ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     * Not Available.
+     </div>
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitch.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitchVideo.yaml
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPanoramaSideVision.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPanoramaSideVisionVideo.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPanoramaVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,27 +24,25 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -55,11 +53,11 @@
+       description: |
+         <div lang="ja">
+         左サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Left side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adRightSideMediaId:
+       type: integer
+@@ -68,19 +66,151 @@
+       description: |
+         <div lang="ja">
+         右サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Right side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDoubleオブジェクトは、予約型専用広告：メインの2:1の画像と、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDoubleオブジェクトは、トップインパクト プライムディスプレイ ダブル広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble object describes information about a guaranteed ad composed of the main 2:1 video, the right side image, and the left side image.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble object describes information of Top Impact Prime Display Double ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDoubleVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactQuintie.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactQuintie.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactQuintie.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactQuintie.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,27 +24,25 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -55,11 +53,11 @@
+       description: |
+         <div lang="ja">
+         左サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Left side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adRightSideMediaId:
+       type: integer
+@@ -68,11 +66,11 @@
+       description: |
+         <div lang="ja">
+         右サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Right side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adCenterMediaId:
+       type: integer
+@@ -81,19 +79,151 @@
+       description: |
+         <div lang="ja">
+         センター画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Center image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactQuintie
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactQuintieオブジェクトは、予約型専用広告：メインの16:9の縮小機能付き画像と、センター画像、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceTopImpactQuintieオブジェクトは、トップインパクト クインティ広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactQuintie object describes information about a guaranteed ad composed of the main 16:9 image with reduction function, the center image, the right side image, and the left side image.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceTopImpactQuintie object describes information of Top Impact Quintuple ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactQuintieVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactSquare.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactSquare.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactSquare.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceTopImpactSquare.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -8,11 +8,11 @@
+       description: |
+         <div lang="ja">
+         表示URLです。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Display URL.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     customParameters:
+       $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+@@ -24,27 +24,25 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Final URL.<br>
+         If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         * Not Available.
+         </div>
+-    isRemoveTrackingUrl:
+-      $ref: 'GuaranteedAdGroupAdServiceIsRemoveFlg.yaml#/GuaranteedAdGroupAdServiceIsRemoveFlg'
+     trackingUrl:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">トラッキングURLです。<br>
+-        ADD時、このフィールドは省略可能となります。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+         ※現在利用できません
+         </div>
+         <div lang="en">Tracking URL.<br>
+-        This field is optional in ADD operation.<br>
++        This field will be returned in the response, it will be ignored on input.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+         * Not Available.
+         </div>
+@@ -55,11 +53,11 @@
+       description: |
+         <div lang="ja">
+         左サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Left side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adRightSideMediaId:
+       type: integer
+@@ -68,11 +66,11 @@
+       description: |
+         <div lang="ja">
+         右サイド画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Right side image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
+         </div>
+     adCenterMediaId:
+       type: integer
+@@ -81,19 +79,151 @@
+       description: |
+         <div lang="ja">
+         センター画像です。<br>
+-        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Center image.<br>
+-        This field is required in ADD operation, and will be optional in SET operation.
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Thumbnail ID.<br>
++        This field will be returned in the response, it will be ignored on input.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceTopImpactSquare
+   description: |
+     <div lang="ja">
+-    GuaranteedAdGroupAdServiceTopImpactSquareオブジェクトは、予約型専用広告：メインの1:1の画像と、センター画像、右サイド画像、左サイド画像で構成される広告の情報を表します。<br>
+-    このフィールドは、省略可能となります。<br>
++    GuaranteedAdGroupAdServiceTopImpactSquareオブジェクトは、トップインパクト スクエア広告の情報を表します。<br>
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+     </div>
+     <div lang="en">
+-    GuaranteedAdGroupAdServiceTopImpactSquare object describes information about a guaranteed ad composed of the main 1:1 image, the center image, the right side image, and the left side image.<br>
+-    This field is optional.<br>
++    GuaranteedAdGroupAdServiceTopImpactSquare object describes information of Top Impact Square ad.<br>
++    This field will be returned in the response, it will be ignored on input.<br>
+     </div>
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactSquareSpecial.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactSquareSpecialVideo.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactSquareVideo.yaml
+Only in v10/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactTheater.yaml
+Only in v9/guaranteedadgroupad: GuaranteedAdGroupAdServiceTopImpactTheaterVideo.yaml
+
+
+------
+diff -ru v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceUserStatus.yaml v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceUserStatus.yaml
+--- v9/guaranteedadgroupad/GuaranteedAdGroupAdServiceUserStatus.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/guaranteedadgroupad/GuaranteedAdGroupAdServiceUserStatus.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -9,11 +9,11 @@
+   description: |
+     <div lang="ja">
+     GuaranteedAdGroupAdServiceUserStatusは、配信設定を表します。<br>
+-    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     GuaranteedAdGroupAdServiceUserStatus describes delivery settings.<br>
+-    This field is required in ADD operation, and will be optional in SET operation.
++    This field will be returned in the response, it will be ignored on input.
+     </div>
+     <dl class=term>
+       <dt class="term__item">ACTIVE</dt>
+
+
+------
+diff -ru v9/media/MediaServiceImageMedia.yaml v10/media/MediaServiceImageMedia.yaml
+--- v9/media/MediaServiceImageMedia.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/media/MediaServiceImageMedia.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -80,6 +80,18 @@
+         The width of image.<br>
+         Although this field will be returned in the response, it will be ignored on input.
+         </div>
++    upscaleImageEnabled:
++      type: boolean
++      nullable: true
++      description: |
++        <div lang="ja">
++        MediaServiceUpscaleImageEnabledは画像の自動アップコンバートの設定フラグを表します。<br>
++        このフィールドは、ADD時に省略可能となります。
++        </div>
++        <div lang="en">
++        MediaServiceUpscaleImageEnabled displays the flag settings of automatic image up-conversion. <br>
++        This field is optional in ADD operation.
++        </div>
+   title: MediaServiceImageMedia
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v9/media/MediaServiceUserStatus.yaml v10/media/MediaServiceUserStatus.yaml
+--- v9/media/MediaServiceUserStatus.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/media/MediaServiceUserStatus.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -12,7 +12,7 @@
+     このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+     </div>
+     <div lang="en">
+-    MediaServiceUserStatus describes delivery settings.<br>
++    MediaServiceUserStatusdescribes delivery settings.<br>
+     This field is required in ADD operation, and is optional in SET operation.
+     </div>
+     <dl class=term>
+
+
+------
+diff -ru v9/placementurlidea/PlacementUrlIdeaServiceAdFormat.yaml v10/placementurlidea/PlacementUrlIdeaServiceAdFormat.yaml
+--- v9/placementurlidea/PlacementUrlIdeaServiceAdFormat.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/placementurlidea/PlacementUrlIdeaServiceAdFormat.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -2,12 +2,12 @@
+   type: object
+   nullable: true
+   properties:
+-    adStyle:
++    mainMediaFormat:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">広告のスタイルです。</div>
+-        <div lang="en">Ad Style of image.</div>
++        <div lang="ja">広告のスタイルです。<br>IMAGE、VIDEO、NONEのみ指定できます。</div>
++        <div lang="en">Ad Style of image.<br>This field can be specified only IMAGE, VIDEO, NONE.</div>
+     adType:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/placementurlidea/PlacementUrlIdeaServiceAdFormatConditions.yaml v10/placementurlidea/PlacementUrlIdeaServiceAdFormatConditions.yaml
+--- v9/placementurlidea/PlacementUrlIdeaServiceAdFormatConditions.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/placementurlidea/PlacementUrlIdeaServiceAdFormatConditions.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -2,7 +2,7 @@
+   type: object
+   nullable: true
+   properties:
+-    adStyle:
++    mainMediaFormat:
+       type: string
+       nullable: true
+       description: |
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinition.yaml v10/reportdefinition/ReportDefinition.yaml
+--- v9/reportdefinition/ReportDefinition.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinition.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -21,11 +21,13 @@
+       description: |
+         <div lang="ja">
+         ジョブ完了日時です。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※フォーマット: yyyy/MM/dd HH:mm:ss
+         </div>
+         <div lang="en">
+         The date and time of Job completion. <br>
+-        Although this field will be returned in the response, it will be ignored on input.
++        Although this field will be returned in the response, it will be ignored on input.<br>
++        *Format: yyyy/MM/dd HH:mm:ss
+         </div>
+     dateRange:
+       $ref: 'ReportDefinitionServiceDateRange.yaml#/ReportDefinitionServiceDateRange'
+@@ -107,12 +109,14 @@
+       nullable: true
+       description: |
+         <div lang="ja">
+-        ジョブ依頼日時です。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        リクエストの到着日時です。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※フォーマット: yyyy/MM/dd HH:mm:ss
+         </div>
+         <div lang="en">
+-        The date and time of Job request. <br>
+-        Although this field will be returned in the response, it will be ignored on input.
++        Arrival date and time of your request. <br>
++        Although this field will be returned in the response, it will be ignored on input.<br>
++        *Format: yyyy/MM/dd HH:mm:ss
+         </div>
+     reportSkipColumnHeader:
+       $ref: 'ReportDefinitionServiceReportSkipColumnHeader.yaml#/ReportDefinitionServiceReportSkipColumnHeader'
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceFieldAttribute.yaml v10/reportdefinition/ReportDefinitionServiceFieldAttribute.yaml
+--- v9/reportdefinition/ReportDefinitionServiceFieldAttribute.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceFieldAttribute.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,18 +2,18 @@
+   type: object
+   nullable: true
+   properties:
+-    displayFieldNameEN:
++    displayFieldNameEn:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">ダウンロードされたレポートに表示されるフィールド名（英語）です。</div>
+-        <div lang="en">Field Name for the Downloaded Report (EN).</div>
+-    displayFieldNameJA:
++        <div lang="en">Field Name for the Downloaded Report (English).</div>
++    displayFieldNameJa:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">ダウンロードされたレポートに表示されるフィールド名（日本語）です。</div>
+-        <div lang="en">Field Name for the Downloaded Report (JA).</div>
++        <div lang="en">Field Name for the Downloaded Report (Japanese).</div>
+     fieldName:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceFilterOperator.yaml v10/reportdefinition/ReportDefinitionServiceFilterOperator.yaml
+--- v9/reportdefinition/ReportDefinitionServiceFilterOperator.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceFilterOperator.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -26,19 +26,19 @@
+     </div>
+     <dl class=term>
+       <dt class="term__item">NOT_EQUALS</dt>
+-      <dd class="term__desc"><span lang="ja">≠</span><span lang="en">≠</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値と等しくない</span><span lang="en">Not equal to specified value</span></dd>
+       <dt class="term__item">CONTAINS_ANY</dt>
+       <dd class="term__desc"><span lang="ja">指定したいずれかの値を含む（リスト項目専用）</span><span lang="en">Contains any of specified values (used for list only)</span></dd>
+       <dt class="term__item">EQUALS</dt>
+-      <dd class="term__desc"><span lang="ja">=</span><span lang="en">=</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値と等しい</span><span lang="en">Equal to specified value</span></dd>
+       <dt class="term__item">GREATER_THAN_EQUALS</dt>
+-      <dd class="term__desc"><span lang="ja">≧</span><span lang="en">≧</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値以上</span><span lang="en">Greater than or equal to specified value</span></dd>
+       <dt class="term__item">LESS_THAN_EQUALS</dt>
+-      <dd class="term__desc"><span lang="ja">≦</span><span lang="en">≦</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値以下</span><span lang="en">Less than or equal to specified value</span></dd>
+       <dt class="term__item">GREATER_THAN</dt>
+-      <dd class="term__desc"><span lang="ja">＞</span><span lang="en">＞</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値より大きい</span><span lang="en">Greater than specified value</span></dd>
+       <dt class="term__item">LESS_THAN</dt>
+-      <dd class="term__desc"><span lang="ja">＜</span><span lang="en">＜</span></dd>
++      <dd class="term__desc"><span lang="ja">指定した値より小さい</span><span lang="en">Less than specified value</span></dd>
+       <dt class="term__item">CONTAINS</dt>
+       <dd class="term__desc"><span lang="ja">部分一致</span><span lang="en">contains</span></dd>
+       <dt class="term__item">IN</dt>
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceGetReportFields.yaml v10/reportdefinition/ReportDefinitionServiceGetReportFields.yaml
+--- v9/reportdefinition/ReportDefinitionServiceGetReportFields.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceGetReportFields.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,8 +2,8 @@
+   type: object
+   nullable: true
+   required:
+-  - type
++  - reportType
+   properties:
+-    'type':
+-      $ref: 'ReportDefinitionServiceType.yaml#/ReportDefinitionServiceType'
++    'reportType':
++      $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
+   title: ReportDefinitionServiceGetReportFields
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceProductType.yaml v10/reportdefinition/ReportDefinitionServiceProductType.yaml
+--- v9/reportdefinition/ReportDefinitionServiceProductType.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceProductType.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -2,8 +2,8 @@
+   type: string
+   nullable: true
+   enum:
+-    - YDA
+-    - YSA
++    - DISPLAY
++    - SEARCH
+     - UNKNOWN
+   title: ReportDefinitionServiceProductType
+   description: |
+@@ -14,10 +14,10 @@
+     ReportDefinitionServiceProductType describes product type of the account.
+     </div>
+     <dl class=term>
+-      <dt class="term__item">YDA</dt>
+-      <dd class="term__desc"><span lang="ja">YDAです。</span><span lang="en">YDA.</span></dd>
+-      <dt class="term__item">YSA</dt>
+-      <dd class="term__desc"><span lang="ja">YSAです。</span><span lang="en">YSA.</span></dd>
++      <dt class="term__item">DISPLAY</dt>
++      <dd class="term__desc"><span lang="ja">DISPLAYです。</span><span lang="en">DISPLAY.</span></dd>
++      <dt class="term__item">SEARCH</dt>
++      <dd class="term__desc"><span lang="ja">SEARCHです。</span><span lang="en">SEARCH.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v10/reportdefinition: ReportDefinitionServiceReportType.yaml
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceReportTypeCondition.yaml v10/reportdefinition/ReportDefinitionServiceReportTypeCondition.yaml
+--- v9/reportdefinition/ReportDefinitionServiceReportTypeCondition.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceReportTypeCondition.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -11,7 +11,7 @@
+     modelComparisonReportCondition:
+       $ref: 'ReportDefinitionServiceModelComparisonReportCondition.yaml#/ReportDefinitionServiceModelComparisonReportCondition'
+     reportType:
+-      $ref: 'ReportDefinitionServiceType.yaml#/ReportDefinitionServiceType'
++      $ref: 'ReportDefinitionServiceReportType.yaml#/ReportDefinitionServiceReportType'
+   title: ReportDefinitionServiceReportTypeCondition
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v9/reportdefinition/ReportDefinitionServiceSelector.yaml v10/reportdefinition/ReportDefinitionServiceSelector.yaml
+--- v9/reportdefinition/ReportDefinitionServiceSelector.yaml	2023-02-14 13:17:37.000000000 +0900
++++ v10/reportdefinition/ReportDefinitionServiceSelector.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -17,7 +17,7 @@
+       format: int32
+       minimum: 1
+       maximum: 500
+-      default: 200
++      default: 500
+       description: |
+         <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
+         <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+Only in v9/reportdefinition: ReportDefinitionServiceType.yaml
+
+
+------
+diff -ru v9/stats/Stats.yaml v10/stats/Stats.yaml
+--- v9/stats/Stats.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/stats/Stats.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -9,7 +9,7 @@
+       description: |
+         <div lang="ja">インプレッション数</div>
+         <div lang="en">Number of impressions</div>
+-    clickCnt:
++    clicks:
+       type: integer
+       nullable: true
+       format: int64
+@@ -44,7 +44,7 @@
+       description: |
+         <div lang="ja">コンバージョン数</div>
+         <div lang="en">Conversions</div>
+-    conversionRate:
++    convRate:
+       type: number
+       nullable: true
+       format: double
+@@ -65,14 +65,14 @@
+       description: |
+         <div lang="ja">コンバージョン率（クリック経由）</div>
+         <div lang="en">Conv. rate (via click)</div>
+-    allConversions:
++    allConv:
+       type: integer
+       nullable: true
+       format: int64
+       description: |
+         <div lang="ja">コンバージョン数（全て）</div>
+         <div lang="en">Conversions (all)</div>
+-    allConversionRate:
++    allConvRate:
+       type: number
+       nullable: true
+       format: double
+@@ -85,13 +85,13 @@
+       description: |
+         <div lang="ja">コンバージョン単価</div>
+         <div lang="en">Conversion cost per acquisition</div>
+-    conversionValue:
++    convValue:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">コンバージョンの価値</div>
+         <div lang="en">Conv. value</div>
+-    valuePerConversions:
++    valuePerConv:
+       type: string
+       nullable: true
+       description: |
+@@ -118,25 +118,25 @@
+       description: |
+         <div lang="ja">コンバージョンの価値（クリック経由）/コスト</div>
+         <div lang="en">Conversions value(via ad clicks)/cost</div>
+-    allConversionValue:
++    allConvValue:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">コンバージョンの価値（全て）</div>
+         <div lang="en">Conv. value (all)</div>
+-    valuePerAllConversions:
++    valuePerAllConv:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">コンバージョンの価値（全て）/コンバージョン数（全て）</div>
+         <div lang="en">Conv. value (all)/conv. (all)</div>
+-    conversionValueViaAdClick:
++    convValueViaAdClick:
+       type: string
+       nullable: true
+       description: |
+         <div lang="ja">コンバージョンの価値（クリック経由）</div>
+         <div lang="en">Conv. value (via click)</div>
+-    valuePerConversionsViaAdClick:
++    valuePerConvViaAdClick:
+       type: string
+       nullable: true
+       description: |
+@@ -169,9 +169,9 @@
+         <div lang="ja">平均掲載順位（配信された時のeCPM順位の平均）</div>
+         <div lang="en">Avg. position (the average of eCPM rank on ads delivery)</div>
+     measuredImps:
+-      type: number
++      type: integer
+       nullable: true
+-      format: double
++      format: int64
+       description: |
+         <div lang="ja">メジャードインプレッション数</div>
+         <div lang="en">Measured impressions</div>
+@@ -182,7 +182,7 @@
+       description: |
+         <div lang="ja">メジャードインプレッション測定率</div>
+         <div lang="en">Measured impression rate</div>
+-    vimps:
++    viewableImps:
+       type: integer
+       nullable: true
+       format: int64
+@@ -197,9 +197,9 @@
+         <div lang="ja">ビューアブルインプレッション率</div>
+         <div lang="en">Viewable impression rate</div>
+     viewableClicks:
+-      type: number
++      type: integer
+       nullable: true
+-      format: double
++      format: int64
+       description: |
+         <div lang="ja">ビューアブルクリック数</div>
+         <div lang="en">Viewable clicks</div>
+@@ -224,7 +224,7 @@
+       description: |
+         <div lang="ja">課金が発生した動画再生率 (CPV課金キャンペーンのみ)</div>
+         <div lang="en">Paid video view rate (CPV)</div>
+-    averageCpv:
++    avgCpv:
+       type: number
+       nullable: true
+       format: double
+@@ -287,14 +287,14 @@
+       description: |
+         <div lang="ja">動画の10秒再生数</div>
+         <div lang="en">10 sec video views</div>
+-    averageRateVideoViewed:
++    avgPercentVideoViewed:
+       type: number
+       nullable: true
+       format: double
+       description: |
+         <div lang="ja">動画の平均再生率</div>
+         <div lang="en">Avg. video view rate</div>
+-    averageDurationVideoViewed:
++    avgDurationVideoViewed:
+       type: number
+       nullable: true
+       format: double
+@@ -315,21 +315,21 @@
+       description: |
+         <div lang="ja">インプレッションシェア</div>
+         <div lang="en">Impression share</div>
+-    budgetImpressionShareLostRate:
++    impressionShareBudgetLoss:
+       type: number
+       nullable: true
+       format: double
+       description: |
+         <div lang="ja">インプレッションシェア損失率（予算）</div>
+         <div lang="en">Impression share lost rate(budget)</div>
+-    rankImpressionShareLostRate:
++    impressionShareRankLoss:
+       type: number
+       nullable: true
+       format: double
+       description: |
+         <div lang="ja">インプレッションシェア損失率（ランク）</div>
+         <div lang="en">Impression share lost rate(rank)</div>
+-    viewThroughConversions:
++    convValueViaViewThrough:
+       type: integer
+       nullable: true
+       format: int64
+
+
+------
+diff -ru v9/stats/StatsServicePeriodCustomDate.yaml v10/stats/StatsServicePeriodCustomDate.yaml
+--- v9/stats/StatsServicePeriodCustomDate.yaml	2023-02-14 13:17:38.000000000 +0900
++++ v10/stats/StatsServicePeriodCustomDate.yaml	2023-02-14 13:17:41.000000000 +0900
+@@ -2,7 +2,7 @@
+   type: object
+   nullable: true
+   properties:
+-    statsEndDate:
++    endDate:
+       type: string
+       nullable: true
+       description: |
+@@ -14,7 +14,7 @@
+         Acquisition end date of stats information<br>
+         ∗ Format: yyyyMMdd
+         </div>
+-    statsStartDate:
++    startDate:
+       type: string
+       nullable: true
+       description: |
+
+
+------
+diff -ru v9/video/Video.yaml v10/video/Video.yaml
+--- v9/video/Video.yaml	2023-02-14 13:17:36.000000000 +0900
++++ v10/video/Video.yaml	2023-02-14 13:17:40.000000000 +0900
+@@ -17,12 +17,20 @@
+         </div>
+     approvalStatus:
+       $ref: 'VideoServiceApprovalStatus.yaml#/VideoServiceApprovalStatus'
+-    creationTime:
++    createdDateTime:
+       type: string
+       nullable: true
+       description: |
+-        <div lang="ja">動画の入稿日時です。</div>
+-        <div lang="en">Time and date when the video was submitted.</div>
++        <div lang="ja">
++        動画の入稿日時です。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※フォーマット: yyyyMMddHHmmss
++        </div>
++        <div lang="en">
++        Time and date when the video was submitted.<br>
++        Although this field will be returned in the response, it will be ignored on request.<br>
++        *Format: yyyyMMddHHmmss
++        </div>
+     disapprovalReasonCodes:
+       type: array
+       nullable: true
+@@ -30,8 +38,14 @@
+         type: string
+         nullable: true
+       description: |
+-        <div lang="ja">動画の掲載拒否理由です。</div>
+-        <div lang="en">Disapproval reason of the video.</div>
++        <div lang="ja">
++        動画の掲載拒否理由です。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
++        </div>
++        <div lang="en">
++        Disapproval reason of the video.<br>
++        Although this field will be returned in the response, it will be ignored on request.
++        </div>
+     mediaId:
+       type: integer
+       nullable: true
