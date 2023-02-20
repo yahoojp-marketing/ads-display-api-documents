@@ -50,7 +50,7 @@ ReportDefinitionServiceReportType:
       <dt class="term__item">PLACEMENT_TARGET</dt>
       <dd class="term__desc"><span lang="ja">プレイスメントターゲティングレポートです。</span><span lang="en">Placement Targeting Report.</span></dd>
       <dt class="term__item">LABEL</dt>
-      <dd class="term__desc"><span lang="ja">ラベル</span><span lang="en">Label.</span></dd>
+      <dd class="term__desc"><span lang="ja">ラベルレポートです。</span><span lang="en">Label Report.</span></dd>
       <dt class="term__item">SITE_CATEGORY</dt>
       <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></dd>
       <dt class="term__item">REACH</dt>
