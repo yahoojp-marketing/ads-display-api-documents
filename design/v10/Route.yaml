@@ -3282,8 +3282,12 @@ paths:
   /DictionaryService/getSharedAudienceListInfo:
     post:
       description: |
-        <div lang="ja">共通オーディエンスリストの情報を取得します。</div>
-        <div lang="en">Retrieves information of shared audience list.</div>
+        <div lang="ja">共通オーディエンスリストの情報を取得します。<br>
+        共通オーディエンスリストのリスト種別、リーチが取得できます。
+        </div>
+        <div lang="en">Retrieves information of shared audience list.<br>
+        List type and reach of shared audience list can be obtained.
+        </div>
       tags:
         - DictionaryService
       requestBody:
@@ -3339,8 +3343,12 @@ paths:
   /DictionaryService/getSharedAudienceListMaster:
     post:
       description: |
-        <div lang="ja">共通オーディエンスリストのマスタ情報を取得します。</div>
-        <div lang="en">Retrieves information of shared audience list master.</div>
+        <div lang="ja">共通オーディエンスリストのマスタ情報を取得します。<br>
+        共通オーディエンスリストの階層構造が取得できます。
+        </div>
+        <div lang="en">Retrieves information of shared audience list master.<br>
+        Layered structure of shared audience list can be obtained.
+        </div>
       tags:
         - DictionaryService
       requestBody:
