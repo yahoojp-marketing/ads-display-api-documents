@@ -15,12 +15,12 @@ AudienceListServiceType:
     <div lang="ja">
     AudienceListServiceTypeは、オーディエンスリストの種別を表します。<br>
     このフィールドは、ADDおよびSET時に必須となります。<br>
-    ただし、ADD時にDEFAULT_LISTを指定することはできません。
+    ただし、ADD時にDEFAULT_LISTおよびCUSTOM_AUDIENCEを指定することはできません。
     </div>
     <div lang="en">
     AudienceListServiceType serves types of audience list. <br>
     This field is required in ADD and SET operation.<br>
-    However, DEFAULT_LIST cannot be specified in ADD operation.
+    However, DEFAULT_LIST and CUSTOM_AUDIENCE cannot be specified in ADD operation.
     </div>
     <dl class=term>
       <dt class="term__item">DEFAULT_LIST</dt>

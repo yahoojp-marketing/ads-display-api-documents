@@ -74,11 +74,11 @@ RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign:
       description: |
         <div lang="ja">
         推奨するキャンペーン入札戦略タイプです。<br>
-        現在は"AUTO"のみ返却します。
+        現在は"TARGET_CPA"のみ返却します。
         </div>
         <div lang="en">
         Recommended campaign bidding strategy type.<br>
-        Currently, only "AUTO" will be returned.
+        Currently, only "TARGET_CPA" will be returned.
         </div>
     recommendedTargetCpaBidValue:
       type: integer

@@ -84,10 +84,10 @@ RecommendationServiceUpdateAdCreativeList:
       format: double
       description: |
         <div lang="ja">
-        ２カ月前のビューアブルクリック率(月間平均)です<br>
+        このフィールドはnullが返却されます。
         </div>
         <div lang="en">
-        Viewable CTR two months ago (monthly average)
+        This field be returned null.
         </div>
     latestViewableCtr:
       type: number
@@ -95,10 +95,10 @@ RecommendationServiceUpdateAdCreativeList:
       format: double
       description: |
         <div lang="ja">
-        直近１カ月のビューアブルクリック率(月間平均)です<br>
+        15~1日前のビューアブルクリック率(平均)です
         </div>
         <div lang="en">
-        Latest viewable CTR (monthly average)
+        Latest viewable CTR 15~1 days ago (average)
         </div>
     viewableCtrDecrease:
       type: number

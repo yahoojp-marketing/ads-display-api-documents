@@ -1,0 +1,10 @@
+VideoServiceExtraSpecs:
+  type: object
+  nullable: true
+  properties:
+    qualityType:
+      $ref: 'VideoServiceExtraSpecsQualityType.yaml#/VideoServiceExtraSpecsQualityType'
+  title: VideoServiceExtraSpecs
+  description: |
+    <div lang="ja">VideoServiceExtraSpecsは、通常の画質（低画質、中画質、高画質）の他に追加で利用できる画質です。</div>
+    <div lang="en">VideoServiceExtraSpecs is an additional video quality that can be used other than the regular video qualities (low-quality, medium-quality, high-quality).</div>

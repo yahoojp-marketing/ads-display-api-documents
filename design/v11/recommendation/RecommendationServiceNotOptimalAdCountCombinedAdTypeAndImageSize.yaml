@@ -1,0 +1,13 @@
+RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSize:
+  type: object
+  nullable: true
+  properties:
+    notOptimalAdCountCombinedAdTypeAndImageSizeAdGroupList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSizeAdGroup.yaml#/RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSizeAdGroup'
+  title: RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSize
+  description: |
+    <div lang="ja">RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSizeオブジェクトは、特定の広告タイプと画像サイズを組み合わせた広告が3～5つ以外の広告グループに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceNotOptimalAdCountCombinedAdTypeAndImageSize objects describes recommendation information about the ad group that have other than 3-5 ads that combine a specific ad type and image size.</div>

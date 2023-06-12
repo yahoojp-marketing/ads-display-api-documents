@@ -166,12 +166,12 @@ ConversionTracker:
         <div lang="ja">
         測定期間（動画視聴）<br>
         ※1-30の範囲で指定可能です。<br>
-        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は1となります。
+        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は3となります。
         </div>
         <div lang="en">
         Counting period (Video view).<br>
         ∗ Can be specified within the range of 1 to 30.<br>
-        This field is optional in requests. The default value in ADD operation will be 1.
+        This field is optional in requests. The default value in ADD operation will be 3.
         </div>
     mostRecentConversionDate:
       type: string

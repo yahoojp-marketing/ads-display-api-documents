@@ -1,0 +1,13 @@
+FeedFtpRequestServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedFtpRequestServiceValue.yaml#/FeedFtpRequestServiceValue'
+  title: FeedFtpRequestServiceReturnValue
+  description: |
+    <div lang="ja">FeedFtpRequestServiceReturnValueオブジェクトは、操作結果を含む即時アップロードリクエスト情報を保持します。</div>
+    <div lang="en">FeedFtpRequestServiceReturnValue object contains Upload (Upload now) request information including operation result.</div>

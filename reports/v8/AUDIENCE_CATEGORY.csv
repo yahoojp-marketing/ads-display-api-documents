@@ -68,6 +68,7 @@
 "VIEWABLE_IMPS_RATE","ビューアブルインプレッション率","Viewable impression rate","viewableImpressionRate","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
 "VIEWABLE_CLICK_RATE","ビューアブルクリック率","Viewable CTR","viewableCtr","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
 "VIDEO_VIEWS_TO_10_SEC","動画の10秒再生数","10 sec video views","videoViewsTo10sec","LONG","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
+"CAMPAIGN_LIFETIME_BUDGET","通期予算","Lifetime budget","campaignLifetimeBudget","LONG",,"Attribute","","",""
 "SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,セールスプロモーション,標準","Ecommerce,In-house,Sales promotion,Standard",""
 "CONV_VALUE_VIA_VIEW_THROUGH","ビュースルーコンバージョン数","View-through conversions","convValueViaViewThrough","LONG",,"Metric","","",""
 "VIDEO_VIEW_THROUGH_RATE","動画の再生完了率","Video view through rate","videoViewThroughRate","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""

@@ -1,0 +1,89 @@
+FeedSet:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    conditionSets:
+      type: array
+      nullable: true
+      items:
+        $ref: 'FeedSetServiceConditionSet.yaml#/FeedSetServiceConditionSet'
+    feedId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        Feedを識別するIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Feed ID.<br>
+        This field is required in requests.
+        </div>
+    feedSetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品セットIDです。<br>
+        REMOVE時、このフィールドは必須です。
+        </div>
+        <div lang="en">
+        Item Set ID.<br>
+        This field is required in REMOVE operation.
+        </div>
+    feedSetName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        商品セット名です。<br>
+        ADD時、このフィールドは必須です。
+        </div>
+        <div lang="en">
+        Item Set name.<br>
+        This field is required in ADD operation.
+        </div>
+    isDefaultSet:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">
+        デフォルトセット判定です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Default setting of Item Set or not.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    itemCount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        商品セットの条件に含まれるアイテム数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Number of items included in Item Set conditions.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: FeedSet
+  description: |
+    <div lang="ja">FeedSetオブジェクトは、商品セット情報を保持します。</div>
+    <div lang="en">FeedSet object contains Item Set information.</div>

@@ -5031,6 +5031,8 @@ paths:
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
                 <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
+                <tr><td>220331</td><td>Invalid combination in regular and responsive materials.</td><td><div lang="ja"> 通常の素材とレスポンシブの素材を両方設定することはできません。</div><div lang="en">It is not possible to set both regular and responsive materials.</div></td></tr>
+                <tr><td>220332</td><td>There are already 6 responsive ads in service.</td><td><div lang="ja">レスポンシブ広告かつ配信中である広告が既に6件存在します。</div><div lang="en">There are already 6 responsive ads in service.</div></td></tr>
                 <tr><td>250002</td><td>Invalid field settings.</td><td><div lang="ja">フィールドに指定できない組み合わせ項目が設定されています。</div><div lang="en">Incorrect combination in report fields is set.</div></td></tr>
               </tbody>
             </table>
@@ -5105,6 +5107,8 @@ paths:
                 <tr><td>220325</td><td>Invalid relation of video and thumbnail format.</td><td><div lang="ja">動画とサムネイルのフォーマットが異なります。</div><div lang="en">Invalid relation of video and thumbnail format.</div></td></tr>
                 <tr><td>220326</td><td>Not allowed to set video beacon url.</td><td><div lang="ja">動画視聴用のbeacon urlを設定する権限がありません。</div><div lang="en">Not allowed to set video beacon url.</div></td></tr>
                 <tr><td>220330</td><td>Invalid combination in user status and campaign banner media.</td><td><div lang="ja">キャンペーンバナー画像の配信設定は変更できません。</div><div lang="en">Unmodifiable the user status on campaign banner media.</div></td></tr>
+                <tr><td>220331</td><td>Invalid combination in regular and responsive materials.</td><td><div lang="ja"> 通常の素材とレスポンシブの素材を両方設定することはできません。</div><div lang="en">It is not possible to set both regular and responsive materials.</div></td></tr>
+                <tr><td>220332</td><td>There are already 6 responsive ads in service.</td><td><div lang="ja">レスポンシブ広告かつ配信中である広告が既に6件存在します。</div><div lang="en">There are already 6 responsive ads in service.</div></td></tr>
                 <tr><td>250002</td><td>Invalid field settings.</td><td><div lang="ja">フィールドに指定できない組み合わせ項目が設定されています。</div><div lang="en">Incorrect combination in report fields is set.</div></td></tr>
               </tbody>
             </table>
