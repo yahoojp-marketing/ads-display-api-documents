@@ -41,7 +41,7 @@ Required items on creating a campaign by goal are as follows.
 <tr><th>Field</th><th>Required?</th><th>Note</th></tr>
 <tr><td>campaignGoal</td><td>Required</td><td>Enter a campaign goal from the value acquired on AccountAuthorityService/get</td></tr>
 <tr><td>budget.amount</td><td>Required</td><td>Campaign Daily Budget</td></tr>
-<tr><td>campaignBiddingStrategy</td><td>Required</td><td>More detail is described on Yahoo! Ads Help "<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について (Bidding Strategy)</a>" (Japanese context only).</td></tr>
+<tr><td>campaignBiddingStrategy</td><td>Required</td><td>More detail is described on Yahoo! Ads Help "<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=en_US">About bid strategy</a>" (Japanese context only).</td></tr>
 <tr><td>viewableFrequencyCap</td><td>Optional</td><td>　</td></tr>
 </table>
 
@@ -99,7 +99,7 @@ Required items on creating an ad group in a campaign by goal are as follows.
 
 <table>
 <tr><th>Field</th><th>Required?</th><th>Note</th></tr>
-<tr><td>adGroupBiddingStrategy</td><td>Optional</td><td>More detail is described on Yahoo! Ads Help "<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について (Bidding Strategy)</a>" (Japanese context only).</td></tr>
+<tr><td>adGroupBiddingStrategy</td><td>Optional</td><td>More detail is described on Yahoo! Ads Help "<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=en_US">About bid strategy</a>" (Japanese context only).</td></tr>
 </table>
 
 **Note**
@@ -228,7 +228,7 @@ Following fields on `AdGroupAd` object are for YDN ads only. These are not avail
 For campaigns by goal, auto bidding can be set with bidding strategy "tCPA".  
 Follow the introduction below for using "tCPA" on campaign or on ad group.
 
-About the availability of tCPA is described on [入札戦略について (Bidding Strategy)](https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518) (Japanese context only).  
+About the availability of tCPA is described on [About bid strategy](https://ads-help.yahoo-net.jp/s/article/H000044352?language=en_US) .  
 When the campaign can use tCPA, it responds "ENABLE" on `conversionOptimizerEligibilityFlg` field of `CampaignServiceManualCampaignConversionOptimizer` object.
 
 Following is a sample response and request of each step.

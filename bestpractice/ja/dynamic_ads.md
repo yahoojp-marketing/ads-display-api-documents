@@ -2,7 +2,7 @@
 ## 動的ディスプレイ広告とは
 ウェブサイトを訪れたインターネットユーザーの行動履歴をもとに、各ユーザーの興味や関心に合わせた内容の広告を動的に生成、配信する広告タイプです。<br>
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=36349">動的ディスプレイ広告について</a><br><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044698?language=ja">動的ディスプレイ広告について</a><br><br>
 このページでは、商品リストのアップロード、更新について解説します。<br>
 
 #### 1.	商品リストの新規作成
@@ -55,7 +55,7 @@ FeedService:addで、Feed情報を新規登録します。
 |12340002|レディースバッグ|お得なセール|http://www.example2.jp|2000|1500|
 
 商品情報tsvファイルについて、詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=36277">商品リストファイルの作成（動的ディスプレイ広告）</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044683?language=ja">商品リストファイルの作成（動的ディスプレイ広告）</a>
 
 ##### リクエストサンプル
 ※リクエストボディには `multipart/form-data` 形式でnameを `file` とした商品情報tsvファイルを指定します。<br>

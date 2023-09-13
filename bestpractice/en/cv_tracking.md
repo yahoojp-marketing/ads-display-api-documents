@@ -3,7 +3,7 @@
 Conversion is the number of users who clicked on an Ads and performed some "result" action.<br>
 By measuring this, you can see how well your Ads is performing.<br>
 For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ss/articledetail?lan=en&aid=353">Conversion Analytics</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000045014?language=en_US">Conversion Analytics</a>
 
 ## How to operate from Display Ads API
 Display Ads API uses ConversionTrackerService, to get, add and update conversion tracker information.<br>

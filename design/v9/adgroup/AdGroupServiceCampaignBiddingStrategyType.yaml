@@ -21,7 +21,7 @@ AdGroupServiceCampaignBiddingStrategyType:
     <div lang="en">
     AdGroupServiceCampaignBiddingStrategyType serves setting of Campaign bid strategy type.<br>
     Although this field will be returned in the response, it will be ignored on input.<br>
-    *For campaigns with no campaignGoal, it is set to "NONE".
+    *For campaigns with no campaignGoal, it is set to "NONE."
     </div>
     <dl class=term>
       <dt class="term__item">AUTO</dt>

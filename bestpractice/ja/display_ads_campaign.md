@@ -41,7 +41,7 @@ CampaignServiceのaddを利用します。
 <tr><th>フィールド</th><th>要不要</th><th>補足</th></tr>
 <tr><td>campaignGoal</td><td>必須</td><td>AccountAuthorityService/getで取得した値から、設定する目的を入力</td></tr>
 <tr><td>budget.amount</td><td>必須</td><td>1日の予算</td></tr>
-<tr><td>campaignBiddingStrategy</td><td>必須</td><td>詳細はYahoo!広告ヘルプ「<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について</a>」を参照してください。</td></tr>
+<tr><td>campaignBiddingStrategy</td><td>必須</td><td>詳細はYahoo!広告ヘルプ「<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>」を参照してください。</td></tr>
 <tr><td>viewableFrequencyCap</td><td>任意</td><td>　</td></tr>
 </table>
 
@@ -99,7 +99,7 @@ AdGroupServiceのaddを利用します。
 
 <table>
 <tr><th>フィールド</th><th>要不要</th><th>補足</th></tr>
-<tr><td>adGroupBiddingStrategy</td><td>任意</td><td>詳細はYahoo!広告ヘルプ<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518">入札戦略について</a>を参照してください。</td></tr>
+<tr><td>adGroupBiddingStrategy</td><td>任意</td><td>詳細はYahoo!広告ヘルプ<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>を参照してください。</td></tr>
 </table>
 
 **注意事項**
@@ -229,7 +229,7 @@ AdGroupAdServiceのaddを利用します。
 目的別キャンペーンでは、自動入札を入札戦略「目標単価指定（tCPA）」で設定します。  
 ここでは、キャンペーン、または広告グループで目標単価指定（tCPA）を利用する方法をご紹介します。
 
-目標単価指定（tCPA）の利用可否については[入札戦略について](https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=51518)を参照してください。  
+目標単価指定（tCPA）の利用可否については[入札戦略について](https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja)を参照してください。  
 対象のキャンペーンが条件を満たしている場合は、 `CampaignServiceManualCampaignConversionOptimizer` オブジェクトの `conversionOptimizerEligibilityFlg` フィールドが `ENABLE` で返却されます。
 
 以下は、各ステップにおけるレスポンスおよびリクエストの例です。

@@ -1,0 +1,37 @@
+RetargetingTag:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    approvalStatus:
+      $ref: 'RetargetingTagServiceApprovalStatus.yaml#/RetargetingTagServiceApprovalStatus'
+    retargetingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">サイトリターゲティングのタグIDです。</div>
+        <div lang="en">Tag ID for site retargeting.</div>
+    advancedTag:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リニューアル版のサイトリターゲティングタグは、従来のタグよりもブラウザーなどの環境の影響を受けづらい新しいフォーマットです。<br>
+        詳細は、「<a href="https://ads-help.yahoo-net.jp/s/article/H000044890?language=ja">サイトリターゲティングタグの取得とサイトへの設置</a>」を参照してください。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        The new format of site retargeting tag avoids the impacts such as changes made to the browser. <br>
+        More details are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044890?language=en_US">Acquire Site Retargeting Tag and Tagging on Site</a>.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: RetargetingTag
+  description: |
+    <div lang="ja">RetargetingTagオブジェクトは、サイトリターゲティングのタグ情報を表します。</div>
+    <div lang="en">RetargetingTag object displays tag information for site retargeting.</div>

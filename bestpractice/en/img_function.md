@@ -1,13 +1,13 @@
 # Image Function
 How to add image, explained.<br>
 See also the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=8721">Add images</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044637?language=en_US">Add images</a>
 
 #### 1.	Upload Ads Image
 Use MediaService:add. Banner uploaded(300\*250, jpg), this time.<br>
 ※Change Ads image to base64 and use it for imageMedia:data.<br>
 See also the help about Ads size below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=en&aid=28628">Add images</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044175?language=en_US">Add images</a>
 
 ##### Request Sample
 ```json

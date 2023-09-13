@@ -2,7 +2,7 @@
 ## コンバージョンとは
 広告をクリックしたユーザーが、何らかの「成果」となる行動をとった数です。これを計測することで、広告がどの程度成果を上げているかなどを確認できます。<br>
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=ja&aid=59417">コンバージョン測定とは</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044362?language=ja">コンバージョン測定とは</a>
 
 ## ディスプレイ広告API での実施方法
 ディスプレイ広告APIでは、コンバージョントラッカー情報（コンバージョン測定タグおよび、タグごとのパフォーマンスデータ）の取得および追加・更新を行うために、ConversionTrackerService、を使用します。<br>

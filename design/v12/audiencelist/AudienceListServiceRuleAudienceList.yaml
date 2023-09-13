@@ -1,0 +1,51 @@
+AudienceListServiceRuleAudienceList:
+  type: object
+  nullable: true
+  properties:
+    isOpen:
+      $ref: 'AudienceListServiceIsOpen.yaml#/AudienceListServiceIsOpen'
+    isPreset:
+      $ref: 'AudienceListServiceIsPreset.yaml#/AudienceListServiceIsPreset'
+    reachPeriod:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        リーチの蓄積期間（1日～540日）です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Cookies validation period. (1 - 540 days) <br>
+        This field is required in ADD operation, and is optional in SET operation.
+        </div>
+    retargetingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リターゲティングタグIDです。<br>
+        このフィールドは、ADD時に必須となります。
+        </div>
+        <div lang="en">
+        ID of retargeting tag. <br>
+        This field is required in ADD operation.
+        </div>
+    rules:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceRule.yaml#/AudienceListServiceRule'
+  title: AudienceListServiceRuleAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceRuleAudienceListオブジェクトは、ルール設定のリストを表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがDEFAULT_LISTまたはRULEの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceRuleAudienceList object displays the list of rule settings.<br>
+    This field is optional in ADD and SET operation. <br>
+    *If audienceListType is DEFAULT_LIST, this field is required in ADD and SET operation.
+    </div>
+  

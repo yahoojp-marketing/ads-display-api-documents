@@ -2,7 +2,7 @@
 ## What is "Dynamic Ads for Display"?
 Dynamic Ads for Display automatically creates and delivers ads based on user’s behavioral property. It can display various ads dynamically based on the interests and concerns of the browsing user.<br>
 For details, refer to the help below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=22319">What is Dynamic Ads for Display</a><br><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044698?language=en_US">What is Dynamic Ads for Display</a><br><br>
 This page explains how to upload and update the Item list.<br>
 
 #### 1.	Add Item list
@@ -55,7 +55,7 @@ Add tsv file of product information, and upload it with FeedDataService:upload.
 |12340002|Ladie's bags|Great deals|http://www.example2.jp|2000|1500|
 
 For details, refer to the help abount tsv file below.<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=en&aid=22325">Create Item list file (Dynamic Ads for Display)</a><br><br>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044683?language=en_US">Create Item list file (Dynamic Ads for Display)</a><br><br>
 
 ##### Request sample
 ※Add product information file with `multipart/form-data` and `name:file` in request body.<br>

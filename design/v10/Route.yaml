@@ -176,6 +176,7 @@ tags:
       <li><div lang="ja"><a href="./reports/v10/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v10/LABEL.csv" download>Label report</a></div></li>
       <li><div lang="ja"><a href="./reports/v10/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v10/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
       <li><div lang="ja"><a href="./reports/v10/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v10/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v10/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v10/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
       </ul>
   - name: MediaService
     description: |
@@ -977,6 +978,7 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>210004</td><td>The budget specified is less than the estimated cost.</td><td><div lang="ja">指定された予算額が予想コストを下回っているため、設定できません。</div><div lang="en">Cannot be set since the specified budget amount is below the expected cost.</div></td></tr>
+                <tr><td>210005</td><td>Cannot update due to the dependency with the delivery settings of guaranteed campaign.</td><td><div lang="ja">予約型キャンペーンの配信設定との依存関係があるため、更新できません。</div><div lang="en">Cannot update due to the dependency with the delivery settings of guaranteed campaign.</div></td></tr>
               </tbody>
             </table>
               </tbody>
@@ -2313,7 +2315,7 @@ paths:
     post:
       description: |
         <div lang="ja">
-          オーディエンスリスト（カスタム）、オーディエンスリスト（顧客データ）のユーザリストファイルをアップロードします。<br/>
+          オーディエンスリスト（顧客データ）のユーザリストファイルをアップロードします。<br/>
           アップロードリクエストでは以下を指定します。<br/>
           テストアカウントでは利用頂けない機能です。
           <ul>
@@ -2331,7 +2333,7 @@ paths:
           </ul>
         </div>
         <div lang="en">
-          Upload the user list file for audience list (custom) and audience list (customer data). <br/>
+          Upload the user list file for audience list (customer data). <br/>
           Specify the following in the upload request.<br/>
           The action is unavailable for test account.
           <ul>

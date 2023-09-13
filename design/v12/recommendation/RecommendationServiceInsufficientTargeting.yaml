@@ -1,0 +1,13 @@
+RecommendationServiceInsufficientTargeting:
+  type: object
+  nullable: true
+  properties:
+    insufficientTargetingCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceInsufficientTargetingCampaign.yaml#/RecommendationServiceInsufficientTargetingCampaign'
+  title: RecommendationServiceInsufficientTargeting
+  description: |
+    <div lang="ja">RecommendationServiceInsufficientTargetingオブジェクトは、ターゲットを絞り込みすぎているキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceInsufficientTargeting object describes recommendation information about the campaign that too narrow down the targeting.</div>

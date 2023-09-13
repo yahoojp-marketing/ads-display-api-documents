@@ -1,13 +1,13 @@
 # 画像機能
 ディスプレイ広告で、画像を追加する方法は、以下のとおりです。<br>
 詳しくは以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/ydn/articledetail?lan=ja&aid=10945">画像の追加</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044637?language=ja">画像の追加</a>
 
 #### 1.	広告画像のアップロード
 MediaService:addを使用します。今回は、通常の広告画像(300\*250のjpg)をアップロードします。<br>
 ※広告画像をbase64に変換しておきます。これはimageMedia:dataで使用します。<br>
 画像のサイズなどについては、以下のヘルプをご参照ください。<br>
-・<a href="https://ads-help.yahoo.co.jp/yahooads/guideline/articledetail?lan=ja&aid=51332">バナー（画像）</a>
+・<a href="https://ads-help.yahoo-net.jp/s/article/H000044175?language=ja">バナー（画像）</a>
 
 ##### リクエストサンプル
 ```json
