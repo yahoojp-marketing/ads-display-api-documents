@@ -41,7 +41,7 @@ AdGroupTargetServiceAudienceListType:
       <dt class="term__item">CUSTOMER_DATA</dt>
       <dd class="term__desc"><span lang="ja">顧客データです。</span><span lang="en">Customer data.</span></dd>
       <dt class="term__item">OFFERED_BY_YAHOO_JAPAN</dt>
-      <dd class="term__desc"><span lang="ja">ヤフー提供データです。</span><span lang="en">Audience list (offered by Yahoo! JAPAN) data.</span></dd>
+      <dd class="term__desc"><span lang="ja">ヤフー提供データです。</span><span lang="en">Audience list (offered by Yahoo! JAPAN Ads) data.</span></dd>
       <dt class="term__item">APP_USER</dt>
       <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
       <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>

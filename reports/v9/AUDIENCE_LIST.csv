@@ -1,7 +1,7 @@
 ﻿"フィールド名/Field Name","日本語表示名称/Japanese Display Name","英語表示名称/English Display Name","XML属性/XML Attribute","型/Type","組合せ不可フィールド/Not Compatible Fields","動作区分/Behavior Type","日本語返却値/Japanese Display Values","英語返却値/English Display Values","備考/Note"
 "AUDIENCE_LIST_ID","オーディエンスリストID","Audience list ID","audienceListID","LONG",,"Attribute","","",""
 "AUDIENCE_LIST_NAME","オーディエンスリスト名","Audience list name","audienceListName","STRING",,"Attribute","","",""
-"AUDIENCE_LIST_TYPE","オーディエンスリスト種別","Audience list type","audienceListType","STRING",,"Attribute","デフォルト,条件,組み合わせ,類似ユーザー,カスタム,ウェブサイト訪問ユーザー,顧客データ,ヤフー提供,アプリユーザー,Yahoo! Audience Discovery,オーディエンスリスト（興味関心）,オーディエンスリスト（購買意向）,オーディエンスリスト（属性・ライフイベント）","Default,Rule,Combination,Similar users,Custom,Website visitors,Customer data,Offered by Yahoo! JAPAN,App user,Yahoo! JAPAN Audience Discovery,Audience list (affinity),Audience list (in-market),Audience list (attribute, life events)",""
+"AUDIENCE_LIST_TYPE","オーディエンスリスト種別","Audience list type","audienceListType","STRING",,"Attribute","デフォルト,条件,組み合わせ,類似ユーザー,カスタム,ウェブサイト訪問ユーザー,顧客データ,ヤフー提供,アプリユーザー,Yahoo! Audience Discovery,オーディエンスリスト（興味関心）,オーディエンスリスト（購買意向）,オーディエンスリスト（属性・ライフイベント）","Default,Rule,Combination,Similar users,Custom,Website visitors,Customer data,Offered by Yahoo! JAPAN Ads,App user,Yahoo! JAPAN Audience Discovery,Audience list (affinity),Audience list (in-market),Audience list (attribute, life events)",""
 "ACCOUNT_ID","アカウントID","Account ID","accountID","LONG",,"Attribute","","",""
 "ACCOUNT_NAME","アカウント名","Account Name","accountName","STRING",,"Attribute","","",""
 "CAMPAIGN_ID","キャンペーンID","Campaign ID","campaignID","LONG",,"Attribute","","",""
