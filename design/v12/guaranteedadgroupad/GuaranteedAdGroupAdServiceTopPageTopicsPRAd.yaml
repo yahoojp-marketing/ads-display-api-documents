@@ -76,10 +76,8 @@ GuaranteedAdGroupAdServiceTopPageTopicsPRAd:
     <div lang="ja">
     GuaranteedAdGroupAdServiceTopPageTopicsPRAdオブジェクトは、トップページ トピックスPR広告の情報を表します。<br>
     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
-    ※現在利用できません
     </div>
     <div lang="en">
     GuaranteedAdGroupAdServiceTopPageTopicsPRAd object describes the information of Top Page Topics PR ad.<br>
     This field will be returned in the response, it will be ignored on input.<br>
-    * Not Available.
     </div>

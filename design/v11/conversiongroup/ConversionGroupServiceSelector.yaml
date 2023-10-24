@@ -26,8 +26,14 @@ ConversionGroupServiceSelector:
       type: string
       nullable: true
       description: |
-        <div lang="ja">コンバージョングループ名。</div>
-        <div lang="en">Conversion Group Name.</div>
+        <div lang="ja">
+          コンバージョングループ名。<br>
+          この検索条件では、大文字と小文字は区別されません。
+        </div>
+        <div lang="en">
+          Conversion group name.<br>
+          This searching condition is case-insensitive.
+        </div>
     conversionTrackerIds:
       type: array
       nullable: true

@@ -86,11 +86,11 @@ MediaServiceImageMedia:
       description: |
         <div lang="ja">
         MediaServiceUpscaleImageEnabledは画像の自動アップコンバートの設定フラグを表します。<br>
-        このフィールドは、ADD時に省略可能となります。
+        このフィールドは、ADD時に省略可能となります。その際、デフォルト値はtrueになります。
         </div>
         <div lang="en">
         MediaServiceUpscaleImageEnabled displays the flag settings of automatic image up-conversion. <br>
-        This field is optional in ADD operation.
+        This field is optional in ADD operation. The default value will be true.
         </div>
   title: MediaServiceImageMedia
   description: |
