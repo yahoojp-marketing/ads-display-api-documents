@@ -24,8 +24,8 @@ BudgetOrderServiceSelector:
       maximum: 500
       default: 500
       description: |
-        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。</div>
-        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation.</div>
+        <div lang="ja">ページの最大件数です。このフィールドは、1以上を指定する必要があります。※現在利用できません</div>
+        <div lang="en">Maximum number of results to return in this page. This field must be greater than or equal to 1. Also see Entity Limits per operation. * Not Available.</div>
     startIndex:
       type: integer
       nullable: true
@@ -33,8 +33,8 @@ BudgetOrderServiceSelector:
       minimum: 1
       default: 1
       description: |
-        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。</div>
-        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1.</div>
+        <div lang="ja">ページの先頭のインデックスです。このフィールドは、1以上を指定する必要があります。※現在利用できません</div>
+        <div lang="en">Index of the first result to return in this page. This field must be greater than or equal to 1. * Not Available.</div>
   title: BudgetOrderServiceSelector
   description: |
     <div lang="ja">BudgetOrderServiceSelectorオブジェクトは、取得するアカウント予算を指定します。</div>

@@ -13,11 +13,9 @@ AppLinkServiceAppVendor:
   description: |
     <div lang="ja">
     AppLinkServiceAppVendorは、アプリ計測ベンダーを表します。<br>
-    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">
     AppLinkServiceAppVendor serves app measurement partner.
-    Although this field will be returned in the response, it will be ignored on input.
     </div>
     <dl class=term>
       <dt class="term__item">ADJUST</dt>
