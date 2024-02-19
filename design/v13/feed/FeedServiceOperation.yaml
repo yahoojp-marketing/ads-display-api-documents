@@ -1,0 +1,25 @@
+FeedServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'Feed.yaml#/Feed'
+      minItems: 1
+      maxItems: 1
+  title: FeedServiceOperation
+  description: |
+    <div lang="ja">FeedServiceOperationオブジェクトは、mutate対象となるFeed情報を保持します。</div>
+    <div lang="en">FeedServiceOperation object contains Feed information by mutate operation.</div>

@@ -1,0 +1,29 @@
+AdGroupServiceSmartTargetingEnabled:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: AdGroupServiceSmartTargetingEnabled
+  description: |
+    <div lang="ja">
+    AdGroupServiceSmartTargetingEnabledは、スマートターゲティングのフラグです。<br>
+    設定値が「TRUE」の場合、有効になります。<br>
+    ADD時およびSET時、このフィールドは省略可能となります。その際、ADD時のデフォルト設定値はFALSEとなります。<br>
+    ※現在利用できません。
+    </div>
+    <div lang="en">
+    AdGroupServiceSmartTargetingEnabled is a flag for smart targeting.<br>
+    If the set value is 'TRUE', the value will be valid.<br>
+    This field is optional in ADD and SET operation. The default value in ADD operation will be FALSE.<br>
+    *Currently this field is not available.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">有効</span><span lang="en">Valid.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">無効</span><span lang="en">Invalid.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

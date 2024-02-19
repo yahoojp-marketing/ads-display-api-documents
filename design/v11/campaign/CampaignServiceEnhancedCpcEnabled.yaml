@@ -13,7 +13,7 @@ CampaignServiceEnhancedCpcEnabled:
     このフィールドはADDおよびSET時に必須となり、REMOVE時に無視されます。
     </div>
     <div lang="en">
-    <div lang="en">CampaignServiceEnhancedCpcEnabled specifies flag of Maximize Conversions.<br>
+    CampaignServiceEnhancedCpcEnabled specifies flag of Maximize Conversions.<br>
     If this field is TRUE, the bidding strategy on audit log is "eCPC".<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
     </div>

@@ -1,0 +1,36 @@
+AdGroupAdServiceAdType:
+  type: string
+  nullable: true
+  enum:
+  - BANNER_AD
+  - CAROUSEL_AD
+  - DYNAMIC_DISPLAY_AD
+  - RESPONSIVE_AD
+  - TEXT_AD
+  - UNKNOWN
+  title: AdGroupAdServiceAdType
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なる場合があります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAdType describes the type of ad.<br>
+    This field is required in ADD operation, and will be optional in SET operation.<br>
+    In addition, the number of available characters of ad creatives vary with selected devices.
+    </div>
+    <dl class=term>
+      <dt class="term__item">BANNER_AD</dt>
+      <dd class="term__desc"><span lang="ja">バナー広告です。</span><span lang="en">Banner ad.</span></dd>
+      <dt class="term__item">CAROUSEL_AD</dt>
+      <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
+      <dt class="term__item">DYNAMIC_DISPLAY_AD</dt>
+      <dd class="term__desc"><span lang="ja">動的ディスプレイ広告です。</span><span lang="en">Dynamic display ad.</span></dd>
+      <dt class="term__item">RESPONSIVE_AD</dt>
+      <dd class="term__desc"><span lang="ja">レスポンシブ広告です。</span><span lang="en">Responsive Ad.</span></dd>
+      <dt class="term__item">TEXT_AD</dt>
+      <dd class="term__desc"><span lang="ja">テキスト広告です。</span><span lang="en">Text ad.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -6377,8 +6377,10 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">FeedItemServiceは商品情報の操作を提供します。</div>
-        <div lang="en">FeedItemService provides the operation about item information.</div>
+        <div lang="ja">FeedItemServiceは商品情報の操作を提供します。<br>
+        ※現在、こちらのサービスは利用できません。</div>
+        <div lang="en">FeedItemService provides the operation about item information.<br>
+        *Currently this service is not available.</div>
       tags:
         - FeedItemService
       requestBody:

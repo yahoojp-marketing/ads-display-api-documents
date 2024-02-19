@@ -1,0 +1,111 @@
+CampaignServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">検索条件 : アカウントID</div>
+        <div lang="en">Search condition: Account ID</div>
+    campaignIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 2000
+      description: |
+        <div lang="ja">検索条件 : キャンペーンID</div>
+        <div lang="en">Search condition: Campaign ID</div>
+    containsLabel:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">ラベルID取得フラグです。<br>
+        このフィールドは省略可能となります。その際、デフォルト値はfalseとなります。
+        </div>
+        <div lang="en">Flag of contains label ID.<br>
+        This field is optional. The default value will be false.
+        </div>
+    feedIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 10
+      description: |
+        <div lang="ja">検索条件 : フィードID</div>
+        <div lang="en">Search condition: Feed ID</div>
+    labelIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件 : ラベルID</div>
+        <div lang="en">Search condition: Label ID</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 2000
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、0以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 0.</div>
+    userStatuses:
+      type: array
+      nullable: true
+      items:
+        $ref: 'CampaignServiceUserStatus.yaml#/CampaignServiceUserStatus'
+      maxItems: 2
+    createdDateRange:
+      $ref: 'CampaignServiceCreatedDateRange.yaml#/CampaignServiceCreatedDateRange'
+    conversionGroupIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件 : コンバージョングループID</div>
+        <div lang="en">Search condition: Conversion Group ID</div>
+    conversionTrackerIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">検索条件 : コンバージョントラッカーID</div>
+        <div lang="en">Search condition: Conversion Tracking ID</div>
+    budgetAmountRange:
+      $ref: 'CampaignServiceBudgetAmountRange.yaml#/CampaignServiceBudgetAmountRange'
+  title: CampaignServiceSelector
+  description: |
+    <div lang="ja">CampaignServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持します。</div>
+    <div lang="en">The CampaignServiceSelector object is a container for storing a set of criteria (parameters) for get method.</div>

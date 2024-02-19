@@ -1,0 +1,19 @@
+ConversionTrackerServiceWebConversion:
+  type: object
+  nullable: true
+  properties:
+    snippet:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ConversionTrackerServiceWebConversionSnippet.yaml#/ConversionTrackerServiceWebConversionSnippet'
+  title: ConversionTrackerServiceWebConversion
+  description: |
+    <div lang="ja">
+    ConversionTrackerServiceWebConversionは、ウェブページのコンバージョン設定を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceWebConversion object displays the Web Conversion Tracker information.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

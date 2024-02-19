@@ -1,0 +1,25 @@
+ReportDefinitionServiceIncludeVideoInteractionFlg:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: ReportDefinitionServiceIncludeVideoInteractionFlg
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceIncludeVideoInteractionFlgは、ビデオインタラクションを含めるかどうかを表すフラグです。<br>
+      このフィールドは、ADD時に必須となります。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceIncludeVideoInteractionFlg is a flag which indicates whether to include video interaction.<br>
+      This field is required in ADD operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">ビデオインタラクションを含めます。</span><span lang="en">Includes video interaction.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">ビデオインタラクションを含めません。</span><span lang="en">Does not includes video interaction.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,18 @@
+AdGroupTargetServicePositionTarget:
+  type: object
+  nullable: true
+  properties:
+    positionType:
+      $ref: 'AdGroupTargetServicePositionType.yaml#/AdGroupTargetServicePositionType'
+  title: AdGroupTargetServicePositionTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServicePositionTargetオブジェクトは、ポジションターゲティングの設定情報を保持します。<br>
+    *このターゲットは予約型専用となります。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupTargetServicePositionTarget object contains position targeting settings.<br>
+    *This target is exclusive for guaranteed ad.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

@@ -5,6 +5,7 @@
 * [動的ディスプレイ広告機能](./dynamic_ads.md)
 * [画像機能](./img_function.md)
 * [操作履歴](./audit_item.md)
+* [ターゲティング](./display_ads_targeting.md)
 
 ## Appendix
 * [値の制限](./constraints.md)
