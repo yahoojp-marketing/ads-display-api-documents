@@ -1,0 +1,745 @@
+
+
+------
+diff -ru v13/Route.yaml v14/Route.yaml
+--- v13/Route.yaml	2024-05-09 10:40:52
++++ v14/Route.yaml	2024-06-14 10:37:50
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
+-  version: 'v13'
++  version: 'v14'
+   description: |
+     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v13/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v14/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+ 
+@@ -23,7 +23,7 @@
+   - oAuth: [yahooads]
+ 
+ servers:
+-  - url: https://ads-display.yahooapis.jp/api/v13
++  - url: https://ads-display.yahooapis.jp/api/v14
+ 
+ tags:
+   - name: AbTestService
+@@ -170,19 +170,19 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v13/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v13/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/AUDIENCE_CATEGORY.csv" download>オーディエンスカテゴリーレポート</a></div><div lang="en"><a href="./reports/v13/AUDIENCE_CATEGORY.csv" download>Audience category report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v13/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v13/URL.csv" download>Ad Delivery URL report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v13/REACH.csv" download>Reach report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v13/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v13/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v13/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v13/LABEL.csv" download>Label report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v13/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v13/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v13/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v13/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v13/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v14/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v14/SITE_CATEGORY.csv" download>Site category report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v14/URL.csv" download>Ad Delivery URL report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v14/REACH.csv" download>Reach report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v14/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v14/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v14/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v14/LABEL.csv" download>Label report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v14/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v14/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v14/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v14/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v14/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v14/APP.csv" download>App Report</a></div></li>
+       </ul>
+   - name: MediaService
+     description: |
+@@ -1787,6 +1787,8 @@
+                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
+                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
+                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
++                <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
++                <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1859,6 +1861,8 @@
+                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
+                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
+                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
++                <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
++                <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2064,6 +2068,8 @@
+                 file:
+                   type: string
+                   format: binary
++              required:
++                - file
+       responses:
+         503:
+           $ref: '../Response503.yaml#/Response503'
+@@ -2560,6 +2566,10 @@
+                 <tr><td>211008</td><td>Cannot remove a audience list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくオーディエンスリストは削除できません。</div><div lang="en">Cannot remove a audience list set to AdGroup.</div></td></tr>
+                 <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
+                 <tr><td>211010</td><td>Cannot create a audience list.</td><td><div lang="ja">サイトリターゲティングタグを未発行のためオーディエンスリストを作成できません。</div><div lang="en">Audience list cannot be created because the site retargeting tag has not been issued.</div></td></tr>
++                <tr><td>211011</td><td>Contain unavailable ad action user lists.</td><td><div lang="ja">広告データ利用基準に抵触している広告アクションユーザーリストを用いて類似リストまたは組み合わせリストを作成することはできません。</div><div lang="en">Cannot create a similarity list or a combination list using ad action user lists which are in violation of Advertising Data Usage Standards.</div></td></tr>
++                <tr><td>211012</td><td>MCC account cannot create an ad action user list.</td><td><div lang="ja">MCCアカウントで広告アクションユーザーリストを作成することはできません。</div><div lang="en">MCC account cannot create an ad action user list.</div></td></tr>
++                <tr><td>211013</td><td>Contain unavailable ads.</td><td><div lang="ja">広告データ利用基準に抵触している広告を用いて広告アクションユーザーリストを作成できません。</div><div lang="en">Cannot create an ad action user list using ads which are in violation of Advertising Data Usage Standards.</div></td></tr>
++                <tr><td>211014</td><td>Contain Dynamic Ads for Display.</td><td><div lang="ja">動的ディスプレイ広告を用いて広告アクションユーザーリストを作成できません。</div><div lang="en">Cannot create an ad action user list using Dynamic Ads for Display.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2631,6 +2641,7 @@
+                 <tr><td>211007</td><td>Cannot incorporate a non-shared list into a shared combination list.</td><td><div lang="ja">共有されていないリストを共有されている組み合わせリストに組み込むことはできません。</div><div lang="en">Cannot incorporate a non-shared list into a shared combination list.</div></td></tr>
+                 <tr><td>211008</td><td>Cannot remove a audience list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくオーディエンスリストは削除できません。</div><div lang="en">Cannot remove a audience list set to AdGroup.</div></td></tr>
+                 <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
++                <tr><td>211011</td><td>Contain unavailable ad action user lists.</td><td><div lang="ja">広告データ利用基準に抵触している広告アクションユーザーリストを用いて類似リストまたは組み合わせリストを作成することはできません。</div><div lang="en">Cannot create a similarity list or a combination list using ad action user lists which are in violation of Advertising Data Usage Standards.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2717,8 +2728,7 @@
+           アップロードリクエストでは以下を指定します。<br/>
+           テストアカウントでは利用頂けない機能です。
+           <ul>
+-            <li>・Content-Type: application/octet-stream（非圧縮形式の場合はtext/plain指定も可能）</li>
+-            <li>・Content-Length: アップロード対象のファイルのバイト数</li>
++            <li>・Content-Type: multipart/form-data</li>
+             <li>・Request body: アップロードするユーザーリストのファイル本体</li>
+           </ul>
+           Transfer-encoding: chunkedを指定してのアップロードには対応していません。<br/>
+@@ -2770,14 +2780,6 @@
+             <div lang="ja">アカウントIDです。</div>
+             <div lang="en">Account ID.</div>
+         - in: query
+-          name: retargetingTagId
+-          schema:
+-            type: string
+-          required: true
+-          description: |
+-            <div lang="ja">サイトリターゲティングのタグIDです。</div>
+-            <div lang="en">Tag ID for site retargeting.</div>
+-        - in: query
+           name: audienceListId
+           schema:
+             type: integer
+@@ -2794,11 +2796,11 @@
+           description: |
+             <div lang="ja">
+               AudienceListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。<br>
+-              ハッシュ化メールアドレスの詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja">ヘルプ</a>をご参照ください。
++              ハッシュ化メールアドレスまたは電話番号の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja">ヘルプ</a>をご参照ください。
+             </div>
+             <div lang="en">
+               AudienceListServiceUploadUserListUploadType displays kind of upload method.<br>
+-              Refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Help page</a> for more details about hashed Email Address.
++              Refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Help page</a> for more details about hashed Email Address and Phone Number.
+             </div>
+             </div>
+             <dl class=term>
+@@ -2806,8 +2808,8 @@
+               <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></dd>
+               <dt class="term__item"><code>AAID</dt>
+               <dd class="term__desc"><span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></dd>
+-              <dt class="term__item"><code>MAIL_ADDRESS</dt>
+-              <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスです。</span><span lang="en">Hashed email address.</span></dd>
++              <dt class="term__item"><code>MAIL_ADDRESS_AND_PHONE_NUMBER</dt>
++              <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスまたは電話番号です。</span><span lang="en">Hashed email address or phone number.</span></dd>
+               <dt class="term__item"><code>UNKNOWN</dt>
+               <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+             </dl>
+@@ -2831,10 +2833,15 @@
+             </dl>
+       requestBody:
+         content:
+-          application/octet-stream:
++          multipart/form-data:
+             schema:
+-              type: string
+-              format: binary
++              type: object
++              properties:
++                file:
++                  type: string
++                  format: binary
++              required:
++                - file
+       responses:
+         503:
+           $ref: '../Response503.yaml#/Response503'
+@@ -5489,6 +5496,8 @@
+                 file:
+                   type: string
+                   format: binary
++              required:
++                - file
+       responses:
+         503:
+           $ref: '../Response503.yaml#/Response503'
+@@ -7139,6 +7148,8 @@
+                 file:
+                   type: string
+                   format: binary
++              required:
++                - file
+       responses:
+         503:
+           $ref: '../Response503.yaml#/Response503'
+
+
+------
+diff -ru v13/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml v14/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml
+--- v13/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2024-06-10 15:26:17
++++ v14/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2024-06-10 15:26:17
+@@ -10,6 +10,7 @@
+   - APP_USER
+   - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+   - ADVANCED_SEGMENTS
++  - AD_ACTION_USERS
+   - AFFINITY
+   - IN_MARKET
+   - ATTRIBUTE_LIFE_EVENTS
+@@ -40,6 +41,8 @@
+       <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! JAPAN Audience Discovery.</span></dd>
+       <dt class="term__item">ADVANCED_SEGMENTS</dt>
+       <dd class="term__desc"><span lang="ja">高度なセグメントです。</span><span lang="en">Advanced segments.</span></dd>
++      <dt class="term__item">AD_ACTION_USERS</dt>
++      <dd class="term__desc"><span lang="ja">広告アクションユーザーです。</span><span lang="en">Ad action users.</span></dd>
+       <dt class="term__item">AFFINITY</dt>
+       <dd class="term__desc"><span lang="ja">興味関心です。</span><span lang="en">Affinity.</span></dd>
+       <dt class="term__item">IN_MARKET</dt>
+
+
+------
+diff -ru v13/applinkservice/AppLinkServiceAppVendor.yaml v14/applinkservice/AppLinkServiceAppVendor.yaml
+--- v13/applinkservice/AppLinkServiceAppVendor.yaml	2024-06-13 15:24:25
++++ v14/applinkservice/AppLinkServiceAppVendor.yaml	2024-06-13 15:24:25
+@@ -6,7 +6,6 @@
+     - APPSFLYER
+     - KOCHAVA
+     - SINGULAR
+-    - METAPS
+     - UNKNOWN
+   title: AppLinkServiceAppVendor
+   description: |
+@@ -25,8 +24,6 @@
+       <dd class="term__desc"><span lang="ja">KOCHAVA</span><span lang="en">KOCHAVA</span></dd>
+       <dt class="term__item">SINGULAR</dt>
+       <dd class="term__desc"><span lang="ja">SINGULAR</span><span lang="en">SINGULAR</span></dd>
+-      <dt class="term__item">METAPS</dt>
+-      <dd class="term__desc"><span lang="ja">METAPS ※現在利用できません</span><span lang="en">METAPS * Not Available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v14/audiencelist: AudienceListServiceAdActionDataSource.yaml
+Only in v14/audiencelist: AudienceListServiceAdActionRules.yaml
+Only in v14/audiencelist: AudienceListServiceAdActionType.yaml
+Only in v14/audiencelist: AudienceListServiceAdActionUsersAudienceList.yaml
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceAppUserAudienceList.yaml v14/audiencelist/AudienceListServiceAppUserAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceAppUserAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceAppUserAudienceList.yaml	2024-06-10 15:26:17
+@@ -6,17 +6,17 @@
+       $ref: 'AudienceListServiceIsOpen.yaml#/AudienceListServiceIsOpen'
+     isPreset:
+       $ref: 'AudienceListServiceIsPreset.yaml#/AudienceListServiceIsPreset'
+-    reachPeriod:
++    dataDuration:
+       type: integer
+       nullable: true
+       format: int32
+       description: |
+         <div lang="ja">
+-        リーチの蓄積期間（1日～540日）です。<br>
++        データの有効期間（1日～540日）です。<br>
+         このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+         </div>
+         <div lang="en">
+-        Cookies validation period. (1 - 540 days) <br>
++        Data duration. (1 - 540 days) <br>
+         This field is required in ADD operation, and is optional in SET operation.
+         </div>
+     rules:
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceAppVendor.yaml v14/audiencelist/AudienceListServiceAppVendor.yaml
+--- v13/audiencelist/AudienceListServiceAppVendor.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceAppVendor.yaml	2024-06-13 15:24:25
+@@ -6,7 +6,6 @@
+     - APPSFLYER
+     - KOCHAVA
+     - SINGULAR
+-    - METAPS
+     - UNKNOWN
+   title: AudienceListServiceAppVendor
+   description: |
+@@ -27,8 +26,6 @@
+       <dd class="term__desc"><span lang="ja">KOCHAVA</span><span lang="en">KOCHAVA</span></dd>
+       <dt class="term__item">SINGULAR</dt>
+       <dd class="term__desc"><span lang="ja">SINGULAR</span><span lang="en">SINGULAR</span></dd>
+-      <dt class="term__item">METAPS</dt>
+-      <dd class="term__desc"><span lang="ja">METAPS</span><span lang="en">METAPS</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceCombinationAudienceList.yaml v14/audiencelist/AudienceListServiceCombinationAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceCombinationAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceCombinationAudienceList.yaml	2024-06-10 15:26:17
+@@ -7,6 +7,10 @@
+       nullable: true
+       items:
+         $ref: 'AudienceListServiceCombination.yaml#/AudienceListServiceCombination'
++    containUnavailableAdActionUserListFlg:
++      $ref: 'AudienceListServiceContainUnavailableAdActionUserListFlg.yaml#/AudienceListServiceContainUnavailableAdActionUserListFlg'
++    containDataConnectionStopped:
++      $ref: 'AudienceListServiceContainDataConnectionStopped.yaml#/AudienceListServiceContainDataConnectionStopped'
+   title: AudienceListServiceCombinationAudienceList
+   description: |
+     <div lang="ja">
+Only in v14/audiencelist: AudienceListServiceContainDataConnectionStopped.yaml
+Only in v14/audiencelist: AudienceListServiceContainUnavailableAdActionUserListFlg.yaml
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceContent.yaml v14/audiencelist/AudienceListServiceContent.yaml
+--- v13/audiencelist/AudienceListServiceContent.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceContent.yaml	2024-06-10 15:26:17
+@@ -16,6 +16,8 @@
+       $ref: 'AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml#/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList'
+     advancedSegmentsAudienceList:
+       $ref: 'AudienceListServiceAdvancedSegmentsAudienceList.yaml#/AudienceListServiceAdvancedSegmentsAudienceList'
++    adActionUsersAudienceList:
++      $ref: 'AudienceListServiceAdActionUsersAudienceList.yaml#/AudienceListServiceAdActionUsersAudienceList'
+     audienceListType:
+       $ref: 'AudienceListServiceType.yaml#/AudienceListServiceType'
+   title: AudienceListServiceContent
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml v14/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml	2024-06-10 15:26:17
+@@ -12,7 +12,7 @@
+         <div lang="en">Custom audience ID (site retargeting ID).<br>
+         Although this field will be returned in the response, it will be ignored on input.
+         </div>
+-    reachPeriod:
++    dataDuration:
+       type: integer
+       nullable: true
+       format: int32
+Only in v14/audiencelist: AudienceListServiceEligibleFlg.yaml
+Only in v14/audiencelist: AudienceListServiceEntity.yaml
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceIsOpen.yaml v14/audiencelist/AudienceListServiceIsOpen.yaml
+--- v13/audiencelist/AudienceListServiceIsOpen.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceIsOpen.yaml	2024-06-10 15:26:17
+@@ -13,7 +13,7 @@
+     </div>
+     <div lang="en">
+     AudienceListServiceIsOpen display the setting of store of reaches to Audience list. <br>
+-    This field is required in ADD operation.
++    This field is required in ADD operation. 
+     </div>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceSimilarityAudienceList.yaml v14/audiencelist/AudienceListServiceSimilarityAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceSimilarityAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceSimilarityAudienceList.yaml	2024-06-10 15:26:17
+@@ -23,6 +23,10 @@
+       items:
+         $ref: 'AudienceListServiceSizeReaches.yaml#/AudienceListServiceSizeReaches'
+       maxItems: 10
++    containUnavailableAdActionUserListFlg:
++      $ref: 'AudienceListServiceContainUnavailableAdActionUserListFlg.yaml#/AudienceListServiceContainUnavailableAdActionUserListFlg'
++    containDataConnectionStopped:
++      $ref: 'AudienceListServiceContainDataConnectionStopped.yaml#/AudienceListServiceContainDataConnectionStopped'
+   title: AudienceListServiceSimilarityAudienceList
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceSourceType.yaml v14/audiencelist/AudienceListServiceSourceType.yaml
+--- v13/audiencelist/AudienceListServiceSourceType.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceSourceType.yaml	2024-06-10 15:26:17
+@@ -7,6 +7,7 @@
+   - APP_DATA
+   - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+   - ADVANCED_SEGMENTS
++  - AD_ACTION
+   - UNKNOWN
+   title: AudienceListServiceSourceType
+   description: |
+@@ -29,6 +30,8 @@
+       <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! Audience Discovery.</span></dd>
+       <dt class="term__item">ADVANCED_SEGMENTS</dt>
+       <dd class="term__desc"><span lang="ja">高度なセグメントです。</span><span lang="en">Advanced segments.</span></dd>
++      <dt class="term__item">AD_ACTION</dt>
++      <dd class="term__desc"><span lang="ja">広告アクションです。</span><span lang="en">Ad action.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceType.yaml v14/audiencelist/AudienceListServiceType.yaml
+--- v13/audiencelist/AudienceListServiceType.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceType.yaml	2024-06-10 15:26:17
+@@ -9,6 +9,7 @@
+   - APP_USER
+   - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+   - ADVANCED_SEGMENTS
++  - AD_ACTION_USERS
+   - UNKNOWN
+   title: AudienceListServiceType
+   description: |
+@@ -37,6 +38,8 @@
+       <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! JAPAN Audience Discovery.</span></dd>
+       <dt class="term__item">ADVANCED_SEGMENTS</dt>
+       <dd class="term__desc"><span lang="ja">高度なセグメントです。</span><span lang="en">Advanced segments.</span></dd>
++      <dt class="term__item">AD_ACTION_USERS</dt>
++      <dd class="term__desc"><span lang="ja">広告アクションユーザーです。</span><span lang="en">Ad action users.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceUnavailableKeyword.yaml v14/audiencelist/AudienceListServiceUnavailableKeyword.yaml
+--- v13/audiencelist/AudienceListServiceUnavailableKeyword.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceUnavailableKeyword.yaml	2024-06-10 15:26:17
+@@ -12,7 +12,7 @@
+     このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+-    AudienceListServiceUnavailableKeywordは display whether the keyword is unavailable.<br>
++    AudienceListServiceUnavailableKeyword display whether the keyword is unavailable.<br>
+     Although this field will be returned in the response, it will be ignored on request.
+     </div>
+     <dl class=term>
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceUploadUserListJob.yaml v14/audiencelist/AudienceListServiceUploadUserListJob.yaml
+--- v13/audiencelist/AudienceListServiceUploadUserListJob.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceUploadUserListJob.yaml	2024-06-10 15:26:17
+@@ -8,12 +8,6 @@
+       description: |
+         <div lang="ja">アップロードジョブIDです。</div>
+         <div lang="en">Upload job ID.</div>
+-    retargetingTagId:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">サイトリターゲティングのタグIDです。</div>
+-        <div lang="en">Tag ID for site retargeting.</div>
+     audienceListId:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceUploadUserListUploadType.yaml v14/audiencelist/AudienceListServiceUploadUserListUploadType.yaml
+--- v13/audiencelist/AudienceListServiceUploadUserListUploadType.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceUploadUserListUploadType.yaml	2024-06-10 15:26:17
+@@ -4,27 +4,27 @@
+   enum:
+   - IDFA
+   - AAID
+-  - MAIL_ADDRESS
++  - MAIL_ADDRESS_AND_PHONE_NUMBER
+   - UNKNOWN
+   title: AudienceListServiceUploadUserListUploadType
+   description: |
+     <div lang="ja">
+       AudienceListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。<br>
+-      <code>MAIL_ADDRESS</code>ではハッシュ化が必須となります。<br>
+-      メールアドレスのハッシュ化の詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。
++      <code>MAIL_ADDRESS_AND_PHONE_NUMBER</code>ではハッシュ化が必須となります。<br>
++      メールアドレスと電話番号のハッシュ化の詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。
+     </div>
+     <div lang="en">
+       AudienceListServiceUploadUserListUploadType displays kind of upload method.<br>
+-      Hashing process is requied when AudienceListServiceUploadUserListUploadType is <code>MAIL_ADDRESS</code>.<br>
+-      More details for hashing of email are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a>.
++      Hashing process is requied when AudienceListServiceUploadUserListUploadType is <code>MAIL_ADDRESS_AND_PHONE_NUMBER</code>.<br>
++      More details for hashing of email and phone number are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a>.
+     </div>
+     <dl class=term>
+       <dt class="term__item">IDFA</dt>
+       <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></li>
+       <dt class="term__item">AAID</dt>
+       <dd class="term__desc"><span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></li>
+-      <dt class="term__item">MAIL_ADDRESS</dt>
+-      <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスです。</span><span lang="en">Hashed email address.</span></li>
++      <dt class="term__item">MAIL_ADDRESS_AND_PHONE_NUMBER</dt>
++      <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスまたは電話番号です。</span><span lang="en">Hashed email address or phone number.</span></li>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v14/audiencelist: AudienceListServiceVideoViewRule.yaml
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml v14/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml	2024-06-10 15:26:17
+@@ -6,17 +6,17 @@
+       $ref: 'AudienceListServiceIsOpen.yaml#/AudienceListServiceIsOpen'
+     isPreset:
+       $ref: 'AudienceListServiceIsPreset.yaml#/AudienceListServiceIsPreset'
+-    reachPeriod:
++    dataDuration:
+       type: integer
+       nullable: true
+       format: int32
+       description: |
+         <div lang="ja">
+-        リーチの蓄積期間（1日～540日）です。<br>
++        データの有効期間（1日～540日）です。<br>
+         このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+         </div>
+         <div lang="en">
+-        Cookies validation period. (1 - 540 days) <br>
++        Data duration. (1 - 540 days) <br>
+         This field is required in ADD operation, and is optional in SET operation.
+         </div>
+     retargetingTagId:
+
+
+------
+diff -ru v13/audiencelist/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml v14/audiencelist/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml
+--- v13/audiencelist/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml	2024-06-10 15:26:17
++++ v14/audiencelist/AudienceListServiceYahooJapanAudienceDiscoveryAudienceList.yaml	2024-06-10 15:26:17
+@@ -2,17 +2,17 @@
+   type: object
+   nullable: true
+   properties:
+-    reachPeriod:
++    dataDuration:
+       type: integer
+       nullable: true
+       format: int32
+       description: |
+         <div lang="ja">
+-        リーチの蓄積期間（1日～60日）です。<br>
++        データの有効期間（1日～60日）です。<br>
+         このフィールドは、SET時に省略可能、ADD時に指定不可となります。<br>
+         </div>
+         <div lang="en">
+-        Cookies validation period. (1 - 60 days) <br>
++        Data duration. (1 - 60 days) <br>
+         This field is optional in SET operation, and cannot be specified in ADD operation.
+         </div>
+   title: AudienceListServiceYahooJapanAudienceDiscoveryAudienceList
+
+
+------
+diff -ru v13/campaign/Campaign.yaml v14/campaign/Campaign.yaml
+--- v13/campaign/Campaign.yaml	2024-06-14 10:37:50
++++ v14/campaign/Campaign.yaml	2024-06-14 10:37:50
+@@ -233,16 +233,16 @@
+         キャンペーンの広告効果測定ツールのベンダー名です。キャンペーン目的「アプリ訴求」の場合にのみ設定されます。<br>
+         このフィールドはキャンペーン作成後、最初にリンク先URLを設定した広告が作成された時に設定されます。<br>
+         キャンペーンに紐づく広告のリンク先URLには、このベンダー名に対応する広告効果測定ツールのURLのみが指定できます。<br>
+-        vendorNameをNONEに設定するためには、SKAdNetwork計測による広告配信の最適化をOFFに設定する必要があります。SKAdNetwork計測による広告配信の最適化の変更は広告管理ツールからのみ変更できます。<br>
+         ADD時およびSET時、<code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, および <code>NONE</code> のみ指定可能です。
+         </div>
+         <div lang="en">
+         Vendor name of tracking tool for the campaign. It will be set only when the campaign goal is "app promotion."<br>
+         This field will be set when the first ad with destination URL is created after creating the campaign.<br>
+         Only the tracking tool URL corresponds to this tool vendor name can be specified for the destination URL of the ad linked to the campaign.<br>
+-        To set vendorName to NONE, you must turn off optimization for ad delivery by SKAdNetwork tracking. The optimization of ad delivery by SKAdNetwork tracking can be set by the Campaign Management Tool.<br>
+         Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, and <code>NONE</code> can be specified in ADD and SET operation.
+         </div>
++    skanOptimaizeAdDeliveryEnabled:
++      $ref: 'CampaignServiceSkanOptimaizeAdDeliveryEnabled.yaml#/CampaignServiceSkanOptimaizeAdDeliveryEnabled'
+     conversionTracker:
+       $ref: 'CampaignServiceConversionTracker.yaml#/CampaignServiceConversionTracker'
+   title: Campaign
+Only in v14/campaign: CampaignServiceSkanOptimaizeAdDeliveryEnabled.yaml
+
+
+------
+diff -ru v13/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml v14/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml
+--- v13/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2024-06-10 15:26:17
++++ v14/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2024-06-10 15:26:17
+@@ -8,11 +8,11 @@
+   title: ReportDefinitionServiceReportIncludeDeleted
+   description: |
+     <div lang="ja">ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。<br>
+-    レポートタイプがAD, SITE_CATEGORY, URL, AUDIENCE_CATEGORY, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
++    レポートタイプがAD, SITE_CATEGORY, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
+     それ以外のレポートタイプの場合、ADD時、このフィールドは無視されます。<br>
+     reportIncludeDeletedがFALSEの場合、以下エンティティはレポートに出力されません。</div>
+     <div lang="en">ReportDefinitionServiceReportIncludeDeleted object describes whether to output deleted items on the report or not.<br>
+-    If the report type is AD, SITE_CATEGORY, URL, AUDIENCE_CATEGORY, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
++    If the report type is AD, SITE_CATEGORY, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
+     For other report type, this field will be ignored in ADD operation.<br>
+     If reportIncludeDeleted is "FALSE", the following entities will not be output in the report.
+     </div>
+@@ -21,12 +21,12 @@
+     <tr><td>AD</td><td>CAMPAIGN, ADGROUP, AD, MEDIA</td></tr>
+     <tr><td>SITE_CATEGORY</td><td>CAMPAIGN, ADGROUP</td></tr>
+     <tr><td>URL</td><td>CAMPAIGN, ADGROUP</td></tr>
+-    <tr><td>AUDIENCE_CATEGORY</td><td>CAMPAIGN, ADGROUP</td></tr>
+     <tr><td>REACH</td><td>CAMPAIGN, ADGROUP, AD</td></tr>
+-    <tr><td>SEARCH_KEYWORD_LIST</td><td>CAMPAIGN, ADGROUP, SEARCH_KEYWORD_LIST</td></tr>
+-    <tr><td>PLACEMENT_LIST</td><td>CAMPAIGN, ADGROUP, PLACEMENT_LIST</td></tr>
++    <tr><td>SEARCH_TARGET</td><td>CAMPAIGN, ADGROUP, SEARCH_TARGET</td></tr>
++    <tr><td>PLACEMENT_TARGET</td><td>CAMPAIGN, ADGROUP, PLACEMENT_TARGET</td></tr>
+     <tr><td>CONTENT_KEYWORD_LIST</td><td>CAMPAIGN, ADGROUP, CONTENT_KEYWORD_LIST</td></tr>
+-    <tr><td>AUDIENCE_LIST</td><td>CAMPAIGN, ADGROUP, AUDIENCE_LIST</td></tr>
++    <tr><td>AUDIENCE_LIST_TARGET</td><td>CAMPAIGN, ADGROUP, AUDIENCE_LIST_TARGET</td></tr>
++    <tr><td>APP</td><td>CAMPAIGN</td></tr>
+     </table>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+
+
+------
+diff -ru v13/reportdefinition/ReportDefinitionServiceReportType.yaml v14/reportdefinition/ReportDefinitionServiceReportType.yaml
+--- v13/reportdefinition/ReportDefinitionServiceReportType.yaml	2024-06-10 15:26:17
++++ v14/reportdefinition/ReportDefinitionServiceReportType.yaml	2024-06-10 15:26:17
+@@ -3,7 +3,6 @@
+   nullable: true
+   enum:
+   - AD
+-  - AUDIENCE_CATEGORY
+   - CONVERSION_PATH
+   - CROSS_CAMPAIGN_REACHES
+   - AUDIENCE_LIST_TARGET
+@@ -15,6 +14,7 @@
+   - URL
+   - MODEL_COMPARISON
+   - CONTENT_KEYWORD_LIST
++  - APP
+   - UNKNOWN
+   title: ReportDefinitionServiceReportType
+   description: |
+@@ -38,8 +38,6 @@
+     <dl class=term>
+       <dt class="term__item">AD</dt>
+       <dd class="term__desc"><span lang="ja">以下のレポートを表します：<br>・アカウントレポート<br>・キャンペーンレポート<br>・広告グループレポート<br>・広告レポート<br>・リンク先URLレポート<br></span><span lang="en">Represents the type of report below:<br>・Account Report<br>・Campaign Report<br>・Ad Group Report<br>・Ad Report<br>・Destination URL Report<br></span></dd>
+-      <dt class="term__item">AUDIENCE_CATEGORY</dt>
+-      <dd class="term__desc"><span lang="ja">オーディエンスカテゴリーレポートです。</span><span lang="en">Audience Category Report.</span></dd>
+       <dt class="term__item">CONVERSION_PATH</dt>
+       <dd class="term__desc"><span lang="ja">コンバージョン経路レポートです。</span><span lang="en">Conversion Path Report.</span></dd>
+       <dt class="term__item">CROSS_CAMPAIGN_REACHES</dt>
+@@ -62,6 +60,8 @@
+       <dd class="term__desc"><span lang="ja">アトリビューションモデル比較レポートです。</span><span lang="en">Attribution Model Comparison Report.</span></dd>
+       <dt class="term__item">CONTENT_KEYWORD_LIST</dt>
+       <dd class="term__desc"><span lang="ja">コンテンツキーワードターゲティングレポートです。</span><span lang="en">Content Keyword Targeting Report.</span></dd>
++      <dt class="term__item">APP</dt>
++      <dd class="term__desc"><span lang="ja">アプリレポートです。</span><span lang="en">App Report.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v13/stats/Stats.yaml v14/stats/Stats.yaml
+--- v13/stats/Stats.yaml	2024-06-10 15:26:17
++++ v14/stats/Stats.yaml	2024-06-10 15:26:17
+@@ -350,6 +350,41 @@
+       description: |
+         <div lang="ja">平均vCPM</div>
+         <div lang="en">Avg. vCPM</div>
++    skanInstalls:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール数(SKAN)</div>
++        <div lang="en">Installs(SKAN)</div>
++    skanInstallsViaClick:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール数(SKANクリック)</div>
++        <div lang="en">Installs(SKAN click)</div>
++    skanInstallsViewThrough:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール数(SKANビュー)</div>
++        <div lang="en">Installs(SKAN view)</div>
++    skanCostPerInstall:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール単価(SKAN)</div>
++        <div lang="en">Install costs(SKAN)</div>
++    skanCostPerInstallViaClick:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール単価(SKANクリック)</div>
++        <div lang="en">Install costs(SKAN click)</div>
+   title: Stats
+   description: |
+     <div lang="ja">Statsオブジェクトは、統計情報を保持します。</div>
+Only in v13/stats: StatsServiceAudienceCategoryTarget.yaml
+
+
+------
+diff -ru v13/stats/StatsServiceTarget.yaml v14/stats/StatsServiceTarget.yaml
+--- v13/stats/StatsServiceTarget.yaml	2024-06-10 15:26:17
++++ v14/stats/StatsServiceTarget.yaml	2024-06-10 15:26:17
+@@ -8,8 +8,6 @@
+       $ref: 'StatsServiceAgeTarget.yaml#/StatsServiceAgeTarget'
+     appTarget:
+       $ref: 'StatsServiceAppTarget.yaml#/StatsServiceAppTarget'
+-    audienceCategoryTarget:
+-      $ref: 'StatsServiceAudienceCategoryTarget.yaml#/StatsServiceAudienceCategoryTarget'
+     deviceTarget:
+       $ref: 'StatsServiceDeviceTarget.yaml#/StatsServiceDeviceTarget'
+     genderTarget:
+
+
+------
+diff -ru v13/stats/StatsServiceTargetType.yaml v14/stats/StatsServiceTargetType.yaml
+--- v13/stats/StatsServiceTargetType.yaml	2024-06-14 10:37:50
++++ v14/stats/StatsServiceTargetType.yaml	2024-06-14 10:37:50
+@@ -11,7 +11,6 @@
+   - SEARCH_TARGET
+   - PLACEMENT_TARGET
+   - DEVICE_TARGET
+-  - AUDIENCE_CATEGORY
+   - PLACEMENT_CATEGORY_DETAIL_TARGET
+   - CONTENTS_TARGET
+   - UNKNOWN
+@@ -38,8 +37,6 @@
+       <dd class="term__desc"><span lang="ja">プレイスメントターゲティング</span><span lang="en">Placement Targeting</span></dd>
+       <dt class="term__item">DEVICE_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">デバイスターゲティング</span><span lang="en">Device Targeting</span></dd>
+-      <dt class="term__item">AUDIENCE_CATEGORY</dt>
+-      <dd class="term__desc"><span lang="ja">オーディエンスカテゴリーターゲティング ※現在利用できません。</span><span lang="en">Audience Category Targeting * Not Available.</span></dd>
+       <dt class="term__item">PLACEMENT_CATEGORY_DETAIL_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">プレイスメントカテゴリ詳細ターゲティング ※現在利用できません。</span><span lang="en">Placement Category Detail Targeting * Not Available.</span></dd>
+       <dt class="term__item">CONTENTS_TARGET</dt>
+
