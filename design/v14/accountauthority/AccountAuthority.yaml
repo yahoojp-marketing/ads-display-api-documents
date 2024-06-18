@@ -1,0 +1,194 @@
+AccountAuthority:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    authorities:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">アカウント権限です。</div>
+        <div lang="en">Account authority.</div>
+  title: AccountAuthority
+  description: |
+    <div lang="ja">AccountAuthorityオブジェクトは、アカウント権限情報を示します。<br>
+    authoritiesで返却される値は、以下のとおりです。
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>説明</th>
+          <th>権限種別</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>運用型：サイト誘導</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>運用型：動画再生</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>運用型：アプリ訴求</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>運用型：コンバージョン</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>運用型：商品リスト訴求</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>運用型：ブランド認知</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>予約型：ブランド認知</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>STORE_VISIT</td>
+          <td>来店促進</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPayギフト</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>SHOPPING_ADS</td>
+          <td>eコマース</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>セールスプロモーション</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>MAX_CV</td>
+          <td>コンバージョン最大化</td>
+          <td>入札戦略</td>
+        </tr>
+        <tr>
+          <td>MAX_CLICK</td>
+          <td>クリック最大化</td>
+          <td>入札戦略</td>
+        </tr>
+        <tr>
+          <td>MAX_VIEW</td>
+          <td>動画再生最大化</td>
+          <td>入札戦略</td>
+        </tr>
+        <tr>
+          <td>MAX_VIMPS</td>
+          <td>vimps最大化</td>
+          <td>入札戦略</td>
+        </tr>
+      </table>
+    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a>をご確認ください。
+    </div>
+    <div lang="en">AccountAuthority objects serve account authority information.<br>
+    Responded values of `authorities` are as follows.
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>description</th>
+          <th>authority type</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>AUCTION : Website traffic</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>AUCTION : Video view</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>AUCTION : App promotion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>AUCTION : Conversion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>AUCTION : Item list promotion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>AUCTION : Brand awareness</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>STORE_VISIT</td>
+          <td>Store Visit</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPay Gift</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>GUARANTEED : Brand awareness</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>SHOPPING_ADS</td>
+          <td>Ecommerce</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>Sales Promotion</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>MAX_CV</td>
+          <td>Specify maximum conversion</td>
+          <td>Bid strategy</td>
+        </tr>
+        <tr>
+          <td>MAX_CLICK</td>
+          <td>Specify maximum click</td>
+          <td>Bid strategy</td>
+        </tr>
+        <tr>
+          <td>MAX_VIEW</td>
+          <td>Specify maximum video view</td>
+          <td>Bid strategy</td>
+        </tr>
+        <tr>
+          <td>MAX_VIMPS</td>
+          <td>Specify maximum vimps</td>
+          <td>Bid strategy</td>
+        </tr>
+      </table>
+    Details of these campaign goal are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a> (Japanese context only).
+    </div>

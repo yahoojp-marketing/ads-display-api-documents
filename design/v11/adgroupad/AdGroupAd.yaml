@@ -209,7 +209,7 @@ AdGroupAd:
       type: string
       nullable: true
       description: |
-        <div lang="ja">広告が作成された日時です。<br>※フォーマット：yyyyMMdd</div>
+        <div lang="ja">広告が作成された日です。<br>※フォーマット：yyyyMMdd</div>
         <div lang="en">Date of Ad made.<br>* Format: yyyyMMdd</div>
   title: AdGroupAd
   description: |

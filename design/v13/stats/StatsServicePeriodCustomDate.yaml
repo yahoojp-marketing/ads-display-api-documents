@@ -7,7 +7,7 @@ StatsServicePeriodCustomDate:
       nullable: true
       description: |
         <div lang="ja">
-        統計情報取得終了日時<br>
+        統計情報取得終了日<br>
         ※フォーマット：yyyyMMdd
         </div>
         <div lang="en">
@@ -19,7 +19,7 @@ StatsServicePeriodCustomDate:
       nullable: true
       description: |
         <div lang="ja">
-        統計情報取得開始日時<br>
+        統計情報取得開始日<br>
         ※フォーマット：yyyyMMdd
         </div>
         <div lang="en">

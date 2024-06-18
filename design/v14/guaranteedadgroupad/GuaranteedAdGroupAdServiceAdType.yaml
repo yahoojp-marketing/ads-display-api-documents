@@ -1,0 +1,64 @@
+GuaranteedAdGroupAdServiceAdType:
+  type: string
+  nullable: true
+  enum:
+    - BANNER_AD
+    - CAROUSEL_AD
+    - INSTREAM_AD
+    - BRANDPANEL_QUINTIE
+    - BRANDPANEL_PANORAMA
+    - BRANDPANEL_PANORAMA_PANEL_SWITCH
+    - TOP_IMPACT_SQUARE
+    - TOP_IMPACT_QUINTIE
+    - TOP_IMPACT_THEATER
+    - TOP_IMPACT_PRIME_DISPLAY_DOUBLE
+    - TOP_IMPACT_PANORAMA
+    - TOP_IMPACT_PANORAMA_SIDE_VISION
+    - TOP_IMPACT_PANORAMA_SIDE_SWITCH
+    - TOP_IMPACT_PANORAMA_PANEL_SWITCH
+    - TOP_PAGE_TOPICS_PR
+    - UNKNOWN
+  title: GuaranteedAdGroupAdServiceAdType
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceAdType describes the type of ad.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">BANNER_AD</dt>
+      <dd class="term__desc"><span lang="ja">バナー広告です。</span><span lang="en">Banner ad.</span></dd>
+      <dt class="term__item">CAROUSEL_AD</dt>
+      <dd class="term__desc"><span lang="ja">カルーセル広告です。</span><span lang="en">Carousel ad.</span></dd>
+      <dt class="term__item">INSTREAM_AD</dt>
+      <dd class="term__desc"><span lang="ja">インストリーム広告です。</span><span lang="en">In-stream ad.</span></dd>
+      <dt class="term__item">BRANDPANEL_QUINTIE</dt>
+      <dd class="term__desc"><span lang="ja">ブランドパネル クインティ広告です。</span><span lang="en">Brand Panel Quintuple ad.</span></dd>
+      <dt class="term__item">BRANDPANEL_PANORAMA</dt>
+      <dd class="term__desc"><span lang="ja">ブランドパネル パノラマ広告です。</span><span lang="en">Brand Panel Panorama ad.</span></dd>
+      <dt class="term__item">BRANDPANEL_PANORAMA_PANEL_SWITCH</dt>
+      <dd class="term__desc"><span lang="ja">ブランドパネル パノラマ パネルスイッチ広告です。</span><span lang="en">Brand Panel Panorama Panel-switch ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_SQUARE</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト スクエア広告です。</span><span lang="en">Top Impact Square ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_QUINTIE</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト クインティ広告です。</span><span lang="en">Top Impact Quintuple ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_PANORAMA</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ広告です。</span><span lang="en">Top Impact Panorama ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_VISION</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドビジョン広告です。</span><span lang="en">Top Impact Panorama Side Vision ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_PANORAMA_SIDE_SWITCH</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドスイッチ広告です。</span><span lang="en">Top Impact Panorama Side Switch ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_THEATER</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト シアター広告です。</span><span lang="en">Top Impact Theater ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_PRIME_DISPLAY_DOUBLE</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト プライムディスプレイ ダブル広告です。</span><span lang="en">Top Impact Prime Display Double ad.</span></dd>
+      <dt class="term__item">TOP_IMPACT_PANORAMA_PANEL_SWITCH</dt>
+      <dd class="term__desc"><span lang="ja">トップインパクト パノラマ サイドスイッチ広告です。</span><span lang="en">Top Impact Panorama Side Switch ad.</span></dd>
+      <dt class="term__item">TOP_PAGE_TOPICS_PR</dt>
+      <dd class="term__desc"><span lang="ja">トップページ トピックスPR広告です。</span><span lang="en">Top Page Topics PR ad.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

@@ -20,8 +20,14 @@ CampaignServiceSelector:
         format: int64
       maxItems: 2000
       description: |
-        <div lang="ja">検索条件 : キャンペーンID</div>
-        <div lang="en">Search condition: Campaign ID</div>
+        <div lang="ja">
+          検索条件 : キャンペーンID<br>
+          現在、上限を200件までしか設定できません
+        </div>
+        <div lang="en">
+          Search Condition: Campaign ID<br>
+          Currently, the limit can only be set to a maximum of 200 items.
+        </div>
     containsLabel:
       type: boolean
       nullable: true

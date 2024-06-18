@@ -36,7 +36,9 @@ CampaignServiceConversionTracker:
   description: |
     <div lang="ja">
     紐づけられているコンバージョントラッカー設定情報を表します。<br>
+    コンバージョングループID及びコンバージョントラッカーIDが共に指定されていない場合は、アカウントレベルのコンバージョン設定が適用されます。
     </div>
     <div lang="en">
     CampaignServiceConversionTracker object describes conversion tracking information to be associated.<br>
+    If neither the conversionGroupId nor the conversionTrackerId is specified, the account-level conversion settings are applied.
     </div>

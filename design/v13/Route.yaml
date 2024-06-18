@@ -1183,7 +1183,6 @@ paths:
                 <tr><td>220132</td><td>Cannot set the carrier type.</td><td><div lang="ja">選択したデバイスは、キャリアの選択ができません。</div><div lang="en">Selected device is not available to select the carrier type.</div></td></tr>
                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
               </tbody>
             </table>
@@ -1258,7 +1257,6 @@ paths:
                 <tr><td>220132</td><td>Cannot set the carrier type.</td><td><div lang="ja">選択したデバイスは、キャリアの選択ができません。</div><div lang="en">Selected device is not available to select the carrier type.</div></td></tr>
                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
               </tbody>
             </table>
@@ -1333,7 +1331,6 @@ paths:
                 <tr><td>220132</td><td>Cannot set the carrier type.</td><td><div lang="ja">選択したデバイスは、キャリアの選択ができません。</div><div lang="en">Selected device is not available to select the carrier type.</div></td></tr>
                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
               </tbody>
             </table>
@@ -1408,7 +1405,6 @@ paths:
                 <tr><td>220132</td><td>Cannot set the carrier type.</td><td><div lang="ja">選択したデバイスは、キャリアの選択ができません。</div><div lang="en">Selected device is not available to select the carrier type.</div></td></tr>
                 <tr><td>220123</td><td>Unavailable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの設定が出来ない商品です。</div><div lang="en">Conversion optimization setting is not possible due to the non-eligible Ad distribution.</div></td></tr>
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
               </tbody>
             </table>
@@ -1714,7 +1710,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>220014</td><td>Budget is lower than bidding price.</td><td><div lang="ja">予算額が入札価格を下回っています。</div><div lang="en">The bidding price has been set higher than the budget.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220121</td><td>Frequency setting was made to the product that is not available.</td><td><div lang="ja">指定された広告商品ではフリークエンシー設定できません。</div><div lang="en">You can not set frequency ads instruments designated.</div></td></tr>
                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
@@ -1787,7 +1782,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>220014</td><td>Budget is lower than bidding price.</td><td><div lang="ja">予算額が入札価格を下回っています。</div><div lang="en">The bidding price has been set higher than the budget.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220121</td><td>Frequency setting was made to the product that is not available.</td><td><div lang="ja">指定された広告商品ではフリークエンシー設定できません。</div><div lang="en">You can not set frequency ads instruments designated.</div></td></tr>
                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
@@ -1860,7 +1854,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>220014</td><td>Budget is lower than bidding price.</td><td><div lang="ja">予算額が入札価格を下回っています。</div><div lang="en">The bidding price has been set higher than the budget.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220121</td><td>Frequency setting was made to the product that is not available.</td><td><div lang="ja">指定された広告商品ではフリークエンシー設定できません。</div><div lang="en">You can not set frequency ads instruments designated.</div></td></tr>
                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
@@ -1933,7 +1926,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>220014</td><td>Budget is lower than bidding price.</td><td><div lang="ja">予算額が入札価格を下回っています。</div><div lang="en">The bidding price has been set higher than the budget.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
                 <tr><td>220121</td><td>Frequency setting was made to the product that is not available.</td><td><div lang="ja">指定された広告商品ではフリークエンシー設定できません。</div><div lang="en">You can not set frequency ads instruments designated.</div></td></tr>
                 <tr><td>220122</td><td>Unavailable combination of frequency settings.</td><td><div lang="ja">フリークエンシー設定の組み合わせが不正です。</div><div lang="en">Combination of frequency setting is invalid.</div></td></tr>
@@ -4774,7 +4766,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220129</td><td>Invalid combination in user status and logo flag.</td><td><div lang="ja">配信フラグとロゴフラグの組み合わせが無効です。</div><div lang="en">Unavailable setting between the status flag and logo flag.</div></td></tr>
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
@@ -4858,7 +4849,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220129</td><td>Invalid combination in user status and logo flag.</td><td><div lang="ja">配信フラグとロゴフラグの組み合わせが無効です。</div><div lang="en">Unavailable setting between the status flag and logo flag.</div></td></tr>
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
@@ -4943,7 +4933,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220129</td><td>Invalid combination in user status and logo flag.</td><td><div lang="ja">配信フラグとロゴフラグの組み合わせが無効です。</div><div lang="en">Unavailable setting between the status flag and logo flag.</div></td></tr>
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
@@ -5028,7 +5017,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220129</td><td>Invalid combination in user status and logo flag.</td><td><div lang="ja">配信フラグとロゴフラグの組み合わせが無効です。</div><div lang="en">Unavailable setting between the status flag and logo flag.</div></td></tr>
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
@@ -5112,7 +5100,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220129</td><td>Invalid combination in user status and logo flag.</td><td><div lang="ja">配信フラグとロゴフラグの組み合わせが無効です。</div><div lang="en">Unavailable setting between the status flag and logo flag.</div></td></tr>
                 <tr><td>220130</td><td>Invalid combination in logo flag and media format.</td><td><div lang="ja">ロゴフラグと画像フォーマットの組み合わせが無効です。</div><div lang="en">Unavailable setting between the logo flag and image format.</div></td></tr>
                 <tr><td>220131</td><td>Field value is not updatable.</td><td><div lang="ja">更新不可項目に変更が実施されました</div><div lang="en">Update has been attempted to the field that cannot be updated.</div></td></tr>
@@ -5198,7 +5185,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -5274,7 +5260,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -5350,7 +5335,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -5426,7 +5410,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>
@@ -5540,7 +5523,6 @@ paths:
                 <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
-                <tr><td>220007</td><td>Unavailable the adProductType.</td><td><div lang="ja">指定された広告掲載方式は購入できません。</div><div lang="en">adProductType specified is not available.</div></td></tr>
                 <tr><td>220207</td><td>Invalid aspect ratio of a media.</td><td><div lang="ja">メディアファイルのピクセルサイズが間違っています。</div><div lang="en">Wrong pixel size for media file.</div></td></tr>
                 <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
                 <tr><td>220103</td><td>Unsupported filename extension.</td><td><div lang="ja">画像ファイルの拡張子がGIF/JPEGと異なります。</div><div lang="en">The image file is not GIF/JPEG.</div></td></tr>

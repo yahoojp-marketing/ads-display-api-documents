@@ -63,7 +63,7 @@ BrandLift:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーン配信開始日時です。</div>
+        <div lang="ja">キャンペーン配信開始日です。</div>
         <div lang="en">Campaign start date. </div>
         <br>Format: yyyyMMdd
     campaignName:

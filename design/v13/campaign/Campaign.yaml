@@ -223,7 +223,7 @@ Campaign:
       type: string
       nullable: true
       description: |
-        <div lang="ja">キャンペーンが作成された日時です。<br>※フォーマット：yyyyMMdd</div>
+        <div lang="ja">キャンペーンが作成された日です。<br>※フォーマット：yyyyMMdd</div>
         <div lang="en">Date of Campaign made.<br>* Format: yyyyMMdd</div>
     vendorName:
       type: string
@@ -233,12 +233,14 @@ Campaign:
         キャンペーンの広告効果測定ツールのベンダー名です。キャンペーン目的「アプリ訴求」の場合にのみ設定されます。<br>
         このフィールドはキャンペーン作成後、最初にリンク先URLを設定した広告が作成された時に設定されます。<br>
         キャンペーンに紐づく広告のリンク先URLには、このベンダー名に対応する広告効果測定ツールのURLのみが指定できます。<br>
+        vendorNameをNONEに設定するためには、SKAdNetwork計測による広告配信の最適化をOFFに設定する必要があります。SKAdNetwork計測による広告配信の最適化の変更は広告管理ツールからのみ変更できます。<br>
         ADD時およびSET時、<code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, および <code>NONE</code> のみ指定可能です。
         </div>
         <div lang="en">
         Vendor name of tracking tool for the campaign. It will be set only when the campaign goal is "app promotion."<br>
         This field will be set when the first ad with destination URL is created after creating the campaign.<br>
         Only the tracking tool URL corresponds to this tool vendor name can be specified for the destination URL of the ad linked to the campaign.<br>
+        To set vendorName to NONE, you must turn off optimization for ad delivery by SKAdNetwork tracking. The optimization of ad delivery by SKAdNetwork tracking can be set by the Campaign Management Tool.<br>
         Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, and <code>NONE</code> can be specified in ADD and SET operation.
         </div>
     conversionTracker:

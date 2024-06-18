@@ -1,0 +1,30 @@
+AdGroupTargetServiceContentsTarget:
+  type: object
+  nullable: true
+  properties:
+    deliverType:
+      $ref: 'AdGroupTargetServiceDeliverType.yaml#/AdGroupTargetServiceDeliverType'
+    contentsKeywordListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンテンツキーワードリスト名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Contents keyword list name.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: AdGroupTargetServiceContentsTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceContentsTargetオブジェクトは、コンテンツターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがCONTENTS_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceContentsTarget object is a container for storing contents settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is CONTENTS_TARGET, this field is required.
+    </div>

@@ -7,7 +7,7 @@ ConversionTrackerServiceStatsPeriodCustomDate:
       nullable: true
       description: |
         <div lang="ja">
-        統計情報取得終了日時です。<br>
+        統計情報取得終了日です。<br>
         ※yyyyMMdd形式です。
         </div>
         <div lang="en">
@@ -19,7 +19,7 @@ ConversionTrackerServiceStatsPeriodCustomDate:
       nullable: true
       description: |
         <div lang="ja">
-        統計情報取得開始日時です。<br>
+        統計情報取得開始日です。<br>
         ※yyyyMMdd形式です。
         </div>
         <div lang="en">

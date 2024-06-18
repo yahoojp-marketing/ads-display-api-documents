@@ -22,11 +22,13 @@ StatsServiceSelector:
       description: |
         <div lang="ja">
         キャンペーンID<br>
-        typeで「CAMPAIGN」または「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。
+        typeで「CAMPAIGN」または「ADGROUP」または「AD」または「TARGET」を指定した場合のみ有効です。<br>
+        現在、上限を200件までしか設定できません
         </div>
         <div lang="en">
         Campaign ID.<br>
-        Available only when &#34;CAMPAIGN&#34; or &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for type.
+        Available only when &#34;CAMPAIGN&#34; or &#34;ADGROUP&#34; or &#34;AD&#34; or &#34;TARGET&#34; is specified for type.<br>
+        Currently, the limit can only be set to a maximum of 200 items.
         </div>
     adGroupIds:
       type: array

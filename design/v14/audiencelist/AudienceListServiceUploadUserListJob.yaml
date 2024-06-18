@@ -1,0 +1,39 @@
+AudienceListServiceUploadUserListJob:
+  type: object
+  nullable: true
+  properties:
+    uploadJobId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロードジョブIDです。</div>
+        <div lang="en">Upload job ID.</div>
+    audienceListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">オーディエンスリストIDです。</div>
+        <div lang="en">Audience list ID.</div>
+    uploadType:
+      $ref: 'AudienceListServiceUploadUserListUploadType.yaml#/AudienceListServiceUploadUserListUploadType'
+    uploadSubmitDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード日時</div>
+        <div lang="en">Upload date and time.</div>
+        <br>Format: yyyyMMddHHmmss
+    receivedDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">アップロード受付完了日時</div>
+        <div lang="en">Upload job completion date and time.</div>
+        <br>Format: yyyyMMddHHmmss
+    jobStatus:
+      $ref: 'AudienceListServiceJobStatus.yaml#/AudienceListServiceJobStatus'
+  title: AudienceListServiceUploadUserListJob
+  description: |
+    <div lang="ja">AudienceListServiceUploadUserListJobオブジェクトは、ユーザーリストのアップロードジョブの処理状況を示すオブジェクトです。</div>
+    <div lang="en">AudienceListServiceUploadUserListJob object indicates the processing status of user list upload.</div>
