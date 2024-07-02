@@ -12,12 +12,14 @@ AudienceListServiceUploadUserListUploadType:
     <div lang="ja">
       AudienceListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。<br>
       <code>MAIL_ADDRESS</code>ではハッシュ化が必須となります。<br>
-      メールアドレスのハッシュ化の詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。
+      メールアドレスのハッシュ化の詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。<br>
+      ヘルプに記載の電話番号はレスポンス時にMAIL_ADDRESSに含まれますが、このバージョンでアップロードしてもユーザーサイズは蓄積されません。
     </div>
     <div lang="en">
       AudienceListServiceUploadUserListUploadType displays kind of upload method.<br>
       Hashing process is requied when AudienceListServiceUploadUserListUploadType is <code>MAIL_ADDRESS</code>.<br>
-      More details for hashing of email are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a>.
+      More details for hashing of email are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a>.<br>
+      The phone number listed in the Help is included in the MAIL_ADDRESS in the response, but in this version, even if you upload, the user size will not accumulate.
     </div>
     <dl class=term>
       <dt class="term__item">IDFA</dt>

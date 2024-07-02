@@ -1789,6 +1789,7 @@ paths:
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
                 <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
                 <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+                <tr><td>220147</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">SKAdNetwork計測利用時の制限により、作成および変更できません。SKAdNetwork計測利用時は、配信オンの広告グループが上限数に満たない場合でも設定変更できないケースがあります。お手数ですが数日後（最大5日間）に再試行してください。</div><div lang="en">Due to the limitations of SKAdNetwork, you can't create or change the settings for ad groups. When using SKAdNetwork, you may not be able to change settings even if you don't have a maximum number of ad groups. Try again in a few days (up to 5 days).</div></td></tr>
               </tbody>
             </table>
             </div>
@@ -1863,6 +1864,7 @@ paths:
                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
                 <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
                 <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+                <tr><td>220147</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">SKAdNetwork計測利用時の制限により、作成および変更できません。SKAdNetwork計測利用時は、配信オンの広告グループが上限数に満たない場合でも設定変更できないケースがあります。お手数ですが数日後（最大5日間）に再試行してください。</div><div lang="en">Due to the limitations of SKAdNetwork, you can't create or change the settings for ad groups. When using SKAdNetwork, you may not be able to change settings even if you don't have a maximum number of ad groups. Try again in a few days (up to 5 days).</div></td></tr>
               </tbody>
             </table>
             </div>
