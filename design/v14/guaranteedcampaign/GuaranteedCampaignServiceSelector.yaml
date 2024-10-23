@@ -21,12 +21,10 @@ GuaranteedCampaignServiceSelector:
       maxItems: 500
       description: |
         <div lang="ja">
-          検索条件 : キャンペーンID<br>
-          現在、上限を200件までしか設定できません
+          検索条件 : キャンペーンID
         </div>
         <div lang="en">
-          Search Condition: Campaign ID<br>
-          Currently, the limit can only be set to a maximum of 200 items.
+          Search Condition: Campaign ID
         </div>
     containsLabelIdFlg:
       type: boolean

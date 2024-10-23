@@ -1,0 +1,13 @@
+RecommendationServiceDuplicateTargetingSettings:
+  type: object
+  nullable: true
+  properties:
+    duplicateTargetingSettingsAdGroupList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceDuplicateTargetingSettingsAdGroup.yaml#/RecommendationServiceDuplicateTargetingSettingsAdGroup'
+  title: RecommendationServiceDuplicateTargetingSettings
+  description: |
+    <div lang="ja">RecommendationServiceDuplicateTargetingSettingsオブジェクトは、ターゲティング設定が重複している広告グループに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceDuplicateTargetingSettings object describes recommendation information about the ad group with duplicate targeting settings.</div>

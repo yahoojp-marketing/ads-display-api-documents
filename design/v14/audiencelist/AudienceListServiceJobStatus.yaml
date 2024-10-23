@@ -13,12 +13,12 @@ AudienceListServiceJobStatus:
     <div lang="en">AudienceListServiceJobStatus indicates the status of the upload job.</div>
     <div lang="ja">
       * ステータスが「RECEIVED」になった後、通常は数時間でユーザーリストの反映が完了します。<br>
-      * ステータスが「INVALID_FILE」の場合、ファイル内容に問題がある、ファイルフォーマットが間違っている、あるいはファイルサイズが上限（1,073,741,824 byte）を超えています。<br>
+      * ステータスが「INVALID_FILE」の場合、ファイル内容やデータ数に問題がある、ファイルフォーマットが間違っている、あるいはファイルサイズが上限（1,073,741,824 byte）を超えています。詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。<br>
       * ステータスが「FAILED」の場合、ファイル内容以外に起因する問題でジョブが正常に完了しなかったことを意味します。
     </div>
     <div lang="en">
       * The user list will usually be reflected within a few hours after the status becomes "RECEIVED."<br>
-      * If the status is "INVALID_FILE", there is a problem with the file contents, the file format is incorrect, or the file size exceeds the upper limit (1,073,741,824 bytes).<br>
+      * If the status is "INVALID_FILE", there is a problem with the file contents or the number of data entries, the file format is incorrect, or the file size exceeds the upper limit (1,073,741,824 bytes). Please refer to the <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a> for more details.<br>
       * If the status is "FAILED", it means that the job did not complete successfully due to a problem other than the file contents.
     </div>
     <dl class=term>

@@ -1,0 +1,41 @@
+AccountAuthorityServiceSelector:
+  type: object
+  nullable: true
+  required:
+  - accountIds
+  properties:
+    accountIds:
+      type: array
+      nullable: false
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      minItems: 1
+      maxItems: 500
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、0以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 0.</div>
+  title: AccountAuthorityServiceSelector
+  description: |
+    <div lang="ja">AccountAuthorityServiceSelectorオブジェクトは、操作の対象とするアカウント権限を表します。</div>
+    <div lang="en">The AccountAuthorityServiceSelector object displays the account authority for the operations.</div>

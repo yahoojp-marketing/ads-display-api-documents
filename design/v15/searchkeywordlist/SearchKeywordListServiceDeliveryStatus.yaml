@@ -1,0 +1,19 @@
+SearchKeywordListServiceDeliveryStatus:
+  type: string
+  nullable: true
+  enum:
+  - PAUSED
+  - ACTIVE
+  - UNKNOWN
+  title: SearchKeywordListServiceDeliveryStatus
+  description: |
+    <div lang="ja">SearchKeywordListServiceDeliveryStatusは、サーチキーワードリストの状態を表します。</div>
+    <div lang="en">SearchKeywordListServiceDeliveryStatus displays the status of search keyword list.</div>
+    <dl class=term>
+      <dt class="term__item">PAUSED</dt>
+      <dd class="term__desc"><span lang="ja">オフラインです。</span><span lang="en">Offline</span></dd>
+      <dt class="term__item">ACTIVE</dt>
+      <dd class="term__desc"><span lang="ja">オンラインです。</span><span lang="en">Online</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

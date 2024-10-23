@@ -1,0 +1,19 @@
+AudienceListServiceRule:
+  type: object
+  nullable: true
+  properties:
+    ruleConditions:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceRuleCondition.yaml#/AudienceListServiceRuleCondition'
+  title: AudienceListServiceRule
+  description: |
+    <div lang="ja">
+    AudienceListServiceRuleオブジェクトは、オーディエンスリストに設定可能な条件を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceRule object displays the possible conditions for audience list.<br>
+    This field is optional in ADD and SET operation.
+    </div>

@@ -42,7 +42,7 @@ AdGroupTargetServiceTargetType:
       <dt class="term__item">GENDER_TARGET</dt>
       <dd class="term__desc"><span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></dd>
       <dt class="term__item">SITE_CATEGORY</dt>
-      <dd class="term__desc"><span lang="ja">サイトカテゴリーターゲティング</span><span lang="en">Site Category Targeting</span></dd>
+      <dd class="term__desc"><span lang="ja">サイトカテゴリーターゲティング ※ADD、SET、REPLACEでは現在利用できません</span><span lang="en">Site Category Targeting *Not available in ADD, SET and REPLACE operation.</span></dd>
       <dt class="term__item">AUDIENCE_LIST_TARGET</dt>
       <dd class="term__desc"><span lang="ja">オーディエンスリストターゲティング</span><span lang="en">Audience List Targeting</span></dd>
       <dt class="term__item">SEARCH_TARGET</dt>

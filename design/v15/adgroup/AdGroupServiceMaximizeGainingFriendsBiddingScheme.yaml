@@ -1,0 +1,29 @@
+AdGroupServiceMaximizeGainingFriendsBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetCpf:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループ目標単価（tCPF）です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAXIMIZE_GAINING_FRIENDSの場合のみ指定可能です。
+        </div>
+        <div lang="en">
+        Target CPF (tCPF) of ad group.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAXIMIZE_GAINING_FRIENDS.
+        </div>
+    isRemoveTargetCpf:
+      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+  title: AdGroupServiceMaximizeGainingFriendsBiddingScheme
+  description: |
+    <div lang="ja">
+    AdGroupServiceMaximizeGainingFriendsBiddingSchemeオブジェクトは、広告グループ目標単価（tCPF）の設定情報を表します。
+    </div>
+    <div lang="en">
+    AdGroupServiceMaximizeGainingFriendsBiddingScheme object holds configuration information of Target CPF (tCPF) of ad group.
+    </div>

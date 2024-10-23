@@ -13,8 +13,8 @@ AudienceListServiceAdActionDataSource:
         format: int64
       maxItems: 50
       description: |
-        <div lang="ja">広告アクションデータソースのIdです。キャンペーンの場合は1つまで指定できます。</div>
-        <div lang="en">Id of ad action data source. For campaign, the max number of Ids is 1.</div>
+        <div lang="ja">広告アクションデータソースのIdです。</div>
+        <div lang="en">Id of ad action data source.</div>
   title: AudienceListServiceAdActionDataSource
   description: |
     <div lang="ja">

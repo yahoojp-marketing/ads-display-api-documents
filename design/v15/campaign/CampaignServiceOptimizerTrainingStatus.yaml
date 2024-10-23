@@ -1,0 +1,28 @@
+CampaignServiceOptimizerTrainingStatus:
+  type: string
+  nullable: true
+  enum:
+  - PROCESSING
+  - COMPLETED
+  - PAUSED
+  - UNKNOWN
+  title: CampaignServiceOptimizerTrainingStatus
+  description: |
+    <div lang="ja">
+    OptimizerTrainingStatusは、最適化の学習状況を表示します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    OptimizerTrainingStatus indicates the optimizer training status. <br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">PROCESSING</dt>
+      <dd class="term__desc"><span lang="ja">学習中です。</span><span lang="en">Under training process.</span></dd>
+      <dt class="term__item">COMPLETED</dt>
+      <dd class="term__desc"><span lang="ja">学習完了です。</span><span lang="en">Training completed.</span></dd>
+      <dt class="term__item">PAUSED</dt>
+      <dd class="term__desc"><span lang="ja">学習停止です。</span><span lang="en">Training paused.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

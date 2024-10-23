@@ -14,7 +14,7 @@
 "CONVERSION_NAME","コンバージョン名","Conversion Name","conversionName","STRING","[ALL_CONV_RATE, ALL_CONV_VALUE_PER_COST, AVG_CPC, AVG_CPM, AVG_CPV, AVG_DELIVER_RANK, AVG_DURATION_VIDEO_VIEWED, AVG_PERCENT_VIDEO_VIEWED, AVG_VCPM, CLICK, CLICKS, CLICK_RATE, CONVERSION_RATE_VIA_AD_CLICK, CONV_RATE, CONV_VALUE_PER_COST, CONV_VALUE_VIA_AD_CLICK_PER_COST, COST, COST_PER_ALL_CONV, COST_PER_CONV, COST_PER_CONV_VIA_AD_CLICK, IMPS, MEASURED_IMPS, MEASURED_IMPS_RATE, PAID_VIDEO_VIEWS, PAID_VIDEO_VIEW_RATE, VIDEO_VIEWS, VIDEO_VIEWS_TO_100, VIDEO_VIEWS_TO_10_SEC, VIDEO_VIEWS_TO_25, VIDEO_VIEWS_TO_3_SEC, VIDEO_VIEWS_TO_50, VIDEO_VIEWS_TO_75, VIDEO_VIEWS_TO_95, VIDEO_VIEW_THROUGH_RATE, VIEWABLE_CLICK, VIEWABLE_CLICKS, VIEWABLE_CLICK_RATE, VIEWABLE_IMPS_RATE]","Attribute","","",""
 "OS","OS","OS","os","STRING",,"Segment","iOS,Android,その他","iOS,Android,Other",""
 "APPLI","ウェブ/アプリ","Web/App","appli","STRING",,"Segment","ウェブページ,アプリ,その他","Web page,App,Other",""
-"CAMPAIGN_GOALS","キャンペーン目的","Campaign goals","campaignGoals","STRING",,"Segment","ブランド認知,動画再生,サイト誘導,アプリ訴求,コンバージョン,商品リスト訴求,来店促進,PayPayギフト,未設定","Brand awareness,Video view,Website traffic,App promotion,Conversions,Item list promotion,Store-visit promotion,PayPay Gift,None",""
+"CAMPAIGN_GOALS","キャンペーン目的","Campaign goals","campaignGoals","STRING",,"Segment","ブランド認知,動画再生,サイト誘導,アプリ訴求,コンバージョン,商品リスト訴求,来店促進,PayPayギフト,友だち追加,未設定","Brand awareness,Video view,Website traffic,App promotion,Conversions,Item list promotion,Store-visit promotion,PayPay Gift,Gain friends,None",""
 "CAMPAIGN_BUYING_TYPE","キャンペーン購入タイプ","Campaign buying type","campaignBuyingType","STRING",,"Attribute","運用型,予約型","Auction,Guaranteed",""
 "PACKAGE_NAME","商品名","Package name","packageName","STRING",,"Attribute","","",""
 "IMPS","インプレッション数","Impressions","impressions","LONG","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
@@ -76,3 +76,4 @@
 "APP_NAME","アプリ名","App Name","appName","STRING",,"Attribute","","",""
 "APP_OS","アプリOS","App OS","appOS","STRING",,"Attribute","Android,iOS","Android,iOS",""
 "MONTH","月","Month","month","STRING",,"Segment","","",""
+"WEEK","週（月～日）","Week (Mon-Sun)","week","STRING",,"Segment","","",""

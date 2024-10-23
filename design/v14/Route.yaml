@@ -80,8 +80,8 @@ tags:
   - name: FeedDataService
     description: |
       <label class="campaign"></label>
-      <div lang="ja">FeedDataServiceでは、商品情報(TSV or ZIPファイル形式)をアップロード、処理状況の照会、エラーファイルのダウンロードを行ないます。</div>
-      <div lang="en">FeedDataService provides functions to upload item list(tsv or zip file format), to get upload status and to download error file.</div>
+      <div lang="ja">FeedDataServiceでは、商品情報をアップロード、処理状況の照会、エラーファイルのダウンロードを行ないます。</div>
+      <div lang="en">FeedDataService provides functions to upload item list, to get upload status and to download error file.</div>
   - name: PlacementUrlListService
     description: |
       <label class="campaign"></label>
@@ -104,7 +104,7 @@ tags:
       <div lang="en">AppLinkService retrieves the app link information.</div>
   - name: PlacementUrlIdeaService
     description: |
-      <label class="campaign"></label>
+      <label class="proposal"></label>
       <div lang="ja">プレイスメントターゲティングで入稿時に設定するURL候補を取得します。</div>
       <div lang="en">PlacementUrlIdeaService acquires candidate URL which is set in submission for Placement Targeting.</div>
   - name: DictionaryService
@@ -346,7 +346,7 @@ tags:
       <div lang="en">AccountLinkService provides account link operations.</div>
   - name: ConversionGroupService
     description: |
-      <label class="campaign"></label>
+      <label class="account"></label>
       <div lang="ja">ConversionGroupServiceでは、コンバージョングループ情報の操作を提供します。</div>
       <div lang="en">ConversionGroupService provides ConversionGroup information operations.</div>
   - name: EstimatedUserSizeService
@@ -2013,8 +2013,8 @@ paths:
   /FeedDataService/upload:
     post:
       description: |
-        <div lang="ja">商品情報のアップロード処理を実施します。</div>
-        <div lang="en">Executes upload item list.</div>
+        <div lang="ja">商品情報のアップロード処理を実施します。アップロードファイルについては<a href="https://ads-help.yahoo-net.jp/s/article/H000044683?language=ja">ヘルプ</a>をご参照ください。</div>
+        <div lang="en">Executes upload item list. Refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044683?language=en_US">Help page</a> for more details about the upload file.</div>
       tags:
         - FeedDataService
       parameters:
@@ -2731,14 +2731,12 @@ paths:
           テストアカウントでは利用頂けない機能です。
           <ul>
             <li>・Content-Type: multipart/form-data</li>
-            <li>・Request body: アップロードするユーザーリストのファイル本体</li>
           </ul>
-          Transfer-encoding: chunkedを指定してのアップロードには対応していません。<br/>
           また、アップロードするファイルの制限は下記の通りです。
           <ul>
-            <li>・UTF8、BOMなし、正規化形式</li>
+            <li>・UTF8(BOMなし)、Shift-JIS正規化形式</li>
             <li>・ユーザーIDごとに改行</li>
-            <li>・改行コードLF</li>
+            <li>・改行コードLF、CRLF</li>
             <li>・ファイルサイズ上限1GB(1,073,741,824 byte)</li>
           </ul>
         </div>
@@ -2748,15 +2746,12 @@ paths:
           The action is unavailable for test account.
           <ul>
             <li>* Content-Type: application/octet-stream (text/plain can also be specified for uncompressed format)</li>
-            <li>* Content-Length: Number of bytes in the file to be uploaded</li>
-            <li>* Request body: File body of the user list to upload</li>
           </ul>
-          Uploading with chunked specified for Transfer-encoding is not supported.<br/>
           The following is the file upload limit.
           <ul>
-            <li>* UTF8, no BOM, canonicalized form.</li>
+            <li>* UTF8(without BOM), Shift-JIS canonicalized form.</li>
             <li>* Line break for each user ID</li>
-            <li>* Line feed code LF</li>
+            <li>* Line feed code LF, CRLF</li>
             <li>* File size upper limit 1GB(1,073,741,824 byte)</li>
           </ul>
         </div>

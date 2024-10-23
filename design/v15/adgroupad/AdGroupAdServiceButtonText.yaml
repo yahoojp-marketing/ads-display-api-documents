@@ -1,0 +1,85 @@
+# TODO: 英語文言FIXしたら更新する
+AdGroupAdServiceButtonText:
+  type: string
+  nullable: true
+  enum:
+  - FOR_MORE_INFO
+  - CONFIRM_NOW
+  - APPLY_HERE
+  - PURCHASE
+  - EXPERIENCE
+  - CONFIRM_PROPERTY
+  - REQUEST_INFO
+  - DOWNLOAD
+  - INSTALL
+  - MORE_DETAIL
+  - RESERVE_HERE
+  - REGISTER
+  - APPLY_NOW
+  - PURCHASE_NOW
+  - RESERVE_NOW
+  - REGISTER_NOW
+  - CONTACT_US
+  - GAIN_FRIENDS
+  - PLAY_GAME
+  - USE_APP
+  - LISTEN_TO_MUSIC
+  - UNKNOWN
+  title: AdGroupAdServiceButtonText
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceButtonTextはボタンテキストを表します。<br>
+    このフィールドは、dynamicDisplayAd、responsiveAd配下では省略可能となります。その際、dynamicDisplayAd配下では、ADD時のデフォルト設定値はFOR_MORE_INFOとなります。<br>
+    また、responsiveGainFriendsAd配下では、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceButtonText displays the button text.<br>
+    This field will be optional under dynamicDisplayAd and responsiveAd. In these cases, under dynamicAd, the default value in ADD operation will be FOR_MORE_INFO.<br>
+    Under responsiveGainFriendsAd, although this field will be returned in the response,it will be ignored on input.
+    </div>
+    <dl class=term>
+      <dt class="term__item">INSTALL</dt>
+      <dd class="term__desc"><span lang="ja">「インストール」ボタンです。</span><span lang="en">&#34;Install.&#34; button.</span></dd>
+      <dt class="term__item">MORE_DETAIL</dt>
+      <dd class="term__desc"><span lang="ja">「詳しくはこちら」ボタンです。（デフォルト値です）</span><span lang="en">&#34;More detail.&#34; button.（Default）</span></dd>
+      <dt class="term__item">CONFIRM_PROPERTY</dt>
+      <dd class="term__desc"><span lang="ja">「物件を見る」ボタンです。</span><span lang="en">&#34;Confirm property.&#34; button.</span></dd>
+      <dt class="term__item">DOWNLOAD</dt>
+      <dd class="term__desc"><span lang="ja">「ダウンロード」ボタンです。</span><span lang="en">&#34;Download.&#34; button.</span></dd>
+      <dt class="term__item">REGISTER</dt>
+      <dd class="term__desc"><span lang="ja">「ご登録はこちら」ボタンです。</span><span lang="en">&#34;Register here.&#34; button.</span></dd>
+      <dt class="term__item">PURCHASE_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ購入」ボタンです。</span><span lang="en">&#34;Buy now.&#34; button.</span></dd>
+      <dt class="term__item">REQUEST_INFO</dt>
+      <dd class="term__desc"><span lang="ja">「資料請求」ボタンです。</span><span lang="en">&#34;Request information.&#34; button.</span></dd>
+      <dt class="term__item">RESERVE_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ予約」ボタンです。</span><span lang="en">&#34;Reserve now.&#34; button.</span></dd>
+      <dt class="term__item">REGISTER_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ登録」ボタンです。</span><span lang="en">&#34;Register now.&#34; button.</span></dd>
+      <dt class="term__item">EXPERIENCE</dt>
+      <dd class="term__desc"><span lang="ja">「体験する」ボタンです。</span><span lang="en">&#34;Experience.&#34; button.</span></dd>
+      <dt class="term__item">RESERVE_HERE</dt>
+      <dd class="term__desc"><span lang="ja">「ご予約はこちら」ボタンです。</span><span lang="en">&#34;Reserve here.&#34; button.</span></dd>
+      <dt class="term__item">APPLY_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐ申込む」ボタンです。</span><span lang="en">&#34;Apply now.&#34; button.</span></dd>
+      <dt class="term__item">FOR_MORE_INFO</dt>
+      <dd class="term__desc"><span lang="ja">「もっとみる」ボタンです。</span><span lang="en">&#34;More information.&#34; button.</span></dd>
+      <dt class="term__item">PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">「ご購入はこちら」ボタンです。</span><span lang="en">&#34;Buy here.&#34; button.</span></dd>
+      <dt class="term__item">CONTACT_US</dt>
+      <dd class="term__desc"><span lang="ja">「お問い合わせ」ボタンです。</span><span lang="en">&#34;Contact us.&#34; button.</span></dd>
+      <dt class="term__item">CONFIRM_NOW</dt>
+      <dd class="term__desc"><span lang="ja">「今すぐチェック」ボタンです。</span><span lang="en">&#34;Check now.&#34; button.</span></dd>
+      <dt class="term__item">APPLY_HERE</dt>
+      <dd class="term__desc"><span lang="ja">「お申込みはこちら」ボタンです。</span><span lang="en">&#34;Click here to apply.&#34; button.</span></dd>
+      <dt class="term__item">GAIN_FRIENDS</dt>
+      <dd class="term__desc"><span lang="ja">「友だち追加」ボタンです。responsiveGainFriendsAdの場合のみ指定できます。</span><span lang="en">&#34;Gain friends.&#34; button. This field can only be specified for responsiveGainFriendsAd.</span></dd>
+      <dt class="term__item">PLAY_GAME</dt>
+      <dd class="term__desc"><span lang="ja">「ゲームプレイ」ボタンです。</span><span lang="en">&#34;Play game.&#34; button.</span></dd>
+      <dt class="term__item">USE_APP</dt>
+      <dd class="term__desc"><span lang="ja">「アプリを利用」ボタンです。</span><span lang="en">&#34;Use app.&#34; button.</span></dd>
+      <dt class="term__item">LISTEN_TO_MUSIC</dt>
+      <dd class="term__desc"><span lang="ja">「音楽を聴く」ボタンです。</span><span lang="en">&#34;Listen to music.&#34; button.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,89 @@
+GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch:
+  type: object
+  nullable: true
+  properties:
+    displayOrder:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        パネルの表示順です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※指定しない場合は自動で設定されます。
+        </div>
+        <div lang="en">
+        Panel display order.<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        *If not specified, it will be set automatically.
+        </div>
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Final URL.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    switchMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        スイッチ画像のメディアIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Media ID of switch image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    adLeftSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        左サイド画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Left side image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    adRightSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        右サイド画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Right side image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+  title: GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchオブジェクトは、トップインパクト パノラマ パネルスイッチ広告の詳細情報を表します。
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitch object describes detailed information of Top Impact Panorama Panel-switch ad.
+    </div>

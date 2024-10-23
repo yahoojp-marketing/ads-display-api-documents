@@ -75,15 +75,9 @@ AdGroupAdServiceCarousel:
       description: |
         <div lang="ja">最終リンク先URLです。<br>
         このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
-        キャンペーン目的「アプリ訴求」の場合は、このフィールドには以下のURLのみ設定できます。<br>
-        - iOSの場合：itunes.apple.com, apps.apple.com<br>
-        - Androidの場合：play.google.com
         </div>
         <div lang="en">Final URL.<br>
         This field is required in ADD operation, and will be optional in SET operation.<br>
-        If campaignGoal is APP_PROMOTION, only the following URL can be set in this field.<br>
-        - For iOS : itunes.apple.com, apps.apple.com<br>
-        - For Android : play.google.com
         </div>
     smartphoneFinalUrl:
       type: string

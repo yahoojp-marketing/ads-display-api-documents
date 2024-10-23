@@ -1,0 +1,25 @@
+AudienceListServiceEligibleFlg:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AudienceListServiceEligibleFlg
+  description: |
+    <div lang="ja">
+    AudienceListServiceEligibleFlgは、広告データ利用基準に抵触しているかかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceEligibleFlg display whether the list is in violation of Advertising Data Usage Standards or not.<br>
+    Although this field will be returned in the response, it will be ignored on request.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">広告データ利用基準に抵触していません。</span><span lang="en">Not in violation of Advertising Data Usage Standards.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">広告データ利用基準に抵触しています。</span><span lang="en">In violation of Advertising Data Usage Standards.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

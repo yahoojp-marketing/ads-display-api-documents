@@ -31,10 +31,12 @@ AdGroupTargetServiceSiteCategoryTarget:
     <div lang="ja">
     AdGroupTargetServiceSiteCategoryTargetオブジェクトは、サイトカテゴリーターゲティングの設定情報を保持します。<br>
     ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
-    ※targetTypeがSITE_CATEGORYの場合は必須です。
+    ※targetTypeがSITE_CATEGORYの場合は必須です。<br>
+    ※ADD、SET、REPLACEでは現在利用できません
     </div>
     <div lang="en">
     AdGroupTargetServiceSiteCategoryTarget object is a container for storing site category targeting settings.<br>
     This field is optional in ADD, SET and REPLACE operation.<br>
-    ∗If targetType is SITE_CATEGORY, this field is required.
+    ∗If targetType is SITE_CATEGORY, this field is required.<br>
+    *Not available in ADD, SET and REPLACE operation.
     </div>
