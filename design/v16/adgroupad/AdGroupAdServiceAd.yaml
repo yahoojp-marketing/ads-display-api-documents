@@ -1,0 +1,92 @@
+AdGroupAdServiceAd:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'AdGroupAdServiceAdType.yaml#/AdGroupAdServiceAdType'
+    mainMediaFormat:
+      $ref: 'AdGroupAdServiceMainMediaFormat.yaml#/AdGroupAdServiceMainMediaFormat'
+    bannerAd:
+      $ref: 'AdGroupAdServiceBannerAd.yaml#/AdGroupAdServiceBannerAd'
+    carouselAd:
+      $ref: 'AdGroupAdServiceCarouselAd.yaml#/AdGroupAdServiceCarouselAd'
+    dynamicDisplayAd:
+      $ref: 'AdGroupAdServiceDynamicDisplayAd.yaml#/AdGroupAdServiceDynamicDisplayAd'
+    responsiveAd:
+      $ref: 'AdGroupAdServiceResponsiveAd.yaml#/AdGroupAdServiceResponsiveAd'
+    textAd:
+      $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
+    responsiveGainFriendsAd:
+      $ref: 'AdGroupAdServiceResponsiveGainFriendsAd.yaml#/AdGroupAdServiceResponsiveGainFriendsAd'
+    customParameters:
+      $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドはリクエストの際には無視されます。代わりにfinalUrlから生成された値が自動で設定されます。<br>
+        ただし、キャンペーン目的「アプリ訴求」の場合は、キャンペーンで指定したDeviceOsTypeに基づき、以下のいずれかのURLが自動で設定されます。<br>
+        - iOSの場合：itunes.apple.com<br>
+        - Androidの場合：play.google.com
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field will be ignored on input. Instead, the value generated from finalUrl will be set automatically.<br>
+        However, When a campaign goal is "app promotion", Based on DeviceOsType specified on the campaign, any of the following URLs will be automatically set.<br>
+        - For iOS : itunes.apple.com<br>
+        - For Android : play.google.com
+        </div>
+    displayUrlLevel:
+      $ref: 'AdGroupAdServiceDisplayUrlLevel.yaml#/AdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        </div>
+        <div lang="en">Final URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。
+        </div>
+        <div lang="en">Final URL (smartphone).<br>
+        This field is optional in ADD and SET operation.<br>
+        Not allowed for ADD and SET when a campaign goal is "app promotion."
+        </div>
+    isRemoveSmartphoneFinalUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        ADD時、このフィールドは省略可能となります。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        SET時にurlを指定する場合、このフィールドの値はクリアされます。
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field is optional in ADD operation.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        If url is specified in SET operation, the value in this field will be cleared.
+        </div>
+    isRemoveTrackingUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+  title: AdGroupAdServiceAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceAd object is a container for storing ads.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>

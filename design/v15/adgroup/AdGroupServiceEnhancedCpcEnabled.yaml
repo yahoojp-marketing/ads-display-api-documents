@@ -9,12 +9,12 @@ AdGroupServiceEnhancedCpcEnabled:
   description: |
     <div lang="ja">
     AdGroupServiceEnhancedCpcEnabledは、コンバージョン数の最大化設定フラグを指定します。<br>
-    このフィールドがTRUEの場合、操作履歴上の入札戦略は「eCPC」になります。<br>
+    このフィールドがTRUEの場合、操作履歴上の入札戦略は「拡張クリック単価」になります。<br>
     このフィールドはcpcもしくはisRemoveCpcを指定する場合、必須となります。
     </div>
     <div lang="en">
     AdGroupServiceEnhancedCpcEnabled specifies flag of Maximize Conversions.<br>
-    If this field is TRUE, the bidding strategy on audit log is "eCPC."<br>
+    If this field is TRUE, the bidding strategy on audit log is "Enhanced CPC".<br>
     If cpc or isRemoveCpc is specified, this field is required.
     </div>
     <dl class=term>

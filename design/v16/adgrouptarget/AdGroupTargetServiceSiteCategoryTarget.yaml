@@ -1,0 +1,42 @@
+AdGroupTargetServiceSiteCategoryTarget:
+  type: object
+  nullable: true
+  properties:
+    categoryFullNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        カテゴリー名（英語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Site category name (English).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    categoryFullNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        カテゴリー名（日本語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Site category name (Japanese).<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: AdGroupTargetServiceSiteCategoryTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceSiteCategoryTargetオブジェクトは、サイトカテゴリーターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがSITE_CATEGORYの場合は必須です。<br>
+    ※ADD、SET、REPLACEでは現在利用できません
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceSiteCategoryTarget object is a container for storing site category targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is SITE_CATEGORY, this field is required.<br>
+    *Not available in ADD, SET and REPLACE operation.
+    </div>

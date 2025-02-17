@@ -1,0 +1,25 @@
+AdGroupTargetServiceDeliverType:
+  type: string
+  nullable: true
+  enum:
+  - INCLUDE
+  - EXCLUDE
+  - UNKNOWN
+  title: AdGroupTargetServiceDeliverType
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceDeliverTypeは、対象のターゲティング設定が配信対象か配信除外対象かを表します。<br>
+    ADDおよびREPLACE時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceDeliverType describes whether the subjected targeting setting is delivery target or excluded from delivery target.<br>
+    This field is optional in ADD and REPLACE operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">INCLUDE</dt>
+      <dd class="term__desc"><span lang="ja">配信対象です。</span><span lang="en">Target.</span></dd>
+      <dt class="term__item">EXCLUDE</dt>
+      <dd class="term__desc"><span lang="ja">配信除外です。</span><span lang="en">Exclude.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,26 @@
+AudienceListServiceAdActionDataSource:
+  type: object
+  nullable: true
+  properties:
+    entity:
+      $ref: 'AudienceListServiceEntity.yaml#/AudienceListServiceEntity'
+    ids:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      description: |
+        <div lang="ja">広告アクションデータソースのIdです。</div>
+        <div lang="en">Id of ad action data source.</div>
+  title: AudienceListServiceAdActionDataSource
+  description: |
+    <div lang="ja">
+    AudienceListServiceAdActionDataSourceオブジェクトは、広告アクションデータソースを表します。<br>
+    このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceAdActionDataSource object describes ad action data source.<br>
+    This field is required in ADD operation, and will be ignored in SET and REMOVE operation.
+    </div>

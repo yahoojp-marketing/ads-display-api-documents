@@ -1,0 +1,155 @@
+AudienceListServiceLineAudienceGroupType:
+  type: string
+  nullable: true
+  title: AudienceListServiceLineAudienceGroupType
+  description: |
+    <div lang="ja">
+    AudienceListServiceLineAudienceGroupTypeは、LINEのオーディエンスタイプを表します<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    lineAudienceGroupTypeで返却される値は、以下のとおりです。<br>
+    <table border='1'>
+      <tr>
+        <th>lineAudienceGroupType</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td>IDFA_AAID_UPLOAD</td>
+        <td>IDFA/AAIDアップロード</td>
+      </tr>
+      <tr>
+        <td>PHONE_NUMBER_UPLOAD</td>
+        <td>電話番号アップロード</td>
+      </tr>
+      <tr>
+        <td>EMAIL_ADDRESS_UPLOAD</td>
+        <td>メールアドレスアップロード</td>
+      </tr>
+      <tr>
+        <td>MID_UID_UPLOAD</td>
+        <td>ユーザーIDアップロード</td>
+      </tr>
+      <tr>
+        <td>WEB_TRAFFIC_AUDIENCE</td>
+        <td>ウェブトラフィックオーディエンス</td>
+      </tr>
+      <tr>
+        <td>APP_EVENT_AUDIENCE</td>
+        <td>モバイルアプリオーディエンス</td>
+      </tr>
+      <tr>
+        <td>IMAGE_CLICK_AUDIENCE</td>
+        <td>画像クリックオーディエンス</td>
+      </tr>
+      <tr>
+        <td>VIDEO_VIEW_AUDIENCE</td>
+        <td>動画視聴オーディエンス</td>
+      </tr>
+      <tr>
+        <td>LOOKALIKE_AUDIENCE</td>
+        <td>類似オーディエンス</td>
+      </tr>
+      <tr>
+        <td>MESSAGE_CLICK_AUDIENCE</td>
+        <td>メッセージクリックオーディエンス</td>
+      </tr>
+      <tr>
+        <td>MESSAGE_IMP_AUDIENCE</td>
+        <td>メッセージインプレッションオーディエンス</td>
+      </tr>
+      <tr>
+        <td>RICHMENU_CLICK_AUDIENCE</td>
+        <td>リッチメニュークリックオーディエンス</td>
+      </tr>
+      <tr>
+        <td>RICHMENU_IMP_AUDIENCE</td>
+        <td>リッチメニューインプレッションオーディエンス</td>
+      </tr>
+      <tr>
+        <td>CHAT_TAG_AUDIENCE</td>
+        <td>チャットタグオーディエンス</td>
+      </tr>
+      <tr>
+        <td>FRIEND_ROUTE_AUDIENCE</td>
+        <td>友だち追加経路オーディエンス</td>
+      </tr>
+      <tr>
+        <td>RESERVATION_AUDIENCE</td>
+        <td>予約オーディエンス</td>
+      </tr>
+    </table>
+    </div>
+    <div lang="en">
+    AudienceListServiceLineAudienceGroupType represents the type of LINE audience.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    Responded values of `lineAudienceGroupType` are as follows.
+    <table border='1'>
+      <tr>
+        <th>lineAudienceGroupType</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>IDFA_AAID_UPLOAD</td>
+        <td>IDFA/AAID upload</td>
+      </tr>
+      <tr>
+        <td>PHONE_NUMBER_UPLOAD</td>
+        <td>Phone number upload</td>
+      </tr>
+      <tr>
+        <td>EMAIL_ADDRESS_UPLOAD</td>
+        <td>Email address upload</td>
+      </tr>
+      <tr>
+        <td>MID_UID_UPLOAD</td>
+        <td>User ID upload</td>
+      </tr>
+      <tr>
+        <td>WEB_TRAFFIC_AUDIENCE</td>
+        <td>Web traffic audience</td>
+      </tr>
+      <tr>
+        <td>APP_EVENT_AUDIENCE</td>
+        <td>Mobile app audience</td>
+      </tr>
+      <tr>
+        <td>IMAGE_CLICK_AUDIENCE</td>
+        <td>Image click audience</td>
+      </tr>
+      <tr>
+        <td>VIDEO_VIEW_AUDIENCE</td>
+        <td>Video view audience</td>
+      </tr>
+      <tr>
+        <td>LOOKALIKE_AUDIENCE</td>
+        <td>Lookalike audience</td>
+      </tr>
+      <tr>
+        <td>MESSAGE_CLICK_AUDIENCE</td>
+        <td>Message click audience</td>
+      </tr>
+      <tr>
+        <td>MESSAGE_IMP_AUDIENCE</td>
+        <td>Message impression audience</td>
+      </tr>
+      <tr>
+        <td>RICHMENU_CLICK_AUDIENCE</td>
+        <td>Rich menu click audience</td>
+      </tr>
+      <tr>
+        <td>RICHMENU_IMP_AUDIENCE</td>
+        <td>Rich menu impression audience</td>
+      </tr>
+      <tr>
+        <td>CHAT_TAG_AUDIENCE</td>
+        <td>Chat tag audience</td>
+      </tr>
+      <tr>
+        <td>FRIEND_ROUTE_AUDIENCE</td>
+        <td>Friend path audience</td>
+      </tr>
+      <tr>
+        <td>RESERVATION_AUDIENCE</td>
+        <td>Reservation audience</td>
+      </tr>
+    </table>
+    </div>

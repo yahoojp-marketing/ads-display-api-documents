@@ -9,12 +9,12 @@ CampaignServiceEnhancedCpcEnabled:
   description: |
     <div lang="ja">
     CampaignServiceEnhancedCpcEnabledは、コンバージョン数の最大化設定フラグを指定します。<br>
-    このフィールドがTRUEの場合、操作履歴上の入札戦略は「eCPC」になります。<br>
+    このフィールドがTRUEの場合、操作履歴上の入札戦略は「拡張クリック単価」になります。<br>
     このフィールドはADDおよびSET時に必須となり、REMOVE時に無視されます。
     </div>
     <div lang="en">
     CampaignServiceEnhancedCpcEnabled specifies flag of Maximize Conversions.<br>
-    If this field is TRUE, the bidding strategy on audit log is "eCPC."<br>
+    If this field is TRUE, the bidding strategy on audit log is "Enhanced CPC".<br>
     This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
     </div>
     <dl class=term>

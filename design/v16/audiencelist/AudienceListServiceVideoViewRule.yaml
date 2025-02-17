@@ -1,0 +1,43 @@
+AudienceListServiceVideoViewRule:
+  type: string
+  nullable: true
+  enum:
+  - START
+  - PLAYED_TO_25
+  - PLAYED_TO_50
+  - PLAYED_TO_75
+  - PLAYED_TO_95
+  - COMPLETE
+  - PLAYED_TO_3_SEC
+  - PLAYED_TO_10_SEC
+  - UNKNOWN
+  title: AudienceListServiceVideoViewRule
+  description: |
+    <div lang="ja">
+    AudienceListServiceVideoViewRuleは、動画視聴の条件です。<br>
+    ※AudienceListServiceAdActionTypeがVIDEO_VIEWの場合のみ指定できます。
+    </div>
+    <div lang="en">
+    AudienceListServiceVideoViewRule display the rules of video view.<br>
+    ∗This field can be specified only if AudienceListServiceAdActionType is VIDEO VIEW.
+    </div>
+    <dl class=term>
+      <dt class="term__item">START</dt>
+      <dd class="term__desc"><span lang="ja">再生開始</span><span lang="en">Start</span></dd>
+      <dt class="term__item">PLAYED_TO_25</dt>
+      <dd class="term__desc"><span lang="ja">25%以上再生</span><span lang="en">Played to 25 %</span></dd>
+      <dt class="term__item">PLAYED_TO_50</dt>
+      <dd class="term__desc"><span lang="ja">50%以上再生</span><span lang="en">Played to 50 %</span></dd>
+      <dt class="term__item">PLAYED_TO_75</dt>
+      <dd class="term__desc"><span lang="ja">75%以上再生</span><span lang="en">Played to 75 %</span></dd>
+      <dt class="term__item">PLAYED_TO_95</dt>
+      <dd class="term__desc"><span lang="ja">95%以上再生</span><span lang="en">Played to 95 %</span></dd>
+      <dt class="term__item">COMPLETE</dt>
+      <dd class="term__desc"><span lang="ja">再生完了</span><span lang="en">Complete</span></dd>
+      <dt class="term__item">PLAYED_TO_3_SEC</dt>
+      <dd class="term__desc"><span lang="ja">3秒以上再生</span><span lang="en">Played to 3 sec</span></dd>
+      <dt class="term__item">PLAYED_TO_10_SEC</dt>
+      <dd class="term__desc"><span lang="ja">10秒以上再生</span><span lang="en">Played to 10 sec</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値</span><span lang="en">Unknown Value</span></dd>
+    </dl>

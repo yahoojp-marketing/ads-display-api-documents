@@ -1,0 +1,25 @@
+AudienceListServiceOperation:
+  type: object
+  nullable: true
+  required:
+  - accountId
+  - operand
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    operand:
+      type: array
+      nullable: false
+      items:
+        $ref: 'AudienceList.yaml#/AudienceList'
+      minItems: 1
+      maxItems: 20
+  title: AudienceListServiceOperation
+  description: |
+    <div lang="ja">AudienceListServiceOperationオブジェクトは、操作対象となるオーディエンスリストの情報を表します。</div>
+    <div lang="en">AudienceListServiceOperation object describes information of audience list that is subject to operation.</div>

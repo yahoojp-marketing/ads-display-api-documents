@@ -1,0 +1,27 @@
+ConversionTrackerServiceExcludePreviousConversion:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: ConversionTrackerServiceExcludePreviousConversion
+  description: |
+    <div lang="ja">
+    ConversionTrackerServiceExcludePreviousConversionは、コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定を除外するかどうかを表すフラグです。<br>
+    このフィールドは、リクエストの場合は省略可能です。GET時のデフォルト設定値はFALSEとなります。<br>
+    *コンバージョンラベルが設定されていないコンバージョンタグを含むコンバージョン設定は、キャンペーンに紐づけることはできません。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceExcludePreviousConversion is a flag that indicates whether to include conversion tracker information that includes conversion tag which conversion label is not set.<br>
+    This field is optional in requests. The default value in GET operation will be FALSE.<br>
+    Conversion tracker information including previous conversion tags cannot be linked to a campaign.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョンラベルが設定されていないコンバージョンタグを除外します。</span><span lang="en">Exclude conversion tags which conversion label is not set.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョンラベルが設定されていないコンバージョンタグを除外しません。</span><span lang="en">Does not Exclude conversion tags which conversion label is not set.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

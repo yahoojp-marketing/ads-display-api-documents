@@ -69,6 +69,7 @@
 "APP_NAME","アプリ名","App Name","appName","STRING",,"Attribute","","",""
 "APP_OS","アプリOS","App OS","appOS","STRING",,"Attribute","Android,iOS","Android,iOS",""
 "DELIVER_URL","配信先URL","Ad Delivery URL","adDeliveryURL","STRING",,"Attribute","","",""
+"AD_PLACE_NAME","配信先名","Ad Place Name","adPlaceName","STRING",,"Attribute","","",""
 "VIDEO_VIEW_THROUGH_RATE","動画の再生完了率","Video view through rate","videoViewThroughRate","DOUBLE","[CONVERSION_CATEGORY, CONVERSION_ID, CONVERSION_NAME]","Metric","","",""
 "MONTH","月","Month","month","STRING",,"Segment","","",""
 "WEEK","週（月～日）","Week (Mon-Sun)","week","STRING",,"Segment","","",""

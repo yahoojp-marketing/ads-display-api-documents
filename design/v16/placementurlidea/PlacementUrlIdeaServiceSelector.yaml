@@ -1,0 +1,91 @@
+PlacementUrlIdeaServiceSelector:
+  type: object
+  nullable: true
+  properties:
+    keyword:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        検索キーワードの配列です。<br>
+        ・URLまたは配信先名を検索するためのキーワードです。<br>
+        ・部分一致です。<br>
+        ・スペース区切りでAND検索です。<br>
+        ・最大文字数250です。<br>
+        ・スペース区切りでの単語数は最大10個です。
+        </div>
+        <div lang="en">
+        Array of Search keyword.<br>
+        ・Keyword to search URL or ad place name<br>
+        ・Broad match<br>
+        ・Search all keywords (AND), separated by spaces<br>
+        ・Maximum of 250 characters<br>
+        ・Maximum of 10 spaces to separate the words
+        </div>
+    keywordFilterTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PlacementUrlIdeaServiceKeywordFilterType.yaml#/PlacementUrlIdeaServiceKeywordFilterType'
+    adPlaceFilterTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PlacementUrlIdeaServiceAdPlaceFilterType.yaml#/PlacementUrlIdeaServiceAdPlaceFilterType'
+    lang:
+      $ref: 'PlacementUrlIdeaServiceLang.yaml#/PlacementUrlIdeaServiceLang'
+    siteCategories:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      maxItems: 50
+      description: |
+        <div lang="ja">
+        カテゴリの配列です。<br>
+        ・URLのカテゴリです。<br>
+        ・完全一致です。<br>
+        ・複数指定でOR検索です。<br>
+        ・TC-SC-xxxxxxで現される規定値です。<br>
+        ・DicitonaryServiceから返ってくるTC-SC-xxxxxxをそのまま指定です。<br>
+        ・最大50件です。
+        </div>
+        <div lang="en">
+        Array of categories.<br>
+        ・Category of URL<br>
+        ・Exact match<br>
+        ・Search multiple specific keywords (OR)<br>
+        ・From value: TC-SC-xxxxxx<br>
+        ・Choose the TC-SC-xxxxxx value from DictionaryService<br>
+        ・Maximum of 50 cases
+        </div>
+    unknownUrlFilterType:
+      $ref: 'PlacementUrlIdeaServiceUnknownUrlFilterType.yaml#/PlacementUrlIdeaServiceUnknownUrlFilterType'
+    sortField:
+      $ref: 'PlacementUrlIdeaServiceSortField.yaml#/PlacementUrlIdeaServiceSortField'
+    sortType:
+      $ref: 'PlacementUrlIdeaServiceSortType.yaml#/PlacementUrlIdeaServiceSortType'
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 500
+      default: 500
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、0以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 0.</div>
+  title: PlacementUrlIdeaServiceSelector
+  description: |
+    <div lang="ja">PlacementUrlIdeaServiceSelectorオブジェクトは、getメソッドの検索条件（実行パラメータ）を保持するオブジェクトです。</div>
+    <div lang="en">The objects to keep get method search conditions (execution parameter).</div>

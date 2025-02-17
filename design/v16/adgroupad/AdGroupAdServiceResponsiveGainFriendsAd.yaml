@@ -1,0 +1,57 @@
+AdGroupAdServiceResponsiveGainFriendsAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の説明文です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Ad description.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告のタイトルです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Ad title.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
+        </div>
+        <div lang="en">
+        Thumbnail ID.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        *If mainMediaFormat is VIDEO, this field can be specified.
+        </div>
+  title: AdGroupAdServiceResponsiveGainFriendsAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceResponsiveGainFriendsAdオブジェクトは、レスポンシブ（友だち追加）広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがRESPONSIVE_GAIN_FRIENDS_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceResponsiveGainFriendsAd object displays Responsive (Gain friends) Ads information.<br>
+    This field is optional.<br>
+    *If adType is RESPONSIVE_GAIN_FRIENDS_AD, this field is required in ADD operation.
+    </div>

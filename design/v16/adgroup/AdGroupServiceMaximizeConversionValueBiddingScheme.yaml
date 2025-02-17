@@ -1,0 +1,35 @@
+AdGroupServiceMaximizeConversionValueBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    targetRoas:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        広告費用対効果の目標値です。<br>
+        ※Return On Advertising Spend(ROAS)
+        ※0.01 〜1000.00（1%〜100000%）の範囲内のみ許容します。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※campaignBiddingStrategyTypeがMAXIMIZE_CONVERSION_VALUEの場合のみ指定可能です。
+        </div>
+        <div lang="en">
+        Target ROAS.<br>
+        * ROAS: Return On Average Spend.<br>
+        * Setting limit: 0.01 〜1000.00（1%〜100000%）.<br>
+        This field is optional in ADD and SET operation.<br>
+        *This can only be specified when campaignBiddingStrategyType is MAXIMIZE_CONVERSION_VALUE.
+        </div>
+    isRemoveTargetRoas:
+      $ref: 'AdGroupServiceIsRemoveFlg.yaml#/AdGroupServiceIsRemoveFlg'
+  title: AdGroupServiceMaximizeConversionValueBiddingScheme
+  description: |
+    <div lang="ja">
+    AdGroupServiceMaximizeConversionValueBiddingSchemeオブジェクトは、広告費用対効果の目標値の設定情報を表します。<br>
+    ※現在利用できません。
+    </div>
+    <div lang="en">
+    AdGroupServiceMaximizeConversionValueBiddingScheme object displays bidding setting for Target ROAS.<br>
+    * Not Available.
+    </div>

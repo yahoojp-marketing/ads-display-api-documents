@@ -24,23 +24,23 @@ CampaignServiceBiddingStrategyType:
     </div>
     <dl class=term>
       <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
-      <dd class="term__desc"><span lang="ja">コンバージョン数最大化</span><span lang="en">Maximize conversion</span></dd>
+      <dd class="term__desc"><span lang="ja">コンバージョン数の最大化</span><span lang="en">Maximize conversions</span></dd>
       <dt class="term__item">MAXIMIZE_CLICKS</dt>
-      <dd class="term__desc"><span lang="ja">クリック数最大化</span><span lang="en">Maximize clicks</span></dd>
+      <dd class="term__desc"><span lang="ja">クリック数の最大化</span><span lang="en">Maximize clicks</span></dd>
       <dt class="term__item">MAXIMIZE_VIDEO_VIEWS</dt>
-      <dd class="term__desc"><span lang="ja">ビュー数最大化</span><span lang="en">Maximize video views</span></dd>
+      <dd class="term__desc"><span lang="ja">動画再生数の最大化</span><span lang="en">Maximize video views</span></dd>
       <dt class="term__item">MAXIMIZE_VIEWABLE_IMPRESSIONS</dt>
-      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション数最大化</span><span lang="en">Maximize vimps</span></dd>
+      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション数の最大化</span><span lang="en">Maximize viewable impressions</span></dd>
       <dt class="term__item">MAXIMIZE_GAINING_FRIENDS</dt>
       <dd class="term__desc"><span lang="ja">友だち追加数の最大化</span><span lang="en">Maximize gaining friends</span></dd>
       <dt class="term__item">VCPM</dt>
-      <dd class="term__desc"><span lang="ja">最大入札価格指定（vCPM）</span><span lang="en">Max. bid value (vCPM)</span></dd>
+      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション単価</span><span lang="en">Viewable CPM</span></dd>
       <dt class="term__item">CPC</dt>
-      <dd class="term__desc"><span lang="ja">最大入札価格指定（CPC）</span><span lang="en">Max. bid value (CPC)</span></dd>
+      <dd class="term__desc"><span lang="ja">個別クリック単価</span><span lang="en">Individual CPC</span></dd>
       <dt class="term__item">CPV</dt>
-      <dd class="term__desc"><span lang="ja">最大入札価格指定（CPV）</span><span lang="en">Max. bid value(CPV)</span></dd>
+      <dd class="term__desc"><span lang="ja">動画再生単価</span><span lang="en">CPV</span></dd>
       <dt class="term__item">CPF</dt>
-      <dd class="term__desc"><span lang="ja">最大入札価格指定（CPF）</span><span lang="en">Max. bid value(CPF)</span></dd>
+      <dd class="term__desc"><span lang="ja">個別友だち追加単価</span><span lang="en">Individual CPF</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

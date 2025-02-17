@@ -1,0 +1,22 @@
+PlacementUrlIdeaServiceAdPlaceFilterType:
+  type: string
+  nullable: true
+  enum:
+    - MAIN_AD_PLACE
+    - UNKNOWN
+  title: PlacementUrlIdeaServiceAdPlaceFilterType
+  description: |
+    <div lang="ja">
+    PlacementUrlIdeaServiceAdPlaceFilterTypeは、検索対象の配信先の種別を表します。<br>
+    このフィールドは省略可能となります。デフォルトでは全ての配信先を検索対象とします。
+    </div>
+    <div lang="en">
+    PlacementUrlIdeaServiceAdPlaceFilterType represents the type of ad place to be searched.<br>
+    This field is optional. By default, all ad places are searched.
+    </div>
+    <dl class=term>
+      <dt class="term__item">MAIN_AD_PLACE</dt>
+      <dd class="term__desc"><span lang="ja">主要な配信先です。</span><span lang="en">Main Ad Place</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
