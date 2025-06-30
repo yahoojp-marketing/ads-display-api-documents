@@ -7,29 +7,87 @@ EstimatedUserSize:
       nullable: true
       description: |
         <div lang="ja">
-        キーワードから推定されるユーザサイズです。<br>
+          キーワードから推定されるユーザサイズです。<br>
+          <table border='1'>
+            <tr>
+              <th>estimatedUserSize</th>
+              <th>説明</th>
+            </tr>
+            <tr>
+              <td>ZERO</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>LESS_THAN_10K</td>
+              <td>1万未満です。</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_10K_TO_100K</td>
+              <td>1万以上、10万未満です。</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_100K_TO_500K</td>
+              <td>10万以上、50万未満です。</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_500K_TO_1M</td>
+              <td>50万以上、100万未満です。</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_1M_TO_5M</td>
+              <td>100万以上、500万未満です。</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_5M_TO_10M</td>
+              <td>500万以上、1,000万未満です。</td>
+            </tr>
+            <tr>
+              <td>GREATER_THAN_10M</td>
+              <td>1,000万以上です。</td>
+            </tr>
+          </table>
         </div>
         <div lang="en">
-        Estimated user size from keywords.<br>
+          Estimated user size from keywords.<br>
+          <table border='1'>
+            <tr>
+              <th>estimatedUserSize</th>
+              <th>description</th>
+            </tr>
+            <tr>
+              <td>ZERO</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>LESS_THAN_10K</td>
+              <td>Less than 10,000.</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_10K_TO_100K</td>
+              <td>Between 10,000 to 100,000.</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_100K_TO_500K</td>
+              <td>Between 100,000 to 500,000.</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_500K_TO_1M</td>
+              <td>Between 500,000 to 1 million.</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_1M_TO_5M</td>
+              <td>Between 1 million to 5 million.</td>
+            </tr>
+            <tr>
+              <td>BETWEEN_5M_TO_10M</td>
+              <td>Between 5 million to 10 million.</td>
+            </tr>
+            <tr>
+              <td>GREATER_THAN_10M</td>
+              <td>Greater than 10 million.</td>
+            </tr>
+          </table>
         </div>
-        <dl class=term>
-          <dt class="term__item">ZERO</dt>
-          <dd class="term__desc"><span lang="ja">0</span><span lang="en">0</span></dd>
-          <dt class="term__item">LESS_THAN_10K</dt>
-          <dd class="term__desc"><span lang="ja">1万未満です。</span><span lang="en">Less than 10,000.</span></dd>
-          <dt class="term__item">BETWEEN_10K_TO_100K</dt>
-          <dd class="term__desc"><span lang="ja">1万以上、10万未満です。</span><span lang="en">Between 10,000 to 100,000.</span></dd>
-          <dt class="term__item">BETWEEN_100K_TO_500K</dt>
-          <dd class="term__desc"><span lang="ja">10万以上、50万未満です。</span><span lang="en">Between 100,000 to 500,000.</span></dd>
-          <dt class="term__item">BETWEEN_500K_TO_1M</dt>
-          <dd class="term__desc"><span lang="ja">50万以上、100万未満です。</span><span lang="en">Between 500,000 to 1 million.</span></dd>
-          <dt class="term__item">BETWEEN_1M_TO_5M</dt>
-          <dd class="term__desc"><span lang="ja">100万以上、500万未満です。</span><span lang="en">Between 1 million to 5 million.</span></dd>
-          <dt class="term__item">BETWEEN_5M_TO_10M</dt>
-          <dd class="term__desc"><span lang="ja">500万以上、1,000万未満です。</span><span lang="en">Between 5 million to 10 million.</span></dd>
-          <dt class="term__item">GREATER_THAN_10M</dt>
-          <dd class="term__desc"><span lang="ja">1,000万以上です。</span><span lang="en">Greater than 10 million.</span></dd>
-        </dl>
     keywords:
       type: array
       nullable: true

@@ -24,12 +24,10 @@ AudienceListServiceWebsiteVisitorsAudienceList:
       nullable: true
       description: |
         <div lang="ja">
-        リターゲティングタグIDです。<br>
-        このフィールドは、ADD時に必須となります。
+        リターゲティングタグIDです。
         </div>
         <div lang="en">
-        ID of retargeting tag. <br>
-        This field is required in ADD operation.
+        ID of retargeting tag.
         </div>
     rules:
       type: array

@@ -9,18 +9,16 @@ FeedDataServiceEncoding:
   title: FeedDataServiceEncoding
   description: |
     <div lang="ja">FeedDataServiceEncodingは、商品情報のエラーファイルのエンコーディング形式（文字コード）を表します。<br>
-    このフィールドは、省略可能となります。<br>
-    ※現在利用できません</div>
+    このフィールドは、省略可能となります。</div>
     <div lang="en">FeedDataServiceEncoding describes the encoding type (character encoding) for Error file.<br>
-    This field is optional.<br>
-    * Not Available.</div>
+    This field is optional.</div>
     <dl class=term>
       <dt class="term__item">UTF8</dt>
-      <dd class="term__desc"><span lang="ja">UTF8形式です。※デフォルトに設定されます。※現在利用できません</span><span lang="en">UTF8 * Default setting. * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">UTF8形式です。※デフォルトに設定されます。</span><span lang="en">UTF8 * Default setting.</span></dd>
       <dt class="term__item">UTF8_BOM</dt>
-      <dd class="term__desc"><span lang="ja">UTF8形式(BOM付き)です。※現在利用できません</span><span lang="en">UTF8(with BOM) * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">UTF8形式(BOM付き)です。</span><span lang="en">UTF8(with BOM)</span></dd>
       <dt class="term__item">UTF16LE</dt>
-      <dd class="term__desc"><span lang="ja">UTF16LEです。※現在利用できません</span><span lang="en">UTF16LE * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">UTF16LEです。</span><span lang="en">UTF16LE</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

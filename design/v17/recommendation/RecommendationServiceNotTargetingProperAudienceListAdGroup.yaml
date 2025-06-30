@@ -1,0 +1,13 @@
+RecommendationServiceNotTargetingProperAudienceListAdGroup:
+  type: object
+  nullable: true
+  properties:
+    createAdList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceNotTargetingProperAudienceListAdGroupList.yaml#/RecommendationServiceNotTargetingProperAudienceListAdGroupList'
+  title: RecommendationServiceNotTargetingProperAudienceListAdGroup
+  description: |
+    <div lang="ja">RecommendationServiceNotTargetingProperAudienceListAdGroup、広告の作成に関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceNotTargetingProperAudienceListAdGroup object describes information about a recommendation for creating ads.</div>

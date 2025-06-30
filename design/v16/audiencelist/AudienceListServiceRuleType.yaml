@@ -36,7 +36,7 @@ AudienceListServiceRuleType:
       <dt class="term__item">ITEM_CATEGORY_ID</dt>
       <dd class="term__desc"><span lang="ja">アイテムカテゴリーを利用したリスト設定です。</span><span lang="en">List setting using the Item category.</span></dd>
       <dt class="term__item">EVENT_TYPE</dt>
-      <dd class="term__desc"><span lang="ja">イベント種別を利用したリスト設定です。audienceListTypeがWEBSITE_VISITORSの場合は指定できません。</span><span lang="en">List setting using the event type. It cannot be specified if audienceListType is WEBSITE_VISITORS.</span></dd>
+      <dd class="term__desc"><span lang="ja">イベント種別を利用したリスト設定です。</span><span lang="en">List setting using the event type.</span></dd>
       <dt class="term__item">UNKNOWN</dt>
       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
     </dl>

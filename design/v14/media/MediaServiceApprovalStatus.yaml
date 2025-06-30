@@ -13,7 +13,7 @@ MediaServiceApprovalStatus:
     <div lang="en">MediaServiceApprovalStatus serves the approval status of media.</div>
     <dl class=term>
       <dt class="term__item">POST_DISAPPROVED</dt>
-      <dd class="term__desc"><span lang="ja">事後審査否認のため掲載停止です。</span><span lang=" en">The item was taken offline due to a post review.</span></dd>
+      <dd class="term__desc"><span lang="ja">事後審査否認のため掲載停止です。</span><span lang="en">The item was taken offline due to a post review.</span></dd>
       <dt class="term__item">APPROVED</dt>
       <dd class="term__desc"><span lang="ja">審査済みです。</span><span lang="en">The item was approved.</span></dd>
       <dt class="term__item">REVIEW</dt>

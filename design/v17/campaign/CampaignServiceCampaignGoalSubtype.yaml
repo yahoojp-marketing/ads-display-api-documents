@@ -1,0 +1,25 @@
+CampaignServiceCampaignGoalSubtype:
+  type: string
+  nullable: true
+  enum:
+    - STANDARD
+    - INSTALL
+    - UNKNOWN
+  title: CampaignServiceCampaignGoalSubtype
+  description: |
+    <div lang="ja">
+    キャンペーン目的のサブタイプです。※現在利用できません<br>
+    SETおよびREMOVE時、このフィールドは無視されます。<br>
+    </div>
+    <div lang="en">
+    Campaign goal subtype. *Not Available.<br>
+    In SET and REMOVE operation, this field will be ignored.<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">STANDARD</dt>
+      <dd class="term__desc"><span lang="ja">標準</span><span lang="en">Standard</span></dd>
+      <dt class="term__item">INSTALL</dt>
+      <dd class="term__desc"><span lang="ja">インストール</span><span lang="en">Install</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,29 @@
+AudienceListServiceYahooJapanAudienceDiscoveryAudienceList:
+  type: object
+  nullable: true
+  properties:
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間（1日～60日）です。<br>
+        このフィールドは、SET時に省略可能、ADD時に指定不可となります。<br>
+        </div>
+        <div lang="en">
+        Data duration. (1 - 60 days) <br>
+        This field is optional in SET operation, and cannot be specified in ADD operation.
+        </div>
+  title: AudienceListServiceYahooJapanAudienceDiscoveryAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceYahooJapanAudienceDiscoveryAudienceListオブジェクトは、オーディエンスリスト(Yahoo! Audience Discovery)を表します。<br>
+    このフィールドは、SET時に省略可能、ADD時に指定不可となります。<br>
+    ※audienceListTypeがYAHOO_JAPAN_AUDIENCE_DISCOVERYの場合は、任意で指定できます。
+    </div>
+    <div lang="en">
+    AudienceListServiceCustomAudienceList object displays audience list (Yahoo! JAPAN Audience Discovery)<br>
+    This field is optional in SET operation, and cannot be specified in ADD operation.<br>
+    *If audienceListType is YAHOO_JAPAN_AUDIENCE_DISCOVERY, this field can be optionally specified.
+    </div>

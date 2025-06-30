@@ -1,0 +1,48 @@
+GuaranteedAdGroupAdServiceAd:
+  type: object
+  nullable: true
+  properties:
+    adType:
+      $ref: 'GuaranteedAdGroupAdServiceAdType.yaml#/GuaranteedAdGroupAdServiceAdType'
+    mainMediaFormat:
+      $ref: 'GuaranteedAdGroupAdServiceMainMediaFormat.yaml#/GuaranteedAdGroupAdServiceMainMediaFormat'
+    bannerAd:
+      $ref: 'GuaranteedAdGroupAdServiceBannerAd.yaml#/GuaranteedAdGroupAdServiceBannerAd'
+    carouselAd:
+      $ref: 'GuaranteedAdGroupAdServiceCarouselAd.yaml#/GuaranteedAdGroupAdServiceCarouselAd'
+    instreamAd:
+      $ref: 'GuaranteedAdGroupAdServiceInstreamAd.yaml#/GuaranteedAdGroupAdServiceInstreamAd'
+    brandPanelQuintie:
+      $ref: 'GuaranteedAdGroupAdServiceBrandPanelQuintie.yaml#/GuaranteedAdGroupAdServiceBrandPanelQuintie'
+    brandPanelPanorama:
+      $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanorama.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanorama'
+    brandPanelPanoramaPanelSwitch:
+      $ref: 'GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd.yaml#/GuaranteedAdGroupAdServiceBrandPanelPanoramaPanelSwitchAd'
+    topImpactSquare:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactSquare.yaml#/GuaranteedAdGroupAdServiceTopImpactSquare'
+    topImpactQuintie:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactQuintie.yaml#/GuaranteedAdGroupAdServiceTopImpactQuintie'
+    topImpactTheater:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactTheater.yaml#/GuaranteedAdGroupAdServiceTopImpactTheater'
+    topImpactPrimeDisplayDouble:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble.yaml#/GuaranteedAdGroupAdServiceTopImpactPrimeDisplayDouble'
+    topImpactPanorama:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanorama.yaml#/GuaranteedAdGroupAdServiceTopImpactPanorama'
+    topImpactPanoramaSideVision:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideVision.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideVision'
+    topImpactPanoramaSideSwitch:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitch.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaSideSwitch'
+    topImpactPanoramaPanelSwitch:
+      $ref: 'GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd.yaml#/GuaranteedAdGroupAdServiceTopImpactPanoramaPanelSwitchAd'
+    topPageTopicsPR:
+      $ref: 'GuaranteedAdGroupAdServiceTopPageTopicsPRAd.yaml#/GuaranteedAdGroupAdServiceTopPageTopicsPRAd'
+    talkHeadView:
+      $ref: 'GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml#/GuaranteedAdGroupAdServiceTalkHeadViewAd'
+  title: GuaranteedAdGroupAdServiceAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceAd object is a container for storing ads.<br>
+    </div>

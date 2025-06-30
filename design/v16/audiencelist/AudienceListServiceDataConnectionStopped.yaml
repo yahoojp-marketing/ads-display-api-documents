@@ -10,13 +10,21 @@ AudienceListServiceDataConnectionStopped:
     <div lang="ja">
       AudienceListServiceDataConnectionStoppedは、リストが連携停止中かどうかを示します。<br>
       連携停止中の顧客データリストにはアップロードできません。<br>
-      連携停止中のLINE公式アカウントの友だちリスト、LINE公式アカウントをブロック中の友だちリストはリーチ数が0です。<br>
+      以下は連携停止中の場合にリーチ数が0になります。<br>
+      - YADリスト<br>
+      - LINE公式アカウントの友だちリスト<br>
+      - LINE公式アカウントをブロック中の友だちリスト<br>
+      <br>
       このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
     </div>
     <div lang="en">
       AudienceListServiceDataConnectionStopped shows whether the list is data connection stopped.<br>
       You cannot upload to customer data lists with data connection stopped.<br>
-      The reach count for Friends of LINE Official Account lists with data connection stopped and Friends who blocked LINE Official Account lists with data connection stopped is 0.<br>
+      The reach count will be 0 for the following lists when data connection is stopped:<br>
+      - YAD lists<br>
+      - LINE Official Account friends lists<br>
+      - LINE Official Account blocked friends lists<br>
+      <br>
       Although this field will be returned in the response, it will be ignored on input.
     </div>
     <hr>

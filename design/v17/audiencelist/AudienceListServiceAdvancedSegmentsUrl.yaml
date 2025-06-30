@@ -1,0 +1,26 @@
+AudienceListServiceAdvancedSegmentsUrl:
+  type: object
+  nullable: true
+  properties:
+      url:
+        type: string
+        nullable: true
+        description: |
+          <div lang="ja">
+          URLです。
+          </div>
+          <div lang="en">
+          Url.
+          </div>
+      unavailableUrl:
+        $ref: 'AudienceListServiceUnavailableUrl.yaml#/AudienceListServiceUnavailableUrl'
+  title: AudienceListServiceAdvancedSegmentsUrl
+  description: |
+    <div lang="ja">
+    高度なセグメントに紐づくURLリストです。<br>
+    ※ keywordsが指定されている場合、ADDおよびSET時にこのフィールドは指定できません。
+    </div>
+    <div lang="en">
+    Url list tied to Advanced segments.<br>
+    *If keywords is specified, this field cannot be specified in ADD and SET operation.
+    </div>

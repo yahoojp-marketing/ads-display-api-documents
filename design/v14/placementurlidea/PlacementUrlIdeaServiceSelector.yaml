@@ -37,7 +37,8 @@ PlacementUrlIdeaServiceSelector:
         ・複数指定でOR検索です。<br>
         ・TC-SC-xxxxxxで現される規定値です。<br>
         ・DicitonaryServiceから返ってくるTC-SC-xxxxxxをそのまま指定です。<br>
-        ・最大50件です。
+        ・最大50件です。<br>
+        ※現在利用できません
         </div>
         <div lang="en">
         Array of categories.<br>
@@ -46,7 +47,8 @@ PlacementUrlIdeaServiceSelector:
         ・Search multiple specific keywords (OR)<br>
         ・From value: TC-SC-xxxxxx<br>
         ・Choose the TC-SC-xxxxxx value from DictionaryService<br>
-        ・Maximum of 50 cases
+        ・Maximum of 50 cases<br>
+        * Not Available.
         </div>
     numberResults:
       type: integer

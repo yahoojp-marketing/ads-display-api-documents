@@ -1,0 +1,31 @@
+AudienceListServiceBusinessManagerAudienceList:
+  type: object
+  nullable: true
+  properties:
+    lineAudienceGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        LINEのオーディエンスグループIDです。<br>
+        </div>
+        <div lang="en">
+        LINE audience group ID. <br>
+        </div>
+    lineAudienceGroupType:
+      $ref: 'AudienceListServiceLineAudienceGroupType.yaml#/AudienceListServiceLineAudienceGroupType'
+    lineAudienceGroupOwnerType:
+      $ref: 'AudienceListServiceLineAudienceGroupOwnerType.yaml#/AudienceListServiceLineAudienceGroupOwnerType'
+    isZeroOrCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
+  title: AudienceListServiceBusinessManagerAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceBusinessManagerAudienceListオブジェクトは、オーディエンスリスト（ビジネスマネージャー）を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceBusinessManagerAudienceList object is a container for audience list (business manager). <br>
+    This field will be returned in the response, but will be ignored on input.
+    </div>

@@ -1,0 +1,27 @@
+CampaignServiceSkanOptimizeAdDeliveryEnabled:
+  type: string
+  nullable: true
+  enum:
+  - 'TRUE'
+  - 'FALSE'
+  - UNKNOWN
+  title: CampaignServiceSkanOptimizeAdDeliveryEnabled
+  description: |
+    <div lang="ja">
+    CampaignServiceSkanOptimizeAdDeliveryEnabledは、SKAdNetwork計測による広告配信の最適化のフラグです。<br>
+    設定値が「TRUE」の場合、有効になります。<br>
+    このフィールドは、ADD、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    CampaignServiceSkanOptimizeAdDeliveryEnabled is a flag for optimize ad delivery by SKAdNetwork.<br>
+    If the set value is 'TRUE', the value will be valid.<br>
+    This field will be optional in ADD and SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">有効</span><span lang="en">Valid.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">無効</span><span lang="en">Invalid.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

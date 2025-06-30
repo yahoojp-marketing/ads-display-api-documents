@@ -1,0 +1,106 @@
+RecommendationServiceType:
+  type: string
+  nullable: true
+  enum:
+    - DAILY_BUDGET_OVER
+    - IMPRESSION_SHARE_BUDGET_LOSS_OVER
+    - BID_STRATEGY_TO_TARGET_CPA
+    - SEARCH_KEYWORD_LIST_IDEA
+    - MAXIMIZE_CONVERSIONS
+    - MAXIMIZE_CLICKS
+    - MAXIMIZE_VIDEO_VIEWS
+    - MAXIMIZE_VIEWABLE_IMPRESSIONS
+    - ENHANCED_CPC
+    - UPDATE_AD_CREATIVE
+    - DUPLICATE_TARGETING_SETTINGS
+    - NOT_OPTIMAL_AD_COUNT_COMBINED_AD_TYPE_AND_IMAGE_SIZE
+    - ADGROUPS_FOR_ADDING_ADS
+    - DAILY_BUDGET_SMALL
+    - INSUFFICIENT_TARGETING
+    - INSUFFICIENT_AD_SCHEDULE_TARGETING
+    - INSUFFICIENT_CONVERSIONS
+    - INSUFFICIENT_CLICKS
+    - INSUFFICIENT_VIDEO_VIEWS
+    - CREATE_CAMPAIGN
+    - CREATE_AD_GROUP
+    - CREATE_AD
+    - CREATE_RESPONSIVE_DISPLAY_ADS
+    - TURN_YOUR_ACCOUNT_ON
+    - TURN_YOUR_AD_ON
+    - INSUFFICIENT_ACCOUNT_BALANCE
+    - MISSING_PAYMENT_SETTINGS
+    - AUDIENCE_LIST_NOT_ACCUMULATED
+    - NOT_TARGETING_PROPER_AUDIENCE_LIST
+    - UNKNOWN
+  title: RecommendationServiceType
+  description: |
+    <div lang="ja">
+    RecommendationServiceTypeは、最適化提案の種別です。<br>
+    このフィールドは、リクエストの場合は必須です。
+    </div>
+    <div lang="en">
+    RecommendationServiceType is a type of Recommendations.<br>
+    This field is required in requests.
+    </div>
+    <dl class=term>
+      <dt class="term__item">DAILY_BUDGET_OVER</dt>
+      <dd class="term__desc"><span lang="ja">1日の予算上限に達したキャンペーンです。</span><span lang="en">Campaigns that reached the daily budget.</span></dd>
+      <dt class="term__item">IMPRESSION_SHARE_BUDGET_LOSS_OVER</dt>
+      <dd class="term__desc"><span lang="ja">インプレッションシェア損失率（予算）が大きいキャンペーンです。</span><span lang="en">Campaigns that have a large lost impression share (budget).</span></dd>
+      <dt class="term__item">BID_STRATEGY_TO_TARGET_CPA</dt>
+      <dd class="term__desc"><span lang="ja">自動入札（コンバージョン単価の目標値）に適しているキャンペーンです。</span><span lang="en">Campaigns that are suitable for using autobidding (target CPA).</span></dd>
+      <dt class="term__item">SEARCH_KEYWORD_LIST_IDEA</dt>
+      <dd class="term__desc"><span lang="ja">追加を推奨するサーチキーワードです。</span><span lang="en">Recommended search keywords to add.</span></dd>
+      <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
+      <dd class="term__desc"><span lang="ja">自動入札（コンバージョン数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding Type "Maximize Conversions."</span></dd>
+      <dt class="term__item">MAXIMIZE_CLICKS</dt>
+      <dd class="term__desc"><span lang="ja">自動入札（クリック数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize Clicks."</span></dd>
+      <dt class="term__item">MAXIMIZE_VIDEO_VIEWS</dt>
+      <dd class="term__desc"><span lang="ja">自動入札（動画再生数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize video views."</span></dd>
+      <dt class="term__item">MAXIMIZE_VIEWABLE_IMPRESSIONS</dt>
+      <dd class="term__desc"><span lang="ja">自動入札（ビューアブルインプレッション数の最大化）への変更が推奨されるキャンペーンです。※現在利用できません</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize Vimps." * Not Available.</span></dd>
+      <dt class="term__item">ENHANCED_CPC</dt>
+      <dd class="term__desc"><span lang="ja">拡張クリック単価への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Enhanced CPC."</span></dd>
+      <dt class="term__item">UPDATE_AD_CREATIVE</dt>
+      <dd class="term__desc"><span lang="ja">画像・動画の更新が推奨される広告です。</span><span lang="en">Update your images and videos ads.</span></dd>
+      <dt class="term__item">DUPLICATE_TARGETING_SETTINGS</dt>
+      <dd class="term__desc"><span lang="ja">ターゲティング設定が重複している広告グループです。</span><span lang="en">Ad groups with duplicate targeting settings.</span></dd>
+      <dt class="term__item">NOT_OPTIMAL_AD_COUNT_COMBINED_AD_TYPE_AND_IMAGE_SIZE</dt>
+      <dd class="term__desc"><span lang="ja">特定の広告タイプと画像サイズを組み合わせた広告が3～5つ以外の広告グループです。</span><span lang="en">Ad groups that have other than 3-5 ads that combine a specific ad type and image size.</span></dd>
+      <dt class="term__item">ADGROUPS_FOR_ADDING_ADS</dt>
+      <dd class="term__desc"><span lang="ja">入稿を推奨する画像サイズがある広告グループです。</span><span lang="en">Ad groups with recommended image sizes.</span></dd>
+      <dt class="term__item">DAILY_BUDGET_SMALL</dt>
+      <dd class="term__desc"><span lang="ja">1日の予算が5,000円未満のキャンペーンです。</span><span lang="en">Campaigns with less than 5,000 JPY daily budget.</span></dd>
+      <dt class="term__item">INSUFFICIENT_TARGETING</dt>
+      <dd class="term__desc"><span lang="ja">ターゲットを絞り込みすぎているキャンペーンです。</span><span lang="en">Campaigns that too narrow down the targeting.</span></dd>
+      <dt class="term__item">INSUFFICIENT_AD_SCHEDULE_TARGETING</dt>
+      <dd class="term__desc"><span lang="ja">配信可能時間が6時間未満の曜日があるキャンペーンです。</span><span lang="en">Campaigns that have days of the week with less than six hours available for ad delivery.</span></dd>
+      <dt class="term__item">INSUFFICIENT_CONVERSIONS</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン数が少ないキャンペーンです。</span><span lang="en">Campaigns that need to increase conversions.</span></dd>
+      <dt class="term__item">INSUFFICIENT_CLICKS</dt>
+      <dd class="term__desc"><span lang="ja">クリック数が少ないキャンペーンです。</span><span lang="en">Campaigns that need to increase clicks.</span></dd>
+      <dt class="term__item">INSUFFICIENT_VIDEO_VIEWS</dt>
+      <dd class="term__desc"><span lang="ja">動画再生数が少ないキャンペーンです。</span><span lang="en">Campaigns that need to increase video views.</span></dd>
+      <dt class="term__item">CREATE_CAMPAIGN</dt>
+      <dd class="term__desc"><span lang="ja">キャンペーンの作成を推奨します。</span><span lang="en">Creating campaigns is recommended.</span></dd>
+      <dt class="term__item">CREATE_AD_GROUP</dt>
+      <dd class="term__desc"><span lang="ja">広告グループの作成を推奨します。</span><span lang="en">Creating ad groups is recommended.</span></dd>
+      <dt class="term__item">CREATE_AD</dt>
+      <dd class="term__desc"><span lang="ja">広告の作成を推奨します。</span><span lang="en">Creating ads is recommended.</span></dd>
+      <dt class="term__item">CREATE_RESPONSIVE_DISPLAY_ADS</dt>
+      <dd class="term__desc"><span lang="ja">レスポンシブディプレイ広告の作成を推奨します。</span><span lang="en">Creating Responsive Ads for Display is recommended.</span></dd>
+      <dt class="term__item">TURN_YOUR_ACCOUNT_ON</dt>
+      <dd class="term__desc"><span lang="ja">アカウントの配信設定をオンにしましょう。</span><span lang="en">Turn your account on.</span></dd>
+      <dt class="term__item">TURN_YOUR_AD_ON</dt>
+      <dd class="term__desc"><span lang="ja">広告の配信設定をオンにしましょう。</span><span lang="en">Turn your ad on.</span></dd>
+      <dt class="term__item">INSUFFICIENT_ACCOUNT_BALANCE</dt>
+      <dd class="term__desc"><span lang="ja">アカウント残高が少なくなっています。</span><span lang="en">Your account balance is low.</span></dd>
+      <dt class="term__item">MISSING_PAYMENT_SETTINGS</dt>
+      <dd class="term__desc"><span lang="ja">クレジットカード情報が未設定です。※現在利用できません</span><span lang="en">Your credit card information is not set * Not Available.</span></dd>
+      <dt class="term__item">AUDIENCE_LIST_NOT_ACCUMULATED</dt>
+      <dd class="term__desc"><span lang="ja">オーディエンスリストが蓄積されていません※現在利用できません</span><span lang="en">Audience List is not accumulated * Not Available.</span></dd>
+      <dt class="term__item">NOT_TARGETING_PROPER_AUDIENCE_LIST</dt>
+      <dd class="term__desc"><span lang="ja">オーディエンスリストのターゲティング設定が適切ではありません※現在利用できません</span><span lang="en">The targeting setting of the audience list is not appropriate * Not Available.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

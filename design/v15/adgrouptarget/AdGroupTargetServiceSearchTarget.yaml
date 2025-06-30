@@ -17,7 +17,7 @@ AdGroupTargetServiceSearchTarget:
   title: AdGroupTargetServiceSearchTarget
   description: |
     <div lang="ja">
-    AdGroupTargetServiceSearchTargetオブジェクトは、サーチターゲティング設定情報を保持します。br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    AdGroupTargetServiceSearchTargetオブジェクトは、サーチターゲティング設定情報を保持します。<br>ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
     ※targetTypeがSEARCH_TARGETの場合は必須です。
     </div>
     <div lang="en">

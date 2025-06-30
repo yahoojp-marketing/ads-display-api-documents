@@ -1,0 +1,34 @@
+CampaignServiceBiddingOption:
+  type: string
+  nullable: true
+  enum:
+    - VCPM
+    - CPC
+    - CPV
+    - UNKNOWN
+  title: CampaignServiceBiddingOption
+  description: |
+    <div lang="ja">
+    課金方式です。<br>
+    REMOVE時、このフィールドは無視されます。<br>
+    課金方式「ビューアブルインプレッション課金」（β版）の利用<br>
+    入札戦略で「コンバージョン数の最大化」「コンバージョン価値の最大化」「動画再生数の最大化」のいずれかを利用しているキャンペーンでは課金方式を「クリック課金」と「ビューアブルインプレッション課金」から選択できます。<br>
+    なお、「ビューアブルインプレッション課金」の利用はβ版で提供しているため、挙動が不安定な場合があります。<br>
+    </div>
+    <div lang="en">
+    BiddingOption.<br>
+    In REMOVE operation, this field will be ignored.<br>
+    Use of the bidding option "Viewable cost per mille (vCPM) (beta)"<br>
+    For campaigns using the bid strategy "Maximize conversions," "Maximize conversion value," or "Maximize video views," you can choose between "Cost per click (CPC)" and "Viewable cost per mille (vCPM)" bidding options.<br>
+    The viewable cost per mille (vCPM) (beta) is available in the beta version. The behavior may not be stable.<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">VCPM</dt>
+      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション課金</span><span lang="en">viewable Cost Per Mille</span></dd>
+      <dt class="term__item">CPC</dt>
+      <dd class="term__desc"><span lang="ja">クリック課金</span><span lang="en">Cost per Click</span></dd>
+      <dt class="term__item">CPV</dt>
+      <dd class="term__desc"><span lang="ja">動画再生課金</span><span lang="en">Cost per View</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

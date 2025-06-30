@@ -1,0 +1,23 @@
+SearchKeywordListServiceSearchKeyword:
+  type: object
+  nullable: true
+  properties:
+    searchKeywordId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サーチキーワードIDです。<br>
+        </div>
+        <div lang="en">
+        Search keyword ID.<br>
+        </div>
+  title: SearchKeywordListServiceSearchKeyword
+  description: |
+    <div lang="ja">
+    SearchKeywordListServiceSearchKeywordオブジェクトは、サーチキーワードを表します。<br>
+    </div>
+    <div lang="en">
+    SearchKeywordListServiceSearchKeyword is an object to display the search keyword.<br>
+    </div>
