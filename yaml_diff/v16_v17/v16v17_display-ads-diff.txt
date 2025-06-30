@@ -1,0 +1,1577 @@
+
+
+------
+diff -ru v16/Route.yaml v17/Route.yaml
+--- v16/Route.yaml	2025-06-30 16:37:37
++++ v17/Route.yaml	2025-06-30 16:37:37
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
+-  version: 'v16'
++  version: 'v17'
+   description: |
+     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v16/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v17/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+
+@@ -23,7 +23,7 @@
+   - oAuth: [yahooads]
+
+ servers:
+-  - url: https://ads-display.yahooapis.jp/api/v16
++  - url: https://ads-display.yahooapis.jp/api/v17
+
+ tags:
+   - name: AbTestService
+@@ -115,8 +115,8 @@
+   - name: DictionaryService
+     description: |
+       <label class="campaign"></label>
+-      <div lang="ja">DictionaryServiceは、審査否認理由、地域情報、インタレストカテゴリー、サイトカテゴリー、オーディエンスカテゴリーの一覧を提供します。</div>
+-      <div lang="en">DictionaryService retrieves the list of rejected reasons, geo targeting, interest category, site category, audience category.</div>
++      <div lang="ja">DictionaryServiceは、審査否認理由、地域情報、インタレストカテゴリー、オーディエンスカテゴリーの一覧を提供します。</div>
++      <div lang="en">DictionaryService retrieves the list of rejected reasons, geo targeting, interest category, audience category.</div>
+   - name: SearchKeywordIdeaService
+     description: |
+       <label class="proposal"></label>
+@@ -130,14 +130,12 @@
+     description: |
+       <label class="campaign"></label>
+       <div lang="ja">
+-        <div>SearchKeywordListServiceは、サーチキーワードリストの取得および追加・更新・削除を行います。</div>
++        <div>SearchKeywordListServiceは、サーチキーワードリストの取得および削除を行います。</div>
+         <div>サーチキーワードターゲティングは2025年7月頃（予定）に提供を終了します。終了後も同様のターゲティングを利用するには、オーディエンスリストターゲティングへの移行が必要です。詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=ja" target=_blank>こちら</a>。</div>
+-        <div>※ADD,SET機能は提供を終了しました。</div>
+       </div>
+       <div lang="en">
+-        <div>SearchKeywordListService retrieves, add, update, and delete the search keyword list.</div>
++        <div>SearchKeywordListService retrieves and delete the search keyword list.</div>
+         <div>Search keyword targeting plans to end in July 2025. To continue using the same targeting type, migrate to audience list targeting instead.<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=en_US" target="_blank"> Learn more</a></div>
+-        <div>* ADD,SET functions have been discontinued.</div>
+       </div>
+   - name: ContentsKeywordIdeaService
+     description: |
+@@ -183,20 +181,19 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v16/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v16/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SITE_CATEGORY.csv" download>サイトカテゴリーレポート</a></div><div lang="en"><a href="./reports/v16/SITE_CATEGORY.csv" download>Site category report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v16/URL.csv" download>Ad Delivery URL report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v16/REACH.csv" download>Reach report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v16/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v16/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v16/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v16/LABEL.csv" download>Label report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v16/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v16/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v16/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v16/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v16/APP.csv" download>App Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v16/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v16/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v17/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v17/URL.csv" download>Ad Delivery URL report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v17/REACH.csv" download>Reach report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v17/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v17/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v17/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v17/LABEL.csv" download>Label report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v17/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v17/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v17/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v17/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v17/APP.csv" download>App Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v17/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v17/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+       </ul>
+   - name: MediaService
+     description: |
+@@ -1795,6 +1792,8 @@
+                 <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
+                 <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+                 <tr><td>220147</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">SKAdNetwork計測利用時の制限により、作成および変更できません。SKAdNetwork計測利用時は、配信オンの広告グループが上限数に満たない場合でも設定変更できないケースがあります。お手数ですが数日後（最大5日間）に再試行してください。</div><div lang="en">Due to the limitations of SKAdNetwork, you can't create or change the settings for ad groups. When using SKAdNetwork, you may not be able to change settings even if you don't have a maximum number of ad groups. Try again in a few days (up to 5 days).</div></td></tr>
++                <tr><td>220150</td><td>Invalid campaign settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、キャンペーンを作成/更新できません。</div><div lang="en">Campaign with campaignGoalSubtype INSTALL cannot be created/updated because it does not meet the conditions.</div></td></tr>
++                <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1870,6 +1869,8 @@
+                 <tr><td>220144</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">企業の配下でSKAdNetwork計測できる広告グループは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of a company is 30.</div></td></tr>
+                 <tr><td>220145</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">広告アカウント配下でSKAdNetwork計測できるのは最大30件までです。</div><div lang="en">The maximum number of ad groups that can be optimized for SKAdNetwork under the control of an ad account is 30.</div></td></tr>
+                 <tr><td>220147</td><td>Over limit of SKAdNetwork optimization.</td><td><div lang="ja">SKAdNetwork計測利用時の制限により、作成および変更できません。SKAdNetwork計測利用時は、配信オンの広告グループが上限数に満たない場合でも設定変更できないケースがあります。お手数ですが数日後（最大5日間）に再試行してください。</div><div lang="en">Due to the limitations of SKAdNetwork, you can't create or change the settings for ad groups. When using SKAdNetwork, you may not be able to change settings even if you don't have a maximum number of ad groups. Try again in a few days (up to 5 days).</div></td></tr>
++                <tr><td>220150</td><td>Invalid campaign settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、キャンペーンを作成/更新できません。</div><div lang="en">Campaign with campaignGoalSubtype INSTALL cannot be created/updated because it does not meet the conditions.</div></td></tr>
++                <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3741,63 +3742,6 @@
+             application/json:
+               schema:
+                 $ref: 'dictionary/DictionaryServiceGetOsVersionResponse.yaml#/DictionaryServiceGetOsVersionResponse'
+-  /DictionaryService/getSiteCategory:
+-    post:
+-      description: |
+-        <div lang="ja">サイトトカテゴリーリストを取得します。※現在利用できません</div>
+-        <div lang="en">Retrieves the list of site category. * Not Available.</div>
+-      tags:
+-        - DictionaryService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'dictionary/DictionaryServiceCategorySelector.yaml#/DictionaryServiceCategorySelector'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>F0002</td><td>Invalid file format.</td><td><div lang="ja">アップロードファイルの形式が不正です。</div><div lang="en">The upload file format is invalid.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>V0002</td><td>Empty file.</td><td><div lang="ja">アップロードファイルが0byteです。</div><div lang="en">The upload file is 0 byte.</div></td></tr>
+-                <tr><td>V0003</td><td>Over limit of the file size.</td><td><div lang="ja">アップロードファイルサイズが上限を超過しています。</div><div lang="en">The upload file size exceeds the limit.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>S0001</td><td>Invalid Status.</td><td><div lang="ja">ステータスが無効です。</div><div lang="en">The status is invalid.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'dictionary/DictionaryServiceGetSiteCategoryResponse.yaml#/DictionaryServiceGetSiteCategoryResponse'
+   /DictionaryService/getThirdPartyTrackingDomain:
+     post:
+       description: |
+@@ -4092,144 +4036,6 @@
+             application/json:
+               schema:
+                 $ref: 'searchkeywordlist/SearchKeywordListServiceGetResponse.yaml#/SearchKeywordListServiceGetResponse'
+-  /SearchKeywordListService/add:
+-    post:
+-      parameters:
+-        - in: header
+-          name: x-z-base-account-id
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDを指定してください。</div>
+-            <div lang="en">Specify Account ID.</div>
+-      description: |
+-        <div lang="ja">
+-          <div>サーチキーワードリストを追加します。</div>
+-          <div>※ 提供を終了しました。</div>
+-        </div>
+-        <div lang="en">
+-          <div>Add the search keyword list.<div>
+-          <div>* Discontinued.</div>
+-        </div>
+-      tags:
+-        - SearchKeywordListService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'searchkeywordlist/SearchKeywordListServiceOperation.yaml#/SearchKeywordListServiceOperation'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'searchkeywordlist/SearchKeywordListServiceMutateResponse.yaml#/SearchKeywordListServiceMutateResponse'
+-  /SearchKeywordListService/set:
+-    post:
+-      parameters:
+-        - in: header
+-          name: x-z-base-account-id
+-          schema:
+-            type: integer
+-            format: int64
+-          required: true
+-          description: |
+-            <div lang="ja">アカウントIDを指定してください。</div>
+-            <div lang="en">Specify Account ID.</div>
+-      description: |
+-        <div lang="ja">
+-          <div>変更対象のサーチキーワードリストを設定します。</div>
+-          <div>※ 提供を終了しました。</div>
+-        </div>
+-        <div lang="en">
+-          <div>Set the search keyword list to be updated.</div>
+-          <div>* Discontinued.</div>
+-        </div>
+-      tags:
+-        - SearchKeywordListService
+-      requestBody:
+-        content:
+-          application/json:
+-            schema:
+-              $ref: 'searchkeywordlist/SearchKeywordListServiceOperation.yaml#/SearchKeywordListServiceOperation'
+-      responses:
+-        503:
+-          $ref: '../Response503.yaml#/Response503'
+-        500:
+-          $ref: '../Response500.yaml#/Response500'
+-        403:
+-          $ref: '../Response403.yaml#/Response403'
+-        401:
+-          $ref: '../Response401.yaml#/Response401'
+-        400:
+-          $ref: '../Response400.yaml#/Response400'
+-        200:
+-          description: |
+-            <p class="cellContent__head">Error codes</p>
+-            <div class="cellContent__body">
+-            <table class="apiTable">
+-              <colgroup span="1" class="short"></colgroup>
+-              <colgroup span="2"></colgroup>
+-              <thead>
+-                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
+-              </thead>
+-              <tbody>
+-                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
+-                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
+-                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
+-                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
+-                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+-                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
+-                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
+-                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
+-                <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+-                <tr><td>L0001</td><td>Lower list size.</td><td><div lang="ja">配列の要素数が下限値を下回っています。</div><div lang="en">The number of elements in the array is below the lower limit.</div></td></tr>
+-                <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
+-                <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+-              </tbody>
+-            </table>
+-            </div>
+-          content:
+-            application/json:
+-              schema:
+-                $ref: 'searchkeywordlist/SearchKeywordListServiceMutateResponse.yaml#/SearchKeywordListServiceMutateResponse'
+   /SearchKeywordListService/remove:
+     post:
+       parameters:
+@@ -5985,6 +5791,8 @@
+                 <tr><td>220331</td><td>Invalid combination in regular and responsive materials.</td><td><div lang="ja"> 通常の素材とレスポンシブの素材を両方設定することはできません。</div><div lang="en">It is not possible to set both regular and responsive materials.</div></td></tr>
+                 <tr><td>220332</td><td>There are already 6 responsive ads in service.</td><td><div lang="ja">レスポンシブ広告かつ配信中である広告が既に6件存在します。</div><div lang="en">There are already 6 responsive ads in service.</div></td></tr>
+                 <tr><td>250002</td><td>Invalid field settings.</td><td><div lang="ja">フィールドに指定できない組み合わせ項目が設定されています。</div><div lang="en">Incorrect combination in report fields is set.</div></td></tr>
++                <tr><td>220151</td><td>Invalid ad settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、広告を作成/更新できません。</div><div lang="en">Ad cannot be created/updated for a campaign with campaignGoalSubtype INSTALL because it does not meet the conditions.</div></td></tr>
++                <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -6071,6 +5879,8 @@
+                 <tr><td>220331</td><td>Invalid combination in regular and responsive materials.</td><td><div lang="ja"> 通常の素材とレスポンシブの素材を両方設定することはできません。</div><div lang="en">It is not possible to set both regular and responsive materials.</div></td></tr>
+                 <tr><td>220332</td><td>There are already 6 responsive ads in service.</td><td><div lang="ja">レスポンシブ広告かつ配信中である広告が既に6件存在します。</div><div lang="en">There are already 6 responsive ads in service.</div></td></tr>
+                 <tr><td>250002</td><td>Invalid field settings.</td><td><div lang="ja">フィールドに指定できない組み合わせ項目が設定されています。</div><div lang="en">Incorrect combination in report fields is set.</div></td></tr>
++                <tr><td>220151</td><td>Invalid ad settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、広告を作成/更新できません。</div><div lang="en">Ad cannot be created/updated for a campaign with campaignGoalSubtype INSTALL because it does not meet the conditions.</div></td></tr>
++                <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -7182,6 +6992,7 @@
+                 <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>211019</td><td>The tracking tag has not been issued.</td><td><div lang="ja">計測タグが未発行のためコンバージョン設定を追加できません。</div><div lang="en">Conversion Tracker information cannot be added because the tracking tag has not been issued.</div></td>
+               </tbody>
+             </table>
+             </div>
+@@ -7243,6 +7054,7 @@
+                 <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
++                <tr><td>220153</td><td>ConversionTrackerServiceCategory cannot be changed.</td><td><div lang="ja">ConversionTrackerServiceCategoryは変更できません。</div><div lang="en">Changing conversionTrackerServiceCategory is not allowed.</div></td>
+               </tbody>
+             </table>
+             </div>
+
+
+------
+diff -ru v16/account/Account.yaml v17/account/Account.yaml
+--- v16/account/Account.yaml	2025-05-15 16:39:24
++++ v17/account/Account.yaml	2025-05-15 16:39:24
+@@ -37,6 +37,8 @@
+       $ref: 'AccountServiceDeliveryStatus.yaml#/AccountServiceDeliveryStatus'
+     isTestAccount:
+       $ref: 'AccountServiceIsTestAccount.yaml#/AccountServiceIsTestAccount'
++    isCancellationPending:
++      $ref: 'AccountServiceIsCancellationPending.yaml#/AccountServiceIsCancellationPending'
+     startDate:
+       type: string
+       nullable: true
+Only in v17/account: AccountServiceIsCancellationPending.yaml
+
+
+------
+diff -ru v16/account/AccountServiceType.yaml v17/account/AccountServiceType.yaml
+--- v16/account/AccountServiceType.yaml	2025-05-15 16:39:24
++++ v17/account/AccountServiceType.yaml	2025-05-15 16:39:24
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: AccountServiceType
+@@ -15,7 +16,9 @@
+     If isManagerAccount is "TRUE", this field will not be returned.</div>
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+-      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer.</span></dd>
++      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/accountmanagement/AccountManagement.yaml v17/accountmanagement/AccountManagement.yaml
+--- v16/accountmanagement/AccountManagement.yaml	2025-05-15 16:39:24
++++ v17/accountmanagement/AccountManagement.yaml	2025-05-15 16:39:24
+@@ -71,6 +71,8 @@
+         </div>
+     isTestAccount:
+       $ref: 'AccountManagementServiceIsTestAccount.yaml#/AccountManagementServiceIsTestAccount'
++    isCancellationPending:
++      $ref: 'AccountManagementServiceIsCancellationPending.yaml#/AccountManagementServiceIsCancellationPending'
+     startDate:
+       type: string
+       nullable: true
+Only in v17/accountmanagement: AccountManagementServiceIsCancellationPending.yaml
+
+
+------
+diff -ru v16/accountmanagement/AccountManagementServicePaymentType.yaml v17/accountmanagement/AccountManagementServicePaymentType.yaml
+--- v16/accountmanagement/AccountManagementServicePaymentType.yaml	2025-05-15 16:39:24
++++ v17/accountmanagement/AccountManagementServicePaymentType.yaml	2025-05-15 16:39:24
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: AccountManagementServicePaymentType
+@@ -18,6 +19,8 @@
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+       <dd class="term__desc"><span lang="ja">前課金です。</span><span lang="en">Prepayment.</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">後課金です。※現在利用できません</span><span lang="en">Deferred payment * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">後請求です。</span><span lang="en">Invoice payment.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceAd.yaml v17/adgroupad/AdGroupAdServiceAd.yaml
+--- v16/adgroupad/AdGroupAdServiceAd.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceAd.yaml	2025-05-15 16:39:24
+@@ -18,6 +18,8 @@
+       $ref: 'AdGroupAdServiceTextAd.yaml#/AdGroupAdServiceTextAd'
+     responsiveGainFriendsAd:
+       $ref: 'AdGroupAdServiceResponsiveGainFriendsAd.yaml#/AdGroupAdServiceResponsiveGainFriendsAd'
++    carouselGainFriendsAd:
++      $ref: 'AdGroupAdServiceCarouselGainFriendsAd.yaml#/AdGroupAdServiceCarouselGainFriendsAd'
+     customParameters:
+       $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+     displayUrl:
+@@ -46,9 +48,11 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+         This field is required in ADD operation, and will be optional in SET operation.<br>
++        If adType is CAROUSEL_GAIN_FRIENDS_AD, this field will be ignored on input.
+         </div>
+     smartphoneFinalUrl:
+       type: string
+@@ -56,11 +60,13 @@
+       description: |
+         <div lang="ja">スマートフォン向けURLです。<br>
+         ADDおよびSET時、このフィールドは省略可能となります。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。
++        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
++        adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL (smartphone).<br>
+         This field is optional in ADD and SET operation.<br>
+-        Not allowed for ADD and SET when a campaign goal is "app promotion."
++        Not allowed for ADD and SET when a campaign goal is "app promotion."<br>
++        If adType is CAROUSEL_GAIN_FRIENDS_AD, this field will be ignored on input.
+         </div>
+     isRemoveSmartphoneFinalUrl:
+       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+@@ -71,12 +77,14 @@
+         <div lang="ja">トラッキングURLです。<br>
+         ADD時、このフィールドは省略可能となります。<br>
+         finalUrlを指定するときのみ、任意で指定できます。<br>
+-        SET時にurlを指定する場合、このフィールドの値はクリアされます。
++        SET時にurlを指定する場合、このフィールドの値はクリアされます。<br>
++        adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Tracking URL.<br>
+         This field is optional in ADD operation.<br>
+         This field can be optionally specified only when specifying finalUrl.<br>
+-        If url is specified in SET operation, the value in this field will be cleared.
++        If url is specified in SET operation, the value in this field will be cleared.<br>
++        If adType is CAROUSEL_GAIN_FRIENDS_AD, this field will be ignored on input.
+         </div>
+     isRemoveTrackingUrl:
+       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceAdType.yaml v17/adgroupad/AdGroupAdServiceAdType.yaml
+--- v16/adgroupad/AdGroupAdServiceAdType.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceAdType.yaml	2025-05-15 16:39:24
+@@ -8,6 +8,7 @@
+   - RESPONSIVE_AD
+   - TEXT_AD
+   - RESPONSIVE_GAIN_FRIENDS_AD
++  - CAROUSEL_GAIN_FRIENDS_AD
+   - UNKNOWN
+   title: AdGroupAdServiceAdType
+   description: |
+@@ -34,6 +35,8 @@
+       <dd class="term__desc"><span lang="ja">テキスト広告です。</span><span lang="en">Text ad.</span></dd>
+       <dt class="term__item">RESPONSIVE_GAIN_FRIENDS_AD</dt>
+       <dd class="term__desc"><span lang="ja">レスポンシブ（友だち追加）広告です。</span><span lang="en">Responsive (Gain friends) Ad.</span></dd>
++      <dt class="term__item">CAROUSEL_GAIN_FRIENDS_AD</dt>
++      <dd class="term__desc"><span lang="ja">カルーセル（友だち追加）広告です。</span><span lang="en">Carousel (Gain friends) ad.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceButtonText.yaml v17/adgroupad/AdGroupAdServiceButtonText.yaml
+--- v16/adgroupad/AdGroupAdServiceButtonText.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceButtonText.yaml	2025-05-15 16:39:24
+@@ -30,12 +30,12 @@
+     <div lang="ja">
+     AdGroupAdServiceButtonTextはボタンテキストを表します。<br>
+     このフィールドは、dynamicDisplayAd、responsiveAd配下では省略可能となります。その際、dynamicDisplayAd配下では、ADD時のデフォルト設定値はFOR_MORE_INFOとなります。<br>
+-    また、responsiveGainFriendsAd配下では、レスポンスの際に返却されますが、リクエストの際には無視されます。
++    また、responsiveGainFriendsAd、carouselGainFriendsAd配下では、レスポンスの際に返却されますが、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     AdGroupAdServiceButtonText displays the button text.<br>
+     This field will be optional under dynamicDisplayAd and responsiveAd. In these cases, under dynamicAd, the default value in ADD operation will be FOR_MORE_INFO.<br>
+-    Under responsiveGainFriendsAd, although this field will be returned in the response,it will be ignored on input.
++    Under responsiveGainFriendsAd and carouselGainFriendsAd, although this field will be returned in the response,it will be ignored on input.
+     </div>
+     <dl class=term>
+       <dt class="term__item">INSTALL</dt>
+@@ -73,7 +73,7 @@
+       <dt class="term__item">APPLY_HERE</dt>
+       <dd class="term__desc"><span lang="ja">「お申込みはこちら」ボタンです。</span><span lang="en">&#34;Click here to apply.&#34; button.</span></dd>
+       <dt class="term__item">GAIN_FRIENDS</dt>
+-      <dd class="term__desc"><span lang="ja">「友だち追加」ボタンです。responsiveGainFriendsAdの場合のみ指定できます。</span><span lang="en">&#34;Gain friends.&#34; button. This field can only be specified for responsiveGainFriendsAd.</span></dd>
++      <dd class="term__desc"><span lang="ja">「友だち追加」ボタンです。responsiveGainFriendsAd、carouselGainFriendsAdの場合のみ指定できます。</span><span lang="en">&#34;Gain friends.&#34; button. This field can only be specified for responsiveGainFriendsAd or carouselGainFriendsAd.</span></dd>
+       <dt class="term__item">PLAY_GAME</dt>
+       <dd class="term__desc"><span lang="ja">「ゲームプレイ」ボタンです。</span><span lang="en">&#34;Play game.&#34; button.</span></dd>
+       <dt class="term__item">USE_APP</dt>
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceCarousel.yaml v17/adgroupad/AdGroupAdServiceCarousel.yaml
+--- v16/adgroupad/AdGroupAdServiceCarousel.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceCarousel.yaml	2025-05-15 16:39:24
+@@ -75,9 +75,11 @@
+       description: |
+         <div lang="ja">最終リンク先URLです。<br>
+         このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++        carouselGainFriendsAd配下では、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL.<br>
+         This field is required in ADD operation, and will be optional in SET operation.<br>
++        Under carouselGainFriendsAd, it will be ignored on input.
+         </div>
+     smartphoneFinalUrl:
+       type: string
+@@ -85,11 +87,13 @@
+       description: |
+         <div lang="ja">スマートフォン向けURLです。<br>
+         ADDおよびSET時、このフィールドは省略可能となります。<br>
+-        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。
++        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
++        carouselGainFriendsAd配下では、リクエストの際には無視されます。
+         </div>
+         <div lang="en">Final URL (smartphone).<br>
+         This field is optional in ADD and SET operation.<br>
+-        Not allowed for ADD and SET when a campaign goal is "app promotion."
++        Not allowed for ADD and SET when a campaign goal is "app promotion."<br>
++        Under carouselGainFriendsAd, it will be ignored on input.
+         </div>
+     isRemoveSmartphoneFinalUrl:
+       $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+Only in v17/adgroupad: AdGroupAdServiceCarouselGainFriends.yaml
+Only in v17/adgroupad: AdGroupAdServiceCarouselGainFriendsAd.yaml
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceCustomParameters.yaml v17/adgroupad/AdGroupAdServiceCustomParameters.yaml
+--- v16/adgroupad/AdGroupAdServiceCustomParameters.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceCustomParameters.yaml	2025-05-15 16:39:24
+@@ -13,9 +13,11 @@
+   description: |
+     <div lang="ja">
+     AdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
+-    ADDおよびSET時、このフィールドは省略可能となります。
++    ADDおよびSET時、このフィールドは省略可能となります。<br>
++    adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合、リクエストの際には無視されます。
+     </div>
+     <div lang="en">
+     AdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
+-    This field is optional in ADD and SET operation.
++    This field is optional in ADD and SET operation.<br>
++    If adType is CAROUSEL_GAIN_FRIENDS_AD, this field will be ignored on input.
+     </div>
+
+
+------
+diff -ru v16/adgroupad/AdGroupAdServiceResponsiveGainFriendsAd.yaml v17/adgroupad/AdGroupAdServiceResponsiveGainFriendsAd.yaml
+--- v16/adgroupad/AdGroupAdServiceResponsiveGainFriendsAd.yaml	2025-05-15 16:39:24
++++ v17/adgroupad/AdGroupAdServiceResponsiveGainFriendsAd.yaml	2025-05-15 16:39:24
+@@ -43,6 +43,167 @@
+         This field is required in ADD operation, and will be optional in SET operation.<br>
+         *If mainMediaFormat is VIDEO, this field can be specified.
+         </div>
++    isRemoveVideo10SecBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideo25PercentBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideo3SecBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideo50PercentBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideo75PercentBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideoCompleteBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    isRemoveVideoStartBeaconUrls:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        ADDおよびSET時、このフィールドは省略可能となります。<br>
++        ※SET時はすべて上書きされます。<br>
++        ※httpsのURLのみ設定可能です。<br>
++        ※mainMediaFormatがVIDEOの場合にのみ指定できます。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field is optional in ADD and SET operation.<br>
++        ∗Replace all URLs in SET operation.<br>
++        ∗Available URL is only &#34;https&#34;.<br>
++        *If mainMediaFormat is VIDEO, this field can be specified.
++        </div>
+   title: AdGroupAdServiceResponsiveGainFriendsAd
+   description: |
+     <div lang="ja">
+Only in v16/adgrouptarget: AdGroupTargetServiceSiteCategoryTarget.yaml
+
+
+------
+diff -ru v16/adgrouptarget/AdGroupTargetServiceTarget.yaml v17/adgrouptarget/AdGroupTargetServiceTarget.yaml
+--- v16/adgrouptarget/AdGroupTargetServiceTarget.yaml	2025-05-15 16:39:24
++++ v17/adgrouptarget/AdGroupTargetServiceTarget.yaml	2025-05-15 16:39:24
+@@ -34,8 +34,6 @@
+       $ref: 'AdGroupTargetServicePlacementTarget.yaml#/AdGroupTargetServicePlacementTarget'
+     searchTarget:
+       $ref: 'AdGroupTargetServiceSearchTarget.yaml#/AdGroupTargetServiceSearchTarget'
+-    siteCategoryTarget:
+-      $ref: 'AdGroupTargetServiceSiteCategoryTarget.yaml#/AdGroupTargetServiceSiteCategoryTarget'
+     audienceListTarget:
+       $ref: 'AdGroupTargetServiceAudienceListTarget.yaml#/AdGroupTargetServiceAudienceListTarget'
+     positionTarget:
+@@ -58,7 +56,6 @@
+         ‐PLACEMENT_TARGET<br>
+         ‐SEARCH_TARGET<br>
+         ‐GEO_TARGET(AdGroupTargetServiceGeoTarget.areaSearchTypeが`GEO`（地域指定）の場合)<br>
+-        ‐SITE_CATEGORY<br>
+         ‐PLACEMENT_CATEGORY_TARGET<br>
+         -PLACEMENT_CATEGORY_DETAIL_TARGET<br>
+         -CONTENTS_TARGET<br>
+@@ -69,7 +66,6 @@
+         ‐SEARCH_TARGET: searchKeywordListId<br>
+         ‐GEO_TARGET: IM地域コード(geo)<br>
+         *When AdGroupTargetServiceGeoTarget.areaSearchType is `GEO` (regional specification)<br>
+-        ‐SITE_CATEGORY: カテゴリーコード(category)<br>
+         ‐OS_VERSION_TARGET: osVersion<br>
+         ‐POSITION_TARGET: PositionTypeのコード値<br>
+         ‐PLACEMENT_CATEGORY_TARGET: placementCategoryListId<br>
+@@ -84,7 +80,6 @@
+         ‐PLACEMENT_TARGET<br>
+         ‐SEARCH_TARGET<br>
+         ‐GEO_TARGET<br>
+-        ‐SITE_CATEGORY<br>
+         ‐PLACEMENT_CATEGORY_TARGET<br>
+         -PLACEMENT_CATEGORY_DETAIL_TARGET<br>
+         -CONTENTS_TARGET<br>
+@@ -94,7 +89,6 @@
+         ‐PLACEMENT_TARGET: placementUrlListId<br>
+         ‐SEARCH_TARGET: searchKeywordListId<br>
+         ‐GEO_TARGET: IM area code(geo)<br>
+-        ‐SITE_CATEGORY: category code(category)<br>
+         ‐OS_VERSION_TARGET: osVersion<br>
+         ‐POSITION_TARGET: PositionType code.<br>
+         ‐PLACEMENT_CATEGORY_TARGET: placementCategoryListId<br>
+
+
+------
+diff -ru v16/adgrouptarget/AdGroupTargetServiceTargetType.yaml v17/adgrouptarget/AdGroupTargetServiceTargetType.yaml
+--- v16/adgrouptarget/AdGroupTargetServiceTargetType.yaml	2025-05-15 16:39:24
++++ v17/adgrouptarget/AdGroupTargetServiceTargetType.yaml	2025-05-15 16:39:24
+@@ -6,7 +6,6 @@
+   - GEO_TARGET
+   - AGE_TARGET
+   - GENDER_TARGET
+-  - SITE_CATEGORY
+   - AUDIENCE_LIST_TARGET
+   - SEARCH_TARGET
+   - PLACEMENT_TARGET
+@@ -40,8 +39,6 @@
+       <dd class="term__desc"><span lang="ja">年齢ターゲティング</span><span lang="en">Age Targeting</span></dd>
+       <dt class="term__item">GENDER_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></dd>
+-      <dt class="term__item">SITE_CATEGORY</dt>
+-      <dd class="term__desc"><span lang="ja">サイトカテゴリーターゲティング ※現在利用できません</span><span lang="en">Site Category Targeting *Not available.</span></dd>
+       <dt class="term__item">AUDIENCE_LIST_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">オーディエンスリストターゲティング</span><span lang="en">Audience List Targeting</span></dd>
+       <dt class="term__item">SEARCH_TARGET</dt>
+
+
+------
+diff -ru v16/audiencelist/AudienceListServiceAdvancedSegmentsAudienceList.yaml v17/audiencelist/AudienceListServiceAdvancedSegmentsAudienceList.yaml
+--- v16/audiencelist/AudienceListServiceAdvancedSegmentsAudienceList.yaml	2025-05-15 16:39:24
++++ v17/audiencelist/AudienceListServiceAdvancedSegmentsAudienceList.yaml	2025-05-15 16:39:24
+@@ -7,6 +7,11 @@
+         nullable: true
+         items:
+           $ref: 'AudienceListServiceAdvancedSegmentsKeyword.yaml#/AudienceListServiceAdvancedSegmentsKeyword'
++      urls:
++        type: array
++        nullable: true
++        items:
++          $ref: 'AudienceListServiceAdvancedSegmentsUrl.yaml#/AudienceListServiceAdvancedSegmentsUrl'
+       isCurrentlyTotaling:
+         $ref: 'AudienceListServiceIsCurrentlyTotaling.yaml#/AudienceListServiceIsCurrentlyTotaling'
+   title: AudienceListServiceAdvancedSegmentsAudienceList
+
+
+------
+diff -ru v16/audiencelist/AudienceListServiceAdvancedSegmentsKeyword.yaml v17/audiencelist/AudienceListServiceAdvancedSegmentsKeyword.yaml
+--- v16/audiencelist/AudienceListServiceAdvancedSegmentsKeyword.yaml	2025-05-15 16:39:24
++++ v17/audiencelist/AudienceListServiceAdvancedSegmentsKeyword.yaml	2025-05-15 16:39:24
+@@ -18,7 +18,9 @@
+   description: |
+     <div lang="ja">
+     高度なセグメントに紐づくキーワードリストです。
++    ※ urlsが指定されている場合、ADDおよびSET時にこのフィールドは指定できません。
+     </div>
+     <div lang="en">
+     Keyword list tied to Advanced segments.
++    *If urls is specified, this field cannot be specified in ADD and SET operation.
+     </div>
+Only in v17/audiencelist: AudienceListServiceAdvancedSegmentsUrl.yaml
+
+
+------
+diff -ru v16/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml v17/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml
+--- v16/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml	2025-05-15 16:39:24
++++ v17/audiencelist/AudienceListServiceCustomerDataAudienceList.yaml	2025-05-28 11:26:46
+@@ -2,16 +2,6 @@
+   type: object
+   nullable: true
+   properties:
+-    customAudienceId:
+-      type: string
+-      nullable: true
+-      description: |
+-        <div lang="ja">カスタムオーディエンスID（サイトリターゲティングID）です。<br>
+-        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+-        </div>
+-        <div lang="en">Custom audience ID (site retargeting ID).<br>
+-        Although this field will be returned in the response, it will be ignored on input.
+-        </div>
+     dataDuration:
+       type: integer
+       nullable: true
+Only in v17/audiencelist: AudienceListServiceUnavailableUrl.yaml
+
+
+------
+diff -ru v16/budgetorder/BudgetOrder.yaml v17/budgetorder/BudgetOrder.yaml
+--- v16/budgetorder/BudgetOrder.yaml	2025-05-15 16:39:24
++++ v17/budgetorder/BudgetOrder.yaml	2025-05-15 16:39:24
+@@ -25,13 +25,13 @@
+         <div lang="ja">
+         アカウントの広告予算金額です。<br>
+         SET時、このフィールドは省略可能となります。
+-        月額予算は、accountTypeが<code>INVOICE</code>の場合のみ変更可能です。
++        月額予算は、accountTypeが<code>POSTPAY</code>または<code>INVOICE</code>の場合に変更可能です。
+         また、予算額は1000円単位で指定する必要があります。
+         </div>
+         <div lang="en">
+         Amount of budget.<br>
+         This field is optional in SET operation.
+-        The monthly budget can be changed only when accountType is <code>INVOICE</code>.
++        The monthly budget can be changed only when accountType is <code>POSTPAY</code> or <code>INVOICE</code>.
+         In addition, the budget amount must be specified in units of 1000 yen.
+         </div>
+     limitChargeType:
+
+
+------
+diff -ru v16/budgetorder/BudgetOrderServiceAccountType.yaml v17/budgetorder/BudgetOrderServiceAccountType.yaml
+--- v16/budgetorder/BudgetOrderServiceAccountType.yaml	2025-05-15 16:39:24
++++ v17/budgetorder/BudgetOrderServiceAccountType.yaml	2025-05-15 16:39:24
+@@ -3,6 +3,7 @@
+   nullable: true
+   enum:
+   - PREPAY
++  - POSTPAY
+   - INVOICE
+   - UNKNOWN
+   title: BudgetOrderServiceAccountType
+@@ -11,7 +12,9 @@
+     <div lang="en">BudgetOrderServiceAccountType displays the account charge type.</div>
+     <dl class=term>
+       <dt class="term__item">PREPAY</dt>
+-      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer.</span></dd>
++      <dd class="term__desc"><span lang="ja">クレジットカードや銀行振込などの前払い方式です。</span><span lang="en">Creditcardor bank transfer (prepayment).</span></dd>
++      <dt class="term__item">POSTPAY</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカードの後払い方式です。※現在利用できません</span><span lang="en">Creditcard (deferred payment) * Not Available.</span></dd>
+       <dt class="term__item">INVOICE</dt>
+       <dd class="term__desc"><span lang="ja">代理店クライアントなどの請求書方式です。</span><span lang="en">Invoice Type.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/campaign/Campaign.yaml v17/campaign/Campaign.yaml
+--- v16/campaign/Campaign.yaml	2025-05-15 16:39:24
++++ v17/campaign/Campaign.yaml	2025-06-30 16:37:37
+@@ -65,6 +65,10 @@
+         In SET and REMOVE operation, this field will be ignored.<br>
+         * Available values can be referred to authorities field of AccountAuthority object obtained by GET operation of AccountAuthorityService.<br>
+         </div>
++    campaignGoalSubtype:
++      $ref: 'CampaignServiceCampaignGoalSubtype.yaml#/CampaignServiceCampaignGoalSubtype'
++    biddingOption:
++      $ref: 'CampaignServiceBiddingOption.yaml#/CampaignServiceBiddingOption'
+     campaignId:
+       type: integer
+       nullable: true
+@@ -247,8 +251,8 @@
+         Only the tracking tool URL corresponds to this tool vendor name can be specified for the destination URL of the ad linked to the campaign.<br>
+         Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, and <code>NONE</code> can be specified in ADD and SET operation.
+         </div>
+-    skanOptimaizeAdDeliveryEnabled:
+-      $ref: 'CampaignServiceSkanOptimaizeAdDeliveryEnabled.yaml#/CampaignServiceSkanOptimaizeAdDeliveryEnabled'
++    skanOptimizeAdDeliveryEnabled:
++      $ref: 'CampaignServiceSkanOptimizeAdDeliveryEnabled.yaml#/CampaignServiceSkanOptimizeAdDeliveryEnabled'
+     conversionTracker:
+       $ref: 'CampaignServiceConversionTracker.yaml#/CampaignServiceConversionTracker'
+   title: Campaign
+Only in v17/campaign: CampaignServiceBiddingOption.yaml
+Only in v17/campaign: CampaignServiceCampaignGoalSubtype.yaml
+Only in v16/campaign: CampaignServiceSkanOptimaizeAdDeliveryEnabled.yaml
+Only in v17/campaign: CampaignServiceSkanOptimizeAdDeliveryEnabled.yaml
+
+
+------
+diff -ru v16/campaign/CampaignServiceSkanTcpaTargetType.yaml v17/campaign/CampaignServiceSkanTcpaTargetType.yaml
+--- v16/campaign/CampaignServiceSkanTcpaTargetType.yaml	2025-06-30 16:37:37
++++ v17/campaign/CampaignServiceSkanTcpaTargetType.yaml	2025-06-30 16:37:37
+@@ -11,14 +11,14 @@
+     コンバージョン単価の計算に使用するコンバージョン（SKAdNetwork計測）です。<br>
+     ADDおよびSET時、このフィールドは任意で指定できます。<br>
+     ADD時デフォルト値はSKAN_INSTALLSを指定します。<br>
+-    ※skanOptimaizeAdDeliveryEnabledがTRUEかつ、targetCpaが指定されている場合に設定が可能となります。<br>
++    ※skanOptimizeAdDeliveryEnabledがTRUEかつ、targetCpaが指定されている場合に設定が可能となります。<br>
+     詳細は、「<a href="https://ads-help.yahoo-net.jp/s/article/H000044265?language=ja" target="_blank" rel="noopener noreferrer">iOSアプリのSKAdNetwork計測対応について</a>」を参照してください。<br>
+     </div>
+     <div lang="en">
+     Conversions to adjust target value (SKAdNetwork)<br>
+     This field can be optionally specified in ADD and SET operation.<br>
+     If not specified during ADD, the default setting is SKAN_INSTALLS.<br>
+-    *This setting can only be configured if skanOptimaizeAdDeliveryEnabled is set to TRUE and a targetCpa has been specified.<br>
++    *This setting can only be configured if skanOptimizeAdDeliveryEnabled is set to TRUE and a targetCpa has been specified.<br>
+     More details are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044265?language=en_US">SKAdNetwork tracking support for iOS app</a>.<br>
+     </div>
+     <dl class=term>
+
+
+------
+diff -ru v16/conversiontracker/ConversionTracker.yaml v17/conversiontracker/ConversionTracker.yaml
+--- v16/conversiontracker/ConversionTracker.yaml	2025-05-15 16:39:24
++++ v17/conversiontracker/ConversionTracker.yaml	2025-05-28 11:26:46
+@@ -222,6 +222,8 @@
+       $ref: 'ConversionTrackerServiceIsPreviousConversion.yaml#/ConversionTrackerServiceIsPreviousConversion'
+     advancedMatchingEnabled:
+       $ref: 'ConversionTrackerServiceAdvancedMatchingEnabled.yaml#/ConversionTrackerServiceAdvancedMatchingEnabled'
++    lyTagConversion:
++      $ref: 'ConversionTrackerServiceLyTagConversion.yaml#/ConversionTrackerServiceLyTagConversion'
+   title: ConversionTracker
+   description: |
+     <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。</div>
+Only in v17/conversiontracker: ConversionTrackerServiceLyTagConversion.yaml
+Only in v17/conversiontracker: ConversionTrackerServiceLyTagConversionCompareOperator.yaml
+Only in v17/conversiontracker: ConversionTrackerServiceLyTagConversionRuleType.yaml
+Only in v17/conversiontracker: ConversionTrackerServiceLyTagConversionUrlRule.yaml
+
+
+------
+diff -ru v16/conversiontracker/ConversionTrackerServiceType.yaml v17/conversiontracker/ConversionTrackerServiceType.yaml
+--- v16/conversiontracker/ConversionTrackerServiceType.yaml	2025-05-15 16:39:24
++++ v17/conversiontracker/ConversionTrackerServiceType.yaml	2025-06-30 16:37:37
+@@ -5,6 +5,7 @@
+   - WEB_CONVERSION
+   - APP_CONVERSION
+   - IMPORT_CONVERSION
++  - LY_TAG_CONVERSION
+   - UNKNOWN
+   title: ConversionTrackerServiceType
+   description: |
+@@ -23,6 +24,8 @@
+       <dd class="term__desc"><span lang="ja">アプリコンバージョン</span><span lang="en">Mobile app conversions</span></dd>
+       <dt class="term__item">IMPORT_CONVERSION</dt>
+       <dd class="term__desc"><span lang="ja">インポートコンバージョン</span><span lang="en">Import conversions</span></dd>
++      <dt class="term__item">LY_TAG_CONVERSION</dt>
++      <dd class="term__desc"><span lang="ja">ウェブ（計測タグ）コンバージョン</span><span lang="en">Web conversions (Tracking tag)</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+Only in v16/dictionary: DictionaryServiceCategory.yaml
+Only in v16/dictionary: DictionaryServiceCategoryChild.yaml
+Only in v16/dictionary: DictionaryServiceCategoryPage.yaml
+Only in v16/dictionary: DictionaryServiceCategorySelector.yaml
+Only in v16/dictionary: DictionaryServiceCategoryValue.yaml
+Only in v16/dictionary: DictionaryServiceGetSiteCategoryResponse.yaml
+
+
+------
+diff -ru v16/estimatedusersize/EstimatedUserSize.yaml v17/estimatedusersize/EstimatedUserSize.yaml
+--- v16/estimatedusersize/EstimatedUserSize.yaml	2025-05-15 16:39:24
++++ v17/estimatedusersize/EstimatedUserSize.yaml	2025-05-15 16:39:24
+@@ -93,6 +93,11 @@
+       nullable: true
+       items:
+         $ref: 'EstimatedUserSizeServiceKeywords.yaml#/EstimatedUserSizeServiceKeywords'
++    urls:
++      type: array
++      nullable: true
++      items:
++        $ref: 'EstimatedUserSizeServiceUrls.yaml#/EstimatedUserSizeServiceUrls'
+   title: EstimatedUserSize
+   description: |
+     <div lang="ja">EstimatedUserSizeオブジェクトは、推定ユーザサイズを格納するコンテナです。</div>
+
+
+------
+diff -ru v16/estimatedusersize/EstimatedUserSizeServiceSelector.yaml v17/estimatedusersize/EstimatedUserSizeServiceSelector.yaml
+--- v16/estimatedusersize/EstimatedUserSizeServiceSelector.yaml	2025-05-15 16:39:24
++++ v17/estimatedusersize/EstimatedUserSizeServiceSelector.yaml	2025-05-15 16:39:24
+@@ -1,12 +1,10 @@
+ EstimatedUserSizeServiceSelector:
+   type: object
+   nullable: true
+-  required:
+-  - keywords
+   properties:
+     keywords:
+       type: array
+-      nullable: false
++      nullable: true
+       items:
+         type: string
+         nullable: true
+@@ -14,12 +12,31 @@
+       maxItems: 50
+       description: |
+         <div lang="ja">
+-        ユーザサイズを推定するキーワードです。
++        ユーザサイズを推定するキーワードです。<br>
++        urlsを指定する場合、このフィールドは指定できません。
+         </div>
+         <div lang="en">
+-        Keywords to estimate user size.
++        Keywords to estimate user size.<br>
++        *If urls is specified, this field cannot be specified in ADD and SET operation.
+         </div>
++    urls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      minItems: 1
++      maxItems: 50
++      description: |
++        <div lang="ja">
++        ユーザサイズを推定するURLです。<br>
++        keywordsを指定する場合、このフィールドは指定できません。
++        </div>
++        <div lang="en">
++        Urls to estimate user size.<br>
++        *If keywords is specified, this field cannot be specified in ADD and SET operation.
++        </div>
+   title: EstimatedUserSizeServiceSelector
+   description: |
+-    <div lang="ja">EstimatedUserSizeServiceSelectorオブジェクトは、ユーザサイズを推定したいキーワードを指定します。</div>
+-    <div lang="en">The EstimatedUserSizeServiceSelector object is used to specify the keywords for which you want to estimate user size.</div>
++    <div lang="ja">EstimatedUserSizeServiceSelectorオブジェクトは、ユーザサイズを推定したいキーワードもしくはURLを指定します。</div>
++    <div lang="en">The EstimatedUserSizeServiceSelector object is used to specify the keywords or urls for which you want to estimate user size.</div>
+Only in v17/estimatedusersize: EstimatedUserSizeServiceUnavailableUrl.yaml
+Only in v17/estimatedusersize: EstimatedUserSizeServiceUrls.yaml
+
+
+------
+diff -ru v16/feed/FeedServiceDownloadDisApprovalReasonListSelector.yaml v17/feed/FeedServiceDownloadDisApprovalReasonListSelector.yaml
+--- v16/feed/FeedServiceDownloadDisApprovalReasonListSelector.yaml	2025-05-15 16:39:24
++++ v17/feed/FeedServiceDownloadDisApprovalReasonListSelector.yaml	2025-05-15 16:39:24
+@@ -19,6 +19,8 @@
+       description: |
+         <div lang="ja">検索条件：フィードIDです。</div>
+         <div lang="en">Search condition: Feed ID.</div>
++    encoding:
++      $ref: 'FeedServiceEncoding.yaml#/FeedServiceEncoding'
+   title: FeedServiceDownloadDisApprovalReasonListSelector
+   description: |
+     <div lang="ja">Feed情報の審査否認理由をダウンロードします。</div>
+Only in v17/feed: FeedServiceEncoding.yaml
+
+
+------
+diff -ru v16/feed/FeedServiceUploadLimit.yaml v17/feed/FeedServiceUploadLimit.yaml
+--- v16/feed/FeedServiceUploadLimit.yaml	2025-05-15 16:39:24
++++ v17/feed/FeedServiceUploadLimit.yaml	2025-05-15 16:39:24
+@@ -1,19 +1,19 @@
+-FeedServiceUploadLimit:
+-  type: object
+-  nullable: true
+-  properties:
+-    sourceType:
+-      $ref: 'FeedServiceSourceType.yaml#/FeedServiceSourceType'
+-    controlType:
+-      $ref: 'FeedServiceControlType.yaml#/FeedServiceControlType'
+-    limitValue:
+-      type: integer
+-      nullable: true
+-      format: int32
+-      description: |
+-        <div lang="ja">上限数です。</div>
+-        <div lang="en">Number of limit.</div>
+-  title: FeedServiceUploadLimit
+-  description: |
+-    <div lang="ja">FeedServiceUploadLimitオブジェクトは、Feedファイルの制限情報を保持します。</div>
+-    <div lang="en">FeedServiceUploadLimit object contains feed file restriction information.</div>
++FeedServiceUploadLimit:
++  type: object
++  nullable: true
++  properties:
++    sourceType:
++      $ref: 'FeedServiceSourceType.yaml#/FeedServiceSourceType'
++    controlType:
++      $ref: 'FeedServiceControlType.yaml#/FeedServiceControlType'
++    limitValue:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">上限数です。</div>
++        <div lang="en">Number of limit.</div>
++  title: FeedServiceUploadLimit
++  description: |
++    <div lang="ja">FeedServiceUploadLimitオブジェクトは、Feedファイルの制限情報を保持します。</div>
++    <div lang="en">FeedServiceUploadLimit object contains feed file restriction information.</div>
+
+
+------
+diff -ru v16/feeddata/FeedDataServiceEncoding.yaml v17/feeddata/FeedDataServiceEncoding.yaml
+--- v16/feeddata/FeedDataServiceEncoding.yaml	2025-05-15 16:39:24
++++ v17/feeddata/FeedDataServiceEncoding.yaml	2025-05-15 16:39:24
+@@ -4,6 +4,7 @@
+   enum:
+   - UTF8
+   - UTF8_BOM
++  - SJIS
+   - UTF16LE
+   - UNKNOWN
+   title: FeedDataServiceEncoding
+@@ -17,6 +18,8 @@
+       <dd class="term__desc"><span lang="ja">UTF8形式です。※デフォルトに設定されます。</span><span lang="en">UTF8 * Default setting.</span></dd>
+       <dt class="term__item">UTF8_BOM</dt>
+       <dd class="term__desc"><span lang="ja">UTF8形式(BOM付き)です。</span><span lang="en">UTF8(with BOM)</span></dd>
++      <dt class="term__item">SJIS</dt>
++      <dd class="term__desc"><span lang="ja">文字コード：Shift-JISです。</span><span lang="en">Character code: SJIS.</span></dd>
+       <dt class="term__item">UTF16LE</dt>
+       <dd class="term__desc"><span lang="ja">UTF16LEです。</span><span lang="en">UTF16LE</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v16/feeddata/FeedDataServiceFileUploadStatus.yaml v17/feeddata/FeedDataServiceFileUploadStatus.yaml
+--- v16/feeddata/FeedDataServiceFileUploadStatus.yaml	2025-05-15 16:39:24
++++ v17/feeddata/FeedDataServiceFileUploadStatus.yaml	2025-05-15 16:39:24
+@@ -37,7 +37,7 @@
+       <dt class="term__item">UPLOAD_COUNT_OVER_ERROR</dt>
+       <dd class="term__desc"><span lang="ja">アップロード回数上限を超過</span><span lang="en">Upload count limit exceeded.</span></dd>
+       <dt class="term__item">NOT_MODIFIED</dt>
+-      <dd class="term__desc"><span lang="ja">ファイル内容に差分なし（未取得）</span><span lang="en">No difference, not uploaded.</span></dd>
++      <dd class="term__desc"><span lang="ja">ファイル内容に差分なし（未取得）※FTP専用の値です。</span><span lang="en">No difference, not uploaded. *For FTP use only.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v16/placementurlidea/PlacementUrlIdea.yaml v17/placementurlidea/PlacementUrlIdea.yaml
+--- v16/placementurlidea/PlacementUrlIdea.yaml	2025-05-15 16:39:24
++++ v17/placementurlidea/PlacementUrlIdea.yaml	2025-05-15 16:39:24
+@@ -8,15 +8,6 @@
+       description: |
+         <div lang="ja">検索キーワードです。</div>
+         <div lang="en">Search keyword</div>
+-    siteCategory:
+-      type: array
+-      nullable: true
+-      items:
+-        type: string
+-        nullable: true
+-      description: |
+-        <div lang="ja">検索カテゴリです。※現在利用できません</div>
+-        <div lang="en">Search category * Not Available.</div>
+     searchUrl:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v16/placementurlidea/PlacementUrlIdeaServiceSelector.yaml v17/placementurlidea/PlacementUrlIdeaServiceSelector.yaml
+--- v16/placementurlidea/PlacementUrlIdeaServiceSelector.yaml	2025-05-15 16:39:24
++++ v17/placementurlidea/PlacementUrlIdeaServiceSelector.yaml	2025-05-15 16:39:24
+@@ -34,34 +34,6 @@
+         $ref: 'PlacementUrlIdeaServiceAdPlaceFilterType.yaml#/PlacementUrlIdeaServiceAdPlaceFilterType'
+     lang:
+       $ref: 'PlacementUrlIdeaServiceLang.yaml#/PlacementUrlIdeaServiceLang'
+-    siteCategories:
+-      type: array
+-      nullable: true
+-      items:
+-        type: string
+-        nullable: true
+-      maxItems: 50
+-      description: |
+-        <div lang="ja">
+-        カテゴリの配列です。<br>
+-        ・URLのカテゴリです。<br>
+-        ・完全一致です。<br>
+-        ・複数指定でOR検索です。<br>
+-        ・TC-SC-xxxxxxで現される規定値です。<br>
+-        ・DicitonaryServiceから返ってくるTC-SC-xxxxxxをそのまま指定です。<br>
+-        ・最大50件です。<br>
+-        ※現在利用できません
+-        </div>
+-        <div lang="en">
+-        Array of categories.<br>
+-        ・Category of URL<br>
+-        ・Exact match<br>
+-        ・Search multiple specific keywords (OR)<br>
+-        ・From value: TC-SC-xxxxxx<br>
+-        ・Choose the TC-SC-xxxxxx value from DictionaryService<br>
+-        ・Maximum of 50 cases<br>
+-        * Not Available.
+-        </div>
+     unknownUrlFilterType:
+       $ref: 'PlacementUrlIdeaServiceUnknownUrlFilterType.yaml#/PlacementUrlIdeaServiceUnknownUrlFilterType'
+     sortField:
+
+
+------
+diff -ru v16/recommendation/Recommendation.yaml v17/recommendation/Recommendation.yaml
+--- v16/recommendation/Recommendation.yaml	2025-05-15 16:39:24
++++ v17/recommendation/Recommendation.yaml	2025-06-30 16:37:37
+@@ -67,6 +67,12 @@
+       $ref: 'RecommendationServiceTurnYourAdOn.yaml#/RecommendationServiceTurnYourAdOn'
+     insufficientAccountBalance:
+       $ref: 'RecommendationServiceInsufficientAccountBalance.yaml#/RecommendationServiceInsufficientAccountBalance'
++    missingPaymentSettings:
++      $ref: 'RecommendationServiceMissingPaymentSettings.yaml#/RecommendationServiceMissingPaymentSettings'
++    audienceListNotAccumulated:
++      $ref: 'RecommendationServiceAudienceListNotAccumulated.yaml#/RecommendationServiceAudienceListNotAccumulated'
++    notTargetingProperAudienceList:
++      $ref: 'RecommendationServiceNotTargetingProperAudienceListAdGroup.yaml#/RecommendationServiceNotTargetingProperAudienceListAdGroup'
+   title: Recommendation
+   description: |
+     <div lang="ja">Recommendationオブジェクトは、最適化提案を格納するコンテナです。</div>
+Only in v17/recommendation: RecommendationServiceAudienceListNotAccumulated.yaml
+Only in v17/recommendation: RecommendationServiceMissingPaymentSettings.yaml
+Only in v17/recommendation: RecommendationServiceNotTargetingProperAudienceListAdGroup.yaml
+Only in v17/recommendation: RecommendationServiceNotTargetingProperAudienceListAdGroupList.yaml
+
+
+------
+diff -ru v16/recommendation/RecommendationServiceType.yaml v17/recommendation/RecommendationServiceType.yaml
+--- v16/recommendation/RecommendationServiceType.yaml	2025-05-15 16:39:24
++++ v17/recommendation/RecommendationServiceType.yaml	2025-06-30 16:37:37
+@@ -28,6 +28,9 @@
+     - TURN_YOUR_ACCOUNT_ON
+     - TURN_YOUR_AD_ON
+     - INSUFFICIENT_ACCOUNT_BALANCE
++    - MISSING_PAYMENT_SETTINGS
++    - AUDIENCE_LIST_NOT_ACCUMULATED
++    - NOT_TARGETING_PROPER_AUDIENCE_LIST
+     - UNKNOWN
+   title: RecommendationServiceType
+   description: |
+@@ -92,6 +95,12 @@
+       <dd class="term__desc"><span lang="ja">広告の配信設定をオンにしましょう。</span><span lang="en">Turn your ad on.</span></dd>
+       <dt class="term__item">INSUFFICIENT_ACCOUNT_BALANCE</dt>
+       <dd class="term__desc"><span lang="ja">アカウント残高が少なくなっています。</span><span lang="en">Your account balance is low.</span></dd>
++      <dt class="term__item">MISSING_PAYMENT_SETTINGS</dt>
++      <dd class="term__desc"><span lang="ja">クレジットカード情報が未設定です。※現在利用できません</span><span lang="en">Your credit card information is not set * Not Available.</span></dd>
++      <dt class="term__item">AUDIENCE_LIST_NOT_ACCUMULATED</dt>
++      <dd class="term__desc"><span lang="ja">オーディエンスリストが蓄積されていません※現在利用できません</span><span lang="en">Audience List is not accumulated * Not Available.</span></dd>
++      <dt class="term__item">NOT_TARGETING_PROPER_AUDIENCE_LIST</dt>
++      <dd class="term__desc"><span lang="ja">オーディエンスリストのターゲティング設定が適切ではありません※現在利用できません</span><span lang="en">The targeting setting of the audience list is not appropriate * Not Available.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v16/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml v17/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml
+--- v16/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2025-05-15 16:39:24
++++ v17/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2025-05-15 16:39:24
+@@ -8,18 +8,17 @@
+   title: ReportDefinitionServiceReportIncludeDeleted
+   description: |
+     <div lang="ja">ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。<br>
+-    レポートタイプがAD, SITE_CATEGORY, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
++    レポートタイプがAD, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
+     それ以外のレポートタイプの場合、ADD時、このフィールドは無視されます。<br>
+     reportIncludeDeletedがFALSEの場合、以下エンティティはレポートに出力されません。</div>
+     <div lang="en">ReportDefinitionServiceReportIncludeDeleted object describes whether to output deleted items on the report or not.<br>
+-    If the report type is AD, SITE_CATEGORY, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
++    If the report type is AD,, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
+     For other report type, this field will be ignored in ADD operation.<br>
+     If reportIncludeDeleted is "FALSE", the following entities will not be output in the report.
+     </div>
+     <table border="1">
+     <tr><th>reportType</th><th>entity</th></tr>
+     <tr><td>AD</td><td>CAMPAIGN, ADGROUP, AD, MEDIA</td></tr>
+-    <tr><td>SITE_CATEGORY</td><td>CAMPAIGN, ADGROUP</td></tr>
+     <tr><td>URL</td><td>CAMPAIGN, ADGROUP</td></tr>
+     <tr><td>REACH</td><td>CAMPAIGN, ADGROUP, AD</td></tr>
+     <tr><td>SEARCH_TARGET</td><td>CAMPAIGN, ADGROUP, SEARCH_TARGET</td></tr>
+
+
+------
+diff -ru v16/reportdefinition/ReportDefinitionServiceReportType.yaml v17/reportdefinition/ReportDefinitionServiceReportType.yaml
+--- v16/reportdefinition/ReportDefinitionServiceReportType.yaml	2025-05-15 16:39:24
++++ v17/reportdefinition/ReportDefinitionServiceReportType.yaml	2025-05-15 16:39:24
+@@ -10,7 +10,6 @@
+   - PLACEMENT_TARGET
+   - LABEL
+   - REACH
+-  - SITE_CATEGORY
+   - URL
+   - MODEL_COMPARISON
+   - CONTENT_KEYWORD_LIST
+@@ -51,8 +50,6 @@
+       <dd class="term__desc"><span lang="ja">プレイスメントターゲティングレポートです。</span><span lang="en">Placement Targeting Report.</span></dd>
+       <dt class="term__item">LABEL</dt>
+       <dd class="term__desc"><span lang="ja">ラベルレポートです。</span><span lang="en">Label Report.</span></dd>
+-      <dt class="term__item">SITE_CATEGORY</dt>
+-      <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></dd>
+       <dt class="term__item">REACH</dt>
+       <dd class="term__desc"><span lang="ja">リーチレポートです。</span><span lang="en">Reach Report.</span></dd>
+       <dt class="term__item">URL</dt>
+
+
+------
+diff -ru v16/searchkeywordlist/SearchKeywordList.yaml v17/searchkeywordlist/SearchKeywordList.yaml
+--- v16/searchkeywordlist/SearchKeywordList.yaml	2025-05-15 16:39:24
++++ v17/searchkeywordlist/SearchKeywordList.yaml	2025-05-15 16:39:24
+@@ -32,11 +32,9 @@
+       description: |
+         <div lang="ja">
+         サーチキーワードリストの説明文です。<br>
+-        このフィールドは、ADDおよびSET時に省略可能となります。
+         </div>
+         <div lang="en">
+         Description of Search keyword list.<br>
+-        This field is optional in ADD and SET operation.
+         </div>
+     isRemoveSearchKeywordListDescription:
+       $ref: 'SearchKeywordListServiceIsRemoveFlg.yaml#/SearchKeywordListServiceIsRemoveFlg'
+@@ -47,11 +45,11 @@
+       description: |
+         <div lang="ja">
+         サーチキーワードリストIDです。<br>
+-        このフィールドは、SETおよびREMOVE時に必須となります。
++        このフィールドは、REMOVE時に必須となります。
+         </div>
+         <div lang="en">
+         Search keyword list ID.<br>
+-        This field is required in SET and REMOVE operation.
++        This field is required in REMOVE operation.
+         </div>
+     searchKeywordListName:
+       type: string
+@@ -59,11 +57,9 @@
+       description: |
+         <div lang="ja">
+         サーチキーワードリスト名です。<br>
+-        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+         </div>
+         <div lang="en">
+         Name of Search keyword list.<br>
+-        This field is required in ADD operation, and is optional in SET operation.
+         </div>
+   title: SearchKeywordList
+   description: |
+
+
+------
+diff -ru v16/searchkeywordlist/SearchKeywordListServiceIsRemoveFlg.yaml v17/searchkeywordlist/SearchKeywordListServiceIsRemoveFlg.yaml
+--- v16/searchkeywordlist/SearchKeywordListServiceIsRemoveFlg.yaml	2025-05-15 16:39:24
++++ v17/searchkeywordlist/SearchKeywordListServiceIsRemoveFlg.yaml	2025-05-15 16:39:24
+@@ -10,12 +10,10 @@
+     <div lang="ja">
+     SearchKeywordListServiceIsRemoveFlgは、項目を削除するフラグです。<br>
+     設定値が「TRUE」の場合、設定されている値が無効になります。<br>
+-    このフィールドは、ADD時は無視され、SET時は省略可能となります。
+     </div>
+     <div lang="en">
+     SearchKeywordListServiceIsRemoveFlg is a flag for removing an information item.<br>
+     If the set value is 'TRUE', the set value will be invalid.<br>
+-    This field will be ignored in ADD operation, and will be optional in SET operation.
+     </div>
+     <dl class=term>
+       <dt class="term__item">TRUE</dt>
+
+
+------
+diff -ru v16/searchkeywordlist/SearchKeywordListServiceKeywordFrequency.yaml v17/searchkeywordlist/SearchKeywordListServiceKeywordFrequency.yaml
+--- v16/searchkeywordlist/SearchKeywordListServiceKeywordFrequency.yaml	2025-05-15 16:39:24
++++ v17/searchkeywordlist/SearchKeywordListServiceKeywordFrequency.yaml	2025-05-15 16:39:24
+@@ -10,13 +10,9 @@
+   description: |
+     <div lang="ja">
+     SearchKeywordListServiceKeywordFrequencyは、サーチキーワードの検索回数を表します。<br>
+-    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+-    ※ADD時のデフォルト設定値はONCE_OR_MOREとなります。
+     </div>
+     <div lang="en">
+     SearchKeywordListServiceKeywordFrequency is an object for storing the search frequency information on Search Keyword.<br>
+-    This field is optional in ADD and SET operation. <br>
+-    *The default value in ADD operation will be ONCE_OR_MORE.
+     </div>
+     <dl class=term>
+       <dt class="term__item">ONCE_OR_MORE</dt>
+
+
+------
+diff -ru v16/searchkeywordlist/SearchKeywordListServiceKeywordRecency.yaml v17/searchkeywordlist/SearchKeywordListServiceKeywordRecency.yaml
+--- v16/searchkeywordlist/SearchKeywordListServiceKeywordRecency.yaml	2025-05-15 16:39:24
++++ v17/searchkeywordlist/SearchKeywordListServiceKeywordRecency.yaml	2025-05-15 16:39:24
+@@ -12,13 +12,9 @@
+   description: |
+     <div lang="ja">
+     SearchKeywordListServiceKeywordRecencyは、サーチキーワードの有効期間を表します。<br>
+-    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+-    ※ADD時のデフォルト設定値はWITHIN_30DAYSとなります。
+     </div>
+     <div lang="en">
+     SearchKeywordListServiceKeywordRecency is an object for storing the effective period information of Search Keyword.<br>
+-    This field is optional in ADD and SET operation. <br>
+-    *The default value in ADD operation will be WITHIN_30DAYS.
+     </div>
+     <dl class=term>
+       <dt class="term__item">WITHIN_1DAY</dt>
+
+
+------
+diff -ru v16/searchkeywordlist/SearchKeywordListServiceSearchKeyword.yaml v17/searchkeywordlist/SearchKeywordListServiceSearchKeyword.yaml
+--- v16/searchkeywordlist/SearchKeywordListServiceSearchKeyword.yaml	2025-05-15 16:39:24
++++ v17/searchkeywordlist/SearchKeywordListServiceSearchKeyword.yaml	2025-05-15 16:39:24
+@@ -9,19 +9,15 @@
+       description: |
+         <div lang="ja">
+         サーチキーワードIDです。<br>
+-        このフィールドは、ADDおよびSET時に必須となります。
+         </div>
+         <div lang="en">
+         Search keyword ID.<br>
+-        This field is required in ADD and SET operation.
+         </div>
+   title: SearchKeywordListServiceSearchKeyword
+   description: |
+     <div lang="ja">
+     SearchKeywordListServiceSearchKeywordオブジェクトは、サーチキーワードを表します。<br>
+-    このフィールドは、ADDおよびSET時に必須となります。
+     </div>
+     <div lang="en">
+     SearchKeywordListServiceSearchKeyword is an object to display the search keyword.<br>
+-    This field is required in ADD and SET operation.
+     </div>
+Only in v16/stats: StatsServiceSiteCategoryTarget.yaml
+
+
+------
+diff -ru v16/stats/StatsServiceTarget.yaml v17/stats/StatsServiceTarget.yaml
+--- v16/stats/StatsServiceTarget.yaml	2025-05-15 16:39:24
++++ v17/stats/StatsServiceTarget.yaml	2025-05-15 16:39:24
+@@ -22,8 +22,6 @@
+       $ref: 'StatsServicePlacementTarget.yaml#/StatsServicePlacementTarget'
+     searchTarget:
+       $ref: 'StatsServiceSearchTarget.yaml#/StatsServiceSearchTarget'
+-    siteCategoryTarget:
+-      $ref: 'StatsServiceSiteCategoryTarget.yaml#/StatsServiceSiteCategoryTarget'
+     audienceListTarget:
+       $ref: 'StatsServiceAudienceListTarget.yaml#/StatsServiceAudienceListTarget'
+     placementCategoryDetailTarget:
+
+
+------
+diff -ru v16/stats/StatsServiceTargetType.yaml v17/stats/StatsServiceTargetType.yaml
+--- v16/stats/StatsServiceTargetType.yaml	2025-05-15 16:39:24
++++ v17/stats/StatsServiceTargetType.yaml	2025-05-15 16:39:24
+@@ -6,7 +6,6 @@
+   - GEO_TARGET
+   - AGE_TARGET
+   - GENDER_TARGET
+-  - SITE_CATEGORY
+   - AUDIENCE_LIST_TARGET
+   - SEARCH_TARGET
+   - PLACEMENT_TARGET
+@@ -26,8 +25,6 @@
+       <dd class="term__desc"><span lang="ja">年齢ターゲティング</span><span lang="en">Age Targeting</span></dd>
+       <dt class="term__item">GENDER_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">性別ターゲティング</span><span lang="en">Gender Targeting</span></dd>
+-      <dt class="term__item">SITE_CATEGORY</dt>
+-      <dd class="term__desc"><span lang="ja">サイトカテゴリターゲティング ※現在利用できません</span><span lang="en">Site Category Targeting * Not Available.</span></dd>
+       <dt class="term__item">AUDIENCE_LIST_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">オーディエンスリストターゲティング</span><span lang="en">Audience List Targeting</span></dd>
+       <dt class="term__item">SEARCH_TARGET</dt>
+
+
+------
+diff -ru v16/video/VideoServiceQualityType.yaml v17/video/VideoServiceQualityType.yaml
+--- v16/video/VideoServiceQualityType.yaml	2025-05-15 16:39:24
++++ v17/video/VideoServiceQualityType.yaml	2025-06-30 16:37:37
+@@ -1,6 +1,6 @@
+ VideoServiceQualityType:
+   type: string
+-  nullable: true
++  nullable: false
+   enum:
+   - FULLHD
+   - HD
