@@ -79,8 +79,8 @@ BrandLift:
         type: string
         nullable: true
       description: |
-        <div lang="ja">連絡先Yahoo! JAPANビジネスIDです。</div>
-        <div lang="en">Yahoo! JAPAN Business ID to send notifications.</div>
+        <div lang="ja">連絡先ビジネスIDです。</div>
+        <div lang="en">Business ID to send notifications.</div>
   title: BrandLift
   description: |
     <div lang="ja">BrandLiftオブジェクトは、ブランドリフトの情報を表します。</div>

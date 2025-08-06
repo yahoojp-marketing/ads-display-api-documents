@@ -55,7 +55,7 @@ RecommendationServiceType:
       <dt class="term__item">MAXIMIZE_VIDEO_VIEWS</dt>
       <dd class="term__desc"><span lang="ja">自動入札（動画再生数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize video views."</span></dd>
       <dt class="term__item">MAXIMIZE_VIEWABLE_IMPRESSIONS</dt>
-      <dd class="term__desc"><span lang="ja">自動入札（ビューアブルインプレッション数の最大化）への変更が推奨されるキャンペーンです。※現在利用できません</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize Vimps." * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">自動入札（ビューアブルインプレッション数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Maximize Vimps."</span></dd>
       <dt class="term__item">ENHANCED_CPC</dt>
       <dd class="term__desc"><span lang="ja">拡張クリック単価への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding type "Enhanced CPC."</span></dd>
       <dt class="term__item">UPDATE_AD_CREATIVE</dt>

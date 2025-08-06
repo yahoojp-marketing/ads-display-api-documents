@@ -92,9 +92,21 @@ AdGroupAdServiceAd:
   description: |
     <div lang="ja">
     AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
-    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。 <br>
+    <br>
+    ※ campaignGoalSubtypeがINSTALLのキャンペーンの配下に広告を作成する場合、以下の制約があります。 <br>
+    (1) viewableImpressionBeaconUrls等、通常であれば配列内に複数指定できるUrls設定であっても、指定できるurlは１つのみです。<br>
+    (2) Urlのパラメータとして"{ci}"が含まれている必要があります。また、appsflyerドメインの場合"{engagementType}"パラメータも必要です。<br>
+    (3) 広告配信ONのためにはtrackingUrlとviewableImpressionBeaconUrlsの設定が基本的に必須となります。※「skanOptimizeAdDeliveryEnabledがTRUE」かつ「SkanTcpaTargetTypeがSKAN_INSTALLS_VIA_CLICK」の場合のみ、viewableImpressionBeaconUrlsは設定不要です <br>
+    (4) video10SecBeaconUrlsの値は空でリクエストしてください。viewableImpressionBeaconUrlsの値が自動で設定されます。
     </div>
     <div lang="en">
     AdGroupAdServiceAd object is a container for storing ads.<br>
-    This field is required in ADD operation, and will be optional in SET operation.
+    This field is required in ADD operation, and will be optional in SET operation.<br>
+    <br>
+    When creating an ad under a campaign where campaignGoalSubtype is set to INSTALL, the following restrictions apply：<br>
+    (1) For URL settings that normally allow multiple entries in an array (e.g., viewableImpressionBeaconUrls), only one URL can be specified.<br>
+    (2) The URL must include the {ci} parameter. Additionally, if the domain is Appsflyer, the {engagementType} parameter is also required.<br>
+    (3) To enable ad delivery, both trackingUrl and viewableImpressionBeaconUrls are generally required. ※Only when skanOptimizeAdDeliveryEnabled is TRUE and SkanTcpaTargetType is SKAN_INSTALLS_VIA_CLICK, viewableImpressionBeaconUrls is not required.<br>
+    (4) The value for video10SecBeaconUrls should be sent as empty in the request. The value for viewableImpressionBeaconUrls will be automatically set.
     </div>

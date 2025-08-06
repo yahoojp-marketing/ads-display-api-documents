@@ -66,8 +66,8 @@ tags:
   - name: BaseAccountService
     description: |
       <label class="account"></label>
-      <div lang="ja">操作対象のYahoo! JAPANビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を提供します。</div>
-      <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Yahoo! JAPAN Business ID has direct access.</div>
+      <div lang="ja">操作対象のビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を提供します。</div>
+      <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Business ID has direct access.</div>
   - name: CampaignService
     description: |
       <label class="campaign"></label>
@@ -1605,9 +1605,9 @@ paths:
   /BaseAccountService/get:
     post:
       description: |
-        <div lang="ja">操作対象のYahoo! JAPANビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を取得します。<br>
+        <div lang="ja">操作対象のビジネスIDが直接権限を持つ全てのアカウント（MCCアカウント・広告アカウント）の一覧を取得します。<br>
         取得したアカウントのIDをx-z-base-account-idに指定し、AccountService/getにリクエストすることで、操作可能なアカウントの情報を取得できます。</div>
-        <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Yahoo! JAPAN Business ID has direct access.<br>
+        <div lang="en">Retrieve lists of all accounts (MCC and ad accounts) that the target Business ID has direct access.<br>
         Get available account information by specifying the account ID for the "x-z-base-account-id" header and requesting AccountService/get.</div>
       tags:
         - BaseAccountService
