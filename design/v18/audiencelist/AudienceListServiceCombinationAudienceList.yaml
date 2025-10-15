@@ -1,0 +1,25 @@
+AudienceListServiceCombinationAudienceList:
+  type: object
+  nullable: true
+  properties:
+    combinations:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceCombination.yaml#/AudienceListServiceCombination'
+    containUnavailableAdActionUserListFlg:
+      $ref: 'AudienceListServiceContainUnavailableAdActionUserListFlg.yaml#/AudienceListServiceContainUnavailableAdActionUserListFlg'
+    containDataConnectionStopped:
+      $ref: 'AudienceListServiceContainDataConnectionStopped.yaml#/AudienceListServiceContainDataConnectionStopped'
+  title: AudienceListServiceCombinationAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceCombinationAudienceListオブジェクトは、オーディエンスリストの組み合わせ情報のリストを表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがCOMBINATIONの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceCombinationAudienceList object is a container for storing list of combination of audience list information. <br>
+    This field is optional in ADD and SET operation. <br>
+    *If audienceListType is COMBINATION, this field is required in  ADD and SET operation.
+    </div>

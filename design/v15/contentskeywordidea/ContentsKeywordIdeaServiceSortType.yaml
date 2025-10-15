@@ -7,8 +7,14 @@ ContentsKeywordIdeaServiceSortType:
   - UNKNOWN
   title: ContentsKeywordIdeaServiceSortType
   description: |
-    <div lang="ja">ContentsKeywordIdeaServiceSortTypeオブジェクトは、ソート方法を表します。</div>
-    <div lang="en">ContentsKeywordIdeaServiceSortType object is sorting method.</div>
+    <div lang="ja">
+      ContentsKeywordIdeaServiceSortTypeオブジェクトは、ソート方法を表します。<br>
+      GET時のデフォルト設定値はDESCとなります。
+    </div>
+    <div lang="en">
+      ContentsKeywordIdeaServiceSortType object is sorting method.<br>
+      The default value in GET operation will be DESC.
+    </div>
     <dl class=term>
       <dt class="term__item">ASC</dt>
       <dd class="term__desc"><span lang="ja">昇順です。</span><span lang="en">Ascending order</span></dd>

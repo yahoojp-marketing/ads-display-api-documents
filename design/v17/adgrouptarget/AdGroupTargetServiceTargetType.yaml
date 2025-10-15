@@ -23,7 +23,7 @@ AdGroupTargetServiceTargetType:
     <div lang="ja">
     AdGroupTargetServiceTargetTypeは、ターゲティングの種別を表します。<br>
     このフィールドは、リクエストの場合は必須です。<br>
-    ※PLACEMENT_CATEGORY_TARGET, PLACEMENT_CATEGORY_DETAIL_TARGETは予約型広告専用のターゲティングの種別となります。
+    ※POSITION_TARGET, PLACEMENT_CATEGORY_TARGET, PLACEMENT_CATEGORY_DETAIL_TARGETは予約型広告専用のターゲティングの種別となります。
     </div>
     <div lang="en">
     AdGroupTargetServiceTargetType serves types of targets.<br>
@@ -42,7 +42,7 @@ AdGroupTargetServiceTargetType:
       <dt class="term__item">AUDIENCE_LIST_TARGET</dt>
       <dd class="term__desc"><span lang="ja">オーディエンスリストターゲティング</span><span lang="en">Audience List Targeting</span></dd>
       <dt class="term__item">SEARCH_TARGET</dt>
-      <dd class="term__desc"><span lang="ja">サーチターゲティング</span><span lang="en">Search Targeting</span></dd>
+      <dd class="term__desc"><span lang="ja">サーチターゲティング ※ 提供を終了しました。</span><span lang="en">Search Targeting * Discontinued.</span></dd>
       <dt class="term__item">PLACEMENT_TARGET</dt>
       <dd class="term__desc"><span lang="ja">プレイスメントターゲティング</span><span lang="en">Placement Targeting</span></dd>
       <dt class="term__item">DEVICE_TARGET</dt>

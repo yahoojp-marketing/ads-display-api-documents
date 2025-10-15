@@ -1,0 +1,31 @@
+AudienceListServiceLineIdDataAudienceList:
+  type: object
+  nullable: true
+  properties:
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Data duration. <br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    isZeroOrCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
+  title: AudienceListServiceLineIdDataAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceLineIdDataAudienceListオブジェクトは、オーディエンスリスト（Line Id Data）を表します。<br>
+    こちらのパラメータのご利用は、一部お客様に限定しています。<br>
+    このフィールドは、ADD時に無視され、SET時に省略可能となります。<br>
+    </div>
+    <div lang="en">
+    AudienceListServiceLineIdDataAudienceList object describes the audience list (Line Id Data).<br>
+    This parameter is limited to certain clients.<br>
+    This field is ignored in ADD and optional in SET operation.<br>
+    </div>

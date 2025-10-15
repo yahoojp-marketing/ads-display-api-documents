@@ -1,0 +1,30 @@
+BiddingStrategyServiceBiddingOption:
+  type: string
+  nullable: true
+  enum:
+    - VCPM
+    - CPC
+    - CPV
+    - UNKNOWN
+  title: BiddingStrategyServiceBiddingOption
+  description: |
+    <div lang="ja">
+    課金方式です。<br>
+    ADD時およびSET時、このフィールドは省略可能となります。<br>
+    REMOVE時、このフィールドは無視されます。<br>
+    </div>
+    <div lang="en">
+    BiddingOption.<br>
+    This field is optional in ADD and SET operation.<br>
+    In REMOVE operation, this field will be ignored.<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">VCPM</dt>
+      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション課金</span><span lang="en">viewable Cost Per Mille</span></dd>
+      <dt class="term__item">CPC</dt>
+      <dd class="term__desc"><span lang="ja">クリック課金</span><span lang="en">Cost per Click</span></dd>
+      <dt class="term__item">CPV</dt>
+      <dd class="term__desc"><span lang="ja">動画再生課金</span><span lang="en">Cost per View</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

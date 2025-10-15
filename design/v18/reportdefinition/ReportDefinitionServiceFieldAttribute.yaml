@@ -1,0 +1,44 @@
+ReportDefinitionServiceFieldAttribute:
+  type: object
+  nullable: true
+  properties:
+    displayFieldName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ダウンロードされたレポートに表示されるフィールド名です。</div>
+        <div lang="en">Field name for the downloaded report.</div>
+    fieldName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">フィールド名です。</div>
+        <div lang="en">Field Name.</div>
+    fieldType:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">フィールドタイプ（数字、文字列、ENUM値など）です。</div>
+        <div lang="en">Field type (number, string, ENUM, etc.)</div>
+    filterable:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">フィールドのフィルター指定可否（true：フィルター指定可能なフィールド）です。</div>
+        <div lang="en">Whether the field filter can be specified or not (true: Filter can be specified).</div>
+    impossibleCombinationFields:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">組み合わせ不可フィールドです。</div>
+        <div lang="en">Invalid field combinations.</div>
+    xmlAttributeName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ダウンロードしたレポートのXML属性です。</div>
+        <div lang="en">XML attribute for the Downloaded Report.</div>
+  title: ReportDefinitionServiceFieldAttribute

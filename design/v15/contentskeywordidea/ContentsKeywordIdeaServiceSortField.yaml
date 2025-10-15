@@ -9,8 +9,14 @@ ContentsKeywordIdeaServiceSortField:
   - UNKNOWN
   title: ContentsKeywordIdeaServiceSortField
   description: |
-    <div lang="ja">ContentsKeywordIdeaServiceSortFieldオブジェクトは、ソート対象項目です。</div>
-    <div lang="en">ContentsKeywordIdeaServiceSortField object is sorting item.</div>
+    <div lang="ja">
+      ContentsKeywordIdeaServiceSortFieldオブジェクトは、ソート対象項目です。<br>
+      GET時のデフォルト設定値はSEARCH_VOLUMEとなります。
+    </div>
+    <div lang="en">
+      ContentsKeywordIdeaServiceSortField object is sorting item.<br>
+      The default value in GET operation will be SEARCH_VOLUME.
+    </div>
     <dl class=term>
       <dt class="term__item">KEYWORD</dt>
       <dd class="term__desc"><span lang="ja">キーワードです。</span><span lang="en">Keyword</span></dd>

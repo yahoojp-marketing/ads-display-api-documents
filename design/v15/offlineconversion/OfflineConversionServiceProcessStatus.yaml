@@ -8,7 +8,7 @@ OfflineConversionServiceProcessStatus:
   - ERROR
   - UNKNOWN
   title: OfflineConversionServiceProcessStatus
-  description:
+  description: |
     <div lang="ja">処理ステータスです。</div>
     <div lang="en">Processing status.</div>
     <dl class=term>

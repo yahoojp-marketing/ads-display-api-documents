@@ -1,0 +1,63 @@
+AudienceListServiceType:
+  type: string
+  nullable: true
+  enum:
+    - COMBINATION
+    - SIMILARITY
+    - WEBSITE_VISITORS
+    - CUSTOMER_DATA
+    - APP_USER
+    - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+    - ADVANCED_SEGMENTS
+    - AD_ACTION_USERS
+    - LINE_OA_FRIEND
+    - LINE_OA_BLOCK
+    - BUSINESS_MANAGER
+    - LINE_ID_DATA
+    - UNKNOWN
+  title: AudienceListServiceType
+  description: |
+    <div lang="ja">
+    AudienceListServiceTypeは、オーディエンスリストの種別を表します。<br>
+    このフィールドは、ADDおよびSET時に必須となります。<br>
+    ただし、以下の値はADD時に指定することはできません。<br>
+    - YAHOO_JAPAN_AUDIENCE_DISCOVERY<br>
+    - BUSINESS_MANAGER<br>
+    - LINE_ID_DATA<br>
+    </div>
+    <div lang="en">
+    AudienceListServiceType serves types of audience list. <br>
+    This field is required in ADD and SET operation.<br>
+    However, the following values cannot be specified in ADD operation.<br>
+    - YAHOO_JAPAN_AUDIENCE_DISCOVERY<br>
+    - BUSINESS_MANAGER<br>
+    - LINE_ID_DATA<br>
+    </div>
+    <dl class=term>
+      <dt class="term__item">COMBINATION</dt>
+      <dd class="term__desc"><span lang="ja">組み合わせです。</span><span lang="en">Combination.</span></dd>
+      <dt class="term__item">SIMILARITY</dt>
+      <dd class="term__desc"><span lang="ja">類似ユーザーです。</span><span lang="en">Similar User.</span></dd>
+      <dt class="term__item">WEBSITE_VISITORS</dt>
+      <dd class="term__desc"><span lang="ja">ウェブサイト訪問ユーザーです。</span><span lang="en">Website visitor.</span></dd>
+      <dt class="term__item">CUSTOMER_DATA</dt>
+      <dd class="term__desc"><span lang="ja">顧客データです。</span><span lang="en">Customer data.</span></dd>
+      <dt class="term__item">APP_USER</dt>
+      <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
+      <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>
+      <dd class="term__desc"><span lang="ja">Yahoo! Audience Discoveryです。</span><span lang="en">Yahoo! JAPAN Audience Discovery.</span></dd>
+      <dt class="term__item">ADVANCED_SEGMENTS</dt>
+      <dd class="term__desc"><span lang="ja">高度なセグメントです。</span><span lang="en">Advanced segments.</span></dd>
+      <dt class="term__item">AD_ACTION_USERS</dt>
+      <dd class="term__desc"><span lang="ja">広告アクションユーザーです。</span><span lang="en">Ad action users.</span></dd>
+      <dt class="term__item">LINE_OA_FRIEND</dt>
+      <dd class="term__desc"><span lang="ja">LINE公式アカウントの友だちです。</span><span lang="en">Friends of LINE Official Account.</span></dd>
+      <dt class="term__item">LINE_OA_BLOCK</dt>
+      <dd class="term__desc"><span lang="ja">LINE公式アカウントをブロック中の友だちです。</span><span lang="en">Friends who blocked LINE Official Account.</span></dd>
+      <dt class="term__item">BUSINESS_MANAGER</dt>
+      <dd class="term__desc"><span lang="ja">ビジネスマネージャーです。</span><span lang="en">Business manager.</span></dd>
+      <dt class="term__item">LINE_ID_DATA</dt>
+      <dd class="term__desc"><span lang="ja">Line Id Dataです。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">LINE ID DATA</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

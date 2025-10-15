@@ -1,0 +1,21 @@
+AudienceListServiceCombination:
+  type: object
+  nullable: true
+  properties:
+    logicalOperator:
+      $ref: 'AudienceListServiceLogicalOperator.yaml#/AudienceListServiceLogicalOperator'
+    audienceLists:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceData.yaml#/AudienceListServiceData'
+  title: AudienceListServiceCombination
+  description: |
+    <div lang="ja">
+    AudienceListServiceCombinationオブジェクトは、オーディエンスリストの組み合わせに関する情報を格納するコンテナです。<br>
+    このフィールドは、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceCombination object is a container for storing combination of audience list information. <br>
+    This field is required in ADD and SET operation.
+    </div>

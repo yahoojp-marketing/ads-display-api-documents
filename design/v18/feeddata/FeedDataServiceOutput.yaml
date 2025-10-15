@@ -1,0 +1,21 @@
+FeedDataServiceOutput:
+  type: string
+  nullable: true
+  enum:
+    - TSV
+    - CSV
+    - UNKNOWN
+  title: FeedDataServiceOutput
+  description: |
+    <div lang="ja">FeedDataServiceOutputは、商品情報エラーファイルのファイル形式を指定します。<br>
+    このフィールドは、省略可能となります。その際、デフォルト値はTSVとなります。</div>
+    <div lang="en">FeedDataServiceOutput specifies the file format of Error file.<br>
+    This field is optional. The default value will be TSV.</div>
+    <dl class=term>
+      <dt class="term__item">TSV</dt>
+      <dd class="term__desc"><span lang="ja">TSV形式です。</span><span lang="en">in TSV format</span></dd>
+      <dt class="term__item">CSV</dt>
+      <dd class="term__desc"><span lang="ja">CSV形式です。</span><span lang="en">in CSV format</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

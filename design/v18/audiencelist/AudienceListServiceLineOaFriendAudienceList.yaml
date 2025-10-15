@@ -1,0 +1,21 @@
+AudienceListServiceLineOaFriendAudienceList:
+  type: object
+  nullable: true
+  properties:
+    isZeroOrCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
+  title: AudienceListServiceLineOaFriendAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceLineOaFriendAudienceListオブジェクトは、オーディエンスリスト（LINE公式アカウントの友だち）を表します。<br>
+    このリストを作成するにはビジネスマネージャー・LINE公式アカウントとの接続が必要です。詳しくは<a href="https://ads-help.yahoo-net.jp/s/article/H000052782?language=ja" target="_blank">ヘルプ</a>をご確認ください。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがLINE_OA_FRIENDの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceLineOaFriendAudienceList object describes the audience list (Friends of LINE Official Account).<br>
+    To create this list, it is necessary to link the Business Manager and the LINE Official Account. For more details, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000052782?language=en_US" target="_blank">the help documentation</a>.<br>
+    This field is optional in ADD and SET operation.<br>
+    *If audienceListType is LINE_OA_FRIEND, this field is required in ADD and SET operation.
+    </div>
+  

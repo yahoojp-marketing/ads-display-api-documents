@@ -1,0 +1,25 @@
+MediaServiceLogoFlg:
+  type: string
+  nullable: true
+  enum:
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
+  title: MediaServiceLogoFlg
+  description: |
+    <div lang="ja">
+    MediaServiceLogoFlgは、ロゴの設定フラグを表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。
+    </div>
+    <div lang="en">
+    MediaServiceLogoFlg displays the flag settings of Logo image. <br>
+    This field is optional in ADD and SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">通常画像です。</span><span lang="en">Normal image.</span></dd>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">ロゴ画像です。</span><span lang="en">Logo image.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

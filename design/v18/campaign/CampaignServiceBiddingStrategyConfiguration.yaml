@@ -1,0 +1,36 @@
+CampaignServiceBiddingStrategyConfiguration:
+  type: object
+  nullable: true
+  properties:
+    biddingScheme:
+      $ref: 'CampaignServiceBiddingScheme.yaml#/CampaignServiceBiddingScheme'
+    portfolioBiddingId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ポートフォリオ入札IDです。<br>
+        ADDおよびSET時、キャンペーン個別入札設定の場合、このフィールドは設定不可となり、ポートフォリオ入札設定の場合、必須となります。また、biddingSchemeと同時に設定することはできません。</div>
+        <div lang="en">Portfolio bidding ID.<br>
+        This field cannot be specified when Campaign bidding is setting, and is required when Portfolio bidding is setting in ADD and SET operation. It cannot be specified at the same times as biddingScheme.</div>
+    portfolioBiddingName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ポートフォリオ入札名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。</div>
+        <div lang="en">Portfolio bidding name.<br>
+        Although this field will be returned in the response, it will be ignored on input.</div>
+  title: CampaignServiceBiddingStrategyConfiguration
+  description: |
+    <div lang="ja">
+    CampaignServiceBiddingStrategyConfigurationオブジェクトは、キャンペーン入札戦略です。<br>
+    ADDおよびSET時、このフィールドは必須となります。<br>
+    REMOVE時、このフィールドは無視されます。
+    </div>
+    <div lang="en">
+    CampaignServiceBiddingStrategyConfiguration object describes campaign bidding strategy.<br>
+    In ADD and SET operation, this field is required.<br>
+    This field will be ignored in REMOVE operation.
+    </div>
+    

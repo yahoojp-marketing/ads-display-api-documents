@@ -1,0 +1,13 @@
+RecommendationServiceCreateResponsiveDisplayAds:
+  type: object
+  nullable: true
+  properties:
+    createResponsiveDisplayAdsList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceCreateResponsiveDisplayAdsList.yaml#/RecommendationServiceCreateResponsiveDisplayAdsList'
+  title: RecommendationServiceCreateResponsiveDisplayAds
+  description: |
+    <div lang="ja">RecommendationServiceCreateResponsiveDisplayAdsオブジェクトは、レスポンシブディスプレイ広告に関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceCreateResponsiveDisplayAds object describes information about a recommendation for Responsive Ads for Display.</div>

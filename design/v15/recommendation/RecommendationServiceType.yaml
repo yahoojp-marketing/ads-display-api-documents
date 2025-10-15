@@ -46,7 +46,7 @@ RecommendationServiceType:
       <dt class="term__item">BID_STRATEGY_TO_TARGET_CPA</dt>
       <dd class="term__desc"><span lang="ja">自動入札（コンバージョン単価の目標値）に適しているキャンペーンです。</span><span lang="en">Campaigns that are suitable for using autobidding (target CPA).</span></dd>
       <dt class="term__item">SEARCH_KEYWORD_LIST_IDEA</dt>
-      <dd class="term__desc"><span lang="ja">追加を推奨するサーチキーワードです。</span><span lang="en">Recommended search keywords to add.</span></dd>
+      <dd class="term__desc"><span lang="ja">追加を推奨するサーチキーワードです。 ※ 提供を終了しました。</span><span lang="en">Recommended search keywords to add. * Discontinued.</span></dd>
       <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
       <dd class="term__desc"><span lang="ja">自動入札（コンバージョン数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding Type "Maximize Conversions."</span></dd>
       <dt class="term__item">MAXIMIZE_CLICKS</dt>

@@ -22,7 +22,7 @@ AudienceListServiceCustomerDataAudienceList:
         このフィールドは、ADD時に必須となります。
         </div>
         <div lang="en">
-        Duration of user data configured from DMP (1-60days). <br>
+        Data duration for the connected user data, in days (1–60). <br>
         This field is required in ADD operation.
         </div>
   title: AudienceListServiceCustomerDataAudienceList

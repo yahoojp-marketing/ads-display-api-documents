@@ -15,8 +15,8 @@ PlacementUrlIdea:
         type: string
         nullable: true
       description: |
-        <div lang="ja">検索カテゴリです。※現在利用できません</div>
-        <div lang="en">Search category * Not Available.</div>
+        <div lang="ja">検索カテゴリです。※ 提供を終了しました。</div>
+        <div lang="en">Search category * Discontinued.</div>
     searchUrl:
       type: string
       nullable: true

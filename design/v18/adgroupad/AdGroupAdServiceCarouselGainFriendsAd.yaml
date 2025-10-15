@@ -1,0 +1,23 @@
+AdGroupAdServiceCarouselGainFriendsAd:
+  type: object
+  nullable: true
+  properties:
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    carousels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceCarouselGainFriends.yaml#/AdGroupAdServiceCarouselGainFriends'
+  title: AdGroupAdServiceCarouselGainFriendsAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceCarouselGainFriendsAdオブジェクトはカルーセル（友だち追加）広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    ※ADD時、adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceCarouselGainFriendsAd object describes information of carousel (Gain friends) ad.<br>
+    This field is optional.<br>
+    *If adType is CAROUSEL_GAIN_FRIENDS_AD, this field is required in ADD operation.
+    </div>

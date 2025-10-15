@@ -50,7 +50,7 @@ PlacementUrlIdeaServiceSelector:
         ・TC-SC-xxxxxxで現される規定値です。<br>
         ・DicitonaryServiceから返ってくるTC-SC-xxxxxxをそのまま指定です。<br>
         ・最大50件です。<br>
-        ※現在利用できません
+        ※ 提供を終了しました。
         </div>
         <div lang="en">
         Array of categories.<br>
@@ -60,7 +60,7 @@ PlacementUrlIdeaServiceSelector:
         ・From value: TC-SC-xxxxxx<br>
         ・Choose the TC-SC-xxxxxx value from DictionaryService<br>
         ・Maximum of 50 cases<br>
-        * Not Available.
+        * Discontinued.
         </div>
     unknownUrlFilterType:
       $ref: 'PlacementUrlIdeaServiceUnknownUrlFilterType.yaml#/PlacementUrlIdeaServiceUnknownUrlFilterType'

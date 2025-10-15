@@ -70,6 +70,7 @@
 "OS","OS","OS","os","STRING",,"Segment","iOS,Android,その他","iOS,Android,Other",""
 "CAMPAIGN_GOALS","キャンペーン目的","Campaign goals","campaignGoals","STRING",,"Segment","ブランド認知,動画再生,サイト誘導,アプリ訴求,コンバージョン,商品リスト訴求,来店促進,PayPayギフト,友だち追加,未設定","Brand awareness,Video view,Website traffic,App promotion,Conversions,Item list promotion,Store-visit promotion,PayPay Gift,Gain friends,None",""
 "CAMPAIGN_SUBTYPE","キャンペーンサブタイプ","Campaign subtype","campaignSubtype","STRING",,"Attribute","標準,インストール","Standard,Install",""
-"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,セールスプロモーション,標準","Ecommerce,In-house,Sales promotion,Standard",""
+"DEAL_TYPE","商品種別","Package type","dealType","STRING",,"Attribute","Preferred Deal,Private Auction","Preferred deal,Private auction",""
+"SPECIAL_PRODUCT_TYPE","キャンペーン掲載タイプ","Campaign delivery type","specialProductType","STRING",,"Attribute","eコマース,自社入稿,セールスプロモーション,プライベートマーケットプレイス,標準","Ecommerce,In-house,Sales promotion,Private market place,Standard",""
 "PAID_VIDEO_VIEWS","課金が発生した動画再生数（CPV課金キャンペーンのみ）","Paid video views (CPV)","paidVideoViewsCPV","LONG",,"Metric","","",""
 "PAID_VIDEO_VIEW_RATE","課金が発生した動画再生率（CPV課金キャンペーンのみ）","Paid video view rate (CPV)","paidVideoViewRateCPV","DOUBLE",,"Metric","","",""

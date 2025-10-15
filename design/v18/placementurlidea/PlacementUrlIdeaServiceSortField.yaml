@@ -1,0 +1,37 @@
+PlacementUrlIdeaServiceSortField:
+  type: string
+  nullable: true
+  enum:
+    - URL
+    - AD_PLACE_NAME
+    - DESKTOP_REACHES
+    - DESKTOP_AD_REQUESTS
+    - SMART_PHONE_REACHES
+    - SMART_PHONE_AD_REQUESTS
+    - TABLET_REACHES
+    - TABLET_AD_REQUESTS
+    - UNKNOWN
+  title: PlacementUrlIdeaServiceSortField
+  description: |
+    <div lang="ja">PlacementUrlIdeaServiceSortFieldオブジェクトは、ソート対象項目です。</div>
+    <div lang="en">PlacementUrlIdeaServiceSortField object is sorting item.</div>
+    <dl class=term>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">URLです。</span><span lang="en">URL</span></dd>
+      <dt class="term__item">AD_PLACE_NAME</dt>
+      <dd class="term__desc"><span lang="ja">配信先名です。</span><span lang="en">Ad Place Name</span></dd>
+      <dt class="term__item">DESKTOP_REACHES</dt>
+      <dd class="term__desc"><span lang="ja">PC でのリーチ数です。</span><span lang="en">Reach Number of PC</span></dd>
+      <dt class="term__item">DESKTOP_AD_REQUESTS</dt>
+      <dd class="term__desc"><span lang="ja">PC でのADリクエスト数です。</span><span lang="en">AD Request Number of PC</span></dd>
+      <dt class="term__item">SMART_PHONE_REACHES</dt>
+      <dd class="term__desc"><span lang="ja">SmartPhone でのリーチ数です。</span><span lang="en">Reach Number of SmartPhone</span></dd>
+      <dt class="term__item">SMART_PHONE_AD_REQUESTS</dt>
+      <dd class="term__desc"><span lang="ja">SmartPhone でのADリクエスト数です。</span><span lang="en">AD Request Number of SmartPhone</span></dd>
+      <dt class="term__item">TABLET_REACHES</dt>
+      <dd class="term__desc"><span lang="ja">Tablet でのリーチ数です。</span><span lang="en">Reach Number of Tablet</span></dd>
+      <dt class="term__item">TABLET_AD_REQUESTS</dt>
+      <dd class="term__desc"><span lang="ja">TabletでのADリクエスト数です。</span><span lang="en">AD Request Number of Tablet</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

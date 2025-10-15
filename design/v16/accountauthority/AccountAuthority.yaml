@@ -88,8 +88,14 @@ AccountAuthority:
           <td>セールスプロモーション</td>
           <td>キャンペーン掲載タイプ</td>
         </tr>
+        <tr>
+          <td>PRIVATE_MARKET_PLACE</td>
+          <td>プライベートマーケットプレイス</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
       </table>
-    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a>をご確認ください。
+    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a>をご確認ください。<br>
+    ※キャンペーン掲載タイプが「PRIVATE_MARKET_PLACE」のキャンペーン、ならびにその配下の広告グループおよび広告は、作成・編集できません。
     </div>
     <div lang="en">AccountAuthority objects serve account authority information.<br>
     Responded values of `authorities` are as follows.
@@ -159,6 +165,12 @@ AccountAuthority:
           <td>Sales Promotion</td>
           <td>Campaign delivery type</td>
         </tr>
+        <tr>
+          <td>PRIVATE_MARKET_PLACE</td>
+          <td>Private market place</td>
+          <td>Campaign delivery type</td>
+        </tr>
       </table>
-    Details of these campaign goal are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=en_US">Create campaigns by goal</a>.
+    Details of these campaign goal are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=en_US">Create campaigns by goal</a>.<br>
+    *Campaigns with the campaign delivery type "PRIVATE_MARKET_PLACE", and their child ad groups and ads, cannot be created or edited.
     </div>

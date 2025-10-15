@@ -120,24 +120,20 @@ tags:
   - name: SearchKeywordIdeaService
     description: |
       <label class="proposal"></label>
-      <div lang="ja">SearchKeywordIdeaServiceは、サーチターゲティング対象キーワードを取得します。<br>
-      定期的にサーチキーワードの見直しを行いますので、サーチキーワードの定期的な取得をお願いいたします。
+      <div lang="ja">SearchKeywordIdeaServiceは、サーチターゲティング対象キーワードを取得します。※ 提供を終了しました。
       </div>
-      <div lang="en">SearchKeywordIdeaService retrieves the keyword for search targeting.<br>
-      We will review our search keywords on a regular basis, so make sure to acquire search keywords regularly.
+      <div lang="en">SearchKeywordIdeaService retrieves the keyword for search targeting. * Discontinued.
       </div>
   - name: SearchKeywordListService
     description: |
       <label class="campaign"></label>
       <div lang="ja">
-        <div>SearchKeywordListServiceは、サーチキーワードリストの取得および追加・更新・削除を行います。</div>
-        <div>サーチキーワードターゲティングは2025年7月頃（予定）に提供を終了します。終了後も同様のターゲティングを利用するには、オーディエンスリストターゲティングへの移行が必要です。詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=ja" target=_blank>こちら</a>。</div>
-        <div>※ADD,SET機能は提供を終了しました。</div>
+        <div>SearchKeywordListServiceは、サーチキーワードリストの取得および追加・更新・削除を行います。※ 提供を終了しました。</div>
+        <div>同様のターゲティングを利用するには、オーディエンスリストターゲティングへの移行が必要です。詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=ja" target=_blank>こちら</a>。</div>
       </div>
       <div lang="en">
-        <div>SearchKeywordListService retrieves, add, update, and delete the search keyword list.</div>
-        <div>Search keyword targeting plans to end in July 2025. To continue using the same targeting type, migrate to audience list targeting instead.<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=en_US" target="_blank"> Learn more</a></div>
-        <div>* ADD,SET functions have been discontinued.</div>
+        <div>SearchKeywordListService retrieves, add, update, and delete the search keyword list. * Discontinued.</div>
+        <div>To continue using the same targeting type, migrate to audience list targeting instead.<a href="https://ads-help.yahoo-net.jp/s/article/H000053911?language=en_US" target="_blank"> Learn more</a></div>
       </div>
   - name: ContentsKeywordIdeaService
     description: |
@@ -1117,6 +1113,7 @@ paths:
                 <tr><td>120020</td><td>Can not set value.</td><td><div lang="ja">値を設定することができません。</div><div lang="en">Value cannot be set.</div></td></tr>
                 <tr><td>210004</td><td>The budget specified is less than the estimated cost.</td><td><div lang="ja">指定された予算額が予想コストを下回っているため、設定できません。</div><div lang="en">Cannot be set since the specified budget amount is below the expected cost.</div></td></tr>
                 <tr><td>210005</td><td>Cannot update due to the dependency with the delivery settings of guaranteed campaign.</td><td><div lang="ja">予約型キャンペーンの配信設定との依存関係があるため、更新できません。</div><div lang="en">Cannot update due to the dependency with the delivery settings of guaranteed campaign.</div></td></tr>
+                <tr><td>210006</td><td>Cannot update because this account has not completed the "procedures for succession of ad accounts".</td><td><div lang="ja">「広告アカウントの承継等の手続き」が完了していないため、更新できません。</div><div lang="en">Cannot update because this account has not completed the "procedures for succession of ad accounts".</div></td></tr>
               </tbody>
             </table>
               </tbody>
@@ -3744,8 +3741,8 @@ paths:
   /DictionaryService/getSiteCategory:
     post:
       description: |
-        <div lang="ja">サイトトカテゴリーリストを取得します。※現在利用できません</div>
-        <div lang="en">Retrieves the list of site category. * Not Available.</div>
+        <div lang="ja">サイトカテゴリーリストを取得します。※ 提供を終了しました。</div>
+        <div lang="en">Retrieves the list of site category. * Discontinued.</div>
       tags:
         - DictionaryService
       requestBody:
@@ -3980,8 +3977,14 @@ paths:
   /SearchKeywordIdeaService/get:
     post:
       description: |
-        <div lang="ja">サーチターゲティング対象キーワードを取得します。</div>
-        <div lang="en">Retrieves the keyword for seach targeting.</div>
+        <div lang="ja">
+          <div>サーチターゲティング対象キーワードを取得します。</div>
+          <div>※ 提供を終了しました。</div>
+        </div>
+        <div lang="en">
+          <div>Retrieves the keyword for seach targeting.</div>
+          <div>* Discontinued.</div>
+        </div>
       tags:
         - SearchKeywordIdeaService
       requestBody:
@@ -4042,8 +4045,14 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">サーチキーワードリストを取得します。</div>
-        <div lang="en">Retrieces the search keyeord list.</div>
+        <div lang="ja">
+          <div>サーチキーワードリストを取得します。</div>
+          <div>※ 提供を終了しました。</div>
+        </div>
+        <div lang="en">
+          <div>Retrieces the search keyeord list.</div>
+          <div>* Discontinued.</div>
+        </div>
       tags:
         - SearchKeywordListService
       requestBody:
@@ -4243,8 +4252,14 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">サーチキーワードリストを削除します。</div>
-        <div lang="en">Removes the search keyword list.</div>
+        <div lang="ja">
+          <div>サーチキーワードリストを削除します。</div>
+          <div>※ 提供を終了しました。</div>
+        </div>
+        <div lang="en">
+          <div>Removes the search keyword list.</div>
+          <div>* Discontinued.</div>
+        </div>
       tags:
         - SearchKeywordListService
       requestBody:

@@ -1,0 +1,27 @@
+AdGroupAdServiceDisplayUrlLevel:
+  type: string
+  nullable: true
+  enum:
+    - DOMAIN
+    - FIRST_LEVEL
+    - UNKNOWN
+  title: AdGroupAdServiceDisplayUrlLevel
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceDisplayUrlLevelは、表示するURLの階層を表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+    キャンペーン目的「アプリ訴求」の場合、displayUrlLevelフィールドには「DOMAIN」の指定が必須になります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceDisplayUrlLevel describes a level of URL to display.<br>
+    This field is required in ADD operation, and will be optional in SET operation.<br>
+    If campaignGoal is APP_PROMOTION, "DOMAIN" must be specified in displayUrlLevel field.
+    </div>
+    <dl class=term>
+      <dt class="term__item">DOMAIN</dt>
+      <dd class="term__desc"><span lang="ja">ドメイン</span><span lang="en">Domain</span></dd>
+      <dt class="term__item">FIRST_LEVEL</dt>
+      <dd class="term__desc"><span lang="ja">第一階層</span><span lang="en">First level</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

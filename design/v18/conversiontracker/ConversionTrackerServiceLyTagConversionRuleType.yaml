@@ -1,0 +1,27 @@
+ConversionTrackerServiceLyTagConversionRuleType:
+  type: string
+  nullable: true
+  enum:
+    - URL
+    - EVENT_TYPE
+    - EVENT_SNIPPET
+    - UNKNOWN
+  description: |
+    <div lang="ja">
+    このフィールドは、計測タグの条件種別を表します。<br>
+    ADDおよびSET時は省略可能となります。ADD時、conversionTrackerTypeがLY_TAG_CONVERSIONの場合、必須です。
+    </div>
+    <div lang="en">
+    This field describes the types of conditions for the tracking tag.<br>
+    This field is optional in ADD AND SET operation. If conversionTrackerType is LY_TAG_CONVERSION, this field is required in ADD operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">URL</span><span lang="en">URL</span></dd>
+      <dt class="term__item">EVENT_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">イベントタイプ</span><span lang="en">Event type</span></dd>
+      <dt class="term__item">EVENT_SNIPPET</dt>
+      <dd class="term__desc"><span lang="ja">イベントスニペット</span><span lang="en">Event snippet</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

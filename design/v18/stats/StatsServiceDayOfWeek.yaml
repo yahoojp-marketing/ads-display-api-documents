@@ -1,0 +1,34 @@
+StatsServiceDayOfWeek:
+  type: string
+  nullable: true
+  enum:
+    - MONDAY
+    - TUESDAY
+    - WEDNESDAY
+    - THURSDAY
+    - FRIDAY
+    - SATURDAY
+    - SUNDAY
+    - UNKNOWN
+  title: StatsServiceDayOfWeek
+  description: |
+    <div lang="ja">StatsServiceDayOfWeekは、配信する曜日を表します。</div>
+    <div lang="en">StatsServiceDayOfWeek stands for the days of the week to deliver.</div>
+    <dl class=term>
+      <dt class="term__item">MONDAY</dt>
+      <dd class="term__desc"><span lang="ja">月曜日です。</span><span lang="en">Monday</span></dd>
+      <dt class="term__item">TUESDAY</dt>
+      <dd class="term__desc"><span lang="ja">火曜日です。</span><span lang="en">Tuesday</span></dd>
+      <dt class="term__item">WEDNESDAY</dt>
+      <dd class="term__desc"><span lang="ja">水曜日です。</span><span lang="en">Wednesday</span></dd>
+      <dt class="term__item">THURSDAY</dt>
+      <dd class="term__desc"><span lang="ja">木曜日です。</span><span lang="en">Thursday</span></dd>
+      <dt class="term__item">FRIDAY</dt>
+      <dd class="term__desc"><span lang="ja">金曜日です。</span><span lang="en">Friday</span></dd>
+      <dt class="term__item">SATURDAY</dt>
+      <dd class="term__desc"><span lang="ja">土曜日です。</span><span lang="en">Saturday</span></dd>
+      <dt class="term__item">SUNDAY</dt>
+      <dd class="term__desc"><span lang="ja">日曜日です。</span><span lang="en">Sunday</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

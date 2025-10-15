@@ -1,0 +1,103 @@
+CampaignServiceCampaignGoalSubtype:
+  type: string
+  nullable: true
+  enum:
+    - STANDARD
+    - INSTALL
+    - UNKNOWN
+  title: CampaignServiceCampaignGoalSubtype
+  description: |
+    <div lang="ja">
+    キャンペーン目的のサブタイプです。※β版のため不安定な挙動になる場合があります<br>
+    SETおよびREMOVE時、このフィールドは無視されます。<br>
+    <br>
+    ※campaignGoalSubtypeをINSTALLに設定する場合、以下の通りにパラメータを指定してキャンペーンを作成する必要があります。<br>
+    <table border='1'>
+      <tr>
+        <th></th>
+        <th>skanTcpaTargetType</th>
+        <th>skanOptimizeAdDeliveryEnabled</th>
+        <th>biddingStrategyType</th>
+        <th>biddingOption</th>
+        <th>conversionTracker</th>
+      </tr>
+      <tr>
+        <th>SKAdNetwork計測設定なしの場合</th>
+        <td>NULL</td>
+        <td>FALSE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>CPC もしくは VCPM</td>
+        <td>conversionTrackerTypeが"APP_CONVERSION"のconversionTrackerId</td>
+      </tr>
+      <tr>
+        <th>SKAdNetwork計測: インストール数（SKAN）の場合</th>
+        <td>SKAN_INSTALLS</td>
+        <td>TRUE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>VCPM</td>
+        <td>conversionTrackerTypeが"APP_CONVERSION"かつcategoryが"DOWNLOAD"のconversionTrackerId</td>
+      </tr>
+      <tr>
+        <th>SKAdNetwork計測: インストール数（SKANクリック経由）の場合</th>
+        <td>SKAN_INSTALLS_VIA_CLICK</td>
+        <td>TRUE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>CPC もしくは VCPM</td>
+        <td>conversionTrackerTypeが"APP_CONVERSION"かつcategoryが"DOWNLOAD"のconversionTrackerId</td>
+      </tr>
+    </table>
+    ※Yahoo!広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v18/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
+    ※広告管理ツールによるconversionTracker(コンバージョン測定)の設定については<a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=ja">こちら</a>をご確認ください。
+    </div>
+    </div>
+    <div lang="en">
+    Campaign goal subtype. *This parameter is in a beta phase and may result in unstable behavior.<br>
+    In SET and REMOVE operation, this field will be ignored.<br>
+    <br>
+    When setting campaignGoalSubtype to INSTALL, you must configure the campaign parameters as shown below.<br>
+    <table border='1'>
+      <tr>
+        <th></th>
+        <th>skanTcpaTargetType</th>
+        <th>skanOptimizeAdDeliveryEnabled</th>
+        <th>biddingStrategyType</th>
+        <th>biddingOption</th>
+        <th>conversionTracker</th>
+      </tr>
+      <tr>
+        <th>When skanTcpaTargetType is null</th>
+        <td>NULL</td>
+        <td>FALSE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>CPC or VCPM</td>
+        <td>Set conversionTrackerId whose conversionTrackerType is "APP_CONVERSION"</td>
+      </tr>
+      <tr>
+        <th>When skanTcpaTargetType is SKAN_INSTALLS</th>
+        <td>SKAN_INSTALLS</td>
+        <td>TRUE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>VCPM</td>
+        <td>Set conversionTrackerId whose conversionTrackerType is "APP_CONVERSION" and category is "DOWNLOAD"</td>
+      </tr>
+      <tr>
+        <th>When skanTcpaTargetType is SKAN_INSTALLS_VIA_CLICK</th>
+        <td>SKAN_INSTALLS_VIA_CLICK</td>
+        <td>TRUE</td>
+        <td>MAXIMIZE_CONVERSIONS</td>
+        <td>CPC or VCPM</td>
+        <td>Set conversionTrackerId whose conversionTrackerType is "APP_CONVERSION" and category is "DOWNLOAD"</td>
+      </tr>
+    </table>
+    ※To configure conversionTracker (conversion measurement) via the Yahoo! Ads API, please use <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v18/ConversionTrackerService/en/">ConversionTrackerService</a>.<br>
+    ※For configuring conversionTracker (conversion measurement) using the ad management tool, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=en_US">this page</a>
+    </div>
+    </div>
+    <dl class=term>
+      <dt class="term__item">STANDARD</dt>
+      <dd class="term__desc"><span lang="ja">標準</span><span lang="en">Standard</span></dd>
+      <dt class="term__item">INSTALL</dt>
+      <dd class="term__desc"><span lang="ja">インストール</span><span lang="en">Install</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

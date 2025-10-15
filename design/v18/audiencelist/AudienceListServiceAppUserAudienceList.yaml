@@ -1,0 +1,37 @@
+AudienceListServiceAppUserAudienceList:
+  type: object
+  nullable: true
+  properties:
+    isOpen:
+      $ref: 'AudienceListServiceIsOpen.yaml#/AudienceListServiceIsOpen'
+    isPreset:
+      $ref: 'AudienceListServiceIsPreset.yaml#/AudienceListServiceIsPreset'
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間（1日～540日）です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Data duration. (1 - 540 days) <br>
+        This field is required in ADD operation, and is optional in SET operation.
+        </div>
+    rules:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceRule.yaml#/AudienceListServiceRule'
+    appLink:
+      $ref: 'AudienceListServiceAppLink.yaml#/AudienceListServiceAppLink'
+  title: AudienceListServiceAppUserAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceAppUserAudienceListオブジェクトは、アプリユーザー情報を表します。<br>
+    </div>
+    <div lang="en">
+    AudienceListServiceAppUserAudienceList object describes audience list (app users data.)<br>
+    </div>
+  

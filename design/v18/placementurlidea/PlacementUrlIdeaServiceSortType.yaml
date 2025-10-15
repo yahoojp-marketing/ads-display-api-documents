@@ -1,0 +1,19 @@
+PlacementUrlIdeaServiceSortType:
+  type: string
+  nullable: true
+  enum:
+    - ASC
+    - DESC
+    - UNKNOWN
+  title: PlacementUrlIdeaServiceSortType
+  description: |
+    <div lang="ja">PlacementUrlIdeaServiceSortTypeオブジェクトは、ソート方法を表します。</div>
+    <div lang="en">PlacementUrlIdeaServiceSortType object is sorting method.</div>
+    <dl class=term>
+      <dt class="term__item">ASC</dt>
+      <dd class="term__desc"><span lang="ja">昇順です。</span><span lang="en">Ascending order</span></dd>
+      <dt class="term__item">DESC</dt>
+      <dd class="term__desc"><span lang="ja">降順です。</span><span lang="en">Descending order</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

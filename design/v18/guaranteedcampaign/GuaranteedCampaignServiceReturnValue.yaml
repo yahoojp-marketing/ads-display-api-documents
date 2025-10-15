@@ -1,0 +1,13 @@
+GuaranteedCampaignServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedCampaignServiceValue.yaml#/GuaranteedCampaignServiceValue'
+  title: GuaranteedCampaignServiceReturnValue
+  description: |
+    <div lang="ja">GuaranteedCampaignServiceReturnValueオブジェクトは、予約型のキャンペーンの情報を格納するコンテナです。</div>
+    <div lang="en">The GuaranteedCampaignServiceReturnValue object is a container for storing guaranteed campaign information.</div>

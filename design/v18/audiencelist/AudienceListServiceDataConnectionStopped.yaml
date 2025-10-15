@@ -1,0 +1,38 @@
+AudienceListServiceDataConnectionStopped:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AudienceListServiceDataConnectionStopped
+  description: |
+    <div lang="ja">
+      AudienceListServiceDataConnectionStoppedは、リストが連携停止中かどうかを示します。<br>
+      連携停止中の顧客データリストにはアップロードできません。<br>
+      以下は連携停止中の場合にリーチ数が0になります。<br>
+      - YADリスト<br>
+      - LINE公式アカウントの友だちリスト<br>
+      - LINE公式アカウントをブロック中の友だちリスト<br>
+      <br>
+      このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+      AudienceListServiceDataConnectionStopped shows whether the list is data connection stopped.<br>
+      You cannot upload to customer data lists with data connection stopped.<br>
+      The reach count will be 0 for the following lists when data connection is stopped:<br>
+      - YAD lists<br>
+      - LINE Official Account friends lists<br>
+      - LINE Official Account blocked friends lists<br>
+      <br>
+      Although this field will be returned in the response, it will be ignored on input.
+    </div>
+    <hr>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">連携停止中です。</span><span lang="en">Stopped</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">連携中です。</span><span lang="en">In progress</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

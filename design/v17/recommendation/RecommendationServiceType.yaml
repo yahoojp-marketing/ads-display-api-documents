@@ -50,7 +50,7 @@ RecommendationServiceType:
       <dt class="term__item">BID_STRATEGY_TO_TARGET_CPA</dt>
       <dd class="term__desc"><span lang="ja">自動入札（コンバージョン単価の目標値）に適しているキャンペーンです。</span><span lang="en">Campaigns that are suitable for using autobidding (target CPA).</span></dd>
       <dt class="term__item">SEARCH_KEYWORD_LIST_IDEA</dt>
-      <dd class="term__desc"><span lang="ja">追加を推奨するサーチキーワードです。</span><span lang="en">Recommended search keywords to add.</span></dd>
+      <dd class="term__desc"><span lang="ja">追加を推奨するサーチキーワードです。※ 提供を終了しました。</span><span lang="en">Recommended search keywords to add. * Discontinued.</span></dd>
       <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
       <dd class="term__desc"><span lang="ja">自動入札（コンバージョン数の最大化）への変更が推奨されるキャンペーンです。</span><span lang="en">Campaign that is recommended to change to Auto Bidding Type "Maximize Conversions."</span></dd>
       <dt class="term__item">MAXIMIZE_CLICKS</dt>
@@ -96,7 +96,7 @@ RecommendationServiceType:
       <dt class="term__item">INSUFFICIENT_ACCOUNT_BALANCE</dt>
       <dd class="term__desc"><span lang="ja">アカウント残高が少なくなっています。</span><span lang="en">Your account balance is low.</span></dd>
       <dt class="term__item">MISSING_PAYMENT_SETTINGS</dt>
-      <dd class="term__desc"><span lang="ja">クレジットカード情報が未設定です。※現在利用できません</span><span lang="en">Your credit card information is not set * Not Available.</span></dd>
+      <dd class="term__desc"><span lang="ja">クレジットカード情報が未設定です。</span><span lang="en">Your credit card information is not set.</span></dd>
       <dt class="term__item">AUDIENCE_LIST_NOT_ACCUMULATED</dt>
       <dd class="term__desc"><span lang="ja">オーディエンスリストが蓄積されていません</span><span lang="en">Audience List is not accumulated.</span></dd>
       <dt class="term__item">NOT_TARGETING_PROPER_AUDIENCE_LIST</dt>

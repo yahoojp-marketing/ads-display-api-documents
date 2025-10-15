@@ -1,0 +1,36 @@
+AudienceListServiceAppLink:
+  type: object
+  nullable: true
+  properties:
+    appId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        アプリIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        App ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    appVendor:
+      $ref: 'AudienceListServiceAppVendor.yaml#/AudienceListServiceAppVendor'
+    linkId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リンクIDです。<br>
+        このフィールドは、ADD時は必須となり、SET時は無視されます。
+        </div>
+        <div lang="en">
+        Link ID.<br>
+        This field is required in ADD operation, and will be ignored in SET operation.
+        </div>
+    appPlatform:
+      $ref: 'AudienceListServiceAppPlatform.yaml#/AudienceListServiceAppPlatform'
+  title: AudienceListServiceAppLink
+  description: |
+    <div lang="ja">AudienceListServiceAppLinkオブジェクトは、アプリリンクの詳細情報を表します。</div>
+    <div lang="en">AudienceListServiceAppLink object describes the detailed information of app link.</div>

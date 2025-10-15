@@ -1,0 +1,40 @@
+PlacementUrlIdeaServiceAdPlaceGroupFilterType:
+  type: string
+  nullable: true
+  enum:
+    - YAHOO_JAPAN_ALL
+    - YAHOO_JAPAN_SERVICE
+    - LINE_ALL
+    - LINE_SERVICE
+    - LINE_FAMILY_ALL
+    - OTHER
+    - UNKNOWN
+  title: PlacementUrlIdeaServiceAdPlaceGroupFilterType
+  description: |
+    <div lang="ja">
+    PlacementUrlIdeaServiceAdPlaceGroupFilterTypeは、検索対象の配信先グループ種別を表します。<br>
+    このフィールドは省略可能です。デフォルトでは全てのグループを検索対象とします。<br>
+    ※現在利用できません
+    </div>
+    <div lang="en">
+    PlacementUrlIdeaServiceAdPlaceGroupFilterType represents the type of ad place group to be searched.<br>
+    This field is optional. By default, all ad place groups are searched. <br>
+    *Currently not available.
+    </div>
+    <dl class=term>
+      <dt class="term__item">YAHOO_JAPAN_ALL</dt>
+      <dd class="term__desc"><span lang="ja">Yahoo! JAPAN面すべて</span><span lang="en">All Yahoo! JAPAN sites</span></dd>
+      <dt class="term__item">YAHOO_JAPAN_SERVICE</dt>
+      <dd class="term__desc"><span lang="ja">Yahoo! JAPAN 各サービス</span><span lang="en">Each Yahoo! JAPAN service</span></dd>
+      <dt class="term__item">LINE_ALL</dt>
+      <dd class="term__desc"><span lang="ja">LINE App面すべて</span><span lang="en">All LINE App sites</span></dd>
+      <dt class="term__item">LINE_SERVICE</dt>
+      <dd class="term__desc"><span lang="ja">LINE 各サービス</span><span lang="en">Each LINE service</span></dd>
+      <dt class="term__item">LINE_FAMILY_ALL</dt>
+      <dd class="term__desc"><span lang="ja">LINE Family Appすべて</span><span lang="en">All LINE Family Apps</span></dd>
+      <dt class="term__item">OTHER</dt>
+      <dd class="term__desc"><span lang="ja">その他 URL</span><span lang="en">Other URLs</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
+    

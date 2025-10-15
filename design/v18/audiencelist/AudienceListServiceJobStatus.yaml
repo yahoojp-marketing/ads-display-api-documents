@@ -1,0 +1,35 @@
+AudienceListServiceJobStatus:
+  type: string
+  nullable: true
+  enum:
+    - RECEIVING
+    - RECEIVED
+    - INVALID_FILE
+    - FAILED
+    - UNKNOWN
+  title: AudienceListServiceJobStatus
+  description: |
+    <div lang="ja">AudienceListServiceJobStatusはアップロードジョブの状態を示します。</div>
+    <div lang="en">AudienceListServiceJobStatus indicates the status of the upload job.</div>
+    <div lang="ja">
+      * ステータスが「RECEIVED」になった後、通常は数時間でユーザーリストの反映が完了します。<br>
+      * ステータスが「INVALID_FILE」の場合、ファイル内容やデータ数に問題がある、ファイルフォーマットが間違っている、あるいはファイルサイズが上限（1,073,741,824 byte）を超えています。詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。<br>
+      * ステータスが「FAILED」の場合、ファイル内容以外に起因する問題でジョブが正常に完了しなかったことを意味します。
+    </div>
+    <div lang="en">
+      * The user list will usually be reflected within a few hours after the status becomes "RECEIVED."<br>
+      * If the status is "INVALID_FILE", there is a problem with the file contents or the number of data entries, the file format is incorrect, or the file size exceeds the upper limit (1,073,741,824 bytes). Please refer to the <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a> for more details.<br>
+      * If the status is "FAILED", it means that the job did not complete successfully due to a problem other than the file contents.
+    </div>
+    <dl class=term>
+      <dt class="term__item">RECEIVING</dt>
+      <dd class="term__desc"><span lang="ja">データ取り込み中です。</span><span lang="en">Data is being imported.</span></dd>
+      <dt class="term__item">RECEIVED</dt>
+      <dd class="term__desc"><span lang="ja">データ取り込み完了です。</span><span lang="en">Importing data is completed.</span></dd>
+      <dt class="term__item">INVALID_FILE</dt>
+      <dd class="term__desc"><span lang="ja">ファイルフォーマットエラーです。</span><span lang="en">File format error.</span></dd>
+      <dt class="term__item">FAILED</dt>
+      <dd class="term__desc"><span lang="ja">ジョブが失敗しました。</span><span lang="en">Job failed.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+    </dl>

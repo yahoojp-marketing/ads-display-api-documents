@@ -212,12 +212,14 @@ Campaign:
         <div lang="ja">
         キャンペーン掲載タイプです。<br>
         このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
-        CampaignDeliveryTypeを指定してのキャンペーン作成は、一部の利用者向けの機能となります。
+        CampaignDeliveryTypeを指定してのキャンペーン作成は、一部の利用者向けの機能となります。<br>
+        ※キャンペーン掲載タイプ PRIVATE_MARKET_PLACE はレスポンスの際に返却されますが、リクエストの際には無視されます。
         </div>
         <div lang="en">
         Campaign delivery type.<br>
         This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
-        Creating a campaign with the CampaignDeliveryType specified is a function for some users.
+        Creating a campaign with the CampaignDeliveryType specified is a function for some users.<br>
+        *Campaign delivery type PRIVATE_MARKET_PLACE will be returned in the response, but will be ignored in the request.
         </div>
     createdDate:
       type: string

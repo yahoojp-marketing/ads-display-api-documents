@@ -1,0 +1,17 @@
+BalanceServiceAvailableBalanceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+  title: BalanceServiceAvailableBalanceSelector
+  description: |
+    <div lang="ja">BalanceServiceAvailableBalanceSelectorオブジェクトは、操作対象となる推定現金残高情報を表します。</div>
+    <div lang="en">BalanceServiceAvailableBalanceSelector object describes estimated cash balance information to be operated.</div>

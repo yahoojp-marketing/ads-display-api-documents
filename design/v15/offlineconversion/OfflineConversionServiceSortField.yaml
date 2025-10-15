@@ -8,7 +8,7 @@ OfflineConversionServiceSortField:
   - UPLOADED_DATE
   - UNKNOWN
   title: OfflineConversionServiceSortField
-  description:
+  description: |
     <div lang="ja">ソートフィールド名です。</div>
     <div lang="en">Sort field name.</div>
     <dl class=term>

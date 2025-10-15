@@ -1,0 +1,54 @@
+BiddingStrategyServiceBudget:
+  type: object
+  nullable: true
+  properties:
+    campaignBudgetId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">共有予算IDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">CampaignBudget ID.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    campaignBudgetName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">共有予算名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">CampaignBudget name.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    amount:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">共有予算の金額です。<br>
+        ADD時およびSET時、このフィールドは省略可能となります。<br>
+        ADD時、新規共有予算を作成してポートフォリオに紐づけます<br>
+        SET時、ポートフォリオに共有予算が紐づいていない場合は新規共有予算を作成してポートフォリオに紐づけます<br>
+        SET時、ポートフォリオに共有予算が紐づいている場合は共有予算の金額を更新します
+        </div>
+        <div lang="en">Amount of budget of Campaign.<br>
+        This field is optional in ADD and SET operation.<br>
+        Create a new CampaignBudget and link it in ADD operation.<br>
+        If CampaignBudget is not linked the portfolio, create a new CampaignBudget and link it in SET operation.<br>
+        If CampaignBudget is linked the portfolio, the amount of the CampaignBudget will be updated in SET operation.
+        </div>
+    isRemoveCampaignBudget:
+      $ref: 'BiddingStrategyServiceIsRemoveCampaignBudgetFlg.yaml#/BiddingStrategyServiceIsRemoveCampaignBudgetFlg'
+  title: BiddingStrategyServiceBudget
+  description: |
+    <div lang="ja">
+    BiddingStrategyServiceBudgetオブジェクトは、キャンペーン共有予算に関する情報を表します。<br>
+    ADD時およびSET時、このフィールドは省略可能となります。
+    </div>
+    <div lang="en">
+    The BiddingStrategyServiceBudget object serves campaign budgets.<br>
+    This field is optional in ADD and SET operation.
+    </div>

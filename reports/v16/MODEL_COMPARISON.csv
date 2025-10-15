@@ -8,6 +8,7 @@
 "CAMPAIGN_GOALS","キャンペーン目的","Campaign goals","campaignGoals","STRING",,"Segment","ブランド認知,動画再生,サイト誘導,アプリ訴求,コンバージョン,商品リスト訴求,来店促進,PayPayギフト,友だち追加,未設定","Brand awareness,Video view,Website traffic,App promotion,Conversions,Item list promotion,Store-visit promotion,PayPay Gift,Gain friends,None",""
 "CAMPAIGN_SUBTYPE","キャンペーンサブタイプ","Campaign subtype","campaignSubtype","STRING",,"Attribute","標準,インストール","Standard,Install",""
 "CAMPAIGN_BUYING_TYPE","キャンペーン購入タイプ","Campaign buying type","campaignBuyingType","STRING",,"Attribute","運用型,予約型","Auction,Guaranteed",""
+"DEAL_TYPE","商品種別","Package type","dealType","STRING",,"Attribute","Preferred Deal,Private Auction","Preferred deal,Private auction",""
 "COST_FOR_MODEL_COMPARISON","コスト","Cost","cost","DOUBLE",,"Metric","","","データを取得できない場合、--が設定されます。 / When failed to acquire data, a -- will be set."
 "BASE_MODEL","比較元モデル","Base model","baseModel","STRING",,"Attribute","ラストタッチ,ファーストタッチ,線形,接点ベース","Last touch,First touch,Linear,Position-based",""
 "COMPARATIVE_MODEL","比較先モデル","Comparative model","comparativeModel","STRING",,"Attribute","ラストタッチ,ファーストタッチ,線形,接点ベース","Last touch,First touch,Linear,Position-based",""
