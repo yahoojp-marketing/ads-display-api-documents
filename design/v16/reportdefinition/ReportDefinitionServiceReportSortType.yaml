@@ -2,9 +2,9 @@ ReportDefinitionServiceReportSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: ReportDefinitionServiceReportSortType
   description: |
     <div lang="ja">

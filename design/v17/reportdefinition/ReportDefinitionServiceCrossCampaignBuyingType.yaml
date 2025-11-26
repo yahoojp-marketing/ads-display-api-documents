@@ -2,9 +2,9 @@ ReportDefinitionServiceCrossCampaignBuyingType:
   type: string
   nullable: true
   enum:
-  - AUCTION
-  - GUARANTEED
-  - UNKNOWN
+    - AUCTION
+    - GUARANTEED
+    - UNKNOWN
   title: ReportDefinitionServiceCrossCampaignBuyingType
   description: |
     <div lang="ja">

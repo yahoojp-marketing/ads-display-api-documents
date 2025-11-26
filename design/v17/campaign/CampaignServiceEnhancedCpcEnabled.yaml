@@ -2,9 +2,9 @@ CampaignServiceEnhancedCpcEnabled:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: CampaignServiceEnhancedCpcEnabled
   description: |
     <div lang="ja">

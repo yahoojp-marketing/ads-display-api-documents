@@ -2,13 +2,13 @@ SearchKeywordIdeaServiceSortField:
   type: string
   nullable: true
   enum:
-  - KEYWORD
-  - KEYWORD_ID
-  - DESKTOP_SEARCH_VOLUME
-  - SMART_PHONE_SEARCH_VOLUME
-  - TABLET_SEARCH_VOLUME
-  - RELEASE_DATE
-  - UNKNOWN
+    - KEYWORD
+    - KEYWORD_ID
+    - DESKTOP_SEARCH_VOLUME
+    - SMART_PHONE_SEARCH_VOLUME
+    - TABLET_SEARCH_VOLUME
+    - RELEASE_DATE
+    - UNKNOWN
   title: SearchKeywordIdeaServiceSortField
   description: |
     <div lang="ja">SearchKeywordIdeaServiceSortFieldオブジェクトは、ソート対象項目です。</div>

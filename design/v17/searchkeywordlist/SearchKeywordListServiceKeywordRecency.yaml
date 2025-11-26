@@ -2,12 +2,12 @@ SearchKeywordListServiceKeywordRecency:
   type: string
   nullable: true
   enum:
-  - WITHIN_1DAY
-  - WITHIN_3DAYS
-  - WITHIN_7DAYS
-  - WITHIN_14DAYS
-  - WITHIN_30DAYS
-  - UNKNOWN
+    - WITHIN_1DAY
+    - WITHIN_3DAYS
+    - WITHIN_7DAYS
+    - WITHIN_14DAYS
+    - WITHIN_30DAYS
+    - UNKNOWN
   title: SearchKeywordListServiceKeywordRecency
   description: |
     <div lang="ja">

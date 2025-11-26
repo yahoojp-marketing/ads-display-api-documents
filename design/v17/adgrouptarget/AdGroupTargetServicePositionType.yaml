@@ -2,10 +2,10 @@ AdGroupTargetServicePositionType:
   type: string
   nullable: true
   enum:
-  - INSTREAM_PREROLL
-  - INSTREAM_MIDROLL
-  - INSTREAM_POSTROLL
-  - UNKNOWN
+    - INSTREAM_PREROLL
+    - INSTREAM_MIDROLL
+    - INSTREAM_POSTROLL
+    - UNKNOWN
   title: AdGroupTargetServicePositionType
   description: |
     <div lang="ja">AdGroupTargetServicePositionTypeは、インストリーム広告のポジションの種類を表します。</div>

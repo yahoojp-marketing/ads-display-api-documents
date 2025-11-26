@@ -2,9 +2,9 @@ AccountManagementServiceAutoTaggingEnabled:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: AccountManagementServiceAutoTaggingEnabled
   description: |
     <div lang="ja">

@@ -2,9 +2,9 @@ StatsServicePlacementUrlListType:
   type: string
   nullable: true
   enum:
-  - WHITE_LIST
-  - BLACK_LIST
-  - UNKNOWN
+    - WHITE_LIST
+    - BLACK_LIST
+    - UNKNOWN
   title: StatsServicePlacementUrlListType
   description: |
     <div lang="ja">StatsServicePlacementUrlListTypeは、プレイスメントURLリストの種別を表します。</div>

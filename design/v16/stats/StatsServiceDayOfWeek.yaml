@@ -2,14 +2,14 @@ StatsServiceDayOfWeek:
   type: string
   nullable: true
   enum:
-  - MONDAY
-  - TUESDAY
-  - WEDNESDAY
-  - THURSDAY
-  - FRIDAY
-  - SATURDAY
-  - SUNDAY
-  - UNKNOWN
+    - MONDAY
+    - TUESDAY
+    - WEDNESDAY
+    - THURSDAY
+    - FRIDAY
+    - SATURDAY
+    - SUNDAY
+    - UNKNOWN
   title: StatsServiceDayOfWeek
   description: |
     <div lang="ja">StatsServiceDayOfWeekは、配信する曜日を表します。</div>

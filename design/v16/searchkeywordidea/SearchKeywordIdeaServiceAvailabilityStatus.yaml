@@ -2,9 +2,9 @@ SearchKeywordIdeaServiceAvailabilityStatus:
   type: string
   nullable: true
   enum:
-  - AVAILABLE
-  - UNAVAILABLE
-  - UNKNOWN
+    - AVAILABLE
+    - UNAVAILABLE
+    - UNKNOWN
   title: SearchKeywordIdeaServiceAvailabilityStatus
   description: |
     <div lang="ja">SearchKeywordIdeaServiceAvailabilityStatusオブジェクトは、サーチターゲティング対象キーワードの利用可否を表します。</div>

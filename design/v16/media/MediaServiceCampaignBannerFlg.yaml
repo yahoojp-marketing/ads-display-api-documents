@@ -2,9 +2,9 @@ MediaServiceCampaignBannerFlg:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: MediaServiceCampaignBannerFlg
   description: |
     <div lang="ja">

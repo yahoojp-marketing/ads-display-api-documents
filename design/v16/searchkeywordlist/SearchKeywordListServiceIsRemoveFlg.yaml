@@ -2,9 +2,9 @@ SearchKeywordListServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: SearchKeywordListServiceIsRemoveFlg
   description: |
     <div lang="ja">

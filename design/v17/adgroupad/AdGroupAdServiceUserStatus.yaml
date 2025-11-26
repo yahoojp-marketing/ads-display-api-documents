@@ -2,9 +2,9 @@ AdGroupAdServiceUserStatus:
   type: string
   nullable: true
   enum:
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: AdGroupAdServiceUserStatus
   description: |
     <div lang="ja">

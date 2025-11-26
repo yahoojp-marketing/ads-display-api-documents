@@ -2,9 +2,9 @@ VideoServiceDownloadSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - mediaId
-  - qualityType
+    - accountId
+    - mediaId
+    - qualityType
   properties:
     accountId:
       type: integer

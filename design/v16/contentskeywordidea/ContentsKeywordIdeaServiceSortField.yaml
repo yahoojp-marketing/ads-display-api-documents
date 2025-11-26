@@ -2,11 +2,11 @@ ContentsKeywordIdeaServiceSortField:
   type: string
   nullable: true
   enum:
-  - KEYWORD
-  - KEYWORD_ID
-  - SEARCH_VOLUME
-  - CREATED_DATE
-  - UNKNOWN
+    - KEYWORD
+    - KEYWORD_ID
+    - SEARCH_VOLUME
+    - CREATED_DATE
+    - UNKNOWN
   title: ContentsKeywordIdeaServiceSortField
   description: |
     <div lang="ja">

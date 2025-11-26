@@ -2,10 +2,10 @@ SearchKeywordListServiceKeywordFrequency:
   type: string
   nullable: true
   enum:
-  - ONCE_OR_MORE
-  - TWICE_OR_MORE
-  - THREE_TIMES_OR_MORE
-  - UNKNOWN
+    - ONCE_OR_MORE
+    - TWICE_OR_MORE
+    - THREE_TIMES_OR_MORE
+    - UNKNOWN
   title: SearchKeywordListServiceKeywordFrequency
   description: |
     <div lang="ja">

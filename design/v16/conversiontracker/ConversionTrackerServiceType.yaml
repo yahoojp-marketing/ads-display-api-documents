@@ -2,10 +2,10 @@ ConversionTrackerServiceType:
   type: string
   nullable: true
   enum:
-  - WEB_CONVERSION
-  - APP_CONVERSION
-  - IMPORT_CONVERSION
-  - UNKNOWN
+    - WEB_CONVERSION
+    - APP_CONVERSION
+    - IMPORT_CONVERSION
+    - UNKNOWN
   title: ConversionTrackerServiceType
   description: |
     <div lang="ja">

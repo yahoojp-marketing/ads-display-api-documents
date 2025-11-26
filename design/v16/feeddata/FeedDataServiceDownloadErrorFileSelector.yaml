@@ -2,8 +2,8 @@ FeedDataServiceDownloadErrorFileSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - itemListUploadId
+    - accountId
+    - itemListUploadId
   properties:
     accountId:
       type: integer

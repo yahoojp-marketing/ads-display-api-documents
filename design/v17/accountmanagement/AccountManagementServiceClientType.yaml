@@ -2,9 +2,9 @@ AccountManagementServiceClientType:
   type: string
   nullable: true
   enum:
-  - AGENT
-  - SELF
-  - UNKNOWN
+    - AGENT
+    - SELF
+    - UNKNOWN
   title: AccountManagementServiceClientType
   description: |
     <div lang="ja">

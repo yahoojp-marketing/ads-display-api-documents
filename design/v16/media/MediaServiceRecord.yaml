@@ -92,4 +92,4 @@ MediaServiceRecord:
   description: |
     <div lang="ja">MediaServiceRecordオブジェクトは、画像の情報を表します。</div>
     <div lang="en">The MediaServiceRecord object is a container for the information of media (image data).</div>
-   
+

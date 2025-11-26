@@ -2,15 +2,15 @@ ConversionTrackerServiceLyTagConversionCompareOperator:
   type: string
   nullable: true
   enum:
-  - INCLUDED
-  - EQUAL
-  - START_WITH
-  - END_WITH
-  - NOT_EQUAL
-  - NOT_INCLUDED
-  - NOT_START_WITH
-  - NOT_END_WITH
-  - UNKNOWN
+    - INCLUDED
+    - EQUAL
+    - START_WITH
+    - END_WITH
+    - NOT_EQUAL
+    - NOT_INCLUDED
+    - NOT_START_WITH
+    - NOT_END_WITH
+    - UNKNOWN
   description: |
     <div lang="ja">
     このフィールドは、計測タグのURLフィルター条件の種類を表します。<br>

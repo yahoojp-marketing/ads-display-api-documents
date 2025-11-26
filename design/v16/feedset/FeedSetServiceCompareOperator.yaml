@@ -2,11 +2,11 @@ FeedSetServiceCompareOperator:
   type: string
   nullable: true
   enum:
-  - EQUAL
-  - NOT_EQUAL
-  - GREATER_THAN_EQUALS
-  - LESS_THAN_EQUALS
-  - UNKNOWN
+    - EQUAL
+    - NOT_EQUAL
+    - GREATER_THAN_EQUALS
+    - LESS_THAN_EQUALS
+    - UNKNOWN
   title: FeedSetServiceCompareOperator
   description: |
     <div lang="ja">

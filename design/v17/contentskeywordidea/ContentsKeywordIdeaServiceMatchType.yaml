@@ -2,9 +2,9 @@ ContentsKeywordIdeaServiceMatchType:
   type: string
   nullable: true
   enum:
-  - EXACT
-  - BROAD
-  - UNKNOWN
+    - EXACT
+    - BROAD
+    - UNKNOWN
   title: ContentsKeywordIdeaServiceMatchType
   description: |
     <div lang="ja">ContentsKeywordIdeaServiceMatchTypeオブジェクトは、検索方法を表します。</div>

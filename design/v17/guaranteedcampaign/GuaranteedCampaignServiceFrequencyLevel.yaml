@@ -2,8 +2,8 @@ GuaranteedCampaignServiceFrequencyLevel:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN
-  - UNKNOWN
+    - CAMPAIGN
+    - UNKNOWN
   title: GuaranteedCampaignServiceFrequencyLevel
   description: |
     <div lang="ja">

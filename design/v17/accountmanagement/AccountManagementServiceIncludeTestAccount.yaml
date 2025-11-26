@@ -2,10 +2,10 @@ AccountManagementServiceIncludeTestAccount:
   type: string
   nullable: true
   enum:
-  - ONLY_TEST
-  - EXCLUDE_TEST
-  - ALL
-  - UNKNOWN
+    - ONLY_TEST
+    - EXCLUDE_TEST
+    - ALL
+    - UNKNOWN
   title: AccountManagementServiceIncludeTestAccount
   description: |
     <div lang="ja">取得アカウント制御</div>

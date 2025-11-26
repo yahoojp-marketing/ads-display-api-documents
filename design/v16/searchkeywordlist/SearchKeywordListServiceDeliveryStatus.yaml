@@ -2,9 +2,9 @@ SearchKeywordListServiceDeliveryStatus:
   type: string
   nullable: true
   enum:
-  - PAUSED
-  - ACTIVE
-  - UNKNOWN
+    - PAUSED
+    - ACTIVE
+    - UNKNOWN
   title: SearchKeywordListServiceDeliveryStatus
   description: |
     <div lang="ja">SearchKeywordListServiceDeliveryStatusは、サーチキーワードリストの状態を表します。</div>

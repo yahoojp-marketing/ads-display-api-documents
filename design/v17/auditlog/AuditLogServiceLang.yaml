@@ -2,9 +2,9 @@ AuditLogServiceLang:
   type: string
   nullable: true
   enum:
-  - JA
-  - EN
-  - UNKNOWN
+    - JA
+    - EN
+    - UNKNOWN
   title: AuditLogServiceLang
   description: |
     <div lang="ja">

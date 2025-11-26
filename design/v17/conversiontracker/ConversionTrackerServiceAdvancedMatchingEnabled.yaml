@@ -2,9 +2,9 @@ ConversionTrackerServiceAdvancedMatchingEnabled:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: ConversionTrackerServiceAdvancedMatchingEnabled
   description: |
     <div lang="ja">

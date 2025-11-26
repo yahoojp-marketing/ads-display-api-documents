@@ -2,12 +2,12 @@ ReportDefinitionServiceReportJobStatus:
   type: string
   nullable: true
   enum:
-  - WAIT
-  - IN_PROGRESS
-  - COMPLETED
-  - CANCELED
-  - FAILED
-  - UNKNOWN
+    - WAIT
+    - IN_PROGRESS
+    - COMPLETED
+    - CANCELED
+    - FAILED
+    - UNKNOWN
   title: ReportDefinitionServiceReportJobStatus
   description: |
     <div lang="ja">

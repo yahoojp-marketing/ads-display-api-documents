@@ -2,9 +2,9 @@ StatsServiceEstimateFlg:
   type: string
   nullable: true
   enum:
-  - PAUSED
-  - ACTIVE
-  - UNKNOWN
+    - PAUSED
+    - ACTIVE
+    - UNKNOWN
   title: StatsServiceEstimateFlg
   description: |
     <div lang="ja">StatsServiceEstimateFlgは、拡張配信の設定有無を表します。</div>

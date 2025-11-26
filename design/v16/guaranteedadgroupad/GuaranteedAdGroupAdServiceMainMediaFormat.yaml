@@ -2,9 +2,9 @@ GuaranteedAdGroupAdServiceMainMediaFormat:
   type: string
   nullable: true
   enum:
-  - IMAGE
-  - VIDEO
-  - UNKNOWN
+    - IMAGE
+    - VIDEO
+    - UNKNOWN
   title: GuaranteedAdGroupAdServiceMainMediaFormat
   description: |
     <div lang="ja">

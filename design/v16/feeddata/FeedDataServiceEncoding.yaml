@@ -2,10 +2,10 @@ FeedDataServiceEncoding:
   type: string
   nullable: true
   enum:
-  - UTF8
-  - UTF8_BOM
-  - UTF16LE
-  - UNKNOWN
+    - UTF8
+    - UTF8_BOM
+    - UTF16LE
+    - UNKNOWN
   title: FeedDataServiceEncoding
   description: |
     <div lang="ja">FeedDataServiceEncodingは、商品情報のエラーファイルのエンコーディング形式（文字コード）を表します。<br>

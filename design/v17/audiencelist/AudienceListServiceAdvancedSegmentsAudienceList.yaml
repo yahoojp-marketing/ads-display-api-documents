@@ -2,18 +2,18 @@ AudienceListServiceAdvancedSegmentsAudienceList:
   type: object
   nullable: true
   properties:
-      keywords:
-        type: array
-        nullable: true
-        items:
-          $ref: 'AudienceListServiceAdvancedSegmentsKeyword.yaml#/AudienceListServiceAdvancedSegmentsKeyword'
-      urls:
-        type: array
-        nullable: true
-        items:
-          $ref: 'AudienceListServiceAdvancedSegmentsUrl.yaml#/AudienceListServiceAdvancedSegmentsUrl'
-      isCurrentlyTotaling:
-        $ref: 'AudienceListServiceIsCurrentlyTotaling.yaml#/AudienceListServiceIsCurrentlyTotaling'
+    keywords:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceAdvancedSegmentsKeyword.yaml#/AudienceListServiceAdvancedSegmentsKeyword'
+    urls:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceAdvancedSegmentsUrl.yaml#/AudienceListServiceAdvancedSegmentsUrl'
+    isCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsCurrentlyTotaling.yaml#/AudienceListServiceIsCurrentlyTotaling'
   title: AudienceListServiceAdvancedSegmentsAudienceList
   description: |
     <div lang="ja">
@@ -26,4 +26,4 @@ AudienceListServiceAdvancedSegmentsAudienceList:
     This field is optional in ADD and SET operation.<br>
     *If audienceListType is ADVANCED_SEGMENTS, this field is required in ADD and SET operation.
     </div>
-  
+

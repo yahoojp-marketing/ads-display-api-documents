@@ -2,11 +2,11 @@ AuditLogServiceEncoding:
   type: string
   nullable: true
   enum:
-  - SJIS
-  - UTF8
-  - UTF8_BOM
-  - UTF16LE
-  - UNKNOWN
+    - SJIS
+    - UTF8
+    - UTF8_BOM
+    - UTF16LE
+    - UNKNOWN
   title: AuditLogServiceEncoding
   description: |
     <div lang="ja">AuditLogServiceEncodingは、操作履歴ファイルのエンコーディング形式（文字コード）を表します。<br>

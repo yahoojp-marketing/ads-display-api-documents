@@ -2,9 +2,9 @@ StatsServiceDeviceOsType:
   type: string
   nullable: true
   enum:
-  - IOS
-  - ANDROID
-  - UNKNOWN
+    - IOS
+    - ANDROID
+    - UNKNOWN
   title: StatsServiceDeviceOsType
   description: |
     <div lang="ja">StatsServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>

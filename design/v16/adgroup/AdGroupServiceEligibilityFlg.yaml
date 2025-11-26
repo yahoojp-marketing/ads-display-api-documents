@@ -2,9 +2,9 @@ AdGroupServiceEligibilityFlg:
   type: string
   nullable: true
   enum:
-  - ENABLE
-  - DISABLE
-  - UNKNOWN
+    - ENABLE
+    - DISABLE
+    - UNKNOWN
   title: AdGroupServiceEligibilityFlg
   description: |
     <div lang="ja">

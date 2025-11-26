@@ -2,9 +2,9 @@ GuaranteedCampaignServiceCampaignBiddingStrategyType:
   type: string
   nullable: true
   enum:
-  - VCPM
-  - SOV
-  - UNKNOWN
+    - VCPM
+    - SOV
+    - UNKNOWN
   title: GuaranteedCampaignServiceCampaignBiddingStrategyType
   description: |
     <div lang="ja">

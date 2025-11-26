@@ -2,12 +2,12 @@ AdGroupAdServiceApprovalStatus:
   type: string
   nullable: true
   enum:
-  - APPROVED
-  - APPROVED_WITH_REVIEW
-  - REVIEW
-  - PRE_DISAPPROVED
-  - POST_DISAPPROVED
-  - UNKNOWN
+    - APPROVED
+    - APPROVED_WITH_REVIEW
+    - REVIEW
+    - PRE_DISAPPROVED
+    - POST_DISAPPROVED
+    - UNKNOWN
   title: AdGroupAdServiceApprovalStatus
   description: |
     <div lang="ja">

@@ -2,10 +2,10 @@ RetargetingTagServiceApprovalStatus:
   type: string
   nullable: true
   enum:
-  - AVAILABLE
-  - DISAPPROVED
-  - DISAPPROVED_WITH_REVIEW
-  - UNKNOWN
+    - AVAILABLE
+    - DISAPPROVED
+    - DISAPPROVED_WITH_REVIEW
+    - UNKNOWN
   title: RetargetingTagServiceApprovalStatus
   description: |
     <div lang="ja">RetargetingTagServiceApprovalStatusは、サイトリターゲティング のタグ承認のステータスを表示します。</div>

@@ -2,12 +2,12 @@ AccountManagementServiceStatus:
   type: string
   nullable: true
   enum:
-  - INPROGRESS
-  - WAIT_DECIDE
-  - SUSPENDED
-  - SERVING
-  - ENDED
-  - UNKNOWN
+    - INPROGRESS
+    - WAIT_DECIDE
+    - SUSPENDED
+    - SERVING
+    - ENDED
+    - UNKNOWN
   title: AccountManagementServiceStatus
   description: |
     <div lang="ja">

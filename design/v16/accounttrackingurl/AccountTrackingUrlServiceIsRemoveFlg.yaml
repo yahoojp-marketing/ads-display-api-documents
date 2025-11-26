@@ -2,9 +2,9 @@ AccountTrackingUrlServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AccountTrackingUrlServiceIsRemoveFlg
   description: |
     <div lang="ja">

@@ -2,8 +2,8 @@ MediaServiceDownloadSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - mediaId
+    - accountId
+    - mediaId
   properties:
     accountId:
       type: integer

@@ -2,10 +2,10 @@ AudienceListServiceLogicalOperator:
   type: string
   nullable: true
   enum:
-  - OR
-  - AND
-  - NOTIN
-  - UNKNOWN
+    - OR
+    - AND
+    - NOTIN
+    - UNKNOWN
   title: AudienceListServiceLogicalOperator
   description: |
     <div lang="ja">

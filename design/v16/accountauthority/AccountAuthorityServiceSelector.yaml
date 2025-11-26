@@ -2,7 +2,7 @@ AccountAuthorityServiceSelector:
   type: object
   nullable: true
   required:
-  - accountIds
+    - accountIds
   properties:
     accountIds:
       type: array

@@ -2,10 +2,10 @@ BaseAccountServiceIncludeTestAccount:
   type: string
   nullable: true
   enum:
-  - ONLY_TEST
-  - EXCLUDE_TEST
-  - ALL
-  - UNKNOWN
+    - ONLY_TEST
+    - EXCLUDE_TEST
+    - ALL
+    - UNKNOWN
   title: BaseAccountServiceIncludeTestAccount
   description: |
     <div lang="ja">

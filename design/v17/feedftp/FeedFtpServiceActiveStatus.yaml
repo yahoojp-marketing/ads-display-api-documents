@@ -2,9 +2,9 @@ FeedFtpServiceActiveStatus:
   type: string
   nullable: true
   enum:
-  - INACTIVE
-  - ACTIVE
-  - UNKNOWN
+    - INACTIVE
+    - ACTIVE
+    - UNKNOWN
   title: FeedFtpServiceActiveStatus
   description: |
     <div lang="ja">

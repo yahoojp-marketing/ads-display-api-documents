@@ -2,15 +2,15 @@ AudienceListServiceCompareOperator:
   type: string
   nullable: true
   enum:
-  - EQUAL
-  - INCLUDED
-  - START_WITH
-  - END_WITH
-  - NOT_EQUAL
-  - NOT_INCLUDED
-  - NOT_START_WITH
-  - NOT_END_WITH
-  - UNKNOWN
+    - EQUAL
+    - INCLUDED
+    - START_WITH
+    - END_WITH
+    - NOT_EQUAL
+    - NOT_INCLUDED
+    - NOT_START_WITH
+    - NOT_END_WITH
+    - UNKNOWN
   title: AudienceListServiceCompareOperator
   description: |
     <div lang="ja">

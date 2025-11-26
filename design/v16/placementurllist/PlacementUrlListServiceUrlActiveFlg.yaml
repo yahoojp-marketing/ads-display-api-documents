@@ -2,9 +2,9 @@ PlacementUrlListServiceUrlActiveFlg:
   type: string
   nullable: true
   enum:
-  - PAUSED
-  - ACTIVE
-  - UNKNOWN
+    - PAUSED
+    - ACTIVE
+    - UNKNOWN
   title: PlacementUrlListServiceUrlActiveFlg
   description: |
     <div lang="ja">

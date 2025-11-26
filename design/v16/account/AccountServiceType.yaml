@@ -2,9 +2,9 @@ AccountServiceType:
   type: string
   nullable: true
   enum:
-  - PREPAY
-  - INVOICE
-  - UNKNOWN
+    - PREPAY
+    - INVOICE
+    - UNKNOWN
   title: AccountServiceType
   description: |
     <div lang="ja">AccountServiceTypeは、アカウントの料金支払い種別を表します。<br>

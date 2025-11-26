@@ -2,10 +2,10 @@ CampaignServiceOptimizerTrainingStatus:
   type: string
   nullable: true
   enum:
-  - PROCESSING
-  - COMPLETED
-  - PAUSED
-  - UNKNOWN
+    - PROCESSING
+    - COMPLETED
+    - PAUSED
+    - UNKNOWN
   title: CampaignServiceOptimizerTrainingStatus
   description: |
     <div lang="ja">

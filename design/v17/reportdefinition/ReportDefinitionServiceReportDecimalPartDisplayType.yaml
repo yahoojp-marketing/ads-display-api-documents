@@ -2,9 +2,9 @@ ReportDefinitionServiceReportDecimalPartDisplayType:
   type: string
   nullable: true
   enum:
-  - FULL_DISPLAY
-  - SIMPLE_DISPLAY
-  - UNKNOWN
+    - FULL_DISPLAY
+    - SIMPLE_DISPLAY
+    - UNKNOWN
   title: ReportDefinitionServiceReportDecimalPartDisplayType
   description: |
     <div lang="ja">ReportDefinitionServiceReportDecimalPartDisplayTypeは、小数項目の表示タイプを表します。<br>

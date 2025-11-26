@@ -2,8 +2,8 @@ AdGroupTargetServiceSortField:
   type: string
   nullable: true
   enum:
-  - AREA_SEARCH_TYPE
-  - UNKNOWN
+    - AREA_SEARCH_TYPE
+    - UNKNOWN
   title: AdGroupTargetServiceSortField
   description: |
     <div lang="ja">AdGroupTargetServiceSortFieldオブジェクトは、ソート対象項目です。</div>

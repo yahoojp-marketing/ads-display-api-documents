@@ -2,8 +2,8 @@ AudienceListServiceLineOaBlockAudienceList:
   type: object
   nullable: true
   properties:
-      isZeroOrCurrentlyTotaling:
-        $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
+    isZeroOrCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
   title: AudienceListServiceLineOaBlockAudienceList
   description: |
     <div lang="ja">
@@ -18,4 +18,4 @@ AudienceListServiceLineOaBlockAudienceList:
     This field is optional in ADD and SET operation.<br>
     *If audienceListType is LINE_OA_BLOCK, this field is required in ADD and SET operation.
     </div>
-  
+

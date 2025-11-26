@@ -2,10 +2,10 @@ OfflineConversionServiceUploadSourceType:
   type: string
   nullable: true
   enum:
-  - API
-  - YAHOO_JAPAN
-  - CAMPAIGN_MANAGEMENT_TOOL
-  - UNKNOWN
+    - API
+    - YAHOO_JAPAN
+    - CAMPAIGN_MANAGEMENT_TOOL
+    - UNKNOWN
   title: OfflineConversionServiceUploadSourceType
   description: |
     <div lang="ja">OfflineConversionServiceUploadSourceTypeは、操作履歴における操作者を表します。</div>

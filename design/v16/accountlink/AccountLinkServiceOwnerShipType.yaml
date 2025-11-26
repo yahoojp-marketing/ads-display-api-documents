@@ -2,9 +2,9 @@ AccountLinkServiceOwnerShipType:
   type: string
   nullable: true
   enum:
-  - OWNER
-  - NON_OWNER
-  - UNKNOWN
+    - OWNER
+    - NON_OWNER
+    - UNKNOWN
   title: AccountLinkServiceOwnerShipType
   description: |
     <div lang="ja">

@@ -2,7 +2,7 @@ DictionaryServiceGeographicLocationSelector:
   type: object
   nullable: true
   required:
-  - lang
+    - lang
   properties:
     geographicLocationType:
       $ref: 'DictionaryServiceGeographicLocationType.yaml#/DictionaryServiceGeographicLocationType'

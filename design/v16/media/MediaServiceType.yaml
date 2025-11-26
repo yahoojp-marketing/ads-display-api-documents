@@ -2,9 +2,9 @@ MediaServiceType:
   type: string
   nullable: true
   enum:
-  - IMAGE
-  - ANIMATION_IMAGE
-  - UNKNOWN
+    - IMAGE
+    - ANIMATION_IMAGE
+    - UNKNOWN
   title: MediaServiceType
   description: |
     <div lang="ja">

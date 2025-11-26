@@ -2,9 +2,9 @@ StatsServiceDeliverType:
   type: string
   nullable: true
   enum:
-  - INCLUDE
-  - EXCLUDE
-  - UNKNOWN
+    - INCLUDE
+    - EXCLUDE
+    - UNKNOWN
   title: StatsServiceDeliverType
   description: |
     <div lang="ja">StatsServiceDeliverTypeは、対象のターゲティング設定が配信対象か配信除外対象かを表します。</div>

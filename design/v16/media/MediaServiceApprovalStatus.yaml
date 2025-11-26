@@ -2,12 +2,12 @@ MediaServiceApprovalStatus:
   type: string
   nullable: true
   enum:
-  - APPROVED
-  - REVIEW
-  - PRE_DISAPPROVED
-  - POST_DISAPPROVED
-  - PENDING_UNSPECIFIED_AD
-  - UNKNOWN
+    - APPROVED
+    - REVIEW
+    - PRE_DISAPPROVED
+    - POST_DISAPPROVED
+    - PENDING_UNSPECIFIED_AD
+    - UNKNOWN
   title: MediaServiceApprovalStatus
   description: |
     <div lang="ja">MediaServiceApprovalStatusは、画像の審査の状況です。</div>

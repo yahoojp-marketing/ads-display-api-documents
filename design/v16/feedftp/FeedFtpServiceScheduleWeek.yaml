@@ -2,14 +2,14 @@ FeedFtpServiceScheduleWeek:
   type: string
   nullable: true
   enum:
-  - SUN
-  - MON
-  - TUE
-  - WED
-  - THU
-  - FRI
-  - SAT
-  - UNKNOWN
+    - SUN
+    - MON
+    - TUE
+    - WED
+    - THU
+    - FRI
+    - SAT
+    - UNKNOWN
   title: FeedFtpServiceScheduleWeek
   description: |
     <div lang="ja">

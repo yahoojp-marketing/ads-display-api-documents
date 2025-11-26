@@ -2,11 +2,11 @@ ReportDefinitionServiceReportDownloadFormat:
   type: string
   nullable: true
   enum:
-  - CSV
-  - XML
-  - TSV
-  - EXCEL_CSV
-  - UNKNOWN
+    - CSV
+    - XML
+    - TSV
+    - EXCEL_CSV
+    - UNKNOWN
   title: ReportDefinitionServiceReportDownloadFormat
   description: |
     <div lang="ja">

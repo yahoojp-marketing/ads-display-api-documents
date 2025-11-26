@@ -2,9 +2,9 @@ CampaignServiceAppOsType:
   type: string
   nullable: true
   enum:
-  - ANDROID
-  - IOS
-  - UNKNOWN
+    - ANDROID
+    - IOS
+    - UNKNOWN
   title: CampaignServiceAppOsType
   description: |
     <div lang="ja">

@@ -2,9 +2,9 @@ PlacementUrlIdeaServiceSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: PlacementUrlIdeaServiceSortType
   description: |
     <div lang="ja">PlacementUrlIdeaServiceSortTypeオブジェクトは、ソート方法を表します。</div>

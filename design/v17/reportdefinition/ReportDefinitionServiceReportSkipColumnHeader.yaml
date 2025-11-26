@@ -2,9 +2,9 @@ ReportDefinitionServiceReportSkipColumnHeader:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: ReportDefinitionServiceReportSkipColumnHeader
   description: |
     <div lang="ja">ReportDefinitionServiceReportSkipColumnHeaderは、ヘッダー行の表示をスキップするかしないかのフラグです。<br>

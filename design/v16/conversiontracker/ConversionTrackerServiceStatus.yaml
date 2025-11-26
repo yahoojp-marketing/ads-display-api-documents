@@ -2,9 +2,9 @@ ConversionTrackerServiceStatus:
   type: string
   nullable: true
   enum:
-  - ENABLED
-  - DISABLED
-  - UNKNOWN
+    - ENABLED
+    - DISABLED
+    - UNKNOWN
   title: ConversionTrackerServiceStatus
   description: |
     <div lang="ja">

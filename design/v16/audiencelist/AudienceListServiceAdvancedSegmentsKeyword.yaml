@@ -2,18 +2,18 @@ AudienceListServiceAdvancedSegmentsKeyword:
   type: object
   nullable: true
   properties:
-      keyword:
-        type: string
-        nullable: true
-        description: |
-          <div lang="ja">
-          キーワードリストです。
-          </div>
-          <div lang="en">
-          Keyword.
-          </div>
-      unavailableKeyword:
-        $ref: 'AudienceListServiceUnavailableKeyword.yaml#/AudienceListServiceUnavailableKeyword'
+    keyword:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キーワードリストです。
+        </div>
+        <div lang="en">
+        Keyword.
+        </div>
+    unavailableKeyword:
+      $ref: 'AudienceListServiceUnavailableKeyword.yaml#/AudienceListServiceUnavailableKeyword'
   title: AudienceListServiceAdvancedSegmentsKeyword
   description: |
     <div lang="ja">

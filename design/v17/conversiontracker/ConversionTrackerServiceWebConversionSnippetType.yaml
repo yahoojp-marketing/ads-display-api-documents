@@ -2,9 +2,9 @@ ConversionTrackerServiceWebConversionSnippetType:
   type: string
   nullable: true
   enum:
-  - IMG
-  - JS
-  - UNKNOWN
+    - IMG
+    - JS
+    - UNKNOWN
   title: ConversionTrackerServiceWebConversionSnippetType
   description: |
     <div lang="ja">

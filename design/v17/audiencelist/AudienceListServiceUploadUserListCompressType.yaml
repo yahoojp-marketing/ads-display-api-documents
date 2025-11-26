@@ -2,10 +2,10 @@ AudienceListServiceUploadUserListCompressType:
   type: string
   nullable: true
   enum:
-  - NONE
-  - ZIP
-  - GZIP
-  - UNKNOWN
+    - NONE
+    - ZIP
+    - GZIP
+    - UNKNOWN
   title: AudienceListServiceUploadUserListCompressType
   description: |
     <div lang="ja">AudienceListServiceUploadUserListCompressTypeは、アップロードする連携データファイルの圧縮形式を表します。</div>

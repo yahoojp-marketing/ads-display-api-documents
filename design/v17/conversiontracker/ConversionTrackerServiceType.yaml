@@ -2,11 +2,11 @@ ConversionTrackerServiceType:
   type: string
   nullable: true
   enum:
-  - WEB_CONVERSION
-  - APP_CONVERSION
-  - IMPORT_CONVERSION
-  - LY_TAG_CONVERSION
-  - UNKNOWN
+    - WEB_CONVERSION
+    - APP_CONVERSION
+    - IMPORT_CONVERSION
+    - LY_TAG_CONVERSION
+    - UNKNOWN
   title: ConversionTrackerServiceType
   description: |
     <div lang="ja">

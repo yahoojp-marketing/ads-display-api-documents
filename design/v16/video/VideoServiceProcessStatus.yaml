@@ -2,10 +2,10 @@ VideoServiceProcessStatus:
   type: string
   nullable: true
   enum:
-  - PROCESSING
-  - FINISHED
-  - FAILED
-  - UNKNOWN
+    - PROCESSING
+    - FINISHED
+    - FAILED
+    - UNKNOWN
   title: VideoServiceProcessStatus
   description: |
     <div lang="ja">VideoServiceProcessStatusは、動画の処理状況です。</div>

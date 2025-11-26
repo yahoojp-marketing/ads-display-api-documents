@@ -2,9 +2,9 @@ DictionaryServiceGeographicLocationType:
   type: string
   nullable: true
   enum:
-  - TARGETING
-  - FEED
-  - UNKNOWN
+    - TARGETING
+    - FEED
+    - UNKNOWN
   title: DictionaryServiceGeographicLocationType
   description: |
     <div lang="ja">DictionaryServiceGeographicLocationTypeは、地域情報の種別を表します。</div>

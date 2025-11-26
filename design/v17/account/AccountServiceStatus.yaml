@@ -2,12 +2,12 @@ AccountServiceStatus:
   type: string
   nullable: true
   enum:
-  - INPROGRESS
-  - WAIT_DECIDE
-  - SUSPENDED
-  - SERVING
-  - ENDED
-  - UNKNOWN
+    - INPROGRESS
+    - WAIT_DECIDE
+    - SUSPENDED
+    - SERVING
+    - ENDED
+    - UNKNOWN
   title: AccountServiceStatus
   description: |
     <div lang="ja">AccountServiceStatusは、アカウントの登録状況を表します。<br>

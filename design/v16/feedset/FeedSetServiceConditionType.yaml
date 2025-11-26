@@ -2,20 +2,20 @@ FeedSetServiceConditionType:
   type: string
   nullable: true
   enum:
-  - CATEGORY_ID
-  - STOCK_QUANTITY
-  - PRICE
-  - SALE_PRICE
-  - RATING
-  - REVIEWS
-  - BADGE
-  - AGE_GROUP
-  - AVAILABILITY_DATE
-  - GENDER_GROUP
-  - GOOGLE_PRODUCT_CATEGORY
-  - LOCATION
-  - SALES_RANK
-  - UNKNOWN
+    - CATEGORY_ID
+    - STOCK_QUANTITY
+    - PRICE
+    - SALE_PRICE
+    - RATING
+    - REVIEWS
+    - BADGE
+    - AGE_GROUP
+    - AVAILABILITY_DATE
+    - GENDER_GROUP
+    - GOOGLE_PRODUCT_CATEGORY
+    - LOCATION
+    - SALES_RANK
+    - UNKNOWN
   title: FeedSetServiceConditionType
   description: |
     <div lang="ja">

@@ -2,9 +2,9 @@ AccountServiceIsMccAccount:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: AccountServiceIsMccAccount
   description: |
     <div lang="ja">

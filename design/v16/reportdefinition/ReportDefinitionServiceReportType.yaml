@@ -2,21 +2,21 @@ ReportDefinitionServiceReportType:
   type: string
   nullable: true
   enum:
-  - AD
-  - CONVERSION_PATH
-  - CROSS_CAMPAIGN_REACHES
-  - AUDIENCE_LIST_TARGET
-  - SEARCH_TARGET
-  - PLACEMENT_TARGET
-  - LABEL
-  - REACH
-  - SITE_CATEGORY
-  - URL
-  - MODEL_COMPARISON
-  - CONTENT_KEYWORD_LIST
-  - APP
-  - CAMPAIGN_BUDGET
-  - UNKNOWN
+    - AD
+    - CONVERSION_PATH
+    - CROSS_CAMPAIGN_REACHES
+    - AUDIENCE_LIST_TARGET
+    - SEARCH_TARGET
+    - PLACEMENT_TARGET
+    - LABEL
+    - REACH
+    - SITE_CATEGORY
+    - URL
+    - MODEL_COMPARISON
+    - CONTENT_KEYWORD_LIST
+    - APP
+    - CAMPAIGN_BUDGET
+    - UNKNOWN
   title: ReportDefinitionServiceReportType
   description: |
     <div lang="ja">
@@ -52,7 +52,7 @@ ReportDefinitionServiceReportType:
       <dt class="term__item">LABEL</dt>
       <dd class="term__desc"><span lang="ja">ラベルレポートです。</span><span lang="en">Label Report.</span></dd>
       <dt class="term__item">SITE_CATEGORY</dt>
-      <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。</span><span lang="en">Site Category Report.</span></dd>
+      <dd class="term__desc"><span lang="ja">サイトカテゴリーレポートです。※利用できません</span><span lang="en">Site Category Report.*Not Available</span></dd>
       <dt class="term__item">REACH</dt>
       <dd class="term__desc"><span lang="ja">リーチレポートです。</span><span lang="en">Reach Report.</span></dd>
       <dt class="term__item">URL</dt>

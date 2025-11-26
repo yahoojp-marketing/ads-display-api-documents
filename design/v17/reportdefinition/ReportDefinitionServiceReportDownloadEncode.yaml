@@ -2,11 +2,11 @@ ReportDefinitionServiceReportDownloadEncode:
   type: string
   nullable: true
   enum:
-  - UTF8
-  - UTF8_BOM
-  - SJIS
-  - UTF16LE
-  - UNKNOWN
+    - UTF8
+    - UTF8_BOM
+    - SJIS
+    - UTF16LE
+    - UNKNOWN
   title: ReportDefinitionServiceReportDownloadEncode
   description: |
     <div lang="ja">

@@ -2,8 +2,8 @@ AuditLogServiceDownloadSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - auditLogJobId
+    - accountId
+    - auditLogJobId
   properties:
     accountId:
       type: integer

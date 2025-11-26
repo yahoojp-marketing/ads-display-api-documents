@@ -3,10 +3,10 @@ AccountServiceIncludeTestAccount:
   nullable: true
   default: EXCLUDE_TEST
   enum:
-  - ONLY_TEST
-  - EXCLUDE_TEST
-  - ALL
-  - UNKNOWN
+    - ONLY_TEST
+    - EXCLUDE_TEST
+    - ALL
+    - UNKNOWN
   title: AccountServiceIncludeTestAccount
   description: |
     <div lang="ja">

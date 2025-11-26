@@ -2,9 +2,9 @@ AdGroupTargetServiceSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: AdGroupTargetServiceSortType
   description: |
     <div lang="ja">AdGroupTargetServiceSortTypeオブジェクトは、ソート方法を表します。</div>

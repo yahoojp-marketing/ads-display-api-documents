@@ -2,14 +2,14 @@ AdGroupTargetServiceDayOfWeek:
   type: string
   nullable: true
   enum:
-  - MONDAY
-  - TUESDAY
-  - WEDNESDAY
-  - THURSDAY
-  - FRIDAY
-  - SATURDAY
-  - SUNDAY
-  - UNKNOWN
+    - MONDAY
+    - TUESDAY
+    - WEDNESDAY
+    - THURSDAY
+    - FRIDAY
+    - SATURDAY
+    - SUNDAY
+    - UNKNOWN
   title: AdGroupTargetServiceDayOfWeek
   description: |
     <div lang="ja">

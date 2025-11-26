@@ -2,9 +2,9 @@ ConversionTrackerServiceAppConversionPlatform:
   type: string
   nullable: true
   enum:
-  - ITUNES
-  - ANDROID_MARKET
-  - UNKNOWN
+    - ITUNES
+    - ANDROID_MARKET
+    - UNKNOWN
   title: ConversionTrackerServiceAppConversionPlatform
   description: |
     <div lang="ja">

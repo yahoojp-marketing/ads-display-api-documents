@@ -2,9 +2,9 @@ OfflineConversionServiceSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: OfflineConversionServiceSortType
   description: |
     <div lang="ja">OfflineConversionServiceSortTypeは、ソート条件を表します。</div>

@@ -2,9 +2,9 @@ ReportDefinitionServiceReportCompressType:
   type: string
   nullable: true
   enum:
-  - NONE
-  - ZIP
-  - UNKNOWN
+    - NONE
+    - ZIP
+    - UNKNOWN
   title: ReportDefinitionServiceReportCompressType
   description: |
     <div lang="ja">ReportDefinitionServiceReportCompressTypeは、定義されたダウンロードレポートの圧縮の有無を表します。<br>

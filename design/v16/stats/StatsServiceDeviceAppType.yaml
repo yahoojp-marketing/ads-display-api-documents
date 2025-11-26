@@ -2,9 +2,9 @@ StatsServiceDeviceAppType:
   type: string
   nullable: true
   enum:
-  - APP
-  - WEB
-  - UNKNOWN
+    - APP
+    - WEB
+    - UNKNOWN
   title: StatsServiceDeviceAppType
   description: |
     <div lang="ja">StatsServiceDeviceAppTypeは、配信先のアプリケーション種別を表します。</div>

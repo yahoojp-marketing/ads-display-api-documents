@@ -2,8 +2,8 @@ AudienceListServiceUploadUserListStatusSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - audienceListId
+    - accountId
+    - audienceListId
   properties:
     accountId:
       type: integer

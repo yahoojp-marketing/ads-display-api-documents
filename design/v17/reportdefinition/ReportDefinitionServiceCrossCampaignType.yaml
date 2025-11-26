@@ -2,10 +2,10 @@ ReportDefinitionServiceCrossCampaignType:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN_ID
-  - CAMPAIGN_GOAL
-  - CAMPAIGN_BUYING_TYPE
-  - UNKNOWN
+    - CAMPAIGN_ID
+    - CAMPAIGN_GOAL
+    - CAMPAIGN_BUYING_TYPE
+    - UNKNOWN
   title: ReportDefinitionServiceCrossCampaignType
   description: |
     <div lang="ja">

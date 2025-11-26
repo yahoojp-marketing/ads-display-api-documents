@@ -2,11 +2,11 @@ AuditLogServiceJobStatus:
   type: string
   nullable: true
   enum:
-  - IN_PROGRESS
-  - COMPLETED
-  - OVER_COUNT_ERROR
-  - SYSTEM_ERROR
-  - UNKNOWN
+    - IN_PROGRESS
+    - COMPLETED
+    - OVER_COUNT_ERROR
+    - SYSTEM_ERROR
+    - UNKNOWN
   title: AuditLogServiceJobStatus
   description: |
     <div lang="ja">

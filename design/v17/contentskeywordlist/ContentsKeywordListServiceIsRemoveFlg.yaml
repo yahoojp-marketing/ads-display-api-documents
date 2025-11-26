@@ -2,9 +2,9 @@ ContentsKeywordListServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: ContentsKeywordListServiceIsRemoveFlg
   description: |
     <div lang="ja">

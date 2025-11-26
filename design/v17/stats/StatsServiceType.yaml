@@ -2,13 +2,13 @@ StatsServiceType:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN
-  - ADGROUP
-  - AD
-  - IMAGE
-  - VIDEO
-  - TARGET
-  - UNKNOWN
+    - CAMPAIGN
+    - ADGROUP
+    - AD
+    - IMAGE
+    - VIDEO
+    - TARGET
+    - UNKNOWN
   title: StatsServiceType
   description: |
     <div lang="ja">StatsServiceTypeは、統計情報の種別を表します。</div>

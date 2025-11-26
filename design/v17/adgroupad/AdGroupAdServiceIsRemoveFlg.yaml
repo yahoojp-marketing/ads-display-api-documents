@@ -2,9 +2,9 @@ AdGroupAdServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AdGroupAdServiceIsRemoveFlg
   description: |
     <div lang="ja">

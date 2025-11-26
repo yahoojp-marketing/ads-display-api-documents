@@ -2,7 +2,7 @@ ConversionTrackerServiceSelector:
   type: object
   nullable: true
   required:
-  - accountId
+    - accountId
   properties:
     accountId:
       type: integer

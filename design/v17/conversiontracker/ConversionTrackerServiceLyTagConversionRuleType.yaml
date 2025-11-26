@@ -2,10 +2,10 @@ ConversionTrackerServiceLyTagConversionRuleType:
   type: string
   nullable: true
   enum:
-  - URL
-  - EVENT_TYPE
-  - EVENT_SNIPPET
-  - UNKNOWN
+    - URL
+    - EVENT_TYPE
+    - EVENT_SNIPPET
+    - UNKNOWN
   description: |
     <div lang="ja">
     このフィールドは、計測タグの条件種別を表します。<br>

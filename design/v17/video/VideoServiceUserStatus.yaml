@@ -2,9 +2,9 @@ VideoServiceUserStatus:
   type: string
   nullable: true
   enum:
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: VideoServiceUserStatus
   description: |
     <div lang="ja">

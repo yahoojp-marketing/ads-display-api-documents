@@ -2,10 +2,10 @@ AudienceListServiceAdActionType:
   type: string
   nullable: true
   enum:
-  - AD_CLICK
-  - CONVERSION
-  - VIDEO_VIEW
-  - UNKNOWN
+    - AD_CLICK
+    - CONVERSION
+    - VIDEO_VIEW
+    - UNKNOWN
   title: AudienceListServiceAdActionType
   description: |
     <div lang="ja">

@@ -2,11 +2,11 @@ AuditLogServiceSourceType:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN_MANAGEMENT_TOOL
-  - API
-  - YAHOO_JAPAN
-  - ALL
-  - UNKNOWN
+    - CAMPAIGN_MANAGEMENT_TOOL
+    - API
+    - YAHOO_JAPAN
+    - ALL
+    - UNKNOWN
   title: AuditLogServiceSourceType
   description: |
     <div lang="ja">

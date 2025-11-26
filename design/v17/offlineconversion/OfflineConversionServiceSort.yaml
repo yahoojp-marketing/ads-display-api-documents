@@ -2,8 +2,8 @@ OfflineConversionServiceSort:
   type: object
   nullable: true
   required:
-  - type
-  - field
+    - type
+    - field
   properties:
     sortType:
       $ref: 'OfflineConversionServiceSortType.yaml#/OfflineConversionServiceSortType'

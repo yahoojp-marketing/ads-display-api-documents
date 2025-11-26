@@ -2,9 +2,9 @@ AudienceListServiceIsOpen:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AudienceListServiceIsOpen
   description: |
     <div lang="ja">

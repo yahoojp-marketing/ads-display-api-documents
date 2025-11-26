@@ -2,10 +2,10 @@ AdGroupServiceDeviceAppType:
   type: string
   nullable: true
   enum:
-  - APP
-  - WEB
-  - NONE
-  - UNKNOWN
+    - APP
+    - WEB
+    - NONE
+    - UNKNOWN
   title: AdGroupServiceDeviceAppType
   description: |
     <div lang="ja">

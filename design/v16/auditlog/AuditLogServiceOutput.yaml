@@ -2,13 +2,13 @@ AuditLogServiceOutput:
   type: string
   nullable: true
   enum:
-  - CSV
-  - TSV
-  - EXCEL_CSV
-  - ZIPPED_CSV
-  - ZIPPED_TSV
-  - ZIPPED_EXCEL_CSV
-  - UNKNOWN
+    - CSV
+    - TSV
+    - EXCEL_CSV
+    - ZIPPED_CSV
+    - ZIPPED_TSV
+    - ZIPPED_EXCEL_CSV
+    - UNKNOWN
   title: AuditLogServiceOutput
   description: |
     <div lang="ja">AuditLogServiceOutputは、操作履歴取得ジョブのファイル形式を指定します。<br>

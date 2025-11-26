@@ -2,9 +2,9 @@ AdGroupServiceSmartTargetingEnabled:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AdGroupServiceSmartTargetingEnabled
   description: |
     <div lang="ja">

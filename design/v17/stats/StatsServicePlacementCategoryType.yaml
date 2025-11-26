@@ -2,9 +2,9 @@ StatsServicePlacementCategoryType:
   type: string
   nullable: true
   enum:
-  - PAGE
-  - STATION
-  - UNKNOWN
+    - PAGE
+    - STATION
+    - UNKNOWN
   title: StatsServicePlacementCategoryType
   description: |
     <div lang="ja">StatsServicePlacementCategoryTypeは、プレイスメントカテゴリーの種類を表します。<br>

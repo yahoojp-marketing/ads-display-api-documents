@@ -2,9 +2,9 @@ ReportDefinitionServiceReportSkipReportSummary:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: ReportDefinitionServiceReportSkipReportSummary
   description: |
     <div lang="ja">ReportDefinitionServiceReportSkipReportSummaryは、トータル行の表示をスキップするかしないかのフラグです。<br>

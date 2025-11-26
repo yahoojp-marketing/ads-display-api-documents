@@ -2,10 +2,10 @@ StatsServiceGender:
   type: string
   nullable: true
   enum:
-  - ST_MALE
-  - ST_FEMALE
-  - ST_UNKNOWN
-  - UNKNOWN
+    - ST_MALE
+    - ST_FEMALE
+    - ST_UNKNOWN
+    - UNKNOWN
   title: StatsServiceGender
   description: |
     <div lang="ja">StatsServiceGenderは、性別を表します。</div>

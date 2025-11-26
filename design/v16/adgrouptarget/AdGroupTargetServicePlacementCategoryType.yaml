@@ -2,9 +2,9 @@ AdGroupTargetServicePlacementCategoryType:
   type: string
   nullable: true
   enum:
-  - PAGE
-  - STATION
-  - UNKNOWN
+    - PAGE
+    - STATION
+    - UNKNOWN
   title: AdGroupTargetServicePlacementCategoryType
   description: |
     <div lang="ja">AdGroupTargetServicePlacementCategoryTypeは、プレイスメントカテゴリーの種類を表します。<br>

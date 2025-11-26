@@ -30,4 +30,4 @@ CampaignServiceBiddingScheme:
     This field is required when Campaign bidding is setting, and cannot be specified when Portfolio bidding is setting in ADD and SET operation. It cannot be specified at the same times as portfolioBiddingId.<br>
     This field will be ignored in REMOVE operation.
     </div>
-    
+

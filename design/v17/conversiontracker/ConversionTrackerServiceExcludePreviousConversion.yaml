@@ -2,9 +2,9 @@ ConversionTrackerServiceExcludePreviousConversion:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: ConversionTrackerServiceExcludePreviousConversion
   description: |
     <div lang="ja">

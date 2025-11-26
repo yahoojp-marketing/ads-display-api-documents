@@ -15,7 +15,7 @@ AudienceListServiceAppLink:
         Although this field will be returned in the response, it will be ignored on input.
         </div>
     appVendor:
-        $ref: 'AudienceListServiceAppVendor.yaml#/AudienceListServiceAppVendor'
+      $ref: 'AudienceListServiceAppVendor.yaml#/AudienceListServiceAppVendor'
     linkId:
       type: string
       nullable: true

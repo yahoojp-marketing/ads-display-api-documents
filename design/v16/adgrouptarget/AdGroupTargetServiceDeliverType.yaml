@@ -2,9 +2,9 @@ AdGroupTargetServiceDeliverType:
   type: string
   nullable: true
   enum:
-  - INCLUDE
-  - EXCLUDE
-  - UNKNOWN
+    - INCLUDE
+    - EXCLUDE
+    - UNKNOWN
   title: AdGroupTargetServiceDeliverType
   description: |
     <div lang="ja">

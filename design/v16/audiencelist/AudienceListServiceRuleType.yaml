@@ -2,14 +2,14 @@ AudienceListServiceRuleType:
   type: string
   nullable: true
   enum:
-  - URL
-  - LABEL
-  - REFERER_URL
-  - PAGE_TYPE
-  - ITEM_ID
-  - ITEM_CATEGORY_ID
-  - EVENT_TYPE
-  - UNKNOWN
+    - URL
+    - LABEL
+    - REFERER_URL
+    - PAGE_TYPE
+    - ITEM_ID
+    - ITEM_CATEGORY_ID
+    - EVENT_TYPE
+    - UNKNOWN
   title: AudienceListServiceRuleType
   description: |
     <div lang="ja">

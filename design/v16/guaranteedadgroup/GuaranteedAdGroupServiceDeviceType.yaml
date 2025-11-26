@@ -2,11 +2,11 @@ GuaranteedAdGroupServiceDeviceType:
   type: string
   nullable: true
   enum:
-  - DESKTOP
-  - SMARTPHONE
-  - TABLET
-  - NONE
-  - UNKNOWN
+    - DESKTOP
+    - SMARTPHONE
+    - TABLET
+    - NONE
+    - UNKNOWN
   title: GuaranteedAdGroupServiceDeviceType
   description: |
     <div lang="ja">

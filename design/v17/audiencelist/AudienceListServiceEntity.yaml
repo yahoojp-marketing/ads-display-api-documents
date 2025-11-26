@@ -2,10 +2,10 @@ AudienceListServiceEntity:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN
-  - AD_GROUP
-  - AD
-  - UNKNOWN
+    - CAMPAIGN
+    - AD_GROUP
+    - AD
+    - UNKNOWN
   title: AudienceListServiceEntity
   description: |
     <div lang="ja">

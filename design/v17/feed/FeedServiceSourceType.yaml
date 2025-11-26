@@ -2,12 +2,12 @@ FeedServiceSourceType:
   type: string
   nullable: true
   enum:
-  - FTP_SCHEDULE
-  - FTP_DIRECT
-  - API
-  - FTP_AND_API
-  - CAMPAIGN_MANAGEMENT_TOOL
-  - UNKNOWN
+    - FTP_SCHEDULE
+    - FTP_DIRECT
+    - API
+    - FTP_AND_API
+    - CAMPAIGN_MANAGEMENT_TOOL
+    - UNKNOWN
   title: FeedServiceSourceType
   description: |
     <div lang="ja">FeedServiceSourceTypeは、ファイルアップロード実施ツールの種別を表します。</div>

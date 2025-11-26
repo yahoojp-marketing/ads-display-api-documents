@@ -2,10 +2,10 @@ GuaranteedAdGroupServiceDeviceAppType:
   type: string
   nullable: true
   enum:
-  - APP
-  - WEB
-  - NONE
-  - UNKNOWN
+    - APP
+    - WEB
+    - NONE
+    - UNKNOWN
   title: GuaranteedAdGroupServiceDeviceAppType
   description: |
     <div lang="ja">

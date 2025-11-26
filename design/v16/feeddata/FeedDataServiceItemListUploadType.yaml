@@ -2,9 +2,9 @@ FeedDataServiceItemListUploadType:
   type: string
   nullable: true
   enum:
-  - UPDATE_PART
-  - UPDATE_ALL
-  - UNKNOWN
+    - UPDATE_PART
+    - UPDATE_ALL
+    - UNKNOWN
   title: FeedDataServiceItemListUploadType
   description: |
     <div lang="ja">商品リストファイルアップロード時の取り込み種別です。</div>

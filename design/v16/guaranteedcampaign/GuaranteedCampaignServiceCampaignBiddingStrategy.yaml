@@ -40,4 +40,4 @@ GuaranteedCampaignServiceCampaignBiddingStrategy:
     GuaranteedCampaignServiceCampaignBiddingStrategy object describes campaign bidding strategy.<br>
     Although this field will be returned in the response, it will be ignored on input.
     </div>
-    
+

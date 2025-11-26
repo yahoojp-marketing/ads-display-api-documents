@@ -2,17 +2,17 @@ StatsServiceTargetType:
   type: string
   nullable: true
   enum:
-  - AD_SCHEDULE_TARGET
-  - GEO_TARGET
-  - AGE_TARGET
-  - GENDER_TARGET
-  - SITE_CATEGORY
-  - AUDIENCE_LIST_TARGET
-  - SEARCH_TARGET
-  - PLACEMENT_TARGET
-  - DEVICE_TARGET
-  - CONTENTS_TARGET
-  - UNKNOWN
+    - AD_SCHEDULE_TARGET
+    - GEO_TARGET
+    - AGE_TARGET
+    - GENDER_TARGET
+    - SITE_CATEGORY
+    - AUDIENCE_LIST_TARGET
+    - SEARCH_TARGET
+    - PLACEMENT_TARGET
+    - DEVICE_TARGET
+    - CONTENTS_TARGET
+    - UNKNOWN
   title: StatsServiceTargetType
   description: |
     <div lang="ja">StatsServiceTargetTypeは、ターゲティングの種別を表します。</div>

@@ -2,9 +2,9 @@ GuaranteedAdGroupAdServiceUserStatus:
   type: string
   nullable: true
   enum:
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: GuaranteedAdGroupAdServiceUserStatus
   description: |
     <div lang="ja">

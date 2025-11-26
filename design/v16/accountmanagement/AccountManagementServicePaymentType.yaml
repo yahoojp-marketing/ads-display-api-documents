@@ -2,9 +2,9 @@ AccountManagementServicePaymentType:
   type: string
   nullable: true
   enum:
-  - PREPAY
-  - INVOICE
-  - UNKNOWN
+    - PREPAY
+    - INVOICE
+    - UNKNOWN
   title: AccountManagementServicePaymentType
   description: |
     <div lang="ja">

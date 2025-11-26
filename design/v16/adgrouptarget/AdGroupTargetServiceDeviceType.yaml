@@ -2,11 +2,11 @@ AdGroupTargetServiceDeviceType:
   type: string
   nullable: true
   enum:
-  - DESKTOP
-  - WAP_MOBILE
-  - SMARTPHONE
-  - TABLET
-  - UNKNOWN
+    - DESKTOP
+    - WAP_MOBILE
+    - SMARTPHONE
+    - TABLET
+    - UNKNOWN
   title: AdGroupTargetServiceDeviceType
   description: |
     <div lang="ja">

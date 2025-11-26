@@ -2,9 +2,9 @@ BaseAccountServiceIsTestAccount:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: BaseAccountServiceIsTestAccount
   description: |
     <div lang="ja">BaseAccountServiceIsTestAccountはテストアカウントかどうかを表します。<br>

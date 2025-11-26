@@ -16,4 +16,4 @@ CampaignServiceBiddingStrategyConfiguration:
     In ADD and SET operation, this field is required.<br>
     This field will be ignored in REMOVE operation.
     </div>
-    
+

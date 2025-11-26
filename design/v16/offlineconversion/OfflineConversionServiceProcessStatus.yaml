@@ -2,11 +2,11 @@ OfflineConversionServiceProcessStatus:
   type: string
   nullable: true
   enum:
-  - PROCESSING
-  - DONE
-  - DONE_WITH_ERROR
-  - ERROR
-  - UNKNOWN
+    - PROCESSING
+    - DONE
+    - DONE_WITH_ERROR
+    - ERROR
+    - UNKNOWN
   title: OfflineConversionServiceProcessStatus
   description: |
     <div lang="ja">処理ステータスです。</div>

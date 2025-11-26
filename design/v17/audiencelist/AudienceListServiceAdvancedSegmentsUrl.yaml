@@ -2,18 +2,18 @@ AudienceListServiceAdvancedSegmentsUrl:
   type: object
   nullable: true
   properties:
-      url:
-        type: string
-        nullable: true
-        description: |
-          <div lang="ja">
-          URLです。
-          </div>
-          <div lang="en">
-          Url.
-          </div>
-      unavailableUrl:
-        $ref: 'AudienceListServiceUnavailableUrl.yaml#/AudienceListServiceUnavailableUrl'
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        URLです。
+        </div>
+        <div lang="en">
+        Url.
+        </div>
+    unavailableUrl:
+      $ref: 'AudienceListServiceUnavailableUrl.yaml#/AudienceListServiceUnavailableUrl'
   title: AudienceListServiceAdvancedSegmentsUrl
   description: |
     <div lang="ja">

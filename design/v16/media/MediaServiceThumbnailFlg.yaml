@@ -2,9 +2,9 @@ MediaServiceThumbnailFlg:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: MediaServiceThumbnailFlg
   description: |
     <div lang="ja">

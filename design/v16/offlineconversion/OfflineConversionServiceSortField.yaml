@@ -2,11 +2,11 @@ OfflineConversionServiceSortField:
   type: string
   nullable: true
   enum:
-  - UPLOAD_ID
-  - UPLOAD_FILE_NAME
-  - PROCESS_STATUS
-  - UPLOADED_DATE
-  - UNKNOWN
+    - UPLOAD_ID
+    - UPLOAD_FILE_NAME
+    - PROCESS_STATUS
+    - UPLOADED_DATE
+    - UNKNOWN
   title: OfflineConversionServiceSortField
   description: |
     <div lang="ja">ソートフィールド名です。</div>

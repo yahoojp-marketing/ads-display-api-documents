@@ -2,11 +2,11 @@ ReportDefinitionServiceFrequencyRange:
   type: string
   nullable: true
   enum:
-  - DAILY
-  - WEEKLY
-  - MONTHLY
-  - GUARANTEED_CAMPAIGN_PERIOD
-  - UNKNOWN
+    - DAILY
+    - WEEKLY
+    - MONTHLY
+    - GUARANTEED_CAMPAIGN_PERIOD
+    - UNKNOWN
   title: ReportDefinitionServiceFrequencyRange
   description: |
     <div lang="ja">

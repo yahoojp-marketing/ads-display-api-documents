@@ -2,8 +2,8 @@ RecommendationServiceSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - types
+    - accountId
+    - types
   properties:
     accountId:
       type: integer

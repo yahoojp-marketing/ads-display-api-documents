@@ -2,9 +2,9 @@ GuaranteedCampaignServiceAdCategoryStatus:
   type: string
   nullable: true
   enum:
-  - ADDED
-  - NONE
-  - UNKNOWN
+    - ADDED
+    - NONE
+    - UNKNOWN
   title: GuaranteedCampaignServiceAdCategoryStatus
   description: |
     <div lang="ja">

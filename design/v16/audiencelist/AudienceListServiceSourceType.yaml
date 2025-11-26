@@ -2,15 +2,15 @@ AudienceListServiceSourceType:
   type: string
   nullable: true
   enum:
-  - SITE_RETARGETING_TAG
-  - CUSTOMER_DATA_FILE
-  - APP_DATA
-  - YAHOO_JAPAN_AUDIENCE_DISCOVERY
-  - ADVANCED_SEGMENTS
-  - AD_ACTION
-  - LINE_OFFICIAL_ACCOUNT
-  - BUSINESS_MANAGER
-  - UNKNOWN
+    - SITE_RETARGETING_TAG
+    - CUSTOMER_DATA_FILE
+    - APP_DATA
+    - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+    - ADVANCED_SEGMENTS
+    - AD_ACTION
+    - LINE_OFFICIAL_ACCOUNT
+    - BUSINESS_MANAGER
+    - UNKNOWN
   title: AudienceListServiceSourceType
   description: |
     <div lang="ja">

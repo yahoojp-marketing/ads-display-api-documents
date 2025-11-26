@@ -2,10 +2,10 @@ AudienceListServiceUploadUserListUploadType:
   type: string
   nullable: true
   enum:
-  - IDFA
-  - AAID
-  - MAIL_ADDRESS_AND_PHONE_NUMBER
-  - UNKNOWN
+    - IDFA
+    - AAID
+    - MAIL_ADDRESS_AND_PHONE_NUMBER
+    - UNKNOWN
   title: AudienceListServiceUploadUserListUploadType
   description: |
     <div lang="ja">

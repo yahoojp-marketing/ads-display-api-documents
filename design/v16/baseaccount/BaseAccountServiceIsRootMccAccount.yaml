@@ -2,9 +2,9 @@ BaseAccountServiceIsRootMccAccount:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: BaseAccountServiceIsRootMccAccount
   description: |
     <div lang="ja">

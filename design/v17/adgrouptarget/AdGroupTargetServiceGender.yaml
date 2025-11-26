@@ -2,10 +2,10 @@ AdGroupTargetServiceGender:
   type: string
   nullable: true
   enum:
-  - ST_MALE
-  - ST_FEMALE
-  - ST_UNKNOWN
-  - UNKNOWN
+    - ST_MALE
+    - ST_FEMALE
+    - ST_UNKNOWN
+    - UNKNOWN
   title: AdGroupTargetServiceGender
   description: |
     <div lang="ja">

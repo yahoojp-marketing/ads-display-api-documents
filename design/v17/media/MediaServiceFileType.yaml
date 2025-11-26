@@ -2,10 +2,10 @@ MediaServiceFileType:
   type: string
   nullable: true
   enum:
-  - JPEG
-  - GIF
-  - PNG
-  - UNKNOWN
+    - JPEG
+    - GIF
+    - PNG
+    - UNKNOWN
   title: MediaServiceFileType
   description: |
     <div lang="ja">

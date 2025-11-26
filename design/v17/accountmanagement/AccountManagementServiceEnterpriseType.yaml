@@ -2,20 +2,20 @@ AccountManagementServiceEnterpriseType:
   type: string
   nullable: true
   enum:
-  - KABUSHIKI
-  - YUGEN
-  - GOSI
-  - ZAIDAN
-  - SYADAN
-  - SYUKYO
-  - GAKKO
-  - KOJIN
-  - OTHER
-  - GOMEI
-  - HIEIRI
-  - GODO
-  - KYODO
-  - UNKNOWN
+    - KABUSHIKI
+    - YUGEN
+    - GOSI
+    - ZAIDAN
+    - SYADAN
+    - SYUKYO
+    - GAKKO
+    - KOJIN
+    - OTHER
+    - GOMEI
+    - HIEIRI
+    - GODO
+    - KYODO
+    - UNKNOWN
   title: AccountManagementServiceEnterpriseType
   description: |
     <div lang="ja">

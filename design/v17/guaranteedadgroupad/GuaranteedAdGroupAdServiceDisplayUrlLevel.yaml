@@ -2,9 +2,9 @@ GuaranteedAdGroupAdServiceDisplayUrlLevel:
   type: string
   nullable: true
   enum:
-  - DOMAIN
-  - FIRST_LEVEL
-  - UNKNOWN
+    - DOMAIN
+    - FIRST_LEVEL
+    - UNKNOWN
   title: GuaranteedAdGroupAdServiceDisplayUrlLevel
   description: |
     <div lang="ja">

@@ -2,8 +2,8 @@ AdGroupAdServiceOperation:
   type: object
   nullable: true
   required:
-  - accountId
-  - operand
+    - accountId
+    - operand
   properties:
     accountId:
       type: integer

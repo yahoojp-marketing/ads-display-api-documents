@@ -2,13 +2,13 @@ AdGroupAdServiceAdType:
   type: string
   nullable: true
   enum:
-  - BANNER_AD
-  - CAROUSEL_AD
-  - DYNAMIC_DISPLAY_AD
-  - RESPONSIVE_AD
-  - TEXT_AD
-  - RESPONSIVE_GAIN_FRIENDS_AD
-  - UNKNOWN
+    - BANNER_AD
+    - CAROUSEL_AD
+    - DYNAMIC_DISPLAY_AD
+    - RESPONSIVE_AD
+    - TEXT_AD
+    - RESPONSIVE_GAIN_FRIENDS_AD
+    - UNKNOWN
   title: AdGroupAdServiceAdType
   description: |
     <div lang="ja">

@@ -2,9 +2,9 @@ BudgetOrderServiceLimitChargeType:
   type: string
   nullable: true
   enum:
-  - SUM
-  - MONTHLY
-  - UNKNOWN
+    - SUM
+    - MONTHLY
+    - UNKNOWN
   title: BudgetOrderServiceLimitChargeType
   description: |
     <div lang="ja">

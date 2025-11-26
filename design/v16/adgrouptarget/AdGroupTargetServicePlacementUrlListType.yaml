@@ -2,9 +2,9 @@ AdGroupTargetServicePlacementUrlListType:
   type: string
   nullable: true
   enum:
-  - STANDARD_LIST
-  - EXCLUSIONS_ONLY_LIST
-  - UNKNOWN
+    - STANDARD_LIST
+    - EXCLUSIONS_ONLY_LIST
+    - UNKNOWN
   title: AdGroupTargetServicePlacementUrlListType
   description: |
     <div lang="ja">

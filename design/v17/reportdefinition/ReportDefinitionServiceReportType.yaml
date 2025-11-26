@@ -2,20 +2,20 @@ ReportDefinitionServiceReportType:
   type: string
   nullable: true
   enum:
-  - AD
-  - CONVERSION_PATH
-  - CROSS_CAMPAIGN_REACHES
-  - AUDIENCE_LIST_TARGET
-  - SEARCH_TARGET
-  - PLACEMENT_TARGET
-  - LABEL
-  - REACH
-  - URL
-  - MODEL_COMPARISON
-  - CONTENT_KEYWORD_LIST
-  - APP
-  - CAMPAIGN_BUDGET
-  - UNKNOWN
+    - AD
+    - CONVERSION_PATH
+    - CROSS_CAMPAIGN_REACHES
+    - AUDIENCE_LIST_TARGET
+    - SEARCH_TARGET
+    - PLACEMENT_TARGET
+    - LABEL
+    - REACH
+    - URL
+    - MODEL_COMPARISON
+    - CONTENT_KEYWORD_LIST
+    - APP
+    - CAMPAIGN_BUDGET
+    - UNKNOWN
   title: ReportDefinitionServiceReportType
   description: |
     <div lang="ja">

@@ -2,9 +2,9 @@ AdGroupTargetServiceDeviceOsType:
   type: string
   nullable: true
   enum:
-  - IOS
-  - ANDROID
-  - UNKNOWN
+    - IOS
+    - ANDROID
+    - UNKNOWN
   title: AdGroupTargetServiceDeviceOsType
   description: |
     <div lang="ja">

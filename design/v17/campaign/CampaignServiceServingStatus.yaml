@@ -2,10 +2,10 @@ CampaignServiceServingStatus:
   type: string
   nullable: true
   enum:
-  - SERVING
-  - ENDED
-  - PENDING
-  - UNKNOWN
+    - SERVING
+    - ENDED
+    - PENDING
+    - UNKNOWN
   title: CampaignServiceServingStatus
   description: |
     <div lang="ja">

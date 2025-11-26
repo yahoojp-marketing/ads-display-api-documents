@@ -2,9 +2,9 @@ PlacementUrlListServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: PlacementUrlListServiceIsRemoveFlg
   description: |
     <div lang="ja">

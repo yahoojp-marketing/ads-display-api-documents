@@ -2,9 +2,9 @@ GuaranteedCampaignServiceIsRemoveFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: GuaranteedCampaignServiceIsRemoveFlg
   description: |
     <div lang="ja">

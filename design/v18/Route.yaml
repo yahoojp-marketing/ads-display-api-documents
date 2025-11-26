@@ -20,7 +20,7 @@ components:
           scopes:
             yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
 security:
-  - oAuth: [ yahooads ]
+  - oAuth: [yahooads]
 
 servers:
   - url: https://ads-display.yahooapis.jp/api/v18

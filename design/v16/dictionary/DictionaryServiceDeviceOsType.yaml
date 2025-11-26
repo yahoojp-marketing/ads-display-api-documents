@@ -2,9 +2,9 @@ DictionaryServiceDeviceOsType:
   type: string
   nullable: true
   enum:
-  - ANDROID
-  - IOS
-  - UNKNOWN
+    - ANDROID
+    - IOS
+    - UNKNOWN
   title: DictionaryServiceDeviceOsType
   description: |
     <div lang="ja">DictionaryServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>

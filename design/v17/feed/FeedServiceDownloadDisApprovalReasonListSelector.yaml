@@ -2,8 +2,8 @@ FeedServiceDownloadDisApprovalReasonListSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - feedId
+    - accountId
+    - feedId
   properties:
     accountId:
       type: integer

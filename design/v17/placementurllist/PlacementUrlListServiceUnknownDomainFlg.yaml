@@ -2,9 +2,9 @@ PlacementUrlListServiceUnknownDomainFlg:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: PlacementUrlListServiceUnknownDomainFlg
   description: |
     <div lang="ja">

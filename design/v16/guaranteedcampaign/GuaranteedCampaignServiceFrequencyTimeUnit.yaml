@@ -2,11 +2,11 @@ GuaranteedCampaignServiceFrequencyTimeUnit:
   type: string
   nullable: true
   enum:
-  - DAY
-  - WEEK
-  - MONTH
-  - LIFETIME
-  - UNKNOWN
+    - DAY
+    - WEEK
+    - MONTH
+    - LIFETIME
+    - UNKNOWN
   title: GuaranteedCampaignServiceFrequencyTimeUnit
   description: |
     <div lang="ja">

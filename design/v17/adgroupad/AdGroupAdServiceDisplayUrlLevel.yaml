@@ -2,9 +2,9 @@ AdGroupAdServiceDisplayUrlLevel:
   type: string
   nullable: true
   enum:
-  - DOMAIN
-  - FIRST_LEVEL
-  - UNKNOWN
+    - DOMAIN
+    - FIRST_LEVEL
+    - UNKNOWN
   title: AdGroupAdServiceDisplayUrlLevel
   description: |
     <div lang="ja">

@@ -2,13 +2,13 @@ VideoServiceQualityType:
   type: string
   nullable: false
   enum:
-  - FULLHD
-  - HD
-  - HIGH
-  - MIDDLE
-  - LOW
-  - ORIGINAL
-  - UNKNOWN
+    - FULLHD
+    - HD
+    - HIGH
+    - MIDDLE
+    - LOW
+    - ORIGINAL
+    - UNKNOWN
   title: VideoServiceQualityType
   description: |
     <div lang="ja">VideoServiceQualityTypeは、動画の画質を表します。</div>

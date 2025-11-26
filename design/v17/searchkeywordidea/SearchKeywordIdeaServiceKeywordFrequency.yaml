@@ -2,10 +2,10 @@ SearchKeywordIdeaServiceKeywordFrequency:
   type: string
   nullable: true
   enum:
-  - ONCE_OR_MORE
-  - TWICE_OR_MORE
-  - THREE_TIMES_OR_MORE
-  - UNKNOWN
+    - ONCE_OR_MORE
+    - TWICE_OR_MORE
+    - THREE_TIMES_OR_MORE
+    - UNKNOWN
   title: SearchKeywordIdeaServiceKeywordFrequency
   description: |
     <div lang="ja">SearchKeywordIdeaServiceKeywordFrequencyは、サーチキーワードの検索回数を表します。</div>

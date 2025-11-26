@@ -2,9 +2,9 @@ AudienceListServiceIsPreset:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AudienceListServiceIsPreset
   description: |
     <div lang="ja">

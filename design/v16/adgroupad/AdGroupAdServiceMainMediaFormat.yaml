@@ -2,10 +2,10 @@ AdGroupAdServiceMainMediaFormat:
   type: string
   nullable: true
   enum:
-  - IMAGE
-  - VIDEO
-  - NONE
-  - UNKNOWN
+    - IMAGE
+    - VIDEO
+    - NONE
+    - UNKNOWN
   title: AdGroupAdServiceMainMediaFormat
   description: |
     <div lang="ja">

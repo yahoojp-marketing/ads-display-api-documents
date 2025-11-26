@@ -2,9 +2,9 @@ FeedFtpServiceItemListUploadType:
   type: string
   nullable: true
   enum:
-  - UPDATE_PART
-  - UPDATE_ALL
-  - UNKNOWN
+    - UPDATE_PART
+    - UPDATE_ALL
+    - UNKNOWN
   title: FeedFtpServiceItemListUploadType
   description: |
     <div lang="ja">

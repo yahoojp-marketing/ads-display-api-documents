@@ -2,9 +2,9 @@ AudienceListServiceDeliveryStatus:
   type: string
   nullable: true
   enum:
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: AudienceListServiceDeliveryStatus
   description: |
     <div lang="ja">

@@ -2,13 +2,13 @@ ReportDefinitionServiceConversionPathFilterOperator:
   type: string
   nullable: true
   enum:
-  - EQUALS
-  - NOT_EQUALS
-  - CONTAINS
-  - NOT_CONTAINS
-  - START_WITH
-  - END_WITH
-  - UNKNOWN
+    - EQUALS
+    - NOT_EQUALS
+    - CONTAINS
+    - NOT_CONTAINS
+    - START_WITH
+    - END_WITH
+    - UNKNOWN
   title: ReportDefinitionServiceConversionPathFilterOperator
   description: |
     <div lang="ja">

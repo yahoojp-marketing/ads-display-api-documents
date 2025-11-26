@@ -2,9 +2,9 @@ AdGroupServiceEnhancedCpcEnabled:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: AdGroupServiceEnhancedCpcEnabled
   description: |
     <div lang="ja">

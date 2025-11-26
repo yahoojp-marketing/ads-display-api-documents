@@ -2,7 +2,7 @@ AccountManagementServiceOperation:
   type: object
   nullable: true
   required:
-  - operand
+    - operand
   properties:
     accountId:
       type: integer

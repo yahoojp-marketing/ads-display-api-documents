@@ -2,9 +2,9 @@ SearchKeywordIdeaServiceSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: SearchKeywordIdeaServiceSortType
   description: |
     <div lang="ja">SearchKeywordIdeaServiceSortTypeオブジェクトは、ソート方法を表します。</div>

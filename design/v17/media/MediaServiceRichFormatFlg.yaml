@@ -2,9 +2,9 @@ MediaServiceRichFormatFlg:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: MediaServiceRichFormatFlg
   description: |
     <div lang="ja">

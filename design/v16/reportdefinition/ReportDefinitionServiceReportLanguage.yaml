@@ -2,9 +2,9 @@ ReportDefinitionServiceReportLanguage:
   type: string
   nullable: true
   enum:
-  - JA
-  - EN
-  - UNKNOWN
+    - JA
+    - EN
+    - UNKNOWN
   title: ReportDefinitionServiceReportLanguage
   description: |
     <div lang="ja">

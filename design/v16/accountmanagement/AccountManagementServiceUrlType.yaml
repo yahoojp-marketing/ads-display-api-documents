@@ -2,13 +2,13 @@ AccountManagementServiceUrlType:
   type: string
   nullable: true
   enum:
-  - PC
-  - DOCOMO
-  - KDDI
-  - SOFTBANK
-  - SMART_PHONE
-  - OTHER
-  - UNKNOWN
+    - PC
+    - DOCOMO
+    - KDDI
+    - SOFTBANK
+    - SMART_PHONE
+    - OTHER
+    - UNKNOWN
   title: AccountManagementServiceUrlType
   description: |
     <div lang="ja">

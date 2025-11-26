@@ -2,9 +2,9 @@ GuaranteedAdGroupAdLandingPageStatus:
   type: string
   nullable: true
   enum:
-  - COMPLETED
-  - SPECIFIED_UPDATE_SCHEDULED_TIME
-  - UNKNOWN
+    - COMPLETED
+    - SPECIFIED_UPDATE_SCHEDULED_TIME
+    - UNKNOWN
   title: GuaranteedAdGroupAdLandingPageStatus
   description: |
     <div lang="ja">

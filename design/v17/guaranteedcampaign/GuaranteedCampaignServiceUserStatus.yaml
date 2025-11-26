@@ -2,9 +2,9 @@ GuaranteedCampaignServiceUserStatus:
   type: string
   nullable: true
   enum:
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: GuaranteedCampaignServiceUserStatus
   description: |
     <div lang="ja">

@@ -2,11 +2,11 @@ AudienceListServiceUploadUserListUploadSource:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN_MANAGEMENT_TOOL
-  - API
-  - URL_FOR_UPLOAD
-  - OTHER
-  - UNKNOWN
+    - CAMPAIGN_MANAGEMENT_TOOL
+    - API
+    - URL_FOR_UPLOAD
+    - OTHER
+    - UNKNOWN
   title: AudienceListServiceUploadUserListUploadSource
   description: |
     <div lang="ja">

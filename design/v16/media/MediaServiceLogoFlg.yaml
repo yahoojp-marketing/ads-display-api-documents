@@ -2,9 +2,9 @@ MediaServiceLogoFlg:
   type: string
   nullable: true
   enum:
-  - 'FALSE'
-  - 'TRUE'
-  - UNKNOWN
+    - 'FALSE'
+    - 'TRUE'
+    - UNKNOWN
   title: MediaServiceLogoFlg
   description: |
     <div lang="ja">

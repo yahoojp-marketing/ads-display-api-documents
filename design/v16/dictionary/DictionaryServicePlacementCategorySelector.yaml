@@ -2,7 +2,7 @@ DictionaryServicePlacementCategorySelector:
   type: object
   nullable: true
   required:
-  - placementCategoryListIds
+    - placementCategoryListIds
   properties:
     placementCategoryListIds:
       type: array

@@ -2,10 +2,10 @@ StatsServiceTargetSetting:
   type: string
   nullable: true
   enum:
-  - NONE
-  - ACTIVE
-  - PAUSED
-  - UNKNOWN
+    - NONE
+    - ACTIVE
+    - PAUSED
+    - UNKNOWN
   title: StatsServiceTargetSetting
   description: |
     <div lang="ja">StatsServiceTargetSettingは、ターゲット設定の有効/無効を表します。</div>

@@ -2,15 +2,15 @@ PlacementUrlIdeaServiceSortField:
   type: string
   nullable: true
   enum:
-  - URL
-  - AD_PLACE_NAME
-  - DESKTOP_REACHES
-  - DESKTOP_AD_REQUESTS
-  - SMART_PHONE_REACHES
-  - SMART_PHONE_AD_REQUESTS
-  - TABLET_REACHES
-  - TABLET_AD_REQUESTS
-  - UNKNOWN
+    - URL
+    - AD_PLACE_NAME
+    - DESKTOP_REACHES
+    - DESKTOP_AD_REQUESTS
+    - SMART_PHONE_REACHES
+    - SMART_PHONE_AD_REQUESTS
+    - TABLET_REACHES
+    - TABLET_AD_REQUESTS
+    - UNKNOWN
   title: PlacementUrlIdeaServiceSortField
   description: |
     <div lang="ja">PlacementUrlIdeaServiceSortFieldオブジェクトは、ソート対象項目です。</div>

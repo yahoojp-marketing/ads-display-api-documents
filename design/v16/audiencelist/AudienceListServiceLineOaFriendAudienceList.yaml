@@ -2,8 +2,8 @@ AudienceListServiceLineOaFriendAudienceList:
   type: object
   nullable: true
   properties:
-      isZeroOrCurrentlyTotaling:
-        $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
+    isZeroOrCurrentlyTotaling:
+      $ref: 'AudienceListServiceIsZeroOrCurrentlyTotaling.yaml#/AudienceListServiceIsZeroOrCurrentlyTotaling'
   title: AudienceListServiceLineOaFriendAudienceList
   description: |
     <div lang="ja">
@@ -18,4 +18,4 @@ AudienceListServiceLineOaFriendAudienceList:
     This field is optional in ADD and SET operation.<br>
     *If audienceListType is LINE_OA_FRIEND, this field is required in ADD and SET operation.
     </div>
-  
+

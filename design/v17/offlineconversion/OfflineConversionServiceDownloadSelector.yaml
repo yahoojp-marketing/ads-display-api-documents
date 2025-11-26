@@ -2,8 +2,8 @@ OfflineConversionServiceDownloadSelector:
   type: object
   nullable: true
   required:
-  - accountId
-  - uploadId
+    - accountId
+    - uploadId
   properties:
     accountId:
       type: integer

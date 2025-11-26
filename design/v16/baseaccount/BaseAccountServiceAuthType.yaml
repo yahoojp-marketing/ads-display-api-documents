@@ -2,9 +2,9 @@ BaseAccountServiceAuthType:
   type: string
   nullable: true
   enum:
-  - REFERABLE
-  - UPDATABLE
-  - UNKNOWN
+    - REFERABLE
+    - UPDATABLE
+    - UNKNOWN
   title: BaseAccountServiceAuthType
   description: |
     <div lang="ja">

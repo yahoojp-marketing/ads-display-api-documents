@@ -2,10 +2,10 @@ FeedFtpServiceScheduleType:
   type: string
   nullable: true
   enum:
-  - HOURLY
-  - DAILY
-  - WEEKLY
-  - UNKNOWN
+    - HOURLY
+    - DAILY
+    - WEEKLY
+    - UNKNOWN
   title: FeedFtpServiceScheduleType
   description: |
     <div lang="ja">

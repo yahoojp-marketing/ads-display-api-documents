@@ -2,7 +2,7 @@ EstimatedUserSizeServiceSelector:
   type: object
   nullable: true
   required:
-  - keywords
+    - keywords
   properties:
     keywords:
       type: array

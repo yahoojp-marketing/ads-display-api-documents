@@ -25,7 +25,7 @@ AudienceListServiceAppUserAudienceList:
       items:
         $ref: 'AudienceListServiceRule.yaml#/AudienceListServiceRule'
     appLink:
-        $ref: 'AudienceListServiceAppLink.yaml#/AudienceListServiceAppLink'
+      $ref: 'AudienceListServiceAppLink.yaml#/AudienceListServiceAppLink'
   title: AudienceListServiceAppUserAudienceList
   description: |
     <div lang="ja">
@@ -34,4 +34,4 @@ AudienceListServiceAppUserAudienceList:
     <div lang="en">
     AudienceListServiceAppUserAudienceList object describes audience list (app users data.)<br>
     </div>
-  
+

@@ -2,10 +2,10 @@ CampaignServiceFrequencyTimeUnit:
   type: string
   nullable: true
   enum:
-  - DAY
-  - WEEK
-  - MONTH
-  - UNKNOWN
+    - DAY
+    - WEEK
+    - MONTH
+    - UNKNOWN
   title: CampaignServiceFrequencyTimeUnit
   description: |
     <div lang="ja">

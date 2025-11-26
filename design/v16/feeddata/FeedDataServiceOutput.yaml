@@ -2,9 +2,9 @@ FeedDataServiceOutput:
   type: string
   nullable: true
   enum:
-  - TSV
-  - CSV
-  - UNKNOWN
+    - TSV
+    - CSV
+    - UNKNOWN
   title: FeedDataServiceOutput
   description: |
     <div lang="ja">FeedDataServiceOutputは、商品情報エラーファイルのファイル形式を指定します。<br>

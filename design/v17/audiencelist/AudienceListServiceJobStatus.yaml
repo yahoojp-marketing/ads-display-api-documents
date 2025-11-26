@@ -2,11 +2,11 @@ AudienceListServiceJobStatus:
   type: string
   nullable: true
   enum:
-  - RECEIVING
-  - RECEIVED
-  - INVALID_FILE
-  - FAILED
-  - UNKNOWN
+    - RECEIVING
+    - RECEIVED
+    - INVALID_FILE
+    - FAILED
+    - UNKNOWN
   title: AudienceListServiceJobStatus
   description: |
     <div lang="ja">AudienceListServiceJobStatusはアップロードジョブの状態を示します。</div>

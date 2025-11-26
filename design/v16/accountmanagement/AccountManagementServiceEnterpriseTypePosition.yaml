@@ -2,9 +2,9 @@ AccountManagementServiceEnterpriseTypePosition:
   type: string
   nullable: true
   enum:
-  - FRONT
-  - BACK
-  - UNKNOWN
+    - FRONT
+    - BACK
+    - UNKNOWN
   title: AccountManagementServiceEnterpriseTypePosition
   description: |
     <div lang="ja">

@@ -2,7 +2,7 @@ DictionaryServiceFeedItemGoogleProductCategorySelector:
   type: object
   nullable: true
   required:
-  - lang
+    - lang
   properties:
     lang:
       $ref: 'DictionaryServiceLang.yaml#/DictionaryServiceLang'

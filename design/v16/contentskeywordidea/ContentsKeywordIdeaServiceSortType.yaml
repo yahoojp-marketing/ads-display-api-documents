@@ -2,9 +2,9 @@ ContentsKeywordIdeaServiceSortType:
   type: string
   nullable: true
   enum:
-  - ASC
-  - DESC
-  - UNKNOWN
+    - ASC
+    - DESC
+    - UNKNOWN
   title: ContentsKeywordIdeaServiceSortType
   description: |
     <div lang="ja">

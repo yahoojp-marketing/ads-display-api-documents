@@ -2,10 +2,10 @@ DictionaryServiceSharedAudienceListType:
   type: string
   nullable: true
   enum:
-  - AFFINITY
-  - IN_MARKET
-  - ATTRIBUTE_LIFE_EVENTS
-  - UNKNOWN
+    - AFFINITY
+    - IN_MARKET
+    - ATTRIBUTE_LIFE_EVENTS
+    - UNKNOWN
   title: DictionaryServiceSharedAudienceListType
   description: |
     <div lang="ja">

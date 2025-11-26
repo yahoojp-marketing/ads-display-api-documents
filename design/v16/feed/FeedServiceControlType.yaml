@@ -2,11 +2,11 @@ FeedServiceControlType:
   type: string
   nullable: true
   enum:
-  - UPLOAD_COUNT_LIMIT
-  - FILE_ROWS_LIMIT
-  - FILE_SIZE_LIMIT_COMPRESS
-  - FILE_SIZE_LIMIT_UNCOMPRESS
-  - UNKNOWN
+    - UPLOAD_COUNT_LIMIT
+    - FILE_ROWS_LIMIT
+    - FILE_SIZE_LIMIT_COMPRESS
+    - FILE_SIZE_LIMIT_UNCOMPRESS
+    - UNKNOWN
   title: FeedServiceControlType
   description: |
     <div lang="ja">FeedServiceControlTypeは、制御タイプを表します。</div>

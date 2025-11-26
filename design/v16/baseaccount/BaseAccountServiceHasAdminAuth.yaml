@@ -2,9 +2,9 @@ BaseAccountServiceHasAdminAuth:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: BaseAccountServiceHasAdminAuth
   description: |
     <div lang="ja">BaseAccountServiceHasAdminAuthは、当該アカウントに対して管理権限を持っているかどうかを表します。<br>

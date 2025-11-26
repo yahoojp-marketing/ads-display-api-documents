@@ -2,9 +2,9 @@ CampaignServiceSkanOptimaizeAdDeliveryEnabled:
   type: string
   nullable: true
   enum:
-  - 'TRUE'
-  - 'FALSE'
-  - UNKNOWN
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
   title: CampaignServiceSkanOptimaizeAdDeliveryEnabled
   description: |
     <div lang="ja">

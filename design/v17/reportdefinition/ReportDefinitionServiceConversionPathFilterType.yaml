@@ -2,12 +2,12 @@ ReportDefinitionServiceConversionPathFilterType:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN_ID
-  - CAMPAIGN_NAME
-  - CONVERSION_ID
-  - ADGROUP_ID
-  - ADGROUP_NAME
-  - UNKNOWN
+    - CAMPAIGN_ID
+    - CAMPAIGN_NAME
+    - CONVERSION_ID
+    - ADGROUP_ID
+    - ADGROUP_NAME
+    - UNKNOWN
   title: ReportDefinitionServiceConversionPathFilterType
   description: |
     <div lang="ja">

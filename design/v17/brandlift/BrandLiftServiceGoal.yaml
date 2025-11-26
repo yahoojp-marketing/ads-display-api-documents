@@ -2,13 +2,13 @@ BrandLiftServiceGoal:
   type: string
   nullable: true
   enum:
-  - AD_RECALL
-  - BRAND_AWARENESS
-  - MESSAGE_ASSOCIATION
-  - PURCHASE_INTENTION
-  - FAVOR
-  - COMPARISON
-  - UNKNOWN
+    - AD_RECALL
+    - BRAND_AWARENESS
+    - MESSAGE_ASSOCIATION
+    - PURCHASE_INTENTION
+    - FAVOR
+    - COMPARISON
+    - UNKNOWN
   title: BrandLiftServiceGoal
   description: |
     <div lang="ja">

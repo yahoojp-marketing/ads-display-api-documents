@@ -2,11 +2,11 @@ FeedDataServiceFileUploadSource:
   type: string
   nullable: true
   enum:
-  - CAMPAIGN_MANAGEMENT_TOOL
-  - API
-  - FTP_SCHEDULE
-  - FTP_DIRECT
-  - UNKNOWN
+    - CAMPAIGN_MANAGEMENT_TOOL
+    - API
+    - FTP_SCHEDULE
+    - FTP_DIRECT
+    - UNKNOWN
   title: FeedDataServiceFileUploadSource
   description: |
     <div lang="ja">商品リストファイルのアップロード元種別です。</div>
