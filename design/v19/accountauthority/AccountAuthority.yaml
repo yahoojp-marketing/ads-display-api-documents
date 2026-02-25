@@ -1,0 +1,186 @@
+AccountAuthority:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    authorities:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">アカウント権限です。</div>
+        <div lang="en">Account authority.</div>
+  title: AccountAuthority
+  description: |
+    <div lang="ja">AccountAuthorityオブジェクトは、アカウント権限情報を示します。<br>
+    authoritiesで返却される値は、以下のとおりです。
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>説明</th>
+          <th>権限種別</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>運用型：サイト誘導</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>運用型：動画再生</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>運用型：アプリ訴求</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>運用型：コンバージョン</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>運用型：商品リスト訴求</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>運用型：ブランド認知</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>予約型：ブランド認知</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>STORE_VISIT</td>
+          <td>来店促進</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPayギフト</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>GAIN_FRIENDS</td>
+          <td>友だち追加</td>
+          <td>キャンペーン目的</td>
+        </tr>
+        <tr>
+          <td>SHOPPING_ADS</td>
+          <td>eコマース</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>セールスプロモーション</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>PRIVATE_MARKET_PLACE</td>
+          <td>プライベートマーケットプレイス</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+        <tr>
+          <td>THANKYOU_PAGE</td>
+          <td>サンキューページ</td>
+          <td>キャンペーン掲載タイプ</td>
+        </tr>
+      </table>
+    それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a>をご確認ください。<br>
+    ※キャンペーン掲載タイプが「THANKYOU_PAGE」「PRIVATE_MARKET_PLACE」のキャンペーン、ならびにその配下の広告グループおよび広告は、作成・編集できません。
+    </div>
+    <div lang="en">AccountAuthority objects serve account authority information.<br>
+    Responded values of `authorities` are as follows.
+      <table border='1'>
+        <tr>
+          <th>accountAuthorities</th>
+          <th>description</th>
+          <th>authority type</th>
+        </tr>
+        <tr>
+          <td>WEBSITE_TRAFFIC</td>
+          <td>AUCTION : Website traffic</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>VIDEO_VIEW</td>
+          <td>AUCTION : Video view</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>APP_PROMOTION</td>
+          <td>AUCTION : App promotion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>CONVERSION</td>
+          <td>AUCTION : Conversion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>ITEM_LIST</td>
+          <td>AUCTION : Item list promotion</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS</td>
+          <td>AUCTION : Brand awareness</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>STORE_VISIT</td>
+          <td>Store Visit</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>PAYPAY_GIFT</td>
+          <td>PayPay Gift</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>GAIN_FRIENDS</td>
+          <td>Gain friends</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>BRAND_AWARENESS_GUARANTEED</td>
+          <td>GUARANTEED : Brand awareness</td>
+          <td>Campaign goal</td>
+        </tr>
+        <tr>
+          <td>SHOPPING_ADS</td>
+          <td>Ecommerce</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>SALES_PROMOTION</td>
+          <td>Sales Promotion</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>PRIVATE_MARKET_PLACE</td>
+          <td>Private market place</td>
+          <td>Campaign delivery type</td>
+        </tr>
+        <tr>
+          <td>THANKYOU_PAGE</td>
+          <td>Thank-you page</td>
+          <td>Campaign delivery type</td>
+        </tr>
+      </table>
+    Details of these campaign goal are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=en_US">Create campaigns by goal</a>.<br>
+    *Campaigns with the campaign delivery type "THANKYOU_PAGE", "PRIVATE_MARKET_PLACE", and their child ad groups and ads, cannot be created or edited.
+    </div>

@@ -1,0 +1,13 @@
+AudienceListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceValue.yaml#/AudienceListServiceValue'
+  title: AudienceListServiceReturnValue
+  description: |
+    <div lang="ja">AudienceListServiceReturnValueオブジェクトは、オーディエンスリストの情報を表します。</div>
+    <div lang="en">AudienceListServiceReturnValue object describes information of audience list.</div>

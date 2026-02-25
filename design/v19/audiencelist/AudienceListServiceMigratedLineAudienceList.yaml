@@ -1,0 +1,25 @@
+AudienceListServiceMigratedLineAudienceList:
+  type: object
+  nullable: true
+  properties:
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間（日数）です。<br>
+        </div>
+        <div lang="en">
+        Data duration (number of days).<br>
+        </div>
+    lineAudienceGroupType:
+      $ref: 'AudienceListServiceLineAudienceGroupType.yaml#/AudienceListServiceLineAudienceGroupType'
+  title: AudienceListServiceMigratedLineAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceMigratedLineAudienceListオブジェクトは、LINE広告から移行したオーディエンスリストの情報を表します。
+    </div>
+    <div lang="en">
+    AudienceListServiceMigratedLineAudienceList object describes the migrated audience list from LINE Ads.
+    </div>

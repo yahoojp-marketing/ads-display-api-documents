@@ -1,0 +1,17 @@
+TrackingTagServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+  title: TrackingTagServiceSelector
+  description: |
+    <div lang="ja">TrackingTagServiceSelectorオブジェクトは、取得する計測タグを指定します。</div>
+    <div lang="en">TrackingTagServiceSelector object specifies the tracking tags to be retrieved.</div>

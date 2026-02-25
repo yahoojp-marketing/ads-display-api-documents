@@ -1,0 +1,130 @@
+ConversionTrackerServiceCategory:
+  type: string
+  nullable: true
+  enum:
+    - NONE
+    - DEFAULT
+    - PAGE_VIEW
+    - PURCHASE
+    - SIGNUP
+    - LEAD
+    - DOWNLOAD
+    - APP_LAUNCH
+    - APP_UPDATE
+    - SIGN_UP
+    - LOGIN
+    - SEARCH
+    - VIEW_LISTING
+    - VIEW_PRODUCT
+    - VIEW_CART
+    - ADD_CART
+    - ADD_WISHLIST
+    - CHECK_OUT
+    - PRODUCT_PURCHASE
+    - APP_PURCHASE
+    - SPENT_CREDITS
+    - PAYMENT_INFO
+    - REVIEW
+    - SHARE
+    - INVITE
+    - RESERVATION
+    - TUTORIAL
+    - DEEPLINK
+    - START_LEVEL
+    - END_LEVEL
+    - LEVEL_ACHIEVED
+    - UNLOCK_ACHIEVEMENT
+    - STORE_VISIT
+    - GENERATE_LEADS
+    - CUSTOM1
+    - CUSTOM2
+    - CUSTOM3
+    - UNKNOWN
+  title: ConversionTrackerServiceCategory
+  description: |
+    <div lang="ja">
+    ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョン設定のカテゴリーです。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。ConversionTrackerServiceTypeがLY_SVM_CONVERSIONもしくはSB_SVM_CONVERSIONの場合、このフィールドは無視されます。
+    </div>
+    <div lang="en">
+    ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
+    This field is required in ADD operation, and will be optional in SET operation. When ConversionTrackerServiceType is LY_SVM_CONVERSION or SB_SVM_CONVERSION, this field will be ignored.
+    </div>
+    <dl class=term>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">未設定です。</span><span lang="en">None</span></dd>
+      <dt class="term__item">DEFAULT</dt>
+      <dd class="term__desc"><span lang="ja">その他です。</span><span lang="en">Other</span></dd>
+      <dt class="term__item">PAGE_VIEW</dt>
+      <dd class="term__desc"><span lang="ja">主要なページの閲覧です。</span><span lang="en">Main page view</span></dd>
+      <dt class="term__item">PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">購入販売です。</span><span lang="en">Purchase / Sales</span></dd>
+      <dt class="term__item">SIGNUP</dt>
+      <dd class="term__desc"><span lang="ja">契約です。</span><span lang="en">Sign up</span></dd>
+      <dt class="term__item">LEAD</dt>
+      <dd class="term__desc"><span lang="ja">販売促進です。</span><span lang="en">Sales promotion</span></dd>
+      <dt class="term__item">DOWNLOAD</dt>
+      <dd class="term__desc"><span lang="ja">アプリをインストールです。</span><span lang="en">Install app</span></dd>
+      <dt class="term__item">APP_LAUNCH</dt>
+      <dd class="term__desc"><span lang="ja">アプリを起動です。</span><span lang="en">App start</span></dd>
+      <dt class="term__item">APP_UPDATE</dt>
+      <dd class="term__desc"><span lang="ja">アプリをアップデートです。</span><span lang="en">Update app</span></dd>
+      <dt class="term__item">SIGN_UP</dt>
+      <dd class="term__desc"><span lang="ja">登録完了です。</span><span lang="en">Registration complete</span></dd>
+      <dt class="term__item">LOGIN</dt>
+      <dd class="term__desc"><span lang="ja">ログインです。</span><span lang="en">Sign in</span></dd>
+      <dt class="term__item">SEARCH</dt>
+      <dd class="term__desc"><span lang="ja">検索です。</span><span lang="en">Search</span></dd>
+      <dt class="term__item">VIEW_LISTING</dt>
+      <dd class="term__desc"><span lang="ja">商品一覧画面の閲覧です。</span><span lang="en">View item list</span></dd>
+      <dt class="term__item">VIEW_PRODUCT</dt>
+      <dd class="term__desc"><span lang="ja">商品詳細画面の閲覧です。</span><span lang="en">View item description</span></dd>
+      <dt class="term__item">VIEW_CART</dt>
+      <dd class="term__desc"><span lang="ja">商品カートを閲覧です。</span><span lang="en">Viewing cart</span></dd>
+      <dt class="term__item">ADD_CART</dt>
+      <dd class="term__desc"><span lang="ja">商品カートに追加です。</span><span lang="en">Add to cart</span></dd>
+      <dt class="term__item">ADD_WISHLIST</dt>
+      <dd class="term__desc"><span lang="ja">お気に入りに追加です。</span><span lang="en">Add to favorites</span></dd>
+      <dt class="term__item">CHECK_OUT</dt>
+      <dd class="term__desc"><span lang="ja">商品購入確認です。</span><span lang="en">Confirm purchase</span></dd>
+      <dt class="term__item">PRODUCT_PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">アプリ内商品購入です。</span><span lang="en">In-app product purchase</span></dd> 
+      <dt class="term__item">APP_PURCHASE</dt>
+      <dd class="term__desc"><span lang="ja">アプリ内購入です。</span><span lang="en">In-app purchase</span></dd> 
+      <dt class="term__item">SPENT_CREDITS</dt>
+      <dd class="term__desc"><span lang="ja">クレジットカードの利用です。</span><span lang="en">Credit card</span></dd> 
+      <dt class="term__item">PAYMENT_INFO</dt>
+      <dd class="term__desc"><span lang="ja">お支払い明細を発行です。</span><span lang="en">Payment details</span></dd> 
+      <dt class="term__item">REVIEW</dt>
+      <dd class="term__desc"><span lang="ja">コンテンツをレビューです。</span><span lang="en">Review contents</span></dd> 
+      <dt class="term__item">SHARE</dt>
+      <dd class="term__desc"><span lang="ja">コンテンツをシェアです。</span><span lang="en">Share contents</span></dd> 
+      <dt class="term__item">INVITE</dt>
+      <dd class="term__desc"><span lang="ja">アプリへ招待です。</span><span lang="en">Invite to app</span></dd> 
+      <dt class="term__item">RESERVATION</dt>
+      <dd class="term__desc"><span lang="ja">予約完了です。</span><span lang="en">Reservation complete</span></dd> 
+      <dt class="term__item">TUTORIAL</dt>
+      <dd class="term__desc"><span lang="ja">チュートリアルを完了です。</span><span lang="en">Tutorial complete</span></dd> 
+      <dt class="term__item">DEEPLINK</dt>
+      <dd class="term__desc"><span lang="ja">ディープリンクから流入です。</span><span lang="en">Traffic from deep link</span></dd> 
+      <dt class="term__item">START_LEVEL</dt>
+      <dd class="term__desc"><span lang="ja">ゲームイベントを開始です。</span><span lang="en">Start game event</span></dd> 
+      <dt class="term__item">END_LEVEL</dt>
+      <dd class="term__desc"><span lang="ja">ゲームイベントを完了です。</span><span lang="en">Complete game event</span></dd> 
+      <dt class="term__item">LEVEL_ACHIEVED</dt>
+      <dd class="term__desc"><span lang="ja">ゲームのレベル到達です。</span><span lang="en">Achieve game level</span></dd> 
+      <dt class="term__item">UNLOCK_ACHIEVEMENT</dt>
+      <dd class="term__desc"><span lang="ja">ゲームの目標達成です。</span><span lang="en">Unlock achievement</span></dd>
+      <dt class="term__item">STORE_VISIT</dt>
+      <dd class="term__desc"><span lang="ja">来店計測です。</span><span lang="en">Store Visit</span></dd> 
+      <dt class="term__item">GENERATE_LEADS</dt>
+      <dd class="term__desc"><span lang="ja">リード獲得です。</span><span lang="en">Generate Leads</span></dd>
+      <dt class="term__item">CUSTOM1</dt>
+      <dd class="term__desc"><span lang="ja">カスタムイベント1です。</span><span lang="en">Custom event 1</span></dd> 
+      <dt class="term__item">CUSTOM2</dt>
+      <dd class="term__desc"><span lang="ja">カスタムイベント2です。</span><span lang="en">Custom event 2</span></dd> 
+      <dt class="term__item">CUSTOM3</dt>
+      <dd class="term__desc"><span lang="ja">カスタムイベント3です。</span><span lang="en">Custom event 3</span></dd> 
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

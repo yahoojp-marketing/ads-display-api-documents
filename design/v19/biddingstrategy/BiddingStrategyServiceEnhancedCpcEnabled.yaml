@@ -1,0 +1,26 @@
+BiddingStrategyServiceEnhancedCpcEnabled:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - UNKNOWN
+  title: BiddingStrategyServiceEnhancedCpcEnabled
+  description: |
+    <div lang="ja">
+    BiddingStrategyServiceEnhancedCpcEnabledは、拡張クリック単価設定フラグを指定します。<br>
+    このフィールドがTRUEの場合、操作履歴上の入札戦略は「拡張クリック単価」になります。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    typeにCPCが指定されている場合、このフィールドは必ずTRUEになります。
+    </div>
+    <div lang="en">
+    BiddingStrategyServiceEnhancedCpcEnabled specifies flag of Enhanced CPC.<br>
+    If this field is TRUE, the bidding strategy on audit log is "Enhanced CPC".<br>
+    This field will be returned in the response, it will be ignored on input.<br>
+    If type is CPC, this field will always be TRUE.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">拡張クリック単価</span><span lang="en">Enhanced CPC</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

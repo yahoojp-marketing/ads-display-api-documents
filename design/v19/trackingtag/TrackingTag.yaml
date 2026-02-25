@@ -1,0 +1,50 @@
+TrackingTag:
+  type: object
+  nullable: true
+  properties:
+    trackingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">計測タグIDです。</div>
+        <div lang="en">Tracking tag ID.</div>
+    trackingTagName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">計測タグ名です。</div>
+        <div lang="en">Tracking tag name.</div>
+    globalSnippet:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        計測タグを使ったイベント計測の基本となるタグです。<br>
+        ${_useCookie_}: 識別子を cookie に保存する場合はtrue、保存しない場合はfalseを設定します。<br>
+        ${_useLocalStorage_}: 識別子を localStorage に保存する場合はtrue、保存しない場合はfalseを設定します。<br>
+        詳細は「<a href="https://ads-help.yahoo-net.jp/s/article/H000054772?language=ja" target="_blank">計測タグについて</a>」を参照してください。
+        </div>
+        <div lang="en">
+        The global snippet is the basic tag for event tracking using the tracking tag.<br>
+        ${_useCookie_}: Set to true if you want to store identifiers in cookies, or false if you do not.<br>
+        ${_useLocalStorage_}: Set to true if you want to store identifiers in localStorage, or false if you do not.<br>
+        For more details, see <a href="https://ads-help.yahoo-net.jp/s/article/H000054772?language=en_US" target="_blank">tracking tag</a>.
+        </div>
+    eventSnippet:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        ウェブサイトで発生したイベントデータを送信するタグです。<br>
+        ${_eventType_}: 設定可能な値については「<a href="https://ads-developers.yahoo.co.jp/ja/lytag/post/30590632.html" target="_blank">計測可能なイベントについて</a>」を参照してください。<br>
+        詳細は「<a href="https://ads-help.yahoo-net.jp/s/article/H000054772?language=ja" target="_blank">計測タグについて</a>」を参照してください。
+        </div>
+        <div lang="en">
+        An event snippet is a tag that sends event data generated on the website.<br>
+        ${_eventType_}: For available values, see <a href="https://ads-developers.yahoo.co.jp/ja/lytag/post/30590632.html" target="_blank">trackable events</a>.<br>
+        For more details, see <a href="https://ads-help.yahoo-net.jp/s/article/H000054772?language=en_US" target="_blank">tracking tag</a>.
+        </div>
+  title: TrackingTag
+  description: |
+    <div lang="ja">TrackingTagオブジェクトは、計測タグ情報を表します。</div>
+    <div lang="en">TrackingTag object displays tracking tag information.</div>

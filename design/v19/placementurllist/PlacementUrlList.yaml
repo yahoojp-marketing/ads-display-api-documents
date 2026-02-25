@@ -1,0 +1,93 @@
+PlacementUrlList:
+  type: object
+  nullable: true
+  required:
+    - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        This field is required in requests.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        urlリストの説明です。<br>
+        このフィールドは、ADDおよびSET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Url list description.<br>
+        This field is optional in ADD and SET operation.
+        </div>
+    isRemoveDescription:
+      $ref: 'PlacementUrlListServiceIsRemoveFlg.yaml#/PlacementUrlListServiceIsRemoveFlg'
+    unknownDomainFlg:
+      $ref: 'PlacementUrlListServiceUnknownDomainFlg.yaml#/PlacementUrlListServiceUnknownDomainFlg'
+    urlListId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        urlリストIDです。<br>
+        このフィールドは、SETおよびREMOVE時に必須となります。
+        </div>
+        <div lang="en">
+        Url list ID. <br>
+        This field is required in SET and REMOVE operation.
+        </div>
+    urlListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        urlリスト名です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Url list name. <br>
+        This field is required in ADD operation, and is optional in SET operation.
+        </div>
+    brandSafetyDenyListFlg:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">
+        除外専用リストかどうかのフラグです。<br>
+        除外専用リストには下記の制約があります。<br>
+        ・１アカウントにつき1つ作成が可能です。<br>
+        ・除外にのみ紐付け可能です。<br>
+        このフィールドは、ADD時に省略可能(デフォルトの値はFALSE)、SET時に指定不可となります。
+        </div>
+        <div lang="en">
+        A flag that indicates whether it is an exclusion list. <br>
+        Exclusion list includes the following restrictions: <br>
+        *Only one list can be created per account. <br>
+        *Can be linked only to exclusion. <br>
+        This field is optional in ADD operation (default value will be FALSE), and cannot be specified in SET operation.
+        </div>
+        <dl class=term>
+          <dt class="term__item">TRUE</dt>
+          <dd class="term__desc"><span lang="ja">除外専用リストです。</span><span lang="en">Exclusion list.</span></dd>
+          <dt class="term__item">FALSE</dt>
+          <dd class="term__desc"><span lang="ja">通常のurlリストです。</span><span lang="en">Standard URL list.</span></dd>
+        </dl>
+    urls:
+      type: array
+      nullable: true
+      items:
+        $ref: 'PlacementUrlListServiceUrlList.yaml#/PlacementUrlListServiceUrlList'
+  title: PlacementUrlList
+  description: |
+    <div lang="ja">PlacementUrlListオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div>
+    <div lang="en">The objects to keep Placement Url Information.</div>

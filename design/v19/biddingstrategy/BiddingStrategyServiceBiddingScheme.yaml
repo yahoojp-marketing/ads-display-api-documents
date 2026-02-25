@@ -1,0 +1,20 @@
+BiddingStrategyServiceBiddingScheme:
+  type: object
+  nullable: true
+  properties:
+    'type':
+      $ref: 'BiddingStrategyServiceType.yaml#/BiddingStrategyServiceType'
+    cpcBiddingScheme:
+      $ref: 'BiddingStrategyServiceCpcBiddingScheme.yaml#/BiddingStrategyServiceCpcBiddingScheme'
+    maximizeConversionsBiddingScheme:
+      $ref: 'BiddingStrategyServiceMaximizeConversionsBiddingScheme.yaml#/BiddingStrategyServiceMaximizeConversionsBiddingScheme'
+    maximizeGainingFriendsBiddingScheme:
+      $ref: 'BiddingStrategyServiceMaximizeGainingFriendsBiddingScheme.yaml#/BiddingStrategyServiceMaximizeGainingFriendsBiddingScheme'
+    maximizeConversionValueBiddingScheme:
+      $ref: 'BiddingStrategyServiceMaximizeConversionValueBiddingScheme.yaml#/BiddingStrategyServiceMaximizeConversionValueBiddingScheme'
+  title: BiddingStrategyServiceBiddingScheme
+  description: |
+    <div lang="ja">BiddingStrategyServiceBiddingSchemeオブジェクトは、ポートフォリオ入札設定の詳細情報を表します。（BiddingStrategyService用のオブジェクトです。）<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。</div>
+    <div lang="en">BiddingStrategyServiceBiddingScheme object displays the details of portfolio bidding setting. (This is for BiddingStrategyService)<br>
+    This field is required in ADD operation, and will be optional in SET operation.</div>

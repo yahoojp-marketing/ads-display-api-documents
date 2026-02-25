@@ -1,0 +1,28 @@
+StatsServiceDeviceType:
+  type: string
+  nullable: true
+  enum:
+    - DESKTOP
+    - WAP_MOBILE
+    - SMARTPHONE
+    - TABLET
+    - CONNECTED_TV
+    - UNKNOWN
+  title: StatsServiceDeviceType
+  description: |
+    <div lang="ja">StatsServiceDeviceTypeは、配信先デバイスの種類を表します。</div>
+    <div lang="en">StatsServiceDeviceType stands for the types of target devices.</div>
+    <dl class=term>
+      <dt class="term__item">DESKTOP</dt>
+      <dd class="term__desc"><span lang="ja">PC</span><span lang="en">PC</span></dd>
+      <dt class="term__item">WAP_MOBILE</dt>
+      <dd class="term__desc"><span lang="ja">従来型携帯電話（フィーチャーフォン）</span><span lang="en">Contemporary mobile phones (Feature Phone)</span></dd>
+      <dt class="term__item">SMARTPHONE</dt>
+      <dd class="term__desc"><span lang="ja">スマートフォン</span><span lang="en">Smartphones</span></dd>
+      <dt class="term__item">TABLET</dt>
+      <dd class="term__desc"><span lang="ja">タブレット</span><span lang="en">Tablet device</span></dd>
+      <dt class="term__item">CONNECTED_TV</dt>
+      <dd class="term__desc"><span lang="ja">コネクテッドTV</span><span lang="en">Connected TV</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

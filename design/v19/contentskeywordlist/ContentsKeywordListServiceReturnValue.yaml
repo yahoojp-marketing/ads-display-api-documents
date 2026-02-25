@@ -1,0 +1,13 @@
+ContentsKeywordListServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'ContentsKeywordListServiceValue.yaml#/ContentsKeywordListServiceValue'
+  title: ContentsKeywordListServiceReturnValue
+  description: |
+    <div lang="ja">ContentsKeywordListServiceReturnValueオブジェクトは、コンテンツキーワードリスト設定を表します。</div>
+    <div lang="en">ContentsKeywordListServiceReturnValue object displays the setting of contents keyword list.</div>

@@ -1,0 +1,26 @@
+AudienceListServiceAdActionType:
+  type: string
+  nullable: true
+  enum:
+    - AD_CLICK
+    - CONVERSION
+    - VIDEO_VIEW
+    - UNKNOWN
+  title: AudienceListServiceAdActionType
+  description: |
+    <div lang="ja">
+    AudienceListServiceAdActionTypeは、広告アクションリストの条件種別です。
+    </div>
+    <div lang="en">
+    AudienceListServiceAdActionType display the types of rules for the ad action list.
+    </div>
+    <dl class=term>
+      <dt class="term__item">AD_CLICK</dt>
+      <dd class="term__desc"><span lang="ja">広告クリック</span><span lang="en">Ad click</span></dd>
+      <dt class="term__item">CONVERSION</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン</span><span lang="en">Conversion</span></dd>
+      <dt class="term__item">VIDEO_VIEW</dt>
+      <dd class="term__desc"><span lang="ja">動画視聴</span><span lang="en">Video view</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値</span><span lang="en">Unknown Value</span></dd>
+    </dl>

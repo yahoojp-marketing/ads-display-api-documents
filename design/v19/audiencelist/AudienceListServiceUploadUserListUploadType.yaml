@@ -1,0 +1,30 @@
+AudienceListServiceUploadUserListUploadType:
+  type: string
+  nullable: true
+  enum:
+    - IDFA
+    - AAID
+    - MAIL_ADDRESS_AND_PHONE_NUMBER
+    - UNKNOWN
+  title: AudienceListServiceUploadUserListUploadType
+  description: |
+    <div lang="ja">
+      AudienceListServiceUploadUserListUploadTypeは、アップロードする方法の種類を表します。<br>
+      <code>MAIL_ADDRESS_AND_PHONE_NUMBER</code>ではハッシュ化が必須となります。<br>
+      メールアドレスと電話番号のハッシュ化の詳細は<a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=ja" target="_blank">ヘルプ</a>を参照してください。
+    </div>
+    <div lang="en">
+      AudienceListServiceUploadUserListUploadType displays kind of upload method.<br>
+      Hashing process is requied when AudienceListServiceUploadUserListUploadType is <code>MAIL_ADDRESS_AND_PHONE_NUMBER</code>.<br>
+      More details for hashing of email and phone number are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044507?language=en_US">Import data and create custom list</a>.
+    </div>
+    <dl class=term>
+      <dt class="term__item">IDFA</dt>
+      <dd class="term__desc"><span lang="ja">iOS端末用広告識別子です。</span><span lang="en">Ad identifier for iOS devices.</span></li>
+      <dt class="term__item">AAID</dt>
+      <dd class="term__desc"><span lang="ja">Android端末用広告識別子です。</span><span lang="en">Ad identifier for Android devices.</span></li>
+      <dt class="term__item">MAIL_ADDRESS_AND_PHONE_NUMBER</dt>
+      <dd class="term__desc"><span lang="ja">ハッシュ化メールアドレスまたは電話番号です。</span><span lang="en">Hashed email address or phone number.</span></li>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

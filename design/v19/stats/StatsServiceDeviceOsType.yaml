@@ -1,0 +1,19 @@
+StatsServiceDeviceOsType:
+  type: string
+  nullable: true
+  enum:
+    - IOS
+    - ANDROID
+    - UNKNOWN
+  title: StatsServiceDeviceOsType
+  description: |
+    <div lang="ja">StatsServiceDeviceOsTypeは、配信先デバイスのOSの種類を表します。</div>
+    <div lang="en">StatsServiceDeviceOsType stands for OS types of the delivery target device.</div>
+    <dl class=term>
+      <dt class="term__item">IOS</dt>
+      <dd class="term__desc"><span lang="ja">iOS向けに配信されます。</span><span lang="en">Deliver to iOS.</span></dd>
+      <dt class="term__item">ANDROID</dt>
+      <dd class="term__desc"><span lang="ja">Android向けに配信されます。</span><span lang="en">Deliver to Android.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

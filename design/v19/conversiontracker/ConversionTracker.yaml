@@ -1,0 +1,232 @@
+ConversionTracker:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    allConversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンバージョンの価値（全て）です。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conv. value (all).<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    allConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        コンバージョン数（全て）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conversions (all).<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    viewThroughConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">ビュースルーコンバージョン数</div>
+        <div lang="en">View through conversions</div>
+    appConversion:
+      $ref: 'ConversionTrackerServiceAppConversion.yaml#/ConversionTrackerServiceAppConversion'
+    category:
+      $ref: 'ConversionTrackerServiceCategory.yaml#/ConversionTrackerServiceCategory'
+    conversionTrackerId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        コンバージョントラッカーIDです。<br>
+        このフィールドは、ADD時は無視され、SET時は必須となります。
+        </div>
+        <div lang="en">
+        Conversion tracker ID.<br>
+        This field will be ignored in ADD operation, and will be required in SET operation.
+        </div>
+    conversionTrackerName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンバージョントラッカー名です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Conversion tracker name.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    conversionTrackerType:
+      $ref: 'ConversionTrackerServiceType.yaml#/ConversionTrackerServiceType'
+    conversionValue:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンバージョンの価値/コンバージョン数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conv. value/conv.<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    conversionValueViaAdClick:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンバージョンの価値（クリック経由）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conv. value (via click).<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    conversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        コンバージョン数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conversions.<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    conversionsViaAdClick:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        コンバージョン数（クリック経由）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Conversions (via click).<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    countingType:
+      $ref: 'ConversionTrackerServiceCountingType.yaml#/ConversionTrackerServiceCountingType'
+    crossDeviceConversions:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        クロスデバイスコンバージョン数です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ADD、SET時のレスポンスではnullで返却されます。必要な場合はGETしてください。
+        </div>
+        <div lang="en">
+        Cross-device conv.<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        ADD and SET responses will return null. Please GET if necessary.
+        </div>
+    excludeFromBidding:
+      $ref: 'ConversionTrackerServiceExcludeFromBidding.yaml#/ConversionTrackerServiceExcludeFromBidding'
+    measurementPeriod:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        計測期間（単位：日）です。<br>
+        ※1～90の範囲内で指定可能です。<br>
+        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は30となります。またリクエスト時、ConversionTrackerServiceTypeがSB_SVM_CONVERSIONの場合、このフィールドは無視されます。
+        </div>
+        <div lang="en">
+        Counting period (unit: day).<br>
+        ∗ Can be specified within the range of 1 to 90 days.<br>
+        This field is optional in requests. The default value in ADD operation will be 30. When ConversionTrackerServiceType is SB_SVM_CONVERSION, this field will be ignored on request.
+        </div>
+    measurementPeriodView:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        測定期間（動画視聴）<br>
+        ※1-30の範囲で指定可能です。<br>
+        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は3となります。
+        </div>
+        <div lang="en">
+        Counting period (video view).<br>
+        ∗ Can be specified within the range of 1 to 30.<br>
+        This field is optional in requests. The default value in ADD operation will be 3.
+        </div>
+    mostRecentConversionDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンバージョンが発生した直近の日付です。<br>
+        ※YYYYMMDD形式です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        The date of the most recent conversion.<br>
+        ∗ Format: YYYYMMDD.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    status:
+      $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+    userRevenueValue:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        コンバージョンの収益値です。<br>
+        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は0.0となります。
+        2026年3月を目処に、本項目のレスポンスにて小数点以下が0以外の値が返却されるようになります。
+        </div>
+        <div lang="en">
+        Revenue value for conversions.<br>
+        This field is optional in requests. The default value in ADD operation will be 0.0.
+        Starting around March 2026, the response for this field will return values with non-zero decimal places.
+        </div>
+    webConversion:
+      $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
+    isPreviousConversion:
+      $ref: 'ConversionTrackerServiceIsPreviousConversion.yaml#/ConversionTrackerServiceIsPreviousConversion'
+    advancedMatchingEnabled:
+      $ref: 'ConversionTrackerServiceAdvancedMatchingEnabled.yaml#/ConversionTrackerServiceAdvancedMatchingEnabled'
+    trackingTagConversion:
+      $ref: 'ConversionTrackerServiceTrackingTagConversion.yaml#/ConversionTrackerServiceTrackingTagConversion'
+  title: ConversionTracker
+  description: |
+    <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。</div>
+    <div lang="en">ConversionTracker object shows ConversionTracker settings such as ConversionTag and performance data by tag.</div>

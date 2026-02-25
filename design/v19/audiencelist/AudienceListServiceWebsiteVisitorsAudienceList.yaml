@@ -1,0 +1,65 @@
+AudienceListServiceWebsiteVisitorsAudienceList:
+  type: object
+  nullable: true
+  properties:
+    isOpen:
+      $ref: 'AudienceListServiceIsOpen.yaml#/AudienceListServiceIsOpen'
+    isPreset:
+      $ref: 'AudienceListServiceIsPreset.yaml#/AudienceListServiceIsPreset'
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間（1日～540日）です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Data duration. (1 - 540 days) <br>
+        This field is required in ADD operation, and is optional in SET operation.
+        </div>
+    retargetingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        リターゲティングタグIDです。
+        </div>
+        <div lang="en">
+        ID of retargeting tag.
+        </div>
+    trackingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        計測タグIDです。<br>
+        このフィールドは、ADDおよびSET時に省略可能となります。<br>
+        ADD時にこのフィールドが未指定の場合、有効な計測タグが1つあれば自動で設定されます。<br>
+        SET時に更新対象のこのフィールドが未設定の場合、計測タグを更新できます。<br>
+        </div>
+        <div lang="en">
+        Tracking tag ID.<br>
+        This field is optional in ADD and SET operation.<br>
+        If this field is not specified in ADD operation, it will be set automatically if there is one valid tracking tag.<br>
+        If this field is not set in the target to be updated, it can be updated in SET operation.<br>
+        </div>
+    rules:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceRule.yaml#/AudienceListServiceRule'
+  title: AudienceListServiceWebsiteVisitorsAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceWebsiteVisitorsAudienceListオブジェクトは、オーディエンスリスト（ウェブサイト訪問ユーザー）を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがWEBSITE_VISITORSの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceWebsiteVisitorsAudienceList object describes the audience list (website visitor).<br>
+    This field is optional in ADD and SET operation.<br>
+    *If audienceListType is WEBSITE_VISITORS, this field is required in ADD and SET operation.
+    </div>
+

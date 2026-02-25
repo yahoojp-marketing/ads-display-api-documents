@@ -1,0 +1,13 @@
+TrackingTagServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'TrackingTagServiceValue.yaml#/TrackingTagServiceValue'
+  title: TrackingTagServiceReturnValue
+  description: |
+    <div lang="ja">TrackingTagServiceReturnValueオブジェクトは、計測タグの情報を格納するコンテナです。</div>
+    <div lang="en">TrackingTagServiceReturnValue object is a container for tracking tag information.</div>

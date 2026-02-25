@@ -1,0 +1,187 @@
+GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd:
+  type: object
+  nullable: true
+  properties:
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。
+        </div>
+        <div lang="en">
+        Display URL.
+        </div>
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。
+        </div>
+        <div lang="en">Final URL.
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。
+        </div>
+        <div lang="en">Final URL (smartphone).
+        </div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。
+        </div>
+        <div lang="en">Tracking URL.
+        </div>
+    buttonText:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">ボタンテキストです。<br>
+        adTypeがTALK_HEAD_VIEW_PREMIUMの場合、SKIPとなります。
+        </div>
+        <div lang="en">Button text.<br>
+        The field will be "SKIP" if adType is TALK_HEAD_VIEW_PREMIUM.
+        </div>
+    adShrinkMainMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        縮小メイン画像です。
+        </div>
+        <div lang="en">
+        Reduced main image.
+        </div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。
+        </div>
+        <div lang="en">
+        Thumbnail ID.
+        </div>
+    video3SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        3秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Viewing beacon URL (3 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    video25PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        25％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (25%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    video50PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        50％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (50%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    video75PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        75％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (75%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    video10SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        10秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Viewing beacon URL (10 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    videoCompleteBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生完了ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Viewing beacon URL (complete).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    videoStartBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生開始ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Viewing beacon URL (start).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+  title: GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceTalkHeadViewPremiumAdオブジェクトは、Talk Head View Premium広告の情報を表します。
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd object describes the information of Talk Head View Premium ad.
+    </div>

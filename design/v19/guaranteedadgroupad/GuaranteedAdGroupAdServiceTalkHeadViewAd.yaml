@@ -1,0 +1,190 @@
+GuaranteedAdGroupAdServiceTalkHeadViewAd:
+  type: object
+  nullable: true
+  properties:
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Final URL.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。
+        </div>
+        <div lang="en">Final URL (smartphone).
+        </div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        </div>
+    buttonText:
+      $ref: 'GuaranteedAdGroupAdServiceButtonText.yaml#/GuaranteedAdGroupAdServiceButtonText'
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。
+        </div>
+        <div lang="en">
+        Thumbnail ID.
+        </div>
+    video3SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        3秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (3 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video25PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        25％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (25%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video50PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        50％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (50%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video75PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        75％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (75%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video10SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        10秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (10 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoCompleteBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生完了ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (complete).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoStartBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生開始ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (start).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+  title: GuaranteedAdGroupAdServiceTalkHeadViewAd
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceTalkHeadViewAdオブジェクトは、Talk Head View広告の情報を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceTalkHeadViewAd object describes the information of Talk Head View ad.<br>
+    This field will be returned in the response, it will be ignored on input.<br>
+    </div>

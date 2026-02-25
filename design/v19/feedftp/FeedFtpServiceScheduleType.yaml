@@ -1,0 +1,28 @@
+FeedFtpServiceScheduleType:
+  type: string
+  nullable: true
+  enum:
+    - HOURLY
+    - DAILY
+    - WEEKLY
+    - UNKNOWN
+  title: FeedFtpServiceScheduleType
+  description: |
+    <div lang="ja">
+    定期アップロードのスケジュールタイプです。<br>
+    ADD時およびSET時、このフィールドは必須です。
+    </div>
+    <div lang="en">
+    FeedFtpServiceScheduleType displays the schedule type of Periodic Upload.<br>
+    This field is required in ADD and SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">HOURLY</dt>
+      <dd class="term__desc"><span lang="ja">時間</span><span lang="en">Hourly</span></dd>
+      <dt class="term__item">DAILY</dt>
+      <dd class="term__desc"><span lang="ja">毎日</span><span lang="en">Daily</span></dd>
+      <dt class="term__item">WEEKLY</dt>
+      <dd class="term__desc"><span lang="ja">毎週</span><span lang="en">Weekly</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

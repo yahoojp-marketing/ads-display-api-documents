@@ -1,0 +1,37 @@
+ReportDefinitionServiceReportIncludeDeleted:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: ReportDefinitionServiceReportIncludeDeleted
+  description: |
+    <div lang="ja">ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。<br>
+    レポートタイプがAD, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
+    それ以外のレポートタイプの場合、ADD時、このフィールドは無視されます。<br>
+    reportIncludeDeletedがFALSEの場合、以下エンティティはレポートに出力されません。</div>
+    <div lang="en">ReportDefinitionServiceReportIncludeDeleted object describes whether to output deleted items on the report or not.<br>
+    If the report type is AD,, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
+    For other report type, this field will be ignored in ADD operation.<br>
+    If reportIncludeDeleted is "FALSE", the following entities will not be output in the report.
+    </div>
+    <table border="1">
+    <tr><th>reportType</th><th>entity</th></tr>
+    <tr><td>AD</td><td>CAMPAIGN, ADGROUP, AD, MEDIA</td></tr>
+    <tr><td>URL</td><td>CAMPAIGN, ADGROUP</td></tr>
+    <tr><td>REACH</td><td>CAMPAIGN, ADGROUP, AD</td></tr>
+    <tr><td>SEARCH_TARGET</td><td>CAMPAIGN, ADGROUP, SEARCH_TARGET</td></tr>
+    <tr><td>PLACEMENT_TARGET</td><td>CAMPAIGN, ADGROUP, PLACEMENT_TARGET</td></tr>
+    <tr><td>CONTENT_KEYWORD_LIST</td><td>CAMPAIGN, ADGROUP, CONTENT_KEYWORD_LIST</td></tr>
+    <tr><td>AUDIENCE_LIST_TARGET</td><td>CAMPAIGN, ADGROUP, AUDIENCE_LIST_TARGET</td></tr>
+    <tr><td>APP</td><td>CAMPAIGN</td></tr>
+    </table>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">出力します。</span><span lang="en">Output.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">出力しません。</span><span lang="en">Do not output.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

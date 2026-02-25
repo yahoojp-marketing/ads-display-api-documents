@@ -1,0 +1,21 @@
+FeedDataServiceLang:
+  type: string
+  nullable: true
+  enum:
+    - JA
+    - EN
+    - UNKNOWN
+  title: FeedDataServiceLang
+  description: |
+    <div lang="ja">FeedDataServiceLangは、商品情報エラーファイルの言語を指定します。<br>
+    このフィールドは、省略可能となります。その際、デフォルト値はJAとなります。</div>
+    <div lang="en">FeedDataServiceOutput specifies the file format of Error file.<br>
+    This field is optional. The default value will be JA.</div>
+    <dl class=term>
+      <dt class="term__item">JA</dt>
+      <dd class="term__desc"><span lang="ja">日本語です。</span><span lang="en">Japanese</span></dd>
+      <dt class="term__item">EN</dt>
+      <dd class="term__desc"><span lang="ja">英語です。</span><span lang="en">English</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -15,12 +15,14 @@ AdGroupAdServiceAdType:
     <div lang="ja">
     AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
     このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
-    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なる場合があります。
+    なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なる場合があります。<br>
+    インストリーム広告を参照する場合は v18 以降をご利用ください。
     </div>
     <div lang="en">
     AdGroupAdServiceAdType describes the type of ad.<br>
     This field is required in ADD operation, and will be optional in SET operation.<br>
-    In addition, the number of available characters of ad creatives vary with selected devices.
+    In addition, the number of available characters of ad creatives vary with selected devices.<br>
+    For In-stream ads, use v18 or later.
     </div>
     <dl class=term>
       <dt class="term__item">BANNER_AD</dt>
