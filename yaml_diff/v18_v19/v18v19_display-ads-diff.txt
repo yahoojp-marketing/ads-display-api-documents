@@ -1,0 +1,1223 @@
+
+
+------
+diff -ru v18/Route.yaml v19/Route.yaml
+--- v18/Route.yaml	2026-02-20 15:44:51
++++ v19/Route.yaml	2026-02-20 15:40:04
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
+-  version: 'v18'
++  version: 'v19'
+   description: |
+     <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v18/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v19/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+ 
+@@ -23,7 +23,7 @@
+   - oAuth: [yahooads]
+ 
+ servers:
+-  - url: https://ads-display.yahooapis.jp/api/v18
++  - url: https://ads-display.yahooapis.jp/api/v19
+ 
+ tags:
+   - name: AbTestService
+@@ -107,6 +107,11 @@
+       <label class="account"></label>
+       <div lang="ja">RetargetingTagServiceでは、サイトリターゲティングのタグに関する情報の取得・作成を行います。</div>
+       <div lang="en">RetargetingTagService retrieves the site retargeting tag information.</div>
++  - name: TrackingTagService
++    description: |
++      <label class="account"></label>
++      <div lang="ja">TrackingTagServiceでは、計測タグに関する情報の取得を行います。</div>
++      <div lang="en">TrackingTagService retrieves the tracking tag information.</div>
+   - name: AppLinkService
+     description: |
+       <label class="account"></label>
+@@ -166,20 +171,20 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v18/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v18/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v18/URL.csv" download>Ad Delivery URL report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v18/REACH.csv" download>Reach report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v18/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v18/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v18/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v18/LABEL.csv" download>Label report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v18/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v18/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v18/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v18/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v18/APP.csv" download>App Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v18/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v18/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v18/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v19/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v19/URL.csv" download>Ad Delivery URL report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v19/REACH.csv" download>Reach report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v19/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v19/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v19/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v19/LABEL.csv" download>Label report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v19/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v19/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v19/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v19/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v19/APP.csv" download>App Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v19/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v19/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
+       </ul>
+   - name: MediaService
+     description: |
+@@ -220,8 +225,8 @@
+   - name: StatsService
+     description: |
+       <label class="campaign"></label>
+-      <div lang="ja">StatsServiceは、キャンペーン、広告グループ、広告、画像、動画の単位で統計情報の取得を行います。</div>
+-      <div lang="en">StatsService retrieves the stats data of each campaign, ad group, ad, image and video.</div>
++      <div lang="ja">StatsServiceは、キャンペーン、広告グループ、広告の単位で統計情報の取得を行います。</div>
++      <div lang="en">StatsService retrieves the stats data of each campaign, ad group and ad.</div>
+   - name: AdGroupTargetService
+     description: |
+       <label class="campaign"></label>
+@@ -1248,6 +1253,7 @@
+                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
+                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -1323,6 +1329,7 @@
+                 <tr><td>220124</td><td>Disable conversion optimizer.</td><td><div lang="ja">コンバージョンオプティマイザーの有効設定が不正です。</div><div lang="en">Target CPA cannot be set</div></td></tr>
+                 <tr><td>220310</td><td>Over limit to ad group under account.</td><td><div lang="ja">アカウント配下の広告グループの件数が上限を超えています。</div><div lang="en">Number of ad groups under an account exceeded the limit.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2043,6 +2050,7 @@
+                 <tr><td>220150</td><td>Invalid campaign settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、キャンペーンを作成/更新できません。</div><div lang="en">Campaign with campaignGoalSubtype INSTALL cannot be created/updated because it does not meet the conditions.</div></td></tr>
+                 <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -2121,6 +2129,7 @@
+                 <tr><td>220150</td><td>Invalid campaign settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、キャンペーンを作成/更新できません。</div><div lang="en">Campaign with campaignGoalSubtype INSTALL cannot be created/updated because it does not meet the conditions.</div></td></tr>
+                 <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3087,6 +3096,7 @@
+                 <tr><td>211013</td><td>Contain unavailable ads.</td><td><div lang="ja">広告データ利用基準に抵触している広告を用いて広告アクションユーザーリストを作成できません。</div><div lang="en">Cannot create an ad action user list using ads which are in violation of Advertising Data Usage Standards.</div></td></tr>
+                 <tr><td>211014</td><td>Contain Dynamic Ads for Display.</td><td><div lang="ja">動的ディスプレイ広告を用いて広告アクションユーザーリストを作成できません。</div><div lang="en">Cannot create an ad action user list using Dynamic Ads for Display.</div></td></tr>
+                 <tr><td>211020</td><td>The tracking tag has not been issued.</td><td><div lang="ja">計測タグが未発行のためオーディエンスリスト（ウェブサイト訪問ユーザー）を追加できません。<br>計測タグを発行するかretargetingTagIdを指定してください。</div><div lang="en">Audience list (website visitor) cannot be created because the tracking tag has not been issued.<br>Please issue the tracking tag or specify the retargetingTagId.</div></td>
++                <tr><td>211022</td><td>The tracking tag is not specified and there are multiple available tracking tags.</td><td><div lang="ja">計測タグが未指定かつ使用可能な計測タグが複数件存在します。<br>計測タグを指定してください。<br>trackingTagIdを指定してください。</div><div lang="en">The tracking tag is not specified and there are multiple available tracking tags.<br>Please specify the tracking tag.</div></td>
+               </tbody>
+             </table>
+             </div>
+@@ -3159,6 +3169,7 @@
+                 <tr><td>211008</td><td>Cannot remove a audience list set to AdGroup.</td><td><div lang="ja">広告グループに紐づくオーディエンスリストは削除できません。</div><div lang="en">Cannot remove a audience list set to AdGroup.</div></td></tr>
+                 <tr><td>211009</td><td>Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</td><td><div lang="ja">組み合わせリストの所有者と異なる所有者の共有リストを組み込むことはできません。</div><div lang="en">Cannot incorporate a shared list that belongs to an owner who's different from the owner of a combination list.</div></td></tr>
+                 <tr><td>211011</td><td>Contain unavailable ad action user lists.</td><td><div lang="ja">広告データ利用基準に抵触している広告アクションユーザーリストを用いて類似リストまたは組み合わせリストを作成することはできません。</div><div lang="en">Cannot create a similarity list or a combination list using ad action user lists which are in violation of Advertising Data Usage Standards.</div></td></tr>
++                <tr><td>211023</td><td>Cannot update the tracking tag because the tracking tag is set.</td><td><div lang="ja">計測タグが設定されているため、計測タグを更新できません。</div><div lang="en">Cannot update the tracking tag because the tracking tag is set.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -3534,6 +3545,65 @@
+             application/json:
+               schema:
+                 $ref: 'retargetingtag/RetargetingTagServiceGetResponse.yaml#/RetargetingTagServiceGetResponse'
++  /TrackingTagService/get:
++    post:
++      parameters:
++        - in: header
++          name: x-z-base-account-id
++          schema:
++            type: integer
++            format: int64
++          required: true
++          description: |
++            <div lang="ja">アカウントIDを指定してください。</div>
++            <div lang="en">Specify Account ID.</div>
++      description: |
++        <div lang="ja">計測タグに関する情報の取得を行います。</div>
++        <div lang="en">TrackingTagService retrieves the tracking tag information.</div>
++      tags:
++        - TrackingTagService
++      requestBody:
++        content:
++          application/json:
++            schema:
++              $ref: 'trackingtag/TrackingTagServiceSelector.yaml#/TrackingTagServiceSelector'
++      responses:
++        503:
++          $ref: '../Response503.yaml#/Response503'
++        500:
++          $ref: '../Response500.yaml#/Response500'
++        403:
++          $ref: '../Response403.yaml#/Response403'
++        401:
++          $ref: '../Response401.yaml#/Response401'
++        400:
++          $ref: '../Response400.yaml#/Response400'
++        200:
++          description: |
++            <p class="cellContent__head">Error codes</p>
++            <div class="cellContent__body">
++            <table class="apiTable">
++              <colgroup span="1" class="short"></colgroup>
++              <colgroup span="2"></colgroup>
++              <thead>
++                <tr><th>Code</th><th>Message</th><th>Description</th></tr>
++              </thead>
++              <tbody>
++                <tr><td>0001</td><td>Invalid Request.</td><td><div lang="ja">さまざまな要因が考えられます。<br>主な要因は、パラメータの値が不正か、誤りがあるためにオペレーションが完了できません。</div><div lang="en">This error can result for a variety of reasons. <br>Typically because one of the parameter values in the request is wrong or invalid and the operation cannot be completed.</div></td></tr>
++                <tr><td>R0001</td><td>Require.</td><td><div lang="ja">必須です。</div><div lang="en">It is missing required parameter.</div></td></tr>
++                <tr><td>V0001</td><td>Invalid value.</td><td><div lang="ja">値が無効です。</div><div lang="en">The value is invalid.</div></td></tr>
++                <tr><td>I0001</td><td>Deactivated Id.</td><td><div lang="ja">IDが無効です。</div><div lang="en">The ID is Deactivated.</div></td></tr>
++                <tr><td>F0001</td><td>Invalid format.</td><td><div lang="ja">値の形式が不正です。</div><div lang="en">The value format is invalid.</div></td></tr>
++                <tr><td>110005</td><td>Not a valid id.</td><td><div lang="ja">IDが有効ではありません。</div><div lang="en">Not a valid id.</div></td></tr>
++                <tr><td>L0002</td><td>Over list size.</td><td><div lang="ja">配列の要素数が上限値を超過しています。</div><div lang="en">The number of elements in the array exceeds the upper limit.</div></td></tr>
++                <tr><td>D0001</td><td>Duplicate.</td><td><div lang="ja">一意な値が重複しています。</div><div lang="en">The unique value is duplicated.</div></td></tr>
++              </tbody>
++            </table>
++            </div>
++          content:
++            application/json:
++              schema:
++                $ref: 'trackingtag/TrackingTagServiceGetResponse.yaml#/TrackingTagServiceGetResponse'
+   /AppLinkService/get:
+     post:
+       parameters:
+@@ -5867,6 +5937,7 @@
+                 <tr><td>220151</td><td>Invalid ad settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、広告を作成/更新できません。</div><div lang="en">Ad cannot be created/updated for a campaign with campaignGoalSubtype INSTALL because it does not meet the conditions.</div></td></tr>
+                 <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -5956,6 +6027,7 @@
+                 <tr><td>220151</td><td>Invalid ad settings for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンについて、必要な条件を満たしていないため、広告を作成/更新できません。</div><div lang="en">Ad cannot be created/updated for a campaign with campaignGoalSubtype INSTALL because it does not meet the conditions.</div></td></tr>
+                 <tr><td>220152</td><td>Cannot set delivery setting to ON for a campaign with campaignGoalSubtype INSTALL.</td><td><div lang="ja">campaignGoalSubtypeがINSTALLのキャンペーンもしくは広告について、配信設定をオンにできる条件を満たしていません。</div><div lang="en">Delivery setting cannot be set to ON because the campaign or ad settings does not meet the conditions for campaignGoalSubtype INSTALL.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -6577,8 +6649,8 @@
+             <div lang="ja">アカウントIDを指定してください。</div>
+             <div lang="en">Specify Account ID.</div>
+       description: |
+-        <div lang="ja">キャンペーン、広告グループ、広告、画像、動画の単位で統計情報の取得を行います。</div>
+-        <div lang="en">Retrieves the stats information of each campaign, ad group, ad, image and video.</div>
++        <div lang="ja">キャンペーン、広告グループ、広告の単位で統計情報の取得を行います。</div>
++        <div lang="en">Retrieves the stats information of each campaign, ad group and ad.</div>
+       tags:
+         - StatsService
+       requestBody:
+@@ -6750,6 +6822,7 @@
+                 <tr><td>220141</td><td>Can not set bidMultiplier.</td><td><div lang="ja">入札価格調整率が設定できないターゲティングです。</div><div lang="en">The bid adjustment rate is not available for the targeting.</div></td></tr>
+                 <tr><td>260015</td><td>Cannot operate the value inherited from the simulation.</td><td><div lang="ja">シミュレーションから引き継がれた値は操作できません。</div><div lang="en">Cannot operate the value inherited from the simulation.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -6816,6 +6889,7 @@
+                 <tr><td>220141</td><td>Can not set bidMultiplier.</td><td><div lang="ja">入札価格調整率が設定できないターゲティングです。</div><div lang="en">The bid adjustment rate is not available for the targeting.</div></td></tr>
+                 <tr><td>260015</td><td>Cannot operate the value inherited from the simulation.</td><td><div lang="ja">シミュレーションから引き継がれた値は操作できません。</div><div lang="en">Cannot operate the value inherited from the simulation.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -6948,6 +7022,7 @@
+                 <tr><td>220141</td><td>Can not set bidMultiplier.</td><td><div lang="ja">入札価格調整率が設定できないターゲティングです。</div><div lang="en">The bid adjustment rate is not available for the targeting.</div></td></tr>
+                 <tr><td>260015</td><td>Cannot operate the value inherited from the simulation.</td><td><div lang="ja">シミュレーションから引き継がれた値は操作できません。</div><div lang="en">Cannot operate the value inherited from the simulation.</div></td></tr>
+                 <tr><td>220156</td><td>Create and update operations are not allowed for PRIVATE_MARKET_PLACE campaigns.</td><td><div lang="ja">PRIVATE_MARKET_PLACEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for PRIVATE_MARKET_PLACE campaigns.</div></td></tr>
++                <tr><td>220157</td><td>Create and update operations are not allowed for THANKYOU_PAGE campaigns.</td><td><div lang="ja">THANKYOU_PAGEのキャンペーンでは、キャンペーン・広告グループ・広告・ターゲティングの作成・更新はできません。</div><div lang="en">Create and update of campaigns, ad groups, ads, and targeting are not allowed for THANKYOU_PAGE campaigns.</div></td></tr>
+               </tbody>
+             </table>
+             </div>
+@@ -7071,6 +7146,7 @@
+                 <tr><td>LT001</td><td>Over limit.</td><td><div lang="ja">登録できる上限値を超過しています。</div><div lang="en">The upper limit value that can be registered is exceeded.</div></td></tr>
+                 <tr><td>RL001</td><td>Invalid relation.</td><td><div lang="ja">リクエストの関連性が矛盾しています。<br> たとえば、開始＞終了の日付指定を行なっているなど</div><div lang="en">The relation of the request is contradictory.<br> For example, you are specifying the date of start > end.</div></td></tr>
+                 <tr><td>211019</td><td>The tracking tag has not been issued.</td><td><div lang="ja">計測タグが未発行のためコンバージョン設定を追加できません。</div><div lang="en">Conversion Tracker information cannot be added because the tracking tag has not been issued.</div></td>
++                <tr><td>211022</td><td>The tracking tag is not specified and there are multiple available tracking tags.</td><td><div lang="ja">計測タグが未指定かつ使用可能な計測タグが複数件存在します。<br>計測タグを指定してください。<br>trackingTagIdを指定してください。</div><div lang="en">The tracking tag is not specified and there are multiple available tracking tags.<br>Please specify the tracking tag.</div></td>
+               </tbody>
+             </table>
+             </div>
+
+
+------
+diff -ru v18/accountauthority/AccountAuthority.yaml v19/accountauthority/AccountAuthority.yaml
+--- v18/accountauthority/AccountAuthority.yaml	2026-02-20 15:44:51
++++ v19/accountauthority/AccountAuthority.yaml	2026-02-20 15:40:04
+@@ -93,9 +93,14 @@
+           <td>プライベートマーケットプレイス</td>
+           <td>キャンペーン掲載タイプ</td>
+         </tr>
++        <tr>
++          <td>THANKYOU_PAGE</td>
++          <td>サンキューページ</td>
++          <td>キャンペーン掲載タイプ</td>
++        </tr>
+       </table>
+     それぞれのキャンペーン目的の詳細については、<a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=ja">目的別キャンペーン作成について</a>をご確認ください。<br>
+-    ※キャンペーン掲載タイプが「PRIVATE_MARKET_PLACE」のキャンペーン、ならびにその配下の広告グループおよび広告は、作成・編集できません。
++    ※キャンペーン掲載タイプが「THANKYOU_PAGE」「PRIVATE_MARKET_PLACE」のキャンペーン、ならびにその配下の広告グループおよび広告は、作成・編集できません。
+     </div>
+     <div lang="en">AccountAuthority objects serve account authority information.<br>
+     Responded values of `authorities` are as follows.
+@@ -170,7 +175,12 @@
+           <td>Private market place</td>
+           <td>Campaign delivery type</td>
+         </tr>
++        <tr>
++          <td>THANKYOU_PAGE</td>
++          <td>Thank-you page</td>
++          <td>Campaign delivery type</td>
++        </tr>
+       </table>
+     Details of these campaign goal are described on <a href="https://ads-help.yahoo-net.jp/s/article/H000044496?language=en_US">Create campaigns by goal</a>.<br>
+-    *Campaigns with the campaign delivery type "PRIVATE_MARKET_PLACE", and their child ad groups and ads, cannot be created or edited.
++    *Campaigns with the campaign delivery type "THANKYOU_PAGE", "PRIVATE_MARKET_PLACE", and their child ad groups and ads, cannot be created or edited.
+     </div>
+
+
+------
+diff -ru v18/adgroupad/AdGroupAdServiceCarouselAd.yaml v19/adgroupad/AdGroupAdServiceCarouselAd.yaml
+--- v18/adgroupad/AdGroupAdServiceCarouselAd.yaml	2026-02-20 15:44:51
++++ v19/adgroupad/AdGroupAdServiceCarouselAd.yaml	2026-02-20 15:40:04
+@@ -17,6 +17,8 @@
+         Logo image ID.<br>
+         This field is required in ADD operation, and will be optional in SET operation.<br>
+         </div>
++    isRemoveLogoMediaId:
++      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+     principal:
+       type: string
+       nullable: true
+
+
+------
+diff -ru v18/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml v19/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml
+--- v18/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2026-02-20 15:44:51
++++ v19/adgrouptarget/AdGroupTargetServiceAudienceListType.yaml	2026-02-20 15:40:04
+@@ -6,7 +6,7 @@
+     - SIMILARITY
+     - WEBSITE_VISITORS
+     - CUSTOMER_DATA
+-    - OFFERED_BY_YAHOO_JAPAN
++    - OFFERED_BY_LY_SHARED_AUDIENCE
+     - APP_USER
+     - YAHOO_JAPAN_AUDIENCE_DISCOVERY
+     - ADVANCED_SEGMENTS
+@@ -17,7 +17,7 @@
+     - AFFINITY
+     - IN_MARKET
+     - ATTRIBUTE_LIFE_EVENTS
+-    - LINE_ID_DATA
++    - OFFERED_BY_LY
+     - UNKNOWN
+   title: AdGroupTargetServiceAudienceListType
+   description: |
+@@ -37,8 +37,8 @@
+       <dd class="term__desc"><span lang="ja">ウェブサイト訪問ユーザーです。</span><span lang="en">Website visitor.</span></dd>
+       <dt class="term__item">CUSTOMER_DATA</dt>
+       <dd class="term__desc"><span lang="ja">顧客データです。</span><span lang="en">Customer data.</span></dd>
+-      <dt class="term__item">OFFERED_BY_YAHOO_JAPAN</dt>
+-      <dd class="term__desc"><span lang="ja">ヤフー提供データです。</span><span lang="en">Audience list (offered by Yahoo! JAPAN Ads) data.</span></dd>
++      <dt class="term__item">OFFERED_BY_LY_SHARED_AUDIENCE</dt>
++      <dd class="term__desc"><span lang="ja">LINEヤフー提供（共通オーディエンス）です。</span><span lang="en">Offered by LY Corporation (Shared audience) data.</span></dd>
+       <dt class="term__item">APP_USER</dt>
+       <dd class="term__desc"><span lang="ja">アプリユーザーデータです。</span><span lang="en">App users data.</span></dd>
+       <dt class="term__item">YAHOO_JAPAN_AUDIENCE_DISCOVERY</dt>
+@@ -59,8 +59,8 @@
+       <dd class="term__desc"><span lang="ja">購買意向です。</span><span lang="en">In-market.</span></dd>
+       <dt class="term__item">ATTRIBUTE_LIFE_EVENTS</dt>
+       <dd class="term__desc"><span lang="ja">属性ライフイベントです。</span><span lang="en">Attribute-life-events.</span></dd>
+-      <dt class="term__item">LINE_ID_DATA</dt>
+-      <dd class="term__desc"><span lang="ja">Line Id Dataです。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">Line Id Data. This parameter is limited to certain clients.</span></dd>
++      <dt class="term__item">OFFERED_BY_LY</dt>
++      <dd class="term__desc"><span lang="ja">LINEヤフー提供です。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">Offered by LY Corporation. This parameter is limited to certain clients.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/applinkservice/AppLinkServiceAppVendor.yaml v19/applinkservice/AppLinkServiceAppVendor.yaml
+--- v18/applinkservice/AppLinkServiceAppVendor.yaml	2026-02-20 15:44:51
++++ v19/applinkservice/AppLinkServiceAppVendor.yaml	2026-02-20 15:40:04
+@@ -6,6 +6,7 @@
+     - APPSFLYER
+     - KOCHAVA
+     - SINGULAR
++    - AIRBRIDGE
+     - UNKNOWN
+   title: AppLinkServiceAppVendor
+   description: |
+@@ -24,6 +25,8 @@
+       <dd class="term__desc"><span lang="ja">KOCHAVA</span><span lang="en">KOCHAVA</span></dd>
+       <dt class="term__item">SINGULAR</dt>
+       <dd class="term__desc"><span lang="ja">SINGULAR</span><span lang="en">SINGULAR</span></dd>
++      <dt class="term__item">AIRBRIDGE</dt>
++      <dd class="term__desc"><span lang="ja">AIRBRIDGE</span><span lang="en">AIRBRIDGE</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceAppVendor.yaml v19/audiencelist/AudienceListServiceAppVendor.yaml
+--- v18/audiencelist/AudienceListServiceAppVendor.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceAppVendor.yaml	2026-02-20 15:40:04
+@@ -6,6 +6,7 @@
+     - APPSFLYER
+     - KOCHAVA
+     - SINGULAR
++    - AIRBRIDGE
+     - UNKNOWN
+   title: AudienceListServiceAppVendor
+   description: |
+@@ -26,6 +27,8 @@
+       <dd class="term__desc"><span lang="ja">KOCHAVA</span><span lang="en">KOCHAVA</span></dd>
+       <dt class="term__item">SINGULAR</dt>
+       <dd class="term__desc"><span lang="ja">SINGULAR</span><span lang="en">SINGULAR</span></dd>
++      <dt class="term__item">AIRBRIDGE</dt>
++      <dd class="term__desc"><span lang="ja">AIRBRIDGE</span><span lang="en">AIRBRIDGE</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceContent.yaml v19/audiencelist/AudienceListServiceContent.yaml
+--- v18/audiencelist/AudienceListServiceContent.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceContent.yaml	2026-02-20 15:40:04
+@@ -24,8 +24,10 @@
+       $ref: 'AudienceListServiceLineOaBlockAudienceList.yaml#/AudienceListServiceLineOaBlockAudienceList'
+     businessManagerAudienceList:
+       $ref: 'AudienceListServiceBusinessManagerAudienceList.yaml#/AudienceListServiceBusinessManagerAudienceList'
+-    lineIdDataAudienceList:
+-      $ref: 'AudienceListServiceLineIdDataAudienceList.yaml#/AudienceListServiceLineIdDataAudienceList'
++    offeredByLyAudienceList:
++      $ref: 'AudienceListServiceOfferedByLyAudienceList.yaml#/AudienceListServiceOfferedByLyAudienceList'
++    migratedLineAudienceList:
++      $ref: 'AudienceListServiceMigratedLineAudienceList.yaml#/AudienceListServiceMigratedLineAudienceList'
+     audienceListType:
+       $ref: 'AudienceListServiceType.yaml#/AudienceListServiceType'
+   title: AudienceListServiceContent
+Only in v18/audiencelist: AudienceListServiceLineIdDataAudienceList.yaml
+Only in v19/audiencelist: AudienceListServiceMigratedLineAudienceList.yaml
+Only in v19/audiencelist: AudienceListServiceOfferedByLyAudienceList.yaml
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceRuleCondition.yaml v19/audiencelist/AudienceListServiceRuleCondition.yaml
+--- v18/audiencelist/AudienceListServiceRuleCondition.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceRuleCondition.yaml	2026-02-20 15:40:04
+@@ -13,12 +13,18 @@
+         <div lang="ja">
+         ルールで評価する値です。<br>
+         このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。<br>
+-        ※ruleTypeがEVENT_TYPEの場合、以下のイベント種別に記載の値のみ指定可能となります。
++        ・websiteVisitorsAudienceList で使用できるイベント種別は<a href="https://ads-help.yahoo-net.jp/s/article/H000044558?language=ja">こちら</a>をご参照ください。<br>
++        ・appUserAudienceList で使用できるイベント種別は<a href="https://ads-help.yahoo-net.jp/s/article/H000044585?language=ja#c02">こちら</a>をご参照ください。<br><br>
++
++        ※ruleTypeがEVENT_TYPEの場合、以下のイベント種別に記載の値のみ指定可能となります。<br>
+         </div>
+         <div lang="en">
+         Matching Rules Value. <br>
+         This field is required in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+-        ∗If ruleType is EVENT_TYPE, only the values listed in the table below can be specified.
++        - For event types available for websiteVisitorsAudienceList, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044558?language=en_US">here</a>.<br>
++        - For event types available for appUserAudienceList, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044585?language=en_US#c02">here</a>.<br><br>
++
++        ∗If ruleType is EVENT_TYPE, only the values listed in the table below can be specified.<br>
+         </div>
+         <details>
+           <summary>
+@@ -219,6 +225,13 @@
+                 <td>
+                   <div lang="ja">クレジットカードの利用</div>
+                   <div lang="en">Credit card</div>
++                </td>
++              </tr>
++              <tr>
++                <td>generate_lead</td>
++                <td>
++                  <div lang="ja">リード獲得</div>
++                  <div lang="en">Generate leads</div>
+                 </td>
+               </tr>
+               <tr>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceSelector.yaml v19/audiencelist/AudienceListServiceSelector.yaml
+--- v18/audiencelist/AudienceListServiceSelector.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceSelector.yaml	2026-02-20 15:40:04
+@@ -48,6 +48,13 @@
+         $ref: 'AudienceListServiceType.yaml#/AudienceListServiceType'
+     sharingStatusFilterType:
+       $ref: 'AudienceListServiceSharingStatusFilterType.yaml#/AudienceListServiceSharingStatusFilterType'
++    includeDetail:
++      type: boolean
++      nullable: true
++      default: false
++      description: |
++        <div lang="ja">詳細情報を含めるかどうかのフラグです。true の場合、各オーディエンスリスト種別の詳細な条件情報が含まれます。デフォルトは false です。</div>
++        <div lang="en">Flag to include detailed information. When true, detailed condition information for each audience list type is included. Default is false.</div>
+   title: AudienceListServiceSelector
+   description: |
+     <div lang="ja">AudienceListServiceSelectorオブジェクトは、オーディエンスリストを指定します。</div>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceSourceType.yaml v19/audiencelist/AudienceListServiceSourceType.yaml
+--- v18/audiencelist/AudienceListServiceSourceType.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceSourceType.yaml	2026-02-20 15:40:04
+@@ -10,7 +10,7 @@
+     - AD_ACTION
+     - LINE_OFFICIAL_ACCOUNT
+     - BUSINESS_MANAGER
+-    - LINE_ID_DATA
++    - OFFERED_BY_LY
+     - UNKNOWN
+   title: AudienceListServiceSourceType
+   description: |
+@@ -39,8 +39,8 @@
+       <dd class="term__desc"><span lang="ja">LINE公式アカウントです。</span><span lang="en">LINE Official Account.</span></dd>
+       <dt class="term__item">BUSINESS_MANAGER</dt>
+       <dd class="term__desc"><span lang="ja">ビジネスマネージャーです。</span><span lang="en">Business Manager.</span></dd>
+-      <dt class="term__item">LINE_ID_DATA</dt>
+-      <dd class="term__desc"><span lang="ja">Line Id Dataです。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">Line Id Data. *This parameter is limited to certain clients.</span></dd>
++      <dt class="term__item">OFFERED_BY_LY</dt>
++      <dd class="term__desc"><span lang="ja">LINEヤフー提供です。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">Offered by LY Corporation. *This parameter is limited to certain clients.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceType.yaml v19/audiencelist/AudienceListServiceType.yaml
+--- v18/audiencelist/AudienceListServiceType.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceType.yaml	2026-02-20 15:40:04
+@@ -13,7 +13,8 @@
+     - LINE_OA_FRIEND
+     - LINE_OA_BLOCK
+     - BUSINESS_MANAGER
+-    - LINE_ID_DATA
++    - OFFERED_BY_LY
++    - MIGRATED_LINE_AUDIENCE
+     - UNKNOWN
+   title: AudienceListServiceType
+   description: |
+@@ -23,7 +24,9 @@
+     ただし、以下の値はADD時に指定することはできません。<br>
+     - YAHOO_JAPAN_AUDIENCE_DISCOVERY<br>
+     - BUSINESS_MANAGER<br>
+-    - LINE_ID_DATA<br>
++    - OFFERED_BY_LY<br>
++    また、以下の値はADD時もSET時も指定することはできません。<br>
++    - MIGRATED_LINE_AUDIENCE<br>
+     </div>
+     <div lang="en">
+     AudienceListServiceType serves types of audience list. <br>
+@@ -31,7 +34,9 @@
+     However, the following values cannot be specified in ADD operation.<br>
+     - YAHOO_JAPAN_AUDIENCE_DISCOVERY<br>
+     - BUSINESS_MANAGER<br>
+-    - LINE_ID_DATA<br>
++    - OFFERED_BY_LY<br>
++    In addition, the following value cannot be specified for either ADD or SET operations.<br>
++    - MIGRATED_LINE_AUDIENCE<br>
+     </div>
+     <dl class=term>
+       <dt class="term__item">COMBINATION</dt>
+@@ -56,8 +61,10 @@
+       <dd class="term__desc"><span lang="ja">LINE公式アカウントをブロック中の友だちです。</span><span lang="en">Friends who blocked LINE Official Account.</span></dd>
+       <dt class="term__item">BUSINESS_MANAGER</dt>
+       <dd class="term__desc"><span lang="ja">ビジネスマネージャーです。</span><span lang="en">Business manager.</span></dd>
+-      <dt class="term__item">LINE_ID_DATA</dt>
+-      <dd class="term__desc"><span lang="ja">Line Id Dataです。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">LINE ID DATA</span></dd>
++      <dt class="term__item">OFFERED_BY_LY</dt>
++      <dd class="term__desc"><span lang="ja">LINEヤフー提供です。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">Offered by LY Corporation</span></dd>
++      <dt class="term__item">MIGRATED_LINE_AUDIENCE</dt>
++      <dd class="term__desc"><span lang="ja">LINEオーディエンス（移行）です。こちらのパラメータのご利用は、一部お客様に限定しています。</span><span lang="en">MIGRATED_LINE_AUDIENCE</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml v19/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml
+--- v18/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml	2026-02-20 15:44:51
++++ v19/audiencelist/AudienceListServiceWebsiteVisitorsAudienceList.yaml	2026-02-20 15:40:04
+@@ -29,6 +29,22 @@
+         <div lang="en">
+         ID of retargeting tag.
+         </div>
++    trackingTagId:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">
++        計測タグIDです。<br>
++        このフィールドは、ADDおよびSET時に省略可能となります。<br>
++        ADD時にこのフィールドが未指定の場合、有効な計測タグが1つあれば自動で設定されます。<br>
++        SET時に更新対象のこのフィールドが未設定の場合、計測タグを更新できます。<br>
++        </div>
++        <div lang="en">
++        Tracking tag ID.<br>
++        This field is optional in ADD and SET operation.<br>
++        If this field is not specified in ADD operation, it will be set automatically if there is one valid tracking tag.<br>
++        If this field is not set in the target to be updated, it can be updated in SET operation.<br>
++        </div>
+     rules:
+       type: array
+       nullable: true
+
+
+------
+diff -ru v18/campaign/Campaign.yaml v19/campaign/Campaign.yaml
+--- v18/campaign/Campaign.yaml	2026-02-20 15:44:51
++++ v19/campaign/Campaign.yaml	2026-02-20 15:40:04
+@@ -217,13 +217,13 @@
+         キャンペーン掲載タイプです。<br>
+         このフィールドは、ADDおよびSET時に省略可能となり、REMOVE時に無視されます。<br>
+         CampaignDeliveryTypeを指定してのキャンペーン作成は、一部の利用者向けの機能となります。<br>
+-        ※キャンペーン掲載タイプ PRIVATE_MARKET_PLACE はレスポンスの際に返却されますが、リクエストの際には無視されます。
++        ※キャンペーン掲載タイプ THANKYOU_PAGE, PRIVATE_MARKET_PLACE はレスポンスの際に返却されますが、リクエストの際には無視されます。
+         </div>
+         <div lang="en">
+         Campaign delivery type.<br>
+         This field is optional in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+         Creating a campaign with the CampaignDeliveryType specified is a function for some users.<br>
+-        *Campaign delivery type PRIVATE_MARKET_PLACE will be returned in the response, but will be ignored in the request.
++        *Campaign delivery type THANKYOU_PAGE, PRIVATE_MARKET_PLACE will be returned in the response, but will be ignored in the request.
+         </div>
+     createdDate:
+       type: string
+@@ -245,13 +245,13 @@
+         キャンペーンの広告効果測定ツールのベンダー名です。キャンペーン目的「アプリ訴求」の場合にのみ設定されます。<br>
+         このフィールドはキャンペーン作成後、最初にリンク先URLを設定した広告が作成された時に設定されます。<br>
+         キャンペーンに紐づく広告のリンク先URLには、このベンダー名に対応する広告効果測定ツールのURLのみが指定できます。<br>
+-        ADD時およびSET時、<code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, および <code>NONE</code> のみ指定可能です。
++        ADD時およびSET時、<code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, <code>AIRBRIDGE</code>, および <code>NONE</code> のみ指定可能です。
+         </div>
+         <div lang="en">
+         Vendor name of tracking tool for the campaign. It will be set only when the campaign goal is "app promotion."<br>
+         This field will be set when the first ad with destination URL is created after creating the campaign.<br>
+         Only the tracking tool URL corresponds to this tool vendor name can be specified for the destination URL of the ad linked to the campaign.<br>
+-        Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, and <code>NONE</code> can be specified in ADD and SET operation.
++        Only <code>APPSFLYER</code>, <code>ADJUST</code>, <code>SINGULAR</code>, <code>KOCHAVA</code>, <code>AIRBRIDGE</code>, and <code>NONE</code> can be specified in ADD and SET operation.
+         </div>
+     skanOptimizeAdDeliveryEnabled:
+       $ref: 'CampaignServiceSkanOptimizeAdDeliveryEnabled.yaml#/CampaignServiceSkanOptimizeAdDeliveryEnabled'
+
+
+------
+diff -ru v18/campaign/CampaignServiceCampaignGoalSubtype.yaml v19/campaign/CampaignServiceCampaignGoalSubtype.yaml
+--- v18/campaign/CampaignServiceCampaignGoalSubtype.yaml	2026-02-20 15:44:51
++++ v19/campaign/CampaignServiceCampaignGoalSubtype.yaml	2026-02-20 15:40:04
+@@ -46,7 +46,7 @@
+         <td>conversionTrackerTypeが"APP_CONVERSION"かつcategoryが"DOWNLOAD"のconversionTrackerId</td>
+       </tr>
+     </table>
+-    ※Yahoo!広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v18/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
++    ※Yahoo!広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
+     ※広告管理ツールによるconversionTracker(コンバージョン測定)の設定については<a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=ja">こちら</a>をご確認ください。
+     </div>
+     </div>
+@@ -89,7 +89,7 @@
+         <td>Set conversionTrackerId whose conversionTrackerType is "APP_CONVERSION" and category is "DOWNLOAD"</td>
+       </tr>
+     </table>
+-    ※To configure conversionTracker (conversion measurement) via the Yahoo! Ads API, please use <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v18/ConversionTrackerService/en/">ConversionTrackerService</a>.<br>
++    ※To configure conversionTracker (conversion measurement) via the Yahoo! Ads API, please use <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/en/">ConversionTrackerService</a>.<br>
+     ※For configuring conversionTracker (conversion measurement) using the ad management tool, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=en_US">this page</a>
+     </div>
+     </div>
+
+
+------
+diff -ru v18/conversiontracker/ConversionTracker.yaml v19/conversiontracker/ConversionTracker.yaml
+--- v18/conversiontracker/ConversionTracker.yaml	2026-02-20 15:44:51
++++ v19/conversiontracker/ConversionTracker.yaml	2026-02-20 15:40:04
+@@ -165,12 +165,12 @@
+         <div lang="ja">
+         計測期間（単位：日）です。<br>
+         ※1～90の範囲内で指定可能です。<br>
+-        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は30となります。
++        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は30となります。またリクエスト時、ConversionTrackerServiceTypeがSB_SVM_CONVERSIONの場合、このフィールドは無視されます。
+         </div>
+         <div lang="en">
+         Counting period (unit: day).<br>
+         ∗ Can be specified within the range of 1 to 90 days.<br>
+-        This field is optional in requests. The default value in ADD operation will be 30.
++        This field is optional in requests. The default value in ADD operation will be 30. When ConversionTrackerServiceType is SB_SVM_CONVERSION, this field will be ignored on request.
+         </div>
+     measurementPeriodView:
+       type: integer
+@@ -204,17 +204,19 @@
+     status:
+       $ref: 'ConversionTrackerServiceStatus.yaml#/ConversionTrackerServiceStatus'
+     userRevenueValue:
+-      type: integer
++      type: number
+       nullable: true
+-      format: int64
++      format: double
+       description: |
+         <div lang="ja">
+         コンバージョンの収益値です。<br>
+-        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は0となります。
++        このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は0.0となります。
++        2026年3月を目処に、本項目のレスポンスにて小数点以下が0以外の値が返却されるようになります。
+         </div>
+         <div lang="en">
+         Revenue value for conversions.<br>
+-        This field is optional in requests. The default value in ADD operation will be 0.
++        This field is optional in requests. The default value in ADD operation will be 0.0.
++        Starting around March 2026, the response for this field will return values with non-zero decimal places.
+         </div>
+     webConversion:
+       $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'
+@@ -222,8 +224,8 @@
+       $ref: 'ConversionTrackerServiceIsPreviousConversion.yaml#/ConversionTrackerServiceIsPreviousConversion'
+     advancedMatchingEnabled:
+       $ref: 'ConversionTrackerServiceAdvancedMatchingEnabled.yaml#/ConversionTrackerServiceAdvancedMatchingEnabled'
+-    lyTagConversion:
+-      $ref: 'ConversionTrackerServiceLyTagConversion.yaml#/ConversionTrackerServiceLyTagConversion'
++    trackingTagConversion:
++      $ref: 'ConversionTrackerServiceTrackingTagConversion.yaml#/ConversionTrackerServiceTrackingTagConversion'
+   title: ConversionTracker
+   description: |
+     <div lang="ja">ConversionTrackerオブジェクトは、コンバージョン測定タグやタグごとのパフォーマンスデータなどのコンバージョン設定を表します。</div>
+
+
+------
+diff -ru v18/conversiontracker/ConversionTrackerServiceCategory.yaml v19/conversiontracker/ConversionTrackerServiceCategory.yaml
+--- v18/conversiontracker/ConversionTrackerServiceCategory.yaml	2026-02-20 15:44:51
++++ v19/conversiontracker/ConversionTrackerServiceCategory.yaml	2026-02-20 15:40:04
+@@ -34,6 +34,8 @@
+     - END_LEVEL
+     - LEVEL_ACHIEVED
+     - UNLOCK_ACHIEVEMENT
++    - STORE_VISIT
++    - GENERATE_LEADS
+     - CUSTOM1
+     - CUSTOM2
+     - CUSTOM3
+@@ -42,11 +44,11 @@
+   description: |
+     <div lang="ja">
+     ConversionTrackerServiceCategoryは、トラッキング対象のコンバージョン設定のカテゴリーです。<br>
+-    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
++    このフィールドは、ADD時は必須となり、SET時は省略可能となります。ConversionTrackerServiceTypeがLY_SVM_CONVERSIONもしくはSB_SVM_CONVERSIONの場合、このフィールドは無視されます。
+     </div>
+     <div lang="en">
+     ConversionTrackerServiceCategory is a category for ConversionTracker.<br>
+-    This field is required in ADD operation, and will be optional in SET operation.
++    This field is required in ADD operation, and will be optional in SET operation. When ConversionTrackerServiceType is LY_SVM_CONVERSION or SB_SVM_CONVERSION, this field will be ignored.
+     </div>
+     <dl class=term>
+       <dt class="term__item">NONE</dt>
+@@ -112,7 +114,11 @@
+       <dt class="term__item">LEVEL_ACHIEVED</dt>
+       <dd class="term__desc"><span lang="ja">ゲームのレベル到達です。</span><span lang="en">Achieve game level</span></dd> 
+       <dt class="term__item">UNLOCK_ACHIEVEMENT</dt>
+-      <dd class="term__desc"><span lang="ja">ゲームの目標達成です。</span><span lang="en">Unlock achievement</span></dd> 
++      <dd class="term__desc"><span lang="ja">ゲームの目標達成です。</span><span lang="en">Unlock achievement</span></dd>
++      <dt class="term__item">STORE_VISIT</dt>
++      <dd class="term__desc"><span lang="ja">来店計測です。</span><span lang="en">Store Visit</span></dd> 
++      <dt class="term__item">GENERATE_LEADS</dt>
++      <dd class="term__desc"><span lang="ja">リード獲得です。</span><span lang="en">Generate Leads</span></dd>
+       <dt class="term__item">CUSTOM1</dt>
+       <dd class="term__desc"><span lang="ja">カスタムイベント1です。</span><span lang="en">Custom event 1</span></dd> 
+       <dt class="term__item">CUSTOM2</dt>
+Only in v18/conversiontracker: ConversionTrackerServiceLyTagConversion.yaml
+Only in v18/conversiontracker: ConversionTrackerServiceLyTagConversionCompareOperator.yaml
+Only in v18/conversiontracker: ConversionTrackerServiceLyTagConversionRuleType.yaml
+Only in v18/conversiontracker: ConversionTrackerServiceLyTagConversionUrlRule.yaml
+Only in v19/conversiontracker: ConversionTrackerServiceTrackingTagConversion.yaml
+Only in v19/conversiontracker: ConversionTrackerServiceTrackingTagConversionCompareOperator.yaml
+Only in v19/conversiontracker: ConversionTrackerServiceTrackingTagConversionRuleType.yaml
+Only in v19/conversiontracker: ConversionTrackerServiceTrackingTagConversionUrlRule.yaml
+
+
+------
+diff -ru v18/conversiontracker/ConversionTrackerServiceType.yaml v19/conversiontracker/ConversionTrackerServiceType.yaml
+--- v18/conversiontracker/ConversionTrackerServiceType.yaml	2026-02-20 15:44:51
++++ v19/conversiontracker/ConversionTrackerServiceType.yaml	2026-02-20 15:40:04
+@@ -5,17 +5,19 @@
+     - WEB_CONVERSION
+     - APP_CONVERSION
+     - IMPORT_CONVERSION
+-    - LY_TAG_CONVERSION
++    - TRACKING_TAG_CONVERSION
++    - LY_SVM_CONVERSION
++    - SB_SVM_CONVERSION
+     - UNKNOWN
+   title: ConversionTrackerServiceType
+   description: |
+     <div lang="ja">
+     ConversionTrackerServiceTypeは、コンバージョンの種別を表します。<br>
+-    このフィールドは、リクエストの場合は必須です。
++    このフィールドは、リクエストの場合は必須です。また、LY_SVM_CONVERSIONとSB_SVM_CONVERSIONはadd時に指定することはできません。
+     </div>
+     <div lang="en">
+     ConversionTrackerServiceType describes conversion type.<br>
+-    This field is required in requests.
++    This field is required in requests. Also, LY_SVM_CONVERSION or SB_SVM_CONVERSION cannot be specified with add requests.
+     </div>
+     <dl class=term>
+       <dt class="term__item">WEB_CONVERSION</dt>
+@@ -24,8 +26,12 @@
+       <dd class="term__desc"><span lang="ja">アプリコンバージョン</span><span lang="en">Mobile app conversions</span></dd>
+       <dt class="term__item">IMPORT_CONVERSION</dt>
+       <dd class="term__desc"><span lang="ja">インポートコンバージョン</span><span lang="en">Import conversions</span></dd>
+-      <dt class="term__item">LY_TAG_CONVERSION</dt>
++      <dt class="term__item">TRACKING_TAG_CONVERSION</dt>
+       <dd class="term__desc"><span lang="ja">ウェブ（計測タグ）コンバージョン</span><span lang="en">Web conversions (Tracking tag)</span></dd>
++      <dt class="term__item">LY_SVM_CONVERSION</dt>
++      <dd class="term__desc"><span lang="ja">SVMコンバージョン(LY方式)</span><span lang="en">LY SVM CONVERSION</span></dd>
++      <dt class="term__item">SB_SVM_CONVERSION</dt>
++      <dd class="term__desc"><span lang="ja">SVMコンバージョン(SB方式)</span><span lang="en">SB SVM CONVERSION</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/feeddata/FeedDataServiceDownloadErrorFileSelector.yaml v19/feeddata/FeedDataServiceDownloadErrorFileSelector.yaml
+--- v18/feeddata/FeedDataServiceDownloadErrorFileSelector.yaml	2026-02-20 15:44:51
++++ v19/feeddata/FeedDataServiceDownloadErrorFileSelector.yaml	2026-02-20 15:40:04
+@@ -23,6 +23,8 @@
+       $ref: 'FeedDataServiceEncoding.yaml#/FeedDataServiceEncoding'
+     output:
+       $ref: 'FeedDataServiceOutput.yaml#/FeedDataServiceOutput'
++    lang:
++      $ref: 'FeedDataServiceLang.yaml#/FeedDataServiceLang'
+   title: FeedDataServiceDownloadErrorFileSelector
+   description: |
+     <div lang="ja">商品情報のエラーファイルダウンロード処理を実施します。</div>
+Only in v19/feeddata: FeedDataServiceLang.yaml
+
+
+------
+diff -ru v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml
+--- v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml	2026-02-20 15:44:51
++++ v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceAd.yaml	2026-02-25 10:14:46
+@@ -40,6 +40,8 @@
+       $ref: 'GuaranteedAdGroupAdServiceTopPageTopicsPRAd.yaml#/GuaranteedAdGroupAdServiceTopPageTopicsPRAd'
+     talkHeadView:
+       $ref: 'GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml#/GuaranteedAdGroupAdServiceTalkHeadViewAd'
++    talkHeadViewPremium:
++      $ref: 'GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd.yaml#/GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd'
+   title: GuaranteedAdGroupAdServiceAd
+   description: |
+     <div lang="ja">
+
+
+------
+diff -ru v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml
+--- v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml	2026-02-20 15:44:51
++++ v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceAdType.yaml	2026-02-25 10:14:46
+@@ -19,6 +19,7 @@
+     - TOP_IMPACT_PANORAMA_PANEL_SWITCH
+     - TOP_PAGE_TOPICS_PR
+     - TALK_HEAD_VIEW
++    - TALK_HEAD_VIEW_PREMIUM
+     - UNKNOWN
+   title: GuaranteedAdGroupAdServiceAdType
+   description: |
+@@ -65,6 +66,8 @@
+       <dd class="term__desc"><span lang="ja">トップページ トピックスPR広告です。</span><span lang="en">Top Page Topics PR ad.</span></dd>
+       <dt class="term__item">TALK_HEAD_VIEW</dt>
+       <dd class="term__desc"><span lang="ja">Talk Head View広告です。</span><span lang="en">Talk Head View ad.</span></dd>
++      <dt class="term__item">TALK_HEAD_VIEW_PREMIUM</dt>
++      <dd class="term__desc"><span lang="ja">Talk Head View Premium広告です。</span><span lang="en">Talk Head View Premium ad.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value.</span></dd>
+     </dl>
+Only in v19/guaranteedadgroupad: GuaranteedAdGroupAdServiceButtonText.yaml
+
+
+------
+diff -ru v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml
+--- v18/guaranteedadgroupad/GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml	2026-02-20 15:44:51
++++ v19/guaranteedadgroupad/GuaranteedAdGroupAdServiceTalkHeadViewAd.yaml	2026-02-25 10:14:46
+@@ -28,6 +28,14 @@
+         <div lang="en">Final URL.<br>
+         This field will be returned in the response, it will be ignored on input.
+         </div>
++    smartphoneFinalUrl:
++      type: string
++      nullable: true
++      description: |
++        <div lang="ja">スマートフォン向けURLです。
++        </div>
++        <div lang="en">Final URL (smartphone).
++        </div>
+     trackingUrl:
+       type: string
+       nullable: true
+@@ -37,6 +45,138 @@
+         </div>
+         <div lang="en">Tracking URL.<br>
+         This field will be returned in the response, it will be ignored on input.<br>
++        </div>
++    buttonText:
++      $ref: 'GuaranteedAdGroupAdServiceButtonText.yaml#/GuaranteedAdGroupAdServiceButtonText'
++    thumbnailMediaId:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">
++        サムネイルIDです。
++        </div>
++        <div lang="en">
++        Thumbnail ID.
++        </div>
++    video3SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        3秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (3 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video25PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        25％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (25%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video50PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        50％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (50%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video75PercentBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        75％再生視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Playback viewing beacon URL (75%).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    video10SecBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        10秒視聴ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (10 seconds).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoCompleteBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生完了ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (complete).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
++        </div>
++    videoStartBeaconUrls:
++      type: array
++      nullable: true
++      items:
++        type: string
++        nullable: true
++      description: |
++        <div lang="ja">
++        再生開始ビーコンURLです。<br>
++        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
++        ※httpsのURLのみ設定可能です。
++        </div>
++        <div lang="en">
++        Viewing beacon URL (start).<br>
++        This field will be returned in the response, it will be ignored on input.<br>
++        ∗Available URL is only &#34;https&#34;.
+         </div>
+   title: GuaranteedAdGroupAdServiceTalkHeadViewAd
+   description: |
+Only in v19/guaranteedadgroupad: GuaranteedAdGroupAdServiceTalkHeadViewPremiumAd.yaml
+
+
+------
+diff -ru v18/placementurlidea/PlacementUrlIdeaServiceSortField.yaml v19/placementurlidea/PlacementUrlIdeaServiceSortField.yaml
+--- v18/placementurlidea/PlacementUrlIdeaServiceSortField.yaml	2026-02-20 15:44:51
++++ v19/placementurlidea/PlacementUrlIdeaServiceSortField.yaml	2026-02-20 15:40:04
+@@ -10,6 +10,8 @@
+     - SMART_PHONE_AD_REQUESTS
+     - TABLET_REACHES
+     - TABLET_AD_REQUESTS
++    - REACHES
++    - AD_REQUESTS
+     - UNKNOWN
+   title: PlacementUrlIdeaServiceSortField
+   description: |
+@@ -32,6 +34,10 @@
+       <dd class="term__desc"><span lang="ja">Tablet でのリーチ数です。</span><span lang="en">Reach Number of Tablet</span></dd>
+       <dt class="term__item">TABLET_AD_REQUESTS</dt>
+       <dd class="term__desc"><span lang="ja">TabletでのADリクエスト数です。</span><span lang="en">AD Request Number of Tablet</span></dd>
++    　<dt class="term__item">REACHES</dt>
++      <dd class="term__desc"><span lang="ja">デバイス合算のリーチ数です。</span><span lang="en">Total reach number of Device</span></dd>
++    　<dt class="term__item">AD_REQUESTS</dt>
++      <dd class="term__desc"><span lang="ja">デバイス合算のADリクエスト数です。</span><span lang="en">Total AD number of Device</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v18/stats/Stats.yaml v19/stats/Stats.yaml
+--- v18/stats/Stats.yaml	2026-02-20 15:44:51
++++ v19/stats/Stats.yaml	2026-02-25 10:14:46
+@@ -385,6 +385,118 @@
+       description: |
+         <div lang="ja">インストール単価(SKANクリック)</div>
+         <div lang="en">Install costs(SKAN click)</div>
++    installs:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール数（パートナー計測）</div>
++        <div lang="en">Installs (partner measurement)</div>
++    costPerInstall:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール単価（パートナー計測）</div>
++        <div lang="en">Cost per install (partner measurement)</div>
++    conversionsAfterInstall:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン数（パートナー計測）</div>
++        <div lang="en">Conversions after install (partner measurement)</div>
++    cpaAfterInstall:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン単価（パートナー計測）</div>
++        <div lang="en">CPA after install (partner measurement)</div>
++    convValueAfterInstall:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン価値（パートナー計測）</div>
++        <div lang="en">Conversion value after install (partner measurement)</div>
++    convValueAfterInstallPerCost:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン価値（パートナー計測）/コスト</div>
++        <div lang="en">Conversion value after install/cost (partner measurement)</div>
++    allConversionsAfterInstall:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">全てのインストール後のアプリコンバージョン数（パートナー計測）</div>
++        <div lang="en">Conversions after install (all) (partner measurement)</div>
++    allConvValueAfterInstall:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">全てのインストール後のアプリコンバージョン価値（パートナー計測）</div>
++        <div lang="en">Conversion value after install (all) (partner measurement)</div>
++    installsViaClick:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール数（パートナー計測クリック）</div>
++        <div lang="en">Installs (click) (partner measurement)</div>
++    costPerInstallViaClick:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール単価（パートナー計測クリック）</div>
++        <div lang="en">Cost per install (click) (partner measurement)</div>
++    conversionsAfterInstallViaClick:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン数（パートナー計測クリック）</div>
++        <div lang="en">Conversions after install (click) (partner measurement)</div>
++    cpaAfterInstallViaClick:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン単価（パートナー計測クリック）</div>
++        <div lang="en">CPA after install (click) (partner measurement)</div>
++    convValueAfterInstallViaClick:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン価値（パートナー計測クリック）</div>
++        <div lang="en">Conversion value after install (click) (partner measurement)</div>
++    convValueViaClickAfterInstallPerCost:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">インストール後のアプリコンバージョン価値（パートナー計測クリック）/コスト</div>
++        <div lang="en">Conversion value (click) after install/cost (partner measurement)</div>
++    allConversionsAfterInstallViaClick:
++      type: integer
++      nullable: true
++      format: int64
++      description: |
++        <div lang="ja">全てのインストール後のアプリコンバージョン数（パートナー計測クリック）</div>
++        <div lang="en">Conversions after install (click) (all) (partner measurement)</div>
++    allConvValueAfterInstallViaClick:
++      type: number
++      nullable: true
++      format: double
++      description: |
++        <div lang="ja">全てのインストール後のアプリコンバージョン価値（パートナー計測クリック）</div>
++        <div lang="en">Conversion value after install (click) (all) (partner measurement)</div>
+   title: Stats
+   description: |
+     <div lang="ja">Statsオブジェクトは、統計情報を保持します。</div>
+Only in v18/stats: StatsServiceImageStatsValue.yaml
+
+
+------
+diff -ru v18/stats/StatsServiceType.yaml v19/stats/StatsServiceType.yaml
+--- v18/stats/StatsServiceType.yaml	2026-02-20 15:44:51
++++ v19/stats/StatsServiceType.yaml	2026-02-20 15:40:04
+@@ -5,8 +5,6 @@
+     - CAMPAIGN
+     - ADGROUP
+     - AD
+-    - IMAGE
+-    - VIDEO
+     - TARGET
+     - UNKNOWN
+   title: StatsServiceType
+@@ -20,10 +18,6 @@
+       <dd class="term__desc"><span lang="ja">広告グループの統計情報です。</span><span lang="en">Ad group stats information.</span></dd>
+       <dt class="term__item">AD</dt>
+       <dd class="term__desc"><span lang="ja">広告の統計情報です。</span><span lang="en">Ad stats information.</span></dd>
+-      <dt class="term__item">IMAGE</dt>
+-      <dd class="term__desc"><span lang="ja">画像の統計情報です。</span><span lang="en">Image stats information.</span></dd>
+-      <dt class="term__item">VIDEO</dt>
+-      <dd class="term__desc"><span lang="ja">動画の統計情報です。</span><span lang="en">Video stats information.</span></dd>
+       <dt class="term__item">TARGET</dt>
+       <dd class="term__desc"><span lang="ja">ターゲティングの統計情報です。</span><span lang="en">Targeting stats information.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+
+
+------
+diff -ru v18/stats/StatsServiceValue.yaml v19/stats/StatsServiceValue.yaml
+--- v18/stats/StatsServiceValue.yaml	2026-02-20 15:44:51
++++ v19/stats/StatsServiceValue.yaml	2026-02-20 15:40:04
+@@ -20,8 +20,6 @@
+       nullable: true
+       items:
+         $ref: '../../Error.yaml#/Error'
+-    imageStatsValue:
+-      $ref: 'StatsServiceImageStatsValue.yaml#/StatsServiceImageStatsValue'
+     operationSucceeded:
+       type: boolean
+       nullable: true
+@@ -36,8 +34,6 @@
+       $ref: 'StatsServiceTargetStatsValue.yaml#/StatsServiceTargetStatsValue'
+     'type':
+       $ref: 'StatsServiceType.yaml#/StatsServiceType'
+-    videoStatsValue:
+-      $ref: 'StatsServiceVideoStatsValue.yaml#/StatsServiceVideoStatsValue'
+   title: StatsServiceValue
+   description: |
+     <div lang="ja">StatsServiceValueオブジェクトは、統計情報1件あたりの実行結果（1 Entity）を保持します。</div>
+Only in v18/stats: StatsServiceVideoStatsValue.yaml
+Only in v19: trackingtag
