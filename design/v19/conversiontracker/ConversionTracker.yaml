@@ -211,12 +211,10 @@ ConversionTracker:
         <div lang="ja">
         コンバージョンの収益値です。<br>
         このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値は0.0となります。
-        2026年3月を目処に、本項目のレスポンスにて小数点以下が0以外の値が返却されるようになります。
         </div>
         <div lang="en">
         Revenue value for conversions.<br>
         This field is optional in requests. The default value in ADD operation will be 0.0.
-        Starting around March 2026, the response for this field will return values with non-zero decimal places.
         </div>
     webConversion:
       $ref: 'ConversionTrackerServiceWebConversion.yaml#/ConversionTrackerServiceWebConversion'

@@ -46,7 +46,7 @@ CampaignServiceCampaignGoalSubtype:
         <td>conversionTrackerTypeが"APP_CONVERSION"かつcategoryが"DOWNLOAD"のconversionTrackerId</td>
       </tr>
     </table>
-    ※Yahoo!広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
+    ※LINEヤフー広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
     ※広告管理ツールによるconversionTracker(コンバージョン測定)の設定については<a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=ja">こちら</a>をご確認ください。
     </div>
     </div>

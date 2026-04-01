@@ -23,7 +23,7 @@ AuditLogServiceSourceType:
       <dt class="term__item">API</dt>
       <dd class="term__desc"><span lang="ja">APIからの履歴です。</span><span lang="en">API</span></dd>
       <dt class="term__item">YAHOO_JAPAN</dt>
-      <dd class="term__desc"><span lang="ja">Yahoo!広告システムによる操作です。</span><span lang="en">YAHOO_JAPAN</span></dd>
+      <dd class="term__desc"><span lang="ja">LINEヤフー広告システムによる操作です。</span><span lang="en">YAHOO_JAPAN</span></dd>
       <dt class="term__item">ALL</dt>
       <dd class="term__desc"><span lang="ja">すべての操作者からの履歴です。</span><span lang="en">Operated　by all of operators.</span></dd>
       <dt class="term__item">UNKNOWN</dt>

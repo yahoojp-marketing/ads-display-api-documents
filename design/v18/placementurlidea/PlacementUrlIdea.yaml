@@ -90,10 +90,9 @@ PlacementUrlIdea:
       description: |
         <div lang="ja">
         デバイス合算のリーチ数です。<br>
-        ・1000未満の時は0が取得されます。<br>
-        ※現在利用できません
+        ・1000未満の時は0が取得されます。
         </div>
-        <div lang="en">Total reach number of Device (1000 in the case of 0) *Not available</div>
+        <div lang="en">Total reach number of Device (1000 in the case of 0)</div>
     adRequests:
       type: integer
       nullable: true
@@ -101,10 +100,9 @@ PlacementUrlIdea:
       description: |
         <div lang="ja">
         デバイス合算のADリクエスト数。<br>
-        ・1000未満の時は0が取得されます。<br>
-        ※現在利用できません
+        ・1000未満の時は0が取得されます。
         </div>
-        <div lang="en">Total AD number of Device (1000 in the case of 0) *Not available</div>
+        <div lang="en">Total AD number of Device (1000 in the case of 0)</div>
   title: PlacementUrlIdea
   description: |
     <div lang="ja">PlacementUrlIdeaオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div>

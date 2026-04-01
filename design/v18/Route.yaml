@@ -1,10 +1,10 @@
 openapi: 3.0.2
 info:
-  title: 'Yahoo!広告 ディスプレイ広告 API リファレンス / Yahoo! JAPAN Ads Display Ads API Reference'
+  title: 'LINEヤフー広告 ディスプレイ広告 API リファレンス / LY Ads Display Ads API Reference'
   version: 'v18'
   description: |
-    <div lang="ja">Yahoo!広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
-    <div lang="en">Display Ads API Web Services supported in Yahoo! JAPAN Ads API.</div>
+    <div lang="ja">LINEヤフー広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+    <div lang="en">Display Ads API Web Services supported in LY Ads API.</div>
     <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v18/Route.yaml">OpenAPI Specification</a></div>
     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
@@ -18,7 +18,7 @@ components:
           authorizationUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/authorize
           tokenUrl: https://biz-oauth.yahoo.co.jp/oauth/v1/token
           scopes:
-            yahooads: アプリケーションを経由したYahoo!広告の各機能の操作/Operation by each function of Yahoo! JAPAN Ads via applications.
+            yahooads: アプリケーションを経由したLINEヤフー広告の各機能の操作/Operation by each function of LY Ads via applications.
 security:
   - oAuth: [yahooads]
 
