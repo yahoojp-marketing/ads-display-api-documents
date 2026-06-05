@@ -20,7 +20,7 @@ Ad Name      | 255 characters*
 
 ※ Count: 1 count per half-width character, 3 counts per full-width character.
 
-See Yahoo! JAPAN Ads [Insertion Rules (guideline)](https://ads-help.yahoo-net.jp/s/article/H000044930?language=en_US) for restrictions on ads, keyword and bid.
+See LY Ads [Insertion Rules (guideline)](https://ads-help.yahoo-net.jp/s/article/H000044930?language=en_US) for restrictions on ads, keyword and bid.
 
 # Maximum amount per request to be retrieved per service
 <table>

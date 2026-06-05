@@ -6,9 +6,9 @@
 [ヤフーのバナー広告「ディスプレイ広告（運用型）」](https://promotionalads.yahoo.co.jp/service/displayads/)をご参照ください。
 
 
-## Yahoo!広告 APIでの入稿方法
+## LINEヤフー広告 APIでの入稿方法
 
-Yahoo!広告 APIでは、ディスプレイ広告（運用型）（以下、運用型と表記）のキャンペーン（以下、目的別キャンペーンと表記）や広告グループ、広告の作成に、以下のサービスを利用します。
+LINEヤフー広告 APIでは、ディスプレイ広告（運用型）（以下、運用型と表記）のキャンペーン（以下、目的別キャンペーンと表記）や広告グループ、広告の作成に、以下のサービスを利用します。
 
 - CampaignService
 - AdGroupService
@@ -41,7 +41,7 @@ CampaignServiceのaddを利用します。
 <tr><th>フィールド</th><th>要不要</th><th>補足</th></tr>
 <tr><td>campaignGoal</td><td>必須</td><td>AccountAuthorityService/getで取得した値から、設定する目的を入力</td></tr>
 <tr><td>budget.amount</td><td>必須</td><td>1日の予算</td></tr>
-<tr><td>campaignBiddingStrategy</td><td>必須</td><td>詳細はYahoo!広告ヘルプ「<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>」を参照してください。</td></tr>
+<tr><td>campaignBiddingStrategy</td><td>必須</td><td>詳細はLINEヤフー広告ヘルプ「<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>」を参照してください。</td></tr>
 <tr><td>viewableFrequencyCap</td><td>任意</td><td>　</td></tr>
 </table>
 
@@ -99,7 +99,7 @@ AdGroupServiceのaddを利用します。
 
 <table>
 <tr><th>フィールド</th><th>要不要</th><th>補足</th></tr>
-<tr><td>adGroupBiddingStrategy</td><td>任意</td><td>詳細はYahoo!広告ヘルプ<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>を参照してください。</td></tr>
+<tr><td>adGroupBiddingStrategy</td><td>任意</td><td>詳細はLINEヤフー広告ヘルプ<a href="https://ads-help.yahoo-net.jp/s/article/H000044352?language=ja">入札戦略について</a>を参照してください。</td></tr>
 </table>
 
 **注意事項**

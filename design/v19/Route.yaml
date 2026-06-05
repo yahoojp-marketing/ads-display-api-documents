@@ -171,20 +171,19 @@ tags:
       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
       <h2 lang="en" class="reportFields__title">Report Fields</h2>
       <ul>
-      <li><div lang="ja"><a href="./reports/v19/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v19/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v19/URL.csv" download>Ad Delivery URL report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v19/REACH.csv" download>Reach report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v19/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/SEARCH_KEYWORD_LIST.csv" download>サーチターゲティング</a></div><div lang="en"><a href="./reports/v19/SEARCH_KEYWORD_LIST.csv" download>Search targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v19/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v19/LABEL.csv" download>Label report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v19/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v19/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v19/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v19/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v19/APP.csv" download>App Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
-      <li><div lang="ja"><a href="./reports/v19/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v19/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v19/jp/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v19/jp/URL.csv" download>Ad Delivery URL report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v19/jp/REACH.csv" download>Reach report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v19/jp/LABEL.csv" download>Label report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v19/jp/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v19/jp/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v19/jp/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v19/jp/APP.csv" download>App Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+      <li><div lang="ja"><a href="./reports/v19/jp/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v19/jp/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
       </ul>
   - name: MediaService
     description: |
@@ -6391,8 +6390,8 @@ paths:
             <div lang="ja">アカウントIDを指定してください。</div>
             <div lang="en">Specify Account ID.</div>
       description: |
-        <div lang="ja">Feed情報の審査否認理由をダウンロードします。</div>
-        <div lang="en">Downloads the disapproval reason list.</div>
+        <div lang="ja">Feed情報の審査否認理由をダウンロードします。レスポンスされるファイルはzip形式です。</div>
+        <div lang="en">Downloads disapproval reasons for feed information. The response file is in ZIP format.</div>
       tags:
         - FeedService
       requestBody:
