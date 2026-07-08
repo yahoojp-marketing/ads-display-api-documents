@@ -1,0 +1,14 @@
+ConversionTrackerServicePeriodDatetime:
+  type: object
+  nullable: true
+  properties:
+    periodDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">日です。<br>※yyyyMMdd形式です。</div>
+        <div lang="en">Date.<br>∗ Format: yyyyMMdd</div>
+  title: ConversionTrackerServicePeriodDatetime
+  description: |
+    <div lang="ja">ConversionTrackerServicePeriodDatetimeオブジェクトは、統計情報の処理を開始/完了した日です。</div>
+    <div lang="en">ConversionTrackerServicePeriodDatetime object describes date when stats information processing started or completed.</div>

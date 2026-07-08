@@ -1,0 +1,18 @@
+FeedFtpServiceGetResponse:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    rid:
+      type: string
+      nullable: false
+    rval:
+      $ref: 'FeedFtpServicePage.yaml#/FeedFtpServicePage'
+    timeTakenSeconds:
+      type: number
+      nullable: true
+  title: FeedFtpServiceGetResponse

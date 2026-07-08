@@ -1,0 +1,42 @@
+EstimatedUserSizeServiceSelector:
+  type: object
+  nullable: true
+  properties:
+    keywords:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      minItems: 1
+      maxItems: 50
+      description: |
+        <div lang="ja">
+        ユーザサイズを推定するキーワードです。<br>
+        urlsを指定する場合、このフィールドは指定できません。
+        </div>
+        <div lang="en">
+        Keywords to estimate user size.<br>
+        *If urls is specified, this field cannot be specified in ADD and SET operation.
+        </div>
+    urls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      minItems: 1
+      maxItems: 50
+      description: |
+        <div lang="ja">
+        ユーザサイズを推定するURLです。<br>
+        keywordsを指定する場合、このフィールドは指定できません。
+        </div>
+        <div lang="en">
+        Urls to estimate user size.<br>
+        *If keywords is specified, this field cannot be specified in ADD and SET operation.
+        </div>
+  title: EstimatedUserSizeServiceSelector
+  description: |
+    <div lang="ja">EstimatedUserSizeServiceSelectorオブジェクトは、ユーザサイズを推定したいキーワードもしくはURLを指定します。</div>
+    <div lang="en">The EstimatedUserSizeServiceSelector object is used to specify the keywords or urls for which you want to estimate user size.</div>

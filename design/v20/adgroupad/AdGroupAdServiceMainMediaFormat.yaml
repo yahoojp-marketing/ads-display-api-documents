@@ -1,0 +1,28 @@
+AdGroupAdServiceMainMediaFormat:
+  type: string
+  nullable: true
+  enum:
+    - IMAGE
+    - VIDEO
+    - NONE
+    - UNKNOWN
+  title: AdGroupAdServiceMainMediaFormat
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceMainMediaFormatは、メインメディアの形式を表します。<br>
+    このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceMainMediaFormat describes the main media format.<br>
+    This field is required in ADD operation, and will be optional in SET operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">IMAGE</dt>
+      <dd class="term__desc"><span lang="ja">画像です。</span><span lang="en">Image.</span></dd>
+      <dt class="term__item">VIDEO</dt>
+      <dd class="term__desc"><span lang="ja">動画です。</span><span lang="en">Video.</span></dd>
+      <dt class="term__item">NONE</dt>
+      <dd class="term__desc"><span lang="ja">未指定です。</span><span lang="en">No setting.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

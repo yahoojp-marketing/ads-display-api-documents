@@ -1,0 +1,37 @@
+ReportDefinitionServiceConversionPathFilterOperator:
+  type: string
+  nullable: true
+  enum:
+    - EQUALS
+    - NOT_EQUALS
+    - CONTAINS
+    - NOT_CONTAINS
+    - START_WITH
+    - END_WITH
+    - UNKNOWN
+  title: ReportDefinitionServiceConversionPathFilterOperator
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceConversionPathFilterOperatorは、コンバージョン経路レポートにおけるフィルター条件の項目を示します。<br>
+      このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceConversionPathFilterOperator indicates the filter condition item of Conversion Path Report. <br> 
+      This field is optional in ADD operation, and will be ignored in REMOVE operation. 
+    </div>
+    <dl class=term>
+      <dt class="term__item">EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">完全一致する対象を含む経路です。</span><span lang="en">A path that includes an exact match target.</span></dd>
+      <dt class="term__item">NOT_EQUALS</dt>
+      <dd class="term__desc"><span lang="ja">完全一致する対象を含まない経路です。</span><span lang="en">A path that does not include an exact match target.</span></dd>
+      <dt class="term__item">CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">部分一致する対象を含む経路です。</span><span lang="en">A path that includes a broad match target.</span></dd>
+      <dt class="term__item">NOT_CONTAINS</dt>
+      <dd class="term__desc"><span lang="ja">部分一致する対象を含まない経路です。</span><span lang="en">A path that does not include a broad match target.</span></dd>
+      <dt class="term__item">START_WITH</dt>
+      <dd class="term__desc"><span lang="ja">前方一致する対象を含む経路です。</span><span lang="en">A path that includes prefix match target.</span></dd>
+      <dt class="term__item">END_WITH</dt>
+      <dd class="term__desc"><span lang="ja">後方一致する対象を含む経路です。</span><span lang="en">A path that includes backward match target. </span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

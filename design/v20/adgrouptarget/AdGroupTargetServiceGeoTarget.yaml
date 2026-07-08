@@ -1,0 +1,90 @@
+AdGroupTargetServiceGeoTarget:
+  type: object
+  nullable: true
+  properties:
+    areaSearchType:
+      $ref: 'AdGroupTargetServiceAreaSearchType.yaml#/AdGroupTargetServiceAreaSearchType'
+    latitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の緯度です。<br>
+        1度と指定したい場合は、1000000を指定します。<br>
+        ADおよびREPLACE時、areaSearchTypeがRADIUSの場合は必須です。areaSearchTypeがGEOの場合は指定できません。<br>
+        日本国内のみ指定できます。</div>
+        <div lang="en">Micro degrees for the latitude.<br>
+        To specify 1 degree, specify 1000000.<br>
+        In ADD and REPLACE operation, Required if areaSearchType is RADIUS, and cannot be specified if areaSearchType is GEO.<br>
+        Can be specified only in Japan.</div>
+    longitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の経度です。<br>
+        1度と指定したい場合は、1000000を指定します。<br>
+        ADおよびREPLACE時、areaSearchTypeがRADIUSの場合は必須です。areaSearchTypeがGEOの場合は指定できません。<br>
+        日本国内のみ指定できます。</div>
+        <div lang="en">Micro degrees for the longitude.<br>
+        To specify 1 degree, specify 1000000.<br>
+        In ADD and REPLACE operation, Required if areaSearchType is RADIUS, and cannot be specified if areaSearchType is GEO.<br>
+        Can be specified only in Japan.</div>
+    radius:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">半径(km)です。<br>
+        ADDおよびREPLACE時、areaSearchTypeがRADIUSの場合は必須です。areaSearchTypeがGEOの場合は指定できません。<br>
+        最大80kmまで指定できます。</div>
+        <div lang="en">Radius(km).<br>
+        In ADD and REPLACE operation, Required if areaSearchType is RADIUS, and cannot be specified if areaSearchType is GEO.<br>
+        Can be specified up to 80km.</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">指定した地点の説明です。<br>
+        ADDおよびREPLACE時、areaSearchTypeがRADIUSの場合は任意で指定できます。areaSearchTypeがGEOの場合は指定できません。</div>
+        <div lang="en">A description of the specified location.<br>
+        In ADD and REPLACE operation, Optional if areaSearchType is RADIUS, and cannot be specified if areaSearchType is GEO.</div>
+    geoNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        地域名（英語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        areaSearchTypeがRADIUSの場合はレスポンスの際に返却されません。
+        </div>
+        <div lang="en">
+        Region name (English).<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        If areaSearchType is RADIUS, it will not be returned.
+        </div>
+    geoNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        地域名（日本語）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        areaSearchTypeがRADIUSの場合はレスポンスの際に返却されません。
+        </div>
+        <div lang="en">Region name (Japanese).<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        If areaSearchType is RADIUS, it will not be returned.
+        </div>
+  title: AdGroupTargetServiceGeoTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceGeoTargetオブジェクトは、地域ターゲティングの設定情報を保持します。<br>
+    ADD、SETおよびREPLACE時、このフィールドは省略可能となります。<br>
+    ※targetTypeがGEO_TARGETの場合は必須です。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceGeoTarget object is a container for storing geological targeting settings.<br>
+    This field is optional in ADD, SET and REPLACE operation.<br>
+    ∗If targetType is GEO_TARGET, this field is required.
+    </div>

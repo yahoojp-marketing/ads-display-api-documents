@@ -1,0 +1,17 @@
+BalanceServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+      description: |
+        <div lang="ja">取得される項目の総件数です。</div>
+        <div lang="en">Total number of entries.</div>
+    values:
+      $ref: 'BalanceServiceValue.yaml#/BalanceServiceValue'
+  title: BalanceServicePage
+  description: |
+    <div lang="ja">BalanceServicePageオブジェクトは、取得される未消化予算情報に関するエントリーを表します。</div>
+    <div lang="en">The BalanceServicePage object selects balance information pages.</div>

@@ -1,0 +1,25 @@
+AudienceListServiceContainUnavailableAdActionUserListFlg:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AudienceListServiceContainUnavailableAdActionUserListFlg
+  description: |
+    <div lang="ja">
+    AudienceListServiceContainUnavailableAdActionUserListFlgは、広告データ利用基準に抵触している広告アクションユーザーリストを含んでいるかかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceContainUnavailableAdActionUserListFlg display whether the list contains ad action user lists which are in violation of Advertising Data Usage Standards.<br>
+    Although this field will be returned in the response, it will be ignored on request.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">広告データ利用基準に抵触している広告アクションユーザーリストを含んでいます。</span><span lang="en">Contains ad action user lists which are in violation of Advertising Data Usage Standards.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">広告データ利用基準に抵触している広告アクションユーザーリストを含んでいません。</span><span lang="en">Not contains ad action user lists which are in violation of Advertising Data Usage Standards.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

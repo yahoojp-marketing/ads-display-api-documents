@@ -1,0 +1,319 @@
+
+
+------
+diff -ru v19/adgroupad/AdGroupAdServiceAdType.yaml v20/adgroupad/AdGroupAdServiceAdType.yaml
+--- v19/adgroupad/AdGroupAdServiceAdType.yaml	2026-07-08 13:18:01.513604367 +0900
++++ v20/adgroupad/AdGroupAdServiceAdType.yaml	2026-07-08 13:18:01.549604338 +0900
+@@ -10,17 +10,23 @@
+     - RESPONSIVE_GAIN_FRIENDS_AD
+     - CAROUSEL_GAIN_FRIENDS_AD
+     - INSTREAM_AD
++    - RESPONSIVE_THANKYOU_PAGE_AD
++    - RESPONSIVE_THANKYOU_PAGE_LIST_AD
+     - UNKNOWN
+   title: AdGroupAdServiceAdType
+   description: |
+     <div lang="ja">
+     AdGroupAdServiceAdTypeは、広告タイプを表します。<br>
+     このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++    ただし、RESPONSIVE_THANKYOU_PAGE_AD、RESPONSIVE_THANKYOU_PAGE_LIST_AD はレスポンスの際に返却されますが、
++    THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、リクエストでは利用できません。<br>
+     なお、選択した配信先デバイスにより、指定可能な広告の文字数は異なる場合があります。
+     </div>
+     <div lang="en">
+     AdGroupAdServiceAdType describes the type of ad.<br>
+     This field is required in ADD operation, and will be optional in SET operation.<br>
++    However, RESPONSIVE_THANKYOU_PAGE_AD and RESPONSIVE_THANKYOU_PAGE_LIST_AD are returned in the response,
++    but cannot be used in requests because ads under THANKYOU_PAGE campaigns cannot be added or updated.<br>
+     In addition, the number of available characters of ad creatives vary with selected devices.
+     </div>
+     <dl class=term>
+@@ -40,6 +46,10 @@
+       <dd class="term__desc"><span lang="ja">カルーセル（友だち追加）広告です。</span><span lang="en">Carousel (Gain friends) ad.</span></dd>
+       <dt class="term__item">INSTREAM_AD</dt>
+       <dd class="term__desc"><span lang="ja">インストリーム広告です。</span><span lang="en">In-stream ad.</span></dd>
++      <dt class="term__item">RESPONSIVE_THANKYOU_PAGE_AD</dt>
++      <dd class="term__desc"><span lang="ja">レスポンシブ（サンキューページ：標準形式）広告です。</span><span lang="en">Responsive (Thankyou Page: Standard) ad.</span></dd>
++      <dt class="term__item">RESPONSIVE_THANKYOU_PAGE_LIST_AD</dt>
++      <dd class="term__desc"><span lang="ja">レスポンシブ（サンキューページ：リスト形式）広告です。</span><span lang="en">Responsive (Thankyou Page: List) ad.</span></dd>
+       <dt class="term__item">UNKNOWN</dt>
+       <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+     </dl>
+
+
+------
+diff -ru v19/adgroupad/AdGroupAdServiceAd.yaml v20/adgroupad/AdGroupAdServiceAd.yaml
+--- v19/adgroupad/AdGroupAdServiceAd.yaml	2026-07-08 13:18:01.513604367 +0900
++++ v20/adgroupad/AdGroupAdServiceAd.yaml	2026-07-08 13:18:01.549604338 +0900
+@@ -22,6 +22,10 @@
+       $ref: 'AdGroupAdServiceCarouselGainFriendsAd.yaml#/AdGroupAdServiceCarouselGainFriendsAd'
+     instreamAd:
+       $ref: 'AdGroupAdServiceInstreamAd.yaml#/AdGroupAdServiceInstreamAd'
++    responsiveThankyouPageAd:
++      $ref: 'AdGroupAdServiceResponsiveThankyouPageAd.yaml#/AdGroupAdServiceResponsiveThankyouPageAd'
++    responsiveThankyouPageListAd:
++      $ref: 'AdGroupAdServiceResponsiveThankyouPageListAd.yaml#/AdGroupAdServiceResponsiveThankyouPageListAd'
+     customParameters:
+       $ref: 'AdGroupAdServiceCustomParameters.yaml#/AdGroupAdServiceCustomParameters'
+     displayUrl:
+@@ -95,6 +99,8 @@
+     <div lang="ja">
+     AdGroupAdServiceAdオブジェクトは、広告を格納するコンテナです。<br>
+     このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
++    ただし、THANKYOU_PAGE のキャンペーンでは作成・更新ができないため、
++    responsiveThankyouPageAd および responsiveThankyouPageListAd はレスポンス専用の項目です。<br>
+     <br>
+     ※ campaignGoalSubtypeがINSTALLのキャンペーンの配下に広告を作成する場合、以下の制約があります。 <br>
+     (1) viewableImpressionBeaconUrls等、通常であれば配列内に複数指定できるUrls設定であっても、指定できるurlは１つのみです。<br>
+@@ -105,6 +111,8 @@
+     <div lang="en">
+     AdGroupAdServiceAd object is a container for storing ads.<br>
+     This field is required in ADD operation, and will be optional in SET operation.<br>
++    However, for THANKYOU_PAGE campaigns, create and update operations are not allowed,
++    so responsiveThankyouPageAd and responsiveThankyouPageListAd are response-only fields.<br>
+     <br>
+     When creating an ad under a campaign where campaignGoalSubtype is set to INSTALL, the following restrictions apply：<br>
+     (1) For URL settings that normally allow multiple entries in an array (e.g., viewableImpressionBeaconUrls), only one URL can be specified.<br>
+Only in v20/adgroupad: AdGroupAdServiceResponsiveThankyouPageAd.yaml
+Only in v20/adgroupad: AdGroupAdServiceResponsiveThankyouPageListAd.yaml
+
+
+------
+diff -ru v19/campaign/CampaignServiceCampaignGoalSubtype.yaml v20/campaign/CampaignServiceCampaignGoalSubtype.yaml
+--- v19/campaign/CampaignServiceCampaignGoalSubtype.yaml	2026-07-08 13:18:01.525604358 +0900
++++ v20/campaign/CampaignServiceCampaignGoalSubtype.yaml	2026-07-08 13:18:01.557604332 +0900
+@@ -46,7 +46,7 @@
+         <td>conversionTrackerTypeが"APP_CONVERSION"かつcategoryが"DOWNLOAD"のconversionTrackerId</td>
+       </tr>
+     </table>
+-    ※LINEヤフー広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
++    ※LINEヤフー広告 APIによるconversionTracker(コンバージョン測定)の設定は<a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v20/ConversionTrackerService/">ConversionTrackerService</a>をご利用ください。<br>
+     ※広告管理ツールによるconversionTracker(コンバージョン測定)の設定については<a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=ja">こちら</a>をご確認ください。
+     </div>
+     </div>
+@@ -89,7 +89,7 @@
+         <td>Set conversionTrackerId whose conversionTrackerType is "APP_CONVERSION" and category is "DOWNLOAD"</td>
+       </tr>
+     </table>
+-    ※To configure conversionTracker (conversion measurement) via the Yahoo! Ads API, please use <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v19/ConversionTrackerService/en/">ConversionTrackerService</a>.<br>
++    ※To configure conversionTracker (conversion measurement) via the Yahoo! Ads API, please use <a href="https://ads-developers.yahoo.co.jp/reference/ads-display-api/v20/ConversionTrackerService/en/">ConversionTrackerService</a>.<br>
+     ※For configuring conversionTracker (conversion measurement) using the ad management tool, please refer to <a href="https://ads-help.yahoo-net.jp/s/article/H000044544?language=en_US">this page</a>
+     </div>
+     </div>
+
+
+------
+diff -ru v19/placementurlidea/PlacementUrlIdea.yaml v20/placementurlidea/PlacementUrlIdea.yaml
+--- v19/placementurlidea/PlacementUrlIdea.yaml	2026-07-08 13:18:01.537604348 +0900
++++ v20/placementurlidea/PlacementUrlIdea.yaml	2026-07-08 13:18:01.573604318 +0900
+@@ -23,66 +23,6 @@
+       description: |
+         <div lang="ja">配信先名です。</div>
+         <div lang="en">Ad place name</div>
+-    desktopReaches:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        PC でのリーチ数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">Reach number of PC(1000 in the case of 0)</div>
+-    desktopAdRequests:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        PC でのADリクエスト数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">AD number of PC(1000 in the case of 0)</div>
+-    smartPhoneReaches:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        SmartPhone でのリーチ数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">Reach number of SmartPhone (1000 in the case of 0)</div>
+-    smartPhoneAdRequests:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        SmartPhone でのADリクエスト数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">AD number of SmartPhone(1000 in the case of 0)</div>
+-    tabletReaches:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        Tablet でのリーチ数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">Tablet(1000 in the case of 0)</div>
+-    tabletAdRequests:
+-      type: integer
+-      nullable: true
+-      format: int64
+-      description: |
+-        <div lang="ja">
+-        TabletでのADリクエスト数です。<br>
+-        ・1000未満の時は0が取得されます。
+-        </div>
+-        <div lang="en">AD number of Tablet (1000 in the case of 0)</div>
+     reaches:
+       type: integer
+       nullable: true
+
+
+------
+diff -ru v19/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml v20/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml
+--- v19/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2026-07-08 13:18:01.541604344 +0900
++++ v20/reportdefinition/ReportDefinitionServiceReportIncludeDeleted.yaml	2026-07-08 13:18:01.577604314 +0900
+@@ -8,11 +8,11 @@
+   title: ReportDefinitionServiceReportIncludeDeleted
+   description: |
+     <div lang="ja">ReportDefinitionServiceReportIncludeDeletedオブジェクトは、削除済みの項目をレポートに出力するかを選択します。<br>
+-    レポートタイプがAD, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
++    レポートタイプがAD, URL, REACH, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST, AUDIENCE_LIST_TARGETの場合のみ、ADD時にこのフィールドは省略可能となります。その際、デフォルト値はTRUEとなります。<br>
+     それ以外のレポートタイプの場合、ADD時、このフィールドは無視されます。<br>
+     reportIncludeDeletedがFALSEの場合、以下エンティティはレポートに出力されません。</div>
+     <div lang="en">ReportDefinitionServiceReportIncludeDeleted object describes whether to output deleted items on the report or not.<br>
+-    If the report type is AD,, URL, REACH, SEARCH_TARGET, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
++    If the report type is AD,, URL, REACH, PLACEMENT_TARGET, CONTENT_KEYWORD_LIST or AUDIENCE_LIST_TARGET, this field is optional in ADD operation. The default value will be TRUE.<br>
+     For other report type, this field will be ignored in ADD operation.<br>
+     If reportIncludeDeleted is "FALSE", the following entities will not be output in the report.
+     </div>
+@@ -21,7 +21,6 @@
+     <tr><td>AD</td><td>CAMPAIGN, ADGROUP, AD, MEDIA</td></tr>
+     <tr><td>URL</td><td>CAMPAIGN, ADGROUP</td></tr>
+     <tr><td>REACH</td><td>CAMPAIGN, ADGROUP, AD</td></tr>
+-    <tr><td>SEARCH_TARGET</td><td>CAMPAIGN, ADGROUP, SEARCH_TARGET</td></tr>
+     <tr><td>PLACEMENT_TARGET</td><td>CAMPAIGN, ADGROUP, PLACEMENT_TARGET</td></tr>
+     <tr><td>CONTENT_KEYWORD_LIST</td><td>CAMPAIGN, ADGROUP, CONTENT_KEYWORD_LIST</td></tr>
+     <tr><td>AUDIENCE_LIST_TARGET</td><td>CAMPAIGN, ADGROUP, AUDIENCE_LIST_TARGET</td></tr>
+
+
+------
+diff -ru v19/reportdefinition/ReportDefinitionServiceReportType.yaml v20/reportdefinition/ReportDefinitionServiceReportType.yaml
+--- v19/reportdefinition/ReportDefinitionServiceReportType.yaml	2026-07-08 13:18:01.541604344 +0900
++++ v20/reportdefinition/ReportDefinitionServiceReportType.yaml	2026-07-08 13:18:01.577604314 +0900
+@@ -6,7 +6,6 @@
+     - CONVERSION_PATH
+     - CROSS_CAMPAIGN_REACHES
+     - AUDIENCE_LIST_TARGET
+-    - SEARCH_TARGET
+     - PLACEMENT_TARGET
+     - LABEL
+     - REACH
+@@ -45,8 +44,6 @@
+       <dd class="term__desc"><span lang="ja">横断リーチレポートです。</span><span lang="en">Cross-campaign Reach Report. </span></dd>
+       <dt class="term__item">AUDIENCE_LIST_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">オーディエンスリストターゲティングレポートです。</span><span lang="en">Audience List Targeting Report.</span></dd>
+-      <dt class="term__item">SEARCH_TARGET</dt>
+-      <dd class="term__desc"><span lang="ja">サーチターゲティングレポートです。</span><span lang="en">Search Targeting Report.</span></dd>
+       <dt class="term__item">PLACEMENT_TARGET</dt>
+       <dd class="term__desc"><span lang="ja">プレイスメントターゲティングレポートです。</span><span lang="en">Placement Targeting Report.</span></dd>
+       <dt class="term__item">LABEL</dt>
+
+
+------
+diff -ru v19/Route.yaml v20/Route.yaml
+--- v19/Route.yaml	2026-07-08 13:18:01.509604371 +0900
++++ v20/Route.yaml	2026-07-08 13:18:01.545604341 +0900
+@@ -1,11 +1,11 @@
+ openapi: 3.0.2
+ info:
+   title: 'LINEヤフー広告 ディスプレイ広告 API リファレンス / LY Ads Display Ads API Reference'
+-  version: 'v19'
++  version: 'v20'
+   description: |
+     <div lang="ja">LINEヤフー広告 ディスプレイ広告 APIのWebサービスについて説明します。</div>
+     <div lang="en">Display Ads API Web Services supported in LY Ads API.</div>
+-    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v19/Route.yaml">OpenAPI Specification</a></div>
++    <div><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/design/v20/Route.yaml">OpenAPI Specification</a></div>
+     <div lang="ja"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/ja">Best Practice</a></div>
+     <div lang="en"><a target="_blank" href="https://github.com/yahoojp-marketing/ads-display-api-documents/blob/master/bestpractice/en">Best Practice</a></div>
+ 
+@@ -23,7 +23,7 @@
+   - oAuth: [yahooads]
+ 
+ servers:
+-  - url: https://ads-display.yahooapis.jp/api/v19
++  - url: https://ads-display.yahooapis.jp/api/v20
+ 
+ tags:
+   - name: AbTestService
+@@ -171,19 +171,19 @@
+       <h2 lang="ja" class="reportFields__title">レポートフィールド</h2>
+       <h2 lang="en" class="reportFields__title">Report Fields</h2>
+       <ul>
+-      <li><div lang="ja"><a href="./reports/v19/jp/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v19/jp/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v19/jp/URL.csv" download>Ad Delivery URL report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v19/jp/REACH.csv" download>Reach report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v19/jp/LABEL.csv" download>Label report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v19/jp/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v19/jp/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v19/jp/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v19/jp/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v19/jp/APP.csv" download>App Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v19/jp/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
+-      <li><div lang="ja"><a href="./reports/v19/jp/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v19/jp/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/AD.csv" download>広告レポート(アカウントレポート、キャンペーンレポート、広告グループレポート、リンク先URLレポート)</a></div><div lang="en"><a href="./reports/v20/jp/AD.csv" download>Ad reports (Account report, Campaign report, Ad group report, Destination URL report)</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/URL.csv" download>配信先URLレポート</a></div><div lang="en"><a href="./reports/v20/jp/URL.csv" download>Ad Delivery URL report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/REACH.csv" download>リーチレポート</a></div><div lang="en"><a href="./reports/v20/jp/REACH.csv" download>Reach report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/AUDIENCE_LIST.csv" download>オーディエンスリストターゲティング</a></div><div lang="en"><a href="./reports/v20/jp/AUDIENCE_LIST.csv" download>Audience list targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/PLACEMENT_LIST.csv" download>プレイスメントターゲティング</a></div><div lang="en"><a href="./reports/v20/jp/PLACEMENT_LIST.csv" download>Placement targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/LABEL.csv" download>ラベルレポート</a></div><div lang="en"><a href="./reports/v20/jp/LABEL.csv" download>Label report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CROSS_CAMPAIGN_REACHES.csv" download>横断リーチレポート</a></div><div lang="en"><a href="./reports/v20/jp/CROSS_CAMPAIGN_REACHES.csv" download>Cross-campaign Reach Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CONVERSION_PATH.csv" download>コンバージョン経路レポート</a></div><div lang="en"><a href="./reports/v20/jp/CONVERSION_PATH.csv" download>Conversion Path Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/CONTENT_KEYWORD_LIST.csv" download>コンテンツキーワードターゲティング</a></div><div lang="en"><a href="./reports/v20/jp/CONTENT_KEYWORD_LIST.csv" download>Contents keyword targeting report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/MODEL_COMPARISON.csv" download>アトリビューションモデル比較レポート</a></div><div lang="en"><a href="./reports/v20/jp/MODEL_COMPARISON.csv" download>Attribution Model Comparison Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/APP.csv" download>アプリレポート</a></div><div lang="en"><a href="./reports/v20/jp/APP.csv" download>App Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/SHARED_BUDGET.csv" download>共有予算レポート</a></div><div lang="en"><a href="./reports/v20/jp/SHARED_BUDGET.csv" download>Campaign Budget Report</a></div></li>
++      <li><div lang="ja"><a href="./reports/v20/jp/PORTFOLIO_BIDDING.csv" download>ポートフォリオ入札レポート</a></div><div lang="en"><a href="./reports/v20/jp/PORTFOLIO_BIDDING.csv" download>Portfolio Bidding Report</a></div></li>
+       </ul>
+   - name: MediaService
+     description: |
+
+
+------
+diff -ru v19/stats/StatsServiceAgeTarget.yaml v20/stats/StatsServiceAgeTarget.yaml
+--- v19/stats/StatsServiceAgeTarget.yaml	2026-07-08 13:18:01.541604344 +0900
++++ v20/stats/StatsServiceAgeTarget.yaml	2026-07-08 13:18:01.581604312 +0900
+@@ -4,8 +4,6 @@
+   properties:
+     age:
+       $ref: 'StatsServiceAge.yaml#/StatsServiceAge'
+-    estimateFlg:
+-      $ref: 'StatsServiceEstimateFlg.yaml#/StatsServiceEstimateFlg'
+   title: StatsServiceAgeTarget
+   description: |
+     <div lang="ja">StatsServiceAgeTargetオブジェクトは、年齢ターゲットの設定情報を保持します。</div>
+Only in v19/stats: StatsServiceEstimateFlg.yaml
+
+
+------
+diff -ru v19/stats/StatsServiceGenderTarget.yaml v20/stats/StatsServiceGenderTarget.yaml
+--- v19/stats/StatsServiceGenderTarget.yaml	2026-07-08 13:18:01.541604344 +0900
++++ v20/stats/StatsServiceGenderTarget.yaml	2026-07-08 13:18:01.581604312 +0900
+@@ -2,8 +2,6 @@
+   type: object
+   nullable: true
+   properties:
+-    estimateFlg:
+-      $ref: 'StatsServiceEstimateFlg.yaml#/StatsServiceEstimateFlg'
+     gender:
+       $ref: 'StatsServiceGender.yaml#/StatsServiceGender'
+   title: StatsServiceGenderTarget

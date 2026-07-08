@@ -1,0 +1,173 @@
+GuaranteedCampaign:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Account ID. <br>
+        This field is required in requests.
+        </div>
+    lifetimeBudget:
+      $ref: 'GuaranteedCampaignServiceLifetimeBudget.yaml#/GuaranteedCampaignServiceLifetimeBudget'
+    campaignBiddingStrategy:
+      $ref: 'GuaranteedCampaignServiceCampaignBiddingStrategy.yaml#/GuaranteedCampaignServiceCampaignBiddingStrategy'
+    campaignGoal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン目的です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Campaign goal.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        このフィールドはSET時に必須となります。
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        This field is required in SET operation.
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。
+        </div>
+        <div lang="en">
+        Campaign name.
+        </div>
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        終了日です。<br>
+        ※フォーマット：yyyyMMdd<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        End date.<br>
+        ∗ Format: yyyyMMdd<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    endTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        終了時刻です。<br>
+        ※フォーマット：HHmm<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        End time.<br>
+        * Format: HHmm<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedCampaignServiceLabel.yaml#/GuaranteedCampaignServiceLabel'
+    servingStatus:
+      $ref: 'GuaranteedCampaignServiceServingStatus.yaml#/GuaranteedCampaignServiceServingStatus'
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        開始日です。<br>
+        ※フォーマット：yyyyMMdd<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Start date.<br>
+        ∗ Format: yyyyMMdd<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    startTime:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        開始時刻です。<br>
+        ※フォーマット：HHmm<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Start time.<br>
+        * Format: HHmm<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    userStatus:
+      $ref: 'GuaranteedCampaignServiceUserStatus.yaml#/GuaranteedCampaignServiceUserStatus'
+    viewableFrequencyCap:
+      $ref: 'GuaranteedCampaignServiceViewableFrequencyCap.yaml#/GuaranteedCampaignServiceViewableFrequencyCap'
+    guaranteedSimulationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        シミュレーションIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Simulation ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    notificationEmailAddress:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        連絡先メールアドレスです。<br>
+        </div>
+        <div lang="en">
+        Email address to send notifications.<br>
+        </div>
+    adCategoryStatus:
+      $ref: 'GuaranteedCampaignServiceAdCategoryStatus.yaml#/GuaranteedCampaignServiceAdCategoryStatus'
+    campaignCanceledDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        予約型のキャンペーンをキャンセルした日時です。<br>
+        ※フォーマット：yyyyMMddHHmmss<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        A date and time which the guaranteed campaign is cancelled.<br>
+        ∗ Format: yyyyMMddHHmmss<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    package:
+      $ref: 'GuaranteedCampaignServicePackage.yaml#/GuaranteedCampaignServicePackage'
+    conversionTracker:
+      $ref: 'GuaranteedCampaignServiceConversionTracker.yaml#/GuaranteedCampaignServiceConversionTracker'
+  title: GuaranteedCampaign
+  description: |
+    <div lang="ja">GuaranteedCampaignオブジェクトは、予約型のキャンペーン情報を表します。</div>
+    <div lang="en">GuaranteedCampaign object describes guaranteed campaign information. </div>

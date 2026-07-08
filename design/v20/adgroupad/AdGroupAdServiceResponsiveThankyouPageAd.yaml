@@ -1,0 +1,66 @@
+AdGroupAdServiceResponsiveThankyouPageAd:
+  type: object
+  nullable: true
+  properties:
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告のヘッドラインです。<br>
+        このフィールドは、レスポンスの際に返却されますが、THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、リクエストでは利用できません。
+        </div>
+        <div lang="en">
+        Ad headline.<br>
+        This field is returned in the response, but cannot be used in requests because ads under THANKYOU_PAGE campaigns cannot be added or updated.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の説明文です。<br>
+        このフィールドは、レスポンスの際に返却されますが、THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、リクエストでは利用できません。
+        </div>
+        <div lang="en">
+        Ad description.<br>
+        This field is returned in the response, but cannot be used in requests because ads under THANKYOU_PAGE campaigns cannot be added or updated.
+        </div>
+    principal:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の主体者表記です。<br>
+        このフィールドは、レスポンスの際に返却されますが、THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、リクエストでは利用できません。
+        </div>
+        <div lang="en">
+        Advertiser indication of the ad.<br>
+        This field is returned in the response, but cannot be used in requests because ads under THANKYOU_PAGE campaigns cannot be added or updated.
+        </div>
+    buttonText:
+      $ref: 'AdGroupAdServiceButtonText.yaml#/AdGroupAdServiceButtonText'
+    customButtonText:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        ボタンテキスト（自由入力）です。<br>
+        このフィールドは、レスポンスの際に返却されますが、THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、リクエストでは利用できません。
+        </div>
+        <div lang="en">
+        Custom button text.<br>
+        This field is returned in the response, but cannot be used in requests because ads under THANKYOU_PAGE campaigns cannot be added or updated.
+        </div>
+  title: AdGroupAdServiceResponsiveThankyouPageAd
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceResponsiveThankyouPageAdオブジェクトは、レスポンシブ（サンキューページ：標準形式）広告の情報を表します。<br>
+    このフィールドは、省略可能となります。<br>
+    THANKYOU_PAGE のキャンペーン配下の広告は ADD および SET ができないため、このオブジェクトはレスポンス専用です。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceResponsiveThankyouPageAd object describes Responsive (Thankyou Page: Standard) ad information.<br>
+    This field is optional.<br>
+    Since ads under THANKYOU_PAGE campaigns cannot be added or updated, this object is response-only.
+    </div>

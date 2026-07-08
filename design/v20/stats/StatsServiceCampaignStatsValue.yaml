@@ -1,0 +1,23 @@
+StatsServiceCampaignStatsValue:
+  type: object
+  nullable: true
+  properties:
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">キャンペーンID</div>
+        <div lang="en">Campaign ID</div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">キャンペーン名</div>
+        <div lang="en">Campaign name</div>
+    stats:
+      $ref: 'Stats.yaml#/Stats'
+  title: StatsServiceCampaignStatsValue
+  description: |
+    <div lang="ja">StatsServiceCampaignStatsValueオブジェクトは、キャンペーンの統計情報を保持します。</div>
+    <div lang="en">StatsServiceCampaignStatsValue object contains Campaign stats information.</div>

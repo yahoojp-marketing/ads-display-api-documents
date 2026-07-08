@@ -1,0 +1,25 @@
+PlacementUrlIdeaServiceUnknownUrlFilterType:
+  type: string
+  nullable: true
+  enum:
+    - DISPLAY
+    - HIDE
+    - UNKNOWN
+  title: PlacementUrlIdeaServiceUnknownUrlFilterType
+  description: |
+    <div lang="ja">
+    PlacementUrlIdeaServiceUnknownUrlFilterTypeは、検索結果の不明なURLをフィルタリングする項目です。<br>
+    このフィールドは省略可能となります。その際、デフォルト値はDISPLAYとなります。
+    </div>
+    <div lang="en">
+    PlacementUrlIdeaServiceUnknownUrlFilterType is the item to filter unknown URLs in the search results.<br>
+    This field is optional. The default value is DISPLAY.
+    </div>
+    <dl class=term>
+      <dt class="term__item">DISPLAY</dt>
+      <dd class="term__desc"><span lang="ja">不明なURLを表示します</span><span lang="en">display unknown URL</span></dd>
+      <dt class="term__item">HIDE</dt>
+      <dd class="term__desc"><span lang="ja">不明なURLを非表示にします</span><span lang="en">hide unknown URL</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

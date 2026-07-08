@@ -1,0 +1,111 @@
+AdGroupAdServiceCarousel:
+  type: object
+  nullable: true
+  properties:
+    displayOrder:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        カルーセルの表示順です。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        ※指定しない場合は自動で設定されます。
+        </div>
+        <div lang="en">
+        Carousel display order.<br>
+        This field is optional in ADD and SET operation.<br>
+        *If not specified, it will be set automatically.
+        </div>
+    mediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        メディアIDです。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Media ID.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    headline:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告のタイトルです。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Ad title.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告の説明文です。<br>
+        このフィールドは、ADD時およびSET時に必須です。
+        </div>
+        <div lang="en">
+        Ad description.<br>
+        This field is requred in ADD and SET operation.
+        </div>
+    disapprovalReasonCodes:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        掲載拒否の理由です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Reject reason on editorial review.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。<br>
+        carouselGainFriendsAd配下では、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Final URL.<br>
+        This field is required in ADD operation, and will be optional in SET operation.<br>
+        Under carouselGainFriendsAd, it will be ignored on input.
+        </div>
+    smartphoneFinalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">スマートフォン向けURLです。<br>
+        ADDおよびSET時、このフィールドは省略可能となります。<br>
+        キャンペーン目的「アプリ訴求」の場合は、ADD、SETのどちらも指定できません。<br>
+        carouselGainFriendsAd配下では、リクエストの際には無視されます。
+        </div>
+        <div lang="en">Final URL (smartphone).<br>
+        This field is optional in ADD and SET operation.<br>
+        Not allowed for ADD and SET when a campaign goal is "app promotion."<br>
+        Under carouselGainFriendsAd, it will be ignored on input.
+        </div>
+    isRemoveSmartphoneFinalUrl:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+  title: AdGroupAdServiceCarousel
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceCarouselオブジェクトはカルーセル広告の詳細情報を表します。<br>
+    ※SET時には、現在のCarouselsに含まれるCarouselが全て指定したCarouselsに置き換わります。<br>
+    ※特定のCarousel単体を指定して変更することはできません。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceCarousel object describes the detailed information of carousel ad.<br>
+    *In SET operation, all Carousel included in the current Carousels will be replaced with the specified Carousels.<br>
+    *Cannot specify a specific Carousel alone.
+    </div>

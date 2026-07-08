@@ -1,0 +1,17 @@
+VideoServicePage:
+  type: object
+  nullable: true
+  properties:
+    totalNumEntries:
+      type: integer
+      nullable: false
+      format: int32
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'VideoServiceValue.yaml#/VideoServiceValue'
+  title: VideoServicePage
+  description: |
+    <div lang="ja">VideoServicePageオブジェクトは、getメソッドの実行結果（全Entityのリスト）を保持します。</div>
+    <div lang="en">VideoServicePage object is a container that includes the execution result (list of all entities) of get methods.</div>

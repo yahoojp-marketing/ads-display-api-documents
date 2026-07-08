@@ -1,0 +1,49 @@
+StatsServiceGeoTarget:
+  type: object
+  nullable: true
+  properties:
+    areaSearchType:
+      $ref: 'StatsServiceAreaSearchType.yaml#/StatsServiceAreaSearchType'
+    latitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の緯度です。</div>
+        <div lang="en">Micro degrees for the latitude.</div>
+    longitudeInMicroDegrees:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">マイクロ表記の経度です。</div>
+        <div lang="en">Micro degrees for the longitude.</div>
+    radius:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">半径(km)です。</div>
+        <div lang="en">Radius(km).</div>
+    description:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">説明です。</div>
+        <div lang="en">Description.</div>
+    geoNameEn:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">地域名（英語）<br>areaSearchTypeがRADIUSの場合はレスポンスの際に返却されません。</div>
+        <div lang="en">Geo name(English)<br>If areaSearchType is RADIUS, it will not be returned.</div>
+    geoNameJa:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">地域名（日本語）<br>areaSearchTypeがRADIUSの場合はレスポンスの際に返却されません。</div>
+        <div lang="en">Geo name(Japanese)<br>If areaSearchType is RADIUS, it will not be returned.</div>
+  title: StatsServiceGeoTarget
+  description: |
+    <div lang="ja">StatsServiceGeoTargetオブジェクトは、地域ターゲットの設定情報を保持します。</div>
+    <div lang="en">StatsServiceGeoTarget object holds configuration information of Geo targeting.</div>

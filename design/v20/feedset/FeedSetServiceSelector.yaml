@@ -1,0 +1,50 @@
+FeedSetServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+    - feedId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントID</div>
+        <div lang="en">Account ID.</div>
+    feedId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">フィードID</div>
+        <div lang="en">Feed ID.</div>
+    feedSetIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 30
+      description: |
+        <div lang="ja">商品セットID</div>
+        <div lang="en">Item set ID.</div>
+    includeItemCount:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">
+        商品セットのアイテム件数を表示<br>
+        trueの場合は、アイテム件数を表示<br>
+        ※デフォルト値はfalse:表示しない。
+        </div>
+        <div lang="en">
+        Describes number of items of Item Set.<br>
+        If true, the number of items is described.<br>
+        ∗ Default is false: Not described.
+        </div>
+  title: FeedSetServiceSelector
+  description: |
+    <div lang="ja">get操作の検索条件を保持するオブジェクト</div>
+    <div lang="en">FeedSetServiceSelector object contains search condition of get operation.</div>

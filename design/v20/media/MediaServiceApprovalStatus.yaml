@@ -1,0 +1,28 @@
+MediaServiceApprovalStatus:
+  type: string
+  nullable: true
+  enum:
+    - APPROVED
+    - REVIEW
+    - PRE_DISAPPROVED
+    - POST_DISAPPROVED
+    - PENDING_UNSPECIFIED_AD
+    - UNKNOWN
+  title: MediaServiceApprovalStatus
+  description: |
+    <div lang="ja">MediaServiceApprovalStatusは、画像の審査の状況です。</div>
+    <div lang="en">MediaServiceApprovalStatus serves the approval status of media.</div>
+    <dl class=term>
+      <dt class="term__item">POST_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">事後審査否認のため掲載停止です。</span><span lang="en">The item was taken offline due to a post review.</span></dd>
+      <dt class="term__item">APPROVED</dt>
+      <dd class="term__desc"><span lang="ja">審査済みです。</span><span lang="en">The item was approved.</span></dd>
+      <dt class="term__item">REVIEW</dt>
+      <dd class="term__desc"><span lang="ja">審査中です。</span><span lang="en">Under editorial review.</span></dd>
+      <dt class="term__item">PENDING_UNSPECIFIED_AD</dt>
+      <dd class="term__desc"><span lang="ja">画像が広告に設定されていないため、審査保留の状態です。</span><span lang="en">The review is pending because you need to pair an image with the ad.</span></dd>
+      <dt class="term__item">PRE_DISAPPROVED</dt>
+      <dd class="term__desc"><span lang="ja">事前審査否認のため掲載不可です。</span><span lang="en">The item was rejected.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

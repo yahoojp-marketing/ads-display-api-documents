@@ -1,0 +1,21 @@
+RecommendationServiceTurnYourAdOn:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        optimizationScoreLiftがnullでない場合は、1つのキャンペーンに関する提案に共通の最適化提案IDが割り当てられます。
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        When optimizationScoreLift isn't null, the system will assign a common recommendation ID to the suggestion for the campaign.
+        </div>
+  title: RecommendationServiceTurnYourAdOn
+  description: |
+    <div lang="ja">RecommendationServiceTurnYourAdOnオブジェクトは、広告の配信設定に関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceTurnYourAdOn objects describes information about recommendations for ad delivery settings.</div>

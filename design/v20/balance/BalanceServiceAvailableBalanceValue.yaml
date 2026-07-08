@@ -1,0 +1,21 @@
+BalanceServiceAvailableBalanceValue:
+  type: object
+  nullable: true
+  properties:
+    availableBalance:
+      $ref: 'AvailableBalance.yaml#/AvailableBalance'
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。</div>
+        <div lang="en">A result of operation.</div>
+  title: BalanceServiceAvailableBalanceValue
+  description: |
+    <div lang="ja">BalanceServiceAvailableBalanceValueオブジェクトは、選択したアカウントの推定現金残高を表します。</div>
+    <div lang="en">BalanceServiceAvailableBalanceValue object describes estimated cash balance for the selected account.</div>

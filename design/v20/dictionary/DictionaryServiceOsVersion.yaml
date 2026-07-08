@@ -1,0 +1,16 @@
+DictionaryServiceOsVersion:
+  type: object
+  nullable: true
+  properties:
+    deviceOsType:
+      $ref: 'DictionaryServiceDeviceOsType.yaml#/DictionaryServiceDeviceOsType'
+    version:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">OSバージョンです。</div>
+        <div lang="en">OS version.</div>
+  title: DictionaryServiceOsVersion
+  description: |
+    <div lang="ja">DictionaryServiceOsVersionオブジェクトは、OSバージョンを保持します。</div>
+    <div lang="en">DictionaryServiceOsVersion object contains OS version.</div>

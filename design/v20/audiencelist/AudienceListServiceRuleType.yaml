@@ -1,0 +1,42 @@
+AudienceListServiceRuleType:
+  type: string
+  nullable: true
+  enum:
+    - URL
+    - LABEL
+    - REFERER_URL
+    - PAGE_TYPE
+    - ITEM_ID
+    - ITEM_CATEGORY_ID
+    - EVENT_TYPE
+    - UNKNOWN
+  title: AudienceListServiceRuleType
+  description: |
+    <div lang="ja">
+    AudienceListServiceRuleTypeは、ルールタイプのリストの種類を表示します。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。<br>
+    ※AudienceListTypeがAPP_USERの場合はLABEL、PAGE_TYPE、CATEGORY_ID、ITEM_ID、EVENT_TYPEのみ指定できます。
+    </div>
+    <div lang="en">
+    AudienceListServiceRuleType display the type of the rule. <br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.<br>
+    ∗If audienceListType is APP_USER, this field can be specified only LABEL, PAGE_TYPE,CATEGORY_ID, ITEM_ID, EVENT_TYPE.
+    </div>
+    <dl class=term>
+      <dt class="term__item">URL</dt>
+      <dd class="term__desc"><span lang="ja">URLを利用したリスト設定です。</span><span lang="en">List setting using the URL.</span></dd>
+      <dt class="term__item">LABEL</dt>
+      <dd class="term__desc"><span lang="ja">カスタムラベルを利用したリスト設定です。</span><span lang="en">List setting using the Custom label.</span></dd>
+      <dt class="term__item">REFERER_URL</dt>
+      <dd class="term__desc"><span lang="ja">参照元URLを利用したリスト設定です。</span><span lang="en">List setting using the Referer URL.</span></dd>
+      <dt class="term__item">PAGE_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">ページ種別を利用したリスト設定です。</span><span lang="en">List setting using the page type.</span></dd>
+      <dt class="term__item">ITEM_ID</dt>
+      <dd class="term__desc"><span lang="ja">商品IDを利用したリスト設定です。</span><span lang="en">List setting using the Item ID.</span></dd>
+      <dt class="term__item">ITEM_CATEGORY_ID</dt>
+      <dd class="term__desc"><span lang="ja">アイテムカテゴリーを利用したリスト設定です。</span><span lang="en">List setting using the Item category.</span></dd>
+      <dt class="term__item">EVENT_TYPE</dt>
+      <dd class="term__desc"><span lang="ja">イベント種別を利用したリスト設定です。</span><span lang="en">List setting using the event type.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

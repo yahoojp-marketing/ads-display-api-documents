@@ -1,0 +1,23 @@
+AdGroupAdServiceCustomParameters:
+  type: object
+  nullable: true
+  properties:
+    isRemove:
+      $ref: 'AdGroupAdServiceIsRemoveFlg.yaml#/AdGroupAdServiceIsRemoveFlg'
+    parameters:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AdGroupAdServiceCustomParameter.yaml#/AdGroupAdServiceCustomParameter'
+  title: AdGroupAdServiceCustomParameters
+  description: |
+    <div lang="ja">
+    AdGroupAdServiceCustomParametersは、カスタムパラメータの設定を表します。<br>
+    ADDおよびSET時、このフィールドは省略可能となります。<br>
+    adTypeがCAROUSEL_GAIN_FRIENDS_ADの場合、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupAdServiceCustomParameters displays the setting of custom parameters.<br>
+    This field is optional in ADD and SET operation.<br>
+    If adType is CAROUSEL_GAIN_FRIENDS_AD, this field will be ignored on input.
+    </div>

@@ -1,0 +1,13 @@
+AuditLogServiceReturnValue:
+  type: object
+  nullable: true
+  properties:
+    values:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AuditLogServiceValue.yaml#/AuditLogServiceValue'
+  title: AuditLogServiceReturnValue
+  description: |
+    <div lang="ja">AuditLogServiceReturnValueは、addメソッドの実行結果を保持するオブジェクトです。</div>
+    <div lang="en">AuditLogServiceReturnValue is an object which acquires the exec parameter of add method</div>

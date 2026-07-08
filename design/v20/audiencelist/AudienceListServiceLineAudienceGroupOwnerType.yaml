@@ -1,0 +1,43 @@
+AudienceListServiceLineAudienceGroupOwnerType:
+  type: string
+  nullable: true
+  title: AudienceListServiceLineAudienceGroupOwnerType
+  description: |
+    <div lang="ja">
+    AudienceListServiceLineAudienceGroupOwnerTypeは、LINEのオーディエンスの作成元を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    lineAudienceGroupOwnerTypeで返却される値は、以下のとおりです。<br>
+    <table border='1'>
+      <tr>
+        <th>lineAudienceGroupOwnerType</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td>LINE_ADS</td>
+        <td>LINE広告</td>
+      </tr>
+      <tr>
+        <td>LINE_OA</td>
+        <td>LINE公式アカウント</td>
+      </tr>
+    </table>
+    </div>
+    <div lang="en">
+    AudienceListServiceLineAudienceGroupOwnerType represents the owner of LINE audience.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    Responded values of `lineAudienceGroupOwnerType` are as follows.
+    <table border='1'>
+      <tr>
+        <th>lineAudienceGroupOwnerType</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>LINE_ADS</td>
+        <td>LINE Ads</td>
+      </tr>
+      <tr>
+        <td>LINE_OA</td>
+        <td>LINE Official Account</td>
+      </tr>
+    </table>
+    </div>

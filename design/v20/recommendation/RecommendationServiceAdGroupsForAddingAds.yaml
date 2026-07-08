@@ -1,0 +1,13 @@
+RecommendationServiceAdGroupsForAddingAds:
+  type: object
+  nullable: true
+  properties:
+    adGroupsForAddingAdsList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceAdGroupsForAddingAdsList.yaml#/RecommendationServiceAdGroupsForAddingAdsList'
+  title: RecommendationServiceAdGroupForAddingAds
+  description: |
+    <div lang="ja">RecommendationServiceAdGroupForAddingAdsオブジェクトは、入稿を推奨する画像サイズがある広告グループに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceAdGroupForAddingAds object describes recommendation information about the ad group with recommended image sizes.</div>

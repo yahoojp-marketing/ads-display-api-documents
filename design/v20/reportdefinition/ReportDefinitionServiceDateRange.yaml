@@ -1,0 +1,44 @@
+ReportDefinitionServiceDateRange:
+  type: object
+  nullable: true
+  properties:
+    endDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        集計終了日です。<br>
+        ※フォーマット：yyyyMMdd<br>
+        このフィールドは、ADD時に必須となり、REMOVE時に無視されます。
+        </div>
+        <div lang="en">
+        The compilation end date. <br>
+        ∗ Format: yyyyMMdd<br>
+        This field is required in ADD operation, and will be ignored in REMOVE operation.
+        </div>
+    startDate:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        集計開始日です。<br>
+        ※フォーマット：yyyyMMdd<br>
+        このフィールドは、ADD時に必須となり、REMOVE時に無視されます。
+        </div>
+        <div lang="en">
+        The compilation start date.<br>
+        ∗ Format: yyyyMMdd<br>
+        This field is required in ADD operation, and will be ignored in REMOVE operation.
+        </div>
+  title: ReportDefinitionServiceDateRange
+  description: |
+    <div lang="ja">
+    ReportDefinitionServiceDateRangeオブジェクトは、レポートの集計対象期間を表します。<br>
+    このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。<br>
+    DateRangeTypeがCUSTOM_DATEの場合、必須項目です。
+    </div>
+    <div lang="en">
+    The ReportDefinitionServiceDateRange object serves the report compilation target period. <br>
+    This field is optional in ADD operation, and will be ignored in REMOVE operation. <br>
+    This field is required if DateRangeType is set to &#34;CUSTOM DATE&#34;.
+    </div>

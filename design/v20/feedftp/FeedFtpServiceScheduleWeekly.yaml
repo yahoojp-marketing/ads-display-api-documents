@@ -1,0 +1,26 @@
+FeedFtpServiceScheduleWeekly:
+  type: object
+  nullable: true
+  properties:
+    scheduleWeek:
+      $ref: 'FeedFtpServiceScheduleWeek.yaml#/FeedFtpServiceScheduleWeek'
+      description: |
+        <div lang="ja">何曜日に実行するかです。</div>
+        <div lang="en">What day of the week to run</div>
+    time:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        何時に実行するかを表します。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Execution time.<br>
+        This field is required in requests.
+        </div>
+  title: FeedFtpServiceScheduleWeekly
+  description: |
+    <div lang="ja">FeedFtpServiceScheduleWeeklyオブジェクトは、定期アップロードを何曜日の何時に実行するかを表します。</div>
+    <div lang="en">FeedFtpServiceScheduleWeekly object displays what day of the week and what time of the day the Periodic Upload runs.</div>

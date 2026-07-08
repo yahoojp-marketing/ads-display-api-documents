@@ -1,0 +1,20 @@
+StatsServicePlacementUrlListType:
+  type: string
+  nullable: true
+  enum:
+    - WHITE_LIST
+    - BLACK_LIST
+    - UNKNOWN
+  title: StatsServicePlacementUrlListType
+  description: |
+    <div lang="ja">StatsServicePlacementUrlListTypeは、プレイスメントURLリストの種別を表します。</div>
+    <div lang="en">StatsServicePlacementUrlListType stands for the type of Placement URL list.</div>
+    <dl class=term>
+      <dt class="term__item">WHITE_LIST</dt>
+      <dd class="term__desc"><span lang="ja">ホワイトリスト</span><span lang="en">White list.</span></dd>
+      <dt class="term__item">BLACK_LIST</dt>
+      <dd class="term__desc"><span lang="ja">ブラックリスト</span><span lang="en">Black list.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>
+

@@ -1,0 +1,24 @@
+DictionaryServiceOsVersionValue:
+  type: object
+  nullable: true
+  properties:
+    errors:
+      type: array
+      nullable: true
+      items:
+        $ref: '../../Error.yaml#/Error'
+    operationSucceeded:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">処理結果です。trueの場合は、処理は成功しました。falseの場合は処理が失敗しています。</div>
+        <div lang="en">The process results. If true, the process succeeded. If false, the process failed.</div>
+    osVersion:
+      type: array
+      nullable: true
+      items:
+        $ref: 'DictionaryServiceOsVersion.yaml#/DictionaryServiceOsVersion'
+  title: DictionaryServiceOsVersionValue
+  description: |
+    <div lang="ja">DictionaryServiceOsVersionValueオブジェクトは、getOsVersionメソッドの実行結果（１Entity）を保持します。</div>
+    <div lang="en">DictionaryServiceOsVersionValue object contains the results (1 Entity) for getOsVersion method.</div>

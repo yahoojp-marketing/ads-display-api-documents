@@ -1,0 +1,229 @@
+GuaranteedAdGroupAdServiceTopImpactSquare:
+  type: object
+  nullable: true
+  properties:
+    displayUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        表示URLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Display URL.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    customParameters:
+      $ref: 'GuaranteedAdGroupAdServiceCustomParameters.yaml#/GuaranteedAdGroupAdServiceCustomParameters'
+    displayUrlLevel:
+      $ref: 'GuaranteedAdGroupAdServiceDisplayUrlLevel.yaml#/GuaranteedAdGroupAdServiceDisplayUrlLevel'
+    finalUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">最終リンク先URLです。<br>
+        finalUrlフィールドを設定する場合、trackingUrl、customParametersは任意になります。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Final URL.<br>
+        If you specify finalUrl, trackingUrl and customParameters will be optional.<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        * Not Available.
+        </div>
+    trackingUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">トラッキングURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        finalUrlを指定するときのみ、任意で指定できます。<br>
+        ※現在利用できません
+        </div>
+        <div lang="en">Tracking URL.<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        This field can be optionally specified only when specifying finalUrl.<br>
+        * Not Available.
+        </div>
+    adLeftSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        左サイド画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Left side image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    adRightSideMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        右サイド画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Right side image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    adCenterMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        センター画像です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Center image.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    thumbnailMediaId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        サムネイルIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Thumbnail ID.<br>
+        This field will be returned in the response, it will be ignored on input.
+        </div>
+    video3SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        3秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (3 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video25PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        25％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (25%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video50PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        50％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (50%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video75PercentBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        75％再生視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Playback viewing beacon URL (75%).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    video10SecBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        10秒視聴ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (10 seconds).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoCompleteBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生完了ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (complete).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+    videoStartBeaconUrls:
+      type: array
+      nullable: true
+      items:
+        type: string
+        nullable: true
+      description: |
+        <div lang="ja">
+        再生開始ビーコンURLです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        ※httpsのURLのみ設定可能です。
+        </div>
+        <div lang="en">
+        Viewing beacon URL (start).<br>
+        This field will be returned in the response, it will be ignored on input.<br>
+        ∗Available URL is only &#34;https&#34;.
+        </div>
+  title: GuaranteedAdGroupAdServiceTopImpactSquare
+  description: |
+    <div lang="ja">
+    GuaranteedAdGroupAdServiceTopImpactSquareオブジェクトは、トップインパクト スクエア広告の情報を表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    </div>
+    <div lang="en">
+    GuaranteedAdGroupAdServiceTopImpactSquare object describes information of Top Impact Square ad.<br>
+    This field will be returned in the response, it will be ignored on input.<br>
+    </div>

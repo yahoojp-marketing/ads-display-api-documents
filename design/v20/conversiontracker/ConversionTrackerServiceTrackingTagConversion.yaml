@@ -1,0 +1,43 @@
+ConversionTrackerServiceTrackingTagConversion:
+  type: object
+  nullable: true
+  properties:
+    snippetId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        スニペットIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Snippet ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    trackingTagId:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        計測タグIDです。<br>
+        このフィールドは、SET時は無視され、ADD時は省略可能となります。<br>
+        ADD時にこのフィールドが未指定の場合、有効な計測タグが1つあれば自動で設定されます。<br>
+        </div>
+        <div lang="en">
+        Tracking tag ID.<br>
+        This field will be ignored in SET operation, and is optional in ADD operation.<br>
+        If this field is not specified in ADD operation, it will be set automatically if there is one valid tracking tag.<br>
+        <div>
+    ruleType:
+      $ref: 'ConversionTrackerServiceTrackingTagConversionRuleType.yaml#/ConversionTrackerServiceTrackingTagConversionRuleType'
+    urlRule:
+      $ref: 'ConversionTrackerServiceTrackingTagConversionUrlRule.yaml#/ConversionTrackerServiceTrackingTagConversionUrlRule'
+  description: |
+    <div lang="ja">
+    このフィールドは、計測タグのコンバージョン設定を表します。<br>
+    ADDおよびSET時は省略可能となります。ADD時、conversionTrackerTypeがTRACKING_TAG_CONVERSIONの場合、必須です。
+    </div>
+    <div lang="en">
+    This field describes the information for the tracking tag.<br>
+    This field is optional in ADD and SET operation. If conversionTrackerType is TRACKING_TAG_CONVERSION, this field is required in ADD operation.
+    </div>

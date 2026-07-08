@@ -1,0 +1,31 @@
+ReportDefinitionServiceAttributionModel:
+  type: string
+  nullable: true
+  enum:
+    - LAST
+    - FIRST
+    - LINEAR
+    - POSITION_BASED
+    - UNKNOWN
+  title: ReportDefinitionServiceAttributionModel
+  description: |
+    <div lang="ja">
+      ReportDefinitionServiceAttributionModelは、アトリビューションモデルの種類を表します。<br>
+      このフィールドは、ADD時に必須となります。
+    </div>
+    <div lang="en">
+      ReportDefinitionServiceAttributionModel describes the type of attribution model.<br>
+      This field is required in ADD operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">LAST</dt>
+      <dd class="term__desc"><span lang="ja">ラストタッチです。</span><span lang="en">Last touch.</span></dd>
+      <dt class="term__item">FIRST</dt>
+      <dd class="term__desc"><span lang="ja">ファーストタッチです。</span><span lang="en">First touch.</span></dd>
+      <dt class="term__item">LINEAR</dt>
+      <dd class="term__desc"><span lang="ja">線形です。</span><span lang="en">Linear.</span></dd>
+      <dt class="term__item">POSITION_BASED</dt>
+      <dd class="term__desc"><span lang="ja">接点ベースです。</span><span lang="en">Position based.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

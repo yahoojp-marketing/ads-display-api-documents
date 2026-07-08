@@ -1,0 +1,27 @@
+AudienceListServiceAdvancedSegmentsAudienceRange:
+  type: string
+  nullable: true
+  enum:
+    - 'WIDE'
+    - 'NARROW'
+    - 'UNKNOWN'
+  title: AudienceListServiceAdvancedSegmentsAudienceRange
+  description: |
+    <div lang="ja">
+      AudienceListServiceAdvancedSegmentsAudienceRangeは高度なセグメントにおけるユーザの拡張範囲を表します。<br>
+      このフィールドは、リクエストの場合は省略可能です。ADD時のデフォルト設定値はWIDEとなります。<br>
+      ※このフィールドは、keywordsが指定されている場合のみ有効です。urlsが指定されている場合は、このフィールドは返却されず、リクエストの際も無視されます。
+    </div>
+    <div lang="en">
+      AudienceListServiceAdvancedSegmentsAudienceRange displays the audience range in advanced segments.  <br>
+      This field is optional in requests. The default value in ADD operation will be WIDE.<br>
+      * Available only when keywords are specified. If urls are specified, this field will not be returned and will be ignored on request.
+    </div>
+    <dl class=term>
+      <dt class="term__item">WIDE</dt>
+      <dd class="term__desc"><span lang="ja">ユーザーの拡張範囲：広い</span><span lang="en">Audience range: Wide</span></dd>
+      <dt class="term__item">NARROW</dt>
+      <dd class="term__desc"><span lang="ja">ユーザーの拡張範囲：狭い</span><span lang="en">Audience range: Narrow</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

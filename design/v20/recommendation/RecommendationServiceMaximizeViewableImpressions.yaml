@@ -1,0 +1,13 @@
+RecommendationServiceMaximizeViewableImpressions:
+  type: object
+  nullable: true
+  properties:
+    maximizeViewableImpressionsCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceMaximizeViewableImpressionsCampaign.yaml#/RecommendationServiceMaximizeViewableImpressionsCampaign'
+  title: RecommendationServiceMaximizeConversions
+  description: |
+    <div lang="ja">RecommendationServiceMaximizeViewableImpressionsオブジェクトは、自動入札（ビューアブルインプレッション数の最大化）に適しているキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceMaximizeViewableImpressions object describes recommendation information about the campaign that is suitable for using autobidding (Maximize Vimps).</div>

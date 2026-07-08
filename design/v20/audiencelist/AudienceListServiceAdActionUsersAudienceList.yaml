@@ -1,0 +1,35 @@
+AudienceListServiceAdActionUsersAudienceList:
+  type: object
+  nullable: true
+  properties:
+    adActionRules:
+      $ref: 'AudienceListServiceAdActionRules.yaml#/AudienceListServiceAdActionRules'
+    adActionDataSource:
+      $ref: 'AudienceListServiceAdActionDataSource.yaml#/AudienceListServiceAdActionDataSource'
+    dataDuration:
+      type: integer
+      nullable: true
+      format: int32
+      description: |
+        <div lang="ja">
+        データの有効期間（1日～90日）です。<br>
+        このフィールドは、ADD時に必須となり、SET時に省略可能となります。
+        </div>
+        <div lang="en">
+        Data duration. (1 - 90 days) <br>
+        This field is required in ADD operation, and is optional in SET operation.
+        </div>
+    eligibleFlg:
+      $ref: 'AudienceListServiceEligibleFlg.yaml#/AudienceListServiceEligibleFlg'
+  title: AudienceListServiceAdActionUsersAudienceList
+  description: |
+    <div lang="ja">
+    AudienceListServiceAdActionUsersAudienceListオブジェクトは、オーディエンスリスト（広告アクションユーザー）を表します。<br>
+    このフィールドは、ADDおよびSET時に省略可能となります。<br>
+    ※audienceListTypeがAD_ACTION_USERSの場合は、ADDおよびSET時に必須となります。
+    </div>
+    <div lang="en">
+    AudienceListServiceAdActionUsersAudienceList object describes the audience list (Ad action users).<br>
+    This field is optional in ADD and SET operation.<br>
+    *If audienceListType is AD_ACTION_USERS, this field is required in ADD and SET operation.
+    </div>

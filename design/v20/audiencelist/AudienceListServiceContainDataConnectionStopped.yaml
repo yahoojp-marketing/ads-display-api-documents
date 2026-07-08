@@ -1,0 +1,25 @@
+AudienceListServiceContainDataConnectionStopped:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: AudienceListServiceContainDataConnectionStopped
+  description: |
+    <div lang="ja">
+    AudienceListServiceContainDataConnectionStoppedは、データ連携が停止しているオーディエンスリストを含んでいるかかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceContainDataConnectionStopped display whether the list contains audience lists that have stopped the data connection.<br>
+    Although this field will be returned in the response, it will be ignored on request.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">データ連携が停止しているオーディエンスリストを含んでいます。</span><span lang="en">Contains audience lists that have stopped the data connection.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">データ連携が停止しているオーディエンスリストを含んでいません。</span><span lang="en">Not contains audience lists that have stopped the data connection.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

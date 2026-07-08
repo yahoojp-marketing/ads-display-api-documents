@@ -1,0 +1,61 @@
+AudienceListServiceSelector:
+  type: object
+  nullable: true
+  required:
+    - accountId
+  properties:
+    accountId:
+      type: integer
+      nullable: false
+      format: int64
+      description: |
+        <div lang="ja">アカウントIDです。</div>
+        <div lang="en">Account ID.</div>
+    numberResults:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      maximum: 1000
+      default: 1000
+      description: |
+        <div lang="ja">開始位置から取得する結果の数。このフィールドは、1以上を指定する必要があります。</div>
+        <div lang="en">The number of results to retrieve starting from the initial position. This field must be greater than or equal to 1.</div>
+    startIndex:
+      type: integer
+      nullable: true
+      format: int32
+      minimum: 1
+      default: 1
+      description: |
+        <div lang="ja">取得を開始する結果セット内の位置。このフィールドは、0以上を指定する必要があります。</div>
+        <div lang="en">The position within the result set where retrieval begins. This field must be greater than or equal to 0.</div>
+    audienceListIds:
+      type: array
+      nullable: true
+      items:
+        type: integer
+        nullable: true
+        format: int64
+      maxItems: 1000
+      description: |
+        <div lang="ja">オーディエンスリストIDです。</div>
+        <div lang="en">Audience list ID.</div>
+    audienceListTypes:
+      type: array
+      nullable: true
+      items:
+        $ref: 'AudienceListServiceType.yaml#/AudienceListServiceType'
+    sharingStatusFilterType:
+      $ref: 'AudienceListServiceSharingStatusFilterType.yaml#/AudienceListServiceSharingStatusFilterType'
+    includeDetail:
+      type: boolean
+      nullable: true
+      default: false
+      description: |
+        <div lang="ja">詳細情報を含めるかどうかのフラグです。true の場合、各オーディエンスリスト種別の詳細な条件情報が含まれます。デフォルトは false です。</div>
+        <div lang="en">Flag to include detailed information. When true, detailed condition information for each audience list type is included. Default is false.</div>
+  title: AudienceListServiceSelector
+  description: |
+    <div lang="ja">AudienceListServiceSelectorオブジェクトは、オーディエンスリストを指定します。</div>
+    <div lang="en">AudienceListServiceSelector object specifies audience list.</div>

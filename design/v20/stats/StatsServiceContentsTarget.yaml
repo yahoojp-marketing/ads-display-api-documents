@@ -1,0 +1,24 @@
+StatsServiceContentsTarget:
+  type: object
+  nullable: true
+  properties:
+    deliverType:
+      $ref: 'StatsServiceDeliverType.yaml#/StatsServiceDeliverType'
+    contentsKeywordListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        コンテンツキーワードリスト名です。
+        </div>
+        <div lang="en">
+        Contents keyword list name.
+        </div>
+  title: StatsServiceContentsTarget
+  description: |
+    <div lang="ja">
+    StatsServiceContentsTargetオブジェクトは、コンテンツターゲティングの設定情報を保持します。
+    </div>
+    <div lang="en">
+    StatsServiceContentsTarget object is a container for storing contents settings.
+    </div>

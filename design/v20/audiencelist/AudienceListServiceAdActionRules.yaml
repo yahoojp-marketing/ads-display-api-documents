@@ -1,0 +1,18 @@
+AudienceListServiceAdActionRules:
+  type: object
+  nullable: true
+  properties:
+    adActionType:
+      $ref: 'AudienceListServiceAdActionType.yaml#/AudienceListServiceAdActionType'
+    videoViewRule:
+      $ref: 'AudienceListServiceVideoViewRule.yaml#/AudienceListServiceVideoViewRule'
+  title: AudienceListServiceAdActionRules
+  description: |
+    <div lang="ja">
+    AudienceListServiceAdActionRulesオブジェクトは、広告アクションリストの条件を表します。<br>
+    このフィールドは、ADD時に必須となり、SETおよびREMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    AudienceListServiceAdActionRules object describes the rules for the ad action list.<br>
+    This field is required in ADD operation, and will be ignored in SET and REMOVE operation.
+    </div>

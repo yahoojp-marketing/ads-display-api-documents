@@ -1,0 +1,16 @@
+StatsServiceAudienceListTarget:
+  type: object
+  nullable: true
+  properties:
+    deliverType:
+      $ref: 'StatsServiceDeliverType.yaml#/StatsServiceDeliverType'
+    audienceListName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">オーディエンスリスト名</div>
+        <div lang="en">Audience list name</div>
+  title: StatsServiceAudienceListTarget
+  description: |
+    <div lang="ja">StatsServiceAudienceListTargetオブジェクトは、オーディエンスリストターゲティングの設定情報を保持します。</div>
+    <div lang="en">StatsServiceAudienceListTarget object holds configuration information of Audience list targeting.</div>

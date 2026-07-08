@@ -1,0 +1,40 @@
+BiddingStrategyServiceType:
+  type: string
+  nullable: true
+  enum:
+    - MAXIMIZE_CONVERSIONS
+    - MAXIMIZE_CONVERSION_VALUE
+    - MAXIMIZE_CLICKS
+    - MAXIMIZE_VIDEO_VIEWS
+    - MAXIMIZE_VIEWABLE_IMPRESSIONS
+    - MAXIMIZE_GAINING_FRIENDS
+    - CPC
+    - UNKNOWN
+  title: BiddingStrategyServiceType
+  description: |
+    <div lang="ja">
+    キャンペーン入札戦略タイプです。<br>
+    このフィールドは、ADDおよびSET時に必須となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    BiddingStrategyServiceType describes setting of campaign bid strategy type.<br>
+    This field is required in ADD and SET operation, and will be ignored in REMOVE operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">MAXIMIZE_CONVERSIONS</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン数の最大化</span><span lang="en">Maximize conversions</span></dd>
+      <dt class="term__item">MAXIMIZE_CONVERSION_VALUE</dt>
+      <dd class="term__desc"><span lang="ja">コンバージョン価値の最大化</span><span lang="en"Maximize conversion value</span></dd>
+      <dt class="term__item">MAXIMIZE_CLICKS</dt>
+      <dd class="term__desc"><span lang="ja">クリック数の最大化</span><span lang="en">Maximize clicks</span></dd>
+      <dt class="term__item">MAXIMIZE_VIDEO_VIEWS</dt>
+      <dd class="term__desc"><span lang="ja">動画再生数の最大化</span><span lang="en">Maximize video views</span></dd>
+      <dt class="term__item">MAXIMIZE_VIEWABLE_IMPRESSIONS</dt>
+      <dd class="term__desc"><span lang="ja">ビューアブルインプレッション数の最大化</span><span lang="en">Maximize viewable impressions</span></dd>
+      <dt class="term__item">MAXIMIZE_GAINING_FRIENDS</dt>
+      <dd class="term__desc"><span lang="ja">友だち追加数の最大化</span><span lang="en">Maximize gaining friends</span></dd>
+      <dt class="term__item">CPC</dt>
+      <dd class="term__desc"><span lang="ja">個別クリック単価</span><span lang="en">Individual CPC</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

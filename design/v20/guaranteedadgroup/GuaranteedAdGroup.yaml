@@ -1,0 +1,112 @@
+GuaranteedAdGroup:
+  type: object
+  nullable: true
+  properties:
+    accountId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        アカウントIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Account ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループIDです。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        Ad group ID.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+    adGroupName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告グループ名です。<br>
+        このフィールドは、ADD時は必須となり、SET時は省略可能となります。
+        </div>
+        <div lang="en">
+        Ad group name.<br>
+        This field is required in ADD operation, and will be optional in SET operation.
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        このフィールドは、リクエストの場合は必須です。
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        This field is required in requests.
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+        *ADD時、このフィールドは返却されません。
+        </div>
+        <div lang="en">
+        Campaign name.<br>
+        Although this field will be returned in the response, it will be ignored on input.<br>
+        *This field will not be returned in ADD operation.
+        </div>
+    device:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupServiceDeviceType.yaml#/GuaranteedAdGroupServiceDeviceType'
+    deviceApp:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupServiceDeviceAppType.yaml#/GuaranteedAdGroupServiceDeviceAppType'
+    deviceOs:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupServiceDeviceOsType.yaml#/GuaranteedAdGroupServiceDeviceOsType'
+    labels:
+      type: array
+      nullable: true
+      items:
+        $ref: 'GuaranteedAdGroupServiceLabel.yaml#/GuaranteedAdGroupServiceLabel'
+    userStatus:
+      $ref: 'GuaranteedAdGroupServiceUserStatus.yaml#/GuaranteedAdGroupServiceUserStatus'
+    adGroupTargets:
+      type: array
+      nullable: true
+      items:
+        $ref: '../adgrouptarget/AdGroupTarget.yaml#/AdGroupTarget'
+    isCreativeProfile:
+      type: boolean
+      nullable: true
+      description: |
+        <div lang="ja">
+        trueの場合、クリエイティブプロファイルで追加された広告グループであることを示します。<br>
+        このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+        </div>
+        <div lang="en">
+        If the value of this field is true, it indicates that the ad group was added using a creative profile.<br>
+        Although this field will be returned in the response, it will be ignored on input.
+        </div>
+  title: GuaranteedAdGroup
+  description: |
+    <div lang="ja">GuaranteedAdGroupオブジェクトは、予約型の広告グループ情報を保持します。</div>
+    <div lang="en">The Guaranteed Ad Group object is a container for storing ad group information of guaranteed campaign.</div>

@@ -1,0 +1,13 @@
+RecommendationServiceCampaignBiddingStrategyToTargetCpa:
+  type: object
+  nullable: true
+  properties:
+    campaignBiddingStrategyToTargetCpaCampaignList:
+      type: array
+      nullable: true
+      items:
+        $ref: 'RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign.yaml#/RecommendationServiceCampaignBiddingStrategyToTargetCpaCampaign'
+  title: RecommendationServiceCampaignBiddingStrategyToTargetCpa
+  description: |
+    <div lang="ja">RecommendationServiceCampaignBiddingStrategyToTargetCpaオブジェクトは、自動入札（コンバージョン単価の目標値）に適しているキャンペーンに関する最適化提案の情報を表します。</div>
+    <div lang="en">RecommendationServiceCampaignBiddingStrategyToTargetCpa object describes recommendation information about the campaign that is suitable for using autobidding (target CPA).</div>

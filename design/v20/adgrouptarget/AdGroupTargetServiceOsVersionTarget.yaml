@@ -1,0 +1,20 @@
+AdGroupTargetServiceOsVersionTarget:
+  type: object
+  nullable: true
+  properties:
+    osVersion:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">OSのバージョンです。</div>
+        <div lang="en">OS version.</div>
+  title: AdGroupTargetServiceOsVersionTarget
+  description: |
+    <div lang="ja">
+    AdGroupTargetServiceOsVersionTargetオブジェクトは、OSバージョンターゲティングの設定情報を保持します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。
+    </div>
+    <div lang="en">
+    AdGroupTargetServiceOsVersionTarget object is a container for storing OS version targeting settings.<br>
+    Although this field will be returned in the response, it will be ignored on input.
+    </div>

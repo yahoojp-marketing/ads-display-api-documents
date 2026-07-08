@@ -1,0 +1,25 @@
+AppLinkServiceAppLinkStatus:
+  type: string
+  nullable: true
+  enum:
+    - ENABLED
+    - DISABLED
+    - UNKNOWN
+  title: AppLinkServiceAppLinkStatus
+  description: |
+    <div lang="ja">
+    アプリ連携情報のステータスを表します。<br>
+    このフィールドは、リクエストの場合は省略可能です。
+    </div>
+    <div lang="en">
+    It shows AppLink status.<br>
+    This field is optional in requests.
+    </div>
+    <dl class=term>
+      <dt class="term__item">ENABLED</dt>
+      <dd class="term__desc"><span lang="ja">アプリ連携は有効です。</span><span lang="en">The app link is active.</span></dd>
+      <dt class="term__item">DISABLED</dt>
+      <dd class="term__desc"><span lang="ja">アプリ連携は無効です。</span><span lang="en">The app link is inactive.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

@@ -1,0 +1,31 @@
+ContentsKeywordIdeaServiceSortField:
+  type: string
+  nullable: true
+  enum:
+    - KEYWORD
+    - KEYWORD_ID
+    - SEARCH_VOLUME
+    - CREATED_DATE
+    - UNKNOWN
+  title: ContentsKeywordIdeaServiceSortField
+  description: |
+    <div lang="ja">
+      ContentsKeywordIdeaServiceSortFieldオブジェクトは、ソート対象項目です。<br>
+      GET時のデフォルト設定値はSEARCH_VOLUMEとなります。
+    </div>
+    <div lang="en">
+      ContentsKeywordIdeaServiceSortField object is sorting item.<br>
+      The default value in GET operation will be SEARCH_VOLUME.
+    </div>
+    <dl class=term>
+      <dt class="term__item">KEYWORD</dt>
+      <dd class="term__desc"><span lang="ja">キーワードです。</span><span lang="en">Keyword</span></dd>
+      <dt class="term__item">KEYWORD_ID</dt>
+      <dd class="term__desc"><span lang="ja">キーワードIDです。</span><span lang="en">Keyword ID</span></dd>
+      <dt class="term__item">SEARCH_VOLUME</dt>
+      <dd class="term__desc"><span lang="ja">リーチ数です。</span><span lang="en">Reach Number</span></dd>
+      <dt class="term__item">CREATED_DATE</dt>
+      <dd class="term__desc"><span lang="ja">キーワード作成日です。</span><span lang="en">Date for keyword</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

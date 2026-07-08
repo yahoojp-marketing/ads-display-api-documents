@@ -1,0 +1,27 @@
+EstimatedUserSizeServiceUnavailableUrl:
+  type: string
+  nullable: true
+  enum:
+    - 'TRUE'
+    - 'FALSE'
+    - UNKNOWN
+  title: EstimatedUserSizeServiceUnavailableUrl
+  description: |
+    <div lang="ja">
+    EstimatedUserSizeServiceUnavailableUrlは、利用不可URLかどうかを表します。<br>
+    このフィールドは、レスポンスの際に返却されますが、リクエストの際には無視されます。<br>
+    オーディエンスリストに紐付けた後にURLの審査が行われるためEstimatedUserSizeServiceUnavailableUrlとAudienceListServiceUnavailableUrlで利用不可URLかどうかの結果が異なることがありますがEstimatedUserSizeServiceUnavailableUrlはオーディエンスリスト作成前の参考として利用していただき、実際にオーディエンスリストに紐づいている判定結果についてはAudienceListServiceUnavailableUrlをご参照ください。
+    </div>
+    <div lang="en">
+    EstimatedUserSizeServiceUnavailableUrl display whether the url is unavailable.<br>
+    Although this field will be returned in the response, it will be ignored on request.<br>
+    Refer to the review results of AudienceListServiceUnavailableUrl for your audience list. The review results of EstimatedUserSizeServiceUnavailableUrl may differ because we review your urls after they are associated with audience lists.
+    </div>
+    <dl class=term>
+      <dt class="term__item">TRUE</dt>
+      <dd class="term__desc"><span lang="ja">利用不可URLです。</span><span lang="en">Unavailable url.</span></dd>
+      <dt class="term__item">FALSE</dt>
+      <dd class="term__desc"><span lang="ja">利用不可URLではありません。</span><span lang="en">Not unavailable url.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

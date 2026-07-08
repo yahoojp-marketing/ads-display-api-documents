@@ -1,0 +1,121 @@
+RecommendationServiceUpdateAdCreativeList:
+  type: object
+  nullable: true
+  properties:
+    recommendationId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        最適化提案IDです。<br>
+        optimizationScoreLiftがnullでない場合は、1つのキャンペーンに関する提案に共通の最適化提案IDが割り当てられます。
+        </div>
+        <div lang="en">
+        Recommendation ID.<br>
+        When optimizationScoreLift isn't null, the system will assign a common recommendation ID to the suggestion for the campaign.
+        </div>
+    campaignId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        キャンペーンIDです。<br>
+        </div>
+        <div lang="en">
+        Campaign ID.<br>
+        </div>
+    campaignName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        キャンペーン名です。<br>
+        </div>
+        <div lang="en">
+        Campaign name.<br>
+        </div>
+    adGroupId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告グループIDです。
+        </div>
+        <div lang="en">
+        Ad group ID.
+        </div>
+    adGroupName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告グループ名です。
+        </div>
+        <div lang="en">
+        Ad group name.
+        </div>
+    adId:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        広告IDです。
+        </div>
+        <div lang="en">
+        Ad ID.
+        </div>
+    adName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        広告名です。
+        </div>
+        <div lang="en">
+        Ad name.
+        </div>
+    previousViewableCtr:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        30~16日前のビューアブルクリック率(平均)です<br>
+        </div>
+        <div lang="en">
+        Viewable CTR 30~16 days ago (average)
+        </div>
+    latestViewableCtr:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        15~1日前のビューアブルクリック率(平均)です<br>
+        </div>
+        <div lang="en">
+        Latest viewable CTR 15~1 days ago (average)
+        </div>
+    viewableCtrDecrease:
+      type: number
+      nullable: true
+      format: double
+      description: |
+        <div lang="ja">
+        ビューアブルクリック率の減少量です。
+        </div>
+        <div lang="en">
+        Viewable CTR decrease
+        </div>
+  title: RecommendationServiceUpdateAdCreativeList
+  description: |
+    <div lang="ja">
+    RecommendationServiceUpdateAdCreativeListオブジェクトは、画像・動画の更新を推奨する広告に関する詳細情報を表します。
+    </div>
+    <div lang="en">
+    RecommendationServiceUpdateAdCreativeList object describes the detailed information of ads that have recommendations for updating images or videos.
+    </div>

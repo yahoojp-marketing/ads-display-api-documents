@@ -1,0 +1,20 @@
+EstimatedUserSizeServiceUrls:
+  type: object
+  nullable: true
+  properties:
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        URLです。
+        </div>
+        <div lang="en">
+        url.
+        </div>
+    unavailableUrl:
+      $ref: 'EstimatedUserSizeServiceUnavailableUrl.yaml#/EstimatedUserSizeServiceUnavailableUrl'
+  title: EstimatedUserSizeServiceUrls
+  description: |
+    <div lang="ja">EstimatedUserSizeServiceUrlsオブジェクトは、URLの情報を表します。</div>
+    <div lang="en">EstimatedUserSizeServiceUrls describes information of url.</div>

@@ -1,0 +1,49 @@
+PlacementUrlIdea:
+  type: object
+  nullable: true
+  properties:
+    keyword:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">検索キーワードです。</div>
+        <div lang="en">Search keyword</div>
+    searchUrl:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        取得URLです。<br>
+        不明なURLの場合　UNKNOWN_URLが入ります。
+        </div>
+        <div lang="en">URL</div>
+    adPlaceName:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">配信先名です。</div>
+        <div lang="en">Ad place name</div>
+    reaches:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        デバイス合算のリーチ数です。<br>
+        ・1000未満の時は0が取得されます。
+        </div>
+        <div lang="en">Total reach number of Device (1000 in the case of 0)</div>
+    adRequests:
+      type: integer
+      nullable: true
+      format: int64
+      description: |
+        <div lang="ja">
+        デバイス合算のADリクエスト数。<br>
+        ・1000未満の時は0が取得されます。
+        </div>
+        <div lang="en">Total AD number of Device (1000 in the case of 0)</div>
+  title: PlacementUrlIdea
+  description: |
+    <div lang="ja">PlacementUrlIdeaオブジェクトは、プレイスメントUrl情報を保持するオブジェクトです。</div>
+    <div lang="en">An object that holds the placement Url information.</div>

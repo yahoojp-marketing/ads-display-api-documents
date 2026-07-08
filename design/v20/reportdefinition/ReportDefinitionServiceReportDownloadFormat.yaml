@@ -1,0 +1,31 @@
+ReportDefinitionServiceReportDownloadFormat:
+  type: string
+  nullable: true
+  enum:
+    - CSV
+    - XML
+    - TSV
+    - EXCEL_CSV
+    - UNKNOWN
+  title: ReportDefinitionServiceReportDownloadFormat
+  description: |
+    <div lang="ja">
+    ReportDefinitionServiceReportDownloadFormatは、定義されたダウンロードレポートのファイル形式を表します。<br>
+    このフィールドは、ADD時に省略可能となり、REMOVE時に無視されます。
+    </div>
+    <div lang="en">
+    ReportDefinitionServiceReportDownloadFormat serves file format for the defined download report.<br>
+    This field is optional in ADD operation, and will be ignored in REMOVE operation.
+    </div>
+    <dl class=term>
+      <dt class="term__item">CSV</dt>
+      <dd class="term__desc"><span lang="ja">カンマ区分されたフォーマットです。</span><span lang="en">Formats separated by commas.</span></dd>
+      <dt class="term__item">XML</dt>
+      <dd class="term__desc"><span lang="ja">XMLフォーマットです。</span><span lang="en">XML format</span></dd>
+      <dt class="term__item">TSV</dt>
+      <dd class="term__desc"><span lang="ja">TSVフォーマットです。</span><span lang="en">TSV output format.</span></dd>
+      <dt class="term__item">EXCEL_CSV</dt>
+      <dd class="term__desc"><span lang="ja">Excel用CSVフォーマットです。</span><span lang="en">CSV for Excel output format.</span></dd>
+      <dt class="term__item">UNKNOWN</dt>
+      <dd class="term__desc"><span lang="ja">未知の値です。</span><span lang="en">Unknown Value</span></dd>
+    </dl>

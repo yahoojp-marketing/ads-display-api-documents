@@ -1,0 +1,27 @@
+ConversionTrackerServiceTrackingTagConversionUrlRule:
+  type: object
+  nullable: true
+  properties:
+    compareOperator:
+      $ref: 'ConversionTrackerServiceTrackingTagConversionCompareOperator.yaml#/ConversionTrackerServiceTrackingTagConversionCompareOperator'
+    url:
+      type: string
+      nullable: true
+      description: |
+        <div lang="ja">
+        ルールで評価するURLです。<br>
+        ADDおよびSET時は省略可能となります。ADDおよびSET時、ruleTypeがURLの場合、必須です。
+        </div>
+        <div lang="en">
+        This field describes the URL to be evaluated by the rule.<br>
+        This field is optional in ADD and SET operation. If ruleType is URL, this field is required in ADD and SET operation.
+        </div>
+  description: |
+    <div lang="ja">
+    このフィールドは、計測タグのURLフィルター条件を表します。<br>
+    ADDおよびSET時は省略可能となります。ADDおよびSET時、ruleTypeがURLの場合、必須です。
+    </div>
+    <div lang="en">
+    This field describes the URL filter condition for the tracking tag.<br>
+    This field is optional in ADD and SET operation. If ruleType is URL, this field is required in ADD and SET operation.
+    </div>
